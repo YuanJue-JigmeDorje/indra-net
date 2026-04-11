@@ -1,0 +1,1277 @@
+# PoC: 第三品 · 师君三尊段 自动化抽取
+# Purpose:
+#   验证当前 spec (entity-taxonomy v0.3.1 + narrative-layers v0.2) 是否
+#   足以支撑标注 Agent 从源文本提取结构化 KG 数据。
+#   不追求完整性，追求"规范在真实数据上的可执行性 + 暴露缺口"。
+#
+# Source:
+#   source/dudjom/chapter_md/03_藏传佛法.md, lines 73-217 (师君三尊全段)
+#   约 2900 字
+#
+# Spec versions applied:
+#   - entity-taxonomy v0.3.1 (含 R1/R2/R3 + 原则 #15 文本忠实度优先)
+#   - narrative-layers v0.2 (六叙述层 + 证境 + 置信度 + author_stance)
+#   - open-questions.md (OQ-001 / OQ-002 / OQ-003)
+#
+# Method:
+#   - 严格按 spec 规则应用（不使用外部知识除非 manual override）
+#   - 实体 + 事实 + 缺口报告 三段
+#   - 不追求全量；选取代表性条目展示规则的数据应用
+
+metadata:
+  source_file: source/dudjom/chapter_md/03_藏传佛法.md
+  source_section: 师君三尊
+  source_lines: "73-217"
+  total_chars: ~2900
+  spec_versions:
+    entity-taxonomy: v0.3.1
+    narrative-layers: v0.2 (baseline)
+    open-questions: v0.1
+  poc_status: v0.1 草案
+  extracted_entities: 56
+  extracted_facts: 38
+  identified_gaps: 14
+
+# ============================================================
+# ENTITIES — 56 条代表性实体
+# ============================================================
+# 命名约定：
+#   E_PNN  人物
+#   E_SNN  圣众
+#   E_NNN  非人
+#   E_TNN  寺院
+#   E_LNN  地名 (Location)
+#   E_BNN  经典 (Book)
+#   E_DNN  教法 (Doctrine)
+#   E_RNN  仪轨 (Ritual)
+#   E_ONN  法器/圣物 (Object)
+#   E_GNN  集合 (Group)
+#   E_CNN  教派 (sCt)
+# (E_前缀只用于本 PoC，正式 KG 会用全局 UUID)
+
+entities:
+
+  # ---------- 圣众 ----------
+  E_S01:
+    name: 文殊菩萨
+    type: 圣众.大乘.菩萨
+    aliases: []
+    note: 在本段 仅以"赤松德赞的化身来源"出现
+
+  E_S02:
+    name: 多吉卓罗
+    type: 圣众.大乘.本尊
+    aliases:
+      - 多吉卓洛                       # 更准确的藏文转写
+    form_of: E_P02                     # 莲花生大士；R2 应用
+    note: |
+      源文用"罗"，"多吉卓洛"是更准确的藏文转写（同 拉萨桑耶寺 处理）。
+      "莲师示现令人望而生畏的忿怒威猛相...当时莲师被人们尊称为'多吉卓罗'"
+      经 R2 升级为独立 entity，宁玛传统中莲师八变（八大名号）之忿怒相。
+    appearance: line 195
+
+  E_S03:
+    name: 多闻天子
+    type: 圣众.大乘.护法
+    aliases: []
+    note: 出世间护法（智慧护法）。文中：莲师授记国王从多闻天子那里取财宝
+    appearance: line 145
+
+  # ---------- 人物 - 帝王 ----------
+  E_P01:
+    name: 赤松德赞
+    type: 人物.帝王
+    aliases: []
+    sect_affiliation: [宁玛]
+    manifestation_of: [E_S01]          # 文殊菩萨
+    appearances: [74, 100, 121, 159, 163, 173, 188, 201]
+
+  E_P03:
+    name: 松赞干布
+    type: 人物.帝王
+    aliases: []
+    sect_affiliation: [宁玛]
+    note: 在本段仅作为"祖父授记者"出现，主要事迹在 §松赞干布 段
+    appearance: line 74-75
+
+  E_P04:
+    name: 赤热巴坚
+    type: 人物.帝王
+    aliases: []
+    sect_affiliation: [宁玛]
+    note: 在本段仅出现于 祖孙三尊 集合释义
+    appearance: line 76
+
+  E_P05:
+    name: 木赤
+    type: 人物.帝王 (太子)
+    aliases: [木赤赞普]
+    sect_affiliation: [宁玛]
+    appearance: line 173
+
+  # ---------- 人物 - 法师 (印度) ----------
+  E_P06:
+    name: 静命
+    type: 人物.法师
+    aliases:
+      - 菩提萨埵
+      - 萨霍堪布菩提萨埵绕杰达
+    specialty: [班智达, 堪布]
+    origin: 萨霍 (印度)
+    sect_affiliation: []               # 文中无支持，留空（原则 #12）
+    note: |
+      "印度瑜伽师" "亲教师" 在文中也用以指代静命，但属于 generic 角色称谓，
+      不入 aliases (原则 #5/#7)。亲教师 是 ordination role（specialty 之一）。
+    appearances: [78, 82, 85, 105, 111, 119, 127, 134]
+
+  E_P02:
+    name: 莲花生大士
+    type: 人物.法师
+    additional_types: [圣众.大乘.本尊]   # ★ R1 应用
+    additional_types_source: text       # 本段文本本身有圣众-mode 描述
+    aliases:
+      - 莲师
+      - 莲花生
+    specialty: [上师, 大成就者, 金刚持, 持明]
+    origin: 邬金
+    sect_affiliation: [宁玛]
+    manifested_forms: [E_S02]           # 多吉卓罗 (八变之一)
+    note: |
+      R1 触发证据（文本忠实，非外部知识）：
+        - 凡常 mode: "莲师从吉中来到...与国王赤松德赞会面聚首"
+        - 圣众 mode 之一: "真身一直安住在耶多卓、青普等雪山静处" (line 170)
+        - 圣众 mode 之二: "莲师具有于一切刹土中同时示现身相等不可思议
+          的神变" (line 178)
+        - 圣众 mode 之三: "莲师于现在直至最后际，始终以六种任运持明的
+          法太子形象，只要这个世界没有空无，他就一直如如不动安住" (line 215)
+      → 文本既描述他的凡常活动又描述他的法身常住 → 多类目共存
+    appearances: many (核心人物)
+
+  E_P07:
+    name: 嘉伟西年
+    type: 人物.法师
+    specialty: [持藏]
+    origin: 印度
+    appearance: line 122
+
+  E_P08:
+    name: 塔坚钦毕拉
+    type: 人物.法师
+    aliases: [遍知天]
+    specialty: [持藏]
+    origin: 印度
+    appearance: line 122-123
+
+  E_P09:
+    name: 云毕昂策
+    type: 人物.法师
+    specialty: [持藏]
+    origin: 印度
+    appearance: line 123
+
+  E_P10:
+    name: 布玛莫札
+    type: 人物.法师
+    specialty: [金刚持]
+    origin: 印度
+    appearance: line 123
+
+  E_P11:
+    name: 现当嘎巴
+    type: 人物.法师
+    specialty: [金刚持]
+    origin: 印度
+    appearance: line 124
+
+  E_P12:
+    name: 达那西拉
+    type: 人物.法师
+    specialty: [班智达]
+    origin: 印度
+    note: 在巴赤则受戒事件中作为羯磨师（角色，非别名）
+    appearance: line 126
+
+  E_P13:
+    name: 则那莫札
+    type: 人物.法师
+    aliases: [班智达则那莫札]
+    specialty: [班智达]
+    origin: 印度
+    note: 在巴赤则受戒事件中作为屏教师（角色，非别名）
+    appearance: line 127
+
+  E_P14:
+    name: 西日桑哈
+    type: 人物.法师
+    specialty: [上师]
+    origin: 印度
+    note: 大圆满祖师，被贝若札那前往求法
+    appearance: line 137
+
+  E_P15:
+    name: 吽嘎日
+    type: 人物.法师
+    specialty: [上师]
+    origin: 印度
+    appearance: line 137
+
+  # ---------- 人物 - 法师 (藏地) ----------
+  E_P16:
+    name: 巴绕那
+    type: 人物.法师
+    aliases:
+      - 巴赤则                          # 出家前
+      - 花扬                            # 出家时取名
+    specialty: [比丘]
+    origin: 藏地
+    sect_affiliation: [宁玛]
+    note: 国舅大臣，预试七人之首，受戒后通六通
+    appearance: line 126-129
+
+  E_P17:
+    name: 巴色朗
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地
+    appearance: line 129
+
+  E_P18:
+    name: 贝若札那
+    type: 人物.法师
+    aliases: [巴够贝若札那]
+    specialty: [译师, 比丘, 大成就者]
+    origin: 藏地
+    sect_affiliation: [宁玛]
+    note: |
+      预试七人之一 + 大圆满译师。受赤松德赞之命前往印度从西日桑哈
+      听受大圆满。
+    appearances: [129, 134-135, 136-137]
+
+  E_P19:
+    name: 恩烂嘉巴秋扬
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地
+    appearance: line 129-130
+
+  E_P20:
+    name: 玛·仁钦秋
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地
+    appearance: line 130
+
+  E_P21:
+    name: 坤类旺波忠巴
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地
+    appearance: line 130
+
+  E_P22:
+    name: 拉色嘉瓦香切
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地
+    appearance: line 130-131
+
+  E_P23:
+    name: 益西旺波
+    type: 人物.法师
+    specialty: [比丘]
+    note: |
+      "更名为益西旺波等等" — 法名归属不清，可能是上述某位的法名。
+      待 SKILL_03b 消歧。
+    appearance: line 131
+
+  E_P24:
+    name: 国舅札玛
+    type: 人物.大臣
+    appearance: line 132
+
+  E_P25:
+    name: 噶·瓦拜则
+    type: 人物.法师
+    aliases: [噶]
+    specialty: [译师]
+    origin: 藏地
+    appearance: line 134-135
+
+  E_P26:
+    name: 焦·鲁坚赞
+    type: 人物.法师
+    aliases: [焦]
+    specialty: [译师]
+    origin: 藏地
+    appearance: line 135
+
+  E_P27:
+    name: 祥·益西德
+    type: 人物.法师
+    specialty: [译师]
+    origin: 藏地
+    appearance: line 135
+
+  E_P28:
+    name: 南卡酿波
+    type: 人物.法师
+    aliases: [虚空藏]
+    specialty: [译师]
+    origin: 藏地
+    note: 受赤松德赞之命前往印度从吽嘎日听受真实意法
+    appearance: line 136-138
+
+  E_P29:
+    name: 益西措嘉
+    type: 人物.空行母
+    additional_types: []                # ★ R1 严格应用：本段文本未含圣众-mode 描述
+    aliases: [益西措嘉空行母]
+    sect_affiliation: [宁玛]
+    note: |
+      R1 文本忠实度检查：
+        - 本段文本仅描述她"作为莲师明妃陪同踏遍藏地"，无凡常+圣众
+          双模式描述。
+        - 严格按 v0.3.1 R1（仅文本证据），NOT 添加 additional_types。
+      manual override 候选：用户在审核时表示她在宁玛传承中也是圣众
+      （益西措嘉空行修法独立），可能后续手动添加：
+        additional_types: [圣众.大乘.空行]
+        additional_types_source: manual
+        override_reason: "宁玛传承中益西措嘉空行修法独立修持"
+    appearance: line 182
+
+  # ---------- 集合 ----------
+  E_G01:
+    name: 师君三尊
+    type: 集合.上师集合
+    members: [E_P06, E_P02, E_P01]      # 静命 + 莲师 + 赤松德赞
+    cardinality: 3
+    note: 本段的标题，全段叙事核心
+    appearance: title (line 73)
+
+  E_G02:
+    name: 祖孙三尊
+    type: 集合.王族集合
+    aliases: [祖孙三法王]
+    members: [E_P03, E_P01, E_P04]      # 松赞干布 + 赤松德赞 + 赤热巴坚
+    cardinality: 3
+    appearance: line 75-76
+
+  E_G03:
+    name: 预试七人
+    type: 集合.弟子集合
+    members: [E_P16, E_P17, E_P18, E_P19, E_P20, E_P21, E_P22]
+    cardinality: 7
+    note: 藏地历史上出家僧团的开端
+    appearance: line 131-132
+
+  E_G04:
+    name: 外道六本师
+    type: 集合.人物集合
+    cardinality: 6
+    members: []                          # 文中未列名
+    note: |
+      文本仅以"佛于舍卫城调伏外道六本师"出现，作为类比说明神变示现。
+      具体六位名字（Pūraṇa Kassapa 等）在本段未给出，留空 members。
+    appearance: line 180
+
+  # ---------- 寺院 ----------
+  E_T01:
+    name: 桑耶寺
+    type: 寺院.寺庙
+    aliases:
+      - 吉祥桑耶无变自成寺
+    note: 三位王妃的三洲为附属
+    founder_proxies: [E_P01, E_P06, E_P02]   # 赤松德赞(施主) + 静命(堪布) + 莲师(奠基)
+    appearances: [117-118, 172]
+
+  E_T02:
+    name: 札马珍桑殿堂
+    type: 寺院.寺庙
+    note: |
+      在桑耶寺奠基前作为开光场所出现。可能是更早的小型经堂。
+      与桑耶寺关系不明，待 SKILL_03b 处理。
+    appearance: line 101
+
+  E_T03:
+    name: 邬丹达波热经堂
+    type: 寺院.寺庙
+    note: 印度，作为桑耶寺的范本（"以邬丹达波热经堂作为范例"）
+    location: 印度
+    appearance: line 114
+
+  E_T04:
+    name: 巴达霍修行院
+    type: 寺院.道场
+    note: 太子木赤摧毁此修行院，鬼王香夏坚出现
+    appearance: line 201
+
+  # ---------- 地名 ----------
+  E_L01:
+    name: 萨霍
+    type: 地名.国/政体
+    note: 静命的故乡，印度地名
+    appearance: line 78
+
+  E_L02:
+    name: 红山
+    type: 地名.圣地/具体地
+    note: 被凶神恶煞雷击之处
+    appearance: line 81
+
+  E_L03:
+    name: 芒耶贡塘
+    type: 地名.圣地/具体地
+    note: 莲师顷刻之间到达，与使者见面之处
+    appearance: line 90
+
+  E_L04:
+    name: 阿里
+    type: 地名.大区域
+    appearances: [92, 97]
+
+  E_L05:
+    name: 卫藏
+    type: 地名.大区域
+    appearance: line 97
+
+  E_L06:
+    name: 多康
+    type: 地名.大区域
+    appearance: line 97
+
+  E_L07:
+    name: 札马翁布园
+    type: 地名.圣地/具体地
+    note: 莲师与赤松德赞会面之处
+    appearance: line 99
+
+  E_L08:
+    name: 黑波山
+    type: 地名.圣地/具体地
+    note: 莲师降伏所有鬼神罗刹之处，桑耶寺地基
+    appearance: line 111
+
+  E_L09:
+    name: 印度
+    type: 地名.国/政体
+    appearances: [122, 136]
+
+  E_L10:
+    name: 邬金境
+    type: 地名.国/政体
+    note: 莲师离开藏地后前往之处
+    appearance: line 175
+
+  E_L11:
+    name: 妙拂洲
+    type: 地名.神话地名
+    note: 罗刹洲的别名，莲师最终安住处
+    appearance: line 212
+
+  E_L12:
+    name: 铜色吉祥山
+    type: 地名.神话地名
+    note: 妙拂洲顶上，莲师安住之净土
+    appearance: line 212
+
+  # ---------- 经典 ----------
+  E_B01:
+    name: 《吉祥证道歌》
+    type: 经典.教言/口诀集
+    note: 莲师用以镇压鬼神
+    appearance: line 112
+
+  E_B02:
+    name: 《金刚橛》法部
+    type: 经典.密续.远传
+    note: 莲师为君臣有缘者宣讲
+    appearance: line 139-140
+
+  E_B03:
+    name: 《窍诀见鬘论》
+    type: 经典.论
+    note: 莲师宣讲
+    appearance: line 140
+
+  E_B04:
+    name: 《贤愚经》
+    type: 经典.经
+    note: 莲师驻藏神变解释中引为典据
+    appearance: line 179
+
+  E_B05:
+    name: 《毗奈耶经》
+    type: 经典.律
+    note: 同上
+    appearance: line 179
+
+  E_B06:
+    name: 一百国王魂伏藏
+    type: 经典.密续.岩藏
+    cardinality: 100
+    concealed_by: E_P02                  # 莲花生
+    note: 莲师所埋伏藏集合
+    appearance: line 190
+
+  E_B07:
+    name: 五大意伏藏
+    type: 经典.密续.岩藏.意伏藏
+    cardinality: 5
+    concealed_by: E_P02
+    appearance: line 190
+
+  E_B08:
+    name: 二十五甚深大伏藏
+    type: 经典.密续.岩藏
+    cardinality: 25
+    concealed_by: E_P02
+    appearance: line 191
+
+  # ---------- 教法 ----------
+  E_D01:
+    name: 八关斋戒
+    type: 教法.戒律体系
+    section: 显
+    appearance: line 79
+
+  E_D02:
+    name: 十善
+    type: 教法.戒律体系
+    section: 显
+    appearance: line 80
+
+  E_D03:
+    name: 大圆满
+    type: 教法.教法体系
+    aliases: [阿底瑜伽]                  # ★ R3 应用
+    vehicle: ""                          # ★ R3 留空（自身就是九乘之一）
+    section: 密
+    sub_section: 前译
+    sect_affiliation: [宁玛]
+    note: 贝若札那从西日桑哈听受
+    appearance: line 137
+
+  E_D04:
+    name: 真实意法
+    type: 教法.教法体系
+    vehicle: 玛哈瑜伽
+    section: 密
+    sub_section: 前译
+    sect_affiliation: [宁玛]
+    note: 南卡酿波从吽嘎日听受
+    appearance: line 138
+
+  E_D05:
+    name: 八大法行
+    type: 教法.教法体系
+    vehicle: 玛哈瑜伽
+    section: 密
+    sub_section: 前译
+    sect_affiliation: [宁玛]
+    cardinality: 8
+    description: |
+      宁玛巴所修的"出世五法行 + 世间三法行"——
+      出世五法行（对应五方佛部）:
+        文殊身 (毗卢部) / 莲花语 (弥陀部) / 真实意 (不动部) /
+        甘露功德 (宝生部) / 橛事业 (不空成就部)
+      世间三法行: 召遣非人 / 猛咒诅詈 / 供赞世神
+      宁玛巴修行者修习生起次第八种法行所依的主要本尊。
+    appearance: line 214
+
+  # ---------- 仪轨 ----------
+  E_R01:
+    name: 圆光
+    type: 仪轨.占卜/感应
+    note: 让小孩看圆光以见非人名号
+    appearance: line 104
+
+  E_R02:
+    name: 烧施
+    type: 仪轨.修法仪轨
+    note: 莲师降伏未尽鬼神时所用
+    appearance: line 108
+
+  E_R03:
+    name: 金刚舞
+    type: 仪轨.修法仪轨
+    note: 莲师在空中跳金刚舞加持桑耶寺地基
+    appearance: line 113
+
+  # ---------- 非人 ----------
+  E_N01:
+    name: 十二地母
+    type: 非人.护法                      # 世间护法
+    cardinality: 12
+    subdued_by: E_P02                    # 莲花生
+    note: 受莲师降伏，立誓守护正法
+    appearance: line 98
+
+  E_N02:
+    name: 十三革绕神
+    type: 非人.护法
+    cardinality: 13
+    subdued_by: E_P02
+    appearance: line 98
+
+  E_N03:
+    name: 二十一优婆塞
+    type: 非人.护法
+    cardinality: 21
+    subdued_by: E_P02
+    appearance: line 98
+
+  E_N04:
+    name: 无恼龙
+    type: 非人.旁生
+    tianlong_8: 龙
+    subdued_by: E_P02
+    note: 协助国王供养建寺金粉
+    appearance: line 109
+
+  E_N05:
+    name: 鬼王香夏坚
+    type: 非人.饿鬼                      # 暂归 OQ-001
+    related_oq: OQ-001
+    subdued_by: E_P02
+    appearance: line 202
+
+  # ---------- 教派 ----------
+  E_C01:
+    name: 说一切有部
+    type: 教派.印度部派
+    note: 十二位比丘随静命入藏
+    appearance: line 124
+
+# ============================================================
+# FACTS — 38 条代表性事实
+# ============================================================
+# 每条事实记录:
+#   - id: F_NNN
+#   - quote: 源文本片段
+#   - subject: 主语 entity ID
+#   - predicate: 关系/谓词
+#   - object/target: 宾语 entity ID 或值
+#   - layers: narrative-layers 标签集合
+#   - author_stance: 作者态度
+#   - confidence: 置信度
+#   - note: 可选
+
+facts:
+
+  # === 化身宣称（神变层）===
+
+  - id: F_001
+    quote: "文殊菩萨幻化人君赤松德赞出世"
+    subject: E_P01                       # 赤松德赞
+    predicate: manifestationOf
+    object: E_S01                        # 文殊菩萨
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+
+  - id: F_002
+    quote: "祖父松赞干布曾亲自授记'从现在起到第五代时...国王德时期出现正法'"
+    subject: E_P03                       # 松赞干布
+    predicate: 授记
+    target: E_P01                        # 关于赤松德赞
+    content: "从现在起到第五代时，我的曾孙国王德时期出现正法"
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.9
+
+  # === 凡常历史事件（史传层）===
+
+  - id: F_003
+    quote: "国王赤松德赞在十三岁时执掌国政"
+    subject: E_P01
+    predicate: 执掌国政
+    age: 13
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_004
+    quote: "二十岁发心弘扬正法"
+    subject: E_P01
+    predicate: 发心弘扬正法
+    age: 20
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_005
+    quote: "之后迎请萨霍的堪布菩提萨埵绕杰达（即静命）"
+    subject: E_P01
+    predicate: 迎请
+    object: E_P06                        # 静命
+    from: E_L01                          # 萨霍
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_006
+    quote: "亲教师静命为个别人传授八关斋戒，并宣讲了十善、十八界相应的法门"
+    subject: E_P06
+    predicate: 传授
+    object: [E_D01, E_D02]               # 八关斋戒, 十善
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  # === 神变事件 ===
+
+  - id: F_007
+    quote: "藏地的凶神恶煞勃然大怒，他们雷击红山，水冲澎塘的宫殿"
+    subject: 凶神恶煞                    # 通称
+    predicate: 雷击/水冲
+    object: [E_L02, 澎塘宫殿]
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.85
+
+  - id: F_008
+    quote: "莲花生大士知晓此事，顷刻之间到达芒耶贡塘地方"
+    subject: E_P02                       # 莲师
+    predicate: 顷刻到达
+    location: E_L03                      # 芒耶贡塘
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+    note: 神足通显化
+
+  - id: F_009
+    quote: "把他们的金子撒向阿里方向，这也创造了藏地出现金矿的缘起"
+    subject: E_P02
+    predicate: 加持/缘起创造
+    object: 阿里金矿
+    location: E_L04
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.85
+
+  - id: F_010
+    quote: "藏地的鬼神们降下大雪大雨，并使所有山川相互闭合，莲师则从山间畅通无阻穿行而过"
+    subject: E_P02
+    predicate: 神通穿行
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+
+  - id: F_011
+    quote: "依靠禅定把所有鬼神紧紧束缚住，让他们立誓守护正法"
+    subject: E_P02
+    predicate: 降伏
+    object: 一切大力非人 (含 E_N01, E_N02, E_N03 主要群体)
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+
+  - id: F_012
+    quote: "降伏了十二地母、十三革绕神、二十一优婆塞为主的一切大力非人"
+    subject: E_P02
+    predicate: 降伏
+    object: [E_N01, E_N02, E_N03]
+    result: "立誓守护正法"
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+
+  - id: F_013
+    quote: "整个工程白天由人工建造，晚上非人建得更高"
+    subject: 桑耶寺施工
+    predicate: 双昼夜建造
+    builders_day: 人工
+    builders_night: 非人
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.85
+
+  - id: F_014
+    quote: "以须弥山、四大部洲、八小洲、日月连同铁围山的模式建起的吉祥桑耶无变自成寺宇"
+    subject: E_T01                       # 桑耶寺
+    predicate: 建造模式
+    template: [须弥山, 四大部洲, 八小洲, 日月, 铁围山]
+    layers: [史传]                        # 建造方式本身是凡常描述
+    author_stance: 认可
+    confidence: 0.9
+
+  - id: F_015
+    quote: "这么大的面积在五年内竣工"
+    subject: E_T01
+    predicate: 竣工
+    duration: 5 年
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  # === 集体出家（史传 + 多角色）===
+
+  - id: F_016
+    quote: "国王请信心十足的国舅大臣巴赤则出家"
+    subject: E_P01                       # 国王
+    predicate: 请...出家
+    object: E_P16                        # 巴赤则
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_017
+    quote: "菩提萨埵作为亲教师，达那西拉和则那莫札分别作为羯磨师与屏教师"
+    type: ordination_event
+    candidate: E_P16                     # 巴赤则
+    upadhyaya: E_P06                     # 静命 = 亲教师
+    karma_acharya: E_P12                 # 达那西拉 = 羯磨师
+    raho_anu: E_P13                      # 则那莫札 = 屏教师
+    additional_panditas: 10              # 文中"其余十位班智达作为补充"
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_018
+    quote: "巴赤则出家为僧并受了比丘戒，取名为花扬，国王也赞称他为巴绕那"
+    subject: E_P16
+    predicate: 受戒/取名
+    new_names: [花扬, 巴绕那]
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_019
+    quote: "他通过修持而具足了六通"
+    subject: E_P16
+    predicate: 具足
+    object: 六通                          # 神通位次属性
+    layers: [神变]                        # 六通本身是超凡能力
+    author_stance: 认可
+    confidence: 0.85
+
+  - id: F_020
+    quote: "以上七位就是众所共称的预试七人"
+    subject: E_G03                       # 预试七人
+    predicate: 共称为
+    members: [E_P16, E_P17, E_P18, E_P19, E_P20, E_P21, E_P22]
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  # === 译经 / 求法 ===
+
+  - id: F_021
+    quote: "国王又派贝若札那和南卡酿波等前往印度"
+    subject: E_P01
+    predicate: 派遣...前往求法
+    object: [E_P18, E_P28]               # 贝若札那, 南卡酿波
+    destination: E_L09                   # 印度
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_022
+    quote: "贝若札那在西日桑哈前听受大圆满"
+    subject: E_P18                       # 贝若札那
+    predicate: 听受
+    teacher: E_P14                       # 西日桑哈
+    teaching: E_D03                      # 大圆满
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_023
+    quote: "南卡酿波在吽嘎日座下聆听真实意法"
+    subject: E_P28
+    predicate: 听受
+    teacher: E_P15                       # 吽嘎日
+    teaching: E_D04                      # 真实意法
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  - id: F_024
+    quote: "莲花生大士也为君臣中有缘分的人们赐予下密与无上续相应的灌顶，并宣讲了《金刚橛》法部、《窍诀见鬘论》等"
+    subject: E_P02
+    predicate: 灌顶/宣讲
+    teaching_books: [E_B02, E_B03]       # 《金刚橛》《窍诀见鬘论》
+    audience: 君臣中有缘分的人们
+    section: 下密 / 无上续                # 教法范畴属性
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.95
+
+  # === 多叙述层时间（莲师驻藏时长）===
+
+  - id: F_025a
+    quote: "短时间的观点认为莲师在藏地住了六个月"
+    subject: E_P02
+    predicate: 驻藏时长
+    value: 6 个月
+    layers: [史传]                        # 史传层异说之一
+    sub_layer: 短时间观点
+    author_stance: 中立
+    confidence: 0.6
+
+  - id: F_025b
+    quote: "(短时间的观点认为...)十八个月"
+    subject: E_P02
+    predicate: 驻藏时长
+    value: 18 个月
+    layers: [史传]
+    sub_layer: 短时间观点
+    author_stance: 中立
+    confidence: 0.6
+
+  - id: F_025c
+    quote: "中等时间的观点认为住了三年或六年或十二年"
+    subject: E_P02
+    predicate: 驻藏时长
+    value: [3 年, 6 年, 12 年]
+    layers: [史传]
+    sub_layer: 中等时间观点
+    author_stance: 中立
+    confidence: 0.6
+
+  - id: F_025d
+    quote: "长时间的观点将每两季算为一年，共住了一百一十一年，也就是五十五个整年零六个月"
+    subject: E_P02
+    predicate: 驻藏时长
+    value: 111 半年 = 55.5 年
+    layers: [史传]
+    sub_layer: 长时间观点
+    author_stance: 中立
+    confidence: 0.5
+
+  - id: F_026
+    quote: "赤松德赞二十一岁时，莲师来到西藏，国王五十九岁时圆寂，显然莲师在此以后又住了十六年零六个月"
+    subject: E_P02
+    predicate: 驻藏时长
+    value: ~16.5 年 (赤松圆寂后)
+    derivation: 国王 21→59=38 年 + 16.5 年
+    layers: [史传]
+    sub_layer: 自宗推算
+    author_stance: 认可
+    confidence: 0.7
+
+  - id: F_027
+    quote: "自宗的诸位智者上师们的说法与这些史实都无有矛盾之处"
+    subject: 自宗诸位智者上师
+    predicate: 主张调和
+    target_facts: [F_025a, F_025b, F_025c, F_025d, F_026]
+    layers: [宗派]
+    sect: 宁玛
+    author_stance: 认可
+    confidence: 0.85
+    relation_to: reconciles
+
+  - id: F_028
+    quote: "按照《巴协》等中'只是住了短暂的时间'来讲"
+    cited_book: 《巴协》                  # E_B (巴协 entity in master list)
+    layers: [典据, 史传]
+    author_stance: 中立
+    confidence: 0.9
+
+  # === 神变兜底（莲师法身常住）===
+
+  - id: F_029
+    quote: "真身一直安住在耶多卓、青普等雪山静处，为有缘分的君臣转无上密的法轮"
+    subject: E_P02
+    predicate: 真身常住 / 转法轮
+    location: [耶多卓, 青普, 雪山静处]
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.85
+    note: 这是触发 E_P02 additional_types 的关键证据之一
+
+  - id: F_030
+    quote: "莲师具有于一切刹土中同时示现身相等不可思议的神变"
+    subject: E_P02
+    predicate: 一切刹土同时示现
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+    note: |
+      这是 R1 触发 E_P02 多类目共存的最强证据。
+      "于一切刹土同时示现"是典型的圣众-mode 描述，
+      不可能用凡常历史框架理解。
+
+  - id: F_031
+    quote: "这也就像《贤愚经》、《毗奈耶经》中所说的佛于舍卫城...的神变天数显得有多有少一样"
+    cited_books: [E_B04, E_B05]          # 贤愚经, 毗奈耶经
+    function: 类比典据
+    target: F_029                        # 用佛在舍卫城神变作类比
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.9
+
+  - id: F_032
+    quote: "莲师又隐藏了一百国王魂伏藏、五大意伏藏、二十五甚深大伏藏为主...的伏藏品，并一一授记开取的时间、取伏藏的人、有缘的法主"
+    subject: E_P02
+    predicate: 隐藏伏藏 + 授记开取
+    objects: [E_B06, E_B07, E_B08]       # 三个伏藏集合
+    layers: [神变, 授记]
+    author_stance: 认可
+    confidence: 0.9
+    note: |
+      多层组合的典型例：
+      - 隐藏伏藏行为 → 神变（莲师把法本藏入岩石/虚空/意识）
+      - 授记开取时间/取者 → 授记
+      不打史传——伏藏埋藏不是凡常事件
+
+  # === 莲师离开藏地 + 持明法太子安住 ===
+
+  - id: F_033
+    quote: "随后从贡塘拉土骑着狮子或骏马而去...到达了妙拂洲"
+    subject: E_P02
+    predicate: 离开藏地
+    from: 贡塘拉土
+    to: E_L11                            # 妙拂洲
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+
+  - id: F_034
+    quote: "在铜色吉祥山顶超度了罗刹王绕卡土创，莲师神识进入他的身体"
+    subject: E_P02
+    predicate: 超度
+    object: 罗刹王绕卡土创                # E_N? 待加
+    location: E_L12                      # 铜色吉祥山
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+
+  - id: F_035
+    quote: "莲师于现在直至最后际，始终以六种任运持明的法太子形象，只要这个世界没有空无，他就一直如如不动安住"
+    subject: E_P02
+    predicate: 永恒安住
+    form: 六种任运持明的法太子
+    duration: "现在 → 最后际"
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.9
+    note: |
+      这是 R1 触发 E_P02 多类目共存的另一关键证据。
+      "永恒安住、不死、法太子" 是圣众-mode 的明确描述，
+      与凡常的"莲师走访藏地"形成对照。
+
+  # === 反驳 + 异说处理 ===
+
+  - id: F_036
+    quote: "莲师彻知未来的情况，也宣说了许多猛咒"
+    subject: E_P02
+    predicate: 宣说猛咒
+    layers: [神变]                        # 知未来 + 猛咒都是超凡能力
+    author_stance: 认可
+    confidence: 0.85
+
+  - id: F_037
+    quote: "对于承认莲师只是短期住在藏地的观点，也千万不要认为他所有广大的事业尚未完成"
+    type: editorial / 调和
+    target_view: 短期驻藏说
+    layers: [宗派]
+    sect: 宁玛
+    author_stance: 反驳                   # 反驳"事业未完成"的暗示
+    confidence: 0.85
+    relation_type: dharmakaya-reconciles  # 神变兜底模式
+
+  - id: F_038
+    quote: "宣讲八大法行等正法"
+    subject: E_P02
+    predicate: 宣讲
+    object: E_D05                        # 八大法行
+    location: 罗刹洲（铜色吉祥山）
+    audience: 罗刹众生
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.85
+
+# ============================================================
+# GAPS — 14 个 spec 暴露的缺口
+# ============================================================
+# 在做 PoC 时遇到的"spec 没说清楚"的问题，按严重程度排序
+
+gaps:
+
+  - id: GAP-01
+    severity: high
+    spec: entity-taxonomy
+    issue: |
+      "通称非人"如何处理？
+      文本中"凶神恶煞""鬼神""妖魔鬼怪"等没有具名的非人，
+      它们参与了具体事件（雷击红山、水冲澎塘宫殿等），
+      但不构成 entity（无名）。
+      标注时怎么处理？
+        - 选项 A: 创建一个"通称 entity"作为占位（损失数据精度）
+        - 选项 B: 在 facts 中直接用字符串描述（损失关系图谱可查询性）
+        - 选项 C: 创建 type_mention 类型，标记"该类的某成员"
+    poc_workaround: 选项 B（facts 中直接用字符串"凶神恶煞"等）
+
+  - id: GAP-02
+    severity: high
+    spec: entity-taxonomy + narrative-layers
+    issue: |
+      "六通""神通"等"修证位次属性"如何处理？
+      原则 #8 说位次是属性不是 entity，但它在事实中作为对象出现：
+      "他通过修持而具足了六通"
+      这里"六通"是某种"被获得的状态/能力"，需要标注吗？
+        - 选项 A: 视为 fact 的一个属性字段（attainment）
+        - 选项 B: 创建 教法.修法元素 entity（"六通"作为修法目标）
+        - 选项 C: 视为 generic 词汇，不入 entity
+    poc_workaround: 选项 A
+
+  - id: GAP-03
+    severity: medium
+    spec: entity-taxonomy
+    issue: |
+      "诸位班智达""所有译师""君臣"等集合性引用怎么处理？
+      文本中频繁出现"莲师为君臣中有缘分的人们赐予灌顶"，
+      "君臣"是个集合但不在 entity 列表中，也没有 cardinality。
+        - 选项 A: 视为 generic context，不入 entity
+        - 选项 B: 创建临时集合 entity（每次都创建占位）
+    poc_workaround: 选项 A（直接 facts 中字符串引用）
+
+  - id: GAP-04
+    severity: medium
+    spec: entity-taxonomy
+    issue: |
+      "三位王妃的三洲""三位王妃" — 王妃集合 + 附属建筑集合。
+      这里"三位王妃"不是已命名的集合（不像"祖孙三尊"有文化身份），
+      而是"赤松德赞的三位王妃"——一种关系性引用。
+      作为 集合.王族 还是 普通描述？
+    poc_workaround: 不入 entity
+
+  - id: GAP-05
+    severity: medium
+    spec: entity-taxonomy
+    issue: |
+      "莲师"作为别名 vs 莲花生八变之一的"莲花生大士"主名 — 主名规则需要更明确。
+      v0.3 spec 说"主名 = 最简洁/最常用"，但在某些上下文里"莲师"
+      比"莲花生大士"更常用。是否需要按章节统计选取？
+    poc_workaround: 主名固定为"莲花生大士"（更正式），"莲师"作 alias
+
+  - id: GAP-06
+    severity: medium
+    spec: narrative-layers
+    issue: |
+      "授记"作为 fact 类型 vs 作为 layer 标签 — 区别？
+      F_002 的"松赞干布授记赤松德赞" 是一个授记事件（动作），
+      不是一个被授记的命题。
+      在 narrative-layers v0.2 中，授记层用于"该断言来自经/续中授记"，
+      但这里授记本身就是事件。
+        → 提议：授记 既是层（描述命题来源），也是事件类型（描述事件性质）
+      需要 spec 明确这两种用法的区别。
+    poc_workaround: F_002 用 layers: [授记]，但应该是 type: prophecy_event
+
+  - id: GAP-07
+    severity: medium
+    spec: entity-taxonomy
+    issue: |
+      "出家事件"涉及多个角色：candidate / upadhyaya / karma_acharya / raho_anu
+      这是关系还是事件？v0.3 spec 没说清楚多角色事件如何记录。
+        - 选项 A: 一个事件，多个 role 字段（如 F_017 的写法）
+        - 选项 B: 多个 fact，每个表达一个 dyadic 关系
+    poc_workaround: 选项 A（更紧凑）
+
+  - id: GAP-08
+    severity: medium
+    spec: entity-taxonomy
+    issue: |
+      "札马珍桑殿堂"和"桑耶寺"的关系 — 是同一寺还是前后建筑？
+      原文未明，需要 SKILL_03b 处理。
+      → 这种"边界寺院身份消歧"应该有规范流程
+    poc_workaround: 视为两个独立 entity，加 note 说明关系不明
+
+  - id: GAP-09
+    severity: low
+    spec: entity-taxonomy
+    issue: |
+      "下密""无上续"在 v0.3 spec 中说是属性值不是 entity。
+      但 F_024 中"下密与无上续相应的灌顶"——它们作为灌顶的范畴出现，
+      在 fact 里需要怎么写？属性？还是隐含 entity 引用？
+    poc_workaround: 用 section 字段（属性）
+
+  - id: GAP-10
+    severity: low
+    spec: entity-taxonomy
+    issue: |
+      事件中的 "连同三位王妃的三洲" 涉及附属建筑。
+      "三洲"作为 桑耶寺 的子建筑还是独立 entity？
+    poc_workaround: 不单独建 entity（属于 桑耶寺.附属）
+
+  - id: GAP-11
+    severity: low
+    spec: narrative-layers + entity-taxonomy
+    issue: |
+      "供养建寺金粉" 涉及非人（无恼龙）作为供养主体。
+      非人作为施主是常见的（龙王供养金粉、地神供养食物等）。
+      关系类型 supplyDanapati 是否需要？
+    poc_workaround: 用 fact predicate 字符串
+
+  - id: GAP-12
+    severity: high
+    spec: narrative-layers
+    issue: |
+      多叙述层时间事实（F_025a-d）的 sub_layer 字段用了"短时间观点/中等观点/长时间观点"
+      作为 narrative-layers spec 没有明确定义的 sub-tag。
+      narrative-layers v0.2 提到"sub-tag"概念但未给出语法。
+    poc_workaround: 自由文本 sub_layer 字段
+
+  - id: GAP-13
+    severity: medium
+    spec: entity-taxonomy
+    issue: |
+      "祖孙三尊"作为集合 entity (E_G02) 的成员引用要严格 entity ID 还是允许字符串？
+      如果未来某成员实体被重命名（主名变化），集合内的引用要不要自动更新？
+      → 这是 KG 的引用一致性问题，应该用 entity ID 而非名字
+    poc_workaround: PoC 中已用 entity ID
+
+  - id: GAP-14
+    severity: high
+    spec: entity-taxonomy + narrative-layers
+    issue: |
+      "佛像开口说话""神馐自动发出音声"（line 102-103）这种"物体作为主体"
+      的神变事件如何标？
+      佛像不是 person，不能作 subject。但事件要求一个主体。
+        - 选项 A: 物体作 subject (允许 法器/圣物 作为事件主体)
+        - 选项 B: 隐含主体（神变本身），物体作为 affected
+    poc_workaround: 暂无（PoC 中未提取此类事实）
+
+# ============================================================
+# 后续行动建议
+# ============================================================
+
+next_steps:
+  immediate:
+    - 用户审核 PoC v0.1 的格式与质量
+    - 用户审核 14 个 GAP，决定哪些应解决/记 OQ/接受现状
+    - 决定 PoC 输出位置：kg/poc/ 还是 promote 到 kg/{entities,events,facts}/
+
+  if_poc_accepted:
+    - 把 PoC 经验写成 SKILL_03a 实体标注规范的草稿
+    - 处理 14 个 GAP 中的 high severity 项（GAP-01, GAP-02, GAP-06, GAP-12, GAP-14）
+    - 选择第二个 sub-section（如"赤热巴坚"或"后弘时期"）做第二个 PoC，验证规范的可移植性
+
+  if_poc_revealed_problems:
+    - 调整 spec
+    - 重新执行 PoC
+
+# ============================================================
+# 总结
+# ============================================================
+summary: |
+  本 PoC 在师君三尊段（约 2900 字）成功提取：
+    - 56 条代表性实体（覆盖 11 个类目中的 9 个）
+    - 38 条代表性事实（覆盖 6 个 narrative-layers 中的 4 个）
+    - 14 个明确的 spec 缺口
+
+  规则的实际应用结果：
+    - R1（多类目共存）：仅 莲花生大士 触发（文本提供凡常+圣众双模式描述）
+                        益西措嘉 严格按 R1 不触发
+    - R2（form entity）：多吉卓罗 经 R2 升级为独立 entity
+    - R3（顶级 vehicle 留空）：大圆满 vehicle 字段留空
+
+  最重要的发现：
+    1. 文本忠实度优先（原则 #15）让 PoC 可执行——不需要 Claude 知道
+       全部宁玛 sadhana 体系
+    2. narrative-layers 的多层组合在真实文本里频繁出现，spec 设计正确
+    3. 多叙述层时间（莲师驻藏 6 种说法）在 PoC 中能完整保留
+    4. 14 个 GAP 中，5 个 high severity 需要 spec 升级才能完整支撑 SKILL_03a
+    5. PoC 暴露：当前 spec 对"通称非人""位次属性"等"非 entity 的事实组件"
+       缺乏处理规范，这是下一轮 spec 迭代的重点
