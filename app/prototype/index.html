@@ -619,40 +619,40 @@ const nodes = Array.from(nodeSet.values()).map(n => ({
 // ============================================================
 
 const typeColors = {
-  "人物":   "#4da6ff",
-  "圣众":   "#d4af37",
-  "非人":   "#e74c3c",
-  "寺院":   "#2ecc71",
-  "地名":   "#95a5a6",
-  "经典":   "#9b59b6",
-  "教法":   "#e67e22",
-  "教派":   "#8b6914",
-  "仪轨":   "#1abc9c",
-  "法器":   "#e91e8c",
-  "集合":   "#f1c40f",
-  "unknown": "#666"
+  "人物":   "#7eb8da",   // 雾蓝
+  "圣众":   "#c9a96e",   // 暗金
+  "非人":   "#b05a5a",   // 砖红
+  "寺院":   "#6ba386",   // 青苔
+  "地名":   "#8895a7",   // 灰蓝
+  "经典":   "#9a85a8",   // 雾紫
+  "教法":   "#c4956a",   // 赭石
+  "教派":   "#8a7d68",   // 暖灰
+  "仪轨":   "#6a9b9e",   // 青灰
+  "法器":   "#a88a9d",   // 藕荷
+  "集合":   "#b5b88a",   // 苔绿
+  "unknown": "#555"
 };
 
 const relColors = {
-  "teacherOf":      "#5dade2",
-  "manifestationOf": "#d4af37",
-  "formOf":          "#c5a028",
-  "builtBy":         "#2ecc71",
-  "foundedBy":       "#27ae60",
-  "subduedBy":       "#e74c3c",
-  "concealedBy":     "#8e44ad",
-  "revealedBy":      "#bb8fce",
-  "fatherOf":        "#f39c12",
-  "sonOf":           "#e67e22",
-  "consortOf":       "#e91e63",
-  "rulerOf":         "#bdc3c7",
-  "ministerOf":      "#7f8c8d",
-  "siblingOf":       "#f0b27a",
-  "memberOf":        "#85929e",
-  "translatedBy":    "#1abc9c",
-  "revisedBy":       "#16a085",
-  "belongsToSect":   "#8b6914",
-  "locatedIn":       "#aab7b8",
+  "teacherOf":       "#6aaed6",   // 师承 — 柔蓝，最重要的关系
+  "manifestationOf": "#c9a96e",   // 化身 — 暗金
+  "formOf":          "#b89a5e",   // 身相 — 暗金偏暗
+  "builtBy":         "#6ba386",   // 建寺 — 青苔
+  "foundedBy":       "#5e9478",   // 创立 — 青苔偏暗
+  "subduedBy":       "#a06060",   // 降伏 — 暗红
+  "concealedBy":     "#8878a0",   // 伏藏 — 雾紫
+  "revealedBy":      "#9a8ab0",   // 掘藏 — 雾紫偏亮
+  "fatherOf":        "#7a7a7a",   // 亲属 — 统一灰
+  "sonOf":           "#7a7a7a",
+  "consortOf":       "#7a7a7a",
+  "rulerOf":         "#7a7a7a",
+  "ministerOf":      "#7a7a7a",
+  "siblingOf":       "#7a7a7a",
+  "memberOf":        "#5a5a6a",   // 归属 — 暗灰
+  "translatedBy":    "#6a9b9e",   // 译经 — 青灰
+  "revisedBy":       "#5a8b8e",
+  "belongsToSect":   "#5a5a6a",
+  "locatedIn":       "#5a5a6a",
 };
 
 function getRelColor(type) {
@@ -687,7 +687,7 @@ const glowFilter = defs.append("filter")
   .attr("x", "-50%").attr("y", "-50%")
   .attr("width", "200%").attr("height", "200%");
 glowFilter.append("feGaussianBlur")
-  .attr("stdDeviation", "3")
+  .attr("stdDeviation", "2")
   .attr("result", "coloredBlur");
 const feMerge = glowFilter.append("feMerge");
 feMerge.append("feMergeNode").attr("in", "coloredBlur");
@@ -739,7 +739,7 @@ const link = g.append("g")
   .data(links)
   .join("line")
   .attr("stroke", d => getRelColor(d.type))
-  .attr("stroke-opacity", 0.35)
+  .attr("stroke-opacity", 0.18)
   .attr("stroke-width", 1.2)
   .attr("marker-end", d => `url(#arrow-${d.type})`);
 
@@ -752,7 +752,7 @@ const node = g.append("g")
   .attr("fill", d => typeColors[d.type] || typeColors["unknown"])
   .attr("stroke", d => d3.color(typeColors[d.type] || typeColors["unknown"]).brighter(0.8))
   .attr("stroke-width", 1)
-  .attr("stroke-opacity", 0.6)
+  .attr("stroke-opacity", 0.4)
   .attr("filter", "url(#glow)")
   .attr("cursor", "pointer")
   .call(d3.drag()
@@ -836,8 +836,8 @@ node.on("mouseover", function(event, d) {
 .on("mouseout", function() {
   tooltip.style("display", "none");
   node.attr("opacity", 1);
-  d3.select(this).attr("stroke-width", 1).attr("stroke-opacity", 0.6);
-  link.attr("stroke-opacity", 0.35).attr("stroke-width", 1.2);
+  d3.select(this).attr("stroke-width", 1).attr("stroke-opacity", 0.4);
+  link.attr("stroke-opacity", 0.18).attr("stroke-width", 1.2);
   label.attr("opacity", d => (degreeMap[d.id] || 0) >= 4 ? 0.85 : 0)
     .attr("font-size", d => {
       const deg = degreeMap[d.id] || 0;
@@ -865,7 +865,7 @@ link.on("mouseover", function(event, d) {
 })
 .on("mouseout", function() {
   tooltip.style("display", "none");
-  d3.select(this).attr("stroke-opacity", 0.35).attr("stroke-width", 1.2);
+  d3.select(this).attr("stroke-opacity", 0.18).attr("stroke-width", 1.2);
 });
 
 // Click to lock highlight
@@ -919,7 +919,7 @@ function highlightNode(d) {
 
 function resetHighlight() {
   node.attr("opacity", 1);
-  link.attr("stroke-opacity", 0.35).attr("stroke-width", 1.2);
+  link.attr("stroke-opacity", 0.18).attr("stroke-width", 1.2);
   label.attr("opacity", d => (degreeMap[d.id] || 0) >= 4 ? 0.85 : 0)
     .attr("font-size", d => {
       const deg = degreeMap[d.id] || 0;
