@@ -1,0 +1,792 @@
+# KG 实体抽取：第三品 · 赤热巴坚 + 后弘时期 + 结尾
+# Source:
+#   source/dudjom/chapter_md/03_藏传佛法.md, lines 219-305
+#   约 1400 字
+#
+# Spec versions applied:
+#   - entity-taxonomy v0.3.1 (含 R1/R2/R3 + 原则 #15 文本忠实度优先)
+#   - narrative-layers v0.2
+#
+# 与 PoC (kg/poc/ch3-shijunsanzun.yaml) 的关系:
+#   师君三尊段 (lines 73-217) 已在 PoC 中提取。
+#   在本段再次出现的 PoC 实体，仅以 see_also: poc 引用，不重复完整记录。
+#
+# 命名约定 (延续 PoC):
+#   E_PNN  人物 | E_SNN 圣众 | E_NNN 非人 | E_TNN 寺院
+#   E_LNN  地名 | E_BNN 经典 | E_DNN 教法 | E_RNN 仪轨
+#   E_ONN  法器/圣物 | E_GNN 集合 | E_CNN 教派
+#   编号从 PoC 末尾续编，避免 ID 冲突。
+
+metadata:
+  source_file: source/dudjom/chapter_md/03_藏传佛法.md
+  source_section: 赤热巴坚 + 后弘时期 + 结尾
+  source_lines: "219-305"
+  total_chars: ~1400
+  spec_versions:
+    entity-taxonomy: v0.3.1
+    narrative-layers: v0.2
+  extracted_entities: 78    # new entities; plus 16 PoC references
+  date: 2026-04-11
+
+# ============================================================
+# 在本段再次出现的 PoC 实体（仅引用）
+# ============================================================
+poc_references:
+  - id: E_P01
+    name: 赤松德赞
+    see_also: poc
+    appearances_in_this_section: [220, 240]
+
+  - id: E_P02
+    name: 莲花生大士
+    see_also: poc
+    appearances_in_this_section: [241]
+
+  - id: E_P04
+    name: 赤热巴坚
+    see_also: poc
+    note: 本段为其主体叙述段落，补充 aliases 和 manifestationOf
+    appearances_in_this_section: [219, 225, 226, 245]
+    supplements:
+      aliases_add: [赤德祖丹]
+      manifestation_of: E_S04              # 金刚手菩萨
+
+  - id: E_P05
+    name: 木赤赞普
+    see_also: poc
+    appearances_in_this_section: [220]
+
+  - id: E_P06
+    name: 静命
+    see_also: poc
+    appearances_in_this_section: [241]
+
+  - id: E_P13
+    name: 则那莫札
+    see_also: poc
+    appearances_in_this_section: [293]
+
+  - id: E_P16
+    name: 巴绕那
+    see_also: poc
+    appearances_in_this_section: [257]
+
+  - id: E_P18
+    name: 贝若札那
+    see_also: poc
+    appearances_in_this_section: [241, 298]
+
+  - id: E_P25
+    name: 噶·瓦拜则
+    see_also: poc
+    note: 本段以简称"噶"出现
+    appearances_in_this_section: [241, 298]
+
+  - id: E_P26
+    name: 焦·鲁坚赞
+    see_also: poc
+    note: 本段以简称"焦"出现
+    appearances_in_this_section: [241, 298]
+
+  - id: E_P03
+    name: 松赞干布
+    see_also: poc
+    appearances_in_this_section: [240]
+
+  - id: E_T01
+    name: 桑耶寺
+    see_also: poc
+    appearances_in_this_section: [222, 248]
+
+  - id: E_G02
+    name: 祖孙三法王
+    see_also: poc
+    appearances_in_this_section: [240, 254, 300]
+
+  - id: E_L04
+    name: 阿里
+    see_also: poc
+    appearances_in_this_section: [249]
+
+  - id: E_L09
+    name: 印度
+    see_also: poc
+    appearances_in_this_section: [230, 297]
+
+  - id: E_D03
+    name: 大圆满
+    see_also: poc
+    note: 本段出现"《大圆满心部》"，另建经典实体 E_B11
+    appearances_in_this_section: [268]
+
+# ============================================================
+# 新实体
+# ============================================================
+entities:
+
+  # ========== 圣众 ==========
+  E_S04:
+    name: 金刚手菩萨
+    type: 圣众.大乘.菩萨
+    aliases: []
+    note: 赤热巴坚为其化身
+    appearance: line 225
+
+  # ========== 人物 - 帝王 ==========
+  E_P30:
+    name: 木奈赞普
+    type: 人物.帝王
+    aliases: []
+    note: |
+      赤松德赞长子。执政期间在桑耶寺兴起四大供养佛事，
+      三度平均西藏人民贫富。
+    appearance: lines 220-222
+
+  E_P31:
+    name: 木迪赞普
+    type: 人物.帝王
+    aliases:
+      - 色纳勒劲云
+    note: |
+      赤松德赞三太子。建造嘎穹多吉扬寺。
+      生五位太子，其中赤热巴坚最出类拔萃。
+    appearance: lines 221-225
+
+  E_P32:
+    name: 朗达玛
+    type: 人物.帝王
+    aliases:
+      - 朗达玛秃头王
+    note: |
+      赤热巴坚的胞兄。以邪愿牵引、邪魔入心，毁灭佛教。
+      后被拉隆·拜吉多吉降伏。
+    appearance: lines 245-246
+
+  E_P33:
+    name: 饮光王
+    type: 人物.帝王
+    aliases: []
+    note: 朗达玛之后的君王，秉持祖先规则，恭敬三宝，建造寺院
+    appearance: line 247
+
+  E_P34:
+    name: 花库赞
+    type: 人物.帝王
+    aliases: []
+    note: 与饮光王同期，秉持祖先规则，恭敬三宝，建造寺院
+    appearance: line 247
+
+  E_P35:
+    name: 益西嘉村
+    type: 人物.帝王
+    aliases: []
+    note: |
+      卫藏君王。为重新恢复衰退的佛法，
+      委派鲁墨等十人前去康区求戒。
+    appearance: line 271
+
+  # ========== 人物 - 法师 (印度班智达) ==========
+  E_P36:
+    name: 思仁札布德
+    type: 人物.法师
+    specialty: [班智达]
+    origin: 印度
+    note: 赤热巴坚时期从印度请来的班智达之一
+    appearance: line 230
+
+  E_P37:
+    name: 西林札布德
+    type: 人物.法师
+    specialty: [班智达]
+    origin: 印度
+    note: 赤热巴坚时期从印度请来的班智达之一
+    appearance: line 230
+
+  E_P38:
+    name: 德那西拉
+    type: 人物.法师
+    specialty: [班智达]
+    origin: 印度
+    note: 赤热巴坚时期从印度请来的班智达之一
+    appearance: line 231
+
+  # ========== 人物 - 法师 (藏地·赤热巴坚时期) ==========
+  E_P39:
+    name: 燃那绕杰达
+    type: 人物.法师
+    specialty: [堪布]
+    origin: 藏地
+    note: 赤热巴坚时期藏地堪布
+    appearance: line 231
+
+  E_P40:
+    name: 达玛达谢
+    type: 人物.法师
+    specialty: [堪布]
+    origin: 藏地
+    note: 赤热巴坚时期藏地堪布
+    appearance: line 231
+
+  E_P41:
+    name: 嘉那色那
+    type: 人物.法师
+    specialty: [译师]
+    origin: 藏地
+    note: 赤热巴坚时期译师
+    appearance: line 232
+
+  E_P42:
+    name: 嘎瓦那波切
+    type: 人物.法师
+    specialty: [译师]
+    origin: 藏地
+    note: |
+      在彭地。对曾经翻译的《广般若经》进行译校，分成十六部。
+    appearance: line 235
+
+  E_P43:
+    name: 囤弥桑布札
+    type: 人物.法师
+    specialty: [译师]
+    origin: 藏地
+    note: 与祖孙三法王并列为藏地佛法恩人
+    appearance: line 241
+
+  # ========== 人物 - 法师 (后弘时期·三人) ==========
+  E_P44:
+    name: 玛尔·释迦牟尼
+    type: 人物.法师
+    specialty: [比丘, 亲教师]
+    origin: 藏地
+    note: |
+      巴绕那弟子。朗达玛灭佛时携律藏逃往康区。
+      后为莫色拉巴传出家戒作亲教师。年老后转任羯磨师。
+    appearances: [257, 261, 275-276, 278]
+
+  E_P45:
+    name: 约·格威穹
+    type: 人物.法师
+    specialty: [比丘, 规范师]
+    origin: 藏地
+    note: |
+      巴绕那弟子。与玛尔·释迦牟尼、藏·绕色携律藏逃往康区。
+      为莫色拉巴传戒时作规范师。年老后转任羯磨师。
+    appearances: [258, 261, 276, 278]
+
+  E_P46:
+    name: 藏·绕色
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地
+    note: |
+      巴绕那弟子。与玛尔·释迦牟尼、约·格威穹携律藏逃往康区。
+      年老后转任羯磨师。
+    appearances: [258, 276, 278]
+
+  # ========== 人物 - 拉隆·拜吉多吉 ==========
+  E_P47:
+    name: 拉隆·拜吉多吉
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地
+    note: |
+      降伏恶王朗达玛之人。后住在丹地。
+      被请求补充比丘数目时自谓："因为我杀了恶君，
+      所以不能补充比丘数目。"改由他派遣的汉僧补足。
+    appearances: [246, 263, 294]
+
+  # ========== 人物 - 贡巴绕色（核心人物）==========
+  E_P48:
+    name: 贡巴绕色
+    type: 人物.法师
+    aliases:
+      - 莫色拉巴                           # 出家前俗名
+      - 释迦·格巴绕色                      # 出家法名
+    specialty: [比丘, 亲教师, 持律师]
+    origin: 藏地 (康区)
+    attainments: 信解行菩萨
+    note: |
+      出家前名莫色拉巴，见三位高僧生信心请求出家。
+      出家法名释迦·格巴绕色。十五年间听受《戒律》，
+      又在贡荣桑格札座下听《戒律》，在噶巴哦秋札面前听《般若》，
+      在耶札酿波面前听《大圆满心部》。
+      《普作王续》传讲由他传下。
+      被共称为贡巴绕色大师。
+      以一坐垫、三启白、一次性圆满比丘戒传戒，
+      后命鲁墨为亲教师。
+    appearances: [260-262, 266-274, 279]
+
+  # ========== 人物 - 汉地僧人 ==========
+  E_P49:
+    name: 格旺
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 汉地
+    aliases: [和尚格旺]
+    note: 拉隆·拜吉多吉所派，补充五比丘数目
+    appearance: line 265
+
+  E_P50:
+    name: 吉番
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 汉地
+    note: 拉隆·拜吉多吉所派，补充五比丘数目
+    appearance: line 265
+
+  # ========== 人物 - 贡巴绕色之师 ==========
+  E_P51:
+    name: 贡荣桑格札
+    type: 人物.法师
+    specialty: [持律师]
+    origin: 藏地
+    note: 贡巴绕色在其座下聆听《戒律》
+    appearance: line 267
+
+  E_P52:
+    name: 噶巴哦秋札
+    type: 人物.法师
+    specialty: [般若师]
+    origin: 藏地
+    note: 贡巴绕色在其面前听《般若》
+    appearance: line 267
+
+  E_P53:
+    name: 耶札酿波
+    type: 人物.法师
+    specialty: [大圆满师]
+    origin: 藏地
+    note: |
+      贡巴绕色在其面前聆听《大圆满心部》。
+      后弘时期大译师达玛西日为其幻化。
+    appearances: [268, 288]
+
+  # ========== 人物 - 鲁墨及卫藏后藏十人 ==========
+  E_P54:
+    name: 鲁墨·赤诚西绕
+    type: 人物.法师
+    aliases:
+      - 鲁墨
+    specialty: [比丘, 亲教师]
+    origin: 藏地 (卫藏)
+    note: |
+      卫藏五人之首。受贡巴绕色传比丘戒后被任命为亲教师。
+      培养出四顶梁柱弟子、八大栋梁弟子、三十二椽木弟子、
+      千数短木弟子等。创立拉木、绕吉、也巴、瓦耶、凑迪等
+      无数道场，使衰落佛法从根本上恢复。
+    appearances: [272, 281, 283-287]
+
+  E_P55:
+    name: 罗敦多吉旺修
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地 (后藏)
+    note: 后藏五人之首，受贡巴绕色传比丘戒
+    appearance: line 272
+
+  E_P56:
+    name: 雅协
+    type: 人物.法师
+    specialty: [比丘]
+    origin: 藏地
+    note: 其弟子格西札巴独自建立一百零八处道场
+    appearance: line 285
+
+  E_P57:
+    name: 格西札巴
+    type: 人物.法师
+    specialty: [格西]
+    origin: 藏地
+    note: 雅协的弟子，独自建立一百零八处道场
+    appearance: line 286
+
+  # ========== 人物 - 大译师 ==========
+  E_P58:
+    name: 达玛西日
+    type: 人物.法师
+    aliases:
+      - 大译师达玛西日
+    specialty: [译师]
+    origin: 藏地
+    note: |
+      耶札酿波的幻化。将传讲及实修十分广泛弘扬开来。
+    appearance: line 289
+
+  # ========== 人物 - 对法传承 ==========
+  E_P59:
+    name: 嘎瓦花则
+    type: 人物.法师
+    specialty: [译师]
+    origin: 藏地
+    note: 与班智达则那莫札一起翻译、传讲上分对法及下分对法
+    appearance: line 294
+
+  E_P60:
+    name: 那南·达瓦多吉
+    type: 人物.法师
+    specialty: []
+    origin: 藏地
+    note: 接受上分对法及下分对法传承者之一
+    appearance: line 294
+
+  E_P61:
+    name: 卫·益西嘉瓦
+    type: 人物.法师
+    specialty: []
+    origin: 藏地
+    note: |
+      接受上分对法及下分对法传承者之一。
+      到了康区以后进行传讲。
+    appearances: [295]
+
+  E_P62:
+    name: 朗康够恰
+    type: 人物.法师
+    specialty: []
+    origin: 藏地
+    note: 背诵《般若十万颂》等，经藏中转法轮般若类弘扬者
+    appearance: line 296
+
+  # ========== 人物 - 祥氏三师中本段新提及的 ==========
+  # 噶、焦已在 PoC（E_P25, E_P26）
+  E_P63:
+    name: 祥
+    type: 人物.法师
+    aliases: []
+    specialty: [译师]
+    origin: 藏地
+    note: |
+      "噶、焦、祥氏三师"之一。PoC 中祥·益西德 (E_P27) 即此人，
+      但本段仅以"祥"出现。
+    see_also: poc (E_P27)
+    appearance: line 241
+
+  # ========== 寺院 ==========
+  E_T05:
+    name: 嘎穹多吉扬寺
+    type: 寺院.寺庙
+    note: 木迪赞普所建
+    appearance: line 223
+
+  E_T06:
+    name: 吉祥善增寺
+    type: 寺院.寺庙
+    note: |
+      赤热巴坚在吉玛哦江多建起，
+      文中称"无与伦比"。
+    appearance: line 229
+
+  E_T07:
+    name: 丹迪寺
+    type: 寺院.寺庙
+    aliases:
+      - 玛龙多吉札绕安穹那炯
+    note: |
+      康区。三位高僧（玛尔·释迦牟尼等）修行安住之处。
+      莫色拉巴在此见僧生信。
+    appearance: line 260
+
+  E_T08:
+    name: 拉木
+    type: 寺院.道场
+    note: 鲁墨大师创立的道场之一
+    appearance: line 285
+
+  E_T09:
+    name: 绕吉
+    type: 寺院.道场
+    note: 鲁墨大师创立的道场之一
+    appearance: line 285
+
+  E_T10:
+    name: 也巴
+    type: 寺院.道场
+    note: 鲁墨大师创立的道场之一
+    appearance: line 285
+
+  E_T11:
+    name: 瓦耶
+    type: 寺院.道场
+    note: 鲁墨大师创立的道场之一
+    appearance: line 285
+
+  E_T12:
+    name: 凑迪
+    type: 寺院.道场
+    note: 鲁墨大师创立的道场之一
+    appearance: line 285
+
+  E_T13:
+    name: 邬金敏珠朗佛学院
+    type: 寺院.寺庙
+    note: |
+      藏地雪域的一大庄严。其所有分院戒律传承
+      属于东律传承。
+    appearance: line 290
+
+  # ========== 地名 ==========
+  E_L13:
+    name: 吉玛哦江多
+    type: 地名.圣地/具体地
+    note: 赤热巴坚在此建吉祥善增寺
+    appearance: line 229
+
+  E_L14:
+    name: 彭地
+    type: 地名.圣地/具体地
+    note: 嘎瓦那波切在此译校《广般若经》
+    appearance: line 235
+
+  E_L15:
+    name: 拉萨
+    type: 地名.圣地/具体地
+    note: "拉萨桑耶寺等寺宇"
+    appearance: line 248
+
+  E_L16:
+    name: 葛逻
+    type: 地名.区域
+    note: 三位高僧携律藏前往之地
+    appearance: line 258
+
+  E_L17:
+    name: 霍尔
+    type: 地名.区域
+    note: 三位高僧携律藏前往之地
+    appearance: line 258
+
+  E_L18:
+    name: 康区
+    type: 地名.大区域
+    note: 三位高僧后到达此处，后弘时期律法传承之地
+    appearances: [259, 272, 295]
+
+  E_L19:
+    name: 卫藏
+    type: 地名.大区域
+    note: 鲁墨等五人来自卫藏
+    appearances: [271, 272, 281]
+
+  E_L20:
+    name: 后藏
+    type: 地名.大区域
+    note: 罗敦多吉旺修等五人来自后藏
+    appearance: line 272
+
+  E_L21:
+    name: 丹地
+    type: 地名.圣地/具体地
+    note: 拉隆·拜吉多吉住在此处
+    appearance: line 263
+
+  E_L22:
+    name: 汉地
+    type: 地名.国/政体
+    note: 和尚格旺、吉番来自汉地
+    appearance: line 264
+
+  # ========== 经典 ==========
+  E_B09:
+    name: 《广般若经》
+    type: 经典.经
+    note: |
+      嘎瓦那波切在彭地译校，分成十六部。
+    appearance: line 235
+
+  E_B10:
+    name: 《戒律》
+    type: 经典.律
+    aliases: [律藏]
+    note: |
+      贡巴绕色十五年间在亲教师、规范师面前听受；
+      又在贡荣桑格札座下聆听。
+      朗达玛灭佛时被三位高僧驮于骡上带往康区。
+    appearances: [258, 266-267]
+
+  E_B11:
+    name: 《大圆满心部》
+    type: 经典.密续.远传
+    note: 贡巴绕色在耶札酿波面前聆听
+    appearance: line 268
+
+  E_B12:
+    name: 《普作王续》
+    type: 经典.密续.远传
+    note: |
+      后来传讲的出现由贡巴绕色传下。
+    appearance: line 269
+
+  E_B13:
+    name: 《般若》
+    type: 经典.经
+    note: |
+      贡巴绕色在噶巴哦秋札面前听闻。
+      此处"般若"为概称。
+    appearance: line 268
+
+  E_B14:
+    name: 上分对法
+    type: 经典.论
+    note: |
+      由班智达则那莫札和译师嘎瓦花则翻译、传讲。
+      文中脚注 77。
+    appearance: line 293
+
+  E_B15:
+    name: 下分对法
+    type: 经典.论
+    note: |
+      与上分对法并列，由班智达则那莫札和译师嘎瓦花则翻译、传讲。
+      文中脚注 78。
+    appearance: line 293
+
+  E_B16:
+    name: 《般若十万颂》
+    type: 经典.经
+    note: |
+      朗康够恰背诵。经藏中转法轮般若类，
+      从印度保留下来的经典翻译弘扬。
+    appearance: line 297
+
+  # ========== 教法 ==========
+  E_D06:
+    name: 生起次第
+    type: 教法.修法元素
+    section: 密
+    note: 后弘时期在家咒师在深山家中讲修
+    appearance: line 252
+
+  E_D07:
+    name: 圆满次第
+    type: 教法.修法元素
+    section: 密
+    note: 与生起次第并列，后弘时期在家咒师讲修
+    appearance: line 252
+
+  E_D08:
+    name: 东律传承
+    type: 教法.戒律体系
+    section: 显
+    note: |
+      后弘时期由玛尔·释迦牟尼等三位高僧传下的律法传承。
+      邬金敏珠朗佛学院及其分院属此传承。
+      佛教后弘时期大多数前代持戒大德及新旧噶当派多数善知识
+      致力于此传承。
+    appearance: line 288
+
+  E_D09:
+    name: 四大供养
+    type: 教法.修法元素
+    note: |
+      木奈赞普执政期间在桑耶寺兴起的佛事。
+      文中脚注 76。
+    appearance: line 222
+
+  # ========== 仪轨 ==========
+  E_R04:
+    name: 近圆戒
+    type: 仪轨.戒律
+    aliases: [比丘戒]
+    note: |
+      贡巴绕色请求受比丘戒；
+      五比丘传了近圆戒。
+      贡巴绕色受近圆戒后第五年传戒。
+    appearances: [262, 265, 270]
+
+  # ========== 教派 ==========
+  E_C02:
+    name: 噶当派
+    type: 教派.藏传宗派
+    aliases:
+      - 新旧噶当派
+    note: |
+      文中"新旧噶当派的多数善知识也致力于这一戒律传承"，
+      指东律传承。"新旧"在文中为一体出现。
+    appearance: line 291
+
+  # ========== 集合 ==========
+  E_G05:
+    name: 赤松德赞三太子
+    type: 集合.王族集合
+    members: [E_P30, E_P05, E_P31]         # 木奈赞普 + 木赤赞普 + 木迪赞普
+    cardinality: 3
+    note: 赤松德赞的三位太子
+    appearance: line 220
+
+  E_G06:
+    name: 噶焦祥氏三师
+    type: 集合.上师集合
+    members: [E_P25, E_P26, E_P63]         # 噶 + 焦 + 祥
+    cardinality: 3
+    note: |
+      与祖孙三法王、静命、莲师、囤弥桑布札、贝若札那
+      并列为藏地佛法恩人。
+    appearance: line 241
+
+  E_G07:
+    name: 携律藏逃康三僧
+    type: 集合.弟子集合
+    members: [E_P44, E_P45, E_P46]         # 玛尔·释迦牟尼 + 约·格威穹 + 藏·绕色
+    cardinality: 3
+    note: |
+      巴绕那弟子。朗达玛灭佛时把律藏驮在骡上
+      逃往葛逻、霍尔，最终到康区。
+    appearance: line 257-259
+
+  E_G08:
+    name: 卫藏五人
+    type: 集合.弟子集合
+    members_named: [E_P54]                  # 鲁墨·赤诚西绕为首，余四人未具名
+    cardinality: 5
+    note: 来自卫藏，受贡巴绕色传比丘戒
+    appearance: line 272
+
+  E_G09:
+    name: 后藏五人
+    type: 集合.弟子集合
+    members_named: [E_P55]                  # 罗敦多吉旺修为首，余四人未具名
+    cardinality: 5
+    note: 来自后藏，受贡巴绕色传比丘戒
+    appearance: line 272
+
+  E_G10:
+    name: 鲁墨四柱弟子
+    type: 集合.弟子集合
+    members: []                              # 具体名字未列
+    cardinality: 4
+    note: 四顶梁之柱弟子
+    appearance: line 283
+
+  E_G11:
+    name: 鲁墨八栋梁弟子
+    type: 集合.弟子集合
+    members: []
+    cardinality: 8
+    note: 八大栋梁弟子
+    appearance: line 283
+
+  E_G12:
+    name: 鲁墨三十二椽木弟子
+    type: 集合.弟子集合
+    members: []
+    cardinality: 32
+    note: 三十二椽木弟子
+    appearance: line 284
+
+  E_G13:
+    name: 赤热巴坚所建千寺
+    type: 集合.人物集合
+    cardinality: 1000
+    members: []
+    note: 赤热巴坚共建造一千所寺院
+    appearance: line 227
+
+  # ========== 经典 - 史籍（本书自身）==========
+  E_B17:
+    name: 《藏密佛教史——天鼓妙音》
+    type: 经典.史籍
+    note: |
+      本书书名。结尾出现：
+      "藏密佛教史——天鼓妙音中，
+      简略总说藏地暗洲佛法明灯起源第三品终。"
+    appearance: lines 303-304

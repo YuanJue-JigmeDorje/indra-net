@@ -1,0 +1,846 @@
+# ============================================================
+# 知识图谱实体抽取 — 第三品 藏传佛法 (lines 1-71)
+# 覆盖范围: 引言 + 涅赤赞普 + 拉托托日涅赞 + 松赞干布
+# 来源: source/dudjom/chapter_md/03_藏传佛法.md
+# 提取日期: 2026-04-11
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 观世音菩萨
+  aliases: ["大悲观音", "自现圣者观音"]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "引言中称'普陀山大悲观音'加持猴子来藏地；松赞干布段称其示现为松赞干布"
+
+E_002:
+  name: 普贤菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "化身为拉托托日涅赞"
+
+E_003:
+  name: 文殊菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "化身为囤弥桑布札"
+
+E_004:
+  name: 金刚手
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "幻化为法臣噶尔东赞"
+
+E_005:
+  name: 颦眉度母
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "化身为赤尊公主"
+
+E_006:
+  name: 度母
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "化身为文成公主"
+
+E_007:
+  name: 迦叶佛
+  aliases: []
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "静命堪布提及三人曾在迦叶佛教法时发愿"
+
+# ==================== 人物 — 帝王 ====================
+
+E_010:
+  name: 涅赤赞普
+  aliases: ["肩座王"]
+  type: 人物.帝王
+  specialty: []
+  origin: "乐匝布种姓"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "藏地第一位国王；出现于如波神山口，来到赞塘阁希"
+
+E_011:
+  name: 百军王
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "有些认为涅赤赞普是百军王的太子"
+
+E_012:
+  name: 莫赤赞普
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "涅赤赞普的太子"
+
+E_013:
+  name: 拉托托日涅赞
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: ["普贤菩萨"]
+  attainments: []
+  note: "第二十八代王朝国王；宝箧从天降落；活到一百二十岁"
+
+E_014:
+  name: 松赞干布
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: "乐匝族"
+  sect_affiliation: []
+  manifestation_of: ["观世音菩萨"]
+  attainments: []
+  note: "十三岁执掌国政；建造大昭寺、小昭寺等；传授大悲寂猛教言"
+
+# ==================== 人物 — 王妃 ====================
+
+E_020:
+  name: 赤尊公主
+  aliases: []
+  type: 人物.王妃
+  specialty: []
+  origin: "尼泊尔"
+  sect_affiliation: []
+  manifestation_of: ["颦眉度母"]
+  attainments: []
+  note: "松赞干布王妃之一；二位王妃共称'海中莲花'"
+
+E_021:
+  name: 文成公主
+  aliases: []
+  type: 人物.王妃
+  specialty: []
+  origin: "汉族"
+  sect_affiliation: []
+  manifestation_of: ["度母"]
+  attainments: []
+  note: "松赞干布王妃之一；二位王妃共称'海中莲花'"
+
+# ==================== 人物 — 大臣 ====================
+
+E_025:
+  name: 噶尔东赞
+  aliases: []
+  type: 人物.大臣
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: ["金刚手"]
+  attainments: []
+  note: "松赞干布的法臣"
+
+# ==================== 人物 — 法师 ====================
+
+E_030:
+  name: 讷巴班智达
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "认为'从天而降'的说法纯属苯波传言"
+
+E_031:
+  name: 罗色措
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: "印度"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "班智达；与译师特乐色带法要来到雪域，国王不懂后返回"
+
+E_032:
+  name: 特乐色
+  aliases: []
+  type: 人物.法师
+  specialty: ["翻译"]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "译师；与班智达罗色措同来雪域"
+
+E_033:
+  name: 巴色朗
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "到尼泊尔拜见静命堪布"
+
+E_034:
+  name: 静命
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "堪布；巴色朗拜见时提及三人在迦叶佛时发愿弘法"
+
+E_035:
+  name: 阿嘎玛德西日
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "比丘；由松赞干布化现，迎请自现圣者观音"
+
+E_036:
+  name: 革萨绕
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: "印度"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "阿阇黎；松赞干布时期从印度迎请"
+
+E_037:
+  name: 祥嘎绕
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: "印度"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "婆罗门；松赞干布时期从印度迎请"
+
+E_038:
+  name: 西日拉玛匝
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: "尼泊尔"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大师；松赞干布时期从尼泊尔迎请"
+
+E_039:
+  name: 玛哈雅那
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: "汉地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "和尚；松赞干布时期从汉地迎请"
+
+E_040:
+  name: 哲土哦哲
+  aliases: []
+  type: 人物.法师
+  specialty: ["伏藏"]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "开取《国王遗教》伏藏三位之一"
+
+E_041:
+  name: 阿达尼
+  aliases: []
+  type: 人物.法师
+  specialty: ["伏藏"]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "开取《国王遗教》伏藏三位之一"
+
+E_042:
+  name: 敦巴释迦光
+  aliases: []
+  type: 人物.法师
+  specialty: ["伏藏"]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "开取《国王遗教》伏藏三位之一"
+
+E_043:
+  name: 囤弥桑布札
+  aliases: []
+  type: 人物.法师
+  specialty: ["声明", "翻译"]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: ["文殊菩萨"]
+  attainments: []
+  note: "被派到印度学习声明和文字；以梵文为蓝本创制藏文；撰著《语言学书籍》八本"
+
+# ==================== 非人 ====================
+
+E_050:
+  name: 岩罗刹女
+  aliases: []
+  type: 非人.通称
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与观音加持的猴子交配繁衍藏人"
+
+# ==================== 经典 ====================
+
+E_060:
+  name: 文殊根本续
+  aliases: []
+  type: 经典.密续
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "引言及松赞干布段引用其授记"
+
+E_061:
+  name: 无垢天女授记经
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "授记'入灭后两千五百年佛法将弘扬于红面人之境内'"
+
+E_062:
+  name: 百拜忏悔经
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宝箧中降落之物之一"
+
+E_063:
+  name: 宝箧经
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宝箧中降落之物之一"
+
+E_064:
+  name: 六字真言
+  aliases: []
+  type: 仪轨.咒语
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宝箧中降落之物之一"
+
+E_065:
+  name: 巴协
+  aliases: []
+  type: 经典.史籍
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "记载静命堪布与巴色朗的对话"
+
+E_066:
+  name: 国王遗教
+  aliases: ["玛尼全集"]
+  type: 经典.教言集
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布所有言教综合；隐藏成三个伏藏后由三位伏藏师开取"
+
+E_067:
+  name: 语言学书籍
+  aliases: []
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "囤弥桑布札撰著，共八本"
+
+# ==================== 法器/圣物 ====================
+
+E_070:
+  name: 如意珠总持印模
+  aliases: []
+  type: 法器圣物.圣物
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宝箧中降落之物之一"
+
+E_071:
+  name: 金塔
+  aliases: []
+  type: 法器圣物.圣物
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宝箧中降落之物之一"
+
+E_072:
+  name: 玄秘神物
+  aliases: []
+  type: 法器圣物.圣物
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "拉托托日涅赞为天降宝物所取的总称"
+
+E_073:
+  name: 八岁佛像
+  aliases: []
+  type: 法器圣物.佛像
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "本师真佛的代表；与十二岁佛像一起被迎请"
+
+E_074:
+  name: 十二岁佛像
+  aliases: []
+  type: 法器圣物.佛像
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "本师真佛的代表；与八岁佛像一起被迎请"
+
+E_075:
+  name: 自现圣者观音
+  aliases: []
+  type: 法器圣物.佛像
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "由比丘阿嘎玛德西日迎请的观音像"
+
+# ==================== 寺院 ====================
+
+E_080:
+  name: 永布拉冈
+  aliases: []
+  type: 寺院.王宫
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "拉托托日涅赞所居之皇宫"
+
+E_081:
+  name: 大昭寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布兴建"
+
+E_082:
+  name: 小昭寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布兴建"
+
+E_083:
+  name: 玛热王宫
+  aliases: []
+  type: 寺院.王宫
+  specialty: []
+  origin: "吉曲尼占帕翁卡"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布与二位王妃在此闭关修行本尊"
+
+E_084:
+  name: 镇肢寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布依授记所建"
+
+E_085:
+  name: 镇节寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布依授记所建"
+
+# ==================== 地名 ====================
+
+E_090:
+  name: 印度
+  aliases: []
+  type: 地名.国
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六大圣地之一"
+
+E_091:
+  name: 汉地
+  aliases: []
+  type: 地名.国
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六大圣地之一"
+
+E_092:
+  name: 藏地
+  aliases: ["雪域"]
+  type: 地名.国
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六大圣地之一；列居第三"
+
+E_093:
+  name: 龟兹国
+  aliases: []
+  type: 地名.国
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六大圣地之一"
+
+E_094:
+  name: 香巴拉
+  aliases: []
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六大圣地之一"
+
+E_095:
+  name: 革拉夏
+  aliases: []
+  type: 地名.国
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六大圣地之一"
+
+E_096:
+  name: 南赡部洲
+  aliases: []
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "正法盛行的六大圣地所属之洲"
+
+E_097:
+  name: 普陀山
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大悲观音所在之处"
+
+E_098:
+  name: 如波神山口
+  aliases: []
+  type: 地名.自然地理
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "涅赤赞普出现之处"
+
+E_099:
+  name: 赞塘阁希
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "涅赤赞普从如波神山口来到此处"
+
+E_100:
+  name: 尼泊尔
+  aliases: []
+  type: 地名.国
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "赤尊公主的来源地；巴色朗到此拜见静命"
+
+E_101:
+  name: 吐蕃
+  aliases: []
+  type: 地名.国
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "静命提及'吐蕃国王'"
+
+E_102:
+  name: 吉曲尼占帕翁卡
+  aliases: ["尼占帕翁卡"]
+  type: 地名.区域
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "玛热王宫所在地；出现百位修行观音法的在家瑜伽士"
+
+# ==================== 教法 ====================
+
+E_110:
+  name: 大悲寂猛教言
+  aliases: []
+  type: 教法.教言法门
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布暗中为有缘者传授并实修"
+
+E_111:
+  name: 十善法
+  aliases: []
+  type: 教法.戒律体系
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "囤弥桑布札创藏文后在雪域树立"
+
+E_112:
+  name: 在家道德规范十六条
+  aliases: []
+  type: 教法.戒律体系
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二规法令的主体"
+
+E_113:
+  name: 观音法
+  aliases: []
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "尼占帕翁卡约百位在家瑜伽士所修"
+
+# ==================== 集合 ====================
+
+E_120:
+  name: 天赤七王
+  aliases: []
+  type: 集合.王族集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "涅赤赞普之子莫赤赞普等"
+
+E_121:
+  name: 上当二王
+  aliases: []
+  type: 集合.王族集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "天赤七王之后"
+
+E_122:
+  name: 地上勒六王
+  aliases: []
+  type: 集合.王族集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "上当二王之后"
+
+E_123:
+  name: 地德八王
+  aliases: []
+  type: 集合.王族集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "地上勒六王之后"
+
+E_124:
+  name: 赞王五代
+  aliases: []
+  type: 集合.王族集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "地德八王之后"
+
+E_125:
+  name: 预试七人
+  aliases: []
+  type: 集合.弟子集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布段提及；尚未出家"
+
+# ==================== 教派 ====================
+
+E_130:
+  name: 苯教
+  aliases: ["苯波教"]
+  type: 教派.藏传宗派
+  specialty: []
+  origin: "藏地"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "涅赤赞普时期辅佐国政"
