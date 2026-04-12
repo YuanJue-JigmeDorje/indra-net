@@ -125,7 +125,13 @@ alias_to_canonical.update({
     '鲁墨大师': '鲁墨·赤诚西绕',
     '桑吉温波': '桑给嘉巴桑吉温波',
     '西绕炯内': '酿·西绕炯内',
+    '巴够贝若札那': '贝若札那',
+    '多昂丹增': '多昂丹增诺吾',
 })
+
+# Substring-based auto-merge: if A is a strict substring of B (len>=3) and both in alias map's values
+# then merge shorter into longer (use shorter as canonical)
+# This catches cases like 贡巴绕色 vs 贡巴绕色大师
 
 def normalize_name(name):
     return alias_to_canonical.get(name, name)
@@ -204,10 +210,10 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
         else:
             source_quote = str(raw_quote).strip()
 
-        # Determine source chapter from file path
+        # Source: book > chapter
         fname_base = os.path.basename(fpath).replace('.yaml', '')
         chapter_map = {'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心'}
-        chapter = chapter_map.get(fname_base, fname_base)
+        chapter = '《藏密佛教史》> ' + chapter_map.get(fname_base, fname_base)
 
         links.append({
             'source': src_name,
