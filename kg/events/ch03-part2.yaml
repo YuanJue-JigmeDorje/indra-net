@@ -1,0 +1,684 @@
+# KG 事件抽取：第三品 · 莲师离藏 + 赤热巴坚弘法 + 朗达玛灭法 + 后弘时期恢复
+# Source:
+#   source/dudjom/chapter_md/03_藏传佛法.md, lines 160-304
+#   约 2500 字
+#
+# Spec versions applied:
+#   - entity-taxonomy v0.3.1
+#   - narrative-layers v0.2
+#   - SKILL_04a 事件识别 v0.1
+#
+# 实体注册表:
+#   - kg/entities/ch03-part3-赤热巴坚至后弘.yaml
+#   - kg/poc/ch3-shijunsanzun.yaml (PoC 实体)
+#
+# 事件编号: EV_001 起
+# 日期: 2026-04-11
+
+metadata:
+  source_file: source/dudjom/chapter_md/03_藏传佛法.md
+  source_section: 莲师离藏 + 赤热巴坚弘法 + 朗达玛灭法 + 后弘时期恢复
+  source_lines: "160-304"
+  total_events: 39
+  spec_versions:
+    entity-taxonomy: v0.3.1
+    narrative-layers: v0.2
+    skill: SKILL_04a v0.1
+  date: 2026-04-11
+
+# ============================================================
+# 事件记录
+# ============================================================
+events:
+
+  # ----------------------------------------------------------
+  # 莲师驻藏时长争议 (lines 160-165)
+  # 同一事件多种说法 → 三条 record
+  # ----------------------------------------------------------
+  - event_id: EV_001
+    type: 弘法
+    title: 莲师驻藏（短时间观点）
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+    location: 藏地
+    time_info: 六个月或十八个月
+    layers: [传闻]
+    sub_layer: 短时间观点
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "短时间的观点认为莲师在藏地住了六个月或十八个月"
+
+  - event_id: EV_002
+    type: 弘法
+    title: 莲师驻藏（中等时间观点）
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+    location: 藏地
+    time_info: 三年或六年或十二年
+    layers: [传闻]
+    sub_layer: 中等时间观点
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "中等时间的观点认为住了三年或六年或十二年"
+
+  - event_id: EV_003
+    type: 弘法
+    title: 莲师驻藏（长时间观点——自宗）
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+      - entity: E_P01       # 赤松德赞
+        role: 参照锚点
+    location: 藏地
+    time_info: 五十五年零六个月（赤松德赞二十一岁时莲师来藏，国王五十九岁圆寂后又住十六年零六个月）
+    layers: [宗派]
+    sub_layer: 长时间观点
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "长时间的观点将每两季算为一年，共住了一百一十一年，也就是五十五个整年零六个月"
+    description: 作者明确表态"自宗的诸位智者上师们的说法与这些史实都无有矛盾之处"，故 author_stance 为认可。
+
+  # ----------------------------------------------------------
+  # 莲师示现离去 / 真身安住 (lines 166-176)
+  # ----------------------------------------------------------
+  - event_id: EV_004
+    type: 离藏
+    title: 莲师于奸臣面前示现飞空离去（第一次示现离藏）
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+    location: 洞巴戒创（印藏交界山顶）
+    time_info:
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "莲师在所有奸臣面前示现第二种身相，从洞巴戒创之外印藏交界的山顶离去，在人们的眼前腾空而飞，伴着庄严法衣、禅杖钉铛作响从云中而离去"
+    description: 按《巴协》等记载，莲师"只是住了短暂的时间"对应此次示现离去，但真身仍安住。
+
+  - event_id: EV_005
+    type: 闭关修行
+    title: 莲师真身安住雪山静处为有缘君臣转密法轮
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+    location: 耶多卓、青普等雪山静处
+    time_info:
+    layers: [宗派]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "真身一直安住在耶多卓、青普等雪山静处，为有缘分的君臣转无上密的法轮"
+
+  - event_id: EV_006
+    type: 迎请
+    title: 国王迎请莲师至桑耶寺开光
+    participants:
+      - entity: E_P01       # 赤松德赞
+        role: 施请者
+      - entity: E_P02       # 莲花生大士
+        role: 受请者
+    location: E_T01          # 桑耶寺
+    time_info: 有人察觉莲师安住修行地点后
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "国王说要辨别真假，于是将莲师迎请到桑耶寺开光，一直到赤松德赞有生之年"
+
+  - event_id: EV_007
+    type: 离藏
+    title: 莲师于贡塘拉土从空中而逝（最终离藏）
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+      - entity: E_P05       # 木赤赞普
+        role: 送行者
+    location: 贡塘拉土
+    time_info: 太子木赤执政时期
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在太子木赤执政的时候，莲花生大士在贡塘拉土地方乘着坐骑从空中而逝"
+
+  # ----------------------------------------------------------
+  # 莲师遍历藏地、授记、伏藏、降伏 (lines 182-200)
+  # ----------------------------------------------------------
+  - event_id: EV_008
+    type: 弘法
+    title: 莲师携益西措嘉踏遍藏地加持圣地
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+      - entity: E_P09       # 益西措嘉（PoC 实体）
+        role: 眷属
+    location: 整个藏地
+    time_info:
+    layers: [宗派, 神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "莲师真身携带益西措嘉空行母等有缘的眷属踏遍了整个藏地的每一块土地，甚至连马蹄大小的地方也没有遗漏"
+    description: 包含加持阿里二十座雪山、卫藏后藏二十一修行地、多康二十五圣地等。
+
+  - event_id: EV_009
+    type: 授记
+    title: 莲师授记未来魔之化身将摧毁佛教
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: 授记者
+      - entity: E_P01       # 赤松德赞
+        role: 受记者
+    time_info:
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "莲师知道后来王族太子——魔的化身将摧毁佛教，于是对国王赐予了许多未来的授记"
+    description: 此授记指向后来的朗达玛灭法事件。
+
+  - event_id: EV_010
+    type: 伏藏埋藏
+    title: 莲师隐藏大量伏藏品并授记开取
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+    location: 藏地各处
+    time_info:
+    layers: [宗派]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "莲师又隐藏了一百国王魂伏藏、五大意伏藏、二十五甚深大伏藏为主的有名称无名称不可胜数的伏藏品，并一一授记开取的时间、取伏藏的人、有缘的法主等"
+
+  - event_id: EV_011
+    type: 降伏非人
+    title: 莲师于达仓三十处降伏藏地凶神恶煞
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+    location: 门卡内让狮子堡等达仓三十处
+    time_info:
+    layers: [宗派, 神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "莲师示现令人望而生畏的忿怒威猛相，降伏了藏地大大小小的所有凶神恶煞、妖魔鬼怪，使他们全部承诺发誓，并吩咐作为伏藏品的护法神"
+    description: 通称非人（凶神恶煞、妖魔鬼怪）不引用 entity。此时莲师被称为"多吉卓罗"（E_S02）。
+
+  - event_id: EV_012
+    type: 神变
+    title: 莲师在多处留下身印、手印、脚印
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+    location: 哦塘多吉则巴、巴卓白岩等
+    time_info:
+    layers: [宗派, 神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "莲师又在哦塘多吉则巴等地留下身体的印迹，在湖泊旁边（的岩石上）等处留下手印，在巴卓白岩等地留下脚印"
+
+  # ----------------------------------------------------------
+  # 摧毁修行院 + 降伏鬼王 + 建讲学院 (lines 201-208)
+  # ----------------------------------------------------------
+  - event_id: EV_013
+    type: 降伏非人
+    title: 莲师降伏鬼王香夏坚
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+      - entity: E_P05       # 木赤赞普
+        role: 执行者
+      - entity: E_P01       # 赤松德赞（国王——下令者）
+        role: 指派者
+    location: 巴达霍修行院
+    time_info:
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "国王派太子木赤赞普去摧毁巴达霍修行院，当太子带走了所有东西以后，鬼王香夏坚也尾随而来，这时莲师示现威猛身相降伏了他，并吩咐他保护僧财"
+    description: 鬼王香夏坚为具名非人。
+
+  - event_id: EV_014
+    type: 建寺
+    title: 建立因相乘讲学院与密宗修行院
+    participants:
+      - entity: E_P01       # 赤松德赞
+        role: subject
+    time_info: 降伏鬼王香夏坚之后
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "当时建起了许多因相乘的讲学院、密宗的修行院"
+
+  - event_id: EV_015
+    type: 立法
+    title: 树立盟书石碑、规定供养法教规则
+    participants:
+      - entity: E_P01       # 赤松德赞
+        role: subject
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "所有君民一直将出家人作为供养处，光头僧人与发髻咒师分开作为两部僧众，明文规定顶礼供养承侍的法教规则，树立起盟书的石碑"
+
+  # ----------------------------------------------------------
+  # 莲师最终离藏 → 至罗刹洲 (lines 209-217)
+  # ----------------------------------------------------------
+  - event_id: EV_016
+    type: 离藏
+    title: 莲师从贡塘拉土骑狮/骏马前往妙拂洲铜色吉祥山
+    participants:
+      - entity: E_P02       # 莲花生大士
+        role: subject
+    location: 贡塘拉土 → 妙拂洲·铜色吉祥山
+    time_info: 赤松德赞圆寂之后
+    layers: [宗派, 神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "莲师从贡塘拉土骑着狮子或骏马而去，伴随着诸位天人无量供养的庄严到达了妙拂洲，在铜色吉祥山顶超度了罗刹王绕卡土创"
+    description: |
+      此为莲师最终离藏的宗派叙事。莲师神识进入罗刹王身体，
+      幻化莲花宫殿，化现罗刹八洲，以国王形象安住宣讲八大法行。
+      EV_007 为史传层同一离藏事件的另一叙述。
+
+  # ----------------------------------------------------------
+  # 赤热巴坚段 (lines 219-242)
+  # ----------------------------------------------------------
+  - event_id: EV_017
+    type: 执政
+    title: 三太子使佛法蒸蒸日上
+    participants:
+      - entity: E_P30       # 木奈赞普
+        role: subject
+      - entity: E_P05       # 木赤赞普
+        role: subject
+      - entity: E_P31       # 木迪赞普
+        role: subject
+    time_info: 赤松德赞之后
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他们使佛法蒸蒸日上，广弘开来"
+
+  - event_id: EV_018
+    type: 弘法
+    title: 木奈赞普在桑耶寺兴起四大供养并三度平均贫富
+    participants:
+      - entity: E_P30       # 木奈赞普
+        role: subject
+    location: E_T01          # 桑耶寺
+    time_info: 木奈赞普执政期间
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "木奈赞普执政期间，在桑耶寺兴起了四大供养的佛事，三度平均西藏人民的贫富"
+
+  - event_id: EV_019
+    type: 建寺
+    title: 木迪赞普建造嘎穹多吉扬寺
+    participants:
+      - entity: E_P31       # 木迪赞普
+        role: subject
+    location: E_T05          # 嘎穹多吉扬寺
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "木迪赞普建造了嘎穹多吉扬寺"
+
+  - event_id: EV_020
+    type: 建寺
+    title: 赤热巴坚建造一千所寺院
+    participants:
+      - entity: E_P04       # 赤热巴坚
+        role: subject
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "赤热巴坚要求每七户子民供养一位出家僧人，共建造了一千所寺院"
+
+  - event_id: EV_021
+    type: 建寺
+    title: 赤热巴坚建吉祥善增寺
+    participants:
+      - entity: E_P04       # 赤热巴坚
+        role: subject
+    location: E_L13          # 吉玛哦江多
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在吉玛哦江多建起了无与伦比的吉祥善增寺"
+
+  - event_id: EV_022
+    type: 迎请
+    title: 赤热巴坚从印度迎请班智达
+    participants:
+      - entity: E_P04       # 赤热巴坚
+        role: 施请者
+      - entity: E_P36       # 思仁札布德
+        role: 受请者
+      - entity: E_P37       # 西林札布德
+        role: 受请者
+      - entity: E_P38       # 德那西拉
+        role: 受请者
+    location: E_L09          # 印度 → 藏地
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "从印度请来思仁札布德、西林札布德、德那西拉等等众多班智达"
+
+  - event_id: EV_023
+    type: 译经
+    title: 赤热巴坚时期译校佛典（含嘎瓦那波切译校《广般若经》）
+    participants:
+      - entity: E_P04       # 赤热巴坚
+        role: 护持者
+      - entity: E_P36       # 思仁札布德
+        role: 班智达
+      - entity: E_P37       # 西林札布德
+        role: 班智达
+      - entity: E_P38       # 德那西拉
+        role: 班智达
+      - entity: E_P39       # 燃那绕杰达
+        role: 堪布
+      - entity: E_P40       # 达玛达谢
+        role: 堪布
+      - entity: E_P41       # 嘉那色那
+        role: 译师
+      - entity: E_P42       # 嘎瓦那波切
+        role: 译师
+    location: E_L14          # 彭地（嘎瓦那波切所在）
+    time_info: 赤热巴坚时期
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "规定：对祖先时代诸位班智达和译师们翻译正法时藏语中没有共称的名词中与正法教义、文法规则不相符合以及难懂的藏语更换成方言的名称予以增加"
+    description: |
+      此为大规模译校事件。具体包括：
+      1) 对先代翻译的大多数佛典重新以白话文校勘、抉择
+      2) 嘎瓦那波切在彭地译校《广般若经》分成十六部
+      3) 密宗前译续部原封不动保留
+
+  # ----------------------------------------------------------
+  # 朗达玛灭法 (lines 245-256)
+  # ----------------------------------------------------------
+  - event_id: EV_024
+    type: 毁灭佛教
+    title: 朗达玛毁灭佛教
+    participants:
+      - entity: E_P32       # 朗达玛
+        role: subject
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "君王赤热巴坚的胞兄朗达玛秃头王以邪愿的牵引，邪魔入心，毁灭了佛教"
+    description: 作者立场明确（"邪愿牵引""邪魔入心"），为全文最核心的灭法事件。
+
+  - event_id: EV_025
+    type: 圆寂
+    title: 拉隆·拜吉多吉降伏恶王朗达玛
+    participants:
+      - entity: E_P47       # 拉隆·拜吉多吉
+        role: 降伏者
+      - entity: E_P32       # 朗达玛
+        role: 被降伏者
+    time_info: 朗达玛灭佛后不久
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "没过多久，拉隆·拜吉多吉降伏了恶王朗达玛"
+    description: 文中用"降伏"而非"刺杀"，反映作者宗教立场。本质为朗达玛之死。
+
+  - event_id: EV_026
+    type: 弘法
+    title: 饮光王与花库赞恭敬三宝建造寺院
+    participants:
+      - entity: E_P33       # 饮光王
+        role: subject
+      - entity: E_P34       # 花库赞
+        role: subject
+    time_info: 朗达玛之后
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "饮光王、花库赞也秉持祖先的规则，恭敬三宝，建造寺院等"
+    description: 虽然此时已无出家僧人，但在家人虔诚信奉三宝，保护拉萨桑耶寺等。
+
+  # ----------------------------------------------------------
+  # 后弘时期：律藏传承 (lines 257-282)
+  # ----------------------------------------------------------
+  - event_id: EV_027
+    type: 派遣
+    title: 三位高僧携律藏逃往康区
+    participants:
+      - entity: E_P44       # 玛尔·释迦牟尼
+        role: subject
+      - entity: E_P45       # 约·格威穹
+        role: subject
+      - entity: E_P46       # 藏·绕色
+        role: subject
+    location: 葛逻、霍尔 → 康区
+    time_info: 朗达玛毁灭佛法期间
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "高僧玛尔·释迦牟尼、约·格威穹及藏·绕色三人把律藏驮在一头骡子上，前往葛逻和霍尔境"
+    description: 巴绕那弟子三人。先至葛逻和霍尔未能弘法，后到康区丹迪寺安住。
+
+  - event_id: EV_028
+    type: 出家受戒
+    title: 贡巴绕色（莫色拉巴）出家受戒
+    participants:
+      - entity: E_P48       # 贡巴绕色（出家前名莫色拉巴）
+        role: 受戒者
+      - entity: E_P44       # 玛尔·释迦牟尼
+        role: 亲教师
+      - entity: E_P45       # 约·格威穹
+        role: 规范师
+    location: E_T07          # 丹迪寺
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "莫色拉巴见状生起信心请求出家，于是由玛尔·释迦牟尼作亲教师，约·格威穹为规范师，给他传出家戒，取名为释迦·格巴绕色"
+
+  - event_id: EV_029
+    type: 出家受戒
+    title: 贡巴绕色受比丘戒（五比丘传近圆戒）
+    participants:
+      - entity: E_P48       # 贡巴绕色
+        role: 受戒者
+      - entity: E_P44       # 玛尔·释迦牟尼
+        role: 比丘
+      - entity: E_P45       # 约·格威穹
+        role: 比丘
+      - entity: E_P46       # 藏·绕色
+        role: 比丘
+      - entity: E_P49       # 格旺
+        role: 比丘（补足）
+      - entity: E_P50       # 吉番
+        role: 比丘（补足）
+      - entity: E_P47       # 拉隆·拜吉多吉
+        role: 推荐者（拒绝补充比丘数目）
+    location: E_L18          # 康区
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "他又请求受比丘戒，当时由于五位比丘不齐全，寻找到住在丹地的拉隆·拜吉多吉，可是他说：'因为我杀了恶君，所以不能补充比丘数目'……他派了汉地的和尚格旺、吉番二人，会聚了五比丘传了近圆戒"
+    description: 拉隆·拜吉多吉因杀朗达玛而自谓不能补充比丘，转而派遣汉僧格旺、吉番补足五比丘数目。
+
+  - event_id: EV_030
+    type: 弘法
+    title: 贡巴绕色十五年听受《戒律》并广学诸法
+    participants:
+      - entity: E_P48       # 贡巴绕色
+        role: 受法者
+      - entity: E_P44       # 玛尔·释迦牟尼
+        role: 亲教师
+      - entity: E_P45       # 约·格威穹
+        role: 规范师
+      - entity: E_P51       # 贡荣桑格札
+        role: 法师
+      - entity: E_P52       # 噶巴哦秋札
+        role: 法师
+      - entity: E_P53       # 耶札酿波
+        role: 法师
+    location: E_L18          # 康区
+    time_info: 十五年
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "释迦·格巴绕色于十五年中在亲教师、规范师面前听受了《戒律》。后来又在贡荣桑格札座下聆听了《戒律》，在噶巴哦秋札面前听了《般若》，在耶札酿波面前聆听了《大圆满心部》"
+
+  - event_id: EV_031
+    type: 派遣
+    title: 君王益西嘉村派卫藏后藏十人前往康区求戒
+    participants:
+      - entity: E_P35       # 益西嘉村
+        role: 指派者
+      - entity: E_P54       # 鲁墨·赤诚西绕
+        role: 受派者（卫藏五人之首）
+      - entity: E_P55       # 罗敦多吉旺修
+        role: 受派者（后藏五人之首）
+    location: E_L19 → E_L18  # 卫藏 → 康区
+    time_info: 贡巴绕色受近圆戒后第五年
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "君王益西嘉村等在卫藏为了重新恢复衰退的佛法，委派来自卫藏的鲁墨·赤诚西绕等五人、来自后藏的罗敦多吉旺修等五人前去康区"
+
+  - event_id: EV_032
+    type: 出家受戒
+    title: 贡巴绕色以一坐垫三启白顿圆传比丘戒
+    participants:
+      - entity: E_P48       # 贡巴绕色
+        role: 传戒者
+      - entity: E_P54       # 鲁墨·赤诚西绕
+        role: 受戒者
+      - entity: E_P55       # 罗敦多吉旺修
+        role: 受戒者
+      - entity: E_P44       # 玛尔·释迦牟尼
+        role: 羯磨师
+      - entity: E_P45       # 约·格威穹
+        role: 羯磨师
+      - entity: E_P46       # 藏·绕色
+        role: 羯磨师
+    location: E_L18          # 康区
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "贡巴绕色上师在一坐垫上以三启白次第传了一次性圆满比丘戒，教他们学通戒律"
+    description: |
+      三位老师年老体弱不能再任亲教师，改任羯磨师。
+      作者注：大师此顿圆传戒之开许在佛法存亡紧要关头无过错。
+
+  - event_id: EV_033
+    type: 恢复佛教
+    title: 鲁墨大师培养弟子使衰落佛法从根本上恢复
+    participants:
+      - entity: E_P54       # 鲁墨·赤诚西绕
+        role: subject
+    time_info: 受戒后返回卫藏
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "鲁墨大师培养出四顶梁之柱的弟子、八大栋梁弟子、三十二椽木弟子、千数短木弟子等等，由此使衰落的佛法从根本上得以恢复"
+
+  - event_id: EV_034
+    type: 建寺
+    title: 鲁墨大师创立拉木、绕吉等无数道场
+    participants:
+      - entity: E_P54       # 鲁墨·赤诚西绕
+        role: subject
+      - entity: E_P57       # 格西札巴
+        role: 弟子（建一百零八处道场）
+    location: 藏地各处
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "创立了拉木、绕吉、也巴、瓦耶、凑迪等无数的道场，雅协的弟子格西札巴独自一人也建立了一百零八处道场"
+
+  # ----------------------------------------------------------
+  # 后弘时期：东律传承 + 对法传承 + 经藏传承 (lines 283-302)
+  # ----------------------------------------------------------
+  - event_id: EV_035
+    type: 弘法
+    title: 东律传承形成
+    participants:
+      - entity: E_P54       # 鲁墨·赤诚西绕
+        role: 传承创立者
+      - entity: E_P58       # 达玛西日
+        role: 弘扬者
+    time_info: 后弘时期
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "每一天出家的僧团人数也大大增多，被誉为'东律传承'。前译的出家僧众和后来耶札酿波的幻化——大译师达玛西日将传讲及实修十分广泛弘扬开来"
+    description: 邬金敏珠朗佛学院及分院戒律传承属此。新旧噶当派多数善知识也致力于此。
+
+  - event_id: EV_036
+    type: 译经
+    title: 则那莫札与嘎瓦花则翻译传讲对法
+    participants:
+      - entity: E_P13       # 则那莫札
+        role: 班智达
+      - entity: E_P59       # 嘎瓦花则
+        role: 译师
+      - entity: E_P60       # 那南·达瓦多吉
+        role: 受传者
+      - entity: E_P47       # 拉隆·拜吉多吉
+        role: 受传者
+      - entity: E_P61       # 卫·益西嘉瓦
+        role: 受传者
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "所有上分对法及下分对法，由班智达则那莫札和译师嘎瓦花则等翻译、传讲，他们传给那南·达瓦多吉、拉隆·拜吉多吉和卫·益西嘉瓦"
+
+  - event_id: EV_037
+    type: 弘法
+    title: 卫·益西嘉瓦到康区传讲对法
+    participants:
+      - entity: E_P61       # 卫·益西嘉瓦
+        role: subject
+    location: E_L18          # 康区
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "卫·益西嘉瓦到了康区以后进行传讲等等，直到现在，一直非常兴盛"
+
+  - event_id: EV_038
+    type: 译经
+    title: 朗康够恰背诵般若十万颂等经典弘扬经藏
+    participants:
+      - entity: E_P62       # 朗康够恰
+        role: subject
+    location: E_L09          # 印度（经典来源）
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "将朗康够恰背诵的《般若十万颂》等印度保留下来的经典通过翻译、讲闻加以弘扬"
+
+  - event_id: EV_039
+    type: 译经
+    title: 噶焦贝若札那等翻译末转法轮经典
+    participants:
+      - entity: E_P25       # 噶·瓦拜则
+        role: 译师
+      - entity: E_P26       # 焦·鲁坚赞
+        role: 译师
+      - entity: E_P18       # 贝若札那
+        role: 译师
+    time_info:
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "末转法轮的所有经也是由噶、焦及贝若札那等翻译后以讲闻加以抉择"

@@ -1,0 +1,1092 @@
+# ============================================================
+# 知识图谱事件抽取 — 第三品 藏传佛法 (lines 1-160)
+# 覆盖范围: 引言 + 涅赤赞普 + 拉托托日涅赞 + 松赞干布 + 师君三尊（至莲师驻藏时长开头）
+# 来源: source/dudjom/chapter_md/03_藏传佛法.md
+# 提取日期: 2026-04-11
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.3.1 + narrative-layers v0.2
+#
+# 实体引用说明:
+#   E_NNN — 引用 kg/entities/ch03-part1-引言至松赞干布.yaml
+#   E_PNN / E_SNN / E_NNN(poc) / E_TNN / E_LNN / E_BNN / E_DNN / E_GNN / E_CNN
+#         — 引用 kg/poc/ch3-shijunsanzun.yaml
+#   未注册实体以名称字符串标注，待后续补充
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 引言段 (lines 0-8) ====================
+
+- event_id: EV_001
+  type: 神变
+  title: 观音加持猴子来藏，与罗刹女繁衍藏人
+  participants:
+    - entity: 观世音菩萨 (E_001)
+      role: 主体
+    - entity: 岩罗刹女 (E_050)
+      role: 客体
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [神变, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "普陀山大悲观音加持的一只猴子来到雪域，他和岩罗刹女交配，由此繁衍藏人"
+  description: 按《文殊根本续》授记，观音加持之猴与岩罗刹女交配，繁衍出藏族人。属藏族起源神话。
+
+- event_id: EV_002
+  type: 授记
+  title: 《文殊根本续》授记雪域从湖变林
+  participants:
+    - entity: 文殊根本续 (E_060)
+      role: 典据来源
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [授记, 典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "《文殊根本续》中'雪域由湖减，出现娑罗林'的授记"
+  description: 经典中对藏地地理形成的预言。
+
+- event_id: EV_003
+  type: 授记
+  title: 《无垢天女授记经》授记佛法弘扬于红面人之境
+  participants:
+    - entity: 无垢天女授记经 (E_061)
+      role: 典据来源
+  location: 藏地 (E_092)
+  time_info:
+    text: "入灭后两千五百年"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [授记, 典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "我入灭后两千五百年佛法将弘扬于红面人之境内"
+  description: 经典中关于佛法入藏时间的授记。
+
+# ==================== 涅赤赞普段 (lines 10-21) ====================
+
+- event_id: EV_004
+  type: 执政
+  title: 涅赤赞普成为藏地第一位国王
+  participants:
+    - entity: 涅赤赞普 (E_010)
+      role: 主体
+  location: 赞塘阁希 (E_099)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在藏地出现了第一位国王涅赤赞普"
+  description: 藏地第一位国王的出现，开启了吐蕃王统。
+
+- event_id: EV_005
+  type: 迎请
+  title: 苯波教徒迎请涅赤赞普为王
+  participants:
+    - entity: 涅赤赞普 (E_010)
+      role: 受者
+    - entity: 苯教 (E_130)
+      role: 迎请者
+  location: 赞塘阁希 (E_099)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "人们设立木座，把他扛在肩上迎请回去，由此被共称为涅赤赞普（即肩座王）"
+  description: 苯波教徒在如波神山口遇到奇特人物，以肩扛木座方式迎立为王。
+
+- event_id: EV_006
+  type: 神变
+  title: 涅赤赞普现身于如波神山口
+  participants:
+    - entity: 涅赤赞普 (E_010)
+      role: 主体
+  location: 如波神山口 (E_098)
+  time_info: null
+  layers: [传闻]
+  sub_layer: 苯波传说
+  author_stance: 中立
+  confidence: 0.60
+  source_quote: "超出常人的一个奇特人物出现在雪域的如波神山口"
+  description: 涅赤赞普出现方式异于常人。苯波教徒说"从登天绳降下，该是天人"，他手指向空中暗示来自天界。
+
+# ==================== 拉托托日涅赞段 (lines 23-42) ====================
+
+- event_id: EV_007
+  type: 神变
+  title: 宝箧降落于永布拉冈王宫
+  participants:
+    - entity: 拉托托日涅赞 (E_013)
+      role: 受者
+    - entity: 百拜忏悔经 (E_062)
+      role: 降落之物
+    - entity: 如意珠总持印模 (E_070)
+      role: 降落之物
+    - entity: 宝箧经 (E_063)
+      role: 降落之物
+    - entity: 六字真言 (E_064)
+      role: 降落之物
+    - entity: 金塔 (E_071)
+      role: 降落之物
+  location: 永布拉冈 (E_080)
+  time_info:
+    text: "第二十八代王朝"
+    relative_to: 涅赤赞普 (E_010)
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "一个宝箧落到王宫顶上，打开一看，里面有《百拜忏悔经》、如意珠总持印模、《宝箧经》、《六字真言》和金塔"
+  description: 正法在藏地的最初征兆。国王取名为"玄秘神物"，恭敬供养。
+
+- event_id: EV_008
+  type: 神变
+  title: 拉托托日涅赞因供养宝箧而返老还童增寿
+  participants:
+    - entity: 拉托托日涅赞 (E_013)
+      role: 主体
+    - entity: 玄秘神物 (E_072)
+      role: 供养对象
+  location: 永布拉冈 (E_080)
+  time_info:
+    text: "六十一岁变得好似十六岁一般，额外增加六十年寿命，活到一百二十岁"
+    relative_to: 拉托托日涅赞 (E_013)
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "六十一岁的国王竟然变得好似十六岁一般容颜柔嫩，额外增加了六十年的寿命，结果活到一百二十岁"
+  description: 供养宝箧的加持力使国王返老还童并获得超凡寿命。
+
+- event_id: EV_009
+  type: 授记
+  title: 拉托托日涅赞获得五代后有人通晓法义的授记
+  participants:
+    - entity: 拉托托日涅赞 (E_013)
+      role: 受者
+  location: 永布拉冈 (E_080)
+  time_info:
+    text: "再过五个朝代以后"
+    relative_to: 拉托托日涅赞 (E_013)
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "他得到'再过五个朝代以后会有人对经中含义心领神会'的授记，这标志着正法的开端"
+  description: 预言指向松赞干布时代将出现通晓佛法之人。
+
+- event_id: EV_010
+  type: 弘法
+  title: 班智达罗色措与译师特乐色携法要来藏
+  participants:
+    - entity: 罗色措 (E_031)
+      role: 主体
+    - entity: 特乐色 (E_032)
+      role: 主体
+    - entity: 拉托托日涅赞 (E_013)
+      role: 受者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: 讷巴班智达之说
+  author_stance: 中立
+  confidence: 0.70
+  source_quote: "班智达罗色措与译师特乐色带着那两种法要来到雪域，可是国王既不懂文字也不理解意义，为此班智达与译师又返回故里"
+  description: 讷巴班智达认为宝箧实际上是班智达与译师携来而非从天而降。此说与苯波传说相对。
+
+- event_id: EV_011
+  type: 授记
+  title: 静命堪布告巴色朗三人前世在迦叶佛时发愿弘法
+  participants:
+    - entity: 静命 (E_034)
+      role: 授记者
+    - entity: 巴色朗 (E_033)
+      role: 受者
+    - entity: 迦叶佛 (E_007)
+      role: 背景
+  location: 尼泊尔 (E_100)
+  time_info:
+    text: "迦叶佛教法时"
+    relative_to: 迦叶佛 (E_007)
+    absolute: null
+  layers: [授记, 典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "吐蕃国王、你和我三人曾经在迦叶佛教法时成为养鸡女的三个儿子，后来发愿在藏地弘扬佛法"
+  description: 静命堪布在尼泊尔向巴色朗揭示三人前世因缘，此事记载于《巴协》。说明"堪布已等待九代王朝"。
+
+# ==================== 松赞干布段 (lines 44-71) ====================
+
+- event_id: EV_012
+  type: 授记
+  title: 《文殊根本续》授记松赞干布出生
+  participants:
+    - entity: 文殊根本续 (E_060)
+      role: 典据来源
+    - entity: 松赞干布 (E_014)
+      role: 授记对象
+  location: 藏地 (E_092)
+  time_info:
+    text: "拉托托日以后的第五代"
+    relative_to: 拉托托日涅赞 (E_013)
+    absolute: null
+  layers: [授记, 典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "《文殊根本续》中说：'名为具天境，雪域之境内，住有人君王，出生乐匝族……'"
+  description: 经典授记松赞干布将作为观世音菩萨化身出世于乐匝族。
+
+- event_id: EV_013
+  type: 执政
+  title: 松赞干布十三岁执掌国政
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 主体
+  location: 藏地 (E_092)
+  time_info:
+    text: "十三岁时"
+    relative_to: 松赞干布 (E_014)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "他在十三岁时执掌国政"
+  description: null
+
+- event_id: EV_014
+  type: 迎请
+  title: 比丘阿嘎玛德西日迎请自现圣者观音
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 化现者
+    - entity: 阿嘎玛德西日 (E_035)
+      role: 迎请者
+    - entity: 自现圣者观音 (E_075)
+      role: 被迎请之圣物
+  location: 藏地 (E_092)
+  time_info:
+    text: "十五岁时"
+    relative_to: 松赞干布 (E_014)
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "十五岁时由自己化现的比丘阿嘎玛德西日迎请自现圣者观音"
+  description: 比丘阿嘎玛德西日本身是松赞干布的化现。此事同时含迎请行为和神变（化现比丘）。
+
+- event_id: EV_015
+  type: 婚姻联姻
+  title: 松赞干布迎娶赤尊公主与文成公主
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 主体
+    - entity: 赤尊公主 (E_020)
+      role: 王妃
+    - entity: 文成公主 (E_021)
+      role: 王妃
+    - entity: 噶尔东赞 (E_025)
+      role: 法臣/谋议者
+    - entity: 八岁佛像 (E_073)
+      role: 迎请目的物
+    - entity: 十二岁佛像 (E_074)
+      role: 迎请目的物
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "为了迎请我等本师真佛的代表八岁与十二岁的佛像，以随顺世间的方式迎娶了颦眉度母的化身——尼泊尔赤尊公主以及度母的化身——汉族文成公主"
+  description: 迎娶二妃的目的是迎请佛像入藏。与金刚手化身的法臣噶尔东赞商议。二王妃共称"海中莲花"。
+
+- event_id: EV_016
+  type: 闭关修行
+  title: 松赞干布与二王妃在玛热王宫闭关修行本尊
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 主体
+    - entity: 赤尊公主 (E_020)
+      role: 主体
+    - entity: 文成公主 (E_021)
+      role: 主体
+  location: 玛热王宫 (E_083)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在吉曲尼占帕翁卡地方共称为玛热王宫里，国王与二位王妃闭关修行本尊，结果得以成就"
+  description: 建大昭寺时遭非人危害，三人遂闭关修本尊并获得成就。
+
+- event_id: EV_017
+  type: 建寺
+  title: 松赞干布兴建镇肢寺、镇节寺、大昭寺与小昭寺
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 施主/主体
+    - entity: 大昭寺 (E_081)
+      role: 所建寺院
+    - entity: 小昭寺 (E_082)
+      role: 所建寺院
+    - entity: 镇肢寺 (E_084)
+      role: 所建寺院
+    - entity: 镇节寺 (E_085)
+      role: 所建寺院
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "依照授记，推翻罗刹女仰面的要地，建起镇肢寺与镇节寺，并改良所有恶劣凶地，兴建起大昭寺与小昭寺的所依能依"
+  description: 依授记推翻罗刹女仰卧地形的要地，改良恶劣凶地，系统建造多座寺庙。
+
+- event_id: EV_018
+  type: 迎请
+  title: 从印度和尼泊尔迎请法师来藏翻译经典
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 施主
+    - entity: 革萨绕 (E_036)
+      role: 受迎请者
+    - entity: 祥嘎绕 (E_037)
+      role: 受迎请者
+    - entity: 西日拉玛匝 (E_038)
+      role: 受迎请者
+    - entity: 玛哈雅那 (E_039)
+      role: 受迎请者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从印度迎请阿阇黎革萨绕和婆罗门祥嘎绕，又请来尼泊尔的大师西日拉玛匝与汉地的和尚玛哈雅那等"
+  description: 从印度、尼泊尔、汉地迎请多位法师来藏。
+
+- event_id: EV_019
+  type: 译经
+  title: 松赞干布时期翻译三藏及续部
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 施主
+    - entity: 革萨绕 (E_036)
+      role: 译者
+    - entity: 祥嘎绕 (E_037)
+      role: 译者
+    - entity: 西日拉玛匝 (E_038)
+      role: 译者
+    - entity: 玛哈雅那 (E_039)
+      role: 译者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "翻译了大量的三藏及续部，创立起了佛法的轨范"
+  description: 松赞干布时期由迎请的法师们翻译大量经典，建立佛法规范。
+
+- event_id: EV_020
+  type: 传法
+  title: 松赞干布暗中为有缘者传授大悲寂猛教言
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 传法者
+    - entity: 大悲寂猛教言 (E_110)
+      role: 所传法要
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王自身也是在暗地里为众多有缘者传授大悲寂猛教言，并加以实修"
+  description: 当时虽无公开讲法闻法，但国王暗中传授密法并带领实修。
+
+- event_id: EV_021
+  type: 伏藏埋藏
+  title: 松赞干布将《国王遗教》隐藏为三个伏藏
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 伏藏埋藏者
+    - entity: 国王遗教 (E_066)
+      role: 伏藏品
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "当时所有言教综合一起的《国王遗教》隐藏成三个伏藏"
+  description: 松赞干布的全部言教综合为《国王遗教》并隐藏为三个伏藏。
+
+- event_id: EV_022
+  type: 伏藏开取
+  title: 三位伏藏师开取《国王遗教》
+  participants:
+    - entity: 哲土哦哲 (E_040)
+      role: 伏藏师
+    - entity: 阿达尼 (E_041)
+      role: 伏藏师
+    - entity: 敦巴释迦光 (E_042)
+      role: 伏藏师
+    - entity: 国王遗教 (E_066)
+      role: 伏藏品
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "由哲土哦哲、阿达尼、敦巴释迦光三位开取伏藏，当今被人们一致称为《玛尼全集》"
+  description: 三位伏藏师分别开取三个伏藏。开取后的合集即世称《玛尼全集》，被视为藏地正法的起始。
+
+- event_id: EV_023
+  type: 派遣
+  title: 松赞干布派囤弥桑布札赴印度学习声明和文字
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 派遣者
+    - entity: 囤弥桑布札 (E_043)
+      role: 受派者
+  location: 印度 (E_090)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "文殊菩萨的化身囤弥桑布札被派到印度学习声明和文字"
+  description: null
+
+- event_id: EV_024
+  type: 创制文字
+  title: 囤弥桑布札以梵文为蓝本创制藏文
+  participants:
+    - entity: 囤弥桑布札 (E_043)
+      role: 主体
+    - entity: 语言学书籍 (E_067)
+      role: 著作成果
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "以梵文作为蓝本，撰著了藏文字形和《语言学书籍》八本"
+  description: 从印度学成归来后以梵文为基础创制藏文字形，并撰著八本语言学书籍。
+
+- event_id: EV_025
+  type: 立法
+  title: 松赞干布树立十善法与在家道德规范十六条
+  participants:
+    - entity: 松赞干布 (E_014)
+      role: 主体
+    - entity: 十善法 (E_111)
+      role: 法令内容
+    - entity: 在家道德规范十六条 (E_112)
+      role: 法令内容
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "树立十善法、重新创立了以在家道德规范十六条为主善妙的二规法令"
+  description: 藏文创制后，首次在雪域引入如法取舍的正法言论，并颁布二规法令。
+
+# ==================== 师君三尊段 (lines 72-160) ====================
+
+- event_id: EV_026
+  type: 授记
+  title: 松赞干布铜牌授记第五代出现正法
+  participants:
+    - entity: 松赞干布 (E_014 / E_P03)
+      role: 授记者
+    - entity: 赤松德赞 (E_P01)
+      role: 授记对象
+  location: null
+  time_info:
+    text: "从现在起到第五代时"
+    relative_to: 松赞干布 (E_014)
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "祖父松赞干布曾亲自授记'从现在起到第五代时，我的曾孙国王德时期出现正法。'并写在铜牌上，放在国王的地下室里"
+  description: 松赞干布将授记写在铜牌上藏于地下室，预言赤松德赞时代正法将出现。
+
+- event_id: EV_027
+  type: 执政
+  title: 赤松德赞十三岁执掌国政
+  participants:
+    - entity: 赤松德赞 (E_P01)
+      role: 主体
+  location: 藏地 (E_092)
+  time_info:
+    text: "十三岁时"
+    relative_to: 赤松德赞 (E_P01)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "国王赤松德赞在十三岁时执掌国政"
+  description: null
+
+- event_id: EV_028
+  type: 迎请
+  title: 赤松德赞迎请静命堪布入藏
+  participants:
+    - entity: 赤松德赞 (E_P01)
+      role: 施主/迎请者
+    - entity: 静命 (E_P06)
+      role: 受迎请者
+  location: 藏地 (E_092)
+  time_info:
+    text: "二十岁发心弘扬正法，之后迎请"
+    relative_to: 赤松德赞 (E_P01)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "二十岁发心弘扬正法，之后迎请萨霍的堪布菩提萨埵绕杰达（即静命）"
+  description: 赤松德赞二十岁发心弘法后，从萨霍迎请静命堪布入藏。
+
+- event_id: EV_029
+  type: 弘法
+  title: 静命为藏人传授八关斋戒及宣讲十善、十八界法门
+  participants:
+    - entity: 静命 (E_P06)
+      role: 传法者
+    - entity: 八关斋戒 (E_D01)
+      role: 所传法要
+    - entity: 十善 (E_D02)
+      role: 所传法要
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "亲教师静命为个别人传授八关斋戒，并宣讲了十善、十八界相应的法门"
+  description: 静命堪布入藏后的首批弘法活动。
+
+- event_id: EV_030
+  type: 神变
+  title: 藏地凶神恶煞雷击红山、水冲宫殿
+  participants:
+    - entity: 赤松德赞 (E_P01)
+      role: 受害方
+  location: 红山 (E_L02)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "藏地的凶神恶煞勃然大怒，他们雷击红山，水冲澎塘的宫殿，使天灾人祸屡屡出现"
+  description: 静命传法引发藏地凶神恶煞的愤怒，导致雷击、洪水等灾害。通称非人（凶神恶煞）不建实体。
+
+- event_id: EV_031
+  type: 离藏
+  title: 静命暂离藏地赴尼泊尔
+  participants:
+    - entity: 静命 (E_P06)
+      role: 主体
+    - entity: 赤松德赞 (E_P01)
+      role: 施主
+  location: 尼泊尔 (E_100)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王供养堪布大量的黄金...静命堪布说：'那么我暂时去尼泊尔境内'"
+  description: 奸臣以灾害归咎正法，要求遣送静命。静命暂去尼泊尔，但建议迎请莲花生大士。
+
+- event_id: EV_032
+  type: 派遣
+  title: 静命与赤松德赞先后派遣信使迎请莲师
+  participants:
+    - entity: 静命 (E_P06)
+      role: 派遣者
+    - entity: 赤松德赞 (E_P01)
+      role: 派遣者
+    - entity: 莲花生大士 (E_P02)
+      role: 被迎请者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我派人去请他，国王你也要派人去...于是他们先后派遣信使先行，又派降魔金刚等迅速上路"
+  description: 静命与赤松德赞各自派遣使者前去迎请莲花生大士入藏。
+
+- event_id: EV_033
+  type: 神变
+  title: 莲师顷刻到达芒耶贡塘与使者会面
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+  location: 芒耶贡塘 (E_L03)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "莲花生大士知晓此事，顷刻之间到达芒耶贡塘地方，双方见面"
+  description: 莲师以神足通顷刻到达，显示超凡能力。
+
+- event_id: EV_034
+  type: 神变
+  title: 莲师撒金创藏地金矿缘起
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+  location: 阿里 (E_L04)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲师说：'我的境界中全是黄金。'然后把他们的金子撒向阿里方向，这也创造了藏地出现金矿的缘起"
+  description: 莲师将使者所献黄金撒向阿里方向，由此创造了藏地出产金矿的缘起。
+
+- event_id: EV_035
+  type: 降伏非人
+  title: 莲师入藏途中以禅定降伏阻路鬼神
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "藏地的鬼神们降下大雪大雨，并使所有山川相互闭合，莲师则从山间畅通无阻穿行而过，依靠禅定把所有鬼神紧紧束缚住，让他们立誓守护正法"
+  description: 藏地鬼神以大雪大雨和山川闭合阻路，莲师以禅定降伏并令其立誓护法。通称非人不建实体。
+
+- event_id: EV_036
+  type: 降伏非人
+  title: 莲师遍踏藏地降伏十二地母等大力非人
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+    - entity: 十二地母 (E_N01)
+      role: 被降伏者
+    - entity: 十三革绕神 (E_N02)
+      role: 被降伏者
+    - entity: 二十一优婆塞 (E_N03)
+      role: 被降伏者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "莲师依靠幻变逐渐踏遍了包括阿里、卫藏、多康在内的整个藏地，降伏了十二地母、十三革绕神、二十一优婆塞为主的一切大力非人"
+  description: 莲师踏遍阿里、卫藏、多康整个藏地，降伏所有大力非人，令其立誓守护正法。
+
+- event_id: EV_037
+  type: 开光
+  title: 札马珍桑殿堂开光——佛像开口说话、供品发声增多
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+    - entity: 赤松德赞 (E_P01)
+      role: 主体
+    - entity: 札马珍桑殿堂 (E_T02)
+      role: 开光场所
+  location: 札马珍桑殿堂 (E_T02)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在札马珍桑殿堂进行开光时...第二天早晨寺庙里所有佛像享用神馐并且开口说话...当天所有供品全部自动发出音声，并增多起来"
+  description: 开光当晚殿堂空空，次日佛像享用神馐并开口说话，供品自动发声增多。在场人亲眼目睹。物体（佛像、供品）作为神变主体。
+
+- event_id: EV_038
+  type: 降伏非人
+  title: 莲师通过圆光识别和降伏残暴天神龙类
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+  location: 札马珍桑殿堂 (E_T02)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "请一些诸根敏锐、聪明伶俐的小孩看圆光，结果他们说出了...藏地残暴天神及龙类的名称、行为、住处等等。莲师用咄咄逼人的威力，使他们都俯首贴耳，立下誓言"
+  description: 先令小孩看圆光识别残暴天神龙类的名号与住处，再以威力令其立誓皈入正法。先后做了两次。通称非人（残暴天神及龙类）不建实体。
+
+- event_id: EV_039
+  type: 降伏非人
+  title: 莲师降伏无恼龙等龙类协助建寺
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+    - entity: 无恼龙 (E_N04)
+      role: 被降伏者/供养者
+    - entity: 赤松德赞 (E_P01)
+      role: 受者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "莲师又降伏了无恼龙等所有龙类，使他们协助国王，供养了建造寺宇的十四藏斗金粉"
+  description: 被降伏的龙类协助国王，供养十四藏斗金粉用于建寺。
+
+- event_id: EV_040
+  type: 降伏非人
+  title: 莲师在黑波山降伏鬼神罗刹
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+  location: 黑波山 (E_L08)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "莲花生大士来到黑波山，降伏所有鬼神罗刹，使他们言听计从。依靠《吉祥证道歌》镇压鬼神"
+  description: 在桑耶寺地基处降伏鬼神罗刹，依靠《吉祥证道歌》镇压并在空中跳金刚舞加持地基。通称非人（鬼神罗刹）不建实体。
+
+- event_id: EV_041
+  type: 建寺
+  title: 建造桑耶无变自成寺
+  participants:
+    - entity: 赤松德赞 (E_P01)
+      role: 施主
+    - entity: 静命 (E_P06)
+      role: 堪布/观察地基
+    - entity: 莲花生大士 (E_P02)
+      role: 加持者/奠基者
+    - entity: 桑耶寺 (E_T01)
+      role: 所建寺院
+  location: 藏地 (E_092)
+  time_info:
+    text: "五年内竣工"
+    relative_to: null
+    absolute: null
+  layers: [史传, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "以须弥山、四大部洲、八小洲、日月连同铁围山的模式建起的吉祥桑耶无变自成寺宇，加上三位王妃的三洲，这么大的面积在五年内竣工"
+  description: 菩提萨埵观察地基，莲师降伏鬼神并在空中跳金刚舞加持地基。以邬丹达波热经堂为范例，白天人工建造、晚上非人建得更高（神变层）。以须弥山等宇宙模式建成。
+
+- event_id: EV_042
+  type: 开光
+  title: 桑耶寺开光——本尊降临
+  participants:
+    - entity: 静命 (E_P06)
+      role: 开光者
+    - entity: 莲花生大士 (E_P02)
+      role: 开光者
+    - entity: 桑耶寺 (E_T01)
+      role: 开光对象
+  location: 桑耶寺 (E_T01)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "堪布菩提萨埵和莲花生大士进行开光，显示了顶层殿堂所有本尊降临到外面，诸如此类神奇的幻变真是不可思议"
+  description: 开光时本尊从顶层殿堂降临到外面，属不可思议之神变。
+
+- event_id: EV_043
+  type: 译经
+  title: 赤松德赞组织大规模翻译显密经典
+  participants:
+    - entity: 赤松德赞 (E_P01)
+      role: 施主/组织者
+    - entity: 嘉伟西年 (E_P07)
+      role: 持藏大师
+    - entity: 塔坚钦毕拉 (E_P08)
+      role: 持藏大师
+    - entity: 云毕昂策 (E_P09)
+      role: 持藏大师
+    - entity: 布玛莫札 (E_P10)
+      role: 金刚持上师
+    - entity: 现当嘎巴 (E_P11)
+      role: 金刚持上师
+    - entity: 贝若札那 (E_P18)
+      role: 译师
+    - entity: 噶·瓦拜则 (E_P25)
+      role: 译师
+    - entity: 焦·鲁坚赞 (E_P26)
+      role: 译师
+    - entity: 祥·益西德 (E_P27)
+      role: 译师
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "派有聪明才智的藏族儿童学习翻译...堪布菩提萨埵和莲花生大士等诸位班智达、贝若札那以及噶·瓦拜则、焦·鲁坚赞、祥·益西德三师等所有译师们将显密经典、最主要的注疏论著通通翻译成藏语"
+  description: 赤松德赞从印度请来大量持藏大师和金刚持上师，加上藏地本土译师，系统翻译显密经典和注疏论著。
+
+- event_id: EV_044
+  type: 出家受戒
+  title: 巴赤则出家受比丘戒——预试七人之首
+  participants:
+    - entity: 巴绕那 (E_P16)
+      role: 受戒者
+    - entity: 静命 (E_P06)
+      role: 亲教师
+    - entity: 达那西拉 (E_P12)
+      role: 羯磨师
+    - entity: 则那莫札 (E_P13)
+      role: 屏教师
+    - entity: 赤松德赞 (E_P01)
+      role: 施主/请求者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "菩提萨埵作为亲教师，达那西拉和则那莫札分别作为羯磨师与屏教师，其余十位班智达作为补充，就这样巴赤则出家为僧并受了比丘戒，取名为花扬，国王也赞称他为巴绕那"
+  description: 为观察藏人能否出家，国王请国舅大臣巴赤则出家。静命为亲教师，达那西拉为羯磨师，则那莫札为屏教师，十位班智达补充。出家取名花扬，赞称巴绕那。
+
+- event_id: EV_045
+  type: 神变
+  title: 巴绕那修持具足六通
+  participants:
+    - entity: 巴绕那 (E_P16)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他通过修持而具足了六通"
+  description: 预试七人之首巴绕那通过修持获得六种神通。
+
+- event_id: EV_046
+  type: 出家受戒
+  title: 预试七人出家受比丘戒
+  participants:
+    - entity: 预试七人 (E_G03)
+      role: 受戒者集合
+    - entity: 巴绕那 (E_P16)
+      role: 受戒者
+    - entity: 巴色朗 (E_P17)
+      role: 受戒者
+    - entity: 贝若札那 (E_P18)
+      role: 受戒者
+    - entity: 恩烂嘉巴秋扬 (E_P19)
+      role: 受戒者
+    - entity: 玛·仁钦秋 (E_P20)
+      role: 受戒者
+    - entity: 坤类旺波忠巴 (E_P21)
+      role: 受戒者
+    - entity: 拉色嘉瓦香切 (E_P22)
+      role: 受戒者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "以上七位就是众所共称的预试七人，这是藏地历史上出家僧团的开端"
+  description: 继巴赤则之后，其余六人也出家受比丘戒，七人合称"预试七人"，标志着藏地出家僧团的开端。
+
+- event_id: EV_047
+  type: 出家受戒
+  title: 国舅札玛等约三百人出家
+  participants:
+    - entity: 国舅札玛 (E_P24)
+      role: 受戒者代表
+    - entity: 赤松德赞 (E_P01)
+      role: 施主
+    - entity: 静命 (E_P06)
+      role: 亲教师
+    - entity: 莲花生大士 (E_P02)
+      role: 辅助
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王想到藏人能够出家，接着有国舅札玛及有聪明才智的民众大约三百人出家"
+  description: 预试七人出家成功后，约三百名藏人包括国舅札玛在内也随之出家。
+
+- event_id: EV_048
+  type: 派遣
+  title: 赤松德赞派贝若札那和南卡酿波前往印度求法
+  participants:
+    - entity: 赤松德赞 (E_P01)
+      role: 派遣者
+    - entity: 贝若札那 (E_P18)
+      role: 受派者
+    - entity: 南卡酿波 (E_P28)
+      role: 受派者
+  location: 印度 (E_L09)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "国王又派贝若札那和南卡酿波（虚空藏）等前往印度"
+  description: null
+
+- event_id: EV_049
+  type: 弘法
+  title: 贝若札那在西日桑哈前听受大圆满
+  participants:
+    - entity: 贝若札那 (E_P18)
+      role: 受法者
+    - entity: 西日桑哈 (E_P14)
+      role: 传法者
+    - entity: 大圆满 (E_D03)
+      role: 所传法要
+  location: 印度 (E_L09)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "贝若札那在西日桑哈前听受大圆满"
+  description: 大圆满传入藏地的关键传承事件。
+
+- event_id: EV_050
+  type: 弘法
+  title: 南卡酿波在吽嘎日座下聆听真实意法
+  participants:
+    - entity: 南卡酿波 (E_P28)
+      role: 受法者
+    - entity: 吽嘎日 (E_P15)
+      role: 传法者
+    - entity: 真实意法 (E_D04)
+      role: 所传法要
+  location: 印度 (E_L09)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "南卡酿波在吽嘎日座下聆听真实意法"
+  description: null
+
+- event_id: EV_051
+  type: 灌顶传法
+  title: 莲师为君臣赐予灌顶并宣讲《金刚橛》等
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 传法者
+    - entity: 赤松德赞 (E_P01)
+      role: 受法者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "莲花生大士也为君臣中有缘分的人们赐予下密与无上续相应的灌顶，并宣讲了《金刚橛》法部、《窍诀见鬘论》等"
+  description: 莲师为国王和大臣中有缘者赐予下密与无上续灌顶，并宣讲《金刚橛》法部和《窍诀见鬘论》。
+
+- event_id: EV_052
+  type: 神变
+  title: 莲师入于境界使枯地出水、沙滩变草原、岩山生森林
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+    - entity: 赤松德赞 (E_P01)
+      role: 请求者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "当天上午，莲师入于境界中的时候，札玛地方的一块干地便冒出水来，札马湖以前是一片沙滩，全部变成了草原，札达瓦岩山上瞬间出现了一大片森林"
+  description: 莲师按国王请求入于境界，瞬间改变藏地地理：干地出水、沙滩变草原、岩山生森林、无水处出现大江大河。
+
+- event_id: EV_053
+  type: 离藏
+  title: 奸臣劝阻致莲师事业中止
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "心狠手辣的奸臣们因为害怕各自卑鄙罪行败露而对莲师的神通神变忍无可忍，他们一味劝请，使莲师的事业中止"
+  description: 奸臣因惧怕罪行败露而不断劝阻，导致莲师改善藏地的事业中止，帝王福禄火施停止，三次降伏天龙的计划也未成功。
+
+- event_id: EV_054
+  type: 授记
+  title: 莲师预言吐蕃因邪愿臣子而衰落
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 授记者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "莲师说：依靠藏地发邪愿的臣子们的果报，使得吐蕃的幸福安宁夭折。转一大法轮时机纯熟中途也会出现大的纷乱"
+  description: 莲师预言吐蕃将因邪愿臣子而失去幸福安宁，法轮中途出现纷乱，帝王后代不守法，终致四分五裂。
+
+- event_id: EV_055
+  type: 伏藏埋藏
+  title: 莲师伏藏大量经函
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 伏藏埋藏者
+  location: 藏地 (E_092)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "并且伏藏了大量经函"
+  description: 莲师彻知未来后宣说猛咒，并埋藏大量伏藏经函。
+
+- event_id: EV_056
+  type: 离藏
+  title: 莲师突然前往罗刹洲
+  participants:
+    - entity: 莲花生大士 (E_P02)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "随后突然间就前往罗刹洲了"
+  description: 莲师在伏藏经函、宣说猛咒后突然离开藏地前往罗刹洲。lines 1-160 范围结尾，"短时间观点"的莲师驻藏时长讨论即将展开。
+
+# ==================== 莲师驻藏时长 — 仅含开头提示 (line 159) ====================
+# 注: line 159 "莲师到底在吐蕃住了多长时间呢？短时间的观点认为莲师在藏地"
+# 此处文本截断于 line 160，后续的多种说法（短/中/长时间观点）在 part2 范围内。
+# 驻藏时长的多条事件记录将在 ch03-part2.yaml 中处理。
