@@ -4037,19 +4037,22 @@ function renderTree(data) {
   });
 
   // Layout: vertical layers, horizontal spread
-  const layerHeight = 100;
+  // 动态层间距：根据最大一层的节点数调整
+  const maxGroupSize = Math.max(...Object.values(genGroups).map(g => g.length));
+  const layerHeight = Math.max(160, maxGroupSize * 12); // 节点越多层距越大
+  const nodeSpacing = 160; // 每个节点最小水平间距
+
   const centerY = height / 2 - ((maxGen + minGen) / 2) * layerHeight;
 
   const nodePositions = {};
   Object.keys(genGroups).sort((a, b) => a - b).forEach(gen => {
     const group = genGroups[gen];
     const y = centerY + gen * layerHeight;
-    const totalWidth = Math.min(width - 100, group.length * 140);
-    const startX = (width - totalWidth) / 2;
-    const gap = group.length > 1 ? totalWidth / (group.length - 1) : 0;
+    const totalWidth = group.length * nodeSpacing;
+    const startX = (width - totalWidth) / 2 + nodeSpacing / 2;
 
     group.forEach((n, i) => {
-      n.x = group.length === 1 ? width / 2 : startX + i * gap;
+      n.x = group.length === 1 ? width / 2 : startX + i * nodeSpacing;
       n.y = y;
       nodePositions[n.name] = n;
     });
@@ -4079,15 +4082,41 @@ function renderTree(data) {
       .attr("stroke-width", 1);
   });
 
-  // Draw edges (curved lines)
+  // Draw edges — 正交折线，水平段按源节点 x 排序错开避免重叠
   const linkG = g.append("g");
+
+  // 按 (src.generation, tgt.generation) 分组，组内按 src.x 排序，错开 midY
+  const edgesByLayer = {};
+  edges.forEach(e => {
+    const src = nodePositions[e.source];
+    const tgt = nodePositions[e.target];
+    if (!src || !tgt) return;
+    const key = `${src.generation}→${tgt.generation}`;
+    if (!edgesByLayer[key]) edgesByLayer[key] = [];
+    edgesByLayer[key].push(e);
+  });
+
+  Object.values(edgesByLayer).forEach(group => {
+    // 排序：按源 x 坐标
+    group.sort((a, b) => {
+      const sa = nodePositions[a.source], sb = nodePositions[b.source];
+      return (sa ? sa.x : 0) - (sb ? sb.x : 0);
+    });
+    const n = group.length;
+    const spread = Math.min(layerHeight * 0.4, n * 3); // 水平段的 Y 展开范围
+
+    group.forEach((e, idx) => {
+      e._midYOffset = n > 1 ? -spread / 2 + (spread * idx / (n - 1)) : 0;
+    });
+  });
+
   edges.forEach(e => {
     const src = nodePositions[e.source];
     const tgt = nodePositions[e.target];
     if (!src || !tgt) return;
 
-    // 正交折线: 先竖直下半程 → 水平移到目标x → 竖直下半程
-    const midY = (src.y + 14 + tgt.y - 14) / 2;
+    const baseMidY = (src.y + 14 + tgt.y - 14) / 2;
+    const midY = baseMidY + (e._midYOffset || 0);
     const path = `M${src.x},${src.y + 14} L${src.x},${midY} L${tgt.x},${midY} L${tgt.x},${tgt.y - 14}`;
 
     linkG.append("path")
