@@ -123,7 +123,14 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
         src_raw = str(rel.get('source', '')).strip()
         tgt_raw = str(rel.get('target', '')).strip()
         rtype = str(rel.get('type', '')).strip()
-        specialty = str(rel.get('specialty', '') or '').strip()
+        raw_spec = rel.get('specialty', '') or ''
+        if isinstance(raw_spec, list):
+            specialty = ', '.join(str(s) for s in raw_spec)
+        else:
+            specialty = str(raw_spec).strip()
+            # Clean up Python list repr: "['大圆满']" → "大圆满"
+            if specialty.startswith('[') and specialty.endswith(']'):
+                specialty = specialty[1:-1].replace("'", "").replace('"', '').strip()
 
         if not src_raw or not tgt_raw or not rtype:
             continue
