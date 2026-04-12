@@ -139,6 +139,62 @@ def normalize_name(name):
 print(f"Alias→canonical map: {len(alias_to_canonical)} entries")
 
 # ============================================================
+# 1.6 Load source texts for quote expansion
+# ============================================================
+source_texts = {}
+chapter_files = {
+    'ch03': os.path.join(ROOT, 'source/dudjom/chapter_md/03_藏传佛法.md'),
+    'ch04': os.path.join(ROOT, 'source/dudjom/chapter_md/04_内密三续.md'),
+    'ch05': os.path.join(ROOT, 'source/dudjom/chapter_md/05_远传经幻心.md'),
+}
+for ch, fpath in chapter_files.items():
+    if os.path.exists(fpath):
+        with open(fpath, 'r') as f:
+            source_texts[ch] = f.read()
+
+def expand_quote(short_quote, chapter_key, target_len=120):
+    """If quote is short, find it in source text and expand to surrounding context."""
+    if not short_quote or len(short_quote) >= target_len:
+        return short_quote
+    # Clean up the quote for searching
+    search_q = short_quote.strip().strip('「」""')
+    if len(search_q) < 3:
+        return short_quote
+    text = source_texts.get(chapter_key, '')
+    if not text:
+        return short_quote
+    pos = text.find(search_q)
+    if pos == -1:
+        # Try partial match (first 10 chars)
+        partial = search_q[:min(10, len(search_q))]
+        pos = text.find(partial)
+        if pos == -1:
+            return short_quote
+    # Expand: find sentence boundaries around the match
+    # Go back to previous。or newline
+    start = pos
+    for i in range(pos - 1, max(pos - 200, 0) - 1, -1):
+        if text[i] in '。\n':
+            start = i + 1
+            break
+    # Go forward to next。or newline
+    end = pos + len(search_q)
+    for i in range(end, min(end + 200, len(text))):
+        if text[i] in '。\n':
+            end = i + 1
+            break
+    expanded = text[start:end].strip()
+    # If still too short, expand more
+    if len(expanded) < 40 and start > 0:
+        for i in range(start - 2, max(start - 200, 0) - 1, -1):
+            if text[i] in '。\n':
+                expanded = text[i+1:end].strip()
+                break
+    return expanded if expanded else short_quote
+
+print(f"Source texts loaded: {list(source_texts.keys())}")
+
+# ============================================================
 # 2. 从 relations yaml 提取 links，解析 ID → name
 # ============================================================
 links = []
@@ -214,6 +270,9 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
         fname_base = os.path.basename(fpath).replace('.yaml', '')
         chapter_map = {'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心'}
         chapter = '《藏密佛教史》> ' + chapter_map.get(fname_base, fname_base)
+
+        # Expand short quotes with surrounding context from source text
+        source_quote = expand_quote(source_quote, fname_base)
 
         links.append({
             'source': src_name,
