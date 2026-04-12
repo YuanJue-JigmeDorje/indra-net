@@ -1,0 +1,1200 @@
+# ============================================================
+# 知识图谱事件抽取 — 第二品 金刚密乘 (lines 1-460)
+# 覆盖范围: 如来密意传 → 持明表示传(非人 + 人与非人) → 补特伽罗耳传
+#           (圣种五贤 → 国王匝 → 革革燃匝 → 嘎毕多吉 →
+#            佛密 → 莲花生大士 → 吽嘎日)
+# 来源: source/dudjom/chapter_md/02_金刚密乘.md
+# 提取日期: 2026-04-11
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: participants 用实体 NAME (E_NNN)
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 神变 0.75 / 传闻 0.60 / 授记 0.95
+# ============================================================
+
+# ==================== 如来密意传 (lines 10-42) ====================
+
+- event_id: EV_2001
+  type: 传法
+  title: 普贤如来在密严刹土以金刚持形象转密意法轮
+  participants:
+    - entity: 普贤如来 (E_001)
+      role: 主体
+    - entity: 五部佛 (E_003)
+      role: 受法者
+  location: 密严刹土 (E_150)
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "普贤如来在自现法界刹土极其清净的金刚大密严刹中，以相好圆满的金刚持形象……以法性不可思议的实相真如本智密意作加持"
+  description: 法身佛以密意方式在密严刹土对五部佛转法轮。
+
+- event_id: EV_2002
+  type: 传法
+  title: 报身佛对大菩萨金刚手、观世音、妙吉祥等转无上瑜伽乘法轮
+  participants:
+    - entity: 普贤如来 (E_001)
+      role: 主体
+    - entity: 金刚手菩萨 (E_004)
+      role: 受法者
+    - entity: 观世音菩萨 (E_005)
+      role: 受法者
+    - entity: 妙吉祥 (E_006)
+      role: 受法者
+  location: 密严刹土 (E_150)
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "对殊胜觉性的眷属大菩萨金刚手、观世音、妙吉祥等……通过密意表示恒常不断转了不可言说的无上瑜伽乘法轮"
+  description: 报身圆满受用身在密严刹土对菩萨众持续转法轮。
+
+# ==================== 结集密教 (lines 43-55) ====================
+
+- event_id: EV_2003
+  type: 结集
+  title: 密主金刚手结集大圆满等绝大多数续
+  participants:
+    - entity: 金刚手菩萨 (E_004)
+      role: 主体
+    - entity: 金刚法 (E_007)
+      role: 协作者
+    - entity: 金刚藏 (E_008)
+      role: 协作者
+    - entity: 妙吉祥 (E_006)
+      role: 协作者
+    - entity: 观世音菩萨 (E_005)
+      role: 协作者
+    - entity: 极喜金刚 (E_009)
+      role: 协作者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "大圆满等绝大多数续是由密主金刚手以及金刚法、金刚藏、文殊菩萨、观世音菩萨、化身极喜金刚等结集"
+  description: 密续结集由密主金刚手为主，诸菩萨协作完成。
+
+- event_id: EV_2004
+  type: 结集
+  title: 妙月结集《时轮金刚》，金刚藏结集《喜金刚》等
+  participants:
+    - entity: 妙月 (E_123)
+      role: 主体
+    - entity: 金刚藏 (E_008)
+      role: 主体
+    - entity: 金刚手菩萨 (E_004)
+      role: 主体
+    - entity: 金刚亥母 (E_011)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 传闻
+  confidence: 0.85
+  source_quote: "《时轮金刚》是由妙月结集、《喜金刚》由金刚藏结集、《戒生续》由金刚手结集、《金刚空行续》由金刚亥母结集"
+  description: 不同续部各有其结集者。
+
+# ==================== 非人持明表示传 (lines 60-76) ====================
+
+- event_id: EV_2005
+  type: 传法
+  title: 文殊菩萨示现锐利金刚童子在天界传法
+  participants:
+    - entity: 妙吉祥 (E_006)
+      role: 主体
+    - entity: 具称胜护天人 (E_030)
+      role: 受法者
+  location: 天界
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "文殊菩萨示现锐利金刚童子的庄严身相，在天界为具称胜护天人讲解"
+  description: 三部怙主之文殊在天界开启天人持明传承。
+
+- event_id: EV_2006
+  type: 传法
+  title: 天界持明传承：具称胜护天人至十万天人持明众
+  participants:
+    - entity: 具称胜护天人 (E_030)
+      role: 传法者
+    - entity: 光耀珍宝梵天 (E_031)
+      role: 受法者
+    - entity: 众生主梵天 (E_032)
+      role: 受法者
+    - entity: 度众梵天 (E_033)
+      role: 受法者
+    - entity: 具髻梵天 (E_034)
+      role: 受法者
+    - entity: 帝释天王 (E_035)
+      role: 受法者
+    - entity: 十万天人持明众 (E_141)
+      role: 受法者
+  location: 天界
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "具称胜护天人——光耀珍宝梵天——众生主梵天——度众梵天——具髻梵天——帝释天王——十万天人持明众"
+  description: 天界持明表示传，依次递传至十万天人。
+
+- event_id: EV_2007
+  type: 传法
+  title: 观世音菩萨示现甘露药身相在龙宫传法
+  participants:
+    - entity: 观世音菩萨 (E_005)
+      role: 主体
+    - entity: 黑喉龙王 (E_036)
+      role: 受法者
+  location: 龙宫
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "观世音菩萨示现甘露药的身相，在龙宫为黑喉龙王讲解"
+  description: 三部怙主之观世音在龙宫开启龙族持明传承。
+
+- event_id: EV_2008
+  type: 传法
+  title: 龙宫持明传承：黑喉龙王至十万龙持明众
+  participants:
+    - entity: 黑喉龙王 (E_036)
+      role: 传法者
+    - entity: 嘎德玛龙母 (E_037)
+      role: 受法者
+    - entity: 德仓玛龙母 (E_038)
+      role: 受法者
+    - entity: 意喜龙 (E_039)
+      role: 受法者
+    - entity: 安置龙 (E_040)
+      role: 受法者
+    - entity: 十万龙持明众 (E_142)
+      role: 受法者
+  location: 龙宫
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "黑喉龙王——嘎德玛龙母——德仓玛龙母——意喜龙——安置龙——十万龙持明众"
+  description: 龙宫持明表示传，依次递传至十万龙族。
+
+- event_id: EV_2009
+  type: 传法
+  title: 金刚手菩萨示现忿怒身相在夜叉境传法
+  participants:
+    - entity: 金刚手菩萨 (E_004)
+      role: 主体
+    - entity: 普贤夜叉 (E_041)
+      role: 受法者
+  location: 夜叉境
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "金刚手菩萨示现忿怒可怖的威猛身相，在夜叉境内为普贤夜叉传讲"
+  description: 三部怙主之金刚手在夜叉境开启夜叉持明传承。
+
+- event_id: EV_2010
+  type: 传法
+  title: 夜叉持明传承：普贤夜叉至十万夜叉持明众
+  participants:
+    - entity: 普贤夜叉 (E_041)
+      role: 传法者
+    - entity: 金刚手夜叉 (E_042)
+      role: 受法者
+    - entity: 具称护方夜叉 (E_043)
+      role: 受法者
+    - entity: 流星面夜叉 (E_044)
+      role: 受法者
+    - entity: 十万夜叉持明众 (E_143)
+      role: 受法者
+  location: 夜叉境
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "普贤夜叉——金刚手夜叉——具称护方夜叉——流星面夜叉——十万夜叉持明众"
+  description: 夜叉持明表示传，依次递传至十万夜叉。
+
+- event_id: EV_2011
+  type: 灌顶
+  title: 金刚萨埵为胜心天子授如来方便灌顶并传大圆满窍诀
+  participants:
+    - entity: 金刚萨埵 (E_010)
+      role: 灌顶师
+    - entity: 胜心天子 (E_045)
+      role: 受者
+  location: 三十三天 (E_177)
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "金刚萨埵依靠十方三世一切佛陀及所有五部如来的加持，为胜心天子授予如来方便灌顶，并且恩赐大圆满所有窍诀"
+  description: 大圆满法在天界弘扬的起点。
+
+- event_id: EV_2012
+  type: 弘法
+  title: 胜心天子在天界弘扬大圆满
+  participants:
+    - entity: 胜心天子 (E_045)
+      role: 主体
+  location: 天界
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "随后他在天界弘扬开来"
+  description: 胜心天子得灌顶后将大圆满弘扬于天界。
+
+# ==================== 人与非人中出现的持明表示传 (lines 78-91) ====================
+
+- event_id: EV_2013
+  type: 集会
+  title: 圣种五贤聚集玛拉雅山顶哀叹佛陀涅槃
+  participants:
+    - entity: 圣种五贤 (E_140)
+      role: 主体
+    - entity: 具称胜护天人 (E_030)
+      role: 成员
+    - entity: 安置龙 (E_040)
+      role: 成员
+    - entity: 流星面夜叉 (E_044)
+      role: 成员
+    - entity: 慧方便罗刹 (E_046)
+      role: 成员
+    - entity: 乐匝布无垢称 (E_125)
+      role: 成员
+  location: 玛拉雅山 (E_151)
+  time_info: "佛陀入灭后二十八年"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "具称胜护天人、安置龙王、流星面夜叉、慧方便罗刹、乐匝布无垢称——圣种五贤以各自的神通知道世间怙主佛陀趣入大涅槃以后……依靠神变聚集在楞伽境内的玛拉雅山顶上"
+  description: 佛陀涅槃二十八年后圣种五贤聚集玛拉雅山。
+
+- event_id: EV_2014
+  type: 传法
+  title: 密主金刚手在玛拉雅山顶为圣种五贤传密法
+  participants:
+    - entity: 金刚手菩萨 (E_004)
+      role: 主体
+    - entity: 圣种五贤 (E_140)
+      role: 受法者
+  location: 玛拉雅山 (E_151)
+  time_info: "佛陀入灭后二十八年"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "密主金刚手……就现身在玛拉雅山顶，为圣种五贤及其他多数持明僧众重复宣讲了以前本师在密严刹土等处宣说的所有密乘佛法"
+  description: 密法从法界下降至人间的关键事件。
+
+- event_id: EV_2015
+  type: 伏藏
+  title: 慧方便罗刹将密法以蓝琉璃液写金函隐藏于虚空界
+  participants:
+    - entity: 慧方便罗刹 (E_046)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "这所有密法由慧方便罗刹用蓝琉璃液写在金函上，以密意七妙力印持而隐藏在虚空界中"
+  description: 密法以物质形式封藏于虚空界。
+
+# ==================== 楞伽国相关 (lines 92-124) ====================
+
+- event_id: EV_2016
+  type: 调伏
+  title: 嘎哈那巴调伏大罗刹女布夏热波及五百眷属
+  participants:
+    - entity: 嘎哈那巴 (E_097)
+      role: 主体
+    - entity: 布夏热波 (E_047)
+      role: 受调伏者
+  location: 楞伽国 (E_152)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "大阿阇黎嘎哈那巴到了那里，调伏了一位名叫布夏热波的大罗刹女和她的五百眷属，并且将密法弘扬开来"
+  description: 嘎哈那巴在楞伽国降伏罗刹、弘扬密法。
+
+- event_id: EV_2017
+  type: 弘法
+  title: 莲花生大士师徒在楞伽住六年后到印度
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+  location: 楞伽国 (E_152)
+  time_info: "六年"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "莲花生大士师徒也到那里住了六年才到印度的"
+  description: 莲师在楞伽国住了六年。
+
+# ==================== 补特伽罗耳传 — 国王匝 (lines 125-175) ====================
+
+- event_id: EV_2018
+  type: 弘法
+  title: 国王拉卡阿秀迎请五百论师住阿白山精舍弘扬大乘
+  participants:
+    - entity: 国王拉卡阿秀 (E_065)
+      role: 祈请者
+    - entity: 五百阿阇黎 (E_145)
+      role: 主体
+  location: 阿白山 (E_165)
+  time_info: "国王嘎讷卡之子掌权时期"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "西方的国王拉卡阿秀迎请这五百论师，请他们住在建于阿白山顶峰的精舍中"
+  description: 大乘在此时开始格外兴盛。
+
+- event_id: EV_2019
+  type: 神变
+  title: 密法经函及金刚手一肘像降落到国王匝王宫
+  participants:
+    - entity: 国王匝 (E_060)
+      role: 受者
+    - entity: 金刚手一肘像 (E_280)
+      role: 圣物
+    - entity: 佛陀平等行续 (E_214)
+      role: 法藏
+  location: 萨霍 (E_154)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在他的王宫上真正降落了《佛陀平等行续》等密宗所有大法藏以及密主金刚手的一肘像"
+  description: 国王匝修行期间密法经函与圣像从天降落。
+
+- event_id: EV_2020
+  type: 修行成就
+  title: 国王匝修行七月亲见金刚萨埵并得智慧灌顶
+  participants:
+    - entity: 国王匝 (E_060)
+      role: 主体
+    - entity: 金刚萨埵 (E_010)
+      role: 本尊
+  location: null
+  time_info: "七个月"
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "依靠《面见金刚萨埵品》与金刚手菩萨像修行了七个月，由此亲见金刚萨埵尊颜并且得受了智慧灌顶"
+  description: 国王匝修行七月后面见金刚萨埵。
+
+- event_id: EV_2021
+  type: 传法
+  title: 革革燃匝通达续部后得金刚萨埵授记、密主金刚手降临传灌顶
+  participants:
+    - entity: 革革燃匝 (E_080)
+      role: 受法者
+    - entity: 金刚萨埵 (E_010)
+      role: 授记者
+    - entity: 金刚手菩萨 (E_004)
+      role: 灌顶师
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "经过修行，金刚萨埵现身并预言说……密主金刚手直接降临，为他传授了圆满义教诸乘的灌顶"
+  description: 革革燃匝通达《面见金刚萨埵品》后得密主亲传灌顶。
+
+- event_id: EV_2022
+  type: 传法
+  title: 革革燃匝分十八大续部传给国王匝
+  participants:
+    - entity: 革革燃匝 (E_080)
+      role: 主体
+    - entity: 国王匝 (E_060)
+      role: 受法者
+    - entity: 十八大续部 (E_266)
+      role: 法门
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "阿阇黎革革燃匝依照密主言教奉行，将续部分成十八大续部以后传授给国王匝"
+  description: 十八大续部由革革燃匝分类后传授国王匝。
+
+# ==================== 革革燃匝 (lines 180-210) ====================
+
+- event_id: EV_2023
+  type: 修行成就
+  title: 革革燃匝行持禁行十二年证得大手印悉地
+  participants:
+    - entity: 革革燃匝 (E_080)
+      role: 主体
+  location: null
+  time_info: "十二年"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "白天为数以千计狗形象的勇士及瑜伽母讲法，晚上就和他们一起前赴尸陀林作会供等誓言普行，就这样行持了十二年，最终证得大手印悉地"
+  description: 革革燃匝以独特禁行十二年后成就大手印。
+
+- event_id: EV_2024
+  type: 传法
+  title: 十八大续部传承链：国王匝至公主贡玛德波
+  participants:
+    - entity: 国王匝 (E_060)
+      role: 传法者
+    - entity: 革革燃匝 (E_080)
+      role: 传承者
+    - entity: 太子德札布哲 (E_089)
+      role: 传承者
+    - entity: 桑哈燃匝 (E_090)
+      role: 传承者
+    - entity: 夏札布德 (E_091)
+      role: 传承者
+    - entity: 公主贡玛德波 (E_092)
+      role: 传承者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王匝将这所有续部传给革革燃匝——太子德札布哲或者小恩札布德——桑哈燃匝——夏札布德或俄巴燃匝——公主贡玛德波"
+  description: 十八大续部的完整传承链。
+
+- event_id: EV_2025
+  type: 传法
+  title: 国王匝将大乐光明教言传匝兰达热巴
+  participants:
+    - entity: 国王匝 (E_060)
+      role: 主体
+    - entity: 匝兰达热 (E_088)
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "所有大乐光明教言，国王匝恩赐与哲土雪巴或者匝兰达热巴"
+  description: 大乐光明教言由国王匝传匝兰达热巴。
+
+- event_id: EV_2026
+  type: 传法
+  title: 匝兰达热巴传法给黑行尊者及其徒众
+  participants:
+    - entity: 匝兰达热 (E_088)
+      role: 主体
+    - entity: 黑行尊者 (E_094)
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "匝兰达热巴传授给黑行尊者及其徒众，一脉相承"
+  description: 大乐光明教言经匝兰达热巴传黑行尊者。
+
+- event_id: EV_2027
+  type: 传法
+  title: 业手印传承：公主贡玛德波—革革燃匝—嘎毕多吉与佛密
+  participants:
+    - entity: 公主贡玛德波 (E_092)
+      role: 传法者
+    - entity: 革革燃匝 (E_080)
+      role: 传承者
+    - entity: 嘎毕多吉 (E_081)
+      role: 受法者
+    - entity: 佛密 (E_082)
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "业手印传承的起源也是他，公主贡玛德波——革革燃匝——嘎毕多吉与佛密"
+  description: 业手印传承链。
+
+# ==================== 嘎毕多吉 (lines 212-242) ====================
+
+- event_id: EV_2028
+  type: 神变
+  title: 嘎毕多吉修真实名经时文殊画像面部发光
+  participants:
+    - entity: 嘎毕多吉 (E_081)
+      role: 主体
+    - entity: 真实名经 (E_220)
+      role: 法门
+  location: 邬金 (E_153)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他在邬金禅玛德玛的地方修行圣者文殊菩萨的《真实名经》修法，当接近成就之时，文殊菩萨的画像面部发光，照到该洲很远的地方"
+  description: 嘎毕多吉修行接近成就时出现瑞相，由此得名"同日"。
+
+- event_id: EV_2029
+  type: 神变
+  title: 嘎毕多吉化现多种形象避免被害
+  participants:
+    - entity: 嘎毕多吉 (E_081)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "这时他化现为大象、骏马、童子、童女、水牛、孔雀等各种各样的形象。那人不知大师到底是哪一个"
+  description: 嘎毕多吉以变化身避免邪见修行人暗害，由此得名"种种相"。
+
+- event_id: EV_2030
+  type: 弘法
+  title: 嘎毕多吉在那烂陀寺住十年护持密法
+  participants:
+    - entity: 嘎毕多吉 (E_081)
+      role: 主体
+  location: 那烂陀寺 (E_159)
+  time_info: "十年"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他在那烂陀寺也住了十年，一直护持密法"
+  description: 嘎毕多吉驻锡那烂陀寺十年。
+
+- event_id: EV_2031
+  type: 修行成就
+  title: 嘎毕多吉次第证得金刚身
+  participants:
+    - entity: 嘎毕多吉 (E_081)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他是次第证得金刚身的"
+  description: 嘎毕多吉最终证得金刚身。
+
+- event_id: EV_2032
+  type: 传法
+  title: 佛智阿阇黎在嘎毕多吉前闻修五内续部获智慧自在
+  participants:
+    - entity: 佛智 (E_083)
+      role: 受法者
+    - entity: 嘎毕多吉 (E_081)
+      role: 主体
+    - entity: 幻化网 (E_219)
+      role: 法门
+    - entity: 佛陀平等行续 (E_214)
+      role: 法门
+    - entity: 密集续 (E_221)
+      role: 法门
+    - entity: 月密明点续 (E_222)
+      role: 法门
+  location: 邬金 (E_153)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛智阿阇黎也在嘎毕多吉前通过听闻、修行《幻化网》、《平等行续》、《密集续》、《月密明点续》十八续部之首五内续部而获得智慧自在"
+  description: 佛智在嘎毕多吉处闻修五内续部。
+
+- event_id: EV_2033
+  type: 传法
+  title: 《密集续·圣类》开始出现——月称传玛当革巴等
+  participants:
+    - entity: 月称菩萨 (E_106)
+      role: 主体
+    - entity: 玛当革巴 (E_104)
+      role: 受法者
+    - entity: 贡嘎那热种瓦 (E_105)
+      role: 受法者
+    - entity: 明炬论 (E_235)
+      role: 法门
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "玛当革巴和贡嘎那热种瓦尊者也在月称菩萨面前直接听受，最先得到了《明炬论》的书函"
+  description: 密集续圣类传承的起始时期。
+
+# ==================== 佛密 (lines 244-280) ====================
+
+- event_id: EV_2034
+  type: 神变
+  title: 佛密修行圣文殊时出现成就瑞相
+  participants:
+    - entity: 佛密 (E_082)
+      role: 主体
+  location: 波罗奈斯 (E_161)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "文殊画像笑逐颜开，修行圣物——红牛的酥油汁也是滚滚沸腾，凋零的花朵也全部重新绽放"
+  description: 佛密修行时出现画像笑、酥油沸腾、花朵重开三种瑞相。
+
+- event_id: EV_2035
+  type: 传法
+  title: 佛密在邬金拜见嘎毕多吉聆听瑜伽续及五内续部
+  participants:
+    - entity: 佛密 (E_082)
+      role: 受法者
+    - entity: 嘎毕多吉 (E_081)
+      role: 主体
+    - entity: 幻化网 (E_219)
+      role: 法门
+  location: 邬金 (E_153)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他来到邬金而得以拜见嘎毕多吉尊者，聆听了瑜伽续及无上五内续部，尤其精通《幻化网》"
+  description: 佛密在嘎毕多吉处深入学习密续。
+
+- event_id: EV_2036
+  type: 朝圣
+  title: 佛密与佛寂到普陀山朝拜观世音菩萨
+  participants:
+    - entity: 佛密 (E_082)
+      role: 主体
+    - entity: 佛寂 (E_085)
+      role: 主体
+    - entity: 观世音菩萨 (E_005)
+      role: 圣众
+    - entity: 圣度母 (E_013)
+      role: 圣众
+    - entity: 颦眉度母 (E_014)
+      role: 圣众
+  location: 普陀山 (E_160)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他与佛寂一同到普陀山朝拜观世音菩萨，到了山脚之时，看见圣度母正在为群龙传法，到了山腰，见到颦眉度母在给非天及夜叉众讲法，到了山顶，看到圣观音真实安坐在那里"
+  description: 佛密与佛寂在普陀山山脚、山腰、山顶分别见三位圣众。
+
+- event_id: EV_2037
+  type: 授记
+  title: 圣度母授记佛密去岗底斯雪山修行
+  participants:
+    - entity: 圣度母 (E_013)
+      role: 授记者
+    - entity: 佛密 (E_082)
+      role: 受者
+  location: 普陀山 (E_160)
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "圣度母对他授记说：'去到岗底斯雪山修行吧。'"
+  description: 度母指引佛密未来修行方向。
+
+- event_id: EV_2038
+  type: 修行成就
+  title: 佛密在岗底斯山多次见金刚法界大坛城
+  participants:
+    - entity: 佛密 (E_082)
+      role: 主体
+  location: 岗底斯山 (E_162)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "到了岗底斯山修行，结果多次见到金刚法界大坛城，并且达到了与文殊菩萨如同人和人对话一样的境界"
+  description: 佛密在岗底斯山达到极高修证境界。
+
+- event_id: EV_2039
+  type: 修行成就
+  title: 佛密最终虹身而逝
+  participants:
+    - entity: 佛密 (E_082)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他最终身体消失不见（即虹身而逝）"
+  description: 佛密证得虹身成就。
+
+- event_id: EV_2040
+  type: 传法
+  title: 革革燃匝传如朗得为哦哲与仙人巴克达
+  participants:
+    - entity: 革革燃匝 (E_080)
+      role: 主体
+    - entity: 如朗得为哦哲 (E_110)
+      role: 受法者
+    - entity: 仙人巴克达 (E_111)
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王革革燃匝传给如朗得为哦哲与仙人巴克达二人"
+  description: 革革燃匝密续传承的另一支脉。
+
+- event_id: EV_2041
+  type: 传法
+  title: 如朗得为哦哲传给班则哈赛
+  participants:
+    - entity: 如朗得为哦哲 (E_110)
+      role: 主体
+    - entity: 班则哈赛 (E_112)
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "如朗得为哦哲又传给班则哈赛"
+  description: null
+
+- event_id: EV_2042
+  type: 修行成就
+  title: 语自在称获语自在成就及大手印持明
+  participants:
+    - entity: 语自在称 (E_113)
+      role: 主体
+    - entity: 班则哈赛 (E_112)
+      role: 传法者
+  location: 那烂陀寺 (E_159)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他依靠窍诀修行获得语自在成就，身体也成为双运身，获得大手印持明"
+  description: 语自在称依班则哈赛传授修行获多种成就。
+
+- event_id: EV_2043
+  type: 传法
+  title: 班则哈赛与仙人巴克达在萨霍传给国王札巴哈德
+  participants:
+    - entity: 班则哈赛 (E_112)
+      role: 主体
+    - entity: 仙人巴克达 (E_111)
+      role: 主体
+    - entity: 札巴哈德 (E_066)
+      role: 受法者
+  location: 萨霍 (E_154)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "班则哈赛大师和仙人巴克达尊者在萨霍传给国王札巴哈德"
+  description: 密续传承到达国王札巴哈德。
+
+# ==================== 札巴哈德 (lines 282-292) ====================
+
+- event_id: EV_2044
+  type: 出家受戒
+  title: 札巴哈德在寂光与福称面前出家
+  participants:
+    - entity: 札巴哈德 (E_066)
+      role: 受戒者
+    - entity: 寂光 (E_114)
+      role: 亲教师
+    - entity: 福称 (E_115)
+      role: 亲教师
+  location: 则达瓦山 (E_179)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在则达瓦山境内的寂光规范师与玛热地方的持戒大师福称面前出家，被共称为释迦光"
+  description: 札巴哈德出家受戒，得名释迦光。
+
+- event_id: EV_2045
+  type: 弘法
+  title: 札巴哈德与释迦友师徒到克什米尔利益众生
+  participants:
+    - entity: 札巴哈德 (E_066)
+      role: 主体
+    - entity: 释迦友 (E_109)
+      role: 弟子
+  location: 克什米尔 (E_166)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "后来他们师徒二人到了克什米尔，利益众生的事业极其广大"
+  description: 札巴哈德师徒在克什米尔广弘佛法。
+
+- event_id: EV_2046
+  type: 传法
+  title: 佛密与莲师在札巴哈德前听受密法
+  participants:
+    - entity: 佛密 (E_082)
+      role: 受法者
+    - entity: 莲花生大士 (E_084)
+      role: 受法者
+    - entity: 札巴哈德 (E_066)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "阿阇黎佛密与莲花生大士在札巴哈德上师面前也听受了密法"
+  description: 佛密与莲师同在札巴哈德前受法。
+
+# ==================== 莲花生大士 (lines 294-432) ====================
+
+- event_id: EV_2047
+  type: 化生
+  title: 莲花生大士在邬金海岛莲花中化生
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+    - entity: 阿弥陀佛 (E_012)
+      role: 化身源
+  location: 邬金 (E_153)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "从极乐世界怙主阿弥陀佛的心间放射出一个纯金色的金刚'舍'字，从中幻化出一位相好庄严、手持金刚和莲花的八岁童子，安坐在莲花苞中"
+  description: 莲师由阿弥陀佛心间金刚舍字化生于邬金海岛莲花中。
+
+- event_id: EV_2048
+  type: 登基
+  title: 恩札布德迎请莲花生回宫立为太子
+  participants:
+    - entity: 恩札布德 (E_063)
+      role: 主体
+    - entity: 莲花生大士 (E_084)
+      role: 受者
+    - entity: 法臣哲那增 (E_118)
+      role: 发现者
+  location: 邬金 (E_153)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "法臣哲那增首先发现了莲花中的童子，接着国王也看到了，他们认为他有当太子的缘分，便迎请回宫"
+  description: 恩札布德将莲花中的童子迎请回宫。
+
+- event_id: EV_2049
+  type: 出家受戒
+  title: 莲师在札巴哈德前出家被称释迦桑给
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 受戒者
+    - entity: 札巴哈德 (E_066)
+      role: 亲教师
+  location: 萨霍 (E_154)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "来到萨霍地方，在阿阇黎札巴哈德大师面前出家，被一致共称为'释迦桑给（释迦狮子）'"
+  description: 莲师在札巴哈德前出家。
+
+- event_id: EV_2050
+  type: 灌顶
+  title: 智慧空行桑瓦益西为莲师授外内密灌顶
+  participants:
+    - entity: 桑瓦益西 (E_127)
+      role: 灌顶师
+    - entity: 莲花生大士 (E_084)
+      role: 受者
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "空行母使莲师变成吽字，吞入口中，在她体内圆满授予外、内、密灌顶以后在莲花处出来"
+  description: 桑瓦益西以独特方式为莲师授予三重灌顶。
+
+- event_id: EV_2051
+  type: 传法
+  title: 莲师在八大持明前闻思八大修部、在佛密前闻思幻化网、在西日桑哈前闻思大圆满
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 受法者
+    - entity: 八大持明 (E_144)
+      role: 主体
+    - entity: 佛密 (E_082)
+      role: 主体
+    - entity: 西日桑哈 (E_119)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在八大持明面前闻思八大修部，在佛密大师面前闻思《幻化网》，于西日桑哈面前闻思大圆满"
+  description: 莲师广泛从多位上师处学习所有密续要义。
+
+- event_id: EV_2052
+  type: 修行成就
+  title: 莲师与曼达绕瓦修长寿法证得长寿自在持明悉地
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+    - entity: 曼达绕瓦 (E_120)
+      role: 修行伴侣
+    - entity: 无量寿佛 (E_015)
+      role: 灌顶师
+  location: 玛绕德嘎山洞 (E_172)
+  time_info: "三个月"
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "带着她到玛绕德嘎山洞修行三个月长寿法，结果怙主无量寿佛亲自降临赐予灌顶，加持他与自身成为无二无别"
+  description: 莲师修长寿法时无量寿佛亲临灌顶，莲师成就无生无死金刚身。
+
+- event_id: EV_2053
+  type: 神变
+  title: 莲师在萨霍被烧不死显示神变
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+  location: 萨霍 (E_154)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "王臣把他烧在火中。莲花生大士显示神变，安然坐在芝麻油盘旋而成的湖泊中央莲花茎尖端上"
+  description: 莲师被萨霍王臣火焚不损，坐莲花上。
+
+- event_id: EV_2054
+  type: 神变
+  title: 莲师在邬金被焚烧后以佛父佛母身相安坐莲花上
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+  location: 邬金 (E_153)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "魔臣等众人把他放在檀香火里焚烧，结果他以佛父佛母的身相安坐在湖泊中央的莲花茎上"
+  description: 莲师二度被焚不损，示现骷髅串神变，得名班玛托创匝。
+
+- event_id: EV_2055
+  type: 弘法
+  title: 莲师在邬金作国王国师十三年安置人民于佛法
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+    - entity: 教集法海 (E_241)
+      role: 法门
+  location: 邬金 (E_153)
+  time_info: "十三年"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他在十三年当中作国王的国师，把邬金举国人民安置于佛法中，赐予《教集法海》能成熟的灌顶与能解脱的教言"
+  description: 莲师在邬金国弘法十三年。
+
+- event_id: EV_2056
+  type: 调伏
+  title: 莲师幻化比丘旺波德调伏阿育王建千万佛塔
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+    - entity: 阿育王 (E_069)
+      role: 受调伏者
+  location: 南赡部洲
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲师幻化成一位名叫旺波德的比丘，使国王生起不退转的信心而在一夜之间于南赡部洲建起了由佛舍利装藏的千万佛塔"
+  description: 莲师以比丘形象调伏阿育王。
+
+- event_id: EV_2057
+  type: 调伏
+  title: 莲师在金刚座降伏外道五百本师
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+    - entity: 空行敦德玛 (E_131)
+      role: 协助者
+  location: 金刚座 (E_163)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲师用空行敦德玛（降魔母）供养的猛咒回遮，使天降霹雳，从而降伏了所有外道本师"
+  description: 莲师在金刚座以辩论与威力降伏外道五百本师。
+
+- event_id: EV_2058
+  type: 修行成就
+  title: 莲师在扬列秀山洞修殊胜成就遭违缘后以金刚橛续平息
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+    - entity: 释迦得瓦 (E_121)
+      role: 修行伴侣
+    - entity: 金刚橛续 (E_242)
+      role: 法门
+  location: 扬列秀山洞 (E_173)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "三个大力鬼神罗刹制造违缘使得当地三年中滴雨不降……当派去的二人带着《金刚橛续》刚到，各种障碍自行平息"
+  description: 莲师在印度尼泊尔交界修行时以金刚橛续消除违缘，成就大手印持明身。
+
+- event_id: EV_2059
+  type: 调伏
+  title: 莲师降伏十六护橛等世间鬼神使其承诺作护法
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "降伏十六护橛等世间所有男性女性鬼神，使他们承诺，作为护法神"
+  description: 莲师著真实意修法和金刚橛修法降伏鬼神。
+
+- event_id: EV_2060
+  type: 弘法
+  title: 莲师在卓当巴调伏空行非人并让建造寺庙
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+  location: 卓当巴 (E_178)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "逐渐调伏那里的空行等非人及人们，并且让他们建造寺庙"
+  description: 莲师在卓当巴弘法利生。
+
+- event_id: EV_2061
+  type: 神变
+  title: 莲师在达那够夏海岛蒙金刚亥母加持降伏龙类与星曜
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+    - entity: 金刚亥母 (E_011)
+      role: 加持者
+  location: 达那够夏海岛 (E_171)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "当在粗恶园行持禁行时蒙受金刚亥母现身加持，降伏了海中的龙类与空中的所有星曜"
+  description: 莲师在达那够夏海岛得金刚亥母加持降伏诸类众生。
+
+- event_id: EV_2062
+  type: 弘法
+  title: 莲师在祥雄幻化为达布舍匝以大圆满使众多人成就光明身
+  participants:
+    - entity: 莲花生大士 (E_084)
+      role: 主体
+  location: 祥雄 (E_181)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在祥雄地方，幻化成名叫达布舍匝的自生童子，以大圆满耳传教授使为数众多的有缘者成就光明身"
+  description: 莲师在祥雄以化身弘扬大圆满。
+
+# ==================== 吽嘎日 (lines 436-460) ====================
+
+- event_id: EV_2063
+  type: 出家受戒
+  title: 吽嘎日在那烂陀寺在佛智与罗睺罗前出家
+  participants:
+    - entity: 吽嘎日 (E_122)
+      role: 受戒者
+    - entity: 佛智 (E_083)
+      role: 亲教师
+    - entity: 班智达罗睺罗 (E_107)
+      role: 亲教师
+  location: 那烂陀寺 (E_159)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "到印度中央那烂陀寺，在阿阇黎佛智与班智达罗睺罗尊者前出家"
+  description: 吽嘎日由婆罗门转信佛教后在那烂陀寺出家。
+
+- event_id: EV_2064
+  type: 修行成就
+  title: 吽嘎日修行六月获大手印殊胜成就
+  participants:
+    - entity: 吽嘎日 (E_122)
+      role: 主体
+    - entity: 班则黑日嘎 (E_021)
+      role: 本尊
+  location: null
+  time_info: "六个月"
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在六个月期间完成了依、近依、修的所有修法，在上旬的初八黎明时分，虚空中传出巨大的'吽'声，他现量见到了班则黑日嘎等一切坛城，依靠大修之道而获得大手印殊胜成就"
+  description: 吽嘎日以手印女为修行所依，六月修行后见坛城获大手印成就。
