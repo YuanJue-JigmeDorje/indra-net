@@ -4082,75 +4082,67 @@ function renderTree(data) {
       .attr("stroke-width", 1);
   });
 
-  // Draw edges — 正交折线，水平段按源节点 x 排序错开避免重叠
+  // Draw edges — 总线(bus)模式
   const linkG = g.append("g");
+  const lineColor = "rgba(106,174,214,0.35)";
+  const lineW = 1.2;
 
-  // 按 (src.generation, tgt.generation) 分组，组内按 src.x 排序，错开 midY
-  const edgesByLayer = {};
+  // 按父节点分组
+  const childrenByParent = {};
   edges.forEach(e => {
     const src = nodePositions[e.source];
     const tgt = nodePositions[e.target];
     if (!src || !tgt) return;
-    const key = `${src.generation}→${tgt.generation}`;
-    if (!edgesByLayer[key]) edgesByLayer[key] = [];
-    edgesByLayer[key].push(e);
-  });
-
-  Object.values(edgesByLayer).forEach(group => {
-    // 排序：按源 x 坐标
-    group.sort((a, b) => {
-      const sa = nodePositions[a.source], sb = nodePositions[b.source];
-      return (sa ? sa.x : 0) - (sb ? sb.x : 0);
-    });
-    const n = group.length;
-    const spread = Math.min(layerHeight * 0.4, n * 3); // 水平段的 Y 展开范围
-
-    group.forEach((e, idx) => {
-      e._midYOffset = n > 1 ? -spread / 2 + (spread * idx / (n - 1)) : 0;
-    });
-  });
-
-  edges.forEach(e => {
-    const src = nodePositions[e.source];
-    const tgt = nodePositions[e.target];
-    if (!src || !tgt) return;
-
-    const baseMidY = (src.y + 14 + tgt.y - 14) / 2;
-    const midY = baseMidY + (e._midYOffset || 0);
-    const path = `M${src.x},${src.y + 14} L${src.x},${midY} L${tgt.x},${midY} L${tgt.x},${tgt.y - 14}`;
-
-    linkG.append("path")
-      .attr("class", "link-line")
-      .attr("d", path)
-      .attr("stroke", e.specialty ? "#6aaed6" : "rgba(255,255,255,0.12)")
-      .attr("stroke-width", 1.5)
-      .attr("stroke-opacity", 0.5)
-      .on("mouseover", function() {
-        d3.select(this).attr("stroke-opacity", 1).attr("stroke-width", 2.5);
-      })
-      .on("mouseout", function() {
-        d3.select(this).attr("stroke-opacity", 0.5).attr("stroke-width", 1.5);
-      })
-      .append("title")
-      .text(`${e.source} → ${e.target}${e.specialty ? ' [' + e.specialty + ']' : ''}`);
-
-    // Arrow
-    linkG.append("polygon")
-      .attr("points", "-4,-6 4,-6 0,0")
-      .attr("transform", `translate(${tgt.x},${tgt.y - 16}) rotate(180)`)
-      .attr("fill", e.specialty ? "#6aaed6" : "rgba(255,255,255,0.2)")
-      .attr("opacity", 0.6);
-
-    // Specialty label on edge
-    if (e.specialty) {
-      linkG.append("text")
-        .attr("x", (src.x + tgt.x) / 2 + 8)
-        .attr("y", midY)
-        .attr("fill", "#6aaed6")
-        .attr("font-size", "9px")
-        .attr("opacity", 0.7)
-        .text(e.specialty);
+    if (src.generation < tgt.generation) {
+      if (!childrenByParent[e.source]) childrenByParent[e.source] = [];
+      childrenByParent[e.source].push(e);
     }
+  });
+
+  Object.entries(childrenByParent).forEach(([parentName, childEdges]) => {
+    const parent = nodePositions[parentName];
+    if (!parent) return;
+    const children = childEdges.map(e => nodePositions[e.target]).filter(Boolean);
+    if (children.length === 0) return;
+
+    const busY = parent.y + layerHeight * 0.35;
+    const xs = [parent.x, ...children.map(c => c.x)];
+    const minX = Math.min(...xs);
+    const maxX = Math.max(...xs);
+
+    // 父→总线 竖线
+    linkG.append("line")
+      .attr("x1", parent.x).attr("y1", parent.y + 14)
+      .attr("x2", parent.x).attr("y2", busY)
+      .attr("stroke", lineColor).attr("stroke-width", lineW);
+
+    // 水平总线
+    linkG.append("line")
+      .attr("x1", minX).attr("y1", busY)
+      .attr("x2", maxX).attr("y2", busY)
+      .attr("stroke", lineColor).attr("stroke-width", lineW);
+
+    // 总线→每个子节点 竖线 + 箭头
+    children.forEach(child => {
+      linkG.append("line")
+        .attr("x1", child.x).attr("y1", busY)
+        .attr("x2", child.x).attr("y2", child.y - 14)
+        .attr("stroke", lineColor).attr("stroke-width", lineW);
+      linkG.append("polygon")
+        .attr("points", "-3,-5 3,-5 0,0")
+        .attr("transform", `translate(${child.x},${child.y - 15})`)
+        .attr("fill", "rgba(106,174,214,0.4)");
+    });
+
+    // 悬停总线显示传承详情
+    const tips = childEdges
+      .map(e => `→ ${e.target}${e.specialty ? ' [' + e.specialty + ']' : ''}`)
+      .join('\n');
+    linkG.append("line")
+      .attr("x1", minX).attr("y1", busY).attr("x2", maxX).attr("y2", busY)
+      .attr("stroke", "transparent").attr("stroke-width", 10)
+      .style("cursor", "pointer")
+      .append("title").text(`${parentName} 传承:\n${tips}`);
   });
 
   // Draw nodes
