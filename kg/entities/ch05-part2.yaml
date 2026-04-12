@@ -1,0 +1,1441 @@
+# ============================================================
+# 知识图谱实体抽取 — 第五品 远传经幻心 Part 2 (lines 541-1080)
+# 覆盖范围: 大宿后段（开光、年修、涅槃） + 小宿本传 + 宿·释迦桑给 + 杰敦嘉那开端
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md
+# 提取日期: 2026-04-11
+# 前接: kg/entities/ch05-part1.yaml (E_501–E_774)
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_800:
+  name: 金刚萨埵
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "密咒师建殿时建议以金刚萨埵为主尊；小宿修《秘密幻化续》面见金刚萨埵，塔革山谷遍满金刚萨埵"
+  appearances: [674, 854, 858, 860]
+
+E_801:
+  name: 玛哈嘎拉
+  aliases: ["吉祥怙主玛哈嘎拉"]
+  type: 圣众.大乘.护法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "鸱枭谷寺门房壁画上绘有玛哈嘎拉威猛大威德像"
+  appearances: [554]
+
+E_802:
+  name: 八位古热玛
+  aliases: ["古热玛"]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "嘉哦岩形似吉祥黑日嘎由八位古热玛环绕"
+  appearances: [833]
+
+E_803:
+  name: 西绕莫波切
+  aliases: []
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "苯波师建殿时提议以西绕莫波切为主尊"
+  appearances: [674]
+
+# ==================== 人物 ====================
+
+# --- 大宿段 ---
+
+E_810:
+  name: 玛玛永仲札西
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: "酿热"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "酿热地方施主夫妻，无子嗣，家产丰厚，想用于正法方面，迎请三种供养处"
+  appearances: [666]
+
+E_811:
+  name: 拉嘎则瓦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "苯波师，受施主迎请与密咒师、僧人共建殿堂"
+  appearances: [672]
+
+E_812:
+  name: 切墨扬木巴
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "僧人，受施主迎请参与共建殿堂"
+  appearances: [672]
+
+E_813:
+  name: 卓敦巴
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "供养卓普地方给大宿上师建佛殿"
+  appearances: [679]
+
+E_814:
+  name: 卓米译师
+  aliases: []
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "供养班智达黄金不足，向大宿索要黄金并以甚深教授交换"
+  appearances: [688]
+
+E_815:
+  name: 噶玛巴
+  aliases: ["国师噶玛巴"]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "以预计建造策普寺为譬喻对比大宿的密意"
+  appearances: [691]
+
+E_816:
+  name: 嘉敦释迦益西
+  aliases: ["嘉敦"]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "吉祥黑日嘎佛像对香灯师说去迎接他；骑白牛化白光融入佛像"
+  appearances: [724, 725]
+
+E_817:
+  name: 玛玖敦丹
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "僧团管家，亲眼见证嘉敦融入黑日嘎佛像"
+  appearances: [727]
+
+E_818:
+  name: 宿姆哦波
+  aliases: ["具相宿姆哦波"]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "也融入吉祥黑日嘎佛像中"
+  appearances: [727]
+
+# --- 小宿本传段 ---
+
+E_820:
+  name: 塔巴卓钦
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "小宿之父，密咒师鸱枭谷的后裔，游方僧形象"
+  appearances: [732]
+
+E_821:
+  name: 西绕杰
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: "后藏"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "小宿之母，后藏地方人"
+  appearances: [734]
+
+E_822:
+  name: 耶母
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: "攀杰康温"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "攀杰康温地方的女修行者，大宿让小宿住在她家，由其资财供小宿缮写经典"
+  appearances: [787]
+
+E_823:
+  name: 巴格通
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "法相善知识，前来与小宿辩论的转法轮者"
+  appearances: [864]
+
+E_824:
+  name: 玛土香白
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "辩论后生起信心成为小宿弟子；有算入五位顶梁柱之说；砍妖树用于佛殿"
+  appearances: [869, 919, 977]
+
+# --- 小宿四柱弟子 ---
+
+E_825:
+  name: 玖敦夏嘎益
+  aliases: ["玖敦夏嘎益西"]
+  type: 人物.法师
+  specialty: [上师]
+  origin: "贡哦"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "心部之柱；小宿四位顶梁柱弟子之一；后来也是宿·释迦桑给的四柱弟子之一"
+  appearances: [917, 997]
+
+E_826:
+  name: 扬康喇嘛
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: "炯隆"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "经部之柱；小宿四位顶梁柱弟子之一"
+  appearances: [918]
+
+E_827:
+  name: 烂释迦桑波
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: "切瓦"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "幻部之柱；小宿四位顶梁柱弟子之一；宿·释迦桑给后来在其前听受《幻化网》"
+  appearances: [918, 1012]
+
+E_828:
+  name: 达德觉夏嘎够
+  aliases: ["达德措夏嘎"]
+  type: 人物.法师
+  specialty: [上师]
+  origin: "那莫热"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "事业之柱；小宿四位顶梁柱弟子之一；小宿向其妹妹达母则多嘉说'你的这个妹妹能否归属于我'"
+  appearances: [918, 993]
+
+# --- 小宿八梁弟子 ---
+
+E_829:
+  name: 玛土巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿八梁弟子之一"
+  appearances: [921]
+
+E_830:
+  name: 玖敦秋桑
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿八梁弟子之一"
+  appearances: [921]
+
+E_831:
+  name: 烂释迦香切
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿八梁弟子之一；宿·释迦桑给后来在其前得受大圆满"
+  appearances: [921, 1019]
+
+E_832:
+  name: 匝夏嘎让
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿八梁弟子之一"
+  appearances: [921]
+
+E_833:
+  name: 努敦瓦玛
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿八梁弟子之一"
+  appearances: [921]
+
+E_834:
+  name: 委巴萨土
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿八梁弟子之一"
+  appearances: [922]
+
+E_835:
+  name: 协敦达札
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿八梁弟子之一"
+  appearances: [922]
+
+E_836:
+  name: 则措香华
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿八梁弟子之一"
+  appearances: [922]
+
+E_837:
+  name: 则钦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "有算入八梁弟子之说"
+  appearances: [922]
+
+E_838:
+  name: 南瓦酿波
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "有算入八梁弟子之说"
+  appearances: [923]
+
+E_839:
+  name: 阿敦嘉瓦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "有算入八梁弟子之说"
+  appearances: [923]
+
+# --- 小宿其他弟子 ---
+
+E_840:
+  name: 巴修热玛
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "二大修行者之一"
+  appearances: [924]
+
+E_841:
+  name: 温修多巴
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "二大修行者之一"
+  appearances: [924]
+
+E_842:
+  name: 素敦索甲
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: "拉多"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "一位功勋显著者"
+  appearances: [925]
+
+E_843:
+  name: 扬敦昂色
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "两位达革绕之一"
+  appearances: [925]
+
+E_844:
+  name: 穹波札色
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "两位达革绕之一；大法相师；嫉妒小宿而派弟子驳斥，后不由自主顶礼小宿"
+  appearances: [873, 875, 907, 915, 926]
+
+E_845:
+  name: 够夏擦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "三位不中用弟子之一；去古克巴处求母续"
+  appearances: [928, 943]
+
+E_846:
+  name: 莫穹旺桑
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "三位不中用弟子之一；去色巴益白处求瑜伽续"
+  appearances: [928, 944]
+
+E_847:
+  name: 够穹旺俄
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "三位不中用弟子之一；去帮嘎达穹瓦处学因明"
+  appearances: [928, 946]
+
+E_848:
+  name: 古克巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "够夏擦去其座下求母续"
+  appearances: [943]
+
+E_849:
+  name: 色巴益白
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "莫穹旺桑前往其处求瑜伽续"
+  appearances: [944]
+
+E_850:
+  name: 帮嘎达穹瓦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "够穹旺俄前往其处学因明辩论"
+  appearances: [946]
+
+E_851:
+  name: 古译师
+  aliases: []
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "规定新派行人不向小宿顶礼；但在香地法会上不由自主向小宿五体投地"
+  appearances: [957, 958]
+
+E_852:
+  name: 创瓦
+  aliases: []
+  type: 非人.天部
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "地神，把柽柳柱子送到河边"
+  appearances: [978]
+
+# --- 宿·释迦桑给段 ---
+
+E_853:
+  name: 达母则多嘉
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "女弟子，小宿知其能怀胎化身，宿·释迦桑给之母"
+  appearances: [992]
+
+E_854:
+  name: 鄂大译师
+  aliases: []
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宿·释迦桑给在其十六岁的木虎年出生，用于纪年参照"
+  appearances: [1002]
+
+E_855:
+  name: 单巴桑吉
+  aliases: ["单巴仁波切"]
+  type: 人物.法师
+  specialty: [上师, 大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [神通]
+  note: "住在当日地方；认出释迦桑给为金刚手菩萨化身；说卓普巴将成佛教大教主"
+  appearances: [1027, 1028, 1032, 1035]
+
+E_856:
+  name: 至尊香那
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "宿·释迦桑给在其面前闻受大圆满末传承"
+  appearances: [1019]
+
+E_857:
+  name: 贡哦玖
+  aliases: ["贡哦玖上师"]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "宿·释迦桑给在其前呆了一年求学"
+  appearances: [1015]
+
+# --- 卓普巴十二位弟子 ---
+
+E_858:
+  name: 杰敦嘉那
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: "年多"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位那士之一；卓普巴弟子；木狗年生于年多"
+  appearances: [1053, 1078, 1079]
+
+E_859:
+  name: 宿那库罗
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位那士之一"
+  appearances: [1053]
+
+E_860:
+  name: 酿那多哦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位那士之一"
+  appearances: [1053]
+
+E_861:
+  name: 达那则多旺修
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位那士之一"
+  appearances: [1054]
+
+E_862:
+  name: 尼敦秋桑
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位敦士之一"
+  appearances: [1054]
+
+E_863:
+  name: 嘉敦多吉滚波
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位敦士之一"
+  appearances: [1054]
+
+E_864:
+  name: 扬敦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位敦士之一"
+  appearances: [1054]
+
+E_865:
+  name: 嘉敦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位敦士之一"
+  appearances: [1054]
+
+E_866:
+  name: 藏巴雪敦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位美士之一"
+  appearances: [1055]
+
+E_867:
+  name: 耶敦霍波
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位美士之一"
+  appearances: [1055]
+
+E_868:
+  name: 旺敦嘉杰
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位美士之一"
+  appearances: [1055]
+
+E_869:
+  name: 卫巴秋桑
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "四位美士之一"
+  appearances: [1055]
+
+# --- 传承人物（布玛莫札与卓普巴之间） ---
+
+E_870:
+  name: 哲姆
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: "荣切参"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "比丘尼；布玛莫札弟子，传承链中第一位"
+  appearances: [1074]
+
+E_871:
+  name: 玛尔巴慧光
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: "南岩夏则"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "布玛莫札与卓普巴之间传承链第二位"
+  appearances: [1074]
+
+E_872:
+  name: 朗敦达玛索朗
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: "香拉哦"
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "布玛莫札与卓普巴之间传承链第三位"
+  appearances: [1075]
+
+# --- 同时代人物参照 ---
+
+E_873:
+  name: 萨迦法王根嘎酿波
+  aliases: ["根嘎酿波"]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [萨迦]
+  manifestation_of: []
+  attainments: []
+  note: "卓普巴比其年长十八岁；用作年代参照"
+  appearances: [1072]
+
+E_874:
+  name: 达波拉吉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与卓普巴同一时代"
+  appearances: [1073]
+
+E_875:
+  name: 帕母哲巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与卓普巴同一时代"
+  appearances: [1073]
+
+E_876:
+  name: 上师扬
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与卓普巴同一时代"
+  appearances: [1073]
+
+E_877:
+  name: 觉哲藏
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与卓普巴同一时代"
+  appearances: [1073]
+
+E_878:
+  name: 萨迦大译师
+  aliases: []
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: [萨迦]
+  manifestation_of: []
+  attainments: []
+  note: "小宿出定后预言下世将转世为萨迦大译师"
+  appearances: [936]
+
+# ==================== 寺院 / 建筑 ====================
+
+E_880:
+  name: 卓普寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "大宿在卓普地方建造的佛殿；三世佛为主八座佛堂；建立大佛学院"
+  appearances: [685, 687, 952, 967]
+
+E_881:
+  name: 札巴禅堂
+  aliases: []
+  type: 寺院.修行处
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "大宿命龙魔兄妹为其护法神；大宿涅槃前去此处"
+  appearances: [661, 663, 714, 825]
+
+# E_882: 嘉哦岩 — 已在 ch05-part1.yaml 定义为 E_677（九峰山）
+# 本 part2 中对嘉哦岩的引用均使用 E_677
+
+E_883:
+  name: 空行佛堂
+  aliases: []
+  type: 寺院.道场
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿指使空行做事树立的佛殿，七根柱子、两根大柱"
+  appearances: [970]
+
+E_884:
+  name: 真实意殿堂
+  aliases: []
+  type: 寺院.道场
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿面见吉祥黑日嘎时左脚踏地之处修建"
+  appearances: [976]
+
+E_885:
+  name: 涅热卓山洞
+  aliases: []
+  type: 寺院.修行处
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宿·释迦桑给修行处，达到四钉境界"
+  appearances: [1023]
+
+# ==================== 地名 ====================
+
+E_890:
+  name: 珠波
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三岔路口；'金刚栓'岩石所在处"
+  appearances: [628]
+
+# E_891: 鸱枭谷 — 已在 ch05-part1.yaml 定义为 E_697（黑马山谷）
+# 本 part2 中对鸱枭谷的引用均使用 E_697
+
+E_892:
+  name: 酿热
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "玛玛永仲札西夫妻所在地方"
+  appearances: [666]
+
+E_893:
+  name: 比卓普巴
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "鸱枭谷上师与苯波师共建殿堂之处"
+  appearances: [675]
+
+E_894:
+  name: 卓普
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "卓敦巴供养之地；大宿建佛殿处"
+  appearances: [679, 685, 692, 1042]
+
+E_895:
+  name: 嘉黎东
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿吩咐作金塔之处"
+  appearances: [693]
+
+E_896:
+  name: 塘杰扬东
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿吩咐作金塔之处，与嘉黎东以铁索连接"
+  appearances: [693]
+
+E_897:
+  name: 莫革隆
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿在此向卓米译师补黄金"
+  appearances: [699]
+
+E_898:
+  name: 雅则札东岩山
+  aliases: []
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "龙魔妹妹居住之处"
+  appearances: [566]
+
+E_899:
+  name: 塔革
+  aliases: ["塔革大坝", "塔革山谷"]
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "小宿梦中被抛到塔革大坝；塔革山谷遍满金刚萨埵"
+  appearances: [842, 859]
+
+E_900:
+  name: 攀杰康温
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "女修行者耶母母女所在地"
+  appearances: [787]
+
+E_901:
+  name: 哦巴隆
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "小宿上午在此传法"
+  appearances: [967]
+
+E_902:
+  name: 拉则莫
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "小宿在此观看空行母跳舞"
+  appearances: [969]
+
+E_903:
+  name: 诶玛多吉波
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "师徒众人前往传法之处"
+  appearances: [812]
+
+E_904:
+  name: 当日
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "单巴桑吉住在此处"
+  appearances: [1027]
+
+E_905:
+  name: 卓普达拉热东
+  aliases: []
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "卓普巴最后事业之处；师徒广大会供地"
+  appearances: [1058]
+
+E_906:
+  name: 密严金刚庄严刹土
+  aliases: ["密严刹土"]
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "小宿前往之净土"
+  appearances: [988]
+
+E_907:
+  name: 年多
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "杰敦嘉那出生地"
+  appearances: [1079]
+
+E_908:
+  name: 达普
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宿·释迦桑给由母亲和舅舅抚养，在此住到十五岁"
+  appearances: [1012]
+
+E_909:
+  name: 极乐国
+  aliases: []
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿临终说'我将前往极乐国'"
+  appearances: [717]
+
+E_910:
+  name: 策普寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "国师噶玛巴建造；用作比喻大宿密意"
+  appearances: [692]
+
+# ==================== 经典 / 教法 ====================
+
+E_920:
+  name: 集密意续
+  aliases: [《集密意续》]
+  type: 经典.密续.远传
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "壁画前方绘有本尊像；小宿开始宣讲此续，听法者三百人"
+  appearances: [553, 808]
+
+E_921:
+  name: 金刚帷幕续
+  aliases: [《金刚帷幕续》]
+  type: 经典.密续.远传
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "大宿对三传承分支及此续十分精通完全领会"
+  appearances: [701]
+
+E_922:
+  name: 秘密幻化续
+  aliases: [《秘密幻化续》]
+  type: 经典.密续.远传
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿修其中手印禅定修法面见金刚萨埵"
+  appearances: [858]
+
+E_923:
+  name: 秘密幻化网
+  aliases: [《秘密幻化网》]
+  type: 经典.密续.远传
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "烂敦夏嘎桑问小宿其观点"
+  appearances: [888]
+
+E_924:
+  name: 吉祥密藏真如决定续
+  aliases: [《密藏续》]
+  type: 经典.密续.远传
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "卓普巴自然通晓此续义获得法眼"
+  appearances: [1049]
+
+E_925:
+  name: 广中略般若
+  aliases: [《广中略般若》]
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宿·释迦桑给以此为主的大供养来摄受自宗上师"
+  appearances: [1021]
+
+# ==================== 教法 ====================
+
+E_930:
+  name: 心部
+  aliases: []
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  vehicle: ""
+  note: "大宿说'我的心部成为珍宝'；'心部法门实在是摩尼宝珠般的财富'"
+  appearances: [702, 703]
+
+E_931:
+  name: 经幻心
+  aliases: ["经幻心三部"]
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  vehicle: ""
+  note: "宿·释迦桑给从四柱大德处完整听闻父亲之法经幻心"
+  appearances: [1017]
+
+E_932:
+  name: 大圆满
+  aliases: []
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  vehicle: ""
+  note: "小宿与玖敦辩论时提及大圆满自现无偏义；宿·释迦桑给在烂释迦香切处得受大圆满"
+  appearances: [867, 883, 1019]
+
+E_933:
+  name: 大圆满末传承
+  aliases: []
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  vehicle: ""
+  note: "宿·释迦桑给在至尊香那面前闻受"
+  appearances: [1020]
+
+# ==================== 法器 / 圣物 ====================
+
+E_940:
+  name: 吉祥黑日嘎佛像
+  aliases: ["黑日嘎佛像"]
+  type: 法器圣物.佛像
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "大宿亲手所造；开光后跳九种舞姿说话；大宿化光融入其心间；加持力极大"
+  appearances: [543, 609, 718, 723, 724, 727]
+
+E_941:
+  name: 金刚栓岩石
+  aliases: ["金刚栓"]
+  type: 法器圣物.圣物
+  specialty: []
+  origin: "珠波"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿跳黑日嘎舞脚踝没入岩石；小宿顶礼留发髻耳饰印迹；桑古西嘉竖立；如今仍存在"
+  appearances: [629, 635, 639]
+
+# ==================== 集合 ====================
+
+E_950:
+  name: 小宿四位顶梁柱弟子
+  aliases: ["四位顶梁柱", "四柱弟子"]
+  type: 集合.弟子集合
+  cardinality: 4
+  members: [E_825, E_826, E_827, E_828]
+  note: "小宿的四大顶梁之柱弟子；也有加上玛土香白称五柱"
+  appearances: [870, 873, 903, 917]
+
+E_951:
+  name: 小宿八梁弟子
+  aliases: ["八梁"]
+  type: 集合.弟子集合
+  cardinality: 8
+  members: [E_829, E_830, E_831, E_832, E_833, E_834, E_835, E_836]
+  note: "小宿的八大梁弟子；另说加则钦、南瓦酿波、阿敦嘉瓦"
+  appearances: [921]
+
+E_952:
+  name: 小宿二大修行者
+  aliases: []
+  type: 集合.弟子集合
+  cardinality: 2
+  members: [E_840, E_841]
+  note: ""
+  appearances: [924]
+
+E_953:
+  name: 小宿三位不中用弟子
+  aliases: ["三个不中用弟子"]
+  type: 集合.弟子集合
+  cardinality: 3
+  members: [E_845, E_846, E_847]
+  note: "未完成讲学院任务致小宿不得不出关"
+  appearances: [928, 942]
+
+E_954:
+  name: 卓普巴四位那士
+  aliases: ["四位那士"]
+  type: 集合.弟子集合
+  cardinality: 4
+  members: [E_858, E_859, E_860, E_861]
+  note: "卓普巴智慧摄受弟子十二位中的四位那士"
+  appearances: [1053]
+
+E_955:
+  name: 卓普巴四位敦士
+  aliases: ["四位敦士"]
+  type: 集合.弟子集合
+  cardinality: 4
+  members: [E_862, E_863, E_864, E_865]
+  note: "卓普巴智慧摄受弟子十二位中的四位敦士"
+  appearances: [1054, 1057, 1058]
+
+E_956:
+  name: 卓普巴四位美士
+  aliases: ["四位美士"]
+  type: 集合.弟子集合
+  cardinality: 4
+  members: [E_866, E_867, E_868, E_869]
+  note: "卓普巴智慧摄受弟子十二位中的四位美士"
+  appearances: [1054]
+
+E_957:
+  name: 宿氏上传
+  aliases: []
+  type: 教派.子派
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "卓普巴弟子传承被称为宿氏上传，下传与之不同"
+  appearances: [1055]
+
+# ==================== 仪轨 ====================
+
+E_960:
+  name: 寂猛事业吟诵法
+  aliases: []
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "小宿九岁掌握"
+  appearances: [736]
