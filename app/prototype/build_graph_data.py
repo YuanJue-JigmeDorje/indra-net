@@ -99,6 +99,40 @@ for entry in id_to_entity.values():
 print(f"Name→type map: {len(name_to_type)} entries")
 
 # ============================================================
+# 1.5 Build alias→canonical merge map (for dedup)
+# ============================================================
+alias_to_canonical = {}
+for fpath in entity_files:
+    with open(fpath, 'r') as f:
+        content = f.read()
+    current_name = None
+    for line in content.split('\n'):
+        m = re.match(r'\s+name:\s*(.+)', line)
+        if m:
+            current_name = clean_name(m.group(1).strip().strip('"\''))
+        m2 = re.match(r'\s+aliases:\s*\[(.+)\]', line)
+        if m2 and current_name:
+            aliases = [clean_name(a.strip().strip('"\'')) for a in m2.group(1).split(',')]
+            for alias in aliases:
+                if alias and alias != current_name:
+                    alias_to_canonical[alias] = current_name
+
+# Manual merges for known duplicates not caught by alias files
+alias_to_canonical.update({
+    '贡巴绕色大师': '贡巴绕色',
+    '龙钦巴': '无垢光尊者',
+    '文殊': '文殊菩萨',
+    '鲁墨大师': '鲁墨·赤诚西绕',
+    '桑吉温波': '桑给嘉巴桑吉温波',
+    '西绕炯内': '酿·西绕炯内',
+})
+
+def normalize_name(name):
+    return alias_to_canonical.get(name, name)
+
+print(f"Alias→canonical map: {len(alias_to_canonical)} entries")
+
+# ============================================================
 # 2. 从 relations yaml 提取 links，解析 ID → name
 # ============================================================
 links = []
@@ -156,6 +190,10 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
             tgt_type = name_to_type.get(tgt_name, '')
             if not tgt_type:
                 unresolved.append(('target', tgt_raw, tgt_name))
+
+        # Normalize names via alias map
+        src_name = normalize_name(src_name)
+        tgt_name = normalize_name(tgt_name)
 
         if not src_name or not tgt_name or src_name == tgt_name:
             continue

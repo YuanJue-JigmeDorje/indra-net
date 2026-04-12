@@ -116,7 +116,14 @@ E_NNN:
 1. 读取整章/整节文本
 2. 逐段扫描，识别所有具名/可命名实体
 3. 对每个新 entity：
-   a. 检查是否已在注册表中（alias 匹配）→ 是则更新，否则新建
+   a. 检查是否已在注册表中（name 或 alias 匹配）→ 是则更新，否则新建
+      **⚠️ 跨 chunk 去重（v0.2 修正）**：如果本 chunk 之前有其他 chunk
+      已经提取过实体（如 ch04-part1 先于 ch04-part2），必须检查已有 chunk
+      的注册表。匹配规则：
+        - 完全匹配 name → 同一实体
+        - 名字 A 是名字 B 的子串且长度 ≥ 3 → 可能同一实体（如"贡巴绕色"⊂"贡巴绕色大师"）→ 使用较短的 canonical name
+        - 名字出现在已有实体的 aliases 列表中 → 同一实体
+      如果判定为同一实体，使用已有的 canonical name，不创建新 entry
    b. 判定 type（11 类 → 子类）
    c. 若 人物.法师 → 填 specialty（多选）
    d. 若文本提到化身关系 → 填 manifestation_of（不改 type）
