@@ -1,0 +1,1015 @@
+# ============================================================
+# 知识图谱事件抽取 — 第四品 内密三续 (lines 1-420)
+# 覆盖范围: 续部类 + 修部类(八大修部) + 圆满次第 + 大圆满心部界部
+#           (贝若札那 → 桑吉滚波 → ... → 奘·达玛布德 → 觉哲 → 根桑 → 传承诸师)
+# 来源: source/dudjom/chapter_md/04_内密三续.md
+# 提取日期: 2026-04-11
+# 规范: SKILL_03a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
+#
+# 实体引用: E_NNN 引用 kg/entities/ch04-part1.yaml
+# confidence 默认: 史传 0.85 / 典据 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 续部类 (lines 1-22) ====================
+
+- event_id: EV_001
+  type: 传法
+  title: 布玛莫札传八大幻化部给玛·仁钦秋并翻译
+  participants:
+    - entity: 布玛莫札 (E_020)
+      role: 主体
+    - entity: 玛·仁钦秋 (E_021)
+      role: 受法者
+    - entity: 金刚萨埵幻化网密藏续 (E_200)
+      role: 法门
+  location: ""
+  time_info: "赤松德赞时期"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "八大幻化部，均由阿阇黎布玛莫札传给玛·仁钦秋，并且翻译"
+
+- event_id: EV_002
+  type: 传法
+  title: 玛·仁钦秋传续部给则热·仁钦云讷和吉瑞秋炯
+  participants:
+    - entity: 玛·仁钦秋 (E_021)
+      role: 主体
+    - entity: 则热·仁钦云讷 (E_022)
+      role: 受法者
+    - entity: 吉瑞秋炯 (E_023)
+      role: 受法者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "玛·仁钦秋传给则热·仁钦云讷、吉瑞秋炯二人"
+
+- event_id: EV_003
+  type: 弘法
+  title: 扬·嘉瓦云丹在卫藏和康区多次传讲续部
+  participants:
+    - entity: 扬·嘉瓦云丹 (E_024)
+      role: 主体
+  location: 卫藏 (E_300)、康区 (E_301)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "扬·嘉瓦云丹在卫藏传讲了多次，也到康区加以讲授"
+
+- event_id: EV_004
+  type: 传法
+  title: 莲师传涅·赞那革玛绕并著《窍诀见鬘论》
+  participants:
+    - entity: 莲花生大士 (E_026)
+      role: 主体
+    - entity: 涅·赞那革玛绕 (E_027)
+      role: 受法者
+    - entity: 窍诀见鬘论 (E_205)
+      role: 著作
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "莲花生大士传给涅·赞那革玛绕，也著了《窍诀见鬘论》"
+
+- event_id: EV_005
+  type: 传法
+  title: 佛密在岗底斯山传密藏续类
+  participants:
+    - entity: 佛密 (E_030)
+      role: 主体
+    - entity: 伟·蒋花 (E_031)
+      role: 受法者
+    - entity: 占嘎莫德 (E_032)
+      role: 受法者
+    - entity: 幻化网道庄严 (E_201)
+      role: 法门
+  location: 岗底斯山 (E_302)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "佛密阿阇黎在岗底斯山给伟·蒋花和占嘎莫德等传授《幻化网道庄严》等所有密藏续类"
+
+- event_id: EV_006
+  type: 神变
+  title: 赤松德赞成就马头明王本尊，马鸣传遍赡部洲
+  participants:
+    - entity: 赤松德赞 (E_039)
+      role: 主体
+    - entity: 马头明王 (E_002)
+      role: 本尊
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "国王赤松德赞成就了马头明王本尊，使马的鸣叫传遍整个赡部洲"
+
+# ==================== 修部类 — 八大修部灌顶 (lines 23-67) ====================
+
+- event_id: EV_007
+  type: 弘法
+  title: 现德嘎巴在藏地弘扬大威德类
+  participants:
+    - entity: 现德嘎巴 (E_038)
+      role: 主体
+  location: "藏地"
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "所有大威德类是由阿阇黎现德嘎巴在藏地弘扬起来的"
+
+- event_id: EV_008
+  type: 灌顶
+  title: 莲师在青普为君臣九人传授八大修部灌顶
+  participants:
+    - entity: 莲花生大士 (E_026)
+      role: 主体
+    - entity: 赤松德赞 (E_039)
+      role: 祈请者
+    - entity: 君臣九人 (E_372)
+      role: 受法者
+    - entity: 八大修部 (E_234)
+      role: 法门
+  location: 青普 (E_303)
+  time_info: "赤松德赞时期"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "经过国王赤松德赞祈请，莲师在青普哲革格哦地方为具有殊胜缘分的君臣九人于八大修部外、内、密的坛城中圆满传授了所有灌顶次第"
+
+- event_id: EV_009
+  type: 神变
+  title: 赤松德赞成就殊胜莲花语并撰著《正量论》
+  participants:
+    - entity: 赤松德赞 (E_039)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "国王赤松德赞成就殊胜（莲花语），生起了殊胜禅定，修所生慧顿然流露，因此他撰著了《正量论》等典籍"
+
+- event_id: EV_010
+  type: 神变
+  title: 南卡酿波成就真实意，可乘坐日光
+  participants:
+    - entity: 南卡酿波 (E_040)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "南卡酿波（虚空藏）成就了真实意，可以乘坐日光"
+
+- event_id: EV_011
+  type: 神变
+  title: 佛智成就妙吉祥身，将金刚橛击入山岩
+  participants:
+    - entity: 佛智 (E_041)
+      role: 主体
+    - entity: 妙吉祥 (E_003)
+      role: 本尊
+    - entity: 金刚橛 (E_390)
+      role: 法器
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "佛智成就了妙吉祥身，可将金刚橛无碍击入山岩"
+
+- event_id: EV_012
+  type: 神变
+  title: 嘉瓦秋扬成就大自在，头顶出现马头发出马鸣
+  participants:
+    - entity: 嘉瓦秋扬 (E_042)
+      role: 主体
+    - entity: 大自在 (E_004)
+      role: 本尊
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "嘉瓦秋扬（如来妙音）成就大自在（甘露功德），结果头顶上出现马头并且发出马鸣声"
+
+- event_id: EV_013
+  type: 神变
+  title: 卡钦则空行母成就橛事业，能起死回生
+  participants:
+    - entity: 卡钦则 (E_043)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "卡钦则空行母成就了橛事业，能够起死回生"
+
+- event_id: EV_014
+  type: 神变
+  title: 花吉益西成就召遣非人
+  participants:
+    - entity: 花吉益西 (E_044)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "花吉益西（吉祥智）成就了召遣非人，所以能够指使非人做事"
+
+- event_id: EV_015
+  type: 神变
+  title: 花吉桑给成就供赞世神，令天龙八部听使唤
+  participants:
+    - entity: 花吉桑给 (E_045)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "花吉桑给（吉祥狮子）成就了供赞世神，结果能令天龙八部听他使唤"
+
+- event_id: EV_016
+  type: 神变
+  title: 贝若札那成就猛咒诅詈，获智慧眼和神境通
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "贝若札那成就了猛咒诅詈，结果具有智慧眼并且获得神境通"
+
+- event_id: EV_017
+  type: 神变
+  title: 涅·赞那革玛绕能从干燥岩石中取出甘露
+  participants:
+    - entity: 涅·赞那革玛绕 (E_027)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "涅·赞那革玛绕能从干燥的岩石中取出甘露"
+
+- event_id: EV_018
+  type: 神变
+  title: 萨霍·曼达绕瓦和益西措嘉证得殊胜成就
+  participants:
+    - entity: 萨霍·曼达绕瓦 (E_062)
+      role: 主体
+    - entity: 益西措嘉 (E_063)
+      role: 主体
+    - entity: 金刚亥母 (E_005)
+      role: 等同
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "萨霍·曼达绕瓦证得无死寿、神变力和无上殊胜成就；大空行母益西措嘉成就了金刚寿、不忘陀罗尼、神变力、空行处及殊胜大乐。这两位女子与真正的金刚亥母无二无别"
+
+# ==================== 大圆满心部界部 — 贝若札那 (lines 75-113) ====================
+
+- event_id: EV_019
+  type: 迎请
+  title: 赤松德赞劝请贝若札那赴印度求法
+  participants:
+    - entity: 赤松德赞 (E_039)
+      role: 劝请者
+    - entity: 贝若札那 (E_046)
+      role: 受命者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "阿阇黎贝若札那，经国王赤松德赞劝请，历经七次八大危难等难以承受的五十七种艰难困苦，全然不顾而去往印度"
+
+- event_id: EV_020
+  type: 传法
+  title: 贝若札那拜见花戒桑给大师得受心部十八窍诀及界部
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 受法者
+    - entity: 花戒桑给 (E_080)
+      role: 主体
+    - entity: 心部 (E_237)
+      role: 法门
+    - entity: 界部 (E_238)
+      role: 法门
+  location: 达那够夏清凉檀香林 (E_305)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "他把心部十八窍诀用白山羊的乳汁写在白绸缎上……他已经完全得到了白黑花界部一切佛法的堂奥"
+
+- event_id: EV_021
+  type: 传法
+  title: 贝若札那在德瓦尸林拜见嘎绕多吉得受大圆满义传承
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 受法者
+    - entity: 嘎绕多吉 (E_081)
+      role: 主体
+    - entity: 大圆满 (E_233)
+      role: 法门
+  location: 德瓦 (E_306)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "在德瓦地方的大尸林中又拜见了嘎绕多吉大师，得受了六百四十万大圆满义传承"
+
+- event_id: EV_022
+  type: 神变
+  title: 贝若札那修成神足返回西藏
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 主体
+  location: "西藏"
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "他依靠修成的神足返回西藏"
+
+- event_id: EV_023
+  type: 译经
+  title: 贝若札那翻译前译五心部
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 主体
+  location: "西藏"
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "并翻译了前译五心部"
+
+- event_id: EV_024
+  type: 离藏
+  title: 贝若札那因王妃群臣离间暂时到擦瓦绒
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 主体
+  location: 擦瓦绒 (E_307)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "由于对正法怀有歹心的王妃和群臣的左右，贝若札那大师暂时不得不来到擦瓦绒地方"
+
+- event_id: EV_025
+  type: 传法
+  title: 贝若札那在卫藏为涅·赞那革玛绕和乐萨·西绕卓玛传讲五次第
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 主体
+    - entity: 涅·赞那革玛绕 (E_027)
+      role: 受法者
+    - entity: 乐萨·西绕卓玛 (E_105)
+      role: 受法者
+    - entity: 五次第 (E_241)
+      role: 法门
+  location: 卫藏 (E_300)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "在卫藏，为涅·赞那革玛绕、乐萨·西绕卓玛传讲，被一致称为五次第"
+
+- event_id: EV_026
+  type: 圆寂
+  title: 贝若札那在尼泊尔巴桑尸林成就双运身
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 主体
+  location: 巴桑尸林 (E_318)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "最后在尼泊尔巴桑尸林中成就双运身"
+
+# ==================== 桑吉滚波传承 (lines 115-183) ====================
+
+- event_id: EV_027
+  type: 传法
+  title: 贝若札那在洞空绒传给帮·桑吉滚波
+  participants:
+    - entity: 贝若札那 (E_046)
+      role: 主体
+    - entity: 帮·桑吉滚波 (E_084)
+      role: 受法者
+  location: 洞空绒 (E_320)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "在洞空绒的红岩静堡，传给帮·桑吉滚波"
+
+- event_id: EV_028
+  type: 神变
+  title: 帮·桑吉滚波年迈证悟后住世百余年
+  participants:
+    - entity: 帮·桑吉滚波 (E_084)
+      role: 主体
+  location: ""
+  time_info: "住世一百多年"
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "由于生起顿超证悟使得年迈的他禁不住开怀大笑……因为证得了成就，他住世长达一百多年"
+
+- event_id: EV_029
+  type: 传法
+  title: 帮·桑吉滚波传法给安兰·香切嘉村
+  participants:
+    - entity: 帮·桑吉滚波 (E_084)
+      role: 主体
+    - entity: 安兰·香切嘉村 (E_093)
+      role: 受法者
+  location: 嘉姆达则卡 (E_309)
+  time_info: "香切嘉村六十七岁时"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "六十七岁时来到嘉姆达则卡地方，向帮·麦彭滚波请求教授，结果上师恩赐予他"
+
+- event_id: EV_030
+  type: 圆寂
+  title: 安兰·香切嘉村一百七十二岁虹化
+  participants:
+    - entity: 安兰·香切嘉村 (E_093)
+      role: 主体
+  location: 瓦桑给 (E_310)
+  time_info: "一百七十二岁"
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "到了一百七十二岁时身体不留痕迹虹化而逝"
+
+- event_id: EV_031
+  type: 圆寂
+  title: 萨丹仁钦一百四十四岁虹化
+  participants:
+    - entity: 萨丹仁钦 (E_094)
+      role: 主体
+  location: 瓦桑给 (E_310)
+  time_info: "一百四十四岁"
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "一百四十四岁时身体也是不留痕迹虹化而逝"
+
+- event_id: EV_032
+  type: 圆寂
+  title: 克杰萨瓦一百一十七岁虹化
+  participants:
+    - entity: 克杰萨瓦 (E_095)
+      role: 主体
+  location: 瓦桑给 (E_310)
+  time_info: "一百一十七岁"
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "在一百一十七岁时身体虹化而逝"
+
+- event_id: EV_033
+  type: 神变
+  title: 师徒三人同在瓦桑给同在蛇年相继虹化
+  participants:
+    - entity: 安兰·香切嘉村 (E_093)
+      role: 主体
+    - entity: 萨丹仁钦 (E_094)
+      role: 主体
+    - entity: 克杰萨瓦 (E_095)
+      role: 主体
+  location: 瓦桑给 (E_310)
+  time_info: "蛇年"
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "师徒三人同在名叫瓦桑给的岩山，同在蛇年相继如空中彩虹消失或雾消云散般虹化而逝"
+
+- event_id: EV_034
+  type: 传法
+  title: 香切札巴向克杰萨瓦请求教授后修行并传法
+  participants:
+    - entity: 克杰萨瓦 (E_095)
+      role: 主体
+    - entity: 香切札巴 (E_096)
+      role: 受法者
+  location: 桑耶青普 (E_303)
+  time_info: "香切札巴四十二岁时"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "到了四十二岁时，向克杰萨瓦请求教授后返回故里，在桑耶青普修行"
+
+- event_id: EV_035
+  type: 神变
+  title: 香切札巴示现四大遍处幻化
+  participants:
+    - entity: 香切札巴 (E_096)
+      role: 主体
+  location: 坡波切 (E_312)
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "位于中央的阿阇黎已无踪无影……变成了火，当他们用水浇火时，火又变成满满一铜盆水"
+
+- event_id: EV_036
+  type: 圆寂
+  title: 香切札巴在后藏嘉尼德卡山旁虹化
+  participants:
+    - entity: 香切札巴 (E_096)
+      role: 主体
+  location: 后藏嘉尼德卡山 (E_321)
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "在自己所居的后藏嘉尼德卡山旁，身体宛若一片云朵般不留痕迹虹化而逝"
+
+- event_id: EV_037
+  type: 传法
+  title: 香切札巴将教言赐给酿·西绕炯内
+  participants:
+    - entity: 香切札巴 (E_096)
+      role: 主体
+    - entity: 酿·西绕炯内 (E_097)
+      role: 受法者
+  location: 桑耶青普 (E_303)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "酿·香切札巴将教言赐给他"
+
+- event_id: EV_038
+  type: 圆寂
+  title: 酿·西绕炯内在坡波切虹化
+  participants:
+    - entity: 酿·西绕炯内 (E_097)
+      role: 主体
+  location: 坡波切 (E_312)
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "衣装、念珠及托巴挂在坡波切神山顶峰一棵独枝的柏树上，身体就像彩虹消散空中一样逝去"
+
+- event_id: EV_039
+  type: 神变
+  title: 酿·西绕炯内入定于火等持中使茅棚现火焰
+  participants:
+    - entity: 酿·西绕炯内 (E_097)
+      role: 主体
+    - entity: 瓦贡 (E_098)
+      role: 目击者
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "瓦贡到杜鹃树林中去拾柴，结果看到他自己的茅棚红红的火焰直往上窜……上师说：'我是在入定于火等持中'"
+
+# ==================== 瓦贡与奘·达玛布德 (lines 185-353) ====================
+
+- event_id: EV_040
+  type: 传法
+  title: 酿·西绕炯内传授教言给瓦贡
+  participants:
+    - entity: 酿·西绕炯内 (E_097)
+      role: 主体
+    - entity: 瓦贡 (E_098)
+      role: 受法者
+  location: ""
+  time_info: "瓦贡二十四岁"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "瓦贡到了二十四岁，蒙受酿·西绕炯内传授教言"
+
+- event_id: EV_041
+  type: 圆寂
+  title: 瓦贡九十八岁圆寂无遗骨
+  participants:
+    - entity: 瓦贡 (E_098)
+      role: 主体
+    - entity: 觉母刚姆 (E_101)
+      role: 护持者
+  location: ""
+  time_info: "九十八岁"
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "九十八岁时身体安然无恙而圆寂。觉母刚姆不让任何外人参拜遗体……一点遗骨也没有留下"
+
+- event_id: EV_042
+  type: 传法
+  title: 奘拜见单巴尊者并得加持和授记
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 受法者
+    - entity: 单巴尊者 (E_100)
+      role: 主体
+  location: 多吉洞那 (E_322)
+  time_info: "奘十六岁时"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "得以拜见印度单巴尊者，十四个月中他一直跟随在单巴尊者左右恭敬承侍"
+
+- event_id: EV_043
+  type: 授记
+  title: 单巴尊者授记奘值遇金刚桥
+  participants:
+    - entity: 单巴尊者 (E_100)
+      role: 主体
+    - entity: 奘·达玛布德 (E_099)
+      role: 受记者
+    - entity: 金刚桥 (E_235)
+      role: 法门
+  location: ""
+  time_info: ""
+  layers: [授记]
+  confidence: 0.85
+  source_quote: "他蒙单巴尊者加持，得到值遇金刚桥的授记"
+
+- event_id: EV_044
+  type: 传法
+  title: 瓦贡大师为奘传讲大手印表示窍诀和大圆满固有七类
+  participants:
+    - entity: 瓦贡 (E_098)
+      role: 主体
+    - entity: 奘·达玛布德 (E_099)
+      role: 受法者
+    - entity: 大手印 (E_239)
+      role: 法门
+    - entity: 大圆满固有七类 (E_243)
+      role: 法门
+  location: 坡波切 (E_312)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "瓦贡大师心生欢喜，为他传讲了大手印表示窍诀和大圆满固有七类"
+
+- event_id: EV_045
+  type: 灌顶
+  title: 瓦贡为奘圆满授予金刚桥四灌顶和所有教言
+  participants:
+    - entity: 瓦贡 (E_098)
+      role: 主体
+    - entity: 奘·达玛布德 (E_099)
+      role: 受法者
+    - entity: 金刚桥 (E_235)
+      role: 法门
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "就这样为他圆满授予了解脱道的四灌顶，并恩赐所有教言"
+
+- event_id: EV_046
+  type: 神变
+  title: 瓦贡大师手没入石中并印迹岩石
+  participants:
+    - entity: 瓦贡 (E_098)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "一掌击在水中的一块卵石上，肘以上没入石中，又再度起身一靠，结果通彻进入岩石，出现了清晰的印迹"
+
+- event_id: EV_047
+  type: 神变
+  title: 奘大师身体彩虹萦绕及种种神通
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "由于如海神变运用自如，时而身体彩虹萦绕，时而脚不接触地面而行；由于境心融入一味，所以能在顷刻之间到达遥远的地方"
+
+- event_id: EV_048
+  type: 传法
+  title: 奘大师为索芒赞传授大手印使其迷乱转依为智慧
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 索芒赞 (E_112)
+      role: 受法者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师为索芒赞传授大手印，结果他的迷乱显现转依为智慧"
+
+- event_id: EV_049
+  type: 传法
+  title: 奘大师为热楚龙穹巴和俄莫加列嘉传授四文字与大圆满使其虹身
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 热楚龙穹巴 (E_113)
+      role: 受法者
+    - entity: 俄莫加列嘉 (E_114)
+      role: 受法者
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "为热楚龙穹巴、俄莫加列嘉传授《四文字》与大圆满，结果他们的一切迷乱销声匿迹，最后身体消失得无影无踪"
+
+- event_id: EV_050
+  type: 神变
+  title: 奘大师跳入水池冰碎水变为气
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+  location: "门嘎忠摩切"
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "纵身跳进一个水池里，结果池中冰碎而他沉在水底，当闪现出难为情的妄念时，水变成气，几乎遮蔽了虚空"
+
+- event_id: EV_051
+  type: 神变
+  title: 奘大师纵身跳下悬崖如飞禽降落
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+  location: ""
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "心想这就是在梦中而纵身跳下，结果就像飞禽降落一样"
+
+- event_id: EV_052
+  type: 神变
+  title: 奘大师在友多德珠西山洞面见忿怒甘露旋
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 忿怒甘露旋 (E_006)
+      role: 本尊
+  location: 友多德珠西山洞 (E_337)
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "现见忿怒甘露旋的尊颜，一位非人对他作广大供养、承侍"
+
+- event_id: EV_053
+  type: 神变
+  title: 奘大师在达波耶面见一髻佛母护法神
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 一髻佛母 (E_010)
+      role: 护法
+  location: 达波 (E_325)
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "修行护法神阿则（即一髻佛母护法神），结果在上午时分面见尊颜，当他认为是冤魄作怪时，护法神降临承诺'以后相随'"
+
+- event_id: EV_054
+  type: 神变
+  title: 奘大师在拉则修金丹术面见无量寿佛
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 无量寿佛 (E_007)
+      role: 本尊
+  location: 拉则寺 (E_328)
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "在拉则修行金丹术，结果面见无量寿佛"
+
+- event_id: EV_055
+  type: 神变
+  title: 奘大师在邬嘎岩山面见胜乐金刚佛父佛母
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 胜乐金刚 (E_008)
+      role: 本尊
+  location: 邬嘎岩山 (E_336)
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "在邬嘎岩山上修行，结果面见胜乐金刚佛父佛母"
+
+- event_id: EV_056
+  type: 神变
+  title: 奘大师修行金刚亥母现前，面见至尊金刚亥母得受表示
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 金刚亥母 (E_005)
+      role: 本尊
+  location: "革母"
+  time_info: ""
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "在革母的西方面见至尊金刚亥母，得受众多表示"
+
+- event_id: EV_057
+  type: 圆寂
+  title: 奘·达玛布德一百一十七岁圆寂
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+  location: ""
+  time_info: "一百一十七岁；一百零二岁时曾显现生病"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师的年龄也是达到一百一十七岁才圆寂……荼毗之时，天空彩虹遍布，出现许多佛塔、舍利"
+
+# ==================== 觉哲 (lines 360-385) ====================
+
+- event_id: EV_058
+  type: 传法
+  title: 沃喀拉哲巴传觉哲幻化网等宁玛法要
+  participants:
+    - entity: 沃喀拉哲巴 (E_147)
+      role: 主体
+    - entity: 觉哲 (E_115)
+      role: 受法者
+    - entity: 幻化网 (E_208)
+      role: 法门
+    - entity: 喜金刚 (E_209)
+      role: 法门
+    - entity: 真实名经 (E_210)
+      role: 法门
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "在沃喀拉哲巴面前得受了《幻化网》等宁玛法要、《喜金刚》、《真实名经》"
+
+- event_id: EV_059
+  type: 传法
+  title: 奘大师将金刚桥法全部教言传授给觉哲
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 觉哲 (E_115)
+      role: 受法者
+    - entity: 金刚桥 (E_235)
+      role: 法门
+  location: 达波 (E_325)
+  time_info: "师徒共住十八年"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师与觉哲师徒二人共住了十八年，奘大师将所有教言传授给觉哲以后吩咐他秉持传承"
+
+# ==================== 根桑大师 (lines 387-420) ====================
+
+- event_id: EV_060
+  type: 传法
+  title: 根桑在奘祖孙二人面前共得三十五次金刚桥法
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 觉哲 (E_115)
+      role: 主体
+    - entity: 根桑 (E_116)
+      role: 受法者
+    - entity: 金刚桥 (E_235)
+      role: 法门
+  location: 达波 (E_325)
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "合计起来共在奘祖孙二人面前得受了三十五次金刚桥法"
+
+- event_id: EV_061
+  type: 传法
+  title: 根桑传给亲子化身哦白桑给
+  participants:
+    - entity: 根桑 (E_116)
+      role: 主体
+    - entity: 哦白桑给 (E_154)
+      role: 受法者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "根桑尊者传给亲子化身哦白桑给"
+
+- event_id: EV_062
+  type: 传法
+  title: 奘大师传金刚桥法给涅达桑哈
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 主体
+    - entity: 赞塘巴涅达玛色拉 (E_139)
+      role: 受法者
+    - entity: 金刚桥 (E_235)
+      role: 法门
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师又把金刚桥法传给雅隆赞塘巴的涅达桑哈"
+
+- event_id: EV_063
+  type: 圆寂
+  title: 涅达桑哈七十七岁圆寂
+  participants:
+    - entity: 赞塘巴涅达玛色拉 (E_139)
+      role: 主体
+  location: ""
+  time_info: "七十七岁"
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "最后在七十七岁时圆寂"
+
+- event_id: EV_064
+  type: 传法
+  title: 奘大师传承链之一（色隆→让珠→哲波秋钦）
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 始传者
+    - entity: 色隆巴 (E_140)
+      role: 传承者
+    - entity: 让珠 (E_159)
+      role: 传承者
+    - entity: 哲波秋钦 (E_160)
+      role: 传承者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师传给色隆，色隆传给阿阇黎让珠，他传给哲波秋钦"
+
+- event_id: EV_065
+  type: 传法
+  title: 奘大师传承链之二（多吉嘉灿→德敦达巴尊哲）
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 始传者
+    - entity: 多吉嘉村 (E_141)
+      role: 传承者
+    - entity: 德敦达巴尊哲 (E_161)
+      role: 传承者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师传给多吉嘉灿，多吉嘉灿传给德敦达巴尊哲"
+
+- event_id: EV_066
+  type: 传法
+  title: 奘大师传承链之三（则益西旺波→...→索敦）
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 始传者
+    - entity: 则益西旺波 (E_162)
+      role: 传承者
+    - entity: 堪布拉卡瓦 (E_163)
+      role: 传承者
+    - entity: 滚嘉 (E_164)
+      role: 传承者
+    - entity: 贡热瓦 (E_165)
+      role: 传承者
+    - entity: 索敦 (E_166)
+      role: 传承者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师传给则益西旺波-堪布拉卡瓦-阿阇黎滚嘉-阿阇黎贡热瓦-索敦"
+
+- event_id: EV_067
+  type: 传法
+  title: 奘大师传承链之四（雅敦达瓦哦色→罗敦给登嘉→哦那多巴拉热万德）
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 始传者
+    - entity: 雅敦达瓦哦色 (E_143)
+      role: 传承者
+    - entity: 罗敦给登嘉 (E_167)
+      role: 传承者
+    - entity: 哦那多巴拉热万德 (E_168)
+      role: 传承者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师传给帮让巴雅敦达瓦哦色。达瓦哦色传给罗敦给登嘉……帮让雅敦接近一百岁时，他又传给哦那多巴拉热万德"
+
+- event_id: EV_068
+  type: 传法
+  title: 奘大师传承链之五（吉才益西旺修→...→释迦嘉波）
+  participants:
+    - entity: 奘·达玛布德 (E_099)
+      role: 始传者
+    - entity: 吉才益西旺修 (E_169)
+      role: 传承者
+    - entity: 大堪布俄巴 (E_170)
+      role: 传承者
+    - entity: 德敦班则夏绕 (E_171)
+      role: 传承者
+    - entity: 大堪布索南嘉村 (E_172)
+      role: 传承者
+    - entity: 大堪布云讷西绕 (E_173)
+      role: 传承者
+    - entity: 云讷札巴 (E_174)
+      role: 传承者
+    - entity: 大堪布桑吉藏波 (E_175)
+      role: 传承者
+    - entity: 尊则旺修 (E_176)
+      role: 传承者
+    - entity: 塔叶札巴仁钦 (E_177)
+      role: 传承者
+    - entity: 释迦嘉波 (E_178)
+      role: 传承者
+  location: ""
+  time_info: ""
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "奘大师传给吉才益西旺修-则益西旺波-大堪布俄巴-德敦班则夏绕-大堪布索南嘉村-大堪布云讷西绕-阿阇黎云讷札巴-大堪布桑吉藏波-喇嘛尊则旺修-塔叶札巴仁钦-阿阇黎释迦嘉波"

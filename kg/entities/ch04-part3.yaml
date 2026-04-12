@@ -1,0 +1,1314 @@
+# KG 实体抽取：第四品 · 内密三续 · Part 3（无垢光尊者主要事迹 + 弟子传承）
+# Source:
+#   source/dudjom/chapter_md/04_内密三续.md, lines 841-1248
+#   约 6000 字
+#
+# Spec versions applied:
+#   - entity-taxonomy v0.4
+#   - narrative-layers v0.2
+#   - SKILL_03a v0.1
+#
+# 命名约定:
+#   E_PNN  人物 | E_SNN 圣众 | E_NNN 非人 | E_TNN 寺院
+#   E_LNN  地名 | E_BNN 经典 | E_DNN 教法 | E_RNN 仪轨
+#   E_ONN  法器/圣物 | E_GNN 集合 | E_CNN 教派
+#   编号以 4xx 起始，标识第四品。
+
+metadata:
+  source_file: source/dudjom/chapter_md/04_内密三续.md
+  source_section: 无垢光尊者主要事迹 + 弟子传承
+  source_lines: "841-1248"
+  total_chars: ~6000
+  spec_versions:
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  extracted_entities: 105
+  date: 2026-04-11
+
+# ============================================================
+# 实体
+# ============================================================
+entities:
+
+  # ========== 圣众 ==========
+
+  E_S401:
+    name: 金刚亥母
+    type: 圣众.大乘.空行
+    aliases: []
+    note: |
+      身色湛蓝佩带宝饰、骨饰。亲自降临与无垢光尊者对话，
+      预言其未来，确认其为帮刚巴仁钦多吉转世，
+      称"我与你生生世世形影不离"。
+    appearances: [888, 890, 919, 932, 957, 980, 998]
+
+  E_S402:
+    name: 莲花生大士
+    type: 圣众.大乘.本尊
+    aliases: [莲师]
+    note: |
+      在本段多次以净相显现：从西南方降临融入无垢光尊者；
+      以意修装束降临于安放《空行心滴》法本时；
+      在内供时左右有布玛莫札和金刚亥母。
+      被尊者问能否面见。
+    appearances: [920, 950, 956, 1018, 1132, 1149]
+
+  E_S403:
+    name: 弥勒菩萨
+    type: 圣众.大乘.菩萨
+    aliases: []
+    note: |
+      经堂开光时显现，举起手指授记无垢光尊者
+      最后一世在莲积刹土成佛，佛号善逝山王灯幢。
+    appearances: [1111, 1112]
+
+  E_S404:
+    name: 释迦佛
+    type: 圣众.大乘.佛
+    aliases: []
+    note: 经堂开光时面带笑容显现
+    appearances: [1111]
+
+  E_S405:
+    name: 十六罗汉
+    type: 圣众.声闻圣众
+    aliases: []
+    note: 经堂开光时面带笑容显现
+    appearances: [1111]
+
+  E_S406:
+    name: 寂猛百尊
+    type: 圣众.大乘.本尊
+    aliases: []
+    note: 无垢光尊者面见的佛菩萨之一
+    appearances: [1133]
+
+  E_S407:
+    name: 八大法行本尊
+    type: 圣众.大乘.本尊
+    aliases: []
+    note: 无垢光尊者面见的佛菩萨之一
+    appearances: [1133]
+
+  E_S408:
+    name: 普贤如来
+    type: 圣众.大乘.佛
+    aliases: []
+    note: |
+      无垢光尊者被尊称为"第二普贤如来"，
+      此处指原始法身佛。
+    appearances: [1025]
+
+  E_S409:
+    name: 文殊菩萨
+    type: 圣众.大乘.菩萨
+    aliases: []
+    note: |
+      莲师伏藏品授记"南方文殊菩萨尊，一位化身能调伏"，
+      众智者认为无垢光尊者即文殊化身。
+    appearances: [1151, 1155]
+
+  E_S410:
+    name: 忿怒莲师
+    type: 圣众.大乘.本尊
+    form_of: E_S402
+    aliases: []
+    note: |
+      莲师忿怒形态。无垢光尊者降伏天灵盖鬼神时，
+      众人亲眼看见尊者就是忿怒莲师。
+      也作为尊者面见的佛菩萨之一另外提及。
+    appearances: [1109, 1132]
+
+  E_S411:
+    name: 七佛
+    type: 圣众.大乘.佛
+    aliases: []
+    note: 尊者朝礼觉沃佛像时，见佛像头上有七佛显现
+    appearances: [1130]
+
+  E_S412:
+    name: 药师佛
+    type: 圣众.大乘.佛
+    aliases: []
+    note: 尊者朝礼觉沃佛像时显现
+    appearances: [1130]
+
+  E_S413:
+    name: 喜金刚
+    type: 圣众.大乘.本尊
+    aliases: []
+    note: 尊者朝礼觉沃佛像时显现
+    appearances: [1130]
+
+  E_S414:
+    name: 虚空王观世音
+    type: 圣众.大乘.菩萨
+    aliases: []
+    note: 尊者朝礼觉沃佛像时显现
+    appearances: [1130]
+
+  E_S415:
+    name: 胜海观音
+    type: 圣众.大乘.菩萨
+    aliases: []
+    note: 尊者朝礼觉沃佛像时显现
+    appearances: [1130]
+
+  E_S416:
+    name: 圣天菩萨
+    type: 圣众.大乘.菩萨
+    aliases: []
+    note: |
+      以喻说明智悲光与无垢光尊者的近传关系——
+      "就像圣天菩萨摄受玛德革巴一样"。
+    appearances: [1244]
+
+  # ========== 人物 - 法师 ==========
+
+  E_P401:
+    name: 无垢光尊者
+    type: 人物.法师
+    aliases: [龙钦绕降, 龙钦巴, 桑耶巴]
+    specialty: [上师, 金刚持, 大成就者, 伏藏师]
+    additional_types: [圣众.大乘.菩萨]
+    additional_types_source: text
+    manifestation_of: [E_P415]     # 帮刚巴仁钦多吉
+    note: |
+      本段核心人物。被金刚亥母确认为帮刚巴仁钦多吉转世、
+      被空行母称为佛陀化身、众智者认为是文殊菩萨化身。
+      被尊为"第二普贤如来"。弥勒菩萨授记其最后一世在
+      莲积刹土成佛，佛号善逝山王灯幢。
+      面见无量本尊。凡有缘者见闻接触皆播解脱种子。
+      水兔年五十六岁时圆寂于青普。
+      additional_types 原因：文中既以凡常法师描述其苦修生涯，
+      又以"第二普贤如来""佛陀化身"等圣众模式描述。
+    appearances: [841, 847, 851, 854, 889, 892, 920, 950, 959,
+                  1007, 1025, 1040, 1081, 1094, 1111, 1132,
+                  1159, 1178, 1199, 1214, 1229, 1237, 1239]
+
+  E_P402:
+    name: 持明革玛燃匝
+    type: 人物.法师
+    aliases: [革玛燃匝]
+    specialty: [上师, 持明]
+    note: |
+      无垢光尊者之根本上师。为激发弟子厌离心，
+      一年春天连续迁居九次。满瓶倾泻恩赐上灌顶
+      和大圆满三部续教窍诀及护法神修法，
+      授予无垢光尊者为法太子。
+      其转世为云讷桑吉（据布玛莫札授记）。
+    appearances: [841, 848, 898, 1095, 1216]
+
+  E_P403:
+    name: 哦色古恰
+    type: 人物.法师
+    aliases: [哦色够恰]
+    specialty: [瑜伽士]
+    note: |
+      瑜伽行者。历经艰辛寻找《空行心滴》法本给尊者看。
+      后被尊者派去取法本。获得成就的四位瑜伽士之一。
+    appearances: [852, 1007, 1084, 1226]
+
+  E_P404:
+    name: 阿阇黎仁多
+    type: 人物.法师
+    aliases: []
+    specialty: [阿阇黎]
+    note: 在金刚亥母降临时问帮刚巴仁钦多吉住在哪里
+    appearances: [928]
+
+  E_P405:
+    name: 噶玛巴
+    type: 人物.法师
+    aliases: []
+    specialty: [上师]
+    note: 文中称"传教者噶玛巴"，传讲心滴法者之一
+    appearances: [991]
+
+  E_P406:
+    name: 仁钦朗巴
+    type: 人物.法师
+    aliases: []
+    specialty: [伏藏师]
+    note: |
+      传讲心滴法者之一。其伏藏品被空行母评价为
+      "是倒是，没有准确性"。
+    appearances: [991, 994]
+
+  E_P407:
+    name: 嘉追作巴
+    type: 人物.法师
+    aliases: []
+    specialty: [瑜伽士]
+    note: |
+      无垢光尊者五位心子之一。尊者圆寂前对其说
+      "拿纸墨来"，由此留下遗嘱《无垢光遗教》。
+    appearances: [1179, 1184, 1224]
+
+  E_P408:
+    name: 布玛莫札
+    type: 人物.法师
+    aliases: []
+    specialty: [阿阇黎, 班智达]
+    note: |
+      空行母称其"已到藏地"。亲现尊颜向无垢光尊者
+      预言："将此心滴法汇集成精髓传给革玛燃匝的转世
+      云讷桑吉"。传授《上师心滴如意宝》。
+      用契克印指向哦日夏殿堂授记须修缮。
+      每百年显现一位化身。
+    appearances: [894, 924, 956, 1004, 1094, 1098, 1217]
+
+  E_P409:
+    name: 益西措嘉
+    type: 人物.法师
+    aliases: [益西措嘉空行母]
+    specialty: [空行母]
+    additional_types: [圣众.大乘.空行]
+    additional_types_source: text
+    note: |
+      莲师右侧现身。安放《空行心滴》法本时降临，
+      口述经文。六天中亲自现身于尊者前，
+      对《空行心滴》的句义比喻加以介绍，
+      并作交付印持。以世间空行母（人物）和出世间空行（圣众）
+      双重模式出现。
+    appearances: [1018, 1020, 1043, 1051]
+
+  E_P410:
+    name: 云讷桑吉
+    type: 人物.法师
+    aliases: []
+    specialty: [上师]
+    note: |
+      革玛燃匝的转世。布玛莫札授记无垢光尊者将心滴法
+      汇集成精髓传给此弟子。以后也会涌现名字中有"云讷"
+      的七位大德受持弘扬此法。
+    appearances: [1096, 1224]
+
+  E_P411:
+    name: 秀嘉哲勒巴
+    type: 人物.法师
+    aliases: []
+    specialty: [瑜伽士]
+    note: |
+      伏藏师的亲传弟子。无垢光尊者在其面前聆听
+      《空行心滴》的句传。
+    appearances: [1122]
+
+  E_P412:
+    name: 阿阇黎桑吉根嘎
+    type: 人物.法师
+    aliases: []
+    specialty: [阿阇黎]
+    note: |
+      被无垢光尊者任命为解脱洲僧团住持。
+      弘扬佛法的四位善知识之一。
+    appearances: [1120, 1225]
+
+  E_P413:
+    name: 顾巴根仁
+    type: 人物.大臣
+    aliases: [哲贡巴·顾巴根仁]
+    origin: 哲贡
+    note: |
+      哲贡地方权贵。为自己政权骄傲所迷醉，
+      企图发动战乱。看到莲师伏藏品授记后发现自身背部
+      有宝剑形痣，知授记所指即己。放弃战乱，
+      寻找文殊菩萨化身，后将无垢光尊者迎请为至尊上师。
+    appearances: [1148, 1157]
+
+  E_P414:
+    name: 司徒香切嘉灿
+    type: 人物.大臣
+    aliases: []
+    note: |
+      卫藏傲气十足之人。对无垢光尊者作为哲贡巴的上师颇为不满。
+    appearances: [1159]
+
+  E_P415:
+    name: 帮刚巴仁钦多吉
+    type: 人物.法师
+    aliases: [阿阇黎仁钦多吉]
+    specialty: [伏藏师]
+    note: |
+      金刚亥母确认无垢光尊者即帮刚巴仁钦多吉转世。
+      "阿阇黎仁钦多吉开取伏藏以后，本来如果在几年中
+      秘密修行，则能修炼光明报身的妙力。可由于没能保密，
+      致使寿命没有达到究竟。"
+    appearances: [928, 933]
+
+  E_P416:
+    name: 布达西绕
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 向西藏国君八足狮子介绍无垢光尊者事迹之人
+    appearances: [1161]
+
+  E_P417:
+    name: 八足狮子
+    type: 人物.帝王
+    aliases: []
+    note: 西藏国君，经布达西绕介绍而对无垢光尊者毕恭毕敬顶戴
+    appearances: [1161]
+
+  E_P418:
+    name: 司徒释迦桑波
+    type: 人物.大臣
+    aliases: []
+    origin: 卫多
+    note: 卫多地带头人，对无垢光尊者恭敬有加
+    appearances: [1163]
+
+  E_P419:
+    name: 多吉嘉村
+    type: 人物.大臣
+    aliases: []
+    origin: 雅隆
+    note: 雅隆的头领，对无垢光尊者恭敬有加
+    appearances: [1163]
+
+  E_P420:
+    name: 友塔朗巴克主德勒嘉措
+    type: 人物.法师
+    aliases: []
+    specialty: [上师]
+    note: 无垢光尊者三位智者弟子之一
+    appearances: [1222]
+
+  E_P421:
+    name: 克主秋戒札巴
+    type: 人物.法师
+    aliases: []
+    specialty: [上师]
+    note: 无垢光尊者三位智者弟子之一
+    appearances: [1223]
+
+  E_P422:
+    name: 克主恰达棱珠
+    type: 人物.法师
+    aliases: []
+    specialty: [上师]
+    note: |
+      无垢光尊者三位智者弟子之一。
+      也出现在《心性休息大车疏》传承链中（龙钦绕降之后）。
+    appearances: [1223, 1237]
+
+  E_P423:
+    name: 多康巴丹古秋戒札巴
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 无垢光尊者五位心子之一
+    appearances: [1223]
+
+  E_P424:
+    name: 喇嘛华秋巴
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 无垢光尊者五位心子之一
+    appearances: [1224]
+
+  E_P425:
+    name: 革热益西绕降
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 无垢光尊者五位心子之一
+    appearances: [1224]
+
+  E_P426:
+    name: 化身华玖嘉措
+    type: 人物.法师
+    aliases: [华玖嘉措]
+    specialty: []
+    note: 弘扬佛法的四位善知识之一
+    appearances: [1225]
+
+  E_P427:
+    name: 阿阇黎罗珠桑波
+    type: 人物.法师
+    aliases: []
+    specialty: [阿阇黎]
+    note: 弘扬佛法的四位善知识之一
+    appearances: [1225]
+
+  E_P428:
+    name: 达够夏札秋吉
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 弘扬佛法的四位善知识之一
+    appearances: [1225]
+
+  E_P429:
+    name: 帕古多丹嘉波
+    type: 人物.法师
+    aliases: []
+    specialty: [瑜伽士]
+    note: 获得成就的四位瑜伽士之一
+    appearances: [1226]
+
+  E_P430:
+    name: 持明光明自解脱
+    type: 人物.法师
+    aliases: []
+    specialty: [持明, 瑜伽士]
+    note: 获得成就的四位瑜伽士之一
+    appearances: [1227]
+
+  E_P431:
+    name: 舍事者索南哦色
+    type: 人物.法师
+    aliases: []
+    specialty: [瑜伽士]
+    note: 获得成就的四位瑜伽士之一
+    appearances: [1227]
+
+  E_P432:
+    name: 桑吉华仁
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 其他众多持教善知识之一
+    appearances: [1228]
+
+  E_P433:
+    name: 札巴华
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 其他众多持教善知识之一
+    appearances: [1228]
+
+  E_P434:
+    name: 勒堪索南桑给
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 其他众多持教善知识之一
+    appearances: [1228]
+
+  E_P435:
+    name: 仁钦彭措
+    type: 人物.帝王
+    aliases: [法王哲贡巴仁钦彭措, 哲贡巴]
+    note: |
+      无垢光尊者圆寂后于其前现身授记。
+      对受持、护持、弘扬无垢光尊者宝典作出弥足珍贵贡献。
+      传法给莲花补处（伏藏大师西绕哦色）。
+      建立吉祥山胜乘洲。
+    appearances: [1229, 1231, 1232]
+
+  E_P436:
+    name: 达瓦
+    type: 人物.法师
+    aliases: [化身达瓦]
+    specialty: []
+    note: |
+      无垢光尊者授记中：显示头顶马头标帜的化身达瓦的转世灵童。
+      仁钦彭措为其戴帽加持。
+    appearances: [1230]
+
+  E_P437:
+    name: 西绕哦色
+    type: 人物.法师
+    aliases: [伏藏大师西绕哦色, 莲花补处, 现达布热巴]
+    specialty: [伏藏师]
+    note: |
+      仁钦彭措传法的对象。
+      文中称"莲花补处现达布热巴或者伏藏大师西绕哦色"。
+    appearances: [1232]
+
+  E_P438:
+    name: 仲雄吉巴
+    type: 人物.其他
+    aliases: []
+    note: 佛教施主，劝请刻《心性休息颂词及注释》
+    appearances: [1233]
+
+  E_P439:
+    name: 智悲光
+    type: 人物.法师
+    aliases: [持明晋美朗巴, 无畏洲, 持明者智悲光]
+    specialty: [持明, 上师]
+    note: |
+      土兔年在吉祥密意的青普山洞时，
+      全知无垢光尊者三次显示智慧身交给他一本经函，
+      令其开显《心性休息大车疏》中隐含的所有窍诀。
+      自然通达浩如烟海的法理。也堪称最近传承。
+    appearances: [1239, 1242]
+
+  E_P440:
+    name: 玛德革巴
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 以喻出现——"就像圣天菩萨摄受玛德革巴一样"
+    appearances: [1244]
+
+  E_P441:
+    name: 札克华
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 前代诸位上师认定的无垢光尊者转世
+    appearances: [1214]
+
+  E_P442:
+    name: 罗珠秋
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 按《应成续》授记认定的无垢光尊者转世，文中认为更合理
+    appearances: [1215]
+
+  # ========== 人物 - 传承链人物 ==========
+
+  E_P443:
+    name: 札巴哦色
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 《心性休息大车疏》传承链中人物
+    appearances: [1237]
+
+  E_P444:
+    name: 桑吉温波
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 《心性休息大车疏》传承链中人物
+    appearances: [1237]
+
+  E_P445:
+    name: 达瓦札巴
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 《心性休息大车疏》传承链中人物
+    appearances: [1237]
+
+  E_P446:
+    name: 根桑多吉
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 《心性休息大车疏》传承链中人物
+    appearances: [1238]
+
+  E_P447:
+    name: 嘉村华桑
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 《心性休息大车疏》传承链中人物
+    appearances: [1238]
+
+  E_P448:
+    name: 那凑扬珠
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 《心性休息大车疏》传承链中人物
+    appearances: [1238]
+
+  E_P449:
+    name: 丹增札巴
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 《心性休息大车疏》传承链中人物
+    appearances: [1238]
+
+  E_P450:
+    name: 多昂丹增
+    type: 人物.法师
+    aliases: []
+    specialty: []
+    note: 《心性休息大车疏》传承链中人物
+    appearances: [1238]
+
+  E_P451:
+    name: 持明陈列棱珠
+    type: 人物.法师
+    aliases: [法王德达朗巴]
+    specialty: [持明]
+    note: 《心性休息大车疏》传承链最末人物
+    appearances: [1238]
+
+  # ========== 非人 ==========
+
+  E_N401:
+    name: 阿仲玛
+    type: 非人.护法(世间)
+    aliases: [密咒一髻佛母]
+    additional_types: [圣众.大乘.护法]
+    additional_types_source: text
+    note: |
+      护法神。降神到瑜伽母体内，手舞足蹈。
+      三大护法神之一（阿仲玛、曜王绕呵拉、单坚）。
+      文中既以"密咒一髻佛母"（出世间护法）描述，
+      又以降神附体等世间形式出现，故 additional_types。
+    appearances: [856, 1049, 1051, 1137]
+
+  E_N402:
+    name: 单坚
+    type: 非人.护法(世间)
+    aliases: []
+    note: |
+      三大护法神之一。显现为白衣之人。
+      化现为佩带松石耳环的小孩帮助修建殿堂。
+      出现告知弟子中能利益众生者数目。
+    appearances: [878, 1054, 1102, 1137]
+
+  E_N403:
+    name: 现巴卓哲玛
+    type: 非人.护法(世间)
+    aliases: [现巴仲哲玛]
+    note: |
+      尊者梦到此者把经函交给他。
+      后在开许护法神交付印时现身说"请不要念诵我的修法"。
+    appearances: [853, 1057]
+
+  E_N404:
+    name: 多吉耶卓玛
+    type: 非人.护法(世间)
+    aliases: [耶卓玛]
+    note: |
+      尊者特别护法神。白母七姐妹降临请尊者到其处所。
+      由莲花生大士降伏而承诺保护伏藏。
+      后又请求尊者"光临我的处所"。
+      安放《空行心滴》法本时出现于莲师左侧。
+    appearances: [907, 916, 963, 965, 978, 1019, 1068, 1081]
+
+  E_N405:
+    name: 南哲热玛德
+    type: 非人.护法(世间)
+    aliases: [南哲玛, 南哲热玛德护法神]
+    note: |
+      护法神。亲自到来问为何不给献食子。
+      阐述了自己主尊眷属的现证，作伏藏授记，并大显神变。
+      后降临说"上师不要去"，被问昨天去哪里，
+      答"去牧民那里收东西"（时流行畜瘟）。
+    appearances: [1036, 1070, 1075]
+
+  E_N406:
+    name: 哦得贡嘉
+    type: 非人.护法(世间)
+    aliases: []
+    note: 来取受食子的护法神
+    appearances: [886]
+
+  E_N407:
+    name: 念青唐拉山神
+    type: 非人.护法(世间)
+    aliases: []
+    note: 来取受食子的护法神
+    appearances: [886]
+
+  E_N408:
+    name: 药神七姊妹
+    type: 非人.护法(世间)
+    aliases: []
+    note: 来取受食子的护法神
+    appearances: [886]
+
+  E_N409:
+    name: 觉沃当拉山神
+    type: 非人.护法(世间)
+    aliases: []
+    note: 身穿白衣、骑白马前来想要食子供品，给予红色朵马时不接受
+    appearances: [879]
+
+  E_N410:
+    name: 曜王绕呵拉
+    type: 非人.护法(世间)
+    aliases: [大遍入]
+    note: |
+      三大护法神之一（阿仲玛、曜王绕呵拉、单坚）。
+      尊者侍者亲眼目睹尊者命绕呵拉研墨。
+      文中称"大遍入（即绕呵拉）"。
+    appearances: [1137, 1140]
+
+  # ========== 寺院 / 道场 ==========
+
+  E_T401:
+    name: 解脱洲
+    type: 寺院.道场
+    aliases: []
+    note: |
+      无垢光尊者在不丹哦塘地方建立的僧团。
+      任命阿阇黎桑吉根嘎为住持。
+      振兴前译派与大圆满事业。
+    appearances: [1120]
+
+  E_T402:
+    name: 哦日夏殿堂
+    type: 寺院.寺庙
+    aliases: []
+    note: |
+      布玛莫札用契克印指向此处授记"有朝一日必须修缮它"。
+      尊者依此授记前往修复。
+    appearances: [1098, 1100]
+
+  E_T403:
+    name: 桑普佛学院
+    type: 寺院.寺庙
+    aliases: []
+    note: 无垢光尊者先后在此发放善妙布施
+    appearances: [1116]
+
+  E_T404:
+    name: 吉祥山胜乘洲
+    type: 寺院.道场
+    aliases: []
+    note: 仁钦彭措所建立
+    appearances: [1233]
+
+  E_T405:
+    name: 大昭寺
+    type: 寺院.寺庙
+    aliases: []
+    note: 拉萨大昭寺，无垢光尊者在大昭寺与小昭寺之间设立法座
+    appearances: [1126]
+
+  E_T406:
+    name: 小昭寺
+    type: 寺院.寺庙
+    aliases: []
+    note: 拉萨小昭寺
+    appearances: [1126]
+
+  # ========== 地名 ==========
+
+  E_L401:
+    name: 尼坡西色
+    type: 地名.区域
+    aliases: [西色]
+    note: 尊者三十一岁时以心滴法门使有缘者成熟解脱之处
+    appearances: [851, 1082, 1141]
+
+  E_L402:
+    name: 青普
+    type: 地名.圣地
+    aliases: [桑耶青普, 青普吉祥林间]
+    note: |
+      尊者三十二岁在此修行。多次提及。
+      尊者最终圆寂处。智悲光在此青普山洞获法。
+      又称"吉祥密意的青普山洞"。
+    appearances: [854, 1001, 1081, 1141, 1187, 1239]
+
+  E_L403:
+    name: 哦塘
+    type: 地名.区域
+    aliases: [不丹哦塘]
+    note: |
+      金刚亥母指出伏藏品在哦塘。
+      尊者后来来到不丹哦塘地方弘法。
+      建立解脱洲僧团之处。
+    appearances: [907, 919, 930, 939, 1118, 1142]
+
+  E_L404:
+    name: 刚日托嘎
+    type: 地名.圣地
+    aliases: [刚日神山, 刚日托嘎邬金堡光明云乐园]
+    note: |
+      《空行心滴》最终定稿之处。尊者被请到此处。
+      尊者在此撰著《七宝藏》等论。大多数时间居于此处。
+    appearances: [1028, 1083, 1138, 1141]
+
+  E_L405:
+    name: 邬金堡
+    type: 地名.圣地
+    aliases: []
+    note: |
+      阿仲玛称"在邬金堡的一位虔诚祈祷者更为喜出望外"。
+      单坚请尊者光临邬金堡。空行母降神也请尊者光临此处。
+    appearances: [1052, 1054, 1083, 1141]
+
+  E_L406:
+    name: 则卡达多佛塔
+    type: 地名.圣地
+    aliases: []
+    note: 哦色古恰取法本回来途中经过的地标
+    appearances: [1009]
+
+  E_L407:
+    name: 富岩
+    type: 地名.区域
+    aliases: []
+    note: 则卡达多佛塔附近的地方
+    appearances: [1009]
+
+  E_L408:
+    name: 热姆坚
+    type: 地名.区域
+    aliases: []
+    note: 从此处到富岩之间由五色彩虹连接
+    appearances: [1010]
+
+  E_L409:
+    name: 哦热
+    type: 地名.区域
+    aliases: []
+    note: 多吉耶卓玛曾在此处赐给尊者悉地
+    appearances: [977]
+
+  E_L410:
+    name: 觉拉山洞
+    type: 地名.修行处
+    aliases: []
+    note: 尊者想起以前在此处的情形
+    appearances: [978]
+
+  E_L411:
+    name: 卫藏多杰吉河
+    type: 地名.自然地理
+    aliases: []
+    note: 尊者在河两岸为信众传授无上密引导
+    appearances: [1115]
+
+  E_L412:
+    name: 洛珠
+    type: 地名.区域
+    aliases: []
+    note: 多次云集数以千计弟子之处
+    appearances: [1144]
+
+  E_L413:
+    name: 哦友
+    type: 地名.区域
+    aliases: []
+    note: 多次云集数以千计弟子之处
+    appearances: [1144]
+
+  E_L414:
+    name: 洛曼
+    type: 地名.区域
+    aliases: []
+    note: 多次云集数以千计弟子之处
+    appearances: [1144]
+
+  E_L415:
+    name: 哲贡
+    type: 地名.区域
+    aliases: []
+    note: 顾巴根仁来自此处
+    appearances: [1148]
+
+  E_L416:
+    name: 拉萨
+    type: 地名.圣地
+    aliases: []
+    note: 尊者到达拉萨朝拜觉沃佛像，在大昭寺小昭寺之间设法座
+    appearances: [1123, 1126]
+
+  E_L417:
+    name: 灵鹫山
+    type: 地名.圣地
+    aliases: []
+    note: 尊者回忆曾在灵鹫山受生为班智达
+    appearances: [1125]
+
+  E_L418:
+    name: 龟兹国
+    type: 地名.国
+    aliases: []
+    note: 尊者回忆曾在龟兹国受生为班智达
+    appearances: [1125]
+
+  E_L419:
+    name: 拉让岩
+    type: 地名.修行处
+    aliases: []
+    note: 尊者修行地点之一
+    appearances: [1141]
+
+  E_L420:
+    name: 札普
+    type: 地名.修行处
+    aliases: []
+    note: 尊者修行地点之一
+    appearances: [1141]
+
+  E_L421:
+    name: 友多德卓珠
+    type: 地名.修行处
+    aliases: []
+    note: 尊者修行地点之一
+    appearances: [1142]
+
+  E_L422:
+    name: 耶瓦
+    type: 地名.修行处
+    aliases: []
+    note: 尊者修行地点之一
+    appearances: [1142]
+
+  E_L423:
+    name: 雅拉夏波
+    type: 地名.修行处
+    aliases: []
+    note: 尊者修行地点之一
+    appearances: [1142]
+
+  E_L424:
+    name: 嘉哦花戒格当
+    type: 地名.修行处
+    aliases: []
+    note: 尊者修行地点之一
+    appearances: [1142]
+
+  E_L425:
+    name: 贡波热拉瓦谷
+    type: 地名.修行处
+    aliases: []
+    note: 尊者修行地点之一
+    appearances: [1142]
+
+  E_L426:
+    name: 贡波匝贡普
+    type: 地名.修行处
+    aliases: []
+    note: 尊者修行地点之一
+    appearances: [1143]
+
+  E_L427:
+    name: 修波岩
+    type: 地名.圣地
+    aliases: []
+    note: 尊者从桑耶青普来此处举行会供
+    appearances: [1081]
+
+  E_L428:
+    name: 莲积刹土
+    type: 地名.神话地名
+    aliases: []
+    note: 弥勒菩萨授记无垢光尊者最后一世在此成佛
+    appearances: [1114]
+
+  E_L429:
+    name: 南赡部洲
+    type: 地名.神话地名
+    aliases: []
+    note: 尊者称"我的这些窍诀在南赡部洲实在稀有罕见"
+    appearances: [1079]
+
+  E_L430:
+    name: 刚波山
+    type: 地名.自然地理
+    aliases: []
+    note: 尊者从此山对面看见恶神，知卫藏将有战事
+    appearances: [1117]
+
+  E_L431:
+    name: 嘉玛
+    type: 地名.区域
+    aliases: []
+    note: 尊者被请到桑耶途中经过
+    appearances: [1186]
+
+  E_L432:
+    name: 西方邬金
+    type: 地名.神话地名
+    aliases: []
+    note: 空行母称尊者将前往西方邬金示现成佛
+    appearances: [940]
+
+  # ========== 经典 ==========
+
+  E_B401:
+    name: 《空行心滴》
+    type: 经典.密续.岩藏
+    aliases: []
+    note: |
+      哦色古恰历经艰辛寻找其法本。
+      无垢光尊者开启窍诀《空行心滴》法。
+      益西措嘉六天中对其句义比喻加以介绍。
+      空行母确认住世五百年。
+      灌顶引导全部圆满结束。
+    appearances: [852, 909, 916, 943, 1013, 1017, 1058, 1084, 1123]
+
+  E_B402:
+    name: 《布玛心滴》
+    type: 经典.密续.远传
+    aliases: []
+    note: |
+      尊者问"《布玛心滴》、《空行心滴》二者中哪个更有利"。
+      空行母答"两者同样有利，《布玛心滴》最多住世一百年"。
+    appearances: [941, 943]
+
+  E_B403:
+    name: 《上师心滴如意宝》
+    type: 经典.密续.远传
+    aliases: []
+    note: |
+      布玛莫札传授给无垢光尊者，具三十五法部。
+      尊者圆寂前教诫弟子"如果有不懂之处，
+      当详细参阅《上师心滴如意宝》"。
+    appearances: [1097, 1197]
+
+  E_B404:
+    name: 《龙钦七宝藏》
+    type: 经典.论
+    aliases: [《七宝藏》]
+    note: |
+      无垢光尊者将意伏藏造成的论典之一。
+      在刚日神山撰著。
+    appearances: [1134, 1138]
+
+  E_B405:
+    name: 《三休息》
+    type: 经典.论
+    aliases: []
+    note: 无垢光尊者所造论典之一
+    appearances: [1134]
+
+  E_B406:
+    name: 《三自解脱》
+    type: 经典.论
+    aliases: []
+    note: 无垢光尊者所造论典之一
+    appearances: [1135]
+
+  E_B407:
+    name: 《密藏续》
+    type: 经典.密续.远传
+    aliases: []
+    note: 无垢光尊者结合心滴为其造《三遣暗论》
+    appearances: [1135]
+
+  E_B408:
+    name: 《三遣暗论》
+    type: 经典.论
+    aliases: []
+    note: 《密藏续》结合心滴而造
+    appearances: [1135]
+
+  E_B409:
+    name: 《三心髓》
+    type: 经典.论
+    aliases: []
+    note: 无垢光尊者所造论典之一
+    appearances: [1135]
+
+  E_B410:
+    name: 《三心滴》
+    type: 经典.论
+    aliases: []
+    note: 无垢光尊者所造论典之一
+    appearances: [1136]
+
+  E_B411:
+    name: 《目录宝库》
+    type: 经典.论
+    aliases: []
+    note: 记录无垢光尊者所有论著的目录
+    appearances: [1136]
+
+  E_B412:
+    name: 《无垢光遗教》
+    type: 经典.教言集
+    aliases: []
+    note: |
+      无垢光尊者临终遗嘱。以"轮回自性先已知，
+      世间法无实质故，今舍无常此幻身，
+      说永益教请谛听……"开端。
+    appearances: [1180]
+
+  E_B413:
+    name: 《心性休息大车疏》
+    type: 经典.论
+    aliases: []
+    note: |
+      窍诀心滴的成熟解脱教授圆满涵盖之论。
+      传承链：龙钦绕降→克主恰达棱珠→札巴哦色→桑吉温波→
+      达瓦札巴→根桑多吉→嘉村华桑→那凑扬珠→丹增札巴→
+      多昂丹增→持明陈列棱珠法王德达朗巴。
+      智悲光在青普山洞获无垢光尊者智慧身交付此论窍诀。
+    appearances: [1236, 1240]
+
+  E_B414:
+    name: 《心性休息颂词及注释》
+    type: 经典.论
+    aliases: []
+    note: 佛教施主仲雄吉巴劝请刻此论
+    appearances: [1234]
+
+  E_B415:
+    name: 《应成续》
+    type: 经典.密续
+    aliases: []
+    note: 其中有授记认定罗珠秋为无垢光尊者转世
+    appearances: [1215]
+
+  # ========== 教法 ==========
+
+  E_D401:
+    name: 大圆满秘密心滴
+    type: 教法.教法体系
+    aliases: [心滴, 心滴法, 心滴法门, 窍诀心滴]
+    vehicle: 阿底瑜伽
+    section: 密.前译
+    note: |
+      无垢光尊者从革玛燃匝处得受灌顶、引导及教授。
+      尊者以此法门使众多有缘者成熟解脱。
+      本段核心教法。
+    appearances: [847, 851, 890, 926, 990, 1013, 1024, 1079, 1236]
+
+  E_D402:
+    name: 大圆满三部续教窍诀
+    type: 教法.教法体系
+    vehicle: 阿底瑜伽
+    section: 密.前译
+    aliases: []
+    note: 革玛燃匝满瓶倾泻恩赐给无垢光尊者
+    appearances: [848]
+
+  E_D403:
+    name: 直断
+    type: 教法.教言法门
+    aliases: []
+    vehicle: 阿底瑜伽
+    section: 密.前译
+    note: 尊者圆寂前教诫"切要实修直断和顿超"
+    appearances: [1196]
+
+  E_D404:
+    name: 顿超
+    type: 教法.教言法门
+    aliases: [光明顿超捷径]
+    vehicle: 阿底瑜伽
+    section: 密.前译
+    note: |
+      尊者达到光明顿超捷径中觉性如量的境界。
+      圆寂前教诫"切要实修直断和顿超"。
+    appearances: [1093, 1196]
+
+  E_D405:
+    name: 前译派
+    type: 教法.教法体系
+    aliases: []
+    section: 密.前译
+    note: 无垢光尊者振兴前译派与大圆满事业
+    appearances: [1121]
+
+  # ========== 仪轨 ==========
+
+  E_R401:
+    name: 有戏灌顶
+    type: 仪轨.灌顶
+    aliases: []
+    note: 在进行有戏灌顶迎请时阿仲玛降神
+    appearances: [855]
+
+  E_R402:
+    name: 会供
+    type: 仪轨.供养
+    aliases: []
+    note: 多次出现——会供期间空行母供养甘露等
+    appearances: [874, 1013, 1076, 1081, 1091, 1146, 1194]
+
+  E_R403:
+    name: 禅定灌顶
+    type: 仪轨.灌顶
+    aliases: []
+    note: 尊者对南哲玛举行一次禅定灌顶后告知"请多关照"
+    appearances: [1072]
+
+  # ========== 法器 / 圣物 ==========
+
+  E_O401:
+    name: 觉沃佛像
+    type: 法器圣物.佛像
+    aliases: []
+    note: |
+      拉萨觉沃佛像。尊者朝拜时佛像白毫间放射光芒
+      融入自己眉间。后又见佛像放射纯金般光芒，
+      头上有七佛等显现。
+    appearances: [1123, 1129]
+
+  # ========== 集合 ==========
+
+  E_G401:
+    name: 三位智者弟子
+    type: 集合.弟子集合
+    cardinality: 3
+    members: [E_P420, E_P421, E_P422]
+    note: |
+      友塔朗巴克主德勒嘉措、克主秋戒札巴、克主恰达棱珠，
+      闻名遐迩的三位智者。
+    appearances: [1222]
+
+  E_G402:
+    name: 五位心子
+    type: 集合.弟子集合
+    cardinality: 5
+    members: [E_P423, E_P407, E_P424, E_P425, E_P410]
+    note: |
+      多康巴丹古秋戒札巴、嘉追作巴、喇嘛华秋巴、
+      革热益西绕降、云讷桑吉。
+    appearances: [1223]
+
+  E_G403:
+    name: 弘扬佛法四善知识
+    type: 集合.弟子集合
+    cardinality: 4
+    members: [E_P426, E_P412, E_P427, E_P428]
+    note: |
+      化身华玖嘉措、阿阇黎桑吉根嘎、阿阇黎罗珠桑波、
+      达够夏札秋吉。
+    appearances: [1225]
+
+  E_G404:
+    name: 获得成就四瑜伽士
+    type: 集合.弟子集合
+    cardinality: 4
+    members: [E_P429, E_P403, E_P430, E_P431]
+    note: |
+      帕古多丹嘉波、瑜伽士哦色够恰、持明光明自解脱、
+      舍事者索南哦色。
+    appearances: [1226]
+
+  E_G405:
+    name: 三大护法神
+    type: 集合.人物集合
+    cardinality: 3
+    members: [E_N401, E_N410, E_N402]
+    note: |
+      密主阿仲玛、曜王绕呵拉与单坚。
+      甘愿为仆，对无垢光尊者言听计从。
+    appearances: [1137]
+
+  E_G406:
+    name: 多吉耶卓玛白母七姐妹
+    type: 集合.人物集合
+    cardinality: 7
+    members_named: [E_N404]
+    note: 多吉耶卓玛白母七姐妹降临请尊者到其处所
+    appearances: [963]
+
+  E_G407:
+    name: 《心性休息大车疏》传承链
+    type: 集合.上师集合
+    cardinality: 11
+    members: [E_P401, E_P422, E_P443, E_P444, E_P445, E_P446,
+              E_P447, E_P448, E_P449, E_P450, E_P451]
+    note: |
+      全知龙钦绕降→克主恰达棱珠→札巴哦色→桑吉温波→
+      达瓦札巴→根桑多吉→嘉村华桑→那凑扬珠→丹增札巴→
+      多昂丹增→持明陈列棱珠法王德达朗巴。
+    appearances: [1237]
+
+  # ========== 经典（本书自身）==========
+
+  E_B416:
+    name: 《藏密佛教史——天鼓妙音》
+    type: 经典.史籍
+    aliases: []
+    note: |
+      本书书名。第四品结尾出现：
+      "藏密佛教史——天鼓妙音中，
+      藏地内密三续佛法概况，尤其主要阐述窍诀心滴历史第四品终。"
+    appearances: [1246]
