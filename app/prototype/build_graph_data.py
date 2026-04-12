@@ -150,46 +150,62 @@ chapter_files = {
 for ch, fpath in chapter_files.items():
     if os.path.exists(fpath):
         with open(fpath, 'r') as f:
-            source_texts[ch] = f.read()
+            raw = f.read()
+        # 合并 PDF 硬换行：单个 \n 替换为空（同一段落内的换行），保留 \n\n（段落分隔）
+        raw = raw.replace('\n\n', '<<PARA>>')
+        raw = raw.replace('\n', '')
+        raw = raw.replace('<<PARA>>', '\n')
+        source_texts[ch] = raw
 
-def expand_quote(short_quote, chapter_key, target_len=120):
-    """If quote is short, find it in source text and expand to surrounding context."""
-    if not short_quote or len(short_quote) >= target_len:
+def expand_quote(short_quote, chapter_key, target_len=100):
+    """扩展短引用：在源文本中找到位置，向前后扩展到句号。"""
+    if not short_quote:
         return short_quote
-    # Clean up the quote for searching
+    # 清理引用文本用于搜索
     search_q = short_quote.strip().strip('「」""')
+    # 也去掉搜索词中的空格/换行（源文本已合并）
+    search_q = search_q.replace('\n', '').replace(' ', '').replace('\u3000', '')
     if len(search_q) < 3:
         return short_quote
+
     text = source_texts.get(chapter_key, '')
     if not text:
         return short_quote
+
     pos = text.find(search_q)
     if pos == -1:
-        # Try partial match (first 10 chars)
-        partial = search_q[:min(10, len(search_q))]
-        pos = text.find(partial)
+        # 逐步缩短搜索词尝试匹配
+        for trylen in [20, 15, 10, 6]:
+            if len(search_q) > trylen:
+                pos = text.find(search_q[:trylen])
+                if pos >= 0:
+                    break
         if pos == -1:
             return short_quote
-    # Expand: find sentence boundaries around the match
-    # Go back to previous。or newline
+
+    # 向前找句号（最多 300 字）
     start = pos
-    for i in range(pos - 1, max(pos - 200, 0) - 1, -1):
-        if text[i] in '。\n':
+    for i in range(pos - 1, max(pos - 300, 0) - 1, -1):
+        if text[i] == '。':
             start = i + 1
             break
-    # Go forward to next。or newline
+
+    # 向后找句号（最多 300 字）
     end = pos + len(search_q)
-    for i in range(end, min(end + 200, len(text))):
-        if text[i] in '。\n':
-            end = i + 1
+    for i in range(end, min(end + 300, len(text))):
+        if text[i] == '。':
+            end = i + 1  # 包含句号
             break
+
     expanded = text[start:end].strip()
-    # If still too short, expand more
-    if len(expanded) < 40 and start > 0:
-        for i in range(start - 2, max(start - 200, 0) - 1, -1):
-            if text[i] in '。\n':
+
+    # 如果扩展后仍然太短（<60字），再向前多取一句
+    if len(expanded) < 60 and start > 1:
+        for i in range(start - 2, max(start - 300, 0) - 1, -1):
+            if text[i] == '。':
                 expanded = text[i+1:end].strip()
                 break
+
     return expanded if expanded else short_quote
 
 print(f"Source texts loaded: {list(source_texts.keys())}")
