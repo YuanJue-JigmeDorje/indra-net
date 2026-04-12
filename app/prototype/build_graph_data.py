@@ -375,6 +375,95 @@ with open(out_path, 'w') as f:
     f.write(json.dumps(links, ensure_ascii=False, indent=2))
     f.write(";\n")
 
+# ============================================================
+# 4. 从 events yaml 提取事件，按参与者索引
+# ============================================================
+all_events = []  # list of {event_id, type, title, participants, location, time_info, layers, source_quote, chapter}
+event_chapter_map = {'ch01': '第一品 佛教总况', 'ch02': '第二品 金刚密乘', 'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心'}
+
+for fpath in sorted(glob.glob(os.path.join(KG, "events", "*.yaml")) + glob.glob(os.path.join(KG, "poc", "*.yaml"))):
+    fname_base = os.path.basename(fpath).replace('.yaml', '')
+    # Determine chapter
+    ch_key = fname_base.split('-')[0]  # ch01-part1 → ch01
+    ch_name = event_chapter_map.get(ch_key, ch_key)
+
+    try:
+        with open(fpath, 'r') as f:
+            data = yaml.safe_load(f)
+    except:
+        continue
+
+    events_list = []
+    if isinstance(data, list):
+        events_list = data
+    elif isinstance(data, dict):
+        # Could be {events: [...]} or {EVT_001: {...}, ...} or has 'facts' key (PoC)
+        if 'events' in data:
+            events_list = data['events'] if isinstance(data['events'], list) else []
+        elif 'facts' in data:
+            facts = data['facts']
+            if isinstance(facts, list):
+                events_list = facts
+        else:
+            events_list = [v for v in data.values() if isinstance(v, dict) and 'type' in v]
+
+    for evt in events_list:
+        if not isinstance(evt, dict):
+            continue
+        # Extract participant names
+        participants = []
+        raw_parts = evt.get('participants', []) or []
+        if isinstance(raw_parts, list):
+            for p in raw_parts:
+                if isinstance(p, dict):
+                    ename = clean_name(str(p.get('entity', p.get('name', ''))))
+                    ename = normalize_name(ename)
+                    role = str(p.get('role', '')).strip()
+                    if ename:
+                        participants.append({'entity': ename, 'role': role})
+
+        # Get quote, expand it
+        raw_quote = str(evt.get('source_quote', evt.get('quote', '')) or '').strip()
+        quote = expand_quote(raw_quote, ch_key)
+
+        all_events.append({
+            'type': str(evt.get('type', '')).strip(),
+            'title': str(evt.get('title', evt.get('description', '')) or '').strip(),
+            'participants': participants,
+            'location': clean_name(str(evt.get('location', '') or '')),
+            'time_info': str(evt.get('time_info', '') or '').strip(),
+            'layers': evt.get('layers', []) or [],
+            'quote': quote,
+            'chapter': '《藏密佛教史》> ' + ch_name,
+        })
+
+# Build entity → events index
+entity_events = {}  # entity_name → list of event indices
+for i, evt in enumerate(all_events):
+    for p in evt['participants']:
+        name = p['entity']
+        if name not in entity_events:
+            entity_events[name] = []
+        entity_events[name].append(i)
+
+print(f"Events: {len(all_events)}, entities with events: {len(entity_events)}")
+
+# ============================================================
+# 5. 输出 JS (nodes + links + events)
+# ============================================================
+with open(out_path, 'w') as f:
+    f.write(f"// Auto-generated: {len(nodes)} nodes, {len(links)} links, {len(all_events)} events\n")
+    f.write(f"// Unknown type: {unknown_count}\n\n")
+    f.write("const nodes = ")
+    f.write(json.dumps(nodes, ensure_ascii=False, indent=2))
+    f.write(";\n\nconst links = ")
+    f.write(json.dumps(links, ensure_ascii=False, indent=2))
+    f.write(";\n\nconst allEvents = ")
+    f.write(json.dumps(all_events, ensure_ascii=False))
+    f.write(";\n\nconst entityEventIndex = ")
+    f.write(json.dumps(entity_events, ensure_ascii=False))
+    f.write(";\n")
+
 print(f"\nWritten: {out_path}")
 print(f"\nType distribution:")
 for t, c in Counter(n['type'] for n in nodes).most_common():
