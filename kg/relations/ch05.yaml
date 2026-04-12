@@ -1,0 +1,1322 @@
+# ============================================================
+# 知识图谱关系抽取 -- 第五品 远传经幻心
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md (lines 1-2692)
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用:
+#   E_5xx -- kg/entities/ch05-part1.yaml
+#   E_8xx -- kg/entities/ch05-part2.yaml / ch05-part3.yaml / ch05-part4.yaml
+#   E_7xx -- kg/entities/ch05-part5.yaml
+# 提取日期: 2026-04-11
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/05_远传经幻心.md
+  source_lines: "1-2692"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 121
+  date: 2026-04-11
+
+relations:
+
+  # ============================================================
+  # A. 化身/形态关系 (manifestationOf)
+  # ============================================================
+
+  - rel_id: R5_001
+    type: manifestationOf
+    source: E_530    # 大宿·释迦炯内
+    target: E_509    # 吉祥黑日嘎
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "拉吉大宿是吉祥黑日嘎亲自降临世间"
+    note: null
+
+  - rel_id: R5_002
+    type: manifestationOf
+    source: E_530    # 大宿·释迦炯内 -- part1 E_530重用为lineage figure
+    target: E_508    # 观世音菩萨
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "圣者观世音菩萨融入母亲等，由此知晓他是一位化身"
+    note: "融入母体之征兆表明化身关系"
+
+  - rel_id: R5_003
+    type: manifestationOf
+    source: E_780    # 荣索班智达
+    target: E_513    # 文殊
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "由此被共称为文殊菩萨的化身"
+    note: null
+
+  # ============================================================
+  # B. 师承关系 (teacherOf) -- 涅氏传承
+  # ============================================================
+
+  # --- 涅·赞那革玛绕的上师们 ---
+
+  - rel_id: R5_010
+    type: teacherOf
+    source: E_504    # 静命
+    target: E_530    # 涅·赞那革玛绕
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在静命堪布前出家并受了比丘戒"
+    note: null
+
+  - rel_id: R5_011
+    type: teacherOf
+    source: E_501    # 莲花生大士
+    target: E_530    # 涅·赞那革玛绕
+    specialty: [灌顶, 密法]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他依止了莲花生大士...涅·赞那革玛绕得受莲花生大士甘露功德坛城的成熟灌顶"
+    note: null
+
+  - rel_id: R5_012
+    type: teacherOf
+    source: E_502    # 布玛莫札
+    target: E_530    # 涅·赞那革玛绕
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他依止了...布玛莫札...他将圆满的金刚橛、夏哦这二法的窍诀全盘传授"
+    note: null
+
+  - rel_id: R5_013
+    type: teacherOf
+    source: E_503    # 贝若札那
+    target: E_530    # 涅·赞那革玛绕
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他依止了...贝若札那"
+    note: null
+
+  - rel_id: R5_014
+    type: teacherOf
+    source: E_534    # 耶札酿波
+    target: E_530    # 涅·赞那革玛绕
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他依止了...耶札酿波"
+    note: null
+
+  # --- 涅·赞那革玛绕的弟子们 ---
+
+  - rel_id: R5_020
+    type: teacherOf
+    source: E_530    # 涅·赞那革玛绕
+    target: E_531    # 索布·华杰益西
+    specialty: [灌顶, 密法, 教授]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "供养了一切工具而作为弟子，改名为拉·华杰益西"
+    note: "八华之首（前华）"
+
+  - rel_id: R5_021
+    type: teacherOf
+    source: E_530    # 涅·赞那革玛绕
+    target: E_532    # 哦占·华杰云讷
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "涅译师弟子，八华之一（前华）"
+    note: null
+
+  - rel_id: R5_022
+    type: teacherOf
+    source: E_530    # 涅·赞那革玛绕
+    target: E_537    # 涅钦华扬
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "四位前华"
+    note: "八华之一（前华）"
+
+  - rel_id: R5_023
+    type: teacherOf
+    source: E_530    # 涅·赞那革玛绕
+    target: E_538    # 塔桑华杰多
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "四位前华"
+    note: "八华之一（前华）"
+
+  - rel_id: R5_024
+    type: teacherOf
+    source: E_530    # 涅·赞那革玛绕
+    target: E_539    # 烂秋·华杰多吉
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "四位后华"
+    note: "八华之一（后华）"
+
+  - rel_id: R5_025
+    type: teacherOf
+    source: E_530    # 涅·赞那革玛绕
+    target: E_540    # 达吉·华杰札巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "四位后华"
+    note: "八华之一（后华）"
+
+  - rel_id: R5_026
+    type: teacherOf
+    source: E_530    # 涅·赞那革玛绕
+    target: E_541    # 札·华杰酿波
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "四位后华"
+    note: "八华之一（后华）"
+
+  - rel_id: R5_027
+    type: teacherOf
+    source: E_530    # 涅·赞那革玛绕
+    target: E_542    # 拉隆·华杰多吉
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "四位后华"
+    note: "八华之一（后华）"
+
+  - rel_id: R5_028
+    type: teacherOf
+    source: E_531    # 索布·华杰益西
+    target: E_533    # 努·桑吉益西
+    specialty: [灌顶, 密法, 教授]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "尤其是主要依止了索布·华杰益西和玛·给瓦炯...二位上师"
+    note: "索布将传承授予努钦"
+
+  # ============================================================
+  # B. 师承关系 -- 努氏传承
+  # ============================================================
+
+  - rel_id: R5_030
+    type: teacherOf
+    source: E_532    # 哦占·华杰云讷
+    target: E_533    # 努·桑吉益西
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他从七岁开始就跟随哦占·华杰云讷，对一切明处全部精通"
+    note: null
+
+  - rel_id: R5_031
+    type: teacherOf
+    source: E_501    # 莲花生大士
+    target: E_533    # 努·桑吉益西
+    specialty: [灌顶]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他在幼年时在莲花生大士前听受《八大法行》的灌顶"
+    note: null
+
+  - rel_id: R5_032
+    type: teacherOf
+    source: E_546    # 西日桑哈
+    target: E_533    # 努·桑吉益西
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他还依止了西日桑哈、布玛莫札..."
+    note: null
+
+  - rel_id: R5_033
+    type: teacherOf
+    source: E_502    # 布玛莫札
+    target: E_533    # 努·桑吉益西
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他还依止了...布玛莫札"
+    note: null
+
+  - rel_id: R5_034
+    type: teacherOf
+    source: E_558    # 瓦色达绕
+    target: E_533    # 努·桑吉益西
+    specialty: [灌顶, 教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在瓦色达绕面前得受了不可计数的灌顶及教授"
+    note: "尼泊尔上师，努钦五十四岁时依止"
+
+  - rel_id: R5_035
+    type: teacherOf
+    source: E_554    # 婆罗门色瓦坚
+    target: E_533    # 努·桑吉益西
+    specialty: [灌顶, 教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在鹿野苑，见到阿匝雅色瓦坚尊颜，请求了许多法要，尤其是也听受了《经部·集密意续》的圆满灌顶及教言"
+    note: null
+
+  - rel_id: R5_036
+    type: teacherOf
+    source: E_561    # 扬·加瓦云丹
+    target: E_533    # 努·桑吉益西
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "主要依止了...扬·加瓦云丹二位上师，研学了显宗及内外密的续部及所有窍诀"
+    note: null
+
+  # --- 努·桑吉益西的弟子们（四大心子 + 殊胜心子） ---
+
+  - rel_id: R5_040
+    type: teacherOf
+    source: E_533    # 努·桑吉益西
+    target: E_564    # 巴古·罗钦帕巴
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "精通《根本续》的巴古·罗钦帕巴"
+    note: "四大心子之一"
+
+  - rel_id: R5_041
+    type: teacherOf
+    source: E_533    # 努·桑吉益西
+    target: E_565    # 哲敦巴·勒毕卓美
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "善巧叶《甘露》的哲敦巴·勒毕卓美"
+    note: "四大心子之一"
+
+  - rel_id: R5_042
+    type: teacherOf
+    source: E_533    # 努·桑吉益西
+    target: E_566    # 旦云丹秋
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "擅长辩论花的旦云丹秋"
+    note: "四大心子之一"
+
+  - rel_id: R5_043
+    type: teacherOf
+    source: E_533    # 努·桑吉益西
+    target: E_567    # 益西旺修
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "通达见解密意果实之要点的益西旺修"
+    note: "四大心子之一"
+
+  - rel_id: R5_044
+    type: teacherOf
+    source: E_533    # 努·桑吉益西
+    target: E_568    # 克隆巴·云丹嘉措
+    specialty: [灌顶, 教授, 密法]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "殊胜心子，即是对四者无所不晓的克隆巴·云丹嘉措...完整无缺地恩赐了灌顶、续部、窍诀及零散的护法事业"
+    note: "殊胜心子"
+
+  # --- 云丹嘉措→益西嘉措→拉吉吽穹→酿·西绕秋→西绕炯内 ---
+
+  - rel_id: R5_050
+    type: teacherOf
+    source: E_568    # 云丹嘉措
+    target: E_569    # 益西嘉措
+    specialty: [灌顶, 教授, 密法]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "父亲所拥有的所有法门，以满瓶倾注的方式传授给他"
+    note: null
+
+  - rel_id: R5_051
+    type: teacherOf
+    source: E_569    # 益西嘉措
+    target: E_571    # 拉吉吽穹
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "益西嘉措的儿子拉吉吽穹"
+    note: "父子传承"
+
+  - rel_id: R5_052
+    type: teacherOf
+    source: E_571    # 拉吉吽穹
+    target: E_572    # 米拉日巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "为至尊米拉日巴传授了猛咒"
+    note: null
+
+  - rel_id: R5_053
+    type: teacherOf
+    source: E_571    # 拉吉吽穹
+    target: E_573    # 酿·西绕秋
+    specialty: [教授, 密法, 大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他的弟子中，独占鳌头的是酿·西绕秋"
+    note: null
+
+  - rel_id: R5_054
+    type: teacherOf
+    source: E_573    # 酿·西绕秋
+    target: E_574    # 西绕炯内
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "酿·西绕秋的弟子益西炯内"
+    note: null
+
+  # ============================================================
+  # B. 师承关系 -- 宿氏传承
+  # ============================================================
+
+  # --- 大宿·释迦炯内的上师们 ---
+
+  - rel_id: R5_060
+    type: teacherOf
+    source: E_574    # 秋隆杰酿·益西炯内
+    target: E_530    # 大宿·释迦炯内 (lineage context)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "从秋隆杰酿·益西炯内那里得到了宿氏有缘的法《幻化网》与心部"
+    note: "大宿的主要上师之一；此处E_530代指大宿"
+
+  - rel_id: R5_061
+    type: teacherOf
+    source: E_564    # 巴古·罗钦帕巴（东擦帕巴仁波切）
+    target: E_530    # 大宿·释迦炯内 (via part1)
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他也依止东擦帕巴仁波切足下"
+    note: "大宿亦依止帕巴；帕巴是大努弟子"
+
+  # --- 大宿·释迦炯内的弟子们（四顶尖 + 最胜顶尖） ---
+
+  - rel_id: R5_070
+    type: teacherOf
+    source: E_530    # 大宿·释迦炯内 (lineage)
+    target: E_730    # 小宿·西绕札巴 (part1 entity)
+    specialty: [灌顶, 教授, 大圆满, 密法]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "见解密意之顶尖的小宿·西绕札巴"
+    note: "四顶尖之首；大宿说小宿已获吉祥黑日嘎身语意成就"
+
+  - rel_id: R5_071
+    type: teacherOf
+    source: E_530    # 大宿
+    target: E_731    # 美涅穹札 (part1)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "幻化网讲解之顶尖的美涅穹札"
+    note: "四顶尖之一"
+
+  - rel_id: R5_072
+    type: teacherOf
+    source: E_530    # 大宿
+    target: E_732    # 扬古穹 (part1)
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "智广博学之顶尖的扬古穹"
+    note: "四顶尖之一"
+
+  - rel_id: R5_073
+    type: teacherOf
+    source: E_530    # 大宿
+    target: E_733    # 桑古西绕嘉波 (part1)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "修行顶尖的桑古西绕嘉波"
+    note: "四顶尖之一"
+
+  # --- 小宿·西绕札巴的弟子们 ---
+
+  - rel_id: R5_080
+    type: teacherOf
+    source: E_730    # 小宿·西绕札巴
+    target: E_825    # 玖敦夏嘎益
+    specialty: [教授, 大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "心部之柱贡哦的玖敦夏嘎益"
+    note: "小宿四柱弟子之一"
+
+  - rel_id: R5_081
+    type: teacherOf
+    source: E_730    # 小宿
+    target: E_826    # 扬康喇嘛
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "经部之柱炯隆的扬康喇嘛"
+    note: "小宿四柱弟子之一"
+
+  - rel_id: R5_082
+    type: teacherOf
+    source: E_730    # 小宿
+    target: E_827    # 烂释迦桑波
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "幻部之柱切瓦的烂释迦桑波"
+    note: "小宿四柱弟子之一"
+
+  - rel_id: R5_083
+    type: teacherOf
+    source: E_730    # 小宿
+    target: E_828    # 达德觉夏嘎够
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "事业之柱那莫热的达德觉夏嘎够"
+    note: "小宿四柱弟子之一"
+
+  - rel_id: R5_084
+    type: teacherOf
+    source: E_730    # 小宿
+    target: E_824    # 玛土香白
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "生起殊胜的信心以后成为小宿的弟子，名叫玛土香白"
+    note: "有算入五位顶梁柱之说"
+
+  # --- 宿·释迦桑给（小宿之子） ---
+
+  - rel_id: R5_090
+    type: teacherOf
+    source: E_730    # 小宿
+    target: E_740    # 宿·释迦桑给 (part1)
+    specialty: [灌顶, 教授, 密法, 大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "密主卓普巴或者宿·释迦桑给。小宿尊者知晓一位女弟子...便以五现前菩提的等持迎请密主金刚手入母胎，生下了...宿·释迦桑给"
+    note: "小宿之子"
+
+  - rel_id: R5_091
+    type: teacherOf
+    source: E_827    # 烂释迦桑波
+    target: E_740    # 宿·释迦桑给
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "来到烂释迦桑波面前，听受《幻化网》"
+    note: null
+
+  - rel_id: R5_092
+    type: teacherOf
+    source: E_826    # 扬康喇嘛
+    target: E_740    # 宿·释迦桑给
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在玖隆，又到扬康上师前闻法"
+    note: null
+
+  - rel_id: R5_093
+    type: teacherOf
+    source: E_828    # 达德觉夏嘎够 (达德/舅舅)
+    target: E_740    # 宿·释迦桑给
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在舅舅达德座下深入细致地得受了经部类"
+    note: null
+
+  # --- 卓普巴的弟子们（四那士、四敦士、四美士） ---
+
+  - rel_id: R5_100
+    type: teacherOf
+    source: E_740    # 宿·释迦桑给（卓普巴）
+    target: E_810    # 杰敦嘉那 (part3)
+    specialty: [灌顶, 教授, 大圆满, 密法]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "三十岁时，前往密主卓普巴面前聆听密法，一住就是十一年...恩赐了生起次第、圆满次第、大圆满的教授"
+    note: "四那士之首"
+
+  # --- 杰敦嘉那 → 钦波云丹松 ---
+
+  - rel_id: R5_101
+    type: teacherOf
+    source: E_810    # 杰敦嘉那
+    target: E_823    # 钦波云丹松 (part3)
+    specialty: [教授, 大圆满, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "十三年依止叔叔，圆满学修了生起次第、圆满次第、大圆满的所有续部、教授、窍诀"
+    note: "杰敦嘉那的侄子"
+
+  # --- 卓普巴/杰敦嘉那 → 螳螂尊者（卫巴敦夏） ---
+
+  - rel_id: R5_102
+    type: teacherOf
+    source: E_810    # 杰敦嘉那
+    target: E_826    # 卫巴敦夏（螳螂尊者）(part3)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "拉吉嘉那作云游僧时，他一直跟随左右，圆满得受了一切续及教授"
+    note: null
+
+  # --- 杰敦嘉那 → 卫巴秀波 → 月波敦则 ---
+
+  - rel_id: R5_103
+    type: teacherOf
+    source: E_810    # 杰敦嘉那（嘉那尊者）
+    target: E_828    # 卫巴秀波 (part3)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "跟随嘉那尊者，对生起次第、圆满次第、大圆满已经达到娴熟程度"
+    note: null
+
+  - rel_id: R5_104
+    type: teacherOf
+    source: E_828    # 卫巴秀波
+    target: E_829    # 月波敦则 (part3)
+    specialty: [教授, 大圆满]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "卫巴秀波的心子月波敦则"
+    note: null
+
+  - rel_id: R5_105
+    type: teacherOf
+    source: E_826    # 螳螂尊者
+    target: E_829    # 月波敦则
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "送他到舅舅螳螂尊者跟前去求学。三年期间，他认真地听受了荣派大圆满"
+    note: null
+
+  - rel_id: R5_106
+    type: teacherOf
+    source: E_833    # 云丹宗（拉康巴）
+    target: E_829    # 月波敦则
+    specialty: [教授, 大圆满, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "十六岁时，他来到杰卡寺云丹宗面前依止，安住多年以后对生起次第、圆满次第、大圆满了如指掌"
+    note: null
+
+  # --- 月波敦则的弟子们 ---
+
+  - rel_id: R5_110
+    type: teacherOf
+    source: E_829    # 月波敦则
+    target: E_839    # 达敦觉益 (part3)
+    specialty: [教授, 大圆满]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他在七年之间形影不离地依止上师，以三欢喜作承侍，勤奋学修了《普作王母子三类》..."
+    note: "月波尊者主要弟子"
+
+  - rel_id: R5_111
+    type: teacherOf
+    source: E_829    # 月波敦则
+    target: E_841    # 觉索 (part3)
+    specialty: [教授, 大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "上师摄受而圆满赐给他心部法要"
+    note: null
+
+  # ============================================================
+  # B. 师承关系 -- 宿氏后裔（宿·释迦光→达那敦德→宿·香巴桑给→雍敦巴）
+  # ============================================================
+
+  - rel_id: R5_120
+    type: teacherOf
+    source: E_740    # 卓普巴（通过弟子链）
+    target: E_845    # 雄吉嘉曼巴桑吉札 (part3/5)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.80
+    source_quote: "他前到后藏，在密主卓普巴的弟子一位大官员前听受了《集密意续》、《幻化网》等法要"
+    note: "间接师承，通过卓普巴弟子传授"
+
+  - rel_id: R5_121
+    type: teacherOf
+    source: E_845    # 雄吉嘉曼巴桑吉札→华哦杰秋戒桑给
+    target: E_846    # 曼隆巴释迦光 (part5)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "杰秋戒桑给的弟子就是曼隆巴释迦光"
+    note: null
+
+  # ============================================================
+  # B. 师承关系 -- 噶托派传承
+  # ============================================================
+
+  - rel_id: R5_130
+    type: teacherOf
+    source: E_740    # 卓普巴
+    target: E_850    # 匝敦珠为滚波 (part4)
+    specialty: [灌顶, 教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "宿·卓普巴大师的心子——匝敦珠为滚波"
+    note: null
+
+  - rel_id: R5_131
+    type: teacherOf
+    source: E_850    # 匝敦珠为滚波
+    target: E_860    # 噶托巴单巴德香 (part4)
+    specialty: [灌顶, 教授, 密法, 大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "于宿·卓普巴大师的心子——匝敦珠为滚波面前，听受《幻化网密藏续》及心部等法要"
+    note: "卓普巴到噶托巴之间仅一位上师"
+
+  - rel_id: R5_132
+    type: teacherOf
+    source: E_860    # 噶托巴单巴德香
+    target: E_861    # 藏敦巴 (part4)
+    specialty: [教授, 密法, 大圆满]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "噶托巴单巴德香尊者的法脉继承人藏敦巴...十七岁时遇到德香巴上师而闻受佛法"
+    note: null
+
+  - rel_id: R5_133
+    type: teacherOf
+    source: E_861    # 藏敦巴
+    target: E_862    # 香巴波 (part4)
+    specialty: [教授, 密法, 大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "藏敦巴尊者的法脉继承人是香巴波"
+    note: "法脉继承"
+
+  - rel_id: R5_134
+    type: teacherOf
+    source: E_862    # 香巴波
+    target: E_863    # 金厄瓦索南波巴 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "香巴波的法脉继承人金厄瓦索南波巴"
+    note: null
+
+  - rel_id: R5_135
+    type: teacherOf
+    source: E_863    # 金厄瓦索南波巴
+    target: E_864    # 哦鸥益西 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "金厄瓦索南波巴的法脉继承人哦鸥益西"
+    note: null
+
+  - rel_id: R5_136
+    type: teacherOf
+    source: E_864    # 哦鸥益西
+    target: E_865    # 香切华瓦 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "至尊哦巴的法脉继承人香切华瓦"
+    note: null
+
+  - rel_id: R5_137
+    type: teacherOf
+    source: E_865    # 香切华瓦
+    target: E_866    # 索南桑波 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "香切华瓦尊者的法脉继承人索南桑波"
+    note: null
+
+  - rel_id: R5_138
+    type: teacherOf
+    source: E_866    # 索南桑波
+    target: E_867    # 根嘎波巴 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "索南桑波的法脉继承人根嘎波巴"
+    note: null
+
+  - rel_id: R5_139
+    type: teacherOf
+    source: E_867    # 根嘎波巴
+    target: E_868    # 罗珠波巴 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "根嘎波巴的继承者罗珠波巴"
+    note: null
+
+  - rel_id: R5_140
+    type: teacherOf
+    source: E_868    # 罗珠波巴
+    target: E_869    # 罗珠桑给 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "罗珠波巴的法脉继承人罗珠桑给"
+    note: null
+
+  - rel_id: R5_141
+    type: teacherOf
+    source: E_869    # 罗珠桑给
+    target: E_870    # 香切罗珠 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "罗珠桑给的法脉继承人香切罗珠"
+    note: null
+
+  - rel_id: R5_142
+    type: teacherOf
+    source: E_870    # 香切罗珠
+    target: E_871    # 香切桑给 (part4)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "香切罗珠的法脉继承人——香切桑给"
+    note: null
+
+  # ============================================================
+  # B. 师承关系 -- 宿氏中期（宿·香巴桑给→雍敦巴 / 达那卓玛瓦）
+  # ============================================================
+
+  - rel_id: R5_150
+    type: teacherOf
+    source: E_843    # 宿·香巴桑给 (part3)
+    target: E_844    # 雍敦巴 (part3)
+    specialty: [教授, 密法, 大圆满]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在宿·香巴桑给面前圆满得受了《经幻心》的窍诀"
+    note: null
+
+  - rel_id: R5_151
+    type: teacherOf
+    source: E_843    # 宿·香巴桑给
+    target: E_847    # 达那卓玛瓦桑哲多吉 (part3)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在宿·香巴桑给面前广泛闻法，尤其对《幻化网》最为精通"
+    note: "晚期弟子"
+
+  # ============================================================
+  # B. 师承关系 -- 红帽/古云讷华/昆·敦华/宿钦·秋扬让珠线
+  # ============================================================
+
+  - rel_id: R5_160
+    type: teacherOf
+    source: E_848    # 古云讷华 (part3)
+    target: E_820    # 第四世红帽金厄仁波切 (part4)
+    specialty: [戒律, 灌顶, 教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "二十四岁以古大译师益桑则巴作为亲教师而受了比丘戒...闻受《幻化网密藏续》等的灌顶及教授"
+    note: null
+
+  - rel_id: R5_161
+    type: teacherOf
+    source: E_820    # 第四世红帽金厄仁波切
+    target: E_821    # 哲贡宿巴仁钦彭措 (part4)
+    specialty: [灌顶, 教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "第四世红帽金厄仁波切将法要恩赐予哲贡宿巴仁钦彭措...八岁时，在金厄仁波切秋吉札巴面前出家"
+    note: null
+
+  - rel_id: R5_162
+    type: teacherOf
+    source: E_849    # 昆·敦华玖棱珠 (part4)
+    target: E_852    # 宿钦·秋扬让珠 (part4)
+    specialty: [教授, 大圆满, 密法]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "昆敦华玖棱珠尊者的心子就是大宿·秋扬让珠...每一天给他传雍敦的《密藏续释》一两堂课"
+    note: null
+
+  - rel_id: R5_163
+    type: teacherOf
+    source: E_852    # 宿钦·秋扬让珠
+    target: E_853    # 第五世达赖喇嘛 (part4 context)
+    specialty: [灌顶, 教授, 大圆满, 密法]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "第五世达赖喇嘛拜他为师，而恭听了《威猛》等一切教藏法以及猛咒等"
+    note: null
+
+  # ============================================================
+  # B. 师承关系 -- 贝若札那心部传承
+  # ============================================================
+
+  - rel_id: R5_170
+    type: teacherOf
+    source: E_503    # 贝若札那
+    target: E_775    # 耶札酿波 (part5)
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "贝若札那——耶札酿波"
+    note: "心部传承"
+
+  - rel_id: R5_171
+    type: teacherOf
+    source: E_775    # 耶札酿波
+    target: E_776    # 贡巴绕色大师 (part5)
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "耶札酿波——贡巴绕色大师"
+    note: "心部传承"
+
+  - rel_id: R5_172
+    type: teacherOf
+    source: E_776    # 贡巴绕色大师
+    target: E_777    # 哲香乐坚 (part5)
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "贡巴绕色大师——哲香乐坚"
+    note: "心部传承"
+
+  - rel_id: R5_173
+    type: teacherOf
+    source: E_777    # 哲香乐坚
+    target: E_778    # 努华丹 (part5)
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "哲香乐坚——努华丹"
+    note: "心部传承"
+
+  - rel_id: R5_174
+    type: teacherOf
+    source: E_778    # 努华丹
+    target: E_779    # 宿万敦 (part5)
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "努华丹——宿万敦"
+    note: "心部传承"
+
+  - rel_id: R5_175
+    type: teacherOf
+    source: E_779    # 宿万敦
+    target: E_780    # 荣索班智达 (part5)
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "宿万敦——全知荣索班智达"
+    note: "心部传承终点"
+
+  # ============================================================
+  # B. 师承关系 -- 莲师→荣索班智达传承（金刚橛）
+  # ============================================================
+
+  - rel_id: R5_180
+    type: teacherOf
+    source: E_501    # 莲花生大士
+    target: E_780    # 荣索班智达 (part5 via lineage)
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.80
+    source_quote: "莲花生大士——降魔金刚——卡钦华杰旺修——...——荣索班智达"
+    note: "间接传承链，中间经八位上师"
+
+  # ============================================================
+  # B. 师承关系 -- 康派大圆满传承
+  # ============================================================
+
+  - rel_id: R5_185
+    type: teacherOf
+    source: E_781    # 阿如益西炯内 (part5)
+    target: E_782    # 玖如桑嘎奏克 (part5)
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他传给玖如桑嘎奏克"
+    note: "康派大圆满传承"
+
+  - rel_id: R5_186
+    type: teacherOf
+    source: E_782    # 玖如桑嘎奏克
+    target: E_779    # 雅宿万敦
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "玖如桑嘎奏克——雅宿万敦——荣索班智达"
+    note: "康派大圆满传承"
+
+  # ============================================================
+  # B. 师承关系 -- 后期传承（密主陈列棱珠→大译师达玛西日等）
+  # ============================================================
+
+  - rel_id: R5_190
+    type: teacherOf
+    source: E_855    # 密主陈列棱珠 (part5)
+    target: E_856    # 大译师秋嘉丹真 (part5)
+    specialty: [灌顶, 教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "密主陈列棱珠摄受大译师秋嘉丹真"
+    note: null
+
+  - rel_id: R5_191
+    type: teacherOf
+    source: E_857    # 伏藏大师杰美多吉 (part5)
+    target: E_858    # 大译师达玛西日 (part5)
+    specialty: [灌顶, 教授, 密法, 大圆满]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在伏藏大师面前受三皈五戒...在至尊伏藏大师面前受了三教轨的菩萨戒...前译《经幻心》等续部和修部的灌顶、教藏、讲解、传承、窍诀凡是保存下来的所有法...他都以满瓶倾泄的方式听受了"
+    note: "伏藏大师是大译师的兄长"
+
+  - rel_id: R5_192
+    type: teacherOf
+    source: E_853    # 第五世达赖喇嘛
+    target: E_858    # 大译师达玛西日
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "十五岁时，在第五世达赖喇嘛面前出家...二十岁也是在第五世达赖喇嘛前受比丘戒"
+    note: null
+
+  # ============================================================
+  # C. 亲属关系 (fatherOf / siblingOf / consort)
+  # ============================================================
+
+  - rel_id: R5_200
+    type: fatherOf
+    source: E_568    # 云丹嘉措
+    target: E_569    # 益西嘉措
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "云丹嘉措生了益西嘉措、班玛旺嘉两个儿子，兄长益西嘉措"
+    note: null
+
+  - rel_id: R5_201
+    type: fatherOf
+    source: E_568    # 云丹嘉措
+    target: E_570    # 班玛旺嘉
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "班玛旺嘉，修成了大威德"
+    note: null
+
+  - rel_id: R5_202
+    type: fatherOf
+    source: E_569    # 益西嘉措
+    target: E_571    # 拉吉吽穹
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "益西嘉措的儿子拉吉吽穹"
+    note: null
+
+  - rel_id: R5_203
+    type: siblingOf
+    source: E_569    # 益西嘉措
+    target: E_570    # 班玛旺嘉
+    symmetric: true
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "益西嘉措的弟弟——班玛旺嘉"
+    note: null
+
+  - rel_id: R5_204
+    type: fatherOf
+    source: E_730    # 小宿·西绕札巴
+    target: E_740    # 宿·释迦桑给
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "小宿之子就是此藏地堪为《密藏续》讲说源头的密主卓普巴"
+    note: null
+
+  - rel_id: R5_205
+    type: fatherOf
+    source: E_820    # 塔巴卓钦 (part2)
+    target: E_730    # 小宿·西绕札巴
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "父亲塔巴卓钦是游方僧形象"
+    note: null
+
+  - rel_id: R5_206
+    type: siblingOf
+    source: E_857    # 伏藏大师杰美多吉
+    target: E_858    # 大译师达玛西日
+    symmetric: true
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "是伏藏大师杰美多吉仁波切的弟弟"
+    note: null
+
+  - rel_id: R5_207
+    type: siblingOf
+    source: E_839    # 达敦觉益
+    target: E_841    # 觉索
+    symmetric: true
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "达敦觉益的弟弟觉索，在火狗年降生"
+    note: null
+
+  - rel_id: R5_209
+    type: fatherOf
+    source: E_830    # 桑吉单穹
+    target: E_829    # 月波敦则
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他的父亲桑吉单穹"
+    note: null
+
+  # ============================================================
+  # D. 建寺关系 (builtBy / foundedBy)
+  # ============================================================
+
+  - rel_id: R5_220
+    type: builtBy
+    source: E_760    # 鸱枭谷寺 (part1)
+    target: E_530    # 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "用上师的名字给寺院起名，于是就叫吉祥鸱枭谷寺。它是在拉吉大宿时期创立"
+    note: null
+
+  - rel_id: R5_221
+    type: builtBy
+    source: E_761    # 卓普寺 (part1)
+    target: E_530    # 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "大宿上师便在那里建造了佛殿...卓普后殿刚刚竣工时"
+    note: null
+
+  - rel_id: R5_222
+    type: builtBy
+    source: E_762    # 多拉雄经堂 (part1)
+    target: E_573    # 酿·西绕秋
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "建起了多拉雄经堂"
+    note: null
+
+  - rel_id: R5_223
+    type: foundedBy
+    source: E_763    # 噶托寺 (part4)
+    target: E_860    # 噶托巴单巴德香
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "于土鼠年建立寺院"
+    note: "噶托寺=前译教法众所周知源头"
+
+  # ============================================================
+  # E. 归属关系 (memberOf / belongsToSect / lineageOf)
+  # ============================================================
+
+  - rel_id: R5_230
+    type: memberOf
+    source: E_531    # 索布·华杰益西
+    target: E_770    # 八华 (part1 集合实体)
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "修行金刚橛的八位带有'华'的堪布...索布·华杰益西"
+    note: "四位前华之一"
+
+  - rel_id: R5_231
+    type: memberOf
+    source: E_532    # 哦占·华杰云讷
+    target: E_770    # 八华
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "哦占·华杰云讷，是四位前华"
+    note: null
+
+  - rel_id: R5_232
+    type: belongsToSect
+    source: E_530    # 涅·赞那革玛绕
+    target: E_900    # 宁玛 (sect)
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "前译金刚乘法首先传到涅氏"
+    note: null
+
+  - rel_id: R5_233
+    type: belongsToSect
+    source: E_533    # 努·桑吉益西
+    target: E_900    # 宁玛
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "前译金刚乘法中间传予努氏"
+    note: null
+
+  - rel_id: R5_235
+    type: belongsToSect
+    source: E_860    # 噶托巴单巴德香
+    target: E_900    # 宁玛
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "前译教法众所周知源头的是噶托巴"
+    note: null
+
+  # ============================================================
+  # F. 其他关系
+  # ============================================================
+
+  # --- 普巴金刚传承 ---
+
+  - rel_id: R5_240
+    type: teacherOf
+    source: E_501    # 莲花生大士
+    target: E_910    # 赤松德赞 (context)
+    specialty: [灌顶, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "莲花生大士在桑耶寺传给国王赤松德赞"
+    note: "君王派普巴"
+
+  - rel_id: R5_241
+    type: teacherOf
+    source: E_501    # 莲花生大士
+    target: E_911    # 明妃卡钦萨 (context)
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "言简意赅地归纳普巴颂...精华，传给明妃卡钦萨"
+    note: "明妃派普巴"
+
+  - rel_id: R5_242
+    type: teacherOf
+    source: E_911    # 明妃益西措嘉
+    target: E_912    # 玖如萨 (context)
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "由益西措嘉空行母教授玖如萨"
+    note: "嘉姆派普巴"
+
+  # --- 赞兰达热巴→黑行尊者 ---
+
+  - rel_id: R5_250
+    type: teacherOf
+    source: E_535    # 赞兰达热巴
+    target: E_536    # 黑行尊者
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "阿阇黎赞兰达热巴和弟子黑行尊者"
+    note: null
+
+  # --- 达那达拉→云丹嘉措 ---
+
+  - rel_id: R5_251
+    type: teacherOf
+    source: E_548    # 达那达拉
+    target: E_568    # 云丹嘉措
+    specialty: [灌顶, 密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他对前世成为自己胞弟的云丹嘉措尤为慈爱，为他灌顶"
+    note: null
+
+  # --- 噶托巴→帕思巴 ---
+
+  - rel_id: R5_252
+    type: teacherOf
+    source: E_864    # 哦鸥益西 (噶托巴尊者)
+    target: E_920    # 帕思巴 (context)
+    specialty: [灌顶]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "噶托巴尊者对帕思巴仁波切授予《幻化网》寂猛灌顶"
+    note: null
+
+  # --- 布玛莫札窍诀传承 ---
+
+  - rel_id: R5_260
+    type: teacherOf
+    source: E_502    # 布玛莫札
+    target: E_783    # 酿当珍桑波 (part5)
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "布玛莫札传给酿当珍桑波"
+    note: null
+
+  - rel_id: R5_261
+    type: teacherOf
+    source: E_502    # 布玛莫札
+    target: E_784    # 玛·仁钦秋 (part5)
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "布玛莫札传给玛·仁钦秋"
+    note: null
+
+  # --- 荣索班智达上师传承 ---
+
+  - rel_id: R5_270
+    type: teacherOf
+    source: E_789    # 多敦桑给 (part5)
+    target: E_780    # 荣索班智达
+    specialty: [教授, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在多敦桑给上师前听闻前译教法"
+    note: null
+
+  # --- 贡巴绕色→大宿·释迦炯内 ---
+
+  - rel_id: R5_275
+    type: teacherOf
+    source: E_776    # 贡巴绕色大师
+    target: E_530    # 大宿·释迦炯内 (in lineage context)
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在贡巴绕色大师座下，以三白次第授法受了比丘戒"
+    note: null
+
+  # --- 噶玛巴哲嘉单巴在香巴波处出家 ---
+
+  - rel_id: R5_276
+    type: teacherOf
+    source: E_862    # 香巴波
+    target: E_930    # 噶玛巴哲嘉单巴 (context)
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "香巴仁波切作为亲教师...为噶玛巴传授了近圆比丘戒"
+    note: null
+
+  # --- 阿底峡与荣索班智达 ---
+
+  - rel_id: R5_280
+    type: cites
+    source: E_940    # 阿底峡赞言 (assertion context)
+    target: E_780    # 荣索班智达
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "阿底峡尊者亲口赞叹说：印度的阿匝雅黑行尊者的转世绝对是这位尊者"
+    note: "阿底峡认为荣索班智达是黑行尊者转世"
