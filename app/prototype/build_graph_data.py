@@ -198,11 +198,24 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
         if not src_name or not tgt_name or src_name == tgt_name:
             continue
 
+        raw_quote = rel.get('source_quote', '') or ''
+        if isinstance(raw_quote, list):
+            source_quote = '；'.join(str(s) for s in raw_quote)
+        else:
+            source_quote = str(raw_quote).strip()
+
+        # Determine source chapter from file path
+        fname_base = os.path.basename(fpath).replace('.yaml', '')
+        chapter_map = {'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心'}
+        chapter = chapter_map.get(fname_base, fname_base)
+
         links.append({
             'source': src_name,
             'target': tgt_name,
             'type': rtype,
-            'specialty': specialty
+            'specialty': specialty,
+            'quote': source_quote,
+            'chapter': chapter,
         })
 
         if src_name not in node_set:
