@@ -298,7 +298,9 @@ function renderTree(data) {
     const tgt = nodePositions[e.target];
     if (!src || !tgt) return;
 
-    const path = `M${src.x},${src.y + 14} L${tgt.x},${tgt.y - 14}`;
+    // 正交折线: 先竖直下半程 → 水平移到目标x → 竖直下半程
+    const midY = (src.y + 14 + tgt.y - 14) / 2;
+    const path = `M${src.x},${src.y + 14} L${src.x},${midY} L${tgt.x},${midY} L${tgt.x},${tgt.y - 14}`;
 
     linkG.append("path")
       .attr("class", "link-line")
