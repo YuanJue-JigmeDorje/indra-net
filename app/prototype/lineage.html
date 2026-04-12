@@ -298,8 +298,7 @@ function renderTree(data) {
     const tgt = nodePositions[e.target];
     if (!src || !tgt) return;
 
-    const midY = (src.y + tgt.y) / 2;
-    const path = `M${src.x},${src.y + 14} C${src.x},${midY} ${tgt.x},${midY} ${tgt.x},${tgt.y - 14}`;
+    const path = `M${src.x},${src.y + 14} L${tgt.x},${tgt.y - 14}`;
 
     linkG.append("path")
       .attr("class", "link-line")
