@@ -199,9 +199,110 @@
   }
 
   /* Glow filter defs are in SVG */
+
+  /* Nav bar */
+  #nav-bar {
+    position: absolute; top: 0; right: 16px; z-index: 30;
+    display: flex; gap: 8px; padding: 10px; align-items: center;
+  }
+  #nav-bar a, #nav-bar span {
+    display: inline-block; padding: 4px 12px; border-radius: 5px;
+    font-size: 12px; text-decoration: none; cursor: pointer;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+    color: #999; transition: background 0.2s, color 0.2s;
+  }
+  #nav-bar a:hover, #nav-bar span:hover { background: rgba(255,255,255,0.15); color: #ccc; }
+  #nav-bar a.active { background: rgba(212,175,55,0.2); border-color: rgba(212,175,55,0.4); color: #d4af37; }
+
+  /* Info panel */
+  #info-panel {
+    position: absolute; bottom: 20px; right: 16px; z-index: 20;
+    background: rgba(15,15,26,0.92); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px; padding: 16px 20px; width: 320px;
+    backdrop-filter: blur(8px); display: none;
+    max-height: calc(100vh - 100px); overflow-y: auto;
+  }
+  #info-panel h2 { font-size: 16px; color: #d4af37; margin-bottom: 4px; }
+  #info-panel .info-type { font-size: 12px; color: #7eb8da; margin-bottom: 10px; }
+  #info-panel .info-section { margin-bottom: 10px; }
+  #info-panel .info-label { font-size: 11px; color: #888; margin-bottom: 4px; }
+  #info-panel .close-btn {
+    position: absolute; top: 8px; right: 12px; cursor: pointer;
+    color: #666; font-size: 16px;
+  }
+  #info-panel .close-btn:hover { color: #ccc; }
+  #info-panel .conn-list { font-size: 13px; line-height: 1.8; }
+  #info-panel .conn-list span { cursor: pointer; border-bottom: 1px dotted rgba(212,175,55,0.3); }
+  #info-panel .conn-list span:hover { color: #d4af37; }
+
+  /* Event items */
+  .event-item {
+    margin: 6px 0; padding: 6px 10px; border-radius: 5px;
+    background: rgba(255,255,255,0.03); border-left: 2px solid rgba(106,174,214,0.4);
+    cursor: pointer; transition: background 0.2s;
+  }
+  .event-item:hover { background: rgba(106,174,214,0.08); }
+  .event-type-tag { font-size: 10px; padding: 1px 6px; border-radius: 3px; background: rgba(212,175,55,0.15); color: #d4af37; margin-right: 6px; }
+  .event-title { font-size: 12px; color: #ccc; }
+  .event-quote { font-size: 11px; color: #999; margin-top: 3px; line-height: 1.6; display: none; }
+  .event-item.expanded .event-quote { display: block; }
+  .event-chapter { font-size: 9px; color: #666; margin-top: 2px; }
+
+  /* Light theme */
+  body.light {
+    background: #f5f3ee; color: #333;
+  }
+  body.light #title-bar { background: linear-gradient(180deg, rgba(245,243,238,0.95) 0%, rgba(245,243,238,0) 100%); }
+  body.light #title-bar h1 { color: #8b6914; text-shadow: none; }
+  body.light #title-bar .subtitle { color: #aaa; }
+  body.light #legend { background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.1); }
+  body.light #legend h3 { color: #666; }
+  body.light #stats { background: rgba(255,255,255,0.9); border-color: rgba(0,0,0,0.1); }
+  body.light #tooltip { background: rgba(255,255,255,0.95); border-color: rgba(0,0,0,0.15); box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+  body.light #tooltip .tt-name { color: #333; }
+  body.light #tooltip .tt-type { color: #666; }
+  body.light #tooltip .tt-aliases { color: #555; }
+  body.light #tooltip .tt-rel { color: #777; }
+  body.light #info-panel { background: rgba(255,255,255,0.95); border-color: rgba(0,0,0,0.1); color: #333; }
+  body.light #info-panel h2 { color: #8b6914; }
+  body.light #info-panel .info-type { color: #2b6ca3; }
+  body.light #info-panel .info-label { color: #888; }
+  body.light .event-item { background: rgba(0,0,0,0.02); border-left-color: rgba(43,108,163,0.3); }
+  body.light .event-title { color: #444; }
+  body.light .event-quote { color: #666; }
+  body.light .event-type-tag { background: rgba(139,105,20,0.1); color: #8b6914; }
+  body.light #nav-bar a, body.light #nav-bar span { background: rgba(0,0,0,0.05); border-color: rgba(0,0,0,0.1); color: #888; }
+  body.light #nav-bar a:hover, body.light #nav-bar span:hover { background: rgba(0,0,0,0.1); color: #555; }
+  body.light #nav-bar a.active { background: rgba(139,105,20,0.15); border-color: rgba(139,105,20,0.3); color: #8b6914; }
+  body.light .stat-label { color: #666; }
+  body.light .stat-value { color: #333; }
+  body.light .stat-bar-label { color: #666; }
+  body.light .stat-bar-count { color: #444; }
+  body.light .stat-bar-wrap { background: rgba(0,0,0,0.06); }
+  body.light .legend-section { color: #999; border-top-color: rgba(0,0,0,0.1); }
 </style>
 </head>
 <body>
+
+<div id="nav-bar">
+  <a href="index.html" id="nav-graph" class="active">星图</a>
+  <a href="lineage.html" id="nav-lineage">传承谱系</a>
+  <span id="theme-toggle" onclick="document.body.classList.toggle('light'); this.textContent = document.body.classList.contains('light') ? '深色' : '浅色'">浅色</span>
+</div>
+
+<div id="info-panel">
+  <span class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">&times;</span>
+  <h2 id="panel-name"></h2>
+  <div class="info-type" id="panel-type"></div>
+  <div class="info-section">
+    <div class="info-label">连接关系</div>
+    <div class="conn-list" id="panel-connections"></div>
+  </div>
+  <div class="info-section" id="events-section" style="display:none">
+    <div class="info-label">相关事件 <span id="events-count" style="color:#666;font-size:10px"></span></div>
+    <div id="panel-events" style="max-height:260px;overflow-y:auto"></div>
+  </div>
+</div>
 
 <div id="title-bar">
   <h1>藏密佛教史 · 第一至五品 · 知识图谱</h1>
@@ -213,6 +314,7 @@
 <div id="tooltip"></div>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="events_data.js"></script>
 <script>
 // ============================================================
 // DATA -- merged from ch03 + ch04 + ch05 relations (380 valid, 4 null-target excluded)
@@ -7614,23 +7716,77 @@ link.on("mouseover", function(event, d) {
   d3.select(this).attr("stroke-opacity", 0.18).attr("stroke-width", 1.2);
 });
 
-// Click to lock highlight
+// Click to lock highlight + show info panel
 let selectedNode = null;
 node.on("click", function(event, d) {
   event.stopPropagation();
   if (selectedNode === d.id) {
     selectedNode = null;
     resetHighlight();
+    document.getElementById('info-panel').style.display = 'none';
     return;
   }
   selectedNode = d.id;
   highlightNode(d);
+  showInfoPanel(d);
 });
 
 svg.on("click", () => {
   selectedNode = null;
   resetHighlight();
+  document.getElementById('info-panel').style.display = 'none';
 });
+
+function showInfoPanel(d) {
+  document.getElementById('panel-name').textContent = d.id;
+  document.getElementById('panel-type').textContent = d.type + (d.sub_type ? ' \u00b7 ' + d.sub_type : '') + (d.aliases && d.aliases.length ? '\n\u522b\u540d: ' + d.aliases.join(', ') : '');
+
+  // Build connection list
+  var connHTML = '';
+  links.forEach(function(l) {
+    var src = typeof l.source === 'object' ? l.source.id : l.source;
+    var tgt = typeof l.target === 'object' ? l.target.id : l.target;
+    if (src === d.id) {
+      connHTML += '<div>\u2192 <span onclick="clickEntity(\'' + tgt.replace(/'/g, "\\'") + '\')">' + tgt + '</span> <span style="color:#888;font-size:10px">(' + (l.type || '') + ')</span></div>';
+    } else if (tgt === d.id) {
+      connHTML += '<div>\u2190 <span onclick="clickEntity(\'' + src.replace(/'/g, "\\'") + '\')">' + src + '</span> <span style="color:#888;font-size:10px">(' + (l.type || '') + ')</span></div>';
+    }
+  });
+  document.getElementById('panel-connections').innerHTML = connHTML || '<span style="color:#555">\u65e0</span>';
+
+  // Events
+  var evtSection = document.getElementById('events-section');
+  var evtDiv = document.getElementById('panel-events');
+  var evtCount = document.getElementById('events-count');
+  if (typeof entityEventIndex !== 'undefined' && entityEventIndex[d.id]) {
+    var indices = entityEventIndex[d.id];
+    evtCount.textContent = '(' + indices.length + ')';
+    evtDiv.innerHTML = indices.slice(0, 30).map(function(idx) {
+      var evt = allEvents[idx];
+      if (!evt) return '';
+      var q = evt.quote || '';
+      return '<div class="event-item" onclick="this.classList.toggle(\'expanded\')">'
+        + '<span class="event-type-tag">' + (evt.type || '') + '</span>'
+        + '<span class="event-title">' + (evt.title || '') + '</span>'
+        + '<div class="event-quote">\u300c' + q + '\u300d<div class="event-chapter">' + (evt.chapter || '') + '</div></div>'
+        + '</div>';
+    }).join('');
+    evtSection.style.display = 'block';
+  } else {
+    evtSection.style.display = 'none';
+  }
+
+  document.getElementById('info-panel').style.display = 'block';
+}
+
+function clickEntity(name) {
+  var target = nodes.find(function(n) { return n.id === name; });
+  if (target) {
+    selectedNode = name;
+    highlightNode(target);
+    showInfoPanel(target);
+  }
+}
 
 function highlightNode(d) {
   link.attr("stroke-opacity", l =>
