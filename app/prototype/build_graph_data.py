@@ -143,6 +143,8 @@ print(f"Alias→canonical map: {len(alias_to_canonical)} entries")
 # ============================================================
 source_texts = {}
 chapter_files = {
+    'ch01': os.path.join(ROOT, 'source/dudjom/chapter_md/01_佛教总况.md'),
+    'ch02': os.path.join(ROOT, 'source/dudjom/chapter_md/02_金刚密乘.md'),
     'ch03': os.path.join(ROOT, 'source/dudjom/chapter_md/03_藏传佛法.md'),
     'ch04': os.path.join(ROOT, 'source/dudjom/chapter_md/04_内密三续.md'),
     'ch05': os.path.join(ROOT, 'source/dudjom/chapter_md/05_远传经幻心.md'),
@@ -284,7 +286,7 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
 
         # Source: book > chapter
         fname_base = os.path.basename(fpath).replace('.yaml', '')
-        chapter_map = {'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心'}
+        chapter_map = {'ch01': '第一品 佛教总况', 'ch02': '第二品 金刚密乘', 'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心'}
         chapter = '《藏密佛教史》> ' + chapter_map.get(fname_base, fname_base)
 
         # Expand short quotes with surrounding context from source text
