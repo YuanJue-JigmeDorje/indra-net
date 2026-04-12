@@ -4813,62 +4813,40 @@ function renderTree(data) {
       .attr("stroke-width", 1);
   });
 
-  // Draw edges — 每条师承一条独立的平滑 S 曲线，悬停高亮
-  const linkG = g.append("g");
+  // Draw edges — S 曲线，悬停原生 tooltip 显示原文
+  var linkG = g.append("g");
 
-  edges.forEach(e => {
-    const src = nodePositions[e.source];
-    const tgt = nodePositions[e.target];
+  edges.forEach(function(e) {
+    var src = nodePositions[e.source];
+    var tgt = nodePositions[e.target];
     if (!src || !tgt) return;
 
-    const sy = src.y + 14, ty = tgt.y - 14;
-    // S 型贝塞尔：竖直出发，竖直到达，中间柔和过渡
-    const cy1 = sy + (ty - sy) * 0.4;
-    const cy2 = sy + (ty - sy) * 0.6;
-    const path = `M${src.x},${sy} C${src.x},${cy1} ${tgt.x},${cy2} ${tgt.x},${ty}`;
+    var sy = src.y + 14, ty = tgt.y - 14;
+    var cy1 = sy + (ty - sy) * 0.4;
+    var cy2 = sy + (ty - sy) * 0.6;
+    var d = "M" + src.x + "," + sy + " C" + src.x + "," + cy1 + " " + tgt.x + "," + cy2 + " " + tgt.x + "," + ty;
 
-    linkG.append("path")
-      .attr("d", path)
-      .attr("fill", "none")
-      .attr("stroke", "rgba(106,174,214,0.25)")
-      .attr("stroke-width", 1.2)
-      .on("mouseover", function() {
-        d3.select(this).attr("stroke", "rgba(106,174,214,0.8)").attr("stroke-width", 2.5);
-        tipG.style("display", null);
-      })
-      .on("mouseout", function() {
-        d3.select(this).attr("stroke", "rgba(106,174,214,0.25)").attr("stroke-width", 1.2);
-        tipG.style("display", "none");
-      });
+    // 可见线
+    var line = linkG.append("path").attr("d", d)
+      .attr("fill", "none").attr("stroke", "rgba(106,174,214,0.25)").attr("stroke-width", 1.2);
 
-    // 小箭头
-    linkG.append("polygon")
-      .attr("points", "-3,-5 3,-5 0,0")
-      .attr("transform", `translate(${tgt.x},${ty})`)
+    // 粗透明线捕获鼠标
+    var tip = e.source + " → " + e.target;
+    if (e.specialty) tip += "\n传承: " + e.specialty;
+    if (e.quote) tip += "\n原文:「" + e.quote + "」";
+    if (e.chapter) tip += "\n来源: " + e.chapter;
+
+    linkG.append("path").attr("d", d)
+      .attr("fill", "none").attr("stroke", "transparent").attr("stroke-width", 10)
+      .style("cursor", "pointer")
+      .on("mouseover", function() { line.attr("stroke", "rgba(106,174,214,0.8)").attr("stroke-width", 2.5); })
+      .on("mouseout", function() { line.attr("stroke", "rgba(106,174,214,0.25)").attr("stroke-width", 1.2); })
+      .append("title").text(tip);
+
+    // 箭头
+    linkG.append("polygon").attr("points", "-3,-5 3,-5 0,0")
+      .attr("transform", "translate(" + tgt.x + "," + ty + ")")
       .attr("fill", "rgba(106,174,214,0.3)");
-
-    // 悬停标签（默认隐藏）— 显示传承类型 + 原文出处
-    const tipG = linkG.append("g").style("display", "none");
-    {
-      const mx = (src.x + tgt.x) / 2;
-      const my = (sy + ty) / 2;
-      const lines = [];
-      if (e.specialty) lines.push(e.specialty);
-      if (e.quote) lines.push('「' + (e.quote.length > 30 ? e.quote.substring(0, 30) + '…' : e.quote) + '」');
-      if (e.chapter) lines.push(e.chapter);
-      const maxLen = Math.max(...lines.map(l => l.length), 4);
-      const boxW = maxLen * 12 + 16;
-      const boxH = lines.length * 16 + 8;
-      tipG.append("rect")
-        .attr("x", mx - boxW/2).attr("y", my - boxH/2)
-        .attr("width", boxW).attr("height", boxH)
-        .attr("rx", 4).attr("fill", "rgba(15,15,26,0.92)").attr("stroke", "rgba(106,174,214,0.3)").attr("stroke-width", 0.5);
-      lines.forEach((line, i) => {
-          .attr("x", mx - boxW/2 + 8).attr("y", my - boxH/2 + 14 + i * 16)
-          .attr("fill", i === 0 ? "#6aaed6" : "#999").attr("font-size", i === 0 ? "10px" : "9px")
-          .text(line);
-      });
-    }
   });
 
   // Draw nodes
