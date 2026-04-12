@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>藏密佛教史 · 第三品 · 知识图谱</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  #title-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    text-align: center;
+    padding: 14px 0 10px;
+    background: linear-gradient(180deg, rgba(26,26,46,0.95) 0%, rgba(26,26,46,0) 100%);
+    pointer-events: none;
+    z-index: 10;
+  }
+  #title-bar h1 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: #d4af37;
+    text-shadow: 0 0 20px rgba(212,175,55,0.4);
+  }
+  #title-bar .subtitle {
+    font-size: 12px;
+    color: #8888aa;
+    margin-top: 4px;
+    letter-spacing: 2px;
+  }
+  svg { display: block; }
+
+  /* Legend */
+  #legend {
+    position: absolute;
+    top: 70px;
+    left: 16px;
+    background: rgba(20,20,40,0.85);
+    border: 1px solid rgba(100,100,140,0.3);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12px;
+    z-index: 10;
+    backdrop-filter: blur(6px);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+  #legend h3 {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+  .legend-item:hover { opacity: 1; }
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  .legend-section {
+    color: #888;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    border-top: 1px solid rgba(100,100,140,0.2);
+    padding-top: 8px;
+  }
+  .legend-line {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+  }
+  .legend-line-sample {
+    width: 20px;
+    height: 2px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    border-radius: 1px;
+  }
+
+  /* Stats panel */
+  #stats {
+    position: absolute;
+    top: 70px;
+    right: 16px;
+    background: rgba(20,20,40,0.85);
+    border: 1px solid rgba(100,100,140,0.3);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12px;
+    z-index: 10;
+    backdrop-filter: blur(6px);
+    min-width: 180px;
+  }
+  #stats h3 {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+    padding: 2px 0;
+  }
+  .stat-label { color: #999; }
+  .stat-value { color: #e0e0e0; font-weight: 500; }
+  .stat-section {
+    color: #888;
+    font-size: 11px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border-top: 1px solid rgba(100,100,140,0.2);
+    padding-top: 6px;
+  }
+  .stat-bar-row {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    font-size: 11px;
+  }
+  .stat-bar-label {
+    width: 100px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .stat-bar-wrap {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    margin: 0 6px;
+  }
+  .stat-bar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.4s;
+  }
+  .stat-bar-count {
+    width: 24px;
+    text-align: right;
+    color: #bbb;
+  }
+
+  /* Tooltip */
+  #tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(15,15,30,0.94);
+    border: 1px solid rgba(120,120,160,0.4);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 280px;
+    z-index: 100;
+    display: none;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  #tooltip .tt-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  #tooltip .tt-type {
+    color: #aaa;
+    font-size: 11px;
+  }
+  #tooltip .tt-aliases {
+    color: #ccc;
+    margin-top: 4px;
+  }
+  #tooltip .tt-rel {
+    color: #bbb;
+    margin-top: 2px;
+  }
+
+  /* Glow filter defs are in SVG */
+</style>
+</head>
+<body>
+
+<div id="title-bar">
+  <h1>藏密佛教史 · 第三品 · 知识图谱</h1>
+  <div class="subtitle">多维投影星图浏览器 — 力导向图原型</div>
+</div>
+
+<div id="legend"></div>
+<div id="stats"></div>
+<div id="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+// ============================================================
+// DATA — extracted from kg/relations/ch03.yaml + entity files
+// ============================================================
+
+// Entity ID → name mapping (for resolving relation references)
+const entityMap = {
+  // --- ch03-part1 entities ---
+  "E_001": { name: "观世音菩萨", type: "圣众", sub_type: "菩萨", aliases: ["大悲观音", "自现圣者观音"] },
+  "E_002": { name: "普贤菩萨", type: "圣众", sub_type: "菩萨", aliases: [] },
+  "E_003": { name: "文殊菩萨", type: "圣众", sub_type: "菩萨", aliases: [] },
+  "E_004": { name: "金刚手", type: "圣众", sub_type: "菩萨", aliases: [] },
+  "E_005": { name: "颦眉度母", type: "圣众", sub_type: "菩萨", aliases: [] },
+  "E_006": { name: "度母", type: "圣众", sub_type: "菩萨", aliases: [] },
+  "E_007": { name: "迦叶佛", type: "圣众", sub_type: "佛", aliases: [] },
+  "E_010": { name: "涅赤赞普", type: "人物", sub_type: "帝王", aliases: ["肩座王"] },
+  "E_011": { name: "百军王", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_012": { name: "莫赤赞普", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_013": { name: "拉托托日涅赞", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_014": { name: "松赞干布", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_020": { name: "赤尊公主", type: "人物", sub_type: "王妃", aliases: [] },
+  "E_021": { name: "文成公主", type: "人物", sub_type: "王妃", aliases: [] },
+  "E_025": { name: "噶尔东赞", type: "人物", sub_type: "大臣", aliases: [] },
+  "E_030": { name: "讷巴班智达", type: "人物", sub_type: "法师", aliases: [] },
+  "E_031": { name: "罗色措", type: "人物", sub_type: "法师", aliases: [] },
+  "E_032": { name: "特乐色", type: "人物", sub_type: "法师", aliases: [] },
+  "E_033": { name: "巴色朗", type: "人物", sub_type: "法师", aliases: [] },
+  "E_034": { name: "静命", type: "人物", sub_type: "法师", aliases: [] },
+  "E_035": { name: "阿嘎玛德西日", type: "人物", sub_type: "法师", aliases: [] },
+  "E_036": { name: "革萨绕", type: "人物", sub_type: "法师", aliases: [] },
+  "E_037": { name: "祥嘎绕", type: "人物", sub_type: "法师", aliases: [] },
+  "E_038": { name: "西日拉玛匝", type: "人物", sub_type: "法师", aliases: [] },
+  "E_039": { name: "玛哈雅那", type: "人物", sub_type: "法师", aliases: [] },
+  "E_040": { name: "哲土哦哲", type: "人物", sub_type: "法师", aliases: [] },
+  "E_041": { name: "阿达尼", type: "人物", sub_type: "法师", aliases: [] },
+  "E_042": { name: "敦巴释迦光", type: "人物", sub_type: "法师", aliases: [] },
+  "E_043": { name: "囤弥桑布札", type: "人物", sub_type: "法师", aliases: [] },
+  "E_050": { name: "岩罗刹女", type: "非人", sub_type: "通称", aliases: [] },
+  "E_060": { name: "文殊根本续", type: "经典", sub_type: "密续", aliases: [] },
+  "E_061": { name: "无垢天女授记经", type: "经典", sub_type: "经", aliases: [] },
+  "E_062": { name: "百拜忏悔经", type: "经典", sub_type: "经", aliases: [] },
+  "E_063": { name: "宝箧经", type: "经典", sub_type: "经", aliases: [] },
+  "E_064": { name: "六字真言", type: "仪轨", sub_type: "咒语", aliases: [] },
+  "E_065": { name: "巴协", type: "经典", sub_type: "史籍", aliases: [] },
+  "E_066": { name: "国王遗教", type: "经典", sub_type: "教言集", aliases: ["玛尼全集"] },
+  "E_067": { name: "语言学书籍", type: "经典", sub_type: "论", aliases: [] },
+  "E_070": { name: "如意珠总持印模", type: "法器", sub_type: "圣物", aliases: [] },
+  "E_071": { name: "金塔", type: "法器", sub_type: "圣物", aliases: [] },
+  "E_072": { name: "玄秘神物", type: "法器", sub_type: "圣物", aliases: [] },
+  "E_073": { name: "八岁佛像", type: "法器", sub_type: "佛像", aliases: [] },
+  "E_074": { name: "十二岁佛像", type: "法器", sub_type: "佛像", aliases: [] },
+  "E_075": { name: "自现圣者观音", type: "法器", sub_type: "佛像", aliases: [] },
+  "E_080": { name: "永布拉冈", type: "寺院", sub_type: "王宫", aliases: [] },
+  "E_081": { name: "大昭寺", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_082": { name: "小昭寺", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_083": { name: "玛热王宫", type: "寺院", sub_type: "王宫", aliases: [] },
+  "E_084": { name: "镇肢寺", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_085": { name: "镇节寺", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_090": { name: "印度", type: "地名", sub_type: "国", aliases: [] },
+  "E_091": { name: "汉地", type: "地名", sub_type: "国", aliases: [] },
+  "E_092": { name: "藏地", type: "地名", sub_type: "国", aliases: ["雪域"] },
+  "E_093": { name: "龟兹国", type: "地名", sub_type: "国", aliases: [] },
+  "E_094": { name: "香巴拉", type: "地名", sub_type: "神话地名", aliases: [] },
+  "E_095": { name: "革拉夏", type: "地名", sub_type: "国", aliases: [] },
+  "E_096": { name: "南赡部洲", type: "地名", sub_type: "神话地名", aliases: [] },
+  "E_097": { name: "普陀山", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_098": { name: "如波神山口", type: "地名", sub_type: "自然地理", aliases: [] },
+  "E_099": { name: "赞塘阁希", type: "地名", sub_type: "区域", aliases: [] },
+  "E_100": { name: "尼泊尔", type: "地名", sub_type: "国", aliases: [] },
+  "E_101": { name: "吐蕃", type: "地名", sub_type: "国", aliases: [] },
+  "E_102": { name: "吉曲尼占帕翁卡", type: "地名", sub_type: "区域", aliases: ["尼占帕翁卡"] },
+  "E_110": { name: "大悲寂猛教言", type: "教法", sub_type: "教言法门", aliases: [] },
+  "E_111": { name: "十善法", type: "教法", sub_type: "戒律体系", aliases: [] },
+  "E_112": { name: "在家道德规范十六条", type: "教法", sub_type: "戒律体系", aliases: [] },
+  "E_113": { name: "观音法", type: "仪轨", sub_type: "修法", aliases: [] },
+  "E_120": { name: "天赤七王", type: "集合", sub_type: "王族集合", aliases: [] },
+  "E_121": { name: "上当二王", type: "集合", sub_type: "王族集合", aliases: [] },
+
+  // --- PoC entities (ch3-shijunsanzun.yaml) ---
+  "E_S01": { name: "文殊菩萨", type: "圣众", sub_type: "菩萨", aliases: [] },
+  "E_S02": { name: "多吉卓罗", type: "圣众", sub_type: "本尊", aliases: ["多吉卓洛"] },
+  "E_S03": { name: "多闻天子", type: "圣众", sub_type: "护法", aliases: [] },
+  "E_S04": { name: "金刚手菩萨", type: "圣众", sub_type: "菩萨", aliases: [] },
+  "E_P01": { name: "赤松德赞", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_P02": { name: "莲花生大士", type: "人物", sub_type: "法师", aliases: ["莲师", "莲花生"] },
+  "E_P03": { name: "松赞干布", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_P04": { name: "赤热巴坚", type: "人物", sub_type: "帝王", aliases: ["赤德祖丹"] },
+  "E_P05": { name: "木赤", type: "人物", sub_type: "帝王", aliases: ["木赤赞普"] },
+  "E_P06": { name: "静命", type: "人物", sub_type: "法师", aliases: ["菩提萨埵"] },
+  "E_P07": { name: "嘉伟西年", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P08": { name: "塔坚钦毕拉", type: "人物", sub_type: "法师", aliases: ["遍知天"] },
+  "E_P09": { name: "云毕昂策", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P10": { name: "布玛莫札", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P11": { name: "现当嘎巴", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P12": { name: "达那西拉", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P13": { name: "则那莫札", type: "人物", sub_type: "法师", aliases: ["班智达则那莫札"] },
+  "E_P14": { name: "西日桑哈", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P15": { name: "吽嘎日", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P16": { name: "巴绕那", type: "人物", sub_type: "法师", aliases: ["巴赤则", "花扬"] },
+  "E_P17": { name: "巴色朗", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P18": { name: "贝若札那", type: "人物", sub_type: "法师", aliases: ["巴够贝若札那"] },
+  "E_P19": { name: "恩烂嘉巴秋扬", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P20": { name: "玛·仁钦秋", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P21": { name: "坤类旺波忠巴", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P22": { name: "拉色嘉瓦香切", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P23": { name: "益西旺波", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P24": { name: "国舅札玛", type: "人物", sub_type: "大臣", aliases: [] },
+  "E_P25": { name: "噶·瓦拜则", type: "人物", sub_type: "法师", aliases: ["噶"] },
+  "E_P26": { name: "焦·鲁坚赞", type: "人物", sub_type: "法师", aliases: ["焦"] },
+  "E_P27": { name: "祥·益西德", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P28": { name: "南卡酿波", type: "人物", sub_type: "法师", aliases: ["虚空藏"] },
+  "E_P29": { name: "益西措嘉", type: "人物", sub_type: "空行母", aliases: ["益西措嘉空行母"] },
+  "E_P30": { name: "木奈赞普", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_P31": { name: "木迪赞普", type: "人物", sub_type: "帝王", aliases: ["色纳勒劲云"] },
+  "E_P32": { name: "朗达玛", type: "人物", sub_type: "帝王", aliases: ["朗达玛秃头王"] },
+  "E_P33": { name: "饮光王", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_P34": { name: "花库赞", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_P35": { name: "益西嘉村", type: "人物", sub_type: "帝王", aliases: [] },
+  "E_P36": { name: "思仁札布德", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P37": { name: "西林札布德", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P38": { name: "德那西拉", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P39": { name: "燃那绕杰达", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P40": { name: "达玛达谢", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P41": { name: "嘉那色那", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P42": { name: "嘎瓦那波切", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P43": { name: "囤弥桑布札", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P44": { name: "玛尔·释迦牟尼", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P45": { name: "约·格威穹", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P46": { name: "藏·绕色", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P47": { name: "拉隆·拜吉多吉", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P48": { name: "贡巴绕色", type: "人物", sub_type: "法师", aliases: ["莫色拉巴", "释迦·格巴绕色"] },
+  "E_P49": { name: "格旺", type: "人物", sub_type: "法师", aliases: ["和尚格旺"] },
+  "E_P50": { name: "吉番", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P51": { name: "贡荣桑格札", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P52": { name: "噶巴哦秋札", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P53": { name: "耶札酿波", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P54": { name: "鲁墨·赤诚西绕", type: "人物", sub_type: "法师", aliases: ["鲁墨"] },
+  "E_P55": { name: "罗敦多吉旺修", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P56": { name: "雅协", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P57": { name: "格西札巴", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P58": { name: "达玛西日", type: "人物", sub_type: "法师", aliases: ["大译师达玛西日"] },
+  "E_P59": { name: "嘎瓦花则", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P60": { name: "那南·达瓦多吉", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P61": { name: "卫·益西嘉瓦", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P62": { name: "朗康够恰", type: "人物", sub_type: "法师", aliases: [] },
+  "E_P63": { name: "祥", type: "人物", sub_type: "法师", aliases: [] },
+
+  // --- PoC collections/groups ---
+  "E_G01": { name: "师君三尊", type: "集合", sub_type: "上师集合", aliases: [] },
+  "E_G02": { name: "祖孙三法王", type: "集合", sub_type: "王族集合", aliases: ["祖孙三尊"] },
+  "E_G03": { name: "预试七人", type: "集合", sub_type: "弟子集合", aliases: [] },
+  "E_G04": { name: "外道六本师", type: "集合", sub_type: "人物集合", aliases: [] },
+  "E_G05": { name: "赤松德赞三太子", type: "集合", sub_type: "王族集合", aliases: [] },
+  "E_G06": { name: "噶焦祥氏三师", type: "集合", sub_type: "上师集合", aliases: [] },
+  "E_G07": { name: "携律藏逃康三僧", type: "集合", sub_type: "弟子集合", aliases: [] },
+  "E_G08": { name: "卫藏五人", type: "集合", sub_type: "弟子集合", aliases: [] },
+  "E_G09": { name: "后藏五人", type: "集合", sub_type: "弟子集合", aliases: [] },
+  "E_G10": { name: "鲁墨四柱弟子", type: "集合", sub_type: "弟子集合", aliases: [] },
+  "E_G11": { name: "鲁墨八栋梁弟子", type: "集合", sub_type: "弟子集合", aliases: [] },
+  "E_G12": { name: "鲁墨三十二椽木弟子", type: "集合", sub_type: "弟子集合", aliases: [] },
+  "E_G13": { name: "赤热巴坚所建千寺", type: "集合", sub_type: "寺院集合", aliases: [] },
+
+  // --- PoC temples ---
+  "E_T01": { name: "桑耶寺", type: "寺院", sub_type: "寺庙", aliases: ["吉祥桑耶无变自成寺"] },
+  "E_T02": { name: "札马珍桑殿堂", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_T03": { name: "邬丹达波热经堂", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_T04": { name: "巴达霍修行院", type: "寺院", sub_type: "道场", aliases: [] },
+  "E_T05": { name: "嘎穹多吉扬寺", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_T06": { name: "吉祥善增寺", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_T07": { name: "丹迪寺", type: "寺院", sub_type: "寺庙", aliases: [] },
+  "E_T08": { name: "拉木", type: "寺院", sub_type: "道场", aliases: [] },
+  "E_T09": { name: "绕吉", type: "寺院", sub_type: "道场", aliases: [] },
+  "E_T10": { name: "也巴", type: "寺院", sub_type: "道场", aliases: [] },
+  "E_T11": { name: "瓦耶", type: "寺院", sub_type: "道场", aliases: [] },
+  "E_T12": { name: "凑迪", type: "寺院", sub_type: "道场", aliases: [] },
+  "E_T13": { name: "邬金敏珠朗佛学院", type: "寺院", sub_type: "寺庙", aliases: [] },
+
+  // --- PoC locations ---
+  "E_L01": { name: "萨霍", type: "地名", sub_type: "国/政体", aliases: [] },
+  "E_L02": { name: "红山", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_L03": { name: "芒耶贡塘", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_L04": { name: "阿里", type: "地名", sub_type: "大区域", aliases: [] },
+  "E_L05": { name: "卫藏", type: "地名", sub_type: "大区域", aliases: [] },
+  "E_L06": { name: "多康", type: "地名", sub_type: "大区域", aliases: [] },
+  "E_L07": { name: "札马翁布园", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_L08": { name: "黑波山", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_L09": { name: "印度", type: "地名", sub_type: "国/政体", aliases: [] },
+  "E_L10": { name: "邬金境", type: "地名", sub_type: "国/政体", aliases: [] },
+  "E_L11": { name: "妙拂洲", type: "地名", sub_type: "神话地名", aliases: [] },
+  "E_L12": { name: "铜色吉祥山", type: "地名", sub_type: "神话地名", aliases: [] },
+  "E_L13": { name: "吉玛哦江多", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_L14": { name: "彭地", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_L15": { name: "拉萨", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_L16": { name: "葛逻", type: "地名", sub_type: "区域", aliases: [] },
+  "E_L17": { name: "霍尔", type: "地名", sub_type: "区域", aliases: [] },
+  "E_L18": { name: "康区", type: "地名", sub_type: "大区域", aliases: [] },
+  "E_L19": { name: "卫藏", type: "地名", sub_type: "大区域", aliases: [] },
+  "E_L20": { name: "后藏", type: "地名", sub_type: "大区域", aliases: [] },
+  "E_L21": { name: "丹地", type: "地名", sub_type: "圣地", aliases: [] },
+  "E_L22": { name: "汉地", type: "地名", sub_type: "国/政体", aliases: [] },
+
+  // --- PoC scriptures ---
+  "E_B01": { name: "《吉祥证道歌》", type: "经典", sub_type: "教言/口诀集", aliases: [] },
+  "E_B02": { name: "《金刚橛》法部", type: "经典", sub_type: "密续", aliases: [] },
+  "E_B03": { name: "《窍诀见鬘论》", type: "经典", sub_type: "论", aliases: [] },
+  "E_B04": { name: "《贤愚经》", type: "经典", sub_type: "经", aliases: [] },
+  "E_B05": { name: "《毗奈耶经》", type: "经典", sub_type: "律", aliases: [] },
+  "E_B06": { name: "一百国王魂伏藏", type: "经典", sub_type: "岩藏", aliases: [] },
+  "E_B07": { name: "五大意伏藏", type: "经典", sub_type: "岩藏", aliases: [] },
+  "E_B08": { name: "二十五甚深大伏藏", type: "经典", sub_type: "岩藏", aliases: [] },
+  "E_B09": { name: "《广般若经》", type: "经典", sub_type: "经", aliases: [] },
+  "E_B10": { name: "《戒律》", type: "经典", sub_type: "律", aliases: ["律藏"] },
+  "E_B11": { name: "《大圆满心部》", type: "经典", sub_type: "密续", aliases: [] },
+  "E_B12": { name: "《普作王续》", type: "经典", sub_type: "密续", aliases: [] },
+  "E_B13": { name: "《般若》", type: "经典", sub_type: "经", aliases: [] },
+  "E_B14": { name: "上分对法", type: "经典", sub_type: "论", aliases: [] },
+  "E_B15": { name: "下分对法", type: "经典", sub_type: "论", aliases: [] },
+  "E_B16": { name: "《般若十万颂》", type: "经典", sub_type: "经", aliases: [] },
+  "E_B17": { name: "《藏密佛教史》", type: "经典", sub_type: "史籍", aliases: [] },
+
+  // --- PoC teachings ---
+  "E_D01": { name: "八关斋戒", type: "教法", sub_type: "戒律体系", aliases: [] },
+  "E_D02": { name: "十善", type: "教法", sub_type: "戒律体系", aliases: [] },
+  "E_D03": { name: "大圆满", type: "教法", sub_type: "教法体系", aliases: ["阿底瑜伽"] },
+  "E_D04": { name: "真实意法", type: "教法", sub_type: "教法体系", aliases: [] },
+  "E_D05": { name: "八大法行", type: "教法", sub_type: "教法体系", aliases: [] },
+  "E_D06": { name: "生起次第", type: "教法", sub_type: "修法元素", aliases: [] },
+  "E_D07": { name: "圆满次第", type: "教法", sub_type: "修法元素", aliases: [] },
+  "E_D08": { name: "东律传承", type: "教法", sub_type: "戒律体系", aliases: [] },
+  "E_D09": { name: "四大供养", type: "教法", sub_type: "修法元素", aliases: [] },
+
+  // --- PoC rituals ---
+  "E_R01": { name: "圆光", type: "仪轨", sub_type: "占卜", aliases: [] },
+  "E_R02": { name: "烧施", type: "仪轨", sub_type: "修法仪轨", aliases: [] },
+  "E_R03": { name: "金刚舞", type: "仪轨", sub_type: "修法仪轨", aliases: [] },
+  "E_R04": { name: "近圆戒", type: "仪轨", sub_type: "戒律", aliases: ["比丘戒"] },
+
+  // --- PoC non-humans ---
+  "E_N01": { name: "十二地母", type: "非人", sub_type: "护法", aliases: [] },
+  "E_N02": { name: "十三革绕神", type: "非人", sub_type: "护法", aliases: [] },
+  "E_N03": { name: "二十一优婆塞", type: "非人", sub_type: "护法", aliases: [] },
+  "E_N04": { name: "无恼龙", type: "非人", sub_type: "旁生", aliases: [] },
+  "E_N05": { name: "鬼王香夏坚", type: "非人", sub_type: "饿鬼", aliases: [] },
+
+  // --- PoC sects ---
+  "E_C01": { name: "说一切有部", type: "教派", sub_type: "印度部派", aliases: [] },
+  "E_C02": { name: "噶当派", type: "教派", sub_type: "藏传宗派", aliases: ["新旧噶当派"] },
+};
+
+// Raw relations from ch03.yaml (99 relations)
+const rawRelations = [
+  // A. manifestationOf / formOf
+  { source: "E_014", target: "E_001", type: "manifestationOf" },
+  { source: "E_013", target: "E_002", type: "manifestationOf" },
+  { source: "E_P01", target: "E_S01", type: "manifestationOf" },
+  { source: "E_025", target: "E_004", type: "manifestationOf" },
+  { source: "E_020", target: "E_005", type: "manifestationOf" },
+  { source: "E_021", target: "E_006", type: "manifestationOf" },
+  { source: "E_043", target: "E_003", type: "manifestationOf" },
+  { source: "E_P04", target: "E_S04", type: "manifestationOf" },
+  { source: "E_S02", target: "E_P02", type: "formOf" },
+  { source: "E_P58", target: "E_P53", type: "manifestationOf" },
+  // B. teacherOf
+  { source: "E_P06", target: "E_P16", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P06", target: "E_P17", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P06", target: "E_P18", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P06", target: "E_P19", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P06", target: "E_P20", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P06", target: "E_P21", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P06", target: "E_P22", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P06", target: "E_P24", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P02", target: "E_P01", type: "teacherOf", specialty: "灌顶/密法" },
+  { source: "E_P14", target: "E_P18", type: "teacherOf", specialty: "大圆满" },
+  { source: "E_P15", target: "E_P28", type: "teacherOf", specialty: "密法" },
+  { source: "E_P16", target: "E_P44", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P16", target: "E_P45", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P16", target: "E_P46", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P44", target: "E_P48", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P45", target: "E_P48", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P51", target: "E_P48", type: "teacherOf", specialty: "教授" },
+  { source: "E_P52", target: "E_P48", type: "teacherOf", specialty: "教授" },
+  { source: "E_P53", target: "E_P48", type: "teacherOf", specialty: "大圆满" },
+  { source: "E_P48", target: "E_P54", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P48", target: "E_P55", type: "teacherOf", specialty: "戒律" },
+  { source: "E_P56", target: "E_P57", type: "teacherOf", specialty: "教授" },
+  { source: "E_P13", target: "E_P60", type: "teacherOf", specialty: "教授" },
+  { source: "E_P13", target: "E_P47", type: "teacherOf", specialty: "教授" },
+  { source: "E_P13", target: "E_P61", type: "teacherOf", specialty: "教授" },
+  // C. builtBy / foundedBy
+  { source: "E_081", target: "E_014", type: "builtBy" },
+  { source: "E_082", target: "E_014", type: "builtBy" },
+  { source: "E_084", target: "E_014", type: "builtBy" },
+  { source: "E_085", target: "E_014", type: "builtBy" },
+  { source: "E_T01", target: "E_P01", type: "builtBy" },
+  { source: "E_T01", target: "E_P06", type: "builtBy" },
+  { source: "E_T01", target: "E_P02", type: "builtBy" },
+  { source: "E_T05", target: "E_P31", type: "builtBy" },
+  { source: "E_T06", target: "E_P04", type: "builtBy" },
+  { source: "E_T08", target: "E_P54", type: "foundedBy" },
+  { source: "E_T09", target: "E_P54", type: "foundedBy" },
+  { source: "E_T10", target: "E_P54", type: "foundedBy" },
+  { source: "E_T11", target: "E_P54", type: "foundedBy" },
+  { source: "E_T12", target: "E_P54", type: "foundedBy" },
+  // D. rulerOf / fatherOf / sonOf / consortOf / ministerOf / siblingOf
+  { source: "E_010", target: "E_092", type: "rulerOf" },
+  { source: "E_014", target: "E_092", type: "rulerOf" },
+  { source: "E_P01", target: "E_101", type: "rulerOf" },
+  { source: "E_P04", target: "E_092", type: "rulerOf" },
+  { source: "E_P30", target: "E_092", type: "rulerOf" },
+  { source: "E_P32", target: "E_092", type: "rulerOf" },
+  { source: "E_010", target: "E_011", type: "sonOf" },
+  { source: "E_010", target: "E_012", type: "fatherOf" },
+  { source: "E_P01", target: "E_P30", type: "fatherOf" },
+  { source: "E_P01", target: "E_P05", type: "fatherOf" },
+  { source: "E_P01", target: "E_P31", type: "fatherOf" },
+  { source: "E_P31", target: "E_P04", type: "fatherOf" },
+  { source: "E_014", target: "E_020", type: "consortOf" },
+  { source: "E_014", target: "E_021", type: "consortOf" },
+  { source: "E_025", target: "E_014", type: "ministerOf" },
+  { source: "E_P24", target: "E_P01", type: "ministerOf" },
+  { source: "E_P32", target: "E_P04", type: "siblingOf" },
+  // E. translatedBy / revisedBy
+  { source: "E_P18", target: null, type: "translatedBy" },
+  { source: "E_P25", target: null, type: "translatedBy" },
+  { source: "E_P26", target: null, type: "translatedBy" },
+  { source: "E_P27", target: null, type: "translatedBy" },
+  { source: "E_B14", target: "E_P13", type: "translatedBy" },
+  { source: "E_B14", target: "E_P59", type: "translatedBy" },
+  { source: "E_B15", target: "E_P13", type: "translatedBy" },
+  { source: "E_B15", target: "E_P59", type: "translatedBy" },
+  { source: "E_B09", target: "E_P42", type: "revisedBy" },
+  // F. subduedBy
+  { source: "E_N01", target: "E_P02", type: "subduedBy" },
+  { source: "E_N02", target: "E_P02", type: "subduedBy" },
+  { source: "E_N03", target: "E_P02", type: "subduedBy" },
+  { source: "E_N04", target: "E_P02", type: "subduedBy" },
+  { source: "E_N05", target: "E_P02", type: "subduedBy" },
+  // G. concealedBy / revealedBy
+  { source: "E_066", target: "E_014", type: "concealedBy" },
+  { source: "E_066", target: "E_040", type: "revealedBy" },
+  { source: "E_066", target: "E_041", type: "revealedBy" },
+  { source: "E_066", target: "E_042", type: "revealedBy" },
+  { source: "E_B06", target: "E_P02", type: "concealedBy" },
+  { source: "E_B07", target: "E_P02", type: "concealedBy" },
+  { source: "E_B08", target: "E_P02", type: "concealedBy" },
+  // H. memberOf / belongsToSect / locatedIn
+  { source: "E_P06", target: "E_G01", type: "memberOf" },
+  { source: "E_P02", target: "E_G01", type: "memberOf" },
+  { source: "E_P01", target: "E_G01", type: "memberOf" },
+  { source: "E_014", target: "E_G02", type: "memberOf" },
+  { source: "E_P01", target: "E_G02", type: "memberOf" },
+  { source: "E_P04", target: "E_G02", type: "memberOf" },
+  { source: "E_P16", target: "E_G03", type: "memberOf" },
+  { source: "E_T13", target: "E_D08", type: "belongsToSect" },
+  { source: "E_080", target: "E_092", type: "locatedIn" },
+  { source: "E_T06", target: "E_L13", type: "locatedIn" },
+  { source: "E_083", target: "E_102", type: "locatedIn" },
+  { source: "E_T07", target: "E_L18", type: "locatedIn" },
+];
+
+// ============================================================
+// Build nodes and links from relations
+// ============================================================
+
+function resolveEntity(eid) {
+  if (!eid) return null;
+  const e = entityMap[eid];
+  if (!e) return { id: eid, name: eid, type: "unknown", sub_type: "", aliases: [] };
+  return { id: eid, name: e.name, type: e.type, sub_type: e.sub_type || "", aliases: e.aliases || [] };
+}
+
+// Collect unique nodes from relations
+const nodeSet = new Map();
+const links = [];
+
+rawRelations.forEach(r => {
+  const src = resolveEntity(r.source);
+  const tgt = resolveEntity(r.target);
+  if (src) {
+    if (!nodeSet.has(src.name)) nodeSet.set(src.name, src);
+  }
+  if (tgt) {
+    if (!nodeSet.has(tgt.name)) nodeSet.set(tgt.name, tgt);
+  }
+  if (src && tgt) {
+    links.push({
+      source: src.name,
+      target: tgt.name,
+      type: r.type,
+      specialty: r.specialty || ""
+    });
+  }
+});
+
+const nodes = Array.from(nodeSet.values()).map(n => ({
+  id: n.name,
+  type: n.type,
+  sub_type: n.sub_type,
+  aliases: n.aliases
+}));
+
+// ============================================================
+// Color schemes
+// ============================================================
+
+const typeColors = {
+  "人物":   "#4da6ff",
+  "圣众":   "#d4af37",
+  "非人":   "#e74c3c",
+  "寺院":   "#2ecc71",
+  "地名":   "#95a5a6",
+  "经典":   "#9b59b6",
+  "教法":   "#e67e22",
+  "教派":   "#8b6914",
+  "仪轨":   "#1abc9c",
+  "法器":   "#e91e8c",
+  "集合":   "#f1c40f",
+  "unknown": "#666"
+};
+
+const relColors = {
+  "teacherOf":      "#5dade2",
+  "manifestationOf": "#d4af37",
+  "formOf":          "#c5a028",
+  "builtBy":         "#2ecc71",
+  "foundedBy":       "#27ae60",
+  "subduedBy":       "#e74c3c",
+  "concealedBy":     "#8e44ad",
+  "revealedBy":      "#bb8fce",
+  "fatherOf":        "#f39c12",
+  "sonOf":           "#e67e22",
+  "consortOf":       "#e91e63",
+  "rulerOf":         "#bdc3c7",
+  "ministerOf":      "#7f8c8d",
+  "siblingOf":       "#f0b27a",
+  "memberOf":        "#85929e",
+  "translatedBy":    "#1abc9c",
+  "revisedBy":       "#16a085",
+  "belongsToSect":   "#8b6914",
+  "locatedIn":       "#aab7b8",
+};
+
+function getRelColor(type) {
+  return relColors[type] || "#555";
+}
+
+// ============================================================
+// Compute degree
+// ============================================================
+const degreeMap = {};
+links.forEach(l => {
+  degreeMap[l.source] = (degreeMap[l.source] || 0) + 1;
+  degreeMap[l.target] = (degreeMap[l.target] || 0) + 1;
+});
+
+// ============================================================
+// D3 Visualization
+// ============================================================
+
+const width = window.innerWidth;
+const height = window.innerHeight;
+
+const svg = d3.select("body").append("svg")
+  .attr("width", width)
+  .attr("height", height);
+
+// Defs: glow filter
+const defs = svg.append("defs");
+
+const glowFilter = defs.append("filter")
+  .attr("id", "glow")
+  .attr("x", "-50%").attr("y", "-50%")
+  .attr("width", "200%").attr("height", "200%");
+glowFilter.append("feGaussianBlur")
+  .attr("stdDeviation", "3")
+  .attr("result", "coloredBlur");
+const feMerge = glowFilter.append("feMerge");
+feMerge.append("feMergeNode").attr("in", "coloredBlur");
+feMerge.append("feMergeNode").attr("in", "SourceGraphic");
+
+// Arrow markers for each relation type
+Object.entries(relColors).forEach(([type, color]) => {
+  defs.append("marker")
+    .attr("id", "arrow-" + type)
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 20)
+    .attr("refY", 0)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("orient", "auto")
+    .append("path")
+    .attr("d", "M0,-4L10,0L0,4")
+    .attr("fill", color)
+    .attr("opacity", 0.6);
+});
+
+const g = svg.append("g");
+
+// Zoom
+const zoom = d3.zoom()
+  .scaleExtent([0.15, 5])
+  .on("zoom", (event) => {
+    g.attr("transform", event.transform);
+  });
+svg.call(zoom);
+
+// Simulation
+const simulation = d3.forceSimulation(nodes)
+  .force("link", d3.forceLink(links).id(d => d.id).distance(80))
+  .force("charge", d3.forceManyBody().strength(-200))
+  .force("center", d3.forceCenter(width / 2, height / 2))
+  .force("collision", d3.forceCollide().radius(d => nodeRadius(d) + 4))
+  .force("x", d3.forceX(width / 2).strength(0.03))
+  .force("y", d3.forceY(height / 2).strength(0.03));
+
+function nodeRadius(d) {
+  const deg = degreeMap[d.id] || 1;
+  return Math.min(4 + Math.sqrt(deg) * 3, 20);
+}
+
+// Links
+const link = g.append("g")
+  .selectAll("line")
+  .data(links)
+  .join("line")
+  .attr("stroke", d => getRelColor(d.type))
+  .attr("stroke-opacity", 0.35)
+  .attr("stroke-width", 1.2)
+  .attr("marker-end", d => `url(#arrow-${d.type})`);
+
+// Nodes
+const node = g.append("g")
+  .selectAll("circle")
+  .data(nodes)
+  .join("circle")
+  .attr("r", d => nodeRadius(d))
+  .attr("fill", d => typeColors[d.type] || typeColors["unknown"])
+  .attr("stroke", d => d3.color(typeColors[d.type] || typeColors["unknown"]).brighter(0.8))
+  .attr("stroke-width", 1)
+  .attr("stroke-opacity", 0.6)
+  .attr("filter", "url(#glow)")
+  .attr("cursor", "pointer")
+  .call(d3.drag()
+    .on("start", dragstarted)
+    .on("drag", dragged)
+    .on("end", dragended));
+
+// Labels (only for high-degree nodes)
+const label = g.append("g")
+  .selectAll("text")
+  .data(nodes)
+  .join("text")
+  .text(d => d.id)
+  .attr("font-size", d => {
+    const deg = degreeMap[d.id] || 0;
+    if (deg >= 8) return "12px";
+    if (deg >= 4) return "10px";
+    return "0px";  // hide low-degree labels by default
+  })
+  .attr("fill", "#ddd")
+  .attr("text-anchor", "middle")
+  .attr("dy", d => -(nodeRadius(d) + 4))
+  .attr("pointer-events", "none")
+  .attr("opacity", d => {
+    const deg = degreeMap[d.id] || 0;
+    return deg >= 4 ? 0.85 : 0;
+  });
+
+// Tooltip
+const tooltip = d3.select("#tooltip");
+
+node.on("mouseover", function(event, d) {
+  const deg = degreeMap[d.id] || 0;
+  let html = `<div class="tt-name">${d.id}</div>`;
+  html += `<div class="tt-type">${d.type}${d.sub_type ? ' · ' + d.sub_type : ''}</div>`;
+  if (d.aliases && d.aliases.length > 0) {
+    html += `<div class="tt-aliases">别名: ${d.aliases.join(", ")}</div>`;
+  }
+  html += `<div class="tt-rel" style="margin-top:4px;color:#999">连接数: ${deg}</div>`;
+  tooltip.html(html)
+    .style("display", "block")
+    .style("left", (event.pageX + 14) + "px")
+    .style("top", (event.pageY - 10) + "px");
+
+  // Highlight connected
+  d3.select(this).attr("stroke-width", 2.5).attr("stroke-opacity", 1);
+  link.attr("stroke-opacity", l =>
+    (l.source.id === d.id || l.target.id === d.id) ? 0.9 : 0.08
+  ).attr("stroke-width", l =>
+    (l.source.id === d.id || l.target.id === d.id) ? 2.5 : 0.8
+  );
+  node.attr("opacity", n => {
+    if (n.id === d.id) return 1;
+    const connected = links.some(l =>
+      (l.source.id === d.id && l.target.id === n.id) ||
+      (l.target.id === d.id && l.source.id === n.id)
+    );
+    return connected ? 1 : 0.15;
+  });
+  label.attr("opacity", n => {
+    if (n.id === d.id) return 1;
+    const connected = links.some(l =>
+      (l.source.id === d.id && l.target.id === n.id) ||
+      (l.target.id === d.id && l.source.id === n.id)
+    );
+    return connected ? 0.9 : 0;
+  }).attr("font-size", n => {
+    if (n.id === d.id) return "13px";
+    const connected = links.some(l =>
+      (l.source.id === d.id && l.target.id === n.id) ||
+      (l.target.id === d.id && l.source.id === n.id)
+    );
+    return connected ? "10px" : "0px";
+  });
+})
+.on("mousemove", function(event) {
+  tooltip
+    .style("left", (event.pageX + 14) + "px")
+    .style("top", (event.pageY - 10) + "px");
+})
+.on("mouseout", function() {
+  tooltip.style("display", "none");
+  node.attr("opacity", 1);
+  d3.select(this).attr("stroke-width", 1).attr("stroke-opacity", 0.6);
+  link.attr("stroke-opacity", 0.35).attr("stroke-width", 1.2);
+  label.attr("opacity", d => (degreeMap[d.id] || 0) >= 4 ? 0.85 : 0)
+    .attr("font-size", d => {
+      const deg = degreeMap[d.id] || 0;
+      if (deg >= 8) return "12px";
+      if (deg >= 4) return "10px";
+      return "0px";
+    });
+});
+
+// Link tooltip
+link.on("mouseover", function(event, d) {
+  let html = `<div class="tt-name" style="font-size:12px">${d.source.id} → ${d.target.id}</div>`;
+  html += `<div class="tt-type">关系: ${d.type}</div>`;
+  if (d.specialty) html += `<div class="tt-aliases">专长: ${d.specialty}</div>`;
+  tooltip.html(html)
+    .style("display", "block")
+    .style("left", (event.pageX + 14) + "px")
+    .style("top", (event.pageY - 10) + "px");
+  d3.select(this).attr("stroke-opacity", 0.9).attr("stroke-width", 3);
+})
+.on("mousemove", function(event) {
+  tooltip
+    .style("left", (event.pageX + 14) + "px")
+    .style("top", (event.pageY - 10) + "px");
+})
+.on("mouseout", function() {
+  tooltip.style("display", "none");
+  d3.select(this).attr("stroke-opacity", 0.35).attr("stroke-width", 1.2);
+});
+
+// Click to lock highlight
+let selectedNode = null;
+node.on("click", function(event, d) {
+  event.stopPropagation();
+  if (selectedNode === d.id) {
+    selectedNode = null;
+    resetHighlight();
+    return;
+  }
+  selectedNode = d.id;
+  highlightNode(d);
+});
+
+svg.on("click", () => {
+  selectedNode = null;
+  resetHighlight();
+});
+
+function highlightNode(d) {
+  link.attr("stroke-opacity", l =>
+    (l.source.id === d.id || l.target.id === d.id) ? 0.9 : 0.06
+  ).attr("stroke-width", l =>
+    (l.source.id === d.id || l.target.id === d.id) ? 2.5 : 0.6
+  );
+  node.attr("opacity", n => {
+    if (n.id === d.id) return 1;
+    const connected = links.some(l =>
+      (l.source.id === d.id && l.target.id === n.id) ||
+      (l.target.id === d.id && l.source.id === n.id)
+    );
+    return connected ? 1 : 0.1;
+  });
+  label.attr("opacity", n => {
+    if (n.id === d.id) return 1;
+    const connected = links.some(l =>
+      (l.source.id === d.id && l.target.id === n.id) ||
+      (l.target.id === d.id && l.source.id === n.id)
+    );
+    return connected ? 0.9 : 0;
+  }).attr("font-size", n => {
+    if (n.id === d.id) return "13px";
+    const connected = links.some(l =>
+      (l.source.id === d.id && l.target.id === n.id) ||
+      (l.target.id === d.id && l.source.id === n.id)
+    );
+    return connected ? "10px" : "0px";
+  });
+}
+
+function resetHighlight() {
+  node.attr("opacity", 1);
+  link.attr("stroke-opacity", 0.35).attr("stroke-width", 1.2);
+  label.attr("opacity", d => (degreeMap[d.id] || 0) >= 4 ? 0.85 : 0)
+    .attr("font-size", d => {
+      const deg = degreeMap[d.id] || 0;
+      if (deg >= 8) return "12px";
+      if (deg >= 4) return "10px";
+      return "0px";
+    });
+}
+
+// Tick
+simulation.on("tick", () => {
+  link
+    .attr("x1", d => d.source.x)
+    .attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x)
+    .attr("y2", d => d.target.y);
+
+  node
+    .attr("cx", d => d.x)
+    .attr("cy", d => d.y);
+
+  label
+    .attr("x", d => d.x)
+    .attr("y", d => d.y - nodeRadius(d) - 4);
+});
+
+// Drag handlers
+function dragstarted(event, d) {
+  if (!event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+function dragged(event, d) {
+  d.fx = event.x;
+  d.fy = event.y;
+}
+function dragended(event, d) {
+  if (!event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+// ============================================================
+// Legend
+// ============================================================
+const legendEl = document.getElementById("legend");
+let legendHTML = `<h3>实体类型</h3>`;
+const typeCounts = {};
+nodes.forEach(n => { typeCounts[n.type] = (typeCounts[n.type] || 0) + 1; });
+
+const typeOrder = ["人物", "圣众", "非人", "寺院", "地名", "经典", "教法", "教派", "仪轨", "法器", "集合"];
+typeOrder.forEach(t => {
+  if (typeCounts[t]) {
+    legendHTML += `<div class="legend-item" data-type="${t}">
+      <div class="legend-dot" style="background:${typeColors[t]};box-shadow:0 0 6px ${typeColors[t]}"></div>
+      <span>${t} (${typeCounts[t]})</span>
+    </div>`;
+  }
+});
+if (typeCounts["unknown"]) {
+  legendHTML += `<div class="legend-item">
+    <div class="legend-dot" style="background:${typeColors["unknown"]}"></div>
+    <span>unknown (${typeCounts["unknown"]})</span>
+  </div>`;
+}
+
+legendHTML += `<div class="legend-section">关系类型</div>`;
+const relTypeLabels = {
+  "teacherOf": "师承",
+  "manifestationOf": "化身",
+  "formOf": "形态",
+  "builtBy": "修建",
+  "foundedBy": "创立",
+  "subduedBy": "降伏",
+  "concealedBy": "埋藏",
+  "revealedBy": "开取",
+  "fatherOf": "父子",
+  "sonOf": "子父",
+  "consortOf": "配偶",
+  "rulerOf": "统治",
+  "ministerOf": "臣属",
+  "siblingOf": "兄弟",
+  "memberOf": "归属",
+  "translatedBy": "译经",
+  "revisedBy": "译校",
+  "belongsToSect": "宗派归属",
+  "locatedIn": "位于",
+};
+const relTypeCounts = {};
+links.forEach(l => { relTypeCounts[l.type] = (relTypeCounts[l.type] || 0) + 1; });
+Object.keys(relTypeCounts).sort((a,b) => relTypeCounts[b] - relTypeCounts[a]).forEach(rt => {
+  const label = relTypeLabels[rt] || rt;
+  legendHTML += `<div class="legend-line">
+    <div class="legend-line-sample" style="background:${getRelColor(rt)}"></div>
+    <span>${label} (${relTypeCounts[rt]})</span>
+  </div>`;
+});
+
+legendEl.innerHTML = legendHTML;
+
+// Legend click to filter
+legendEl.querySelectorAll('.legend-item[data-type]').forEach(el => {
+  el.addEventListener('click', () => {
+    const t = el.dataset.type;
+    const allActive = !el.classList.contains('dimmed');
+    if (allActive) {
+      // Dim all except this type
+      node.attr("opacity", d => d.type === t ? 1 : 0.08);
+      link.attr("stroke-opacity", 0.06);
+      label.attr("opacity", d => d.type === t && (degreeMap[d.id] || 0) >= 2 ? 0.9 : 0)
+        .attr("font-size", d => d.type === t && (degreeMap[d.id] || 0) >= 2 ? "10px" : "0px");
+      legendEl.querySelectorAll('.legend-item[data-type]').forEach(e => e.classList.add('dimmed'));
+      el.classList.remove('dimmed');
+      el.style.opacity = 1;
+    } else {
+      resetHighlight();
+      legendEl.querySelectorAll('.legend-item[data-type]').forEach(e => {
+        e.classList.remove('dimmed');
+        e.style.opacity = '';
+      });
+    }
+  });
+});
+
+// ============================================================
+// Stats Panel
+// ============================================================
+const statsEl = document.getElementById("stats");
+let statsHTML = `<h3>统计</h3>`;
+statsHTML += `<div class="stat-row"><span class="stat-label">实体数</span><span class="stat-value">${nodes.length}</span></div>`;
+statsHTML += `<div class="stat-row"><span class="stat-label">关系数</span><span class="stat-value">${links.length}</span></div>`;
+statsHTML += `<div class="stat-row"><span class="stat-label">关系类型</span><span class="stat-value">${Object.keys(relTypeCounts).length}</span></div>`;
+
+statsHTML += `<div class="stat-section">实体类型分布</div>`;
+const maxTypeCount = Math.max(...Object.values(typeCounts));
+typeOrder.forEach(t => {
+  if (typeCounts[t]) {
+    const pct = (typeCounts[t] / maxTypeCount * 100).toFixed(0);
+    statsHTML += `<div class="stat-bar-row">
+      <span class="stat-bar-label">${t}</span>
+      <div class="stat-bar-wrap"><div class="stat-bar" style="width:${pct}%;background:${typeColors[t]}"></div></div>
+      <span class="stat-bar-count">${typeCounts[t]}</span>
+    </div>`;
+  }
+});
+
+statsHTML += `<div class="stat-section">关系类型分布</div>`;
+const maxRelCount = Math.max(...Object.values(relTypeCounts));
+Object.keys(relTypeCounts).sort((a,b) => relTypeCounts[b] - relTypeCounts[a]).forEach(rt => {
+  const pct = (relTypeCounts[rt] / maxRelCount * 100).toFixed(0);
+  const label = relTypeLabels[rt] || rt;
+  statsHTML += `<div class="stat-bar-row">
+    <span class="stat-bar-label">${label}</span>
+    <div class="stat-bar-wrap"><div class="stat-bar" style="width:${pct}%;background:${getRelColor(rt)}"></div></div>
+    <span class="stat-bar-count">${relTypeCounts[rt]}</span>
+  </div>`;
+});
+
+statsEl.innerHTML = statsHTML;
+
+// Initial zoom to fit
+setTimeout(() => {
+  svg.call(zoom.transform, d3.zoomIdentity.translate(width * 0.1, height * 0.1).scale(0.8));
+}, 200);
+</script>
+</body>
+</html>
