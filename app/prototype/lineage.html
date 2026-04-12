@@ -4082,67 +4082,54 @@ function renderTree(data) {
       .attr("stroke-width", 1);
   });
 
-  // Draw edges — 总线(bus)模式
+  // Draw edges — 每条师承一条独立的平滑 S 曲线，悬停高亮
   const linkG = g.append("g");
-  const lineColor = "rgba(106,174,214,0.35)";
-  const lineW = 1.2;
 
-  // 按父节点分组
-  const childrenByParent = {};
   edges.forEach(e => {
     const src = nodePositions[e.source];
     const tgt = nodePositions[e.target];
     if (!src || !tgt) return;
-    if (src.generation < tgt.generation) {
-      if (!childrenByParent[e.source]) childrenByParent[e.source] = [];
-      childrenByParent[e.source].push(e);
+
+    const sy = src.y + 14, ty = tgt.y - 14;
+    // S 型贝塞尔：竖直出发，竖直到达，中间柔和过渡
+    const cy1 = sy + (ty - sy) * 0.4;
+    const cy2 = sy + (ty - sy) * 0.6;
+    const path = `M${src.x},${sy} C${src.x},${cy1} ${tgt.x},${cy2} ${tgt.x},${ty}`;
+
+    linkG.append("path")
+      .attr("d", path)
+      .attr("fill", "none")
+      .attr("stroke", "rgba(106,174,214,0.25)")
+      .attr("stroke-width", 1.2)
+      .on("mouseover", function() {
+        d3.select(this).attr("stroke", "rgba(106,174,214,0.8)").attr("stroke-width", 2.5);
+        tipG.style("display", null);
+      })
+      .on("mouseout", function() {
+        d3.select(this).attr("stroke", "rgba(106,174,214,0.25)").attr("stroke-width", 1.2);
+        tipG.style("display", "none");
+      });
+
+    // 小箭头
+    linkG.append("polygon")
+      .attr("points", "-3,-5 3,-5 0,0")
+      .attr("transform", `translate(${tgt.x},${ty})`)
+      .attr("fill", "rgba(106,174,214,0.3)");
+
+    // 悬停标签（默认隐藏）
+    const tipG = linkG.append("g").style("display", "none");
+    if (e.specialty) {
+      const mx = (src.x + tgt.x) / 2;
+      const my = (sy + ty) / 2;
+      tipG.append("rect")
+        .attr("x", mx - 2).attr("y", my - 12)
+        .attr("width", e.specialty.length * 12 + 8).attr("height", 16)
+        .attr("rx", 3).attr("fill", "rgba(15,15,26,0.85)");
+      tipG.append("text")
+        .attr("x", mx + 2).attr("y", my)
+        .attr("fill", "#6aaed6").attr("font-size", "10px")
+        .text(e.specialty);
     }
-  });
-
-  Object.entries(childrenByParent).forEach(([parentName, childEdges]) => {
-    const parent = nodePositions[parentName];
-    if (!parent) return;
-    const children = childEdges.map(e => nodePositions[e.target]).filter(Boolean);
-    if (children.length === 0) return;
-
-    const busY = parent.y + layerHeight * 0.35;
-    const xs = [parent.x, ...children.map(c => c.x)];
-    const minX = Math.min(...xs);
-    const maxX = Math.max(...xs);
-
-    // 父→总线 竖线
-    linkG.append("line")
-      .attr("x1", parent.x).attr("y1", parent.y + 14)
-      .attr("x2", parent.x).attr("y2", busY)
-      .attr("stroke", lineColor).attr("stroke-width", lineW);
-
-    // 水平总线
-    linkG.append("line")
-      .attr("x1", minX).attr("y1", busY)
-      .attr("x2", maxX).attr("y2", busY)
-      .attr("stroke", lineColor).attr("stroke-width", lineW);
-
-    // 总线→每个子节点 竖线 + 箭头
-    children.forEach(child => {
-      linkG.append("line")
-        .attr("x1", child.x).attr("y1", busY)
-        .attr("x2", child.x).attr("y2", child.y - 14)
-        .attr("stroke", lineColor).attr("stroke-width", lineW);
-      linkG.append("polygon")
-        .attr("points", "-3,-5 3,-5 0,0")
-        .attr("transform", `translate(${child.x},${child.y - 15})`)
-        .attr("fill", "rgba(106,174,214,0.4)");
-    });
-
-    // 悬停总线显示传承详情
-    const tips = childEdges
-      .map(e => `→ ${e.target}${e.specialty ? ' [' + e.specialty + ']' : ''}`)
-      .join('\n');
-    linkG.append("line")
-      .attr("x1", minX).attr("y1", busY).attr("x2", maxX).attr("y2", busY)
-      .attr("stroke", "transparent").attr("stroke-width", 10)
-      .style("cursor", "pointer")
-      .append("title").text(`${parentName} 传承:\n${tips}`);
   });
 
   // Draw nodes
