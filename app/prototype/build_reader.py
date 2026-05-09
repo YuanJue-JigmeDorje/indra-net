@@ -119,6 +119,21 @@ def load_buddhist_vocab(vocab_path: str) -> list:
     return entities
 
 
+def load_merged_gazetteer(gazetteer_path: str) -> list:
+    """Load the large merged gazetteer (82k terms, no type info).
+    Terms are added as '未分类' — they provide matching coverage
+    but won't have colored type annotations until classified."""
+    if not os.path.exists(gazetteer_path):
+        return []
+    entities = []
+    with open(gazetteer_path, 'r') as f:
+        for line in f:
+            name = line.strip()
+            if name and len(name) >= 2:
+                entities.append({"id": name, "type": "佛学术语", "aliases": []})
+    return entities
+
+
 def build_name_index(entities):
     """
     Return a dict mapping surface_form -> {canonical_id, type}.
@@ -368,6 +383,8 @@ article h1 {
 .entity-法器圣物:hover { background: rgba(138,138,120,0.25); }
 .entity-集合   { color: #c0c098; background: rgba(180,180,138,0.10); border-bottom-color: rgba(180,180,138,0.3); }
 .entity-集合:hover { background: rgba(180,180,138,0.25); }
+.entity-佛学术语 { color: #b0a898; background: rgba(160,150,130,0.08); border-bottom-color: rgba(160,150,130,0.2); }
+.entity-佛学术语:hover { background: rgba(160,150,130,0.2); }
 /* Light theme entity overrides */
 body.light .entity-人物   { color: #2a6a9a; background: rgba(126,184,218,0.15); }
 body.light .entity-圣众   { color: #8a6510; background: rgba(201,169,110,0.15); }
@@ -380,6 +397,7 @@ body.light .entity-教派   { color: #6a5a48; background: rgba(160,144,128,0.12)
 body.light .entity-仪轨   { color: #6a5a48; background: rgba(154,144,128,0.12); }
 body.light .entity-法器圣物 { color: #5a5a40; background: rgba(138,138,120,0.12); }
 body.light .entity-集合   { color: #5a5a30; background: rgba(180,180,138,0.12); }
+body.light .entity-佛学术语 { color: #6a6050; background: rgba(160,150,130,0.10); }
 
 .entity-集合   { border-bottom-color: #90887a; }
 .entity-集合:hover { background: rgba(144,136,122,0.15); }
@@ -945,17 +963,27 @@ def main():
     entities = load_entities()
     print(f"  {len(entities)} entities loaded from graph_data.js")
 
-    # Load Buddhist vocabulary gazetteer
+    # Load Buddhist vocabulary gazetteer (curated, with types)
     vocab_path = str(ROOT / "doc" / "buddhist-vocab.yaml")
     vocab_entities = load_buddhist_vocab(vocab_path)
-    # Only add vocab entries not already in entity list
     existing_names = {e["id"] for e in entities}
     for a in entities:
         for al in a.get("aliases", []):
             existing_names.add(al)
     new_vocab = [v for v in vocab_entities if v["id"] not in existing_names]
     entities.extend(new_vocab)
+    for v in new_vocab:
+        existing_names.add(v["id"])
     print(f"  +{len(new_vocab)} from buddhist-vocab.yaml → {len(entities)} entities")
+
+    # Load merged gazetteer (82k terms from dictionaries, type=佛学术语)
+    gazetteer_path = str(ROOT / "resources" / "dictionaries" / "merged_gazetteer_st.txt")
+    gazetteer_entities = load_merged_gazetteer(gazetteer_path)
+    new_gaz = [g for g in gazetteer_entities if g["id"] not in existing_names]
+    entities.extend(new_gaz)
+    for g in new_gaz:
+        existing_names.add(g["id"])
+    print(f"  +{len(new_gaz)} from merged_gazetteer_st.txt → {len(entities)} entities")
 
     # Auto-detect 《》 book titles from source texts
     chapter_paths = [str(CHAPTER_DIR / fn) for _, fn, _ in CHAPTERS]

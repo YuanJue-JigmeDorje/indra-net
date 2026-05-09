@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 VOCAB_PATH = ROOT / "doc" / "buddhist-vocab.yaml"
 CHAPTER_DIR = ROOT / "source" / "dudjom" / "chapter_md"
 GRAPH_DATA = ROOT / "app" / "prototype" / "graph_data.js"
+MERGED_GAZETTEER = ROOT / "resources" / "dictionaries" / "merged_gazetteer_st.txt"
 OUT_DIR = ROOT / "kg" / "prescan"
 
 CHAPTERS = [
@@ -42,7 +43,7 @@ def load_vocab():
     """Load all known terms from vocab + existing graph_data entities."""
     terms = {}  # name → type
 
-    # 1. Buddhist vocab yaml
+    # 1. Buddhist vocab yaml (small curated list with types)
     if VOCAB_PATH.exists():
         with open(VOCAB_PATH) as f:
             data = yaml.safe_load(f)
@@ -52,6 +53,14 @@ def load_vocab():
                     for n in names:
                         if isinstance(n, str) and len(n) >= 2:
                             terms[n] = etype
+
+    # 1b. Merged gazetteer (82k terms from 丁福保+佛光, no type info)
+    if MERGED_GAZETTEER.exists():
+        with open(MERGED_GAZETTEER) as f:
+            for line in f:
+                t = line.strip()
+                if t and len(t) >= 2 and t not in terms:
+                    terms[t] = "未分类"  # type unknown, Agent will classify
 
     # 2. Existing graph_data.js entities
     if GRAPH_DATA.exists():
