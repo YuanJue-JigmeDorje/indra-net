@@ -289,6 +289,8 @@ for fpath in filter_chapter_files(sorted(glob.glob(os.path.join(KG, "relations",
             'prophecyAbout': '授记', 'requestOf': '请法',
             'offeringTo': '供养', 'antagonistOf': '对立',
             'teachingContains': '教法含', 'liberatedBy': '度化',
+            'succeedsAsRuler': '继位', 'splitFrom': '分裂自', 'identityOf': '即是',
+            'grandparentOf': '祖孙', 'partOf': '属于',
         }
         rtype = rtype_map.get(raw_rtype, raw_rtype)
         raw_spec = rel.get('specialty', '') or ''

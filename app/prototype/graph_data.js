@@ -4724,7 +4724,7 @@ const links = [
   {
     "source": "释迦佛",
     "target": "金刚持佛",
-    "type": "identityOf",
+    "type": "即是",
     "specialty": "",
     "quote": "这里按照无上了义精藏的观点来讲，我等大师释迦佛从无始时以来就在本基法界中以自证智慧解脱的方式而现前菩提，在法性光明刹土，与三世一切佛陀密意一味一体安住在身智无合无离的境界中如如不动，与此同时，为了利益一切有情而现示不可思议化身佛的幻化，随着不同所化众生的缘分，把他们安置在三菩提 17 的果位，以此无量的事业调化众生。《如意宝庄严续》中云：“始初正等觉，大密金刚持，游戏无边刹，无数前后时，寂猛无量相，猎人娼妓等，以异相利生。",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -4732,7 +4732,7 @@ const links = [
   {
     "source": "释迦佛",
     "target": "六能仁",
-    "type": "identityOf",
+    "type": "即是",
     "specialty": "",
     "quote": "所谓'大悲加持'的六能仁，是由善逝之身语意金刚中出现的",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -4836,7 +4836,7 @@ const links = [
   {
     "source": "达玛阿修嘎",
     "target": "离忧",
-    "type": "grandparentOf",
+    "type": "祖孙",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -4876,7 +4876,7 @@ const links = [
   {
     "source": "欢喜王",
     "target": "勇部",
-    "type": "succeedsAsRuler",
+    "type": "继位",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -4884,7 +4884,7 @@ const links = [
   {
     "source": "大莲花王",
     "target": "欢喜王",
-    "type": "succeedsAsRuler",
+    "type": "继位",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -4892,7 +4892,7 @@ const links = [
   {
     "source": "嘎纳加嘎",
     "target": "大莲花王",
-    "type": "succeedsAsRuler",
+    "type": "继位",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5220,7 +5220,7 @@ const links = [
   {
     "source": "大众部",
     "target": "说一切有部",
-    "type": "splitFrom",
+    "type": "分裂自",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5228,7 +5228,7 @@ const links = [
   {
     "source": "上座部",
     "target": "说一切有部",
-    "type": "splitFrom",
+    "type": "分裂自",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5236,7 +5236,7 @@ const links = [
   {
     "source": "正量部",
     "target": "说一切有部",
-    "type": "splitFrom",
+    "type": "分裂自",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5380,7 +5380,7 @@ const links = [
   {
     "source": "南赡部洲",
     "target": "娑婆世界",
-    "type": "partOf",
+    "type": "属于",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
