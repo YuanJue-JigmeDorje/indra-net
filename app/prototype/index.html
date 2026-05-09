@@ -272,6 +272,41 @@
   body.light #nav-bar a, body.light #nav-bar span { background: rgba(0,0,0,0.05); border-color: rgba(0,0,0,0.1); color: #888; }
   body.light #nav-bar a:hover, body.light #nav-bar span:hover { background: rgba(0,0,0,0.1); color: #555; }
   body.light #nav-bar a.active { background: rgba(139,105,20,0.15); border-color: rgba(139,105,20,0.3); color: #8b6914; }
+
+  /* Search */
+  #search-input {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 5px; padding: 4px 10px; color: #e0e0e0; font-size: 13px;
+    width: 220px; outline: none;
+  }
+  #search-input:focus { border-color: rgba(212,175,55,0.5); }
+  #search-input::placeholder { color: #666; }
+  body.light #search-input { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.12); color: #333; }
+
+  #search-results {
+    position: absolute; top: 44px; right: 16px; z-index: 35;
+    background: rgba(15,15,26,0.97); border: 1px solid rgba(212,175,55,0.2);
+    border-radius: 8px; width: 420px; max-height: 70vh; overflow-y: auto;
+    display: none; backdrop-filter: blur(8px);
+  }
+  body.light #search-results { background: rgba(255,255,255,0.97); border-color: rgba(0,0,0,0.12); }
+  #search-results .sr-section { padding: 8px 14px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  #search-results .sr-section-title { font-size: 11px; color: #888; margin-bottom: 6px; letter-spacing: 1px; }
+  #search-results .sr-item {
+    padding: 6px 10px; margin: 3px 0; border-radius: 5px; cursor: pointer;
+    font-size: 13px; line-height: 1.6;
+  }
+  #search-results .sr-item:hover { background: rgba(212,175,55,0.1); }
+  .sr-entity-name { color: #7eb8da; font-weight: 500; }
+  .sr-type-tag { font-size: 10px; color: #888; margin-left: 4px; }
+  .sr-quote { font-size: 12px; color: #999; margin-top: 2px; }
+  .sr-quote em { font-style: normal; color: #d4af37; background: rgba(212,175,55,0.1); padding: 0 2px; border-radius: 2px; }
+  .sr-relation { font-size: 12px; color: #aaa; }
+  .sr-chapter { font-size: 10px; color: #666; }
+  .sr-empty { padding: 20px; text-align: center; color: #555; font-size: 13px; }
+  body.light .sr-item:hover { background: rgba(139,105,20,0.08); }
+  body.light .sr-quote { color: #666; }
+  body.light .sr-quote em { color: #8b6914; background: rgba(139,105,20,0.08); }
   body.light .stat-label { color: #666; }
   body.light .stat-value { color: #333; }
   body.light .stat-bar-label { color: #666; }
@@ -285,8 +320,10 @@
 <div id="nav-bar">
   <a href="index.html" id="nav-graph" class="active">星图</a>
   <a href="lineage.html" id="nav-lineage">传承谱系</a>
+  <input type="text" id="search-input" placeholder="搜索实体、原文、关系..." autocomplete="off">
   <span id="theme-toggle" onclick="document.body.classList.toggle('light'); this.textContent = document.body.classList.contains('light') ? '深色' : '浅色'; if(typeof draw==='function') draw();">浅色</span>
 </div>
+<div id="search-results"></div>
 
 <div id="info-panel">
   <span class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">&times;</span>
@@ -12736,6 +12773,140 @@ function clickEntity(name) {
     selectedNode = target;
     showInfoPanel(target);
     draw();
+  }
+}
+
+// ============================================================
+// Search — across entities, relations (quotes), events
+// ============================================================
+var searchInput = document.getElementById("search-input");
+var searchResults = document.getElementById("search-results");
+var searchTimeout = null;
+
+searchInput.addEventListener("input", function() {
+  clearTimeout(searchTimeout);
+  var q = this.value.trim();
+  if (q.length < 2) { searchResults.style.display = "none"; return; }
+  searchTimeout = setTimeout(function() { doSearch(q); }, 200);
+});
+
+searchInput.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") { searchResults.style.display = "none"; this.blur(); }
+});
+
+document.addEventListener("click", function(e) {
+  if (!e.target.closest("#search-results") && !e.target.closest("#search-input")) {
+    searchResults.style.display = "none";
+  }
+});
+
+function doSearch(q) {
+  var ql = q.toLowerCase();
+  var html = "";
+  var count = 0;
+
+  // 1. Search entities (by name/alias)
+  var matchedNodes = nodes.filter(function(n) {
+    return n.id.toLowerCase().indexOf(ql) >= 0 ||
+           (n.aliases && n.aliases.some(function(a) { return a.toLowerCase().indexOf(ql) >= 0; }));
+  }).slice(0, 10);
+
+  if (matchedNodes.length > 0) {
+    html += '<div class="sr-section"><div class="sr-section-title">实体</div>';
+    matchedNodes.forEach(function(n) {
+      html += '<div class="sr-item" onclick="focusNode(\'' + n.id.replace(/'/g, "\\'") + '\')">'
+        + '<span class="sr-entity-name">' + highlight(n.id, q) + '</span>'
+        + '<span class="sr-type-tag">' + n.type + '</span></div>';
+      count++;
+    });
+    html += '</div>';
+  }
+
+  // 2. Search relations (by quote text)
+  var matchedLinks = links.filter(function(l) {
+    return (l.quote && l.quote.toLowerCase().indexOf(ql) >= 0) ||
+           (l.source && l.source.toLowerCase().indexOf(ql) >= 0) ||
+           (l.target && l.target.toLowerCase().indexOf(ql) >= 0);
+  }).slice(0, 10);
+
+  if (matchedLinks.length > 0) {
+    html += '<div class="sr-section"><div class="sr-section-title">关系 · 原文</div>';
+    matchedLinks.forEach(function(l) {
+      var quoteSnippet = l.quote ? excerptAround(l.quote, q, 60) : "";
+      html += '<div class="sr-item" onclick="focusNode(\'' + l.source.replace(/'/g, "\\'") + '\')">'
+        + '<span class="sr-relation">' + l.source + ' → ' + l.target
+        + ' <span class="sr-type-tag">' + l.type + '</span></span>'
+        + (quoteSnippet ? '<div class="sr-quote">' + quoteSnippet + '</div>' : '')
+        + '<div class="sr-chapter">' + (l.chapter || '') + '</div></div>';
+      count++;
+    });
+    html += '</div>';
+  }
+
+  // 3. Search events (by title/quote)
+  if (typeof allEvents !== "undefined") {
+    var matchedEvents = [];
+    for (var i = 0; i < allEvents.length && matchedEvents.length < 10; i++) {
+      var evt = allEvents[i];
+      if ((evt.title && evt.title.toLowerCase().indexOf(ql) >= 0) ||
+          (evt.quote && evt.quote.toLowerCase().indexOf(ql) >= 0)) {
+        matchedEvents.push(evt);
+      }
+    }
+    if (matchedEvents.length > 0) {
+      html += '<div class="sr-section"><div class="sr-section-title">事件</div>';
+      matchedEvents.forEach(function(evt) {
+        var mainEntity = evt.participants && evt.participants[0] ? evt.participants[0].entity : "";
+        var quoteSnippet = evt.quote ? excerptAround(evt.quote, q, 60) : "";
+        html += '<div class="sr-item" onclick="' + (mainEntity ? "focusNode('" + mainEntity.replace(/'/g, "\\'") + "')" : "") + '">'
+          + '<span class="sr-type-tag">' + evt.type + '</span>'
+          + '<span style="color:#ccc">' + highlight(evt.title || "", q) + '</span>'
+          + (quoteSnippet ? '<div class="sr-quote">' + quoteSnippet + '</div>' : '')
+          + '<div class="sr-chapter">' + (evt.chapter || '') + '</div></div>';
+        count++;
+      });
+      html += '</div>';
+    }
+  }
+
+  if (count === 0) {
+    html = '<div class="sr-empty">未找到「' + q + '」相关内容</div>';
+  }
+
+  searchResults.innerHTML = html;
+  searchResults.style.display = "block";
+}
+
+function highlight(text, q) {
+  if (!q || !text) return text;
+  var idx = text.toLowerCase().indexOf(q.toLowerCase());
+  if (idx < 0) return text;
+  return text.substring(0, idx) + '<em>' + text.substring(idx, idx + q.length) + '</em>' + text.substring(idx + q.length);
+}
+
+function excerptAround(text, q, radius) {
+  var idx = text.toLowerCase().indexOf(q.toLowerCase());
+  if (idx < 0) return "";
+  var start = Math.max(0, idx - radius);
+  var end = Math.min(text.length, idx + q.length + radius);
+  var prefix = start > 0 ? "…" : "";
+  var suffix = end < text.length ? "…" : "";
+  var excerpt = text.substring(start, end);
+  return prefix + highlight(excerpt, q) + suffix;
+}
+
+function focusNode(name) {
+  searchResults.style.display = "none";
+  var target = nodes.find(function(n) { return n.id === name; });
+  if (target) {
+    selectedNode = target;
+    showInfoPanel(target);
+    // Pan camera to center on this node
+    var scale = 1.5;
+    var tx = width / 2 - target.x * scale;
+    var ty = height / 2 - target.y * scale;
+    var t = d3.zoomIdentity.translate(tx, ty).scale(scale);
+    d3.select("canvas").transition().duration(600).call(zoom.transform, t);
   }
 }
 
