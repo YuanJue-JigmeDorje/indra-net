@@ -1,0 +1,1354 @@
+# ============================================================
+# 知识图谱事件抽取 — 第八品 佛教年表与自传 (lines 961-1920)
+# 覆盖范围: 敦珠仁波切自传 — 十五岁至三十一岁
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: 引用 kg/entities/ch08-part2.yaml
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 十五岁 (lines 961-998) ====================
+
+- event_id: EV_8201
+  type: 降伏非人
+  title: 作者以金刚陀罗尼咒加持石子降伏怨鬼化现的旋风
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: null
+  time_info:
+    text: "四月初五"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我就把用无碍金刚陀罗尼咒加持的许多石子抛向它，即刻那股旋风变成了不知是男是女的一个人"
+
+- event_id: EV_8202
+  type: 授记
+  title: 密智空行母授记作者应修文殊语狮子以开启智慧脉门
+  participants:
+    - entity: 密智空行母
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "十月十八那天晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "如果精进观修文殊语狮子、念诵文殊心咒，并且读诵《真实名经》，智慧的脉门开启以后虚空藏的境界一定会显露出来"
+
+# ==================== 十六岁 (lines 1000-1023) ====================
+
+- event_id: EV_8203
+  type: 授记
+  title: 益西措嘉空行母授记作者依止晋美上师实修前行仪轨
+  participants:
+    - entity: 益西措嘉空行母
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "六月初十的夜里"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "你于今年依之，实修前行仪轨，会现成就吉兆。此师原本乃为，汝昔有缘上师"
+
+- event_id: EV_8204
+  type: 闭关修行
+  title: 作者与十五位道友一起请求前行月修法门
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 十五位道友
+      role: 同修
+  location: null
+  time_info:
+    text: "十一月初一"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我来到上师跟前，与十五位道友一起请求前行月修法门"
+
+- event_id: EV_8205
+  type: 神变
+  title: 境界中上师亲口说作者获得共同成就
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "十五晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师亲口说：'你已经获得了共同成就。'"
+
+# ==================== 十七岁 (lines 1025-1124) ====================
+
+- event_id: EV_8206
+  type: 闭关修行
+  title: 作者背靠磐石端直如如不动修行七天
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: null
+  time_info:
+    text: "四月初七开始，修了七天"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我就背靠磐石，身体端直如如不动修了七天"
+
+- event_id: EV_8207
+  type: 传法
+  title: 莲师童子在境界中教授作者修行正道——虚空法性
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: 十七岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "如果真想要步入正道……在这种境界中安住不要散乱……就是一如既往"
+
+- event_id: EV_8208
+  type: 神变
+  title: 作者大彻大悟法性离边的法界
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: null
+  time_info:
+    text: 十七岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "由达到法性离边的法界中而大彻大悟了"
+
+- event_id: EV_8209
+  type: 神变
+  title: 作者经历血河等觉受境界并与莲师童子问答修行之理
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 莲花生大士
+      role: 教授者
+  location: null
+  time_info:
+    text: "十二月初四的夜晚"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "邬金莲师的童子说：'你的这种觉受境界难道不是很神奇吗？'"
+
+# ==================== 十八岁 (lines 1126-1161) ====================
+
+- event_id: EV_8210
+  type: 神变
+  title: 食子从虚空落入桶中——成就瑞相
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+    - entity: 金刚亥母
+      role: 委派者
+    - entity: 乌鸦面怙主
+      role: 送达者
+  location: null
+  time_info:
+    text: "五月初十"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "一个食子从虚空中落到桶里……是尼泊尔人的修行食子，由空行金刚亥母委托乌鸦面怙主护法神捎给你"
+
+- event_id: EV_8211
+  type: 授记
+  title: 遍明自在姆空行母告知食子来历并确认获得共同成就
+  participants:
+    - entity: 遍明自在姆空行母
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "那天夜间"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "你一定已经获得了共同成就，值得欢喜"
+
+- event_id: EV_8212
+  type: 授记
+  title: 虚空法界自在母授记作者获至高无上成就并预言伏藏流露
+  participants:
+    - entity: 虚空法界自在母
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "十月初十"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "现在必定已获得，至高无上之成就。今若切合要诀修，密意界中自流露，三类密意之伏藏，必将广利诸有情"
+
+- event_id: EV_8213
+  type: 降伏非人
+  title: 赞嘉卓林玛波护法神打落鬼女疾病种子保护作者
+  participants:
+    - entity: 赞嘉卓林玛波
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受护者
+  location: null
+  time_info:
+    text: "十二月十五"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "那是鬼女散播疾病的种子……我是赞嘉卓林玛波护法神，在做遣除你违缘的事"
+
+# ==================== 十九岁 (lines 1163-1193) ====================
+
+- event_id: EV_8214
+  type: 降伏非人
+  title: 作者在札隆山以心经回遮赞卓昂坚之妻的威胁
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 赞卓昂坚
+      role: 相关
+  location: 札隆
+  time_info:
+    text: 十九岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我就住在那里念诵三遍《心经》进行回遮，这时从山岩内传出回响般的声音：'你可以住在这里'"
+
+- event_id: EV_8215
+  type: 闭关修行
+  title: 作者念修文殊语狮子一月后丸子增长飞舞
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 文殊菩萨
+      role: 本尊
+  location: 札隆
+  time_info:
+    text: "十一月里"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我开始念修文殊语狮子，不知不觉一个月过去了，最后所有的丸子都增长、飞舞"
+
+- event_id: EV_8216
+  type: 传法
+  title: 文殊菩萨亲赐智慧教言与修法咒语后融入作者心间
+  participants:
+    - entity: 文殊菩萨
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 札隆
+  time_info:
+    text: "念修文殊语狮子一月后"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "文殊菩萨赐给我修法及咒语以后融入心间，我在法性境界中稍住片刻"
+
+# ==================== 二十岁 (lines 1195-1228) ====================
+
+- event_id: EV_8217
+  type: 神变
+  title: 梦中面见不动佛于空行莲园中自然传出教言后融入作者
+  participants:
+    - entity: 不动佛
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "二月初八夜间"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "说是怙主不动佛的上师身着三法衣……从他身体中犹如回音般自然传出这种音声"
+
+- event_id: EV_8218
+  type: 神变
+  title: 红色女子预言灶具将被打碎，次日果然应验
+  participants:
+    - entity: 敦珠仁波切
+      role: 见证
+    - entity: 滚丹
+      role: 受害者
+  location: null
+  time_info:
+    text: "十二月初五晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "明天你会亲眼见到有人来大肆打烂砸碎大锅和炉灶……结果三口锅就像骰子一样砸在石头上，彻底碎了"
+
+# ==================== 二十一岁 (lines 1230-1341) ====================
+
+- event_id: EV_8219
+  type: 授记
+  title: 空行母唱歌授记作者如意树、雄狮、大鹏等未来喻象
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "一月十三那天晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "当今时代如意树，枝叶花瓣皆渺小，果实鲜花不成熟……"
+
+- event_id: EV_8220
+  type: 神变
+  title: 蜜蜂在花丛中吟唱无常之歌启迪作者
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 色达札隆草原
+  time_info:
+    text: "六月初十"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "一只蜜蜂盘旋在花丛中，在我的境界中它是在吟唱这支给人启迪的歌"
+
+- event_id: EV_8221
+  type: 神变
+  title: 境界中海螺天子与则乐非天引领作者朝拜五台山
+  participants:
+    - entity: 海螺天子
+      role: 引导者
+    - entity: 则乐非天
+      role: 引导者
+    - entity: 敦珠仁波切
+      role: 受引导者
+  location: 五台山
+  time_info:
+    text: "七月十八的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我们结伴去汉地五台山顶朝拜好吗……他对我说……我们就是海螺天子和妹妹则乐非天"
+
+# ==================== 二十二岁 (lines 1343-1377) ====================
+
+- event_id: EV_8222
+  type: 授记
+  title: 空行母以镜子和白芥子预言十三位虹身瑜伽士弟子
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "七月十五的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "再过十五年，数千之弟子，逐渐而聚集……十三瑜伽士，勇士你友伴"
+
+- event_id: EV_8223
+  type: 授记
+  title: 红色女子授记作者翌年与良友至东方果洛涌现心子
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "十月初九的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "明年六月里一位良友来到，那时你们一同到东方果洛地方，去那里会化到很好的缘"
+
+# ==================== 二十三岁 (lines 1379-1416) ====================
+
+- event_id: EV_8224
+  type: 弘法
+  title: 作者随革勒旺里前往东方果洛弘法
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 革勒旺里
+      role: 同行
+    - entity: 罗丹
+      role: 同行
+    - entity: 桑昂哲秋
+      role: 委托者
+  location: 果洛
+  time_info:
+    text: "六月"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "上师桑昂哲秋将此事托付给他，于是我和他俩一道去东方果洛地方"
+
+- event_id: EV_8225
+  type: 传法
+  title: 作者给阿旺嘉措传讲忿怒金刚修法
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 阿旺嘉措
+      role: 受者
+  location: 果洛
+  time_info:
+    text: 二十三岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我给他传讲了忿怒金刚的一个修法"
+
+- event_id: EV_8226
+  type: 授记
+  title: 刚穹玛空行授记作者值遇旺修瑜伽士及珠瓦滚波得灌顶传承
+  participants:
+    - entity: 刚穹玛空行
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "过了一个月后"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "出现旺修瑜伽士，彼前得灌顶传承……遇至尊珠瓦滚波，七世最后之转世"
+
+# ==================== 二十四岁 (lines 1418-1450) ====================
+
+- event_id: EV_8227
+  type: 灌顶
+  title: 大悲观音亲授《寂集密意自解脱》修法灌顶传承
+  participants:
+    - entity: 大悲观世音
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "一月初十的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我面见了圣者大悲观音，他圆满恩授我说是《寂集密意自解脱》的修法灌顶传承"
+
+- event_id: EV_8228
+  type: 灌顶
+  title: 印度持明吽嘎日授予《现巴玛林续》灌顶传承
+  participants:
+    - entity: 持明吽嘎日
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "四月二十五日夜晚"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他圆满授予《现巴玛林续》的灌顶、传承后就不见了"
+
+- event_id: EV_8229
+  type: 神变
+  title: 热温诽谤伏藏法导致作者烧毁文稿
+  participants:
+    - entity: 热温
+      role: 破坏者
+    - entity: 敦珠仁波切
+      role: 受害者
+  location: 果洛
+  time_info:
+    text: 二十四岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他口口声声说'这所有伏藏法一定是邪法'，由此破坏了缘起，我也一边对他发恶愿一边把文稿烧了"
+
+- event_id: EV_8230
+  type: 闭关修行
+  title: 作者与阿旺嘉措一起修行忿怒金刚法
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 阿旺嘉措
+      role: 同修
+  location: null
+  time_info:
+    text: "十月十五"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我和道友阿旺嘉措一起开始修行忿怒金刚法"
+
+- event_id: EV_8231
+  type: 授记
+  title: 空行母授记彭措札西为作者执笔者将广利众生
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+    - entity: 彭措札西
+      role: 受授记者
+  location: null
+  time_info:
+    text: "十一月初十"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "你的弟子霍尔的僧人彭措札西，来到这里时，不要让他离开，作为执笔者，将来会广利众生"
+
+# ==================== 二十五岁 (lines 1452-1545) ====================
+
+- event_id: EV_8232
+  type: 授记
+  title: 空行母授记作者为莲花生大士事业领主并指示绕塔伏藏处
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "四月初十"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "你就是莲花生大士事业的领主，甚深伏藏法主，在玛多形似小箱子的红色岩石地方，隐藏着贝诺的藤杖伏藏"
+
+- event_id: EV_8233
+  type: 伏藏开取
+  title: 作者在绕塔取出度母像、念珠和伏藏标题
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: 绕塔
+  time_info:
+    text: "六月初十"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从炭堆里取出度母像紫胶小宝箧和一串陈旧、不太好看的念珠"
+
+- event_id: EV_8234
+  type: 伏藏开取
+  title: 作者在色达金刚岩开取七个伏藏宝箧
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 德钦
+      role: 助伴
+  location: 金刚岩
+  time_info:
+    text: "十一月初十"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我用凿子凿击一块半圆形的岩缝，门打开了……只有七个小宝箧取到手"
+  note: "因法主和明妃不全未能取到全部佛像佛经佛塔"
+
+- event_id: EV_8235
+  type: 降伏非人
+  title: 阿哦穹友部落以战争威胁要求交出伏藏品被作者平息
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 阿哦穹友全部落
+      role: 威胁者
+  location: null
+  time_info:
+    text: 取伏藏之后
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "你如果不把所取出来的所有伏藏品交给我们，那就等着我们发动战争吧……结果他们没有发动军队，谣言蜚语自然平息"
+
+# ==================== 二十六岁 (lines 1548-1557) ====================
+
+- event_id: EV_8236
+  type: 授记
+  title: 普明母授记塞彭那波恶魔王出现并指示降伏方法
+  participants:
+    - entity: 普明母
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 哦穹达西
+  time_info:
+    text: 二十六岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "名叫塞彭那波者，邬金莲花生大士没有调伏的恶业魔王出现，统治霍尔部落"
+
+# ==================== 二十七岁 (lines 1559-1601) ====================
+
+- event_id: EV_8237
+  type: 神变
+  title: 梦中空行母引至南方具集乐园面见贤劫千佛获教法融入
+  participants:
+    - entity: 贤劫千佛
+      role: 法源
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 具集乐园
+  time_info:
+    text: "神变月初十的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "所有左手拿着的经函圣教伴着轰隆隆的声音说：'我们的教法无不圆满'……一切所依能依都融入我的身体"
+
+- event_id: EV_8238
+  type: 神变
+  title: 作者现前大彻大悟境界——法句如刻印般自然流露
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: null
+  time_info:
+    text: 二十七岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我现前了大彻大悟的境界，心只要专注何处，所需要的一切法句就像刻印一样顿时自然流露"
+
+- event_id: EV_8239
+  type: 传法
+  title: 梦中龙树菩萨与千三百比丘于金刚座为作者传承教法
+  participants:
+    - entity: 龙树菩萨
+      role: 主体
+    - entity: 一千三百比丘
+      role: 眷属
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 印度金刚座
+  time_info:
+    text: "五月十七的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "圣龙树的比丘……手里各个拿着一本经函……他们异口同声念了经函的所有传承"
+
+# ==================== 二十八岁 (lines 1603-1755) ====================
+
+- event_id: EV_8240
+  type: 授记
+  title: 美热珍雪空行母授记作者去珠日神山修行及明妃心子
+  participants:
+    - entity: 美热珍雪
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: 二十八岁（狗年）
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "你如果去仲坡空行大殿中修行，下半生受用和威力将圆满"
+
+- event_id: EV_8241
+  type: 闭关修行
+  title: 作者在珠日神山一月修行出现吉祥瑞相
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: 珠日神山
+  time_info:
+    text: "春季一月里"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我去了珠日神山，只是在一个月修行的过程中就出现了许多神奇吉祥的瑞相"
+
+- event_id: EV_8242
+  type: 授记
+  title: 太一济世地母唱歌告诫作者勤修精华法舍弃信财
+  participants:
+    - entity: 太一济世地母
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 珠日神山
+  time_info:
+    text: "第七天的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "精进修行精华法要，舍弃收揽信财寻求利养，致力于讲经说法和著书立说"
+
+- event_id: EV_8243
+  type: 传法
+  title: 莲花生大士降临赐予教诲并赐甘露托巴
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 珠日神山
+  time_info:
+    text: "第二十一天的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "邬金大法王莲花生大士从彩云虹光萦绕的界域降临……赐给我一个装满甘露的托巴，我一饮而尽"
+
+- event_id: EV_8244
+  type: 神变
+  title: 持明降魔金刚赐空行金刚亥母甘露融入作者身体
+  participants:
+    - entity: 持明降魔金刚
+      role: 主体
+    - entity: 金刚亥母
+      role: 委派者
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 珠日神山
+  time_info:
+    text: "临近取大修悉地的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "持明降魔金刚往一个铜盘里倒酒……这是空行母金刚亥母捎给我所幻现、与我无二的善男子你的"
+
+- event_id: EV_8245
+  type: 传法
+  title: 持明吽嘎日在清净妙生乐园教诲作者住所安排与修行方法
+  participants:
+    - entity: 持明吽嘎日
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 清净妙生
+  time_info:
+    text: "夏天四月初十的夜晚"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "过了一年以后，去色达的紫青山沟东边圣地（指喇荣），如果修行两个月，做两千次酬补、会供"
+
+- event_id: EV_8246
+  type: 弘法
+  title: 作者在霍尔一带造许多《忿怒金刚修法》
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: 霍尔
+  time_info:
+    text: 二十八岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我如前一样去了霍尔地带，由自己的清净境界中出现，而造了许多《忿怒金刚修法》"
+
+- event_id: EV_8247
+  type: 伏藏开取
+  title: 嘉瓦活佛确认作者为莲师化身要求取伏藏
+  participants:
+    - entity: 嘉瓦活佛
+      role: 认证者
+    - entity: 阿那旺钦
+      role: 传话者
+    - entity: 敦珠仁波切
+      role: 受认证者
+  location: null
+  time_info:
+    text: "五月里"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "你让革勒家的那个伏藏师取出一个修法，他不是邬金莲花生大士的化身，那我就是骗你了"
+
+- event_id: EV_8248
+  type: 弘法
+  title: 格喇秋帕验证马头明王修法——经噶托雅萨活佛梦验确认为真
+  participants:
+    - entity: 格喇秋帕
+      role: 验证者
+    - entity: 噶托雅萨活佛
+      role: 梦验者
+    - entity: 敦珠仁波切
+      role: 伏藏师
+  location: 果洛
+  time_info:
+    text: "六月里"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "昨晚我梦到在一个良田里六谷丰登成熟……伏藏师应该是真的"
+
+- event_id: EV_8249
+  type: 神变
+  title: 热温质疑伏藏法被噶托活佛引多则钦之语反驳后二度导致文稿被焚
+  participants:
+    - entity: 热温
+      role: 质疑者
+    - entity: 噶托雅萨活佛
+      role: 辩护者
+    - entity: 敦珠仁波切
+      role: 受害者
+  location: 果洛
+  time_info:
+    text: 二十八岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "当我听到这话时，说谛实语诅咒，并把文稿烧了"
+  note: "热温此后渐遭不幸——口舌纠葛、军队破坏、身中刀伤、倾家荡产"
+
+- event_id: EV_8250
+  type: 授记
+  title: 阿札嘉姆空行母揭示玖纽札巴为萨钦根嘎嘉村转世的隐蔽瑜伽士
+  participants:
+    - entity: 阿札嘉姆空行母
+      role: 主体
+    - entity: 玖纽札巴
+      role: 受授记者
+    - entity: 萨钦根嘎嘉村
+      role: 前世
+  location: null
+  time_info:
+    text: "九月"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "那个隐蔽的上等瑜伽士，就是萨钦根嘎嘉村"
+
+- event_id: EV_8251
+  type: 灌顶
+  title: 持明无畏洲、龙钦绕降、莲师三像为作者赐灌顶传承
+  participants:
+    - entity: 持明无畏洲
+      role: 灌顶者
+    - entity: 龙钦绕降
+      role: 灌顶者
+    - entity: 莲花生大士
+      role: 灌顶者
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: "第二天晚上"
+    relative_to: 玖纽札巴来访
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他们把两部经函放在我的头上说：'所诠句的灌顶传承，无诠义的灌顶传承，近传圆满的灌顶传承都赐予你'"
+
+- event_id: EV_8252
+  type: 闭关修行
+  title: 作者与两弟子在珠日神山实修龙钦宁提风及绝地火一年
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: 珠日神山
+  time_info:
+    text: "十一月初一到珠日，初十开始实修一年"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我和自己的两位弟子一起在一年里实修龙钦宁提的风及绝地火"
+
+- event_id: EV_8253
+  type: 神变
+  title: 修行中出现宝瓶气暖相——寒冬单衣即足
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: 珠日神山
+  time_info:
+    text: 二十八岁修行期间
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "亲眼见到如宝瓶般宝瓶气的暖相。而且，在寒冬腊月，周身火力旺盛，只是单层布衣就完全足够"
+
+# ==================== 二十九岁 (lines 1757-1783) ====================
+
+- event_id: EV_8254
+  type: 闭关修行
+  title: 作者与钦绕等道友依忿怒金刚法闭关修行两月
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 钦绕
+      role: 同修
+    - entity: 噶玛·滚秋
+      role: 同修
+    - entity: 喇嘛丹
+      role: 同修
+    - entity: 热秋
+      role: 同修
+  location: null
+  time_info:
+    text: "十二月初一"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "和修行道友钦绕、噶玛·滚秋、喇嘛丹及热秋等人一起在两个月期间修行"
+
+- event_id: EV_8255
+  type: 降伏非人
+  title: 作者修火禅定驱走三个女鬼
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: null
+  time_info:
+    text: "第七天的夜里"
+    relative_to: 修行开始
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "三个女人来到门口时，我修火禅定，结果她们叫着'哎哟哟'而逃走了"
+
+- event_id: EV_8256
+  type: 降伏非人
+  title: 作者以忿怒金刚观想降伏鬼魔幻变的红猫迫使其发誓不害人
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 钦绕
+      role: 受保护者
+  location: null
+  time_info:
+    text: "第二十一天的夜间"
+    relative_to: 修行开始
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "观想忿怒金刚的生起次第，左手紧紧掐住它的脖子……他就在钦绕面前发誓：'从此以后绝不害人'"
+
+- event_id: EV_8257
+  type: 神变
+  title: 修行结束白色彩虹束射住舍片片雪花翩翩飞舞
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: null
+  time_info:
+    text: "修行结束临取悉地时"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "有一道白色彩虹束射到我住舍上面，片片的雪花翩翩飞舞"
+
+# ==================== 三十岁 (lines 1785-1895) ====================
+
+- event_id: EV_8258
+  type: 闭关修行
+  title: 作者再次在珠日神山住修
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+  location: 珠日神山
+  time_info:
+    text: 三十岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我到了三十岁又再次到珠日神山去住"
+
+- event_id: EV_8259
+  type: 传法
+  title: 空行母龙扬曼询问成就相后教授直断与顿超要领融入作者心间
+  participants:
+    - entity: 龙扬曼
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: 珠日神山
+  time_info:
+    text: "四月十八的晚上"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "直断法性谛，你已现量见，实地修捷径，大虹身教授……说完她就融入了我的心间"
+
+- event_id: EV_8260
+  type: 神变
+  title: 作者讲述三十岁前成就相——泉水恢复、死牛复生、穿墙、降伏厉鬼等
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 滚丹
+      role: 施主
+    - entity: 诺珍玛
+      role: 龙女
+  location: 色绕秀得
+  time_info:
+    text: "十六岁至三十岁之间"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "枯水沟里泉水涌流……那头牛死而复生……结果径直穿墙进去了"
+  note: "包含多个成就相：水施恢复泉水、谛实语使犏牛复活、降伏臭鼬、穿墙入室、降伏厉鬼"
+
+- event_id: EV_8261
+  type: 降伏非人
+  title: 作者在霍喇邬金嘉措家降伏厉鬼——关押二十一天后释放
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 霍喇邬金嘉措
+      role: 受害者
+  location: 霍尔
+  time_info:
+    text: 约二十九岁前
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我从离门前大约三弓的地方，不假思索地往里冲，结果径直穿墙进去了……我抓住他的右脚在头上转了三圈"
+  note: "厉鬼被释放后去霍喇邬金嘉措处导致其病情恶化圆寂"
+
+- event_id: EV_8262
+  type: 圆寂
+  title: 霍喇邬金嘉措因厉鬼侵害而圆寂
+  participants:
+    - entity: 霍喇邬金嘉措
+      role: 主体
+  location: 霍尔
+  time_info:
+    text: "厉鬼被释放后第二天病情恶化"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "第二天早晨，他的病情也越来越恶化，最后圆寂了"
+
+- event_id: EV_8263
+  type: 圆寂
+  title: 嘉嘎喇嘛未听从作者告诫一月后去世
+  participants:
+    - entity: 嘉嘎喇嘛
+      role: 主体
+  location: null
+  time_info:
+    text: "会供解散后一个月"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在会供解散以后才离开，结果在后一个月里就去世了"
+
+- event_id: EV_8264
+  type: 圆寂
+  title: 达擦喇嘛未听从作者告诫骑牛惊奔送命
+  participants:
+    - entity: 达擦喇嘛
+      role: 主体
+  location: null
+  time_info:
+    text: "返回自己家中三天后"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "隔了三天后，骑牛到玛尔那边去，结果牦牛惊奔，就送了性命"
+
+- event_id: EV_8265
+  type: 神变
+  title: 依光明顿超道入定见不可思议佛刹——慧日如来、不变如来等说法
+  participants:
+    - entity: 敦珠仁波切
+      role: 主体
+    - entity: 慧日如来
+      role: 说法者
+    - entity: 不变如来
+      role: 说法者
+  location: null
+  time_info:
+    text: 三十岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "见到不可思议的佛刹，看见慧日如来为八千万眷属宣讲妙法，不变如来为十亿所化众生讲法"
+
+# ==================== 三十一岁 (lines 1898-1919) ====================
+
+- event_id: EV_8266
+  type: 神变
+  title: 无疑王佛以报身装饰现于虚空中装饰品内显现佛刹——作者觉性七日方灭
+  participants:
+    - entity: 无疑王佛
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 见证者
+  location: null
+  time_info:
+    text: 三十一岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "出现一位以报身各种装饰严饰、说是无疑王佛的如来……我现前了不可思议的觉性，在七天之中这种景象才泯灭"
+
+- event_id: EV_8267
+  type: 授记
+  title: 空行嘎绕措化红鸟授记作者不久即现前普贤王果位
+  participants:
+    - entity: 嘎绕措
+      role: 主体
+    - entity: 敦珠仁波切
+      role: 受者
+  location: null
+  time_info:
+    text: 三十一岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "修获定准士，自位自成佛，不久即现前，决定之捷径，无勤住本地，得普贤王果"
+
+- event_id: EV_8268
+  type: 授记
+  title: 红色小鸟授记作者为莲师信使应安住顿超殊胜深道利益众生
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+    - entity: 莲花生大士
+      role: 委派者
+  location: null
+  time_info:
+    text: 三十一岁
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [证境, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "邬金之莲师，委派做信使，当成办他利。安住此顿超，殊胜甚深道，培育自子弟"
+
+- event_id: EV_8269
+  type: 灌顶
+  title: 作者在嘎长夏擦活佛前听受降魔金刚伏藏法所有灌顶传承
+  participants:
+    - entity: 敦珠仁波切
+      role: 受者
+    - entity: 嘎长夏擦活佛
+      role: 灌顶者
+    - entity: 持明降魔金刚
+      role: 法源
+  location: null
+  time_info:
+    text: "去年"
+    relative_to: 敦珠仁波切
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我在嘎长夏擦活佛面前，听受持明降魔金刚的伏藏法的所有灌顶传承"

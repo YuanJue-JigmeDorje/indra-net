@@ -1,0 +1,1444 @@
+# ============================================================
+# 知识图谱实体抽取 — 第八品 佛教年表与自传 Part 4 (lines 2881-3824)
+# 覆盖范围: 敦珠林巴自传 — 四十五岁至六十二岁 + 跋文 + 注释
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_03a v0.1 + entity-taxonomy v0.4
+# ============================================================
+
+# ==================== 人物 ====================
+
+E_001:
+  name: 敦珠林巴
+  aliases: [切穹译师, 敦珠多吉, 一世敦珠法王]
+  type: 人物.法师
+  specialty: [伏藏师, 上师, 瑜伽士]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: [咒力, 伏藏取出, 净相, 降伏非人]
+  note: "自传主人公；本段覆盖四十五岁至六十二岁经历；六十二岁时详述一生面见诸多本尊空行经历"
+  appearances: [2900, 2922, 2948, 2983, 3004, 3062, 3115, 3136, 3162, 3182, 3274, 3286, 3297, 3317, 3366, 3424, 3508, 3592, 3604]
+
+E_002:
+  name: 华智仁波切
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "为敦珠林巴完整宣讲《入行论》等多部论典引导传承"
+  appearances: [2883, 2884, 2887]
+
+E_003:
+  name: 智悲芽
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与敦珠林巴一同在华智仁波切前得传承；后住于该寺"
+  appearances: [2886, 2890]
+
+E_004:
+  name: 秋古拉丹
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "因抢劫被关入监狱；后又赶走敦珠林巴的牲口报复；最终被诅咒毁于一旦"
+  appearances: [2900, 2903]
+
+E_005:
+  name: 拉钦多杰嘉波
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [出生二十天能叫妈妈并念诵六字真言]
+  note: "敦珠林巴之子；出生后二十天能叫妈妈并念六字真言"
+  appearances: [3129, 3130]
+
+E_006:
+  name: 拉多华嘉瓦
+  aliases: [拉多]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴幼子；被认定为噶托派依钦仁波切转世而坐床"
+  appearances: [3386, 3387, 3388]
+
+E_007:
+  name: 阿旺嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [往生现喜刹土]
+  note: "敦珠林巴弟子；五十二岁离世；以圆满受用身装束向敦珠林巴显现"
+  appearances: [3378, 3380]
+
+E_008:
+  name: 彭措札西
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [往生秘境莲花刹]
+  note: "敦珠林巴道友；据阿旺嘉措授记冬季十一月往生"
+  appearances: [3382]
+
+E_009:
+  name: 仁增嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴弟子；据授记亦至莲花刹成勇士"
+  appearances: [3383]
+
+E_010:
+  name: 晋美
+  aliases: [晋美上师]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴的殊胜上师；在梦中和净土中多次向敦珠林巴显现传法"
+  appearances: [3069, 3429]
+
+E_011:
+  name: 嘉扬
+  aliases: [嘉扬上师]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [智慧幻身无所不知]
+  note: "敦珠林巴上师之一；在世时从不说授记和神通；圆寂后在梦中为弟子解答疑问"
+  appearances: [3164, 3169]
+
+E_012:
+  name: 万索
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴派来降伏最后一个树神的人"
+  appearances: [3079]
+
+E_013:
+  name: 才杰
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴弟子；得授记的大德；以吉祥哈达等劝请撰写自传"
+  appearances: [3596]
+
+E_014:
+  name: 嘉华
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴弟子；具有不退信心；以吉祥结等劝请撰写自传"
+  appearances: [3598]
+
+E_015:
+  name: 钦绕嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "执笔记录自传者之一；空行授记为热穹多吉札巴转世；东族人；若未居不定山无长久住世缘"
+  appearances: [3589, 3604]
+
+E_016:
+  name: 得勒华桑
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "执笔记录自传者之一"
+  appearances: [3604]
+
+E_017:
+  name: 班玛龙多
+  aliases: [班玛龙多活佛]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大智者；谨慎校对自传文字"
+  appearances: [3605]
+
+E_018:
+  name: 龙多嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "东族人；空行授记为佛子扬攀塔益转世；若未勤修长寿轨住世不久趋法界"
+  appearances: [3588]
+
+E_019:
+  name: 嘎桑多吉
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "派遣红色骑士来威胁敦珠林巴之人"
+  appearances: [3241]
+
+E_020:
+  name: 华给活佛
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "已圆寂后转世再降；在匝嘉寺举行坐床仪式"
+  appearances: [3197, 3198, 3501]
+
+# ==================== 圣众 ====================
+
+E_030:
+  name: 观世音菩萨
+  aliases: [大慈大悲观世音菩萨, 大圣观世音菩萨]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在自传中面见敦珠林巴讲述大圆满之重要性；也是珠日山神所化身之佛"
+  appearances: [3403, 3534, 3557]
+
+E_031:
+  name: 莲花生大士
+  aliases: [邬金莲花生大士, 邬金莲师, 邬金法王, 莲师]
+  type: 人物.法师
+  specialty: [上师, 大成就者]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  additional_types: [圣众.大乘.本尊]
+  additional_types_source: text
+  manifestation_of: []
+  attainments: []
+  note: "伏藏品的隐藏者；在净相中多次向敦珠林巴现身"
+  appearances: [3038, 3039, 3102, 3388, 3547]
+
+E_032:
+  name: 圣度母
+  aliases: [至尊圣度母]
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "身色墨绿右手宝瓶左手青莲花；由二十位度母和菩萨围绕；在净相中赐予敦珠林巴水晶念珠；六十二岁时告知不必逃避"
+  appearances: [3339, 3347, 3577]
+
+E_033:
+  name: 金刚持佛
+  aliases: [金刚持]
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在敦珠林巴净相中恩赐教授窍诀"
+  appearances: [3551]
+
+E_034:
+  name: 药师佛
+  aliases: []
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在敦珠林巴净相中赐予修法"
+  appearances: [3551]
+
+E_035:
+  name: 无量光佛
+  aliases: []
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴拜见西方极乐世界无量光佛后得灌顶传承"
+  appearances: [3549]
+
+E_036:
+  name: 文殊菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "面见敦珠林巴赐予《文殊密集》灌顶传承"
+  appearances: [3556]
+
+E_037:
+  name: 金刚手菩萨
+  aliases: [密主金刚手菩萨, 密主]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "面见敦珠林巴赐予密主修法及护法神修法灌顶传承；乐源空行母授记金刚手化身投生为敦珠林巴之子"
+  appearances: [3289, 3558]
+
+E_038:
+  name: 文殊语狮子
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "面见敦珠林巴恩赐虹身教授"
+  appearances: [3560]
+
+E_039:
+  name: 龙钦绕降
+  aliases: [龙钦绕降尊者]
+  type: 人物.法师
+  specialty: [上师, 大成就者]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴三次亲见此尊者，完整恩授大圆满见修法"
+  appearances: [3554]
+
+E_040:
+  name: 帕单巴
+  aliases: [帕单巴尊者]
+  type: 人物.法师
+  specialty: [上师]
+  origin: 印度
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "印度尊者；如理宣说空性见解要义"
+  appearances: [3555]
+
+E_041:
+  name: 玛吉拉卓
+  aliases: [玛吉拉卓空行母]
+  type: 人物.法师
+  specialty: [空行母]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "恩赐甚深断魔教授"
+  appearances: [3555]
+
+E_042:
+  name: 大宿释迦炯乃
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "面见敦珠林巴恩赐大圆满法类"
+  appearances: [3553]
+
+E_043:
+  name: 小宿协绕札巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "面见敦珠林巴恩赐大圆满法类"
+  appearances: [3553]
+
+E_044:
+  name: 萨绕哈
+  aliases: [大成就者萨绕哈]
+  type: 人物.法师
+  specialty: [大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "杨柳刹土忿怒本尊称其为自己的化身"
+  appearances: [3024]
+
+# ==================== 非人 ====================
+
+E_060:
+  name: 红黑现巴夜叉护法神
+  aliases: [红黑现巴夜叉护法, 大夜叉护法神, 自在忿怒大夜叉]
+  type: 非人.护法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在梦中多次护佑敦珠林巴；使大雪不下；挥舞宝剑降伏敌人；讲说关于肉食供养的甚深义理"
+  appearances: [2893, 2935, 3126, 3193, 3206, 3243, 3249, 3267]
+
+E_061:
+  name: 永仲嘉则
+  aliases: []
+  type: 非人.护法
+  sub_type: 土地神
+  specialty: []
+  origin: 玛多
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "玛多的土地神；不想让敦珠林巴离开，使马匹瘫卧；后现身请求不要离去；约定次年到敦珠林巴去的地方"
+  appearances: [2923, 2927, 3957]
+
+E_062:
+  name: 紫青树神母
+  aliases: [色达紫青草原的树神母, 紫青草原树神母]
+  type: 非人.护法
+  sub_type: 树神
+  specialty: []
+  origin: 色达紫青草原
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: E_001
+  attainments: []
+  note: "背信弃义的树神母；与曼姆、夏萨、卓绰玛、莫珍四位相伴；入明妃女儿体内使之疯癫；后被敦珠林巴降伏；又被召回"
+  appearances: [2956, 3063, 3066, 3078, 3082, 3140, 3142]
+
+E_063:
+  name: 珠日山神
+  aliases: [具德山神怙主]
+  type: 非人.护法
+  sub_type: 山神
+  specialty: []
+  origin: 色达珠日神山
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "色达珠日神山主神；与观世音菩萨无二无别；王妃为耶嘉玛"
+  appearances: [3520, 3534, 3538]
+
+E_064:
+  name: 耶嘉玛
+  aliases: []
+  type: 非人.护法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "珠日山神的王妃；东方酿波耶则护法神的妹妹；颦眉度母的化现"
+  appearances: [3534]
+
+E_065:
+  name: 酿波耶则
+  aliases: [东方酿波耶则护法神]
+  type: 非人.护法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "耶嘉玛之兄；有宝珠要给敦珠林巴"
+  appearances: [3535, 3567]
+
+E_066:
+  name: 东勒曼
+  aliases: []
+  type: 非人.护法
+  sub_type: 天女
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "受持邬金莲师意伏藏的天女；交予敦珠林巴金刚橛和七佛遗塔舍利"
+  appearances: [3092, 3097, 3098]
+
+E_067:
+  name: 拉隆勒卡
+  aliases: []
+  type: 非人.护法
+  sub_type: 土地神
+  specialty: []
+  origin: 切藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "切藏的土地神；派十二匹人马攻击敦珠林巴；被大夜叉护法神击退"
+  appearances: [3125, 3126]
+
+E_068:
+  name: 螺耳天童
+  aliases: []
+  type: 非人.天部
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "受观世音菩萨委派做敦珠林巴友伴；从敦珠林巴八岁至三十岁夜间形影不离；三十三岁时暂别；六十一岁再度现身唱道歌"
+  appearances: [3474, 3478, 3481]
+
+E_069:
+  name: 龙女仁钦赡朗旺姆
+  aliases: []
+  type: 非人.护法
+  sub_type: 龙族
+  specialty: []
+  origin: 汉地大海
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "汉地大海里的龙女；委托酿波耶则将宝珠赠送给敦珠林巴"
+  appearances: [3568]
+
+# ==================== 空行母（净相显现者） ====================
+
+E_080:
+  name: 遍行能明空行母
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "四十八岁十一月初十晚向敦珠林巴授记弟子修行前途"
+  appearances: [2984]
+
+E_081:
+  name: 大密藏空行母
+  aliases: [持密藏空行母]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "十二月十六告知树神母之事及猴年须用诛法"
+  appearances: [2994, 3084]
+
+E_082:
+  name: 空行母玛绕坚
+  aliases: [玛绕坚]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "告知最后一个树神是万索的调伏对象"
+  appearances: [3079]
+
+E_083:
+  name: 益西措嘉
+  aliases: [空行母益西措嘉, 空行圣母]
+  type: 人物.法师
+  specialty: [空行母]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  additional_types: [圣众.大乘.空行]
+  additional_types_source: text
+  manifestation_of: []
+  attainments: []
+  note: "多次在净相中向敦珠林巴授记；六十二岁末向其授记应速立自传文字"
+  appearances: [2960, 3289, 3583]
+
+E_084:
+  name: 乐源空行母
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十岁八月初十晚授记关于北方嘉札宗钦佛法兴盛、东勒曼天女及金刚手化身投生为子"
+  appearances: [3086]
+
+E_085:
+  name: 莲冠空行母
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十二岁五月授记饮食悉地及厉魔之事"
+  appearances: [3136]
+
+E_086:
+  name: 密智空行母
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十六岁四月初八告知高足兔年往生消息"
+  appearances: [3287]
+
+E_087:
+  name: 则列曼
+  aliases: [则列曼空行母]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: 妙拂境
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十七岁二月初五授记华智转世坐床之事"
+  appearances: [3298]
+
+E_088:
+  name: 多吉嘎堪玛
+  aliases: [空行多吉嘎堪玛]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十七岁冬季十二月初十授记酬补土地神等修行要点"
+  appearances: [3303]
+
+E_089:
+  name: 空行益西旺丹
+  aliases: [益西旺丹]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "授记关于玛多建寺与迁居缘起"
+  appearances: [3310]
+
+E_090:
+  name: 多吉耶喜玛空行母
+  aliases: [多吉耶喜玛]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十八岁正月初一授记积累财产家畜之际"
+  appearances: [3317]
+
+E_091:
+  name: 益西旺姆
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十八岁五月观梦时告知不适合住上达土"
+  appearances: [3326]
+
+E_092:
+  name: 班玛创巴坚
+  aliases: [莲花鬘, 班玛创巴坚空行母]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十八岁十月初八授记须专心月修甚深法"
+  appearances: [3331]
+
+E_093:
+  name: 萨恰旺姆
+  aliases: [空行母萨恰旺姆]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十八岁初十带敦珠林巴去圣度母净土观光"
+  appearances: [3335]
+
+E_094:
+  name: 美耶创坚玛
+  aliases: [火鬘母, 美耶创坚玛空行母]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十八岁十一月初九授记须精勤念修《大自在天修法》"
+  appearances: [3351]
+
+E_095:
+  name: 西方莲花空行母
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: 西方莲花光刹土
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十九岁正月初一授记应去班玛古取伏藏开启隐蔽刹土门"
+  appearances: [3366]
+
+E_096:
+  name: 具法眼空行母
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十四岁五月初十授记北方多库有可调化刹土"
+  appearances: [3182]
+
+E_097:
+  name: 得雪旺姆
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十九岁九月初十授记众弟子修大虹身教授之前途"
+  appearances: [3390]
+
+E_098:
+  name: 拉吉卓玛
+  aliases: [拉吉卓玛空行母]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十九岁十二月初八授记关于毒海邪教与修行精华义"
+  appearances: [3410]
+
+E_099:
+  name: 托毕创丹玛
+  aliases: [托毕创丹玛童女空行母]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六十岁正月初四带敦珠林巴去东方净土面见晋美上师"
+  appearances: [3424]
+
+E_100:
+  name: 桑波炯玛
+  aliases: []
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六十二岁四月初八带敦珠林巴去珠日神山内观赏"
+  appearances: [3509]
+
+E_101:
+  name: 誓言天女札母哈
+  aliases: [札母哈]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六十二岁十月十八授记大批汉人来袭应修狮面母回遮"
+  appearances: [3580, 3581]
+
+# ==================== 圣众（本尊/净相中显现） ====================
+
+E_110:
+  name: 大自在天
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在敦珠林巴念修二十一天后于梦中显现；红宝石色半静半怒"
+  appearances: [3354, 3356]
+
+E_111:
+  name: 邬金得达嘉波
+  aliases: [财神阿巴绕则]
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十二岁九月初十在光明境界中显现；自称与大夜叉护法神、金刚手无二无别；授予《阿巴绕则修法》灌顶传承"
+  appearances: [3146, 3150, 3152]
+
+E_112:
+  name: 颦眉度母
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "耶嘉玛被称为颦眉度母的化现"
+  appearances: [3535]
+
+# ==================== 寺院/道场 ====================
+
+E_130:
+  name: 喇荣
+  aliases: [色达上方喇荣山沟, 色达喇荣]
+  type: 寺院.修行处
+  specialty: []
+  origin: 色达
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴四十六岁起主要居住地；后在此建房修行；即后来法王如意宝晋美彭措所住之喇荣"
+  appearances: [2922, 2936, 2976, 3124, 3257, 3600]
+
+E_131:
+  name: 贤劫寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: 勒达强
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴五十六岁在勒达强建成"
+  appearances: [3286, 3303]
+
+E_132:
+  name: 匝嘉寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴六十一岁被请去此寺；为华给活佛转世举行坐床仪式"
+  appearances: [3487, 3500]
+
+E_133:
+  name: 达则桑哲寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: ""
+  sect_affiliation: [噶托派]
+  manifestation_of: []
+  attainments: []
+  note: "噶托派寺院；依钦仁波切曾为此寺活佛"
+  appearances: [3387]
+
+E_134:
+  name: 也钦寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴五十四岁九月去主持此寺大修"
+  appearances: [3257]
+
+# ==================== 地名 ====================
+
+E_150:
+  name: 色达
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴主要活动区域"
+  appearances: [2922, 2932, 2936, 3257, 3509, 3562, 3569]
+
+E_151:
+  name: 玛多
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "永仲嘉则土地神所在之地"
+  appearances: [2923]
+
+E_152:
+  name: 紫青草原
+  aliases: [紫青]
+  type: 地名.自然地理
+  specialty: []
+  origin: 色达
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "树神母所在地"
+  appearances: [2956, 3140, 3142]
+
+E_153:
+  name: 多耶昂巴山谷
+  aliases: []
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十岁五月敦珠林巴依空行授记去此处居住传法"
+  appearances: [3084]
+
+E_154:
+  name: 北方嘉札宗钦
+  aliases: [嘉札宗钦]
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "乐源空行母授记此地佛法兴盛财源丰富"
+  appearances: [3088]
+
+E_155:
+  name: 涅革章俄
+  aliases: []
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十一岁三月敦珠林巴搬至此处山溪口安营"
+  appearances: [3115]
+
+E_156:
+  name: 切藏
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "约一百名军兵从此地来攻击敦珠林巴帐篷"
+  appearances: [3119, 3125]
+
+E_157:
+  name: 果洛
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十五岁七月有人从此地来喊敦珠林巴"
+  appearances: [3280]
+
+E_158:
+  name: 勒达强
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴建贤劫寺之地"
+  appearances: [3286]
+
+E_159:
+  name: 班玛古
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "西方的隐蔽地点；据空行授记应去此处取伏藏开启秘密刹土门"
+  appearances: [3371]
+
+E_160:
+  name: 加拉桑达
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "班玛古附近有如猪头朝天般山岩隐藏伏藏的地方"
+  appearances: [3371]
+
+E_161:
+  name: 杨柳刹土
+  aliases: []
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "四十九岁净相中红色空行母带敦珠林巴去观赏之刹土"
+  appearances: [3005]
+
+E_162:
+  name: 珠日神山
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: 色达
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "色达珠日神山；内有五层广大境地；山神即珠日山神"
+  appearances: [3509, 3520]
+
+E_163:
+  name: 赤瓦玛山谷
+  aliases: []
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "六十二岁二月搬迁至此"
+  appearances: [3508]
+
+E_164:
+  name: 哦穹达西
+  aliases: [上达西]
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五十四岁六月传法之地"
+  appearances: [3192, 3237]
+
+E_165:
+  name: 多库
+  aliases: [北方多库]
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "据具法眼空行母授记有敦珠林巴所调化的刹土"
+  appearances: [3185]
+
+E_166:
+  name: 现喜刹土
+  aliases: []
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "阿旺嘉措往生之净土"
+  appearances: [3380]
+
+E_167:
+  name: 西方极乐世界
+  aliases: []
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "无量光佛之净土；敦珠林巴曾拜见"
+  appearances: [3549]
+
+E_168:
+  name: 西方莲花光刹土
+  aliases: [莲花光刹土]
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "西方莲花空行母来自之净土"
+  appearances: [3368]
+
+E_169:
+  name: 玛多札西嘎切
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "空行益西旺丹授记在此建成寺院"
+  appearances: [3310]
+
+# ==================== 经典/教法文献 ====================
+
+E_180:
+  name: 入行论
+  aliases: [《入行论》]
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "华智仁波切完整宣讲之论典"
+  appearances: [2888]
+
+E_181:
+  name: 现观庄严论
+  aliases: [《现观庄严论》]
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "华智仁波切宣讲之论典"
+  appearances: [2888]
+
+E_182:
+  name: 入中论
+  aliases: [《入中论》]
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "华智仁波切宣讲之论典"
+  appearances: [2889]
+
+E_183:
+  name: 密藏续
+  aliases: [《密藏续》]
+  type: 经典.密续
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "华智仁波切宣讲之密续"
+  appearances: [2889]
+
+E_184:
+  name: 曜护法神法
+  aliases: [《曜护法神法》]
+  type: 经典.密续.岩藏
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  concealed_by: ""
+  manifestation_of: []
+  attainments: []
+  note: "敦珠林巴自己的伏藏品；用于诅咒仇敌"
+  appearances: [2908]
+
+E_185:
+  name: 阿巴绕则修法
+  aliases: [《阿巴绕则修法》]
+  type: 经典.密续
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "财神阿巴绕则在光明境界中授予敦珠林巴的修法灌顶传承"
+  appearances: [3152]
+
+E_186:
+  name: 文殊密集
+  aliases: [《文殊密集》]
+  type: 经典.密续
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "文殊菩萨赐予敦珠林巴之灌顶传承"
+  appearances: [3556]
+
+E_187:
+  name: 玛哈得瓦修法
+  aliases: [《玛哈得瓦修法》]
+  type: 经典.密续
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "观世音菩萨授予敦珠林巴之大本尊修法灌顶传承"
+  appearances: [3557]
+
+E_188:
+  name: 大自在天修法
+  aliases: [《大自在天修法》]
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "美耶创坚玛空行母嘱咐精勤念修之法；敦珠林巴修二十一天后于梦中面见大自在天"
+  appearances: [3353, 3354]
+
+# ==================== 教法 ====================
+
+E_200:
+  name: 大圆满
+  aliases: []
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  vehicle: ""
+  manifestation_of: []
+  attainments: []
+  note: "一切佛母空行的殊妙心髓；敦珠林巴传授引导之核心教法"
+  appearances: [2983, 3169, 3406, 3554]
+
+E_201:
+  name: 断魔
+  aliases: []
+  type: 教法.教言法门
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "四十八岁冬天传授给弟子的教法之一"
+  appearances: [2983]
+
+E_202:
+  name: 顿超
+  aliases: []
+  type: 教法.教言法门
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "悟入光明藏的教授；据本尊授记六十二岁后切合要点修行"
+  appearances: [3051, 3381]
+
+# ==================== 仪轨 ====================
+
+E_210:
+  name: 百字明
+  aliases: []
+  type: 仪轨.咒语
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "嘉扬上师嘱勤念诵以忏悔净罪"
+  appearances: [3172]
+
+E_211:
+  name: 狮面母
+  aliases: []
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "誓言天女札母哈嘱念修以回遮汉族军队"
+  appearances: [3581]
+
+E_212:
+  name: 一髻佛母
+  aliases: []
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "耆婆医生嘱修行以对治怨敌强盗"
+  appearances: [3440]
+
+E_213:
+  name: 绕呵拉
+  aliases: []
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与一髻佛母同为对治怨敌所需修行之法"
+  appearances: [3440, 3559]
+
+# ==================== 法器/圣物 ====================
+
+E_230:
+  name: 七佛遗塔舍利
+  aliases: []
+  type: 法器圣物.圣物
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "东勒曼天女交予敦珠林巴的桦树皮小包内的舍利；原本是交付给伏藏大师大乐洲的"
+  appearances: [3104]
+
+E_231:
+  name: 金刚橛
+  aliases: []
+  type: 法器圣物.法器
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "邬金莲花生大士交付的一百零八个橛之一；指定交予敦珠林巴"
+  appearances: [3101, 3102]
+
+# ==================== 集合 ====================
+
+E_240:
+  name: 八大持明
+  aliases: []
+  type: 集合.人物集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  cardinality: 8
+  members: []
+  manifestation_of: []
+  attainments: []
+  note: "面见敦珠林巴授予八大法行灌顶传承"
+  appearances: [3552]
+
+E_241:
+  name: 二十位度母
+  aliases: []
+  type: 集合.人物集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  cardinality: 20
+  members: []
+  manifestation_of: []
+  attainments: []
+  note: "围绕圣度母的二十位度母眷属"
+  appearances: [3342]
+
+# ==================== 教派 ====================
+
+E_250:
+  name: 噶托派
+  aliases: []
+  type: 教派.藏传宗派
+  sub_type: 子派
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "达则桑哲寺所属教派"
+  appearances: [3386]

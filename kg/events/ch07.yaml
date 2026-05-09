@@ -1,0 +1,1026 @@
+# ============================================================
+# 知识图谱事件抽取 — 第七品 遣除邪见 (lines 1-721)
+# 覆盖范围: 前译密宗辩护 + 大圆满见地阐释 + 伏藏法源辩护
+# 来源: source/dudjom/chapter_md/07_遣除邪见.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 注: 第七品为辩论/论证文体，事件类型以 "引用论证"(cites)、
+#     "驳斥邪见"(refutes)、"论证"(argues) 为主，辅以少量
+#     史传/神变事件。新增事件类型标注于 note 字段。
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# 新增: 引用论证 0.90 / 驳斥 0.85 / 论证 0.85
+# ============================================================
+
+# ==================== 一、前译密宗之辩护段 (lines 1-100) ====================
+
+- event_id: EV_7001
+  type: 降伏非人
+  title: 莲花生大士以大悲调伏妖魔鬼怪使藏地可以享用佛法
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+    - entity: 赤松德赞
+      role: 施主
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "莲花生大士以大悲调伏了所有残暴的妖魔鬼怪，才使整个藏地人们可以随意享用佛法，建立寺院，大转法轮"
+  note: null
+
+- event_id: EV_7002
+  type: 引用论证
+  title: 荣索班智达提出前译派六种殊胜特点
+  participants:
+    - entity: 荣索班智达
+      role: 论述者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "阿底峡尊者也无法辩胜的大智者荣索班智达亲口说过：密宗前译派有超胜后译派的六种殊胜特点"
+  note: "新增事件类型：引用论证(cites)。荣索班智达从迎请施主、翻译处、译师、班智达、供品、法之差别六方面论证前译殊胜"
+
+- event_id: EV_7003
+  type: 引用论证
+  title: 荣索班智达批评当今假译师对佛陀经教不屑一顾
+  participants:
+    - entity: 荣索班智达
+      role: 论述者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "当今时代的假译师对以前的译文大肆作各种修改后声称'翻译我妙来源我可靠'而对佛陀的经教、上师的言教不屑一顾"
+  note: null
+
+- event_id: EV_7004
+  type: 引用论证
+  title: 邬金巴仁钦华论证宁玛续在尼泊尔保存
+  participants:
+    - entity: 邬金巴仁钦华
+      role: 论述者
+    - entity: 恰译师
+      role: 被驳对象
+  location: 尼泊尔巴哈绕
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "尼泊尔巴哈绕的一个寺院里，宁玛的所有续不可思议的数目都保存着"
+  note: "驳斥恰译师等人说印度没有宁玛续蓝本的观点"
+
+- event_id: EV_7005
+  type: 弘法
+  title: 阿底峡尊者在白哈洲见到未见未闻的法本断除傲慢心
+  participants:
+    - entity: 阿底峡尊者
+      role: 主体
+  location: 白哈洲
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "打开白哈洲的一个佛典书库门，阅览了梵文本，竟然有尊者也见所未见、闻所未闻的法本保存着"
+  note: null
+
+- event_id: EV_7006
+  type: 神变
+  title: 空行母从虚空中显现无量殿显示众多续部
+  participants:
+    - entity: 阿底峡尊者
+      role: 观者
+  location: 白哈洲
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "空行母也从虚空中显现不可计数的无量殿，显示众多续部并说：'所有这些都没有，大乘此密宗无边无际。'"
+  note: null
+
+- event_id: EV_7007
+  type: 引用论证
+  title: 达绕那塔论证莲花生大士在卓当洲首次创立原始教法
+  participants:
+    - entity: 达绕那塔
+      role: 论述者
+    - entity: 莲花生大士
+      role: 事件主体
+    - entity: 阿底峡尊者
+      role: 事件主体
+  location: 卓当洲
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "在卓当洲前所未有的原始教法，莲花生大士首次创立，阿底峡尊者也来到，从此开始，一百年左右期间……才使密乘尤为兴盛"
+  note: null
+
+- event_id: EV_7008
+  type: 引用论证
+  title: 布敦大师实修酿伏藏品面见八大莲师
+  participants:
+    - entity: 布敦大师
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "布敦大师十分重视秉持前译的宗轨，实修酿伏藏品四臂怙主等，面见八大莲师予以授记"
+  note: "论证布敦大师对宁玛续的舍置是顾及当时宗派诤论而非真心否定"
+
+- event_id: EV_7009
+  type: 引用论证
+  title: 布敦大师将宁玛派《经幻心》及修部保存在《甘珠尔》续集中
+  participants:
+    - entity: 布敦大师
+      role: 主体
+    - entity: 察巴司徒门兰多吉
+      role: 参与者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "将宁玛派《经幻心》及修部保存在《甘珠尔》的续集中，是以正量证实是原始续的缘故才放的"
+  note: null
+
+# ==================== 二、色隆巴释迦秋单论证段 (lines 108-133) ====================
+
+- event_id: EV_7010
+  type: 引用论证
+  title: 色隆巴释迦秋单论证宁玛续如非正法则噶焦祥三位翻译皆非正法
+  participants:
+    - entity: 色隆巴释迦秋单
+      role: 论述者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "如果有人认为宁玛续不是正法，那么当时这样承许者就必须要承认，噶、焦、祥三位所翻译的三藏所有法……都不是正法"
+  note: "归谬论证：否定宁玛续则必须否定前代所有翻译"
+
+- event_id: EV_7011
+  type: 引用论证
+  title: 色隆巴释迦秋单论证莲花生大士所讲论典与佛经无有差别
+  participants:
+    - entity: 色隆巴释迦秋单
+      role: 论述者
+    - entity: 莲花生大士
+      role: 事件主体
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "莲花生大士所宣讲的论典与佛经无有差别，如云：'随应获得解脱道，当如佛经而顶戴。'"
+  note: null
+
+# ==================== 三、大圆满见地辩护段 (lines 134-284) ====================
+
+- event_id: EV_7012
+  type: 驳斥邪见
+  title: 驳斥"大圆满是和尚宗"之指责
+  participants:
+    - entity: 释迦牟尼佛
+      role: 教证来源
+  location: null
+  time_info: null
+  layers: [宗派]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "个别藏人说出'舍弃行为就成了与和尚宗一致'这样令人目瞪口呆的指责"
+  note: "新增事件类型：驳斥邪见(refutes)。作者引三转法轮、三解脱门等论证大圆满非和尚宗"
+
+- event_id: EV_7013
+  type: 引用论证
+  title: 引《普作王续》论证大圆满不说因果二法
+  participants: []
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "约嘎之顶大圆满，若说有因亦有果，彼不具证大圆义，胜义世俗说为二，乃为增损之词句"
+  note: null
+
+- event_id: EV_7014
+  type: 引用论证
+  title: 引《觉性自现续》论证大圆满十度波罗蜜多集于本智中
+  participants: []
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "智慧波罗蜜多边，集于明觉法身中；禅定波罗蜜多边，集于直定灯性中"
+  note: "论证大圆满不舍弃波罗蜜多行而是以更高层面包摄之"
+
+- event_id: EV_7015
+  type: 引用论证
+  title: 引阿底峡解释龙树密意论证入定远离寻伺
+  participants:
+    - entity: 阿底峡尊者
+      role: 论述者
+    - entity: 龙树菩萨
+      role: 被解释者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "安住于远离寻伺的入定寂止与胜观中时……对任何识都不分别，也不执著一切，尽断一切忆念作意"
+  note: "论证中观自续派共称的言教与大圆满入定一致"
+
+- event_id: EV_7016
+  type: 引用论证
+  title: 引嘎玛拉西拉修行三次第论证远离寻伺
+  participants:
+    - entity: 嘎玛拉西拉
+      role: 论述者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "嘎玛拉西拉的修行三次第中也予以宣说"
+  note: null
+
+- event_id: EV_7017
+  type: 驳斥邪见
+  title: 驳斥"阿底约嘎不是乘"的观点
+  participants:
+    - entity: 萨迦班智达
+      role: 原论述者
+  location: null
+  time_info: null
+  layers: [宗派]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "萨迦班智达说：'阿底约嘎之见解，亦是智慧而非乘。'虽然从甚深见解的实相无误成立的反体角度善加说明是智慧，但是说它不是乘是有密意的"
+  note: "论证安立大圆满为乘无有丝毫相违"
+
+# ==================== 四、大手印/灌顶辩护段 (lines 299-354) ====================
+
+- event_id: EV_7018
+  type: 驳斥邪见
+  title: 驳斥"大手印是刚波巴伪造"的观点
+  participants:
+    - entity: 刚波巴
+      role: 被诬者
+  location: null
+  time_info: null
+  layers: [宗派]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "声称因乘中连大手印的名字也没有提及，仅是刚波巴伪造等，将佛教引入非理之途的现象也时有出现"
+  note: "论证显宗直接宣说般若波罗蜜多时有以大手印名词说明"
+
+- event_id: EV_7019
+  type: 引用论证
+  title: 引《趋入诸佛境智光庄严经》论证佛陀宣说大手印
+  participants:
+    - entity: 释迦牟尼佛
+      role: 说法者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "法印即诸法之手印，乃无手印，乃无作之手印，乃无别之手印"
+  note: null
+
+- event_id: EV_7020
+  type: 引用论证
+  title: 引《楞伽经》论证十地菩萨依靠灌顶成佛
+  participants:
+    - entity: 释迦牟尼佛
+      role: 说法者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "菩萨大菩萨金刚藏……如转轮王、君王由顶上灌顶。身、面、臂皆作灌顶"
+  note: "论证灌顶在显宗中也有宣说"
+
+# ==================== 五、古拉则与《密藏续》辩护段 (lines 355-411) ====================
+
+- event_id: EV_7021
+  type: 驳斥邪见
+  title: 驳斥古拉则声称宁玛续部在印度不存在
+  participants:
+    - entity: 古拉则
+      role: 持邪见者
+    - entity: 法王宿巴
+      role: 求法对象
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "古拉则到法王宿巴面前去求法，依靠没有得到的心病而到了印度，大肆声称宁玛派的续部在印度没有"
+  note: null
+
+- event_id: EV_7022
+  type: 引用论证
+  title: 热波绕哲在《密藏续修法》中引布夏莫札论证《密藏续》真实
+  participants:
+    - entity: 热波绕哲
+      role: 论述者
+    - entity: 布夏莫札
+      role: 被引用者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "此续真实的理由即布夏莫札论师所造的《密集续大疏》，其中引用《密藏续》"
+  note: "详列布夏莫札大疏中引用密藏续的多处教证"
+
+- event_id: EV_7023
+  type: 引用论证
+  title: 海生阿阇黎论说续部结集者为意金刚
+  participants:
+    - entity: 海生阿阇黎
+      role: 论述者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "续部结集之作者，勇士世间自在尊……造续者即意金刚"
+  note: null
+
+- event_id: EV_7024
+  type: 引用论证
+  title: 夏嘎秋巴论证宁玛诸法由印度翻译无需另证
+  participants:
+    - entity: 夏嘎秋巴
+      role: 论述者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "宁玛诸法由印度，精勤翻译无需证，阿阇黎之幻化身，所说成立即足可"
+  note: null
+
+# ==================== 六、朗达玛灭法后密宗存续段 (lines 412-470) ====================
+
+- event_id: EV_7025
+  type: 毁灭佛教
+  title: 朗达玛毁灭佛教但密咒师未遭根本迫害
+  participants:
+    - entity: 朗达玛
+      role: 主体
+    - entity: 大努
+      role: 受承诺者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "朗达玛毁灭佛教后的那段时期，所有显宗寺院已经从根本上摧毁，而密宗的所有修行院……正如朗达玛对大努承诺的一样，密咒师谁也没有从根本上遭受迫害"
+  note: null
+
+- event_id: EV_7026
+  type: 弘法
+  title: 灭法后持明大德们受持内三续部佛法
+  participants:
+    - entity: 酿万登珍桑波
+      role: 受持者
+    - entity: 如·释迦炯内
+      role: 受持者
+    - entity: 德香大宿
+      role: 受持者
+    - entity: 大努
+      role: 受持者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "酿万登珍桑波、安兰香切嘉灿……如·释迦炯内、德香大宿等二悉地获得自在为数众多的持明大德们受持内三续部的佛法"
+  note: null
+
+- event_id: EV_7027
+  type: 圆寂
+  title: 帮麦彭滚波弟子七代和酿万登珍桑波到荡玛棱珠七代虹身传承
+  participants:
+    - entity: 帮麦彭滚波
+      role: 传承祖师
+    - entity: 酿万登珍桑波
+      role: 传承祖师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "帮麦彭滚波弟子七代传承、酿万登珍桑波到荡玛棱珠等七代，由经窍诀光明心滴道成就大虹身而使色身荡然无存"
+  note: null
+
+- event_id: EV_7028
+  type: 神变
+  title: 宿氏祖孙三人成就起死回生的禁行真身在空中消失
+  participants: []
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "宿氏祖孙三人等成就起死回生的禁行，真身在空中消失"
+  note: null
+
+- event_id: EV_7029
+  type: 圆寂
+  title: 班玛灯德以光明身消失
+  participants:
+    - entity: 班玛灯德
+      role: 主体
+  location: null
+  time_info:
+    text: "第十五胜生周水羊年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在第十五胜生周的水羊年成就自在持明者班玛灯德以光明身而消失"
+  note: null
+
+- event_id: EV_7030
+  type: 圆寂
+  title: 让热多吉在敏珠林寺圆寂遗体化光仅一卡大小
+  participants:
+    - entity: 让热多吉
+      role: 主体
+  location: 敏珠林寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "伏藏大师让热多吉在敏珠林寺圆寂时，遗体化光所留下来的只有一卡大小，被人迎请到多康"
+  note: null
+
+- event_id: EV_7031
+  type: 圆寂
+  title: 敦珠朗巴亲子弟子十三位获虹身成就
+  participants:
+    - entity: 伏藏大师敦珠朗巴
+      role: 传承祖师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "伏藏大师敦珠朗巴的亲子和弟子获得虹身成就的有十三位"
+  note: null
+
+- event_id: EV_7032
+  type: 圆寂
+  title: 朗仓匝巴札西哦色无余化为虹身
+  participants:
+    - entity: 朗仓匝巴札西哦色
+      role: 主体
+  location: 多康
+  time_info:
+    text: "第十六胜生周木猪年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "多康朗仓匝巴札西哦色"
+  note: "作者亲眼记得的虹身实例"
+
+- event_id: EV_7033
+  type: 圆寂
+  title: 罗珠嘉灿火牛年虹身
+  participants:
+    - entity: 罗珠嘉灿
+      role: 主体
+  location: null
+  time_info:
+    text: "火牛年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "其后火牛年，他的继承人罗珠嘉灿"
+  note: null
+
+- event_id: EV_7034
+  type: 圆寂
+  title: 索南南嘉水龙年虹身
+  participants:
+    - entity: 索南南嘉
+      role: 主体
+  location: null
+  time_info:
+    text: "水龙年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "其后水龙年，德格意隆巴索南南嘉"
+  note: null
+
+- event_id: EV_7035
+  type: 译经
+  title: 贝若札那翻译《医学四续》
+  participants:
+    - entity: 贝若札那
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "幻化的译师贝若札那翻译的《医学四续》也给予无量众生莫大的安慰"
+  note: null
+
+- event_id: EV_7036
+  type: 神变
+  title: 萨迦班智达以金刚橛明咒束缚飞空的杵雪嘎波
+  participants:
+    - entity: 萨迦班智达
+      role: 主体
+    - entity: 杵雪嘎波
+      role: 被降伏者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "萨迦班智达虽然能以正理击败杵雪嘎波，可是当对方准备飞到空中时，还是要用金刚橛明咒束缚住他"
+  note: "论证前译密咒的实用威力"
+
+# ==================== 七、古译师云讷华论证段 (lines 454-470) ====================
+
+- event_id: EV_7037
+  type: 引用论证
+  title: 古译师云讷华论证朗达玛灭法后宁玛密咒师维护藏地佛法
+  participants:
+    - entity: 古译师云讷华瓦
+      role: 论述者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "自从朗达玛毁灭佛教以来七十余年间，在卫藏、后藏一个出家僧人也没有，而在有许多宁玛巴密咒师的各自地方以殊胜修行给整个藏地增添了祥和"
+  note: null
+
+# ==================== 八、各派依前译而成就段 (lines 471-544) ====================
+
+- event_id: EV_7038
+  type: 传法
+  title: 大成就者寂隐从莲花生大士直接听受续部
+  participants:
+    - entity: 大成就者寂隐
+      role: 受者
+    - entity: 莲花生大士
+      role: 传法者
+  location: 卓当洲
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "大成就者寂隐从莲花生大士那里直接恭听许多续部的讲解、灌顶、窍诀等，随即在卓当地方等其他境内也加以弘扬"
+  note: null
+
+- event_id: EV_7039
+  type: 传法
+  title: 扬耶札巴直接听受大圆满
+  participants:
+    - entity: 扬耶札巴
+      role: 受者
+    - entity: 莲花生大士
+      role: 传法者
+    - entity: 菩提萨埵
+      role: 传法者
+    - entity: 布玛莫札
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "扬耶札巴在莲花生大士、菩提萨埵、布玛莫札面前直接听受大圆满"
+  note: null
+
+- event_id: EV_7040
+  type: 弘法
+  title: 米拉日巴经大圆满心尽法尽之道证得成就
+  participants:
+    - entity: 米拉日巴
+      role: 主体
+    - entity: 努·克隆巴
+      role: 初授大圆满者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "至尊米拉日巴最初在努·克隆巴面前听受大圆满心部时，没有入定于觉性上……最后以南岩马尔巴译师的绝地火为因而经过大圆满心尽法尽之道而证得成就"
+  note: null
+
+- event_id: EV_7041
+  type: 弘法
+  title: 噶玛巴巴卡回忆大圆满前世并闻受大圆满而成就
+  participants:
+    - entity: 噶玛巴巴卡
+      role: 主体
+    - entity: 卡嘎绕多吉
+      role: 上师
+    - entity: 噶托巴香巴波
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "噶玛巴巴卡成为卡嘎绕多吉的高足后回忆起通达大圆满六百四十万续的前世，并在噶托巴香巴波面前闻受大圆满等而获得成就"
+  note: null
+
+- event_id: EV_7042
+  type: 引用论证
+  title: 宗喀巴大师祈祷业金刚后由密主赐予《问答甘露妙药》
+  participants:
+    - entity: 宗喀巴大师
+      role: 祈祷者
+    - entity: 业金刚
+      role: 请求者
+    - entity: 金刚手菩萨
+      role: 赐予者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "宗喀巴大师对真实甚深见断除疑虑而祈祷大成就者业金刚，结果他向密主请求，密主赐予的《问答甘露妙药》"
+  note: "论证宗喀巴实修与大圆满一致"
+
+- event_id: EV_7043
+  type: 引用论证
+  title: 罗桑秋杰嘉灿论大圆满与大手印等实修获得一密意
+  participants:
+    - entity: 罗桑秋杰嘉灿
+      role: 论述者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "大圆满与大手印，中观道果断法等，纵然安立各自名，然实修者瑜伽士，分析获得一密意"
+  note: null
+
+- event_id: EV_7044
+  type: 传法
+  title: 第五世达赖喇嘛在帕旺卡巴面前听受大圆满窍诀
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 受者
+    - entity: 帕旺卡巴华玖棱珠
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "第五世达赖喇嘛在这位尊者面前听受大圆满窍诀"
+  note: null
+
+# ==================== 九、伏藏法源辩护段 (lines 545-660) ====================
+
+- event_id: EV_7045
+  type: 伏藏埋藏
+  title: 莲花生大士将修法撷取立成文字隐藏于深山岩石湖泊
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从所有深广续部中撷取修法、事业、会供、窍诀等齐全的道法，立成空行黄纸文字续以后在深山、岩石、湖泊等处委托交付给非人伏藏主"
+  note: null
+
+- event_id: EV_7046
+  type: 引用论证
+  title: 引《圣三摩地经》论证菩萨伏藏置于山树内
+  participants: []
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "欲求法之诸菩萨大菩萨伏藏置于山、山丘、树内。无量陀罗尼与法门作成经函亦到手中"
+  note: null
+
+- event_id: EV_7047
+  type: 引用论证
+  title: 引《摄正法经》论证将法隐成伏藏得十种功德
+  participants: []
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "为安住何法，若将此等法之法类写成经函而隐成伏藏作供养，则彼者得到十得"
+  note: null
+
+# ==================== 十、宗派互驳的历史总结段 (lines 574-621) ====================
+
+- event_id: EV_7048
+  type: 驳斥邪见
+  title: 萨迦班智达在《辨析三戒论》中大力破斥达波噶举
+  participants:
+    - entity: 萨迦班智达
+      role: 驳斥者
+    - entity: 刚波巴
+      role: 被驳对象
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "萨迦班智达在《辨析三戒论》中对六法及大手印等达波噶举进行了大力破斥"
+  note: "作者列举藏地宗派互驳的历史以示邪见诽谤之风盛行"
+
+- event_id: EV_7049
+  type: 驳斥邪见
+  title: 格西南卡白说哲达大手印不符合续藏不是正道
+  participants:
+    - entity: 格西南卡白
+      role: 驳斥者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "我认为哲达大手印此法轨与任何续藏皆不符合，我想这不是正道"
+  note: null
+
+- event_id: EV_7050
+  type: 驳斥邪见
+  title: 帕单巴尊者等对噶当派加以遮破
+  participants:
+    - entity: 帕单巴
+      role: 驳斥者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "对噶当派，帕单巴尊者等加以遮破"
+  note: null
+
+- event_id: EV_7051
+  type: 驳斥邪见
+  title: 雅荣二尊和够释迦达三者对宗喀巴见解极度遮破
+  participants:
+    - entity: 宗喀巴大师
+      role: 被驳对象
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "萨迦派的雅、荣二尊和够、释迦、达三者对宗喀巴大师的见解和宗派极度遮破，并认为宗大师面见的文殊菩萨也不真实"
+  note: null
+
+- event_id: EV_7052
+  type: 驳斥邪见
+  title: 仁达瓦从多方面驳斥《时轮金刚》
+  participants:
+    - entity: 仁达瓦
+      role: 驳斥者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "至尊仁达瓦说……根本续无诶与旺……从多方面驳斥《时轮金刚》"
+  note: null
+
+- event_id: EV_7053
+  type: 驳斥邪见
+  title: 古拉则因嫉妒卓莫大译师而遮破道果
+  participants:
+    - entity: 古拉则
+      role: 驳斥者
+    - entity: 卓莫大译师
+      role: 被嫉妒者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "古拉则说：'扰乱抄袭空行续，嘎雅达绕金法生。'而遮破道果，其实他是嫉妒弘扬该法的卓莫大译师"
+  note: null
+
+- event_id: EV_7054
+  type: 驳斥邪见
+  title: 龙树解说大乘被声闻宣扬为伪造经教
+  participants:
+    - entity: 龙树菩萨
+      role: 被诬者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "龙树菩萨解说大乘，诸位声闻宣扬：怙主龙树伪造经教而算在佛经中，实际大乘不是佛说"
+  note: null
+
+- event_id: EV_7055
+  type: 驳斥邪见
+  title: 无著依弥勒意趣诠解末转法轮而被摈除大乘
+  participants:
+    - entity: 无著菩萨
+      role: 被排斥者
+    - entity: 弥勒菩萨
+      role: 意趣来源
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "圣者无著依照补处弥勒的意趣诠解末转法轮，结果包括追随者在内都被摈除大乘之外"
+  note: null
+
+- event_id: EV_7056
+  type: 毁灭佛教
+  title: 达玛巴拉时期小乘行人毁坏黑日嘎银像焚烧密宗经函
+  participants:
+    - entity: 达玛巴拉
+      role: 时期国王
+    - entity: 佛智
+      role: 护持者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王达玛巴拉在位时期，小乘行人毁坏黑日嘎银像以得利，将密宗的经函烧在火里，宣称大乘密宗是魔所造"
+  note: null
+
+# ==================== 十一、苯波教辨别段 (lines 662-711) ====================
+
+- event_id: EV_7057
+  type: 驳斥邪见
+  title: 驳斥宁玛派与苯波教意趣一模一样的说法
+  participants: []
+  location: null
+  time_info: null
+  layers: [宗派]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "法语等相同之处倒有许多，但他们是根据苯教的需要而抄袭的，又怎么能与宁玛派等量齐观呢？"
+  note: "论证苯教在中观、般若、戒律等方面有仿造品"
+
+- event_id: EV_7058
+  type: 降伏非人
+  title: 莲花生大士以降伏禁行使鬼神惟命是从取受命心
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "莲花生大士，以降伏的禁行威力使他们不由自主惟命是从，取受了他们的命心，吩咐他们作为护法神"
+  note: null
+
+- event_id: EV_7059
+  type: 驳斥邪见
+  title: 堪布菩提萨埵及莲师驳倒苯波教见解行为
+  participants:
+    - entity: 菩提萨埵
+      role: 主体
+    - entity: 莲花生大士
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "苯波教的见解、行为被堪布菩提萨埵及莲花生大士驳倒、以成就相神变予以击败"
+  note: null
+
+- event_id: EV_7060
+  type: 立法
+  title: 赤松德赞令苯波徒行持佛法并将不从者斩首
+  participants:
+    - entity: 赤松德赞
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王令苯波徒行持佛法，结果只有少数人听从……国王听后，将许多苯教徒斩首"
+  note: null
+
+# ==================== 十二、伏藏授记/莲师事业结语段 (lines 642-721) ====================
+
+- event_id: EV_7061
+  type: 授记
+  title: 莲花生大士金刚语授记伏藏事业
+  participants:
+    - entity: 莲花生大士
+      role: 授记者
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "未来法施无穷尽，莲花伏藏满世间，取者皆是我幻化，装束行为无定准"
+  note: null
+
+- event_id: EV_7062
+  type: 授记
+  title: 作者自称莲花生大士使者给予授记
+  participants: []
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "没有信心并信口雌黄的人，有朝一日也成为莲师的所化，无疑领受永乐的善缘。这是莲花生大士的使者我给予的授记"
+  note: "作者自称敦珠仁波切为莲师使者"

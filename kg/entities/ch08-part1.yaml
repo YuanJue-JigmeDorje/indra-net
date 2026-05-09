@@ -1,0 +1,3167 @@
+# ============================================================
+# 知识图谱实体抽取 — 第八品 略说佛教年表与自传 (lines 1-960)
+# 覆盖范围: 佛教年表（胜生周年代）+ 教史依据声明 + 一世敦珠法王自传（前言至15岁）
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 释迦佛
+  aliases: [释迦牟尼佛, 本师, 义成太子, 能仁王, 如来]
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第四导师；年表以其涅槃为起算点；阳土羊年入胎、铁猴年降生蓝毗尼、三十五岁土马年成佛、八十一岁铁龙年涅槃"
+  appearances: [3, 30, 41, 47, 442]
+
+E_002:
+  name: 莲花生大士
+  aliases: [邬金莲花生大士, 邬金大师, 莲师, 邬金第二大佛, 邬金仁波切, 嗡德雅那大师]
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: 邬金
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "佛灭度第五年木猴年降生于斯德海岛；到达藏地弘法建桑耶寺；木猴年前往妙拂洲；自传中为敦珠法王之根本上师，多次在梦境觉受中教导"
+  appearances: [61, 83, 85, 295, 447, 448, 464, 474, 691, 717, 827, 834, 858, 870]
+
+E_003:
+  name: 弥勒
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "《弥勒授记经》中说佛法住世五千年"
+  appearances: [13]
+
+E_004:
+  name: 密主金刚手菩萨
+  aliases: [金刚手菩萨, 密主]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛灭度二十九年土蛇年于玛拉雅山顶为五圣贤转法轮"
+  appearances: [63]
+
+E_005:
+  name: 金刚萨埵
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "《金刚萨埵幻化网》中说佛陀不涅槃法亦无隐没"
+  appearances: [18]
+
+E_006:
+  name: 观世音菩萨
+  aliases: [大悲观世音菩萨]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "自传中多次在梦境中出现教导敦珠法王；第十四世达赖喇嘛为观世音菩萨化身"
+  appearances: [197, 702, 704]
+
+E_007:
+  name: 度母
+  aliases: [至尊度母]
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "颦眉天女传度母教导给敦珠法王"
+  appearances: [681, 682]
+
+E_008:
+  name: 金刚亥母
+  aliases: [空行主尊金刚亥母]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王四岁时梦境中在邬金空行刹土见金刚亥母；身色蓝黑极其忿怒；赐予保护"
+  appearances: [553, 567]
+
+E_009:
+  name: 无疑王如来
+  aliases: []
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王三岁觉受中在东方琉璃刹土见此佛；为其赐予密宗金刚灌顶"
+  appearances: [516, 525]
+
+E_010:
+  name: 明遍主菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "无疑王如来右侧菩萨，身色白色"
+  appearances: [517]
+
+E_012:
+  name: 解脱王菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "无疑王如来左侧菩萨，身色红色"
+  appearances: [518]
+
+E_013:
+  name: 文殊菩萨
+  aliases: [文殊语狮子, 曼殊师利]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王自传第二段礼敬偈顶礼之对象；修法指导中要求依文殊语狮子念修"
+  appearances: [428, 431, 691]
+
+E_014:
+  name: 具力金刚
+  aliases: [瑜伽自在具力金刚]
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: [大金刚持]
+  attainments: []
+  note: "法身大金刚持为弘法利生而示现之色身；为千佛灌顶被授权三界法王；发愿化身利益有情"
+  appearances: [438]
+
+E_015:
+  name: 大金刚持
+  aliases: [大金刚持佛, 法身本师]
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "法身本师；具力金刚为其利生示现之色身"
+  appearances: [437]
+
+E_016:
+  name: 忿怒莲师
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: [莲花生大士]
+  form_of: E_002
+  attainments: []
+  note: "敦珠法王修法中观想之忿怒相莲师；身色红黑一面四臂"
+  appearances: [674, 912]
+
+# ==================== 人物 — 年表段 ====================
+
+E_100:
+  name: 摩耶夫人
+  aliases: []
+  type: 人物.王妃
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "释迦佛之母；阳土羊年入胎于正持斋戒的摩耶夫人胎中"
+  appearances: [31]
+
+E_101:
+  name: 罗睺罗
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "释迦佛之子；住胎六年后在佛成道时降生"
+  appearances: [38]
+
+E_102:
+  name: 阿难
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛成道时同日降生"
+  appearances: [39]
+
+E_103:
+  name: 耶输陀罗
+  aliases: []
+  type: 人物.王妃
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "释迦佛王妃；佛二十九岁在其处植下种姓种子"
+  appearances: [34]
+
+E_104:
+  name: 阿育王
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛灭度一百年土羊年降生"
+  appearances: [65]
+
+E_105:
+  name: 龙树
+  aliases: [圣龙树]
+  type: 人物.法师
+  specialty: [阿阇黎, 大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛灭度一百六十一年铁猴年诞生"
+  appearances: [69]
+
+E_106:
+  name: 嘎绕多吉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师, 大成就者]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "佛灭度一百六十六年木牛年降生；宣说胜乘；大圆满人间初祖"
+  appearances: [70, 220]
+
+E_107:
+  name: 涅赤赞普
+  aliases: [肩座王]
+  type: 人物.帝王
+  specialty: []
+  origin: 西藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "铁猴年器情形成后过534年木虎年出世；统治整个西藏的第一位藏王"
+  appearances: [72, 75]
+
+E_108:
+  name: 拉托托日涅赞
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: 西藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "吐蕃第二十七王朝；木狗年诞生；六十岁水鸡年玄妙神物降临皇宫——西藏正法开端"
+  appearances: [76]
+
+E_109:
+  name: 松赞干布
+  aliases: [法王松赞干布]
+  type: 人物.帝王
+  specialty: []
+  origin: 西藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "水鸡年正法开端过185年火牛年诞生；建大昭寺开拓正法始创文字"
+  appearances: [81]
+
+E_110:
+  name: 赤松德赞
+  aliases: [法王赤松德赞]
+  type: 人物.帝王
+  specialty: []
+  origin: 西藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "过149年铁马年诞生；莲师到藏建桑耶寺"
+  appearances: [82]
+
+E_111:
+  name: 赤热巴坚
+  aliases: [国王赤热巴坚]
+  type: 人物.帝王
+  specialty: []
+  origin: 西藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "莲师前往妙拂洲第二年火狗年诞生"
+  appearances: [86]
+
+E_112:
+  name: 贡巴饶色
+  aliases: [贡巴饶色大师]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "赤热巴坚后第26年水鼠年诞生；与卫藏后藏十人从康区到卫藏树立后弘开端"
+  appearances: [87, 89]
+
+E_113:
+  name: 朗达玛
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: 西藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "铁鸡年毁灭卫藏后藏佛法"
+  appearances: [87]
+
+E_114:
+  name: 拉隆花多
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "朗达玛毁法第五年火虎年降伏朗达玛"
+  appearances: [88]
+
+E_115:
+  name: 仁钦桑波
+  aliases: [大译师仁钦桑波]
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "新派译师之首；后弘开端第五年土马年诞生；第一胜生周开始时七十岁"
+  appearances: [91, 97]
+
+E_116:
+  name: 赤诚滚布
+  aliases: [大成就者瑜伽士赤诚滚布]
+  type: 人物.法师
+  specialty: [瑜伽士, 大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "仁钦桑波后第20年土虎年诞生"
+  appearances: [91]
+
+E_117:
+  name: 阿底峡
+  aliases: [具德阿底峡尊者]
+  type: 人物.法师
+  specialty: [班智达, 上师]
+  origin: ""
+  sect_affiliation: [噶当派]
+  manifestation_of: []
+  attainments: []
+  note: "赤诚滚布后第4年水马年诞生；第一胜生周时46岁；噶当派法脉源头"
+  appearances: [92, 98, 100]
+
+E_118:
+  name: 仲敦巴
+  aliases: [仲敦巴尊者]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶当派]
+  manifestation_of: []
+  attainments: []
+  note: "阿底峡后第22年木龙年诞生；第一胜生周时24岁"
+  appearances: [92, 98]
+
+E_119:
+  name: 玛尔巴译师
+  aliases: [玛尔巴]
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "仲敦巴后第8年水鼠年诞生；将噶举教法引入西藏"
+  appearances: [93, 98, 105]
+
+E_120:
+  name: 札巴温西
+  aliases: [伏藏大师札巴温西]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与玛尔巴同年水鼠年诞生"
+  appearances: [93, 98]
+
+E_121:
+  name: 小宿尊者
+  aliases: [小宿]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "札巴温西后第2年木虎年诞生；第一胜生周时14岁"
+  appearances: [94, 98]
+
+E_122:
+  name: 穹波南玖
+  aliases: []
+  type: 人物.法师
+  specialty: [大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第一胜生周开始时50岁；将香巴金法引到西藏"
+  appearances: [97, 104]
+
+E_123:
+  name: 昆勒旺仲瓦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "莲花生大士亲传弟子；至昆如西绕赤诚十代传承为旧密"
+  appearances: [101]
+
+E_124:
+  name: 昆如西绕赤诚
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "昆勒旺仲瓦至此仅十代传承为旧密"
+  appearances: [101]
+
+E_125:
+  name: 昆滚秋嘉波
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [萨迦派]
+  manifestation_of: []
+  attainments: []
+  note: "在仲莫释迦益西等新派译师前听受法要后转依新密；于第一胜生周水牛年建古热寺——萨迦派之始"
+  appearances: [102]
+
+E_126:
+  name: 仲莫释迦益西
+  aliases: []
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "新派译师"
+  appearances: [103]
+
+# --- 第二胜生周 ---
+
+E_127:
+  name: 玛吉拉卓
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第二胜生周开始时57岁；生肖铁羊"
+  appearances: [106]
+
+E_128:
+  name: 格萨尔王
+  aliases: [岭国格萨尔王]
+  type: 人物.帝王
+  specialty: []
+  origin: 岭国
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第二胜生周开始时50岁；生肖土虎"
+  appearances: [107]
+
+E_129:
+  name: 米拉日巴
+  aliases: [至尊米拉日巴]
+  type: 人物.法师
+  specialty: [瑜伽士, 大成就者]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第二胜生周开始时48岁；生肖铁龙"
+  appearances: [107]
+
+E_130:
+  name: 鄂译师
+  aliases: []
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第二胜生周开始时16岁；生肖土猪"
+  appearances: [109]
+
+E_131:
+  name: 密主卓普巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第二胜生周开始时14岁；生肖木虎"
+  appearances: [109]
+
+E_132:
+  name: 达波达哦云讷
+  aliases: [达波瓦]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第二胜生周开始时9岁；生肖土羊；弟子分出四大八小噶举派"
+  appearances: [110]
+
+# --- 第三胜生周 ---
+
+E_133:
+  name: 夏敦增钦波
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时57岁；生肖铁羊"
+  appearances: [112]
+
+E_134:
+  name: 单巴桑吉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始那年到达当日地方"
+  appearances: [113]
+
+E_135:
+  name: 根嘎酿波
+  aliases: [萨迦派大师根嘎酿波]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [萨迦派]
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时56岁；生肖水猴"
+  appearances: [113]
+
+E_136:
+  name: 帕姆哲巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时38岁；生肖铁虎"
+  appearances: [114]
+
+E_137:
+  name: 噶玛巴德色钦巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时38岁；生肖铁虎"
+  appearances: [114]
+
+E_138:
+  name: 噶托单巴德香
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时26岁；生肖水虎"
+  appearances: [114]
+
+E_139:
+  name: 扬达玛札
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时26岁；生肖水虎"
+  appearances: [115]
+
+E_140:
+  name: 昂达酿绕
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时24岁；生肖木龙"
+  appearances: [115]
+
+E_141:
+  name: 索南则姆
+  aliases: [萨迦至尊索南则姆]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [萨迦派]
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时6岁；生肖水狗"
+  appearances: [116]
+
+E_142:
+  name: 华达隆唐巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时6岁；生肖水狗"
+  appearances: [116]
+
+E_143:
+  name: 哲贡玖巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第三胜生周开始时5岁；生肖水猪"
+  appearances: [117]
+
+# --- 第四胜生周 ---
+
+E_144:
+  name: 革日秋杰旺修
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第四胜生周开始时56岁；生肖水猴"
+  appearances: [119]
+
+E_145:
+  name: 智者涅波
+  aliases: []
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第四胜生周开始时50岁；生肖土虎"
+  appearances: [120]
+
+E_146:
+  name: 朗日班玛多吉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第四胜生周开始时20岁；生肖土猴"
+  appearances: [120]
+
+E_147:
+  name: 觉姆曼姆
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第四胜生周开始时20岁；与朗日班玛多吉同年生肖土猴"
+  appearances: [120]
+
+E_148:
+  name: 萨迦班智达
+  aliases: []
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: [萨迦派]
+  manifestation_of: []
+  attainments: []
+  note: "第四胜生周开始时26岁；生肖土虎；萨迦巴统治西藏三区"
+  appearances: [121]
+
+E_149:
+  name: 达隆桑吉雅熏
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第四胜生周开始时5岁；生肖水猪"
+  appearances: [121]
+
+# --- 第五胜生周 ---
+
+E_150:
+  name: 藏巴嘉热
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第五胜生周开始时47岁；生肖铁蛇"
+  appearances: [123]
+
+E_151:
+  name: 大成就者邬金巴
+  aliases: [邬金巴]
+  type: 人物.法师
+  specialty: [大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第五胜生周开始时38岁；生肖铁虎"
+  appearances: [124]
+
+E_152:
+  name: 卓滚秋嘉帕巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第五胜生周开始时33岁；生肖木羊"
+  appearances: [124]
+
+E_153:
+  name: 美龙多吉
+  aliases: [大成就者美龙多吉]
+  type: 人物.法师
+  specialty: [大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第五胜生周开始时25岁；生肖水兔"
+  appearances: [125]
+
+E_154:
+  name: 持明革玛燃匝
+  aliases: [革玛燃匝]
+  type: 人物.法师
+  specialty: [持藏]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第五胜生周开始时2岁；生肖火虎"
+  appearances: [126]
+
+# --- 第六胜生周 ---
+
+E_155:
+  name: 噶玛巴自生金刚
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第六胜生周开始时44岁；生肖木猴"
+  appearances: [127]
+
+E_156:
+  name: 雍敦多吉华
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与噶玛巴自生金刚同列，第六胜生周开始时44岁"
+  appearances: [128]
+
+E_157:
+  name: 布敦塔坚钦巴
+  aliases: [布敦]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第六胜生周开始时38岁；生肖铁虎"
+  appearances: [128]
+
+E_158:
+  name: 多波巴
+  aliases: [遍知多波巴]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: [觉囊派]
+  manifestation_of: []
+  attainments: []
+  note: "第六胜生周开始时36岁；生肖水龙"
+  appearances: [129]
+
+E_159:
+  name: 龙钦绕降
+  aliases: [全知龙钦绕降, 持明龙钦绕降]
+  type: 人物.法师
+  specialty: [班智达, 上师, 大成就者]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第六胜生周开始时20岁；生肖土猴；自传中敦珠法王七岁时从空中顺彩虹道前来赐会供丸"
+  appearances: [129, 717]
+
+# --- 第七胜生周 ---
+
+E_160:
+  name: 桑吉朗巴
+  aliases: [伏藏大师桑吉朗巴]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第七胜生周开始时48岁；生肖铁龙"
+  appearances: [131]
+
+E_161:
+  name: 多吉朗巴
+  aliases: []
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第七胜生周开始时42岁；生肖火狗"
+  appearances: [132]
+
+E_162:
+  name: 嘉滚罗桑札巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第七胜生周开始时31岁；生肖火鸡"
+  appearances: [132]
+
+E_163:
+  name: 哦东遍知晋札
+  aliases: [遍知晋札]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第七胜生周开始时13岁；生肖木兔"
+  appearances: [133]
+
+E_164:
+  name: 噶玛巴德云香巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第七胜生周开始时4岁；生肖木鼠"
+  appearances: [133]
+
+E_165:
+  name: 唐东嘉波
+  aliases: [大成就者唐东嘉波]
+  type: 人物.法师
+  specialty: [大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第七胜生周开始时3岁；生肖木牛"
+  appearances: [135]
+
+E_166:
+  name: 宗喀巴
+  aliases: [至尊宗喀巴大师]
+  type: 人物.法师
+  specialty: [上师, 班智达]
+  origin: ""
+  sect_affiliation: [格鲁派]
+  manifestation_of: []
+  attainments: []
+  note: "广泛弘扬噶当经论及新派密续双运的讲修；土牛年建噶丹寺，由此出现格鲁派"
+  appearances: [136]
+
+# --- 第八胜生周 ---
+
+E_167:
+  name: 根敦哲巴
+  aliases: [大班智达根敦哲巴, 一世达赖喇嘛]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: [格鲁派]
+  manifestation_of: []
+  attainments: []
+  note: "第八胜生周开始时56岁；生肖铁羊"
+  appearances: [140]
+
+E_168:
+  name: 古译师云讷华
+  aliases: []
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第八胜生周开始时55岁；生肖水猴；著《青史》"
+  appearances: [141, 233]
+
+E_169:
+  name: 绕那朗巴
+  aliases: [伏藏大师绕那朗巴]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第八胜生周开始时45岁；生肖水羊"
+  appearances: [141]
+
+E_170:
+  name: 噶玛巴铜巴敦丹
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第八胜生周开始时32岁；生肖火猴"
+  appearances: [142]
+
+E_171:
+  name: 释迦秋丹
+  aliases: [大班智达释迦秋丹]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第八胜生周开始时20岁；生肖土猴"
+  appearances: [142]
+
+E_172:
+  name: 法王果仁巴
+  aliases: [果仁巴]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第八胜生周开始时19岁；生肖土鸡"
+  appearances: [143]
+
+E_173:
+  name: 秋炯桑波
+  aliases: [雅勒大译师秋炯桑波]
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第八胜生周开始时7岁；生肖铁鸡"
+  appearances: [144]
+
+# --- 第九胜生周 ---
+
+E_174:
+  name: 莫玖多吉
+  aliases: [第八世噶玛巴莫玖多吉, 不动金刚]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第九胜生周开始那年诞生"
+  appearances: [145]
+
+E_175:
+  name: 根嘎珠秋
+  aliases: [至尊根嘎珠秋]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第九胜生周开始那年诞生"
+  appearances: [146]
+
+E_176:
+  name: 班玛朗巴
+  aliases: [伏藏大师班玛朗巴]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第九胜生周开始时58岁；生肖铁马"
+  appearances: [146]
+
+E_177:
+  name: 藏纽桑吉灿坚
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第九胜生周开始时56岁；生肖水猴"
+  appearances: [146]
+
+E_178:
+  name: 华哦则拉创瓦
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第九胜生周开始时54岁；生肖木狗；著教史《智者喜宴宁玛品》"
+  appearances: [147, 234]
+
+E_179:
+  name: 哲纽根嘎勒巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第九胜生周开始时53岁；生肖木猪"
+  appearances: [148]
+
+E_180:
+  name: 卫纽根嘎桑波
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第九胜生周开始时50岁；生肖土虎"
+  appearances: [148]
+
+E_181:
+  name: 根敦嘉措
+  aliases: [大班智达根敦嘉措]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: [格鲁派]
+  manifestation_of: []
+  attainments: []
+  note: "第九胜生周开始时32岁；生肖火猴"
+  appearances: [149]
+
+# --- 第十至十六胜生周 ---
+
+E_182:
+  name: 刚波巴札西南嘉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十胜生周开始时56岁；生肖水猴"
+  appearances: [151]
+
+E_183:
+  name: 宿卡措雪罗珠嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十胜生周开始时59岁；生肖土龙"
+  appearances: [152]
+
+E_184:
+  name: 西绕哦色
+  aliases: [伏藏大师西绕哦色]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十胜生周开始时51岁；生肖火牛"
+  appearances: [152]
+
+E_185:
+  name: 哲巴根钦班玛嘎波
+  aliases: [班玛嘎波]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十胜生周开始时41岁；生肖火猪；著教史《佛教兴盛之日》"
+  appearances: [153, 234]
+
+E_186:
+  name: 索罗巴罗珠嘉灿
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十胜生周开始时16岁；生肖水鼠"
+  appearances: [153]
+
+E_187:
+  name: 噶玛巴旺修多吉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第十胜生周开始时14岁；生肖木虎"
+  appearances: [154]
+
+E_188:
+  name: 达绕那塔
+  aliases: [至尊达绕那塔]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时53岁；生肖木猪；著《莲师传·具三信》"
+  appearances: [156, 235]
+
+E_189:
+  name: 嘉村酿波
+  aliases: [持明嘉村酿波]
+  type: 人物.法师
+  specialty: [持藏]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时43岁；生肖木鸡"
+  appearances: [157]
+
+E_190:
+  name: 罗哲夏仲阿旺那嘉
+  aliases: [阿旺那嘉]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时34岁；生肖木马"
+  appearances: [157]
+
+E_191:
+  name: 拉尊南卡晋美
+  aliases: [南卡晋美]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时31岁；生肖火鸡"
+  appearances: [158]
+
+E_192:
+  name: 慈诚多吉
+  aliases: [语化身慈诚多吉]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时30岁；生肖土狗"
+  appearances: [159]
+
+E_193:
+  name: 刚波巴诺吾坚巴
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时29岁；生肖土猪"
+  appearances: [159]
+
+E_194:
+  name: 噶玛巴秋扬多吉
+  aliases: [法界金刚]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时23岁；生肖木蛇"
+  appearances: [160]
+
+E_195:
+  name: 陈列棱珠
+  aliases: [密主陈列棱珠]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时17岁；生肖铁猪"
+  appearances: [161]
+
+E_196:
+  name: 敦珠多吉
+  aliases: [伏藏大师敦珠多吉]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时13岁；生肖木兔"
+  appearances: [162]
+
+E_197:
+  name: 第五世达赖喇嘛
+  aliases: [罗桑嘉措, 五世达赖]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [格鲁派]
+  manifestation_of: []
+  attainments: []
+  note: "第十一胜生周开始时11岁；生肖火蛇；水马年起噶丹颇章统治西藏"
+  appearances: [163, 239]
+
+E_198:
+  name: 香达班玛陈列
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十二胜生周开始时47岁；生肖铁蛇"
+  appearances: [166]
+
+E_199:
+  name: 丹增杰美多吉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "班玛朗巴心子；第十二胜生周开始时47岁；生肖铁蛇"
+  appearances: [166]
+
+E_200:
+  name: 杰美多吉
+  aliases: [敏朗伏藏大师杰美多吉]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "敏朗；第十二胜生周开始时42岁；生肖火狗"
+  appearances: [167, 239]
+
+E_201:
+  name: 达玛西日
+  aliases: [大译师达玛西日]
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十二胜生周开始时34岁；生肖木马；著《集密意续灌顶之总义·开显经续窍诀要点之灯》"
+  appearances: [168, 231]
+
+E_202:
+  name: 噶玛巴益西多吉
+  aliases: [第十一世噶玛巴益西多吉]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第十二胜生周开始时12岁；生肖火龙"
+  appearances: [168]
+
+E_203:
+  name: 阿旺根嘎丹增
+  aliases: [第三世康智阿旺根嘎丹增]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十二胜生周开始时7岁；生肖铁猴"
+  appearances: [169]
+
+E_204:
+  name: 才旺诺吾
+  aliases: [持明才旺诺吾]
+  type: 人物.法师
+  specialty: [持藏]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十三胜生周开始时50岁；生肖土虎"
+  appearances: [172, 240]
+
+E_205:
+  name: 司德秋杰炯内
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十三胜生周开始时48岁；生肖铁龙"
+  appearances: [173]
+
+E_206:
+  name: 嘎桑嘉措
+  aliases: [第七世达赖喇嘛嘎桑嘉措]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [格鲁派]
+  manifestation_of: []
+  attainments: []
+  note: "第十三胜生周开始时40岁；生肖土鼠"
+  appearances: [173]
+
+E_207:
+  name: 晋美朗巴
+  aliases: [持明晋美朗巴]
+  type: 人物.法师
+  specialty: [持藏, 伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十三胜生周开始时19岁；生肖土鸡；著《宁玛续目录·周遍赡洲庄严》"
+  appearances: [174, 236]
+
+E_208:
+  name: 噶玛巴敦珠多吉
+  aliases: [第十三世噶玛巴敦珠多吉]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第十三胜生周开始时15岁；生肖水牛"
+  appearances: [175]
+
+E_209:
+  name: 竹青佛子洋彭塔益
+  aliases: [洋彭塔益]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十三胜生周开始时8岁；生肖铁猴"
+  appearances: [175]
+
+E_210:
+  name: 多哲晋美陈列哦色
+  aliases: [晋美陈列哦色]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十三胜生周开始时3岁；生肖木牛"
+  appearances: [176]
+
+# --- 第十四胜生周 ---
+
+E_211:
+  name: 秋朗嘎旺齐美多吉
+  aliases: []
+  type: 人物.法师
+  specialty: [持藏, 伏藏师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十四胜生周开始时45岁；生肖水羊；开启莲花庄严隐蔽处之伏藏门的三位化身持明者之一"
+  appearances: [177]
+
+E_212:
+  name: 邬金卓珠朗巴
+  aliases: [刚波巴邬金卓珠朗巴]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十四胜生周开始时45岁；生肖水羊；三位化身持明者之一"
+  appearances: [177]
+
+E_213:
+  name: 多吉土美
+  aliases: [持明多吉土美]
+  type: 人物.法师
+  specialty: [持藏]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十四胜生周开始时45岁；生肖水羊；三位化身持明者之一"
+  appearances: [178]
+
+E_214:
+  name: 龙多嘉措
+  aliases: [第九世达赖喇嘛龙多嘉措]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [格鲁派]
+  manifestation_of: []
+  attainments: []
+  note: "第十四胜生周开始时3岁；生肖木牛"
+  appearances: [179]
+
+# --- 第十五胜生周 ---
+
+E_215:
+  name: 华智
+  aliases: [华智邬金晋美秋吉旺波]
+  type: 人物.法师
+  specialty: [上师, 班智达]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十五胜生周开始时60岁；生肖土龙"
+  appearances: [181]
+
+E_216:
+  name: 嘉滚罗珠塔益
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十五胜生周开始时55岁；生肖水鸡；著《百位伏藏大师传·蓝琉璃鬘饰》"
+  appearances: [182, 237]
+
+E_217:
+  name: 蒋扬钦则旺波
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十五胜生周开始时48岁；生肖铁龙"
+  appearances: [182]
+
+E_218:
+  name: 秋嘉德钦朗巴
+  aliases: []
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十五胜生周开始时39岁；生肖土牛"
+  appearances: [183]
+
+E_219:
+  name: 敦珠朗巴
+  aliases: [伏藏大师敦珠朗巴]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十五胜生周开始时33岁；生肖木羊"
+  appearances: [184]
+
+E_220:
+  name: 麦彭南嘉嘉措
+  aliases: [麦彭那白嘉瓦]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十五胜生周开始时22岁；生肖火马"
+  appearances: [184, 238]
+
+E_221:
+  name: 成就王释迦西日
+  aliases: [释迦西日]
+  type: 人物.法师
+  specialty: [大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十五胜生周开始时15岁；生肖水牛；亦见年表段52行印度阿阇黎释迦西日"
+  appearances: [185]
+
+E_222:
+  name: 列绕朗巴
+  aliases: [伏藏大师列绕朗巴]
+  type: 人物.法师
+  specialty: [伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十五胜生周开始时12岁；生肖火龙"
+  appearances: [185]
+
+# --- 第十六胜生周 ---
+
+E_223:
+  name: 卡恰多吉
+  aliases: [第十五世噶玛巴卡恰多吉]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第十六胜生周开始时57岁；生肖铁羊"
+  appearances: [189]
+
+E_224:
+  name: 土丹秋杰多吉
+  aliases: [第五世竹智土丹秋杰多吉]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十六胜生周开始时56岁；生肖水猴"
+  appearances: [190]
+
+E_225:
+  name: 土丹嘉措
+  aliases: [第十三世达赖喇嘛土丹嘉措]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [格鲁派]
+  manifestation_of: []
+  attainments: []
+  note: "第十六胜生周开始时52岁；生肖火鼠"
+  appearances: [191]
+
+E_226:
+  name: 噶托司德秋杰嘉措
+  aliases: [秋杰嘉措]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十六胜生周开始时48岁；生肖铁龙"
+  appearances: [191]
+
+E_227:
+  name: 秋杰尼玛
+  aliases: [大班智达秋杰尼玛]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "第十六胜生周开始时45岁；生肖水羊"
+  appearances: [192]
+
+# --- 第十七胜生周（未来）---
+
+E_228:
+  name: 热毕多吉
+  aliases: [第十六世噶玛巴热毕多吉]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  attainments: []
+  note: "第十七胜生周开始时64岁；生肖木鼠"
+  appearances: [195]
+
+E_229:
+  name: 敏朗彻东根桑旺嘉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "第十七胜生周开始时57岁；生肖铁羊"
+  appearances: [196]
+
+E_230:
+  name: 丹增嘉措
+  aliases: [第十四世达赖喇嘛丹增嘉措, 观世音菩萨达赖喇嘛]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [格鲁派]
+  manifestation_of: [观世音菩萨]
+  attainments: []
+  note: "第十七胜生周开始时53岁；生肖木猪；文中称观世音菩萨化身"
+  appearances: [197]
+
+E_231:
+  name: 根嘎陈列旺嘉
+  aliases: [萨迦卓玛颇章比达赤根嘎陈列旺嘉]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [萨迦派]
+  manifestation_of: []
+  attainments: []
+  note: "第十七胜生周开始时43岁；生肖木鸡"
+  appearances: [198]
+
+# ==================== 人物 — 教史依据段 ====================
+
+E_232:
+  name: 雅德德增钦绕嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "著《教史问答宝库》"
+  appearances: [232]
+
+E_233:
+  name: 阿旺罗珠
+  aliases: [大智者阿旺罗珠]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "著《前译法源·令智者欢喜》"
+  appearances: [233]
+
+E_234:
+  name: 噶托班智达杰美才旺秋哲
+  aliases: [杰美才旺秋哲]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "著《续集目录·天鼓妙语》"
+  appearances: [236]
+
+# ==================== 人物 — 著者段 ====================
+
+E_235:
+  name: 晋札益西多吉
+  aliases: [敦珠活佛, 海生欢喜韶华语日, 无畏智慧金刚善妙胜部, 二世敦珠法王]
+  type: 人物.法师
+  specialty: [上师, 伏藏师]
+  origin: 波哦绒地区
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "本教史著者；近五十八岁第十六胜生周水虎年撰写完毕；自称释迦居士密咒师"
+  appearances: [296, 298]
+
+E_236:
+  name: 秋札嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: 不丹
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "首次出书者；不丹绿树园的密咒师"
+  appearances: [303]
+
+# ==================== 人物 — 一世敦珠法王自传 ====================
+
+E_300:
+  name: 一世敦珠法王
+  aliases: [持明降魔金刚, 敦珠如巴匝, 敦珠札波匝, 久尼丹多吉]
+  type: 人物.法师
+  specialty: [伏藏师, 持藏, 瑜伽士, 大成就者]
+  origin: 札甲空
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  additional_types: []
+  attainments: []
+  note: "切穹译师转世；莲师事业代表；十五胜生周羊年出生于小容传努氏族；自传主人公"
+  appearances: [319, 415, 444, 467, 487, 929]
+
+E_301:
+  name: 切穹译师
+  aliases: [切穹罗匝瓦]
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "莲花生大士二十五大弟子之一；一世敦珠法王前世"
+  appearances: [319, 443, 572, 785]
+
+E_302:
+  name: 舍利子
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "具力金刚在释迦佛时代化现为声闻舍利子"
+  appearances: [442]
+
+E_303:
+  name: 持明吽钦嘎绕
+  aliases: [吽钦嘎绕]
+  type: 人物.法师
+  specialty: [持藏]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "八大持明之一；具力金刚化身之一"
+  appearances: [442]
+
+E_304:
+  name: 噶土单巴德香
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "具力金刚化身之一"
+  appearances: [443]
+
+E_305:
+  name: 那巴黑巴秋炯
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: 卓万
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "具力金刚化身之一"
+  appearances: [443]
+
+E_306:
+  name: 益西措嘉
+  aliases: [空行母益西措嘉, 智慧空行措嘉, 密主母法界自在益西措嘉]
+  type: 人物.法师
+  specialty: [瑜伽士, 空行母]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  additional_types: [圣众.大乘.空行]
+  additional_types_source: text
+  attainments: []
+  note: "自传中请求莲师派遣事业使者；以空行母和人物双模式出现"
+  appearances: [460]
+
+E_307:
+  name: 阿丹
+  aliases: [父亲阿丹]
+  type: 人物.其他
+  specialty: []
+  origin: 札甲空
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "一世敦珠法王之父；属滚嘉传宗接代的后种族"
+  appearances: [414]
+
+E_308:
+  name: 哦奏
+  aliases: [母亲哦奏]
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "一世敦珠法王之母；属木擦噶氏族"
+  appearances: [415]
+
+E_309:
+  name: 晋美上师
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王出生时迎请赐长寿灌顶；三岁时再传长寿灌顶及摄寿仪轨；前世为降魔金刚的叔叔擦普古钦巴"
+  appearances: [489, 533, 536]
+
+E_310:
+  name: 嘉扬上师
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: [除盖障菩萨]
+  attainments: []
+  note: "阿阇黎南卡酿波的转世；除盖障菩萨化身；莲师指定的五世有缘上师；敦珠法王十一岁起拜其学文字"
+  appearances: [770, 811, 834]
+
+E_311:
+  name: 南卡酿波
+  aliases: [阿阇黎南卡酿波]
+  type: 人物.法师
+  specialty: [阿阇黎]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "嘉扬上师为其转世；努氏族中受生为人的大圣者之一"
+  appearances: [381, 770]
+
+E_312:
+  name: 桑吉益西
+  aliases: []
+  type: 人物.法师
+  specialty: [上师, 大成就者]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: [大圣者果位]
+  note: "努氏族中安住大圣者果位者；莲花生大士心子"
+  appearances: [380]
+
+E_313:
+  name: 那凑扬珠活佛
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "光明大圆满教法法主；朗珠滚秋炯内亲自降临于世"
+  appearances: [838]
+
+E_314:
+  name: 朗珠滚秋炯内
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "那凑扬珠活佛为其再来"
+  appearances: [839]
+
+E_315:
+  name: 阿那
+  aliases: [玛万仁钦]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "莲花生大士事业教主玛万仁钦的真实化身；弘扬佛法；被涅莫那波切鬼魔制造违缘使寿命缩短"
+  appearances: [839, 841]
+
+E_316:
+  name: 灿桑上师
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王产生恐惧后请来做断法灌顶沐浴仪轨的上师"
+  appearances: [866]
+
+E_317:
+  name: 晋嘎活佛
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王在十四岁时将护法神的话转告给他；闭关修行天法中的威猛莲师金刚橛合修法"
+  appearances: [924, 931]
+
+E_318:
+  name: 法王如意宝晋美彭措
+  aliases: [晋美彭措]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "前言中提及；源于一世敦珠法王建起喇荣五明佛学院"
+  appearances: [326]
+
+# ==================== 人物 — 自传种族源流 ====================
+
+E_319:
+  name: 容塔
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: 容钦
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "住在容钦被人称为容塔；其名逐渐成为氏族名称"
+  appearances: [385]
+
+E_320:
+  name: 塔波嘉灿
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [噶当派]
+  manifestation_of: []
+  attainments: [成就]
+  note: "小传中依靠玛仓噶当派优良法规获得成就"
+  appearances: [402]
+
+E_321:
+  name: 格波嘉灿
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "教法证法的教主"
+  appearances: [402]
+
+E_322:
+  name: 释迦嘉灿
+  aliases: [塔格释迦嘉灿]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [二次第证悟]
+  note: "二次第证悟卓越；三大嘉灿之一"
+  appearances: [402]
+
+E_323:
+  name: 德罗
+  aliases: [小德嘎, 阿德]
+  type: 人物.其他
+  specialty: []
+  origin: 色达
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在色达敦酿古安居；生三子华札、滚嘉、达吉"
+  appearances: [407, 408]
+
+E_324:
+  name: 华札
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "德罗长子；到多科下方，氏族称甲空"
+  appearances: [408, 412]
+
+E_325:
+  name: 滚嘉
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "德罗次子；在多科上方居住种族名色古；后延续则多地带；敦珠法王父为其后裔"
+  appearances: [408, 410, 414]
+
+E_326:
+  name: 达吉
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "德罗小子；住在自己地方称甲木热"
+  appearances: [409, 414]
+
+# ==================== 非人 ====================
+
+E_400:
+  name: 颦眉天女
+  aliases: []
+  type: 非人.护法(世间)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "身色湛蓝盛怒女人形象；传至尊度母教言给敦珠法王"
+  appearances: [680]
+
+E_401:
+  name: 金刚巴新
+  aliases: []
+  type: 非人.天部
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "敦珠法王六岁时觉受中空行母众会首领；在色达东让拉卡坐于湿人头座上"
+  appearances: [688]
+
+E_402:
+  name: 赞古卓列神
+  aliases: [阿拉达孜]
+  type: 非人.护法(世间)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "身色湛蓝骑铁马；外是阿拉达孜神山，内即赞古卓列神，密即护法九娘舅；莲师曾在也巴红岩处给予灌顶"
+  appearances: [572]
+
+E_403:
+  name: 红黑现巴药叉
+  aliases: [红黑现巴夜叉, 现巴夜叉, 现巴药叉]
+  type: 非人.护法(世间)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "身色鲜红骑红马；多生累世与敦珠法王不离；护法；后续出现保护敦珠法王"
+  appearances: [648, 888, 938, 951]
+
+E_404:
+  name: 单坚多吉列巴
+  aliases: []
+  type: 非人.护法(世间)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "身着居士装束头戴萨帽骑白狮子；告知敦珠法王有缘上师将来"
+  appearances: [779]
+
+E_405:
+  name: 涅莫那波切
+  aliases: []
+  type: 非人.护法(世间)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "阿那以前降伏的对象；依发邪愿力量转生为尼隆鬼魔；对阿那制造违缘使其寿命缩短"
+  appearances: [840]
+
+E_406:
+  name: 黑玛囊护法神
+  aliases: []
+  type: 非人.护法(世间)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "嘉扬上师所修护法；在梦中以黑色忿怒圣尊形象出现教导敦珠法王"
+  appearances: [892]
+
+# ==================== 经典 ====================
+
+E_500:
+  name: 《时轮金刚续》
+  aliases: [吉祥第一殊胜之佛《时轮金刚续》, 吉祥第一佛]
+  type: 经典.密续(远传)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "年表固定年月之重要依据；佛八十一岁于吉祥米积塔前宣说"
+  appearances: [25, 49, 94]
+
+E_501:
+  name: 《时轮金刚续释》
+  aliases: []
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "火兔年始至西藏；第一胜生周从此算起"
+  appearances: [94]
+
+E_502:
+  name: 《弥勒授记经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "塔尔译师所翻译；说佛法住世五千年"
+  appearances: [13]
+
+E_503:
+  name: 《摧破论》
+  aliases: []
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "世亲论师著；说佛法住世五千年"
+  appearances: [13]
+
+E_504:
+  name: 《杂事律》
+  aliases: []
+  type: 经典.律
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说佛法正教期名相期各住五百年共一千年"
+  appearances: [7]
+
+E_505:
+  name: 《金色传》
+  aliases: []
+  type: 经典.史籍
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说佛法正教期名相期各住五百年共一千年"
+  appearances: [7]
+
+E_506:
+  name: 《贤劫经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说佛法正教期名相期各住五百年"
+  appearances: [7]
+
+E_507:
+  name: 《大云经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说佛法正教期名相期各住五百年"
+  appearances: [7]
+
+E_508:
+  name: 《无尽慧请问经释》
+  aliases: []
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说佛法正教期名相期各住五百年"
+  appearances: [8]
+
+E_509:
+  name: 《俱舍论释》
+  aliases: []
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说佛法正教期名相期各住五百年"
+  appearances: [8]
+
+E_510:
+  name: 《大悲白莲经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说正教期千年名相期五百年"
+  appearances: [9]
+
+E_511:
+  name: 《法性本体不动显现经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说佛法住世二千五百年"
+  appearances: [10]
+
+E_512:
+  name: 《月藏菩萨请问经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "多数说两千年也有说三千年"
+  appearances: [11]
+
+E_513:
+  name: 《十万论疏》
+  aliases: []
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "切德著；说佛法住世五千年"
+  appearances: [13]
+
+E_514:
+  name: 《海龙王请问经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说正法在大非人、龙王大海处、三十三天、兜率天千佛教法不圆满间不隐没"
+  appearances: [15]
+
+E_515:
+  name: 《金光明经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大乘了义第三转法轮中的经典；说佛陀不涅槃法亦无隐没"
+  appearances: [17]
+
+E_516:
+  name: 《金刚萨埵幻化网》
+  aliases: []
+  type: 经典.密续(远传)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "无上密；说佛陀不涅槃法亦无隐没"
+  appearances: [18]
+
+E_517:
+  name: 《如意庄严续》
+  aliases: []
+  type: 经典.密续(远传)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "说佛不间断幻解脱法无没"
+  appearances: [19]
+
+E_518:
+  name: 《应成根本续》
+  aliases: []
+  type: 经典.密续(远传)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大圆满续；授记嘎绕多吉等次第受持密法"
+  appearances: [218]
+
+E_519:
+  name: 《佛一子续》
+  aliases: []
+  type: 经典.密续(远传)
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "人寿十岁后密法所化圆满后连同此续次第飞到其他刹土"
+  appearances: [222]
+
+E_520:
+  name: 《母子心滴》
+  aliases: []
+  type: 经典.密续(岩藏)
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "全知龙钦巴著；历史总纲"
+  appearances: [231]
+
+E_521:
+  name: 《白莲言教》
+  aliases: []
+  type: 经典.论
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三嘉措所造历算论典"
+  appearances: [139]
+
+E_522:
+  name: 《青史》
+  aliases: []
+  type: 经典.史籍
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "古译师云讷华著"
+  appearances: [233]
+
+E_523:
+  name: 《真实名经》
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "金刚巴新指示敦珠法王需念诵一万遍"
+  appearances: [693]
+
+E_524:
+  name: 《天法》
+  aliases: []
+  type: 经典.密续(岩藏)
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "晋嘎活佛修的威猛莲师金刚橛合修法出自《天法》"
+  appearances: [932]
+
+# ==================== 教法 ====================
+
+E_600:
+  name: 四谛法轮
+  aliases: [第一转法轮]
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "义成太子成佛后于鹿野苑第一转四谛法轮"
+  appearances: [41]
+
+E_601:
+  name: 般若波罗蜜多法轮
+  aliases: [无相法轮, 第二转法轮]
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在灵鹫山中转无相般若波罗蜜多法轮"
+  appearances: [42]
+
+E_602:
+  name: 了义精藏乘
+  aliases: [第三转法轮, 不退转了义精藏乘]
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在玛拉雅及拘尸那城等各地转"
+  appearances: [43]
+
+E_603:
+  name: 大圆满
+  aliases: [光明大圆满, 大圆满法]
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "密宗大圆满教住世期在文中讨论；自传中赤诚滚布金刚巴新所说"
+  appearances: [213, 457, 727]
+
+E_604:
+  name: 噶当经论
+  aliases: []
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: [噶当派]
+  manifestation_of: []
+  attainments: []
+  note: "宗喀巴广泛弘扬噶当经论"
+  appearances: [136]
+
+E_605:
+  name: 香巴金法
+  aliases: []
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "成就者穹波将香巴金法引到西藏"
+  appearances: [104]
+
+E_606:
+  name: 金刚橛法
+  aliases: [金刚橛]
+  type: 教法.修法元素
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "自传中空行母指示闭关修金刚橛法可扭转灾害"
+  appearances: [903, 928]
+
+# ==================== 教派 ====================
+
+E_700:
+  name: 噶当派
+  aliases: []
+  type: 教派.藏传宗派
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "阿底峡师徒法脉中对受持传承者取名；第一胜生周中最初形成"
+  appearances: [100, 136]
+
+E_701:
+  name: 萨迦派
+  aliases: []
+  type: 教派.藏传宗派
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "法取地名从古热寺得名；第一胜生周水牛年形成"
+  appearances: [104]
+
+E_702:
+  name: 噶举派
+  aliases: []
+  type: 教派.藏传宗派
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "玛尔巴译师将噶举教法引到西藏；达波瓦弟子分出四大八小噶举派"
+  appearances: [105, 111]
+
+E_703:
+  name: 格鲁派
+  aliases: []
+  type: 教派.藏传宗派
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "宗喀巴建噶丹寺后法脉取寺院名称出现；第七胜生周"
+  appearances: [138]
+
+E_704:
+  name: 觉囊派
+  aliases: []
+  type: 教派.藏传宗派
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "遍知多波巴所属教派"
+  appearances: [129]
+
+E_705:
+  name: 宁玛派
+  aliases: [前译, 旧密]
+  type: 教派.藏传宗派
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "本教史主题；昆勒旺仲瓦至昆如西绕赤诚十代传承为旧密"
+  appearances: [101, 170, 260]
+
+# ==================== 寺院 ====================
+
+E_800:
+  name: 大昭寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: 西藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "松赞干布过25年建起大昭寺等"
+  appearances: [81]
+
+E_801:
+  name: 桑耶寺
+  aliases: [吉祥桑耶寺]
+  type: 寺院.寺庙
+  specialty: []
+  origin: 西藏
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "赤松德赞时莲师建造"
+  appearances: [83]
+
+E_802:
+  name: 古热寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: 西藏
+  sect_affiliation: [萨迦派]
+  manifestation_of: []
+  attainments: []
+  note: "昆滚秋嘉波在帮波山旁嘎卫建起；萨迦派得名由来"
+  appearances: [103]
+
+E_803:
+  name: 噶丹寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: 西藏
+  sect_affiliation: [格鲁派]
+  manifestation_of: []
+  attainments: []
+  note: "宗喀巴于第七胜生周土牛年建起；格鲁派得名由来"
+  appearances: [137]
+
+E_804:
+  name: 吉祥米积塔
+  aliases: []
+  type: 寺院.道场
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛八十一岁于南方此塔前宣说《时轮金刚续》"
+  appearances: [49]
+
+E_805:
+  name: 喇荣五明佛学院
+  aliases: [喇荣]
+  type: 寺院.道场
+  specialty: []
+  origin: 色达
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "前言中提及；法王如意宝建起；源于一世敦珠法王在喇荣山谷建立的道场"
+  appearances: [313, 322, 326]
+
+E_806:
+  name: 尼多色绕寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王十四岁时搬迁到该寺左边大河对面"
+  appearances: [934]
+
+# ==================== 地名 ====================
+
+E_850:
+  name: 蓝毗尼花园
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "释迦佛降生之地"
+  appearances: [33]
+
+E_851:
+  name: 鹿野苑
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛第一转四谛法轮之地"
+  appearances: [41]
+
+E_852:
+  name: 灵鹫山
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛中转般若波罗蜜多法轮之地"
+  appearances: [42]
+
+E_853:
+  name: 玛拉雅
+  aliases: [玛拉雅山]
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛转第三转法轮之地；密主金刚手于有天铁的玛拉雅山顶为五圣贤转法轮"
+  appearances: [43, 63]
+
+E_854:
+  name: 拘尸那城
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛涅槃之地；也是第三转法轮之地之一"
+  appearances: [43, 50]
+
+E_855:
+  name: 斯德海岛
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "莲花生大士降生之地"
+  appearances: [61]
+
+E_856:
+  name: 萨霍绕
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "续的经函落到萨霍绕国王匝手中；教史完稿于印度萨霍绕那布热大乐城"
+  appearances: [64, 301]
+
+E_857:
+  name: 妙拂洲
+  aliases: []
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "莲花生大士木猴年前往之处；敦珠如巴匝亦前往妙拂洲莲花光宫殿"
+  appearances: [86, 446]
+
+E_858:
+  name: 香巴拉
+  aliases: []
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "未来阳木猴年香巴拉主尊热丹札波嘉库坚及幻化军队来到雪域"
+  appearances: [59, 210]
+
+E_859:
+  name: 西藏
+  aliases: [藏地, 雪域]
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "贯穿全文的地名"
+  appearances: [27, 72, 75, 83, 122, 164, 180, 186, 204]
+
+E_860:
+  name: 札甲空
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "位于木雅热冈中央；康区二十五大圣地之一；努氏族人定居之地"
+  appearances: [391, 394, 412]
+
+E_861:
+  name: 色达
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "德罗安居之地色达敦酿古；色达河流经之地"
+  appearances: [406, 407]
+
+E_862:
+  name: 波哦绒地区
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "光明天子夏赤赞普所统治；著者晋札益西多吉出生之地"
+  appearances: [294]
+
+E_863:
+  name: 菩提树
+  aliases: [菩提树下]
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "释迦佛35岁前往菩提树下成佛"
+  appearances: [36]
+
+E_864:
+  name: 邬金
+  aliases: [邬金境内, 西方邬金]
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "莲花生大士之故乡；自传中空行母带敦珠法王到邬金清净空行刹土"
+  appearances: [219, 464, 541]
+
+# ==================== 集合 ====================
+
+E_900:
+  name: 五圣贤
+  aliases: []
+  type: 集合.人物集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  cardinality: 5
+  members: []
+  attainments: []
+  note: "密主金刚手菩萨于玛拉雅山顶为五圣贤转法轮"
+  appearances: [63]
+
+E_901:
+  name: 预试七人
+  aliases: []
+  type: 集合.弟子集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  cardinality: 7
+  members: []
+  attainments: []
+  note: "火羊年出家"
+  appearances: [84]
+
+E_902:
+  name: 四大八小噶举派
+  aliases: []
+  type: 集合.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: [噶举派]
+  manifestation_of: []
+  cardinality: 12
+  members: []
+  attainments: []
+  note: "达波瓦弟子康巴三人等次第分出"
+  appearances: [111]
+
+E_903:
+  name: 莲师二十五大弟子
+  aliases: [二十五位大弟子]
+  type: 集合.弟子集合
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  cardinality: 25
+  members: [切穹译师]
+  attainments: []
+  note: "一世敦珠法王为其中切穹译师的转世"
+  appearances: [319]
+
+E_904:
+  name: 六氏族
+  aliases: [西藏古代六氏族]
+  type: 集合.人物集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  cardinality: 6
+  members: []
+  attainments: []
+  note: "噶、东、柱、札、瓦、金六大氏族"
+  appearances: [368, 370]
+
+E_905:
+  name: 三大嘉灿
+  aliases: []
+  type: 集合.人物集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  cardinality: 3
+  members: [塔波嘉灿, 格波嘉灿, 释迦嘉灿]
+  attainments: []
+  note: "小容传努氏中三大嘉灿"
+  appearances: [403]
+
+# ==================== 人物 — 其他年表人物 ====================
+
+E_950:
+  name: 世亲
+  aliases: [世亲论师]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "著《摧破论》说佛法住世五千年"
+  appearances: [13]
+
+E_951:
+  name: 塔尔译师
+  aliases: []
+  type: 人物.法师
+  specialty: [译师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "翻译《弥勒授记经》"
+  appearances: [12]
+
+E_952:
+  name: 戒护
+  aliases: [阿阇黎戒护]
+  type: 人物.法师
+  specialty: [阿阇黎]
+  origin: 印度
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛于昴宿月十月初八中夜趋入法身的说法出自此师与释迦西日"
+  appearances: [52]
+
+E_953:
+  name: 释迦西日
+  aliases: [大班智达释迦西日]
+  type: 人物.法师
+  specialty: [班智达]
+  origin: 印度
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "与戒护同持佛涅槃异说"
+  appearances: [52]
+
+E_954:
+  name: 索达吉堪布
+  aliases: []
+  type: 人物.法师
+  specialty: [堪布, 译师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "一世敦珠法王自传译者"
+  appearances: [355]

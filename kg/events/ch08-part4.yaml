@@ -1,0 +1,1115 @@
+# ============================================================
+# 知识图谱事件抽取 — 第八品 佛教年表与自传 Part 4 (lines 2881-3824)
+# 覆盖范围: 敦珠林巴自传 — 四十五岁至六十二岁 + 跋文
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: kg/entities/ch08-part4.yaml
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 四十四岁尾声 (lines 2881-2894) ====================
+
+- event_id: EV_8400
+  type: 授记
+  title: 空行母授记敦珠林巴带小儿子拜华智仁波切
+  participants:
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "六月初九的晚上"
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "明天带着小儿子到华智仁波切面前，请求一些传承，会得到。"
+  description: 空行母夜间授记敦珠林巴次日带小儿子至华智仁波切前求传承。
+
+- event_id: EV_8401
+  type: 传法
+  title: 华智仁波切为敦珠林巴传授多部论典引导传承
+  participants:
+    - entity: 华智仁波切
+      role: 传法者
+    - entity: 敦珠林巴
+      role: 受法者
+    - entity: 智悲芽
+      role: 受法者
+  location: null
+  time_info:
+    text: "初十当天起"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "上师完整宣讲《入行论》、《现观庄严论》、《入中论》、《密藏续》等许多引导传承，我们都得到了。"
+  description: 华智仁波切完整宣讲《入行论》《现观庄严论》《入中论》《密藏续》等论典引导传承，敦珠林巴与智悲芽得到传承。
+
+- event_id: EV_8402
+  type: 神变
+  title: 红黑现巴夜叉护法神使大雪停止
+  participants:
+    - entity: 红黑现巴夜叉护法神
+      role: 主体
+    - entity: 敦珠林巴
+      role: 受益者
+  location: null
+  time_info:
+    text: "十月初十回故土途中"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "你们不要害怕，不要痛苦，我使大雪不再下。从那时起，当年整个冬天都不曾下雪。"
+  description: 敦珠林巴师徒途中遇大雪，梦中红黑现巴夜叉护法神承诺止雪，此后整个冬天果然无雪。
+
+# ==================== 四十五岁 (lines 2896-2916) ====================
+
+- event_id: EV_8403
+  type: 降伏非人
+  title: 敦珠林巴以伏藏法诅咒仇敌秋古拉丹
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 秋古拉丹
+      role: 受害者
+  location: null
+  time_info:
+    text: "四十五岁，十七的黄昏"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我用自己伏藏品的《曜护法神法》诅咒，结果在当天晚上，仇敌家降下凶曜……那个仇人被关在官方的监牢里饱尝了痛苦。"
+  description: 秋古拉丹抢劫被释后报复敦珠林巴赶走牲口，敦珠林巴以伏藏品《曜护法神法》诅咒，仇敌家降凶曜、牲畜丧命、田地受冰雹毁坏，秋古拉丹最终毁于一旦。
+
+# ==================== 四十六岁 (lines 2918-2942) ====================
+
+- event_id: EV_8404
+  type: 神变
+  title: 玛多土地神永仲嘉则阻止敦珠林巴离开
+  participants:
+    - entity: 永仲嘉则
+      role: 主体
+    - entity: 敦珠林巴
+      role: 被阻者
+  location: 玛多
+  time_info:
+    text: "四十六岁"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "玛多的永仲嘉则（土地神）不想让我走，使所有马匹都瘫卧不起，无法行进。"
+  description: 敦珠林巴欲去色达喇荣山沟，玛多土地神永仲嘉则使马匹瘫卧阻止其离开，后亲自现身请求不要离开。
+
+- event_id: EV_8405
+  type: 降伏非人
+  title: 敦珠林巴降伏喇荣的凶龙
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+  location: 喇荣
+  time_info:
+    text: "五月初三"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "住着一条凶悍的龙……我一把抓住他的脖子，使劲拧。他吓得魂飞魄散，保证说：'放了我，我发誓不陷害你们。'"
+  description: 敦珠林巴到达喇荣后遭遇凶悍龙神阻挠，以神力降伏之使其发誓不再害人，龙跳入泉水中。
+
+# ==================== 四十七岁 (lines 2944-2977) ====================
+
+- event_id: EV_8406
+  type: 降伏非人
+  title: 敦珠林巴降伏紫青草原树神母
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 紫青树神母
+      role: 被降伏者
+  location: 色达
+  time_info:
+    text: "四十七岁，三月十三"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我一把抓住她的右手，夺过粗牛毛带子，将金刚橛插入她的心脏……她就是色达紫青草原的树神母。"
+  description: 黑色女人树神母声称主宰达尼至罗宗地方牲畜命脉，欲驱敦珠林巴离开并以牛毛带子打击，敦珠林巴将金刚橛插入其心脏降伏之。
+
+- event_id: EV_8407
+  type: 神变
+  title: 敦珠林巴呼唤永仲嘉则名字降雪验相
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 永仲嘉则
+      role: 到来者
+  location: 色达
+  time_info:
+    text: "六月初二"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我到高高的山顶，喊了三遍'永仲嘉则'，当时万里无云、蓝蓝的晴空中飘落星星点点的雪粒，整个大地变成了银白色"
+  description: 敦珠林巴在山顶三呼永仲嘉则之名，晴空降雪，验证土地神已到来。
+
+- event_id: EV_8408
+  type: 授记
+  title: 空行母预言四十八岁大寿障及修行要诀
+  participants:
+    - entity: 益西措嘉
+      role: 授记者（以女孩形态）
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "四十七岁六月之前"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "尊敬的大德，你四十八岁会有一个大寿障，难以消除……出生东族之中者，名字末尾有卓字……此话切切记心中。"
+  description: 自称益西措嘉的五色衣女子授记敦珠林巴四十八岁有大寿障，指示依东族卓字者作手印消除，并预言八十年后正法消逝、边陲邪教遍地。
+
+# ==================== 四十八岁 (lines 2979-2998) ====================
+
+- event_id: EV_8409
+  type: 传法
+  title: 敦珠林巴传授断魔和大圆满引导予百名弟子
+  participants:
+    - entity: 敦珠林巴
+      role: 传法者
+  location: null
+  time_info:
+    text: "四十八岁冬天"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我给一百名左右的弟子传授断魔和大圆满引导。"
+  description: 敦珠林巴四十八岁冬为约一百名弟子传授断魔和大圆满引导法。
+
+- event_id: EV_8410
+  type: 授记
+  title: 遍行能明空行母授记弟子修行前途
+  participants:
+    - entity: 遍行能明空行母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "十一月初十的晚上"
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "有班玛名称的人，实修切合要点……有敦思名字的大德……获得大虹身……"
+  description: 遍行能明空行母授记敦珠林巴诸弟子的修行前途——班玛、敦思、嘉措、珠、绕等名字的弟子若精进修行可获虹身等成就，并告诫恶浊之时须严守秘密。
+
+- event_id: EV_8411
+  type: 授记
+  title: 大密藏空行母授记须以诛法降伏树神母
+  participants:
+    - entity: 大密藏空行母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "十二月十六"
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "如果没有依靠诛法降伏她，以息业无法指使，到了猴年，会出现预兆，要集中精力运用诛业。"
+  description: 大密藏空行母告知紫青树神母与四眷属之事，须以诛法降伏而非息业。
+
+# ==================== 四十九岁 (lines 3000-3056) ====================
+
+- event_id: EV_8412
+  type: 神变
+  title: 敦珠林巴净相游历杨柳刹土面见忿怒本尊
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+  location: 杨柳刹土
+  time_info:
+    text: "四十九岁，三月初六的晚上"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "一位肌肤红色、穿着红锦缎衣裳的空行母牵着我的右手说：'我们去杨柳刹土去观赏好吗？'"
+  description: 红色空行母牵敦珠林巴手飞行前往杨柳刹土，面见深蓝色三头六臂忿怒本尊。本尊授灌顶发愿，称大成就者萨绕哈为其化身。
+
+- event_id: EV_8413
+  type: 灌顶
+  title: 杨柳刹土寂静本尊授灌顶并教授伏藏要义
+  participants:
+    - entity: 敦珠林巴
+      role: 受灌者
+  location: 杨柳刹土
+  time_info:
+    text: "同一净相中"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "愿你圆满我修法的灌顶传承……甚深伏藏要迅速立成文字……你在六十二岁以后要切合要点而修行。"
+  description: 杨柳刹土上方净土的寂静本尊授予敦珠林巴灌顶传承，教导伏藏需迅速立文字传讲，并指示六十二岁后修顿超，修行则可住世八十岁。
+
+# ==================== 五十岁 (lines 3058-3109) ====================
+
+- event_id: EV_8414
+  type: 降伏非人
+  title: 敦珠林巴降伏紫青树神母及其三眷属
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 紫青树神母
+      role: 被降伏者
+    - entity: 万索
+      role: 助手
+  location: null
+  time_info:
+    text: "五十岁，一月至四月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "到那片树林中，抛撒驱魔芥子，射出许多火箭，摧毁妖岩，斩断妖树……降伏了她的三个树神母眷属。"
+  description: 紫青树神母违背诺言入敦珠林巴明妃女儿心中使之疯癫，晋美上师梦中确认须用诛法。敦珠林巴以驱魔芥子等降伏三个树神母眷属，派万索以忿怒空行火施降伏第四个，又在主树神母头上插入六十次金刚橛，使其逃走，患者痊愈。
+
+- event_id: EV_8415
+  type: 弘法
+  title: 敦珠林巴在多耶昂巴山谷为百名弟子传法
+  participants:
+    - entity: 敦珠林巴
+      role: 传法者
+  location: 多耶昂巴山谷
+  time_info:
+    text: "五十岁五月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "五月里我去那里居住下来，为云集于那里的一百名左右弟子讲经说法。"
+  description: 依持密藏空行母指示，敦珠林巴五月去多耶昂巴山谷居住，为约一百名弟子讲经说法。
+
+- event_id: EV_8416
+  type: 授记
+  title: 乐源空行母授记嘉札宗钦佛法兴盛及金刚手化身投生
+  participants:
+    - entity: 乐源空行母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "八月初十的晚上"
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "你如果在此久留，佛法兴盛，财源丰富……明年，虚空藏菩萨将诞生为你的儿子，对弘法利生大有裨益。"
+  description: 乐源空行母授记敦珠林巴若久留嘉札宗钦佛法兴盛；告知东勒曼天女处有殊胜佛塔；预言金刚手化身（虚空藏菩萨）将投生为其子。
+
+- event_id: EV_8417
+  type: 伏藏开取
+  title: 敦珠林巴从东勒曼天女处获得金刚橛和七佛遗塔舍利
+  participants:
+    - entity: 敦珠林巴
+      role: 受领者
+    - entity: 东勒曼
+      role: 交付者
+  location: null
+  time_info:
+    text: "九月初十"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "这是邬金莲花生大士交付的一百零八个橛中的一个，是指定交予你的……这是七佛遗塔中的舍利"
+  description: 敦珠林巴在东方泥像堂旁呼唤东勒曼天女，天女现身交付莲师所藏金刚橛一个及七佛遗塔舍利（原本交付伏藏大师大乐洲但其缘起破坏未取到）。
+
+# ==================== 五十一岁 (lines 3111-3130) ====================
+
+- event_id: EV_8418
+  type: 神变
+  title: 切藏军兵攻击敦珠林巴帐篷未中
+  participants:
+    - entity: 敦珠林巴
+      role: 被攻击者
+  location: 涅革章俄
+  time_info:
+    text: "五十一岁，四月十五"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "切藏地方大约一百名军兵来到，他们向我的帐篷大概射了二十个火箭，可是没有中到帐篷，全部落到草原上了。"
+  description: 切藏约百名军兵向敦珠林巴帐篷射约二十支火箭但全部未中；敦珠林巴念诵真言诅咒，军兵撤退后领导内部挑拨者不到一月身亡，将领军人多数不过一年丧命。
+
+- event_id: EV_8419
+  type: 降伏非人
+  title: 大夜叉护法神击退切藏土地神人马
+  participants:
+    - entity: 红黑现巴夜叉护法神
+      role: 主体
+    - entity: 拉隆勒卡
+      role: 被击退者
+  location: 喇荣
+  time_info:
+    text: "九月到十一月间"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "大夜叉护法神挥舞宝剑宰了五匹人马，如同鹞鹰追小鸡一样把剩余的七个赶回到了他们自己的地方。"
+  description: 敦珠林巴在喇荣修本尊法期间，切藏土地神拉隆勒卡十二匹人马来犯，大夜叉护法神挥剑斩五匹并驱退余七。
+
+- event_id: EV_8420
+  type: 神变
+  title: 敦珠林巴之子拉钦多杰嘉波出生即能说话念咒
+  participants:
+    - entity: 拉钦多杰嘉波
+      role: 主体
+    - entity: 敦珠林巴
+      role: 父亲
+  location: null
+  time_info:
+    text: "五十一岁五月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "出生后二十天他就能叫妈妈，并会念诵六字真言，我给他取名叫拉钦多杰嘉波。"
+  description: 敦珠林巴之子出生二十天即能叫妈妈并念六字真言，取名拉钦多杰嘉波。
+
+# ==================== 五十二岁 (lines 3132-3156) ====================
+
+- event_id: EV_8421
+  type: 神变
+  title: 敦珠林巴召回紫青树神母
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 紫青树神母
+      role: 被召回者
+  location: 紫青草原
+  time_info:
+    text: "五十二岁六月二十六"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "连着喊了三遍：'紫青树神母，你上来吧！上来吧！'结果……伴着巨大的响声，刮起一阵黑黑的旋风"
+  description: 应瓦述官员请求，敦珠林巴在山顶连喊三遍召回紫青树神母，众人共睹旋风征兆。
+
+- event_id: EV_8422
+  type: 灌顶
+  title: 邬金得达嘉波授予敦珠林巴阿巴绕则修法灌顶传承
+  participants:
+    - entity: 邬金得达嘉波
+      role: 传法者
+    - entity: 敦珠林巴
+      role: 受灌者
+  location: null
+  time_info:
+    text: "五十二岁九月初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我是财神阿巴绕则，与大夜叉护法神、金刚手无二无别……说罢就完整授予了《阿巴绕则修法》的灌顶和传承"
+  description: 敦珠林巴在光明境界中面见邬金得达嘉波（即财神阿巴绕则），获得《阿巴绕则修法》完整灌顶传承。
+
+# ==================== 五十三岁 (lines 3158-3176) ====================
+
+- event_id: EV_8423
+  type: 授记
+  title: 嘉扬上师解释空行不悦之因
+  participants:
+    - entity: 嘉扬
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十三岁十一月二十四晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "大圆满是一切佛母、空行的殊妙心髓，如果对破誓言、不实修……广传，那就是佛母、空行心情不悦的因"
+  description: 敦珠林巴梦中面见已故上师嘉扬，询问空行不悦之因。上师解释大圆满若对不实修、破誓言者广传则致空行不悦，嘱勤念百字明忏悔净罪。
+
+# ==================== 五十四岁 (lines 3178-3268) ====================
+
+- event_id: EV_8424
+  type: 授记
+  title: 具法眼空行母授记北方多库有调化刹土
+  participants:
+    - entity: 具法眼空行母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十四岁五月初十夜晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "北方多库地方，有你所调化的刹土，也有一些财产受用……边地之人临近来到中土，佛教、众生快乐的太阳被遮蔽"
+  description: 具法眼空行母授记北方多库有敦珠林巴调化之刹土，并预言边地之人入中土、佛教太阳将被遮蔽。
+
+- event_id: EV_8425
+  type: 授记
+  title: 红黑现巴夜叉护法神讲说肉食供养甚深义
+  participants:
+    - entity: 红黑现巴夜叉护法神
+      role: 主体
+    - entity: 敦珠林巴
+      role: 受教者
+  location: 哦穹达西
+  time_info:
+    text: "五十四岁六月初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.75
+  source_quote: "上至怙主勒丹，下至独角鬼塔嘉，没有不喜欢肉食的……由您们意识所产生的我们，也喜爱您们所喜爱的一切饮食。"
+  description: 敦珠林巴梦中面见红黑现巴夜叉护法神，护法神详述五毒相续修行平庸者所修天尊皆贪血肉之深义，并告知华给活佛将再度转世。
+
+- event_id: EV_8426
+  type: 降伏非人
+  title: 敦珠林巴降伏梦中持刀老僧鬼
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+  location: null
+  time_info:
+    text: "五十四岁某月十九晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我右手擒住他，他的刀掉到地上……将他的头平均划成四瓣，吮吸他的脑髓。"
+  description: 敦珠林巴梦中遭故去老僧人鬼威胁要杀他，经展示神变后敦珠林巴将其降伏，以天铁金刚橛镇压。
+
+- event_id: EV_8427
+  type: 降伏非人
+  title: 大夜叉护法神斩断嘎桑多吉所派红骑士之弓
+  participants:
+    - entity: 红黑现巴夜叉护法神
+      role: 护卫者
+    - entity: 敦珠林巴
+      role: 受护者
+    - entity: 嘎桑多吉
+      role: 派遣者
+  location: 哦穹达西
+  time_info:
+    text: "在上达西修行时"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "大夜叉护法神挥舞宝剑，从中间斩断了他的弓。"
+  description: 梦中嘎桑多吉派红色骑士来杀敦珠林巴，大夜叉护法神斩断其弓，敦珠林巴将刀插入其胸令其发誓不害。
+
+- event_id: EV_8428
+  type: 降伏非人
+  title: 敦珠林巴降伏也钦寺大威德修行鬼
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 红黑现巴夜叉护法神
+      role: 助手
+  location: 也钦寺
+  time_info:
+    text: "九月"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "观想：自己的心与他的神识无别融合，在法界清净虚空境界中，以三声'啪达'，融合一体。"
+  description: 敦珠林巴在也钦寺主持大修期间，梦中遭独眼老僧鬼（自称念诵大威德心咒一亿遍）束缚，以法界清净虚空境界三声啪达融合降伏。大夜叉护法神亦诛杀当地多个声称大威德成就的魔鬼。
+
+# ==================== 五十五岁 (lines 3270-3280) ====================
+
+- event_id: EV_8429
+  type: 授记
+  title: 黑色女子授记敦珠林巴当修本尊回遮罗刹
+  participants:
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十五岁牛年三月初四晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "东方可怖的罗刹，削断南方罗刹的发髻……你全力以赴修行本尊，依此要点能消除自身的外缘"
+  description: 穿青色罗玛衣的黑色女子授记东方罗刹与南方罗刹争斗，佛教苯教为仇，嘱敦珠林巴全力修本尊回遮。
+
+# ==================== 五十六岁 (lines 3282-3291) ====================
+
+- event_id: EV_8430
+  type: 建寺
+  title: 敦珠林巴在勒达强建贤劫寺
+  participants:
+    - entity: 敦珠林巴
+      role: 建寺者
+  location: 勒达强
+  time_info:
+    text: "五十六岁"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在勒达强建了贤劫寺。"
+  description: 敦珠林巴五十六岁时在勒达强建成贤劫寺。
+
+- event_id: EV_8431
+  type: 授记
+  title: 密智空行母授记高足兔年往生及金刚手化身投生
+  participants:
+    - entity: 密智空行母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十六岁四月初八"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "你的那位高足，在兔年一月二十一日晚必定往生到邬金空行洲……明年金刚手的一位化身来投生为你的儿子。"
+  description: 密智空行母授记高足兔年往生邬金空行洲，嘱兔年末去贤劫寺；益西措嘉又授记金刚手化身将投生为敦珠林巴之子。
+
+# ==================== 五十七岁 (lines 3293-3311) ====================
+
+- event_id: EV_8432
+  type: 圆寂
+  title: 敦珠林巴弟子正月二十一圆寂
+  participants:
+    - entity: 敦珠林巴
+      role: 师父
+  location: null
+  time_info:
+    text: "五十七岁正月二十一"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "正月二十一那天，我的那个弟子圆寂了。"
+  description: 密智空行母所授记的那位高足弟子在正月二十一圆寂，应验先前授记。
+
+- event_id: EV_8433
+  type: 授记
+  title: 则列曼空行母授记华智转世坐床时机
+  participants:
+    - entity: 则列曼
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十七岁二月初五晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "此年仲秋月，上方有数人，迎请华智尊，使者两次至，未到羊年前，非是坐床时"
+  description: 则列曼空行母授记华智转世迎请使者将至但坐床须至羊年，并嘱九月搬至上方。
+
+# ==================== 五十八岁 (lines 3313-3360) ====================
+
+- event_id: EV_8434
+  type: 授记
+  title: 多吉耶喜玛空行母授记积累财产时机
+  participants:
+    - entity: 多吉耶喜玛空行母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十八岁一月初一夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "很快有人邀请你时，你要毫不犹豫去往那里……今年正当你积累所有财产、家畜之际。"
+  description: 多吉耶喜玛空行母授记敦珠林巴今年是积累财产之际，四月有使者来时即去。
+
+- event_id: EV_8435
+  type: 授记
+  title: 益西旺姆空行母告知不宜久住上达土
+  participants:
+    - entity: 益西旺姆
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十八岁五月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "若想居此处，高官多着魔……不见住此缘，此事记心中。"
+  description: 益西旺姆空行母在梦中告知敦珠林巴不宜久住上达土，高官多着魔，舍宅如鸟穴，无住此缘。
+
+- event_id: EV_8436
+  type: 神变
+  title: 空行母萨恰旺姆带敦珠林巴至度母净土
+  participants:
+    - entity: 萨恰旺姆
+      role: 引导者
+    - entity: 敦珠林巴
+      role: 朝礼者
+    - entity: 圣度母
+      role: 主尊
+  location: null
+  time_info:
+    text: "五十八岁初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "萨恰旺姆说：'我们去观光吧。'……至尊圣度母身色墨绿……她由二十位度母和不可思议的菩萨会众围绕着。"
+  description: 空行母萨恰旺姆带敦珠林巴飞至碧绿山顶净土，面见八岁妙龄墨绿色圣度母及二十位度母菩萨眷众。度母赐水晶念珠并说"观想我，专注于智慧和心融为一体"。
+
+- event_id: EV_8437
+  type: 神变
+  title: 敦珠林巴修大自在天法后梦中面见大自在天
+  participants:
+    - entity: 敦珠林巴
+      role: 修行者
+    - entity: 大自在天
+      role: 主尊
+  location: null
+  time_info:
+    text: "十一月念修二十一天后"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "艳如红宝石般的大自在天……他说：'你虽然精勤修行、供养我，可是由于修行助伴不妙，不会获得大悉地，以后会得到些微悉地。'"
+  description: 敦珠林巴依美耶创坚玛空行母嘱修《大自在天修法》二十一天后，梦中面见红宝石色大自在天，获告因修行助伴不妙暂不获大悉地，赐铁钩。
+
+# ==================== 五十九岁 (lines 3362-3418) ====================
+
+- event_id: EV_8438
+  type: 授记
+  title: 西方莲花空行母授记去班玛古取伏藏开隐蔽刹土门
+  participants:
+    - entity: 西方莲花空行母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十九岁一月初一晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "有个叫班玛古的隐蔽地点，你去那里……取出它，开启秘密刹土的门，能打开六十九种隐蔽山谷之门"
+  description: 西方莲花空行母授记今年须去班玛古取标题和钥匙伏藏，开启六十九种隐蔽山谷之门，预言木羊年起魔毒纷争。
+
+- event_id: EV_8439
+  type: 授记
+  title: 弟子阿旺嘉措往生后显现授记
+  participants:
+    - entity: 阿旺嘉措
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+    - entity: 彭措札西
+      role: 被授记者
+    - entity: 仁增嘉措
+      role: 被授记者
+  location: null
+  time_info:
+    text: "五十九岁四月初十夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记, 证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我之寿命究竟已，五十二岁离人世，往生现喜之刹土……道友彭措札西尊，今年冬季十一月，往生秘境莲花刹"
+  description: 已故弟子阿旺嘉措以圆满受用身从彩云中向敦珠林巴作礼，报告自己五十二岁往生现喜刹土，预言彭措札西十一月往生莲花刹、仁增嘉措亦至。
+
+- event_id: EV_8440
+  type: 执政
+  title: 拉多华嘉瓦被认定为依钦仁波切转世而坐床
+  participants:
+    - entity: 拉多华嘉瓦
+      role: 主体
+    - entity: 敦珠林巴
+      role: 父亲
+  location: 达则桑哲寺
+  time_info:
+    text: "五十九岁七月十三"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "被认定为噶托派达则桑哲寺无与伦比的活佛依钦仁波切的转世，而登上高高的金座（坐床）"
+  description: 敦珠林巴幼子拉多华嘉瓦被认定为噶托派达则桑哲寺依钦仁波切转世并坐床，后回家乡为弟子圆满恩赐灌顶传承。
+
+- event_id: EV_8441
+  type: 授记
+  title: 得雪旺姆授记弟子修大虹身教授之前途
+  participants:
+    - entity: 得雪旺姆
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十九岁九月初十夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "嘎门嘎之群体中，三名士夫成虹身……成百男女之行者，必定获得大虹身。"
+  description: 得雪旺姆空行母授记敦珠林巴各门弟子若远离八法精修大虹身教授，成百男女行者必获大虹身。
+
+- event_id: EV_8442
+  type: 授记
+  title: 观世音菩萨告诫放下嗔恨生起悲心
+  participants:
+    - entity: 观世音菩萨
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "五十九岁十一月二十五晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "会出现个别引导下乘的上师对你的见修加以诋毁诽谤，他们都是魔的眷属。对此要放下嗔恨、生起悲心。"
+  description: 观世音菩萨面见敦珠林巴，告知有下乘上师将诽谤其大圆满见修，嘱放下嗔恨生悲心，培育弟子。
+
+# ==================== 六十岁 (lines 3420-3468) ====================
+
+- event_id: EV_8443
+  type: 灌顶
+  title: 晋美上师在净土中授予觉性妙力大灌顶
+  participants:
+    - entity: 晋美
+      role: 传法者
+    - entity: 敦珠林巴
+      role: 受灌者
+    - entity: 托毕创丹玛
+      role: 引导者
+  location: null
+  time_info:
+    text: "六十岁一月初四夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师给我传了觉性妙力大灌顶，说道：'儿呀，你的心性原本清净，无有改造、无有取舍而安住在现前清净虚空的法界境界中'"
+  description: 童女空行母托毕创丹玛带敦珠林巴飞往东方任运自成庄严刹土，面见如生前般的晋美上师，获觉性妙力大灌顶及安住法界境界开示。
+
+- event_id: EV_8444
+  type: 授记
+  title: 耆婆医生告诫寺院修行要点
+  participants:
+    - entity: 敦珠林巴
+      role: 受教者
+  location: null
+  time_info:
+    text: "六十岁十二月二十八"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.75
+  source_quote: "必然要有一个讲法修行闭关院……精进修行一髻佛母和绕呵拉……是自己招致的"
+  description: 梦中耆婆医生以老者形象告诫：寺院须有讲修闭关院，当今浊世须修一髻佛母和绕呵拉对治怨敌；批评敦珠林巴强令护法神诅咒又幸灾乐祸致护法生厌，并指出当代药物因时代浊恶而效力减退。
+
+# ==================== 六十一岁 (lines 3470-3502) ====================
+
+- event_id: EV_8445
+  type: 授记
+  title: 螺耳天童再度现身唱离世道歌
+  participants:
+    - entity: 螺耳天童
+      role: 主体
+    - entity: 敦珠林巴
+      role: 受教者
+  location: null
+  time_info:
+    text: "六十一岁某夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我叫螺耳天童，受大圣观世音菩萨委派做你的友伴……诶诶！从小俱生友，请你听我言"
+  description: 螺耳天童——自八岁起受观世音菩萨委派做敦珠林巴友伴的白色孩童——六十一岁再度现身，回顾二人因缘，唱道歌劝出离轮回、安住法性，告别去往观音刹。
+
+- event_id: EV_8446
+  type: 执政
+  title: 匝嘉寺为华给活佛转世举行坐床仪式
+  participants:
+    - entity: 华给活佛
+      role: 转世者
+    - entity: 敦珠林巴
+      role: 主持者
+  location: 匝嘉寺
+  time_info:
+    text: "六十一岁七月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他们为华给活佛转世举行坐床仪式。随后从十一月起到十二月之间，一直传法。"
+  description: 敦珠林巴六十一岁被请去匝嘉寺，僧人列队相迎为华给活佛转世举行坐床仪式，随后十一月至十二月传法。
+
+# ==================== 六十二岁 (lines 3504-3591) ====================
+
+- event_id: EV_8447
+  type: 神变
+  title: 空行母桑波炯玛带敦珠林巴游历珠日神山内境
+  participants:
+    - entity: 桑波炯玛
+      role: 引导者
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 珠日山神
+      role: 主人
+  location: 珠日神山
+  time_info:
+    text: "六十二岁四月初八晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "虽然外面是山，但内在可是广大的境地……一个身色紫黑的人……'噢！你就是切穹译师吧。'"
+  description: 空行母桑波炯玛带敦珠林巴进入珠日神山内部五层宫殿，逐层参观鬼众、应供部、管肉员、王妃耶嘉玛等眷属，最终面见珠日山神，山神赐石箧并告知色达后代将延续善妙。
+
+- event_id: EV_8448
+  type: 授记
+  title: 敦珠林巴在珠日神山回顾一生面见本尊空行经历
+  participants:
+    - entity: 敦珠林巴
+      role: 叙述者
+    - entity: 珠日山神
+      role: 听者
+  location: 珠日神山
+  time_info:
+    text: "同一净相中"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "自从当初从母胎中降生以来，面见持明勇士空行尊颜、他们予以授记的情况不可限量。"
+  description: 敦珠林巴向珠日山神详述一生面见无量光佛、药师佛、金刚持佛、八大持明、龙钦绕降、帕单巴、玛吉拉卓、文殊菩萨、观世音菩萨、金刚手菩萨、文殊语狮子等诸佛菩萨本尊并获灌顶传承的经历。
+
+- event_id: EV_8449
+  type: 授记
+  title: 圣度母告知今年不须逃避
+  participants:
+    - entity: 圣度母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "六十二岁六月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "孩儿，你今年不需要逃避，人的军队不会造成威胁，而边鄙野人依靠幻变收摄命气的厉鬼出现"
+  description: 大军事骚乱期间众人欲逃，圣度母告知敦珠林巴今年人的军队不会威胁，但边鄙野人幻变厉鬼想逃也逃不了。
+
+- event_id: EV_8450
+  type: 授记
+  title: 誓言天女札母哈授记大批汉人来袭应修回遮法
+  participants:
+    - entity: 誓言天女札母哈
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+  location: null
+  time_info:
+    text: "六十二岁十月十八晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "汉族之军队，邪愿魔统领，念修狮面母，恒常作回遮。月修大自在，精进自避难。"
+  description: 梦中大批汉人铺天盖地，誓言天女札母哈从虚空授记须念修狮面母回遮、月修大自在天以避难。
+
+- event_id: EV_8451
+  type: 授记
+  title: 益西措嘉授记速立自传文字
+  participants:
+    - entity: 益西措嘉
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受记者
+    - entity: 龙多嘉措
+      role: 被授记者
+    - entity: 钦绕嘉措
+      role: 被授记者
+  location: null
+  time_info:
+    text: "六十二岁十二月十五晚"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "传记立成文字，是先佛之传统……佛子扬攀塔益是，东族龙多嘉措尊……热穹多吉札巴是，东族钦绕嘉措尊"
+  description: 益西措嘉上半身从云彩虹中显现，授记应速立自传文字，指出佛子扬攀塔益即龙多嘉措、热穹多吉札巴即钦绕嘉措，嘱令其校正文字，为敦珠林巴摸顶后消失。
+
+# ==================== 跋文 (lines 3592-3606) ====================
+
+- event_id: EV_8452
+  type: 弘法
+  title: 敦珠林巴撰著自传
+  participants:
+    - entity: 敦珠林巴
+      role: 著者
+    - entity: 钦绕嘉措
+      role: 执笔者
+    - entity: 得勒华桑
+      role: 执笔者
+    - entity: 班玛龙多
+      role: 校对者
+    - entity: 才杰
+      role: 劝请者
+    - entity: 嘉华
+      role: 劝请者
+  location: 喇荣
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "敦珠多吉（一世敦珠法王）我撰著，钦绕嘉措、得勒华桑等执笔，大智者班玛龙多活佛谨慎校对"
+  description: 敦珠林巴按空行授记和众弟子劝请撰著自传。弟子才杰、嘉华以法供养劝请，色达喇荣弟子供银绸茶砖等。钦绕嘉措、得勒华桑执笔，班玛龙多校对。
