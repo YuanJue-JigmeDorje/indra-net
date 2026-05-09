@@ -141,6 +141,11 @@ alias_to_canonical.update({
 def normalize_name(name):
     return alias_to_canonical.get(name, name)
 
+# Also build reverse lookup: canonical → type from any alias
+for alias, canonical in alias_to_canonical.items():
+    if canonical not in name_to_type and alias in name_to_type:
+        name_to_type[canonical] = name_to_type[alias]
+
 print(f"Alias→canonical map: {len(alias_to_canonical)} entries")
 
 # ============================================================
