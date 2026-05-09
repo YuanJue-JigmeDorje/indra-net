@@ -1,9 +1,11 @@
 # ============================================================
 # 知识图谱关系抽取 -- 第一品 佛教总况
 # 来源: source/dudjom/chapter_md/01_佛教总况.md (lines 1-579)
-# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# 规范: SKILL_05a v0.2 + relation-types v0.1 + entity-taxonomy v0.4
 # 实体引用: 使用实体 NAME（人类可读名），非 entity ID
-# 提取日期: 2026-04-11
+# 重建日期: 2026-05-09
+# 重点改进: cites 关系增加 quoted_text / argument / about_entity;
+#           source/target 统一用 name; source_quote 完整句子
 # ============================================================
 
 metadata:
@@ -11,154 +13,220 @@ metadata:
   source_lines: "1-579"
   spec_versions:
     relation-types: v0.1
-    skill: SKILL_05a v0.1
+    skill: SKILL_05a v0.2
     entity-taxonomy: v0.4
     narrative-layers: v0.2
-  total_relations: 75
-  # fatherOf:6 consortOf:5 rulerOf:3 siblingOf:1
-  # teacherOf:21 (incl. 7 付法藏 specialty)
-  # subduedBy:2 memberOf:9 foundedBy:2
-  # cites:11 revealedBy:5 revealedFrom:5 locatedIn:5
-  date: 2026-04-11
+  date: 2026-05-09
 
 relations:
 
 # ============================================================
-# A. 亲属/政治关系 (fatherOf / sonOf / consortOf / rulerOf / ministerOf)
+# A. 亲属/政治关系 (fatherOf / consortOf / rulerOf / siblingOf)
 # ============================================================
 
   - rel_id: R_001
     type: fatherOf
     source: 净饭王
     target: 释迦牟尼佛
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "太子出生后的第七天，母亲摩耶夫人就离开了人世。于是国王把他交给众生主母等三十二位姨母，抚养成长。"
+    note: "净饭王为释迦太子之父，由文中'父王'称谓及太子出生后交付姨母抚养的叙述可知"
 
   - rel_id: R_002
     type: consortOf
     source: 净饭王
     target: 摩耶夫人
-    specialty: ""
     symmetric: true
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "他便以婆罗门吠陀中说的灰白童象的形象来到正在持斋戒的母亲胎中。"
+    source_quote: "他便以婆罗门吠陀中说的灰白童象（即六牙白象）的形象来到正在持斋戒的母亲胎中。"
+    note: null
 
   - rel_id: R_003
     type: consortOf
     source: 释迦牟尼佛
     target: 耶输陀罗
-    specialty: ""
     symmetric: true
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子"
+    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子，如幻般享受妙欲。"
+    note: null
 
   - rel_id: R_004
     type: consortOf
     source: 释迦牟尼佛
     target: 耶惟檀
-    specialty: ""
     symmetric: true
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子"
+    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子，如幻般享受妙欲。"
+    note: null
 
   - rel_id: R_005
     type: consortOf
     source: 释迦牟尼佛
     target: 热达吉
-    specialty: ""
     symmetric: true
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子"
+    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子，如幻般享受妙欲。"
+    note: null
 
   - rel_id: R_006
     type: consortOf
     source: 大迦叶
     target: 萨迦贤
-    specialty: ""
     symmetric: true
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "给他迎娶了美丽的金色女子萨迦贤为妻，可是他们之间始终如同兄妹一样，一刹那也没有生起贪欲心。"
+    note: null
 
   - rel_id: R_007
     type: fatherOf
     source: 尼枸卢顶
     target: 大迦叶
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "迦叶尊者出生在摩竭陀国的尼枸卢婆罗门村落中，当时婆罗门尼枸卢顶的儿子祈祷尼枸卢天尊，结果生下一子"
+    source_quote: "迦叶尊者出生在摩竭陀国的尼枸卢婆罗门村落中，当时婆罗门尼枸卢顶的儿子祈祷尼枸卢天尊，结果生下一子，由此给他取名尼枸卢生。"
+    note: null
 
   - rel_id: R_008
     type: fatherOf
     source: 甘露饭
     target: 阿难
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "阿难尊者，其实就是佛陀的叔父甘露饭之子"
+    source_quote: "阿难尊者，其实就是佛陀的叔父甘露饭之子，当释迦牟尼成佛的时候他与罗睺罗同时诞生。"
+    note: null
 
   - rel_id: R_009
     type: fatherOf
     source: 护藏
     target: 小护
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "那时有个卖香人名为护藏，他的儿子名叫小护，他必定出家为僧"
+    source_quote: "那时有个卖香人名为护藏，他的儿子名叫小护，他必定出家为僧，到时你把佛法交传给他。"
+    note: null
 
   - rel_id: R_010
     type: fatherOf
     source: 达玛阿修嘎
     target: 离忧
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.80
-    source_quote: "国王达玛阿修嘎的孙子名叫离忧"
-    note: "文本称离忧为达玛阿修嘎之孙，此处记录祖孙关系中的中间代次不明"
+    source_quote: "国王达玛阿修嘎的孙子名叫离忧，自从离忧的儿子勇部时期开始"
+    note: "文本称离忧为达玛阿修嘎之孙，中间代次不明，此处以祖孙关系记录"
 
   - rel_id: R_011
     type: fatherOf
     source: 离忧
     target: 勇部
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "自从离忧的儿子勇部时期开始"
+    source_quote: "自从离忧的儿子勇部时期开始，受到魔加持的大天比丘、善贤、龙长老、安意等相继出现"
+    note: null
 
   - rel_id: R_012
+    type: fatherOf
+    source: 商主
+    target: 那达
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "将来在觉拉地方摩仁达山，有商主之子那达和帕达建造精舍并作为施主。"
+    note: null
+
+  - rel_id: R_013
+    type: fatherOf
+    source: 商主
+    target: 帕达
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "将来在觉拉地方摩仁达山，有商主之子那达和帕达建造精舍并作为施主。"
+    note: null
+
+  - rel_id: R_014
     type: rulerOf
     source: 净饭王
     target: 迦毗罗卫国
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "父王下令：'持棍等三位释迦族的女儿作太子妃。'"
     note: "净饭王为迦毗罗卫国之王，由太子身世及魔王谎言可知"
 
-  - rel_id: R_013
+  - rel_id: R_015
     type: rulerOf
     source: 恩札布德
     target: 邬金
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [传闻]
+    author_stance: 中立
     confidence: 0.60
-    source_quote: "也有说佛陀将所有续部交传给邬金国王恩札布德"
+    source_quote: "也有说佛陀将所有续部交传给邬金国王恩札布德；也有说是金刚手菩萨交付的。"
+    note: null
 
-  - rel_id: R_014
+  - rel_id: R_016
     type: rulerOf
     source: 护月
     target: 邬哲波夏
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "邬哲波夏地方出现了一位名叫护月的国王"
+    source_quote: "邬哲波夏地方出现了一位名叫护月的国王，圣者文殊菩萨以比丘相来到他的王宫"
+    note: null
+
+  - rel_id: R_017
+    type: siblingOf
+    source: 无著
+    target: 世亲
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "无著菩萨的胞弟、能背诵九十九部《广般若》、抵达广闻博学大海彼岸的世亲论师"
+    note: null
 
 # ============================================================
 # B. 师承关系 (teacherOf + specialty)
@@ -168,137 +236,196 @@ relations:
     type: teacherOf
     source: 根戒西尼
     target: 释迦牟尼佛
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "在根戒西尼（意为众知识）、真哦够恰等等师长面前学习文字、历算"
+    source_quote: "在根戒西尼（意为众知识）、真哦够恰等等师长面前学习文字、历算，在国舅桑林（意为善取）那里学习了骑象等许多技艺"
+    note: null
 
   - rel_id: R_021
     type: teacherOf
     source: 真哦够恰
     target: 释迦牟尼佛
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "在根戒西尼（意为众知识）、真哦够恰等等师长面前学习文字、历算"
+    note: null
 
   - rel_id: R_022
     type: teacherOf
     source: 桑林
     target: 释迦牟尼佛
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "在国舅桑林（意为善取）那里学习了骑象等许多技艺"
+    source_quote: "在国舅桑林（意为善取）那里学习了骑象等许多技艺，所有的知识、本领样样精通"
+    note: null
 
   - rel_id: R_023
     type: teacherOf
     source: 让佩
     target: 释迦牟尼佛
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "于身怀因明窍诀、大名鼎鼎的让佩与拉秀大师那里，听闻无所有定与有顶等持"
+    note: null
 
   - rel_id: R_024
     type: teacherOf
     source: 拉秀
     target: 释迦牟尼佛
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "于身怀因明窍诀、大名鼎鼎的让佩与拉秀大师那里，听闻无所有定与有顶等持"
+    note: null
 
   - rel_id: R_025
     type: teacherOf
     source: 释迦牟尼佛
     target: 憍陈如
-    specialty: "戒律"
+    specialty: [戒律]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.90
-    source_quote: "佛陀为憍陈如等五人及八万天人转了远离二边中道的四谛法轮……憍陈如等五人得到了自然近圆戒，成为世间上前所未有的第一批大比丘僧团"
+    source_quote: "佛陀为憍陈如等五人及八万天人转了远离二边中道的四谛法轮，重复了三次……憍陈如等五人得到了自然近圆戒，成为世间上前所未有的第一批大比丘僧团。"
+    note: null
 
   - rel_id: R_026
     type: teacherOf
     source: 释迦牟尼佛
     target: 大迦叶
-    specialty: "戒律, 付法藏"
+    specialty: [戒律, 付法藏]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "佛陀回应'我是汝之本师，汝是我之声闻'三遍完毕，迦叶即已获得比丘戒，他在佛弟子当中被赞为'头陀行第一'"
+    source_quote: "佛陀回应'我是汝之本师，汝是我之声闻'三遍完毕，迦叶即已获得比丘戒，他在佛弟子当中被赞为'头陀行第一'。"
     note: "佛法第一代付法藏师；佛陀在世时把一半坐垫分给大迦叶让其作继承人"
 
   - rel_id: R_027
     type: teacherOf
     source: 十力迦叶
     target: 阿难
-    specialty: "戒律"
+    specialty: [戒律]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "世尊把阿难交给十力迦叶，并以现今的仪轨按次第给他传戒。"
+    note: null
 
   - rel_id: R_028
     type: teacherOf
     source: 阿难
     target: 日中罗汉
-    specialty: "戒律"
+    specialty: [戒律]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "阿难便在恒河中央幻化一座岛屿，在那里为他们传了比丘戒。仙人刚刚受戒即刻证得阿罗汉果位，所以就被人们共称为'日中罗汉'"
+    source_quote: "阿难便在恒河中央幻化一座岛屿，在那里为他们传了比丘戒。仙人刚刚受戒即刻证得阿罗汉果位，所以就被人们共称为'日中罗汉'或者'水中罗汉'。"
+    note: null
 
   - rel_id: R_029
     type: teacherOf
     source: 萨绕哈
     target: 龙树菩萨
-    specialty: "密法"
+    specialty: [密法]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "大婆罗门萨绕哈的高足——甚深见派的开宗祖师就是第二大佛陀龙树菩萨"
+    source_quote: "依照本师释迦佛的授记，大婆罗门萨绕哈的高足——甚深见派的开宗祖师就是第二大佛陀龙树菩萨"
+    note: null
 
   - rel_id: R_030
     type: teacherOf
     source: 弥勒菩萨
     target: 无著
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "至尊弥勒菩萨的弟子——将广大行派在整个南赡部洲普遍弘扬者就是圣者无著"
+    note: null
 
   - rel_id: R_031
     type: teacherOf
     source: 文殊菩萨
     target: 陈那
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "蒙受文殊菩萨亲自摄受、获得克胜诸方之悉地而开创事势理者就是陈那论师"
+    note: null
 
   - rel_id: R_032
     type: teacherOf
     source: 龙树菩萨
     target: 圣天
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "龙树菩萨的弟子——由莲花花蕊中化生的圣天论师"
+    source_quote: "再加上龙树菩萨的弟子——由莲花花蕊中化生的圣天论师"
+    note: null
 
   - rel_id: R_033
     type: teacherOf
     source: 陈那
     target: 法称
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "陈那论师的弟子——随学辩论自在者而能顿时驳倒一切外道宗派的具德法称论师"
+    note: null
 
   - rel_id: R_034
     type: teacherOf
     source: 文殊菩萨
     target: 护月
-    specialty: "教授"
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "圣者文殊菩萨以比丘相来到他的王宫，对护月国王相应宣讲大乘法，并且留下了一本经函。"
+    note: null
 
 # ============================================================
 # C. 付法藏传承 (teacherOf + specialty: 付法藏)
@@ -308,8 +435,11 @@ relations:
     type: teacherOf
     source: 大迦叶
     target: 阿难
-    specialty: "付法藏"
+    specialty: [付法藏]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "本师佛陀将圣教交付与我而趣入涅槃，现在我也将要入灭，因此以后佛法由你护持，你将来再交传与麻衣。"
     note: "佛法第二代付法藏师"
@@ -318,8 +448,11 @@ relations:
     type: teacherOf
     source: 阿难
     target: 麻衣
-    specialty: "付法藏"
+    specialty: [付法藏]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "佛陀把佛法交传与迦叶，迦叶又付教于我，我也即将入灭，因此由你来护持佛教。"
     note: "佛法第三代付法藏师"
@@ -328,8 +461,11 @@ relations:
     type: teacherOf
     source: 麻衣
     target: 小护
-    specialty: "付法藏"
+    specialty: [付法藏]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "麻衣罗汉对这些佛塔作了开光，并将佛法交传与小护以后趣入涅槃。"
     note: "佛法第四代付法藏师"
@@ -338,8 +474,11 @@ relations:
     type: teacherOf
     source: 小护
     target: 有愧
-    specialty: "付法藏"
+    specialty: [付法藏]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "小护把佛法交付于有愧后便趣入涅槃。"
     note: "佛法第五代付法藏师"
@@ -348,8 +487,11 @@ relations:
     type: teacherOf
     source: 有愧
     target: 黑色
-    specialty: "付法藏"
+    specialty: [付法藏]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "有愧也是一位精通三藏的阿罗汉，他将佛法交付给摩竭陀国的圣者黑色后便趣入涅槃。"
     note: "佛法第六代付法藏师"
@@ -358,8 +500,11 @@ relations:
     type: teacherOf
     source: 黑色
     target: 善见
-    specialty: "付法藏"
+    specialty: [付法藏]
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "圣者黑色也是精通三藏的阿罗汉，他广泛护持佛法，最后交付给善见，便入于寂灭。"
     note: "佛法第七代付法藏师"
@@ -372,376 +517,969 @@ relations:
     type: subduedBy
     source: 魔王波旬
     target: 释迦牟尼佛
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [神变]
+    author_stance: 认可
     confidence: 0.80
-    source_quote: "菩萨没有任何嗔恨、害他的妄念，入定在大慈等持中，结果射向他的兵器全部降下花雨，所有刺耳的声音都变成赞叹的妙音。"
+    source_quote: "菩萨没有任何嗔恨、害他的妄念，入定在大慈等持中，结果射向他的兵器全部降下花雨，所有刺耳的声音都变成赞叹的妙音。魔王及魔军贪欲的毒树顷刻倒地。"
+    note: null
 
   - rel_id: R_051
     type: subduedBy
     source: 魔王波旬
     target: 小护
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [神变]
+    author_stance: 认可
     confidence: 0.75
-    source_quote: "小护幻化出三尸花鬘，系在魔王的头上，结果当他一生起恶心时就感到臭气难熏，一旦生起善心，就会现出鲜花的本面。"
+    source_quote: "小护幻化出三尸花鬘，系在魔王的头上，结果当他一生起恶心时就感到臭气难熏，一旦生起善心，就会现出鲜花的本面。这样的花冠谁也没办法使之抛弃，最后魔王自己恭敬顶礼说：从此以后不再怀有恶心。"
+    note: null
 
 # ============================================================
-# E. 归属关系 (memberOf / belongsToSect / foundedBy)
+# E. 归属关系 (memberOf / belongsToSect / foundedBy / lineageOf)
 # ============================================================
 
   - rel_id: R_055
     type: memberOf
     source: 憍陈如
     target: 憍陈如等五人
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.90
-    source_quote: "与憍陈如等五人开始了长达六年的苦行禅修生涯"
+    source_quote: "与憍陈如等五人开始了长达六年的苦行禅修生涯。"
+    note: null
 
   - rel_id: R_056
     type: memberOf
     source: 难陀
     target: 五百释迦童子
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "难陀等五百释迦童子以及耶输陀罗等八百童女……也一同出生"
+    source_quote: "难陀等五百释迦童子以及耶输陀罗等八百童女、登巴等五百仆人、阿丹等五百良驹也一同出生。"
+    note: null
 
   - rel_id: R_057
     type: memberOf
     source: 耶输陀罗
     target: 八百童女
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "耶输陀罗等八百童女……也一同出生"
+    source_quote: "耶输陀罗等八百童女……也一同出生。"
+    note: null
 
   - rel_id: R_058
     type: memberOf
     source: 登巴
     target: 五百仆人
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
-    source_quote: "登巴等五百仆人……也一同出生"
+    source_quote: "登巴等五百仆人……也一同出生。"
+    note: null
 
   - rel_id: R_059
     type: memberOf
     source: 众生主母
     target: 三十二位姨母
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "国王把他交给众生主母等三十二位姨母，抚养成长。"
+    note: null
 
   - rel_id: R_060
     type: memberOf
     source: 白莲母
     target: 七魔女
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [神变]
+    author_stance: 中立
     confidence: 0.80
     source_quote: "魔王再度幻变成七个妖艳魔女的形象……其中的白莲母用媚态加以诱惑"
+    note: null
 
   - rel_id: R_061
     type: memberOf
     source: 美那嘎
     target: 七魔女
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [神变]
+    author_stance: 中立
     confidence: 0.80
     source_quote: "美那嘎脖子上的各种项链悬垂着"
+    note: null
 
   - rel_id: R_062
     type: memberOf
     source: 妙饰女
     target: 七魔女
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [神变]
+    author_stance: 中立
     confidence: 0.80
     source_quote: "妙饰女用腰带加以捆缚"
+    note: null
 
   - rel_id: R_063
     type: memberOf
     source: 卷发女
     target: 七魔女
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [神变]
+    author_stance: 中立
     confidence: 0.80
     source_quote: "卷发女用钉铛作响的钏镯"
+    note: null
 
   - rel_id: R_064
+    type: memberOf
+    source: 阿丹
+    target: 五百良驹
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "阿丹等五百良驹也一同出生。"
+    note: null
+
+  - rel_id: R_065
+    type: memberOf
+    source: 龙树菩萨
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "这六位就是南赡部洲的六庄严。而且，大多数论师共称龙树、无著为二殊胜"
+    note: null
+
+  - rel_id: R_066
+    type: memberOf
+    source: 无著
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "这六位就是南赡部洲的六庄严。而且，大多数论师共称龙树、无著为二殊胜"
+    note: null
+
+  - rel_id: R_067
+    type: memberOf
+    source: 陈那
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "蒙受文殊菩萨亲自摄受、获得克胜诸方之悉地而开创事势理者就是陈那论师……以上是三位造论者。"
+    note: null
+
+  - rel_id: R_068
+    type: memberOf
+    source: 圣天
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "龙树菩萨的弟子——由莲花花蕊中化生的圣天论师……以上三位是著疏者。这六位就是南赡部洲的六庄严。"
+    note: null
+
+  - rel_id: R_069
+    type: memberOf
+    source: 世亲
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "无著菩萨的胞弟、能背诵九十九部《广般若》、抵达广闻博学大海彼岸的世亲论师……以上三位是著疏者。这六位就是南赡部洲的六庄严。"
+    note: null
+
+  - rel_id: R_070
+    type: memberOf
+    source: 法称
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "陈那论师的弟子——随学辩论自在者而能顿时驳倒一切外道宗派的具德法称论师，以上三位是著疏者。这六位就是南赡部洲的六庄严。"
+    note: null
+
+  - rel_id: R_071
+    type: memberOf
+    source: 龙树菩萨
+    target: 二殊胜
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "大多数论师共称龙树、无著为二殊胜"
+    note: null
+
+  - rel_id: R_072
+    type: memberOf
+    source: 无著
+    target: 二殊胜
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "大多数论师共称龙树、无著为二殊胜"
+    note: null
+
+  - rel_id: R_073
+    type: memberOf
+    source: 寂天
+    target: 二大稀有论师
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "具有七种稀奇传记的大菩萨寂天与一切明处无所不知、证得悉地的簪札贡美（即八戒居士皎月）被赞为二大稀有论师。"
+    note: null
+
+  - rel_id: R_074
+    type: memberOf
+    source: 簪札贡美
+    target: 二大稀有论师
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "具有七种稀奇传记的大菩萨寂天与一切明处无所不知、证得悉地的簪札贡美（即八戒居士皎月）被赞为二大稀有论师。"
+    note: null
+
+  - rel_id: R_075
+    type: memberOf
+    source: 萨绕哈
+    target: 八十四位大成就者
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "吉祥萨绕哈等八十四位大成就者，以降伏威力相被赞叹的佛智等十二位阿阇黎"
+    note: null
+
+  - rel_id: R_076
+    type: memberOf
+    source: 佛智
+    target: 十二位阿阇黎
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "以降伏威力相被赞叹的佛智等十二位阿阇黎"
+    note: null
+
+  - rel_id: R_077
     type: foundedBy
     source: 甚深见派
     target: 龙树菩萨
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "甚深见派的开宗祖师就是第二大佛陀龙树菩萨"
+    note: null
 
-  - rel_id: R_065
+  - rel_id: R_078
     type: foundedBy
     source: 事势理
     target: 陈那
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 中立
     confidence: 0.85
     source_quote: "获得克胜诸方之悉地而开创事势理者就是陈那论师"
-
-  - rel_id: R_066
-    type: siblingOf
-    source: 无著
-    target: 世亲
-    specialty: ""
-    symmetric: true
-    layers: [史传]
-    confidence: 0.85
-    source_quote: "无著菩萨的胞弟、能背诵九十九部《广般若》、抵达广闻博学大海彼岸的世亲论师"
-
-# ============================================================
-# F. 引文关系 (cites)
-# ============================================================
-
-  - rel_id: R_070
-    type: cites
-    source: 释迦牟尼佛
-    target: 《俱舍论》
-    specialty: ""
-    layers: [典据]
-    confidence: 0.95
-    source_quote: "《俱舍论》中说：'本师麟角喻者非，依于第四之静虑，一座上得菩提故。'"
-    note: "引用《俱舍论》论述释迦佛成佛方式"
-
-  - rel_id: R_071
-    type: cites
-    source: 释迦牟尼佛
-    target: 《功德圆满庄严经》
-    specialty: ""
-    layers: [典据]
-    confidence: 0.95
-    source_quote: "《功德圆满庄严经》中记载：'我自开始发起无上菩提心时起，在三大阿僧祇劫以最大的精进累积资粮'"
-
-  - rel_id: R_072
-    type: cites
-    source: 释迦牟尼佛
-    target: 《密严庄严经》
-    specialty: ""
-    layers: [典据]
-    confidence: 0.95
-    source_quote: "《密严庄严经》中说：'真实菩提正等觉，成佛胜处密严刹，并非未曾成佛果，始于欲界成正觉。'"
-
-  - rel_id: R_073
-    type: cites
-    source: 释迦牟尼佛
-    target: 《楞伽经》
-    specialty: ""
-    layers: [典据]
-    confidence: 0.95
-    source_quote: "《楞伽经》中说：'远离净居之诸处，于彼悦意密严刹，真实佛陀成正觉，化身于此示成佛。'"
-
-  - rel_id: R_074
-    type: cites
-    source: 释迦牟尼佛
-    target: 《如意宝庄严续》
-    specialty: ""
-    layers: [典据]
-    confidence: 0.95
-    source_quote: "《如意宝庄严续》中云：'始初正等觉，大密金刚持，游戏无边刹，无数前后时'"
-
-  - rel_id: R_075
-    type: cites
-    source: 释迦牟尼佛
-    target: 《宝性论》
-    specialty: ""
-    layers: [典据]
-    confidence: 0.95
-    source_quote: "《宝性论》中说：'法身不动中，以异化身性，真实而投生，从兜率天降，入胎及诞生'"
-
-  - rel_id: R_076
-    type: cites
-    source: 释迦牟尼佛
-    target: 《功德庄严经》
-    specialty: ""
-    layers: [典据]
-    confidence: 0.95
-    source_quote: "《功德庄严经》中说：'我未宣说任何法，诸有情前遍显现，何时欲求次第者，于彼等说次第法'"
-
-  - rel_id: R_077
-    type: cites
-    source: 释迦牟尼佛
-    target: 大毗婆沙论
-    specialty: ""
-    layers: [典据]
-    confidence: 0.95
-    source_quote: "《大毗婆沙论》中这样总结佛陀现身于世的一生：'说法处及广严城，具白地城与天界'"
-
-  - rel_id: R_078
-    type: cites
-    source: 迦叶佛
-    target: 国王哲哲梦境授记经
-    specialty: ""
-    layers: [授记, 典据]
-    confidence: 0.95
-    source_quote: "《国王哲哲梦境授记经》中所说：'真实圆满正等觉迦叶佛告哲哲国王言'"
+    note: null
 
   - rel_id: R_079
-    type: cites
-    source: 小护
-    target: 杂阿含经
-    specialty: ""
-    layers: [授记, 典据]
-    confidence: 0.95
-    source_quote: "佛在《杂阿含经》中亲自如此授记：'我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。'"
+    type: lineageOf
+    source: 广大行派
+    target: 弥勒菩萨
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "至尊弥勒菩萨的弟子——将广大行派在整个南赡部洲普遍弘扬者就是圣者无著"
+    note: "弥勒为广大行派法藏结集者，无著为弘扬者"
 
   - rel_id: R_080
+    type: lineageOf
+    source: 甚深见派
+    target: 文殊菩萨
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "所有甚深见派法藏由文殊结集，所有广大行派法藏由弥勒结集。"
+    note: "文殊为甚深见派法藏结集者"
+
+# ============================================================
+# F. 引文关系 (cites) — v0.3 增强版
+#    每条包含 quoted_text / argument / about_entity
+# ============================================================
+
+  - rel_id: R_101
     type: cites
-    source: 阿育王
-    target: 文殊根本续
-    specialty: ""
-    layers: [授记, 典据]
+    source: 声闻有部论述释迦佛成佛方式
+    target: 《俱舍论》
+    quoted_text: "本师麟角喻者非，依于第四之静虑，一座上得菩提故。"
+    argument: 论证释迦佛成佛的方式与利根麟角喻独觉相同，以一坐垫成佛
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
     confidence: 0.95
-    source_quote: "按照佛在《文殊根本续》中授记：'佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔'"
+    source_quote: "《俱舍论》中说：'本师麟角喻者非，依于第四之静虑，一座上得菩提故。'其中指出释迦佛成佛的方式与利根麟角喻独觉相同。"
+    note: null
+
+  - rel_id: R_102
+    type: cites
+    source: 声闻有部论述最后有菩萨是凡夫
+    target: 《俱舍论》
+    quoted_text: "彼前乃随解脱分。"
+    argument: 论证最后有菩萨是异生凡夫
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "最后有菩萨是异生凡夫，关于这一点，《俱舍论》中说：'彼前乃随解脱分。'"
+    note: null
+
+  - rel_id: R_103
+    type: cites
+    source: 声闻有部论述供养最后有菩萨功德
+    target: 《俱舍论》
+    quoted_text: "虽非圣者然而于，父母病人说法者，最后有者之菩萨，供养功德无有量。"
+    argument: 论证虽非圣者，供养最后有者之菩萨功德无量
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "并且说：'虽非圣者然而于，父母病人说法者，最后有者之菩萨，供养功德无有量。'"
+    note: null
+
+  - rel_id: R_104
+    type: cites
+    source: 共同大乘论述释迦佛三大劫积资粮成佛
+    target: 《功德圆满庄严经》
+    quoted_text: "我自开始发起无上菩提心时起，在三大阿僧祇劫以最大的精进累积资粮，并且照见在人寿百岁之时一切无有导师盲目的有情而在此赡部洲成佛，之后广转不可思议法轮……"
+    argument: 论证共同大乘的观点——释迦佛三大阿僧祇劫积累资粮后在赡部洲成佛
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "《功德圆满庄严经》中记载：'我自开始发起无上菩提心时起，在三大阿僧祇劫以最大的精进累积资粮，并且照见在人寿百岁之时一切无有导师盲目的有情而在此赡部洲成佛，之后广转不可思议法轮……'"
+    note: null
+
+  - rel_id: R_105
+    type: cites
+    source: 密宗论述释迦佛尼连河悟道经过
+    target: 佛智论师
+    quoted_text: "何故释迦牟尼佛，经三大劫积资粮，未悟此义尼连河，安住无所有定中。尔时十方之善逝，顿现遣除贪求心，如虚空界极清净，深明无二尽宣说，午夜时分如佛陀，修行真如拂晓时，一刹那间悟真性。为调一切诸众生，安住菩提迦耶已，尽摧一切大魔军，为能摄受诸有情，广转微妙之法轮。"
+    argument: 论证密宗观点中释迦佛在尼连禅河安住无所有定后一刹那悟真性的过程
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "佛智论师说：'何故释迦牟尼佛，经三大劫积资粮，未悟此义尼连河，安住无所有定中。尔时十方之善逝，顿现遣除贪求心……广转微妙之法轮。'"
+    note: "佛智论师非经典而是论师引述，但敦珠仁波切将其作为密宗观点的论据"
+
+  - rel_id: R_106
+    type: cites
+    source: 密宗论述外内现前二菩提
+    target: 圣天论师
+    quoted_text: "现前二菩提，说为外与内。"
+    argument: 论证外现前菩提以离贪方式成佛，内现前菩提以四种贪欲法理现前光明法身后证得双运身
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "按照圣天论师所说：'现前二菩提，说为外与内。'承许外现前菩提是以离贪的方式成佛；内现前菩提是以四种贪欲法理而现前光明法身之后证得双运身。"
+    note: null
+
+  - rel_id: R_107
+    type: cites
+    source: 不共大乘论述释迦佛在密严刹土成佛
+    target: 《密严庄严经》
+    quoted_text: "真实菩提正等觉，成佛胜处密严刹，并非未曾成佛果，始于欲界成正觉。彼等赴往密严刹，俱胝化身之佛陀，恒常安住瑜伽定，化身方便一游舞，犹如明月照诸国。各处随机而调伏，彼前以彼而示现。"
+    argument: 论证释迦佛并非未曾成佛始于欲界成正觉，而是先在密严刹土成佛后以化身示现
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《密严庄严经》中说：'真实菩提正等觉，成佛胜处密严刹，并非未曾成佛果，始于欲界成正觉。彼等赴往密严刹，俱胝化身之佛陀，恒常安住瑜伽定，化身方便一游舞，犹如明月照诸国。各处随机而调伏，彼前以彼而示现。'"
+    note: null
+
+  - rel_id: R_108
+    type: cites
+    source: 不共大乘论述释迦佛在密严刹成佛后化身示现
+    target: 《楞伽经》
+    quoted_text: "远离净居之诸处，于彼悦意密严刹，真实佛陀成正觉，化身于此示成佛。"
+    argument: 论证释迦佛在密严刹成正觉后以化身方式在此世间示现成佛
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《楞伽经》中说：'远离净居之诸处，于彼悦意密严刹，真实佛陀成正觉，化身于此示成佛。'"
+    note: null
+
+  - rel_id: R_109
+    type: cites
+    source: 无上了义观点论述释迦佛以各种形象利益众生
+    target: 《如意宝庄严续》
+    quoted_text: "始初正等觉，大密金刚持，游戏无边刹，无数前后时，寂猛无量相，猎人娼妓等，以异相利生。然此贤劫中，转变千导师，显现种种相，饶益无量众。"
+    argument: 论证释迦佛即大密金刚持，从无始以来以各种形象游戏无边刹利益众生
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《如意宝庄严续》中云：'始初正等觉，大密金刚持，游戏无边刹，无数前后时，寂猛无量相，猎人娼妓等，以异相利生。然此贤劫中，转变千导师，显现种种相，饶益无量众。'"
+    note: null
+
+  - rel_id: R_110
+    type: cites
+    source: 无上了义观点论述六能仁利益众生
+    target: 《密藏根本续》
+    quoted_text: "所谓'大悲加持'的六能仁，是由善逝之身语意金刚中出现的，出现以后也是以众生业力所感而在下立行、倒栽行的六趣十方无边无际每一三千大千世界中，每一大能仁出有坏都以四种调伏方式利益五道有情。"
+    argument: 论证六能仁由善逝身语意金刚中出现，以四种调伏方式利益五道有情
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《密藏根本续》中也说：'所谓大悲加持的六能仁，是由善逝之身语意金刚中出现的……以四种调伏方式利益五道有情。'"
+    note: null
+
+  - rel_id: R_111
+    type: cites
+    source: 无上了义观点论述释迦佛久远成佛
+    target: 《妙法白莲经》
+    quoted_text: "不可思千俱胝劫，彼之限量永无有，殊胜菩提我已得，我亦恒常说妙法。"
+    argument: 论证释迦佛成佛非近事，早于不可思千俱胝劫前已得殊胜菩提并恒常说法
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《妙法白莲经》中说：'不可思千俱胝劫，彼之限量永无有，殊胜菩提我已得，我亦恒常说妙法。'"
+    note: null
+
+  - rel_id: R_112
+    type: cites
+    source: 无上了义观点论述如来久远成佛
+    target: 《父子相会经》
+    quoted_text: "善巧方便大勇士，为令众生普成熟，成百俱胝劫之前，如来示现成正觉，仍为引导有情汝，示现众多正等觉。"
+    argument: 论证如来以善巧方便成百俱胝劫前已示现成正觉
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《父子相会经》中说：'善巧方便大勇士，为令众生普成熟，成百俱胝劫之前，如来示现成正觉，仍为引导有情汝，示现众多正等觉。'"
+    note: null
+
+  - rel_id: R_113
+    type: cites
+    source: 化身分类论述
+    target: 《经庄严论》
+    quoted_text: "佛陀幻化无有量，即承许此为化身，自他二利圆满者，安住一切种相中。恒时示现为工巧，投生菩提涅槃相，佛陀之此化身者，即是解脱大方便。"
+    argument: 论述化身分类——工巧化身、投生化身与殊胜化身三种
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《经庄严论》中说：'佛陀幻化无有量，即承许此为化身，自他二利圆满者，安住一切种相中。恒时示现为工巧，投生菩提涅槃相，佛陀之此化身者，即是解脱大方便。'"
+    note: null
+
+  - rel_id: R_114
+    type: cites
+    source: 殊胜大化身以四种调伏方式利益有情
+    target: 《幻化根本续》
+    quoted_text: null
+    argument: 论述殊胜大化身从示现十二相的角度以四种调伏方式利益有情
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "其中殊胜大化身从示现十二相的角度而言，在《幻化根本续》中宣说了以四种调伏方式利益有情。"
+    note: "间接引用，无直接引文"
+
+  - rel_id: R_115
+    type: cites
+    source: 化身佛示现十二相论述
+    target: 《宝性论》
+    quoted_text: "法身不动中，以异化身性，真实而投生，从兜率天降，入胎及诞生，精通工巧明，嬉享妃眷属，出家与苦行，趋至菩提树，降魔圆正觉，转大妙法轮，示现涅槃相，于诸不净刹，无间示安住。"
+    argument: 论述化身佛示现十二相的完整次第——从兜率天降至示现涅槃
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《宝性论》中说：'法身不动中，以异化身性，真实而投生，从兜率天降，入胎及诞生，精通工巧明，嬉享妃眷属，出家与苦行，趋至菩提树，降魔圆正觉，转大妙法轮，示现涅槃相，于诸不净刹，无间示安住。'"
+    note: null
+
+  - rel_id: R_116
+    type: cites
+    source: 佛语特法论述——三转法轮各随根基
+    target: 《功德庄严经》
+    quoted_text: "我未宣说任何法，诸有情前遍显现，何时欲求次第者，于彼等说次第法，于一时间悟入者，显现圆满之法门。称各心意满其愿，此即佛语之特法。"
+    argument: 论证佛语具有超越自相言词的特点——顿悟者同一时刻听三转法轮，渐悟者次第听闻
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "关于这些道理，《功德庄严经》中说：'我未宣说任何法，诸有情前遍显现，何时欲求次第者，于彼等说次第法，于一时间悟入者，显现圆满之法门。称各心意满其愿，此即佛语之特法。'"
+    note: null
+
+  - rel_id: R_117
+    type: cites
+    source: 总结佛陀一生行迹
+    target: 《大毗婆沙论》
+    quoted_text: "说法处及广严城，具白地城与天界，雪巴瘦与憍赏弥，静处以及佛塔山，竹林园及具怨城，及与迦毗罗卫城，佛于此等圣地处，各自安住一年矣。舍卫城住廿三年，妙药林中住四载，炽热山洞住二年，王舍城中住五年，苦行之处住六年，王宫中住廿九年，如是佛寿为八十，尔后能仁趋涅槃。"
+    argument: 引用此论总结佛陀一生的行迹和年数分配，印证佛陀住世八十年的整体事业
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《大毗婆沙论》中这样总结佛陀现身于世的一生：'说法处及广严城，具白地城与天界，雪巴瘦与憍赏弥，静处以及佛塔山，竹林园及具怨城，及与迦毗罗卫城，佛于此等圣地处，各自安住一年矣。舍卫城住廿三年，妙药林中住四载，炽热山洞住二年，王舍城中住五年，苦行之处住六年，王宫中住廿九年，如是佛寿为八十，尔后能仁趋涅槃。'"
+    note: null
+
+  - rel_id: R_118
+    type: cites
+    source: 第一次结集记载
+    target: 《杂阿含经》
+    quoted_text: "佛灭度后次夏季，王舍秘密山洞中，五百罗汉共集聚，未生怨施集三藏。"
+    argument: 引经文佐证第一次结集的时间、地点、参与者与施主
+    about_entity: 五百阿罗汉
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《杂阿含经》中说：'佛灭度后次夏季，王舍秘密山洞中，五百罗汉共集聚，未生怨施集三藏。'"
+    note: null
+
+  - rel_id: R_119
+    type: cites
+    source: 第三次结集论证十八部均清净
+    target: 《国王哲哲梦境授记经》
+    quoted_text: "真实圆满正等觉迦叶佛告哲哲国王言：'国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。'"
+    argument: 第三次结集引用此经教证建立十八部均是清净的佛教
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据, 授记]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "这次结集主要依据《国王哲哲梦境授记经》中所说：'真实圆满正等觉迦叶佛告哲哲国王言：国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。'"
+    note: null
+
+  - rel_id: R_120
+    type: cites
+    source: 第三次结集时间论据
+    target: 《智燃论》
+    quoted_text: "佛陀入灭后过了两百年，长老母之子结集教法。"
+    argument: 引《智燃论》为第三次结集的时间提供典据，作者认为此处两百年是以半年计算实为四百年
+    about_entity: 长老母之子
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "诚如《智燃论》中说：'佛陀入灭后过了两百年，长老母之子结集教法。'我认为这里是把四百年中的每一年当作半年来计算的。"
+    note: null
+
+  - rel_id: R_121
+    type: cites
+    source: 大乘佛法结集论据
+    target: 《智燃论》
+    quoted_text: "大乘佛法是佛所说，由普贤菩萨、文殊菩萨、密主金刚手以及弥勒菩萨等为首的结集者所结集。"
+    argument: 论证大乘佛法是佛亲口所说并由四大菩萨结集
+    about_entity: 弥勒菩萨
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "按照不共大乘的观点，诚如《智燃论》中说：'大乘佛法是佛所说，由普贤菩萨、文殊菩萨、密主金刚手以及弥勒菩萨等为首的结集者所结集。'"
+    note: null
+
+  - rel_id: R_122
+    type: cites
+    source: 金刚手为千佛教法结集者
+    target: 《秘密不可思议经》
+    quoted_text: null
+    argument: 论证金刚手不仅结集释迦佛教法，更是千佛教法的结集者
+    about_entity: 金刚手菩萨
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《秘密不可思议经》中说金刚手是千佛教法的结集者。"
+    note: "间接引用，无直接引文"
+
+  - rel_id: R_123
+    type: cites
+    source: 甚深见派与广大行派法藏分工
+    target: 大乘经藏
+    quoted_text: "所有甚深见派法藏由文殊结集，所有广大行派法藏由弥勒结集。"
+    argument: 进一步说明文殊负责甚深见派法藏、弥勒负责广大行派法藏的分工
+    about_entity: 文殊菩萨
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "大乘经藏中说：'所有甚深见派法藏由文殊结集，所有广大行派法藏由弥勒结集。'"
+    note: "引文来源为泛称'大乘经藏'而非具体经典"
+
+  - rel_id: R_124
+    type: cites
+    source: 阿育王出世建塔之授记
+    target: 《文殊根本续》
+    quoted_text: "佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔，依此从七座舍利塔中出现佛舍利，在南赡部洲四面八方建造八万四千七宝塔。"
+    argument: 引《文殊根本续》中佛之授记，论证阿育王出世建塔是佛早已安排的事业
+    about_entity: 阿育王
+    symmetric: false
+    derived_from: null
+    layers: [典据, 授记]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "按照佛在《文殊根本续》中授记：'佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔，依此从七座舍利塔中出现佛舍利，在南赡部洲四面八方建造八万四千七宝塔。'"
+    note: null
+
+  - rel_id: R_125
+    type: cites
+    source: 佛授记小护出家
+    target: 《杂阿含经》
+    quoted_text: "我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。"
+    argument: 引佛在《杂阿含经》中的亲自授记，论证小护的出家和事业是佛预见并安排的
+    about_entity: 小护
+    symmetric: false
+    derived_from: null
+    layers: [典据, 授记]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "一致共称佛在《杂阿含经》中亲自如此授记：'我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。'"
+    note: null
+
+  - rel_id: R_126
+    type: cites
+    source: 声闻经部论典开宗祖师
+    target: 《大毗婆沙论》
+    quoted_text: null
+    argument: 按声闻经部观点，论典的开宗祖师是造《大毗婆沙论》的诸位阿罗汉
+    about_entity: 五百阿罗汉
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "关于论典的开宗祖师，按照声闻经部的观点，是造《大毗婆沙论》的诸位阿罗汉"
+    note: "间接引用"
 
 # ============================================================
 # G. 伏藏开取关系 (revealedBy / revealedFrom)
 # ============================================================
 
-  - rel_id: R_085
+  - rel_id: R_131
     type: revealedBy
-    source: 密集续
+    source: 《密集续》
     target: 瓦色嘎巴
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "国王瓦色嘎巴从中取出《密集续》"
+    note: null
 
-  - rel_id: R_086
+  - rel_id: R_132
     type: revealedFrom
-    source: 密集续
+    source: 《密集续》
     target: 黑日嘎殿堂
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "在黑日嘎殿堂的仓库里保存着所有续部经函，后来国王瓦色嘎巴从中取出《密集续》"
+    note: null
 
-  - rel_id: R_087
+  - rel_id: R_133
     type: revealedBy
-    source: 喜金刚
+    source: 《喜金刚》
     target: 龙树菩萨
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "龙树菩萨取出《喜金刚》"
+    note: null
 
-  - rel_id: R_088
+  - rel_id: R_134
     type: revealedFrom
-    source: 喜金刚
+    source: 《喜金刚》
     target: 黑日嘎殿堂
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "龙树菩萨取出《喜金刚》"
+    note: null
 
-  - rel_id: R_089
+  - rel_id: R_135
     type: revealedBy
-    source: 玛哈玛雅
+    source: 《玛哈玛雅》
     target: 革革热巴
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "革革热巴取出《玛哈玛雅》、《大威德续》等"
+    note: null
 
-  - rel_id: R_090
+  - rel_id: R_136
     type: revealedBy
-    source: 大威德续
+    source: 《大威德续》
     target: 革革热巴
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "革革热巴取出《玛哈玛雅》、《大威德续》等"
+    note: null
 
-  - rel_id: R_091
+  - rel_id: R_137
     type: revealedFrom
-    source: 玛哈玛雅
+    source: 《玛哈玛雅》
     target: 黑日嘎殿堂
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "革革热巴取出《玛哈玛雅》、《大威德续》等"
+    note: null
 
-  - rel_id: R_092
+  - rel_id: R_138
     type: revealedFrom
-    source: 大威德续
+    source: 《大威德续》
     target: 黑日嘎殿堂
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "革革热巴取出《玛哈玛雅》、《大威德续》等"
+    note: null
 
-  - rel_id: R_093
+  - rel_id: R_139
     type: revealedBy
-    source: 时轮金刚
+    source: 《时轮金刚》
     target: 则乐巴
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "则乐巴等从香巴拉取来《时轮金刚》等"
+    note: null
 
-  - rel_id: R_094
+  - rel_id: R_140
     type: revealedFrom
-    source: 时轮金刚
+    source: 《时轮金刚》
     target: 香巴拉
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [史传]
+    author_stance: 认可
     confidence: 0.85
     source_quote: "则乐巴等从香巴拉取来《时轮金刚》等"
+    note: null
 
 # ============================================================
 # H. 地理关系 (locatedIn)
 # ============================================================
 
-  - rel_id: R_095
+  - rel_id: R_151
     type: locatedIn
     source: 金刚座
     target: 菩提迦耶
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [典据]
+    author_stance: 中立
     confidence: 0.95
     source_quote: "南方赡部洲菩提迦耶中央自然形成金刚座，千位殊胜化身佛次第出世成佛"
+    note: null
 
-  - rel_id: R_096
+  - rel_id: R_152
     type: locatedIn
     source: 菩提迦耶
     target: 南赡部洲
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [典据]
+    author_stance: 中立
     confidence: 0.95
     source_quote: "南方赡部洲菩提迦耶中央自然形成金刚座"
+    note: null
 
-  - rel_id: R_097
+  - rel_id: R_153
     type: locatedIn
     source: 列卓达山洞
     target: 王舍城
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [典据]
+    author_stance: 中立
     confidence: 0.95
     source_quote: "在王舍城的列卓达山洞里，由未生怨王作施主，五百阿罗汉济济一堂"
+    note: null
 
-  - rel_id: R_098
+  - rel_id: R_154
     type: locatedIn
     source: 婆利迦精舍
     target: 毗舍离城
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [典据]
+    author_stance: 中立
     confidence: 0.95
     source_quote: "在毗舍离城婆利迦精舍，由阿育王作施主，耶舍等七百罗汉聚集一堂"
+    note: null
 
-  - rel_id: R_099
+  - rel_id: R_155
     type: locatedIn
     source: 布玛萨巴瓦山
     target: 王舍城
-    specialty: ""
+    symmetric: false
+    derived_from: null
     layers: [典据]
+    author_stance: 中立
     confidence: 0.95
     source_quote: "在王舍城的南方布玛萨巴瓦山上，百万菩萨聚集"
+    note: null
+
+  - rel_id: R_156
+    type: locatedIn
+    source: 尼枸卢婆罗门村落
+    target: 摩竭陀国
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "迦叶尊者出生在摩竭陀国的尼枸卢婆罗门村落中"
+    note: null
+
+  - rel_id: R_157
+    type: locatedIn
+    source: 摩仁达山
+    target: 觉拉
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "将来在觉拉地方摩仁达山，有商主之子那达和帕达建造精舍并作为施主。"
+    note: null
+
+  - rel_id: R_158
+    type: locatedIn
+    source: 耳饰精舍
+    target: 克什米尔
+    symmetric: false
+    derived_from: null
+    layers: [传闻]
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "克什米尔的论师们认为：'在克什米尔境内的耳饰精舍，圣者妙辐等五百阿罗汉……作第三次结集。'"
+    note: null
+
+  - rel_id: R_159
+    type: locatedIn
+    source: 鸡足山
+    target: 南赡部洲
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "便登上位于南方的鸡足山"
+    note: "文本称'位于南方'，归属南赡部洲"
