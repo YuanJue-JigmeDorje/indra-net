@@ -134,11 +134,27 @@ def load_merged_gazetteer(gazetteer_path: str) -> list:
     return entities
 
 
+# Synonym map: surface form → canonical name (same as build_graph_data.py)
+SYNONYMS = {
+    '贡巴绕色大师': '贡巴绕色', '龙钦巴': '无垢光尊者',
+    '文殊': '文殊菩萨', '鲁墨大师': '鲁墨·赤诚西绕',
+    '桑吉温波': '桑给嘉巴桑吉温波', '西绕炯内': '酿·西绕炯内',
+    '巴够贝若札那': '贝若札那', '多昂丹增': '多昂丹增诺吾',
+    '印度金刚座': '金刚座', '圣天论师': '圣天', '帝释天王': '帝释天',
+    '《律藏》': '《戒律》', '律藏': '《戒律》',
+}
+
+
 def build_name_index(entities):
     """
     Return a dict mapping surface_form -> {canonical_id, type}.
     Also return a sorted list of surface forms (longest first).
     """
+    # Build entity lookup by id
+    ent_by_id = {}
+    for ent in entities:
+        ent_by_id[ent["id"]] = ent
+
     index = {}
     for ent in entities:
         names = [ent["id"]] + ent.get("aliases", [])
@@ -160,6 +176,19 @@ def build_name_index(entities):
                 bracketed = "《" + name + "》"
                 if bracketed not in index:
                     index[bracketed] = {"id": ent["id"], "type": ent["type"]}
+    # Apply synonym mappings: if "律藏" → "《戒律》", make sure "律藏" points to 《戒律》's data
+    for surface, canonical in SYNONYMS.items():
+        if canonical in ent_by_id or canonical in index:
+            target = index.get(canonical, ent_by_id.get(canonical))
+            if target:
+                info = {"id": target.get("id", canonical), "type": target.get("type", "")}
+                if surface not in index:
+                    index[surface] = info
+                # Also with/without brackets
+                bare = surface.strip("《》")
+                if bare != surface and bare not in index:
+                    index[bare] = info
+
     # sort longest first so greedy matching works
     sorted_names = sorted(index.keys(), key=lambda x: -len(x))
     return index, sorted_names
