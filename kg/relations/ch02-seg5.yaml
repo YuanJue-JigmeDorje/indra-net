@@ -1,0 +1,350 @@
+# ============================================================
+# 知识图谱关系抽取 — 第二品 金刚密乘 seg5 (lines 801-921)
+# 覆盖范围: 嘉纳思札 → 布玛莫札（大圆满段）→ 总结密宗弘传 → 品终
+# 来源: source/dudjom/chapter_md/02_金刚密乘.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 name（人类可读名），不使用 entity ID
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/02_金刚密乘.md
+  source_lines: "801-921"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 24
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 师承/传法关系 (teacherOf)
+# ============================================================
+
+  - rel_id: R_S5_001
+    type: teacherOf
+    source: 西日桑哈
+    target: 布玛莫札
+    specialty: [大圆满窍诀部, 耳传教言]
+    symmetric: false
+    derived_from: EVT_002
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "上师在二十年期间将耳传内、外、密教言无余赐予他"
+    note: 二十年传耳传教言但未赐法本
+
+  - rel_id: R_S5_002
+    type: teacherOf
+    source: 西日桑哈
+    target: 嘉纳思札
+    specialty: [大圆满窍诀部, 耳传教授, 法本]
+    symmetric: false
+    derived_from: EVT_004
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "上师在九年当中把耳传的教授及法本赐予他"
+    note: 九年传授教授及法本（比布玛莫札多得法本）
+
+  - rel_id: R_S5_003
+    type: teacherOf
+    source: 西日桑哈
+    target: 嘉纳思札
+    specialty: [无上密窍诀, 四级灌顶]
+    symmetric: false
+    derived_from: EVT_005
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "上师圆满赐予外有戏灌顶，随后在三年中传授了无上密的所有窍诀……逐步将极无戏灌顶和最无戏灌顶也圆满恩赐"
+    note: 三年无上密窍诀+十六年修行
+
+  - rel_id: R_S5_004
+    type: teacherOf
+    source: 嘉纳思札
+    target: 布玛莫札
+    specialty: [大圆满四类教言, 心滴教授, 四级灌顶]
+    symmetric: false
+    derived_from: EVT_016
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "上师按照这些灌顶的顺序也无一遗漏地恩授了大圆满四类的教言及法本。他在十年期间经过千锤百炼，终于大彻大悟。"
+    note: 十年修行后大彻大悟
+
+  - rel_id: R_S5_005
+    type: teacherOf
+    source: 寂隐
+    target: 巴拉巴札
+    specialty: [密宗]
+    symmetric: false
+    derived_from: EVT_031
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "拜寂隐及其弟众为上师，重新把如来教珍宝弘扬开来"
+    note: null
+
+# ============================================================
+# B. 亲属关系 (parentOf / childOf)
+# ============================================================
+
+  - rel_id: R_S5_006
+    type: parentOf
+    source: 具乐轮
+    target: 布玛莫札
+    symmetric: false
+    derived_from: EVT_001
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "施主具乐轮与觉明母之子名叫布玛莫札"
+    note: 父子关系
+
+  - rel_id: R_S5_007
+    type: parentOf
+    source: 觉明母
+    target: 布玛莫札
+    symmetric: false
+    derived_from: EVT_001
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "施主具乐轮与觉明母之子名叫布玛莫札"
+    note: 母子关系
+
+  - rel_id: R_S5_008
+    type: parentOf
+    source: 耶瓦拉巴
+    target: 嘉纳思札
+    symmetric: false
+    derived_from: EVT_001
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "贱种耶瓦拉巴与善心母之子名叫益西多（即嘉纳思札）"
+    note: 父子关系
+
+  - rel_id: R_S5_009
+    type: parentOf
+    source: 善心母
+    target: 嘉纳思札
+    symmetric: false
+    derived_from: EVT_001
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "贱种耶瓦拉巴与善心母之子名叫益西多（即嘉纳思札）"
+    note: 母子关系
+
+# ============================================================
+# C. 同修/道友关系 (fellowPractitioner)
+# ============================================================
+
+  - rel_id: R_S5_010
+    type: fellowPractitioner
+    source: 布玛莫札
+    target: 嘉纳思札
+    symmetric: true
+    derived_from: EVT_001
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "他们二人一起安住，金刚萨埵亲自现身对他们说"
+    note: 同受金刚萨埵授记
+
+# ============================================================
+# D. 护持/供养关系 (patronOf)
+# ============================================================
+
+  - rel_id: R_S5_011
+    type: patronOf
+    source: 狮子贤
+    target: 布玛莫札
+    symmetric: false
+    derived_from: EVT_018
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "布玛莫札在东方嘎玛热城市作为狮子贤国王的国师达二十年"
+    note: 国师身份
+
+  - rel_id: R_S5_012
+    type: patronOf
+    source: 达玛巴拉
+    target: 布玛莫札
+    symmetric: false
+    derived_from: EVT_019
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "又在西方名叫布日的城市作为达玛巴拉国王的应供处"
+    note: null
+
+# ============================================================
+# E. 遗教/法嗣关系 (testamentTo)
+# ============================================================
+
+  - rel_id: R_S5_013
+    type: testamentTo
+    source: 西日桑哈
+    target: 嘉纳思札
+    symmetric: false
+    derived_from: EVT_007
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "结果《七钉遗教》落在手中"
+    note: 遗教为《七钉遗教》
+
+  - rel_id: R_S5_014
+    type: testamentTo
+    source: 嘉纳思札
+    target: 布玛莫札
+    symmetric: false
+    derived_from: EVT_017
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "赐予一个五种珍宝盖印的宝箧，落到他的手里，他得到了《四安住法》的遗教"
+    note: 遗教为《四安住法》
+
+# ============================================================
+# F. 传承链关系 (lineageOf) — 大圆满窍诀部传承
+# ============================================================
+
+  - rel_id: R_S5_015
+    type: lineageOf
+    source: 西日桑哈
+    target: 嘉纳思札
+    symmetric: false
+    derived_from: EVT_004
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "嘉纳思札也以最大的精进来到汉地……拜见了上师西日桑哈"
+    note: 大圆满窍诀部传承链第四环
+
+  - rel_id: R_S5_016
+    type: lineageOf
+    source: 嘉纳思札
+    target: 布玛莫札
+    symmetric: false
+    derived_from: EVT_012
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "来到巴桑尸林，拜见嘉纳思札，请求摄受、恩赐更为甚深的教授"
+    note: 大圆满窍诀部传承链第五环
+
+# ============================================================
+# G. 伏藏关系 (concealedAt / revealedBy)
+# ============================================================
+
+  - rel_id: R_S5_017
+    type: concealedAt
+    source: 布玛莫札
+    target: 邬金
+    symmetric: false
+    derived_from: EVT_021
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "一份隐藏在邬金地方金沙铺地的海岛上"
+    note: 胜密经函第一份
+
+  - rel_id: R_S5_018
+    type: concealedAt
+    source: 布玛莫札
+    target: 克什米尔
+    symmetric: false
+    derived_from: EVT_021
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "一份隐藏在克什米尔金洲的山岩处"
+    note: 胜密经函第二份
+
+  - rel_id: R_S5_019
+    type: concealedAt
+    source: 布玛莫札
+    target: 极能明大尸林
+    symmetric: false
+    derived_from: EVT_021
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "一份安放在此尸陀林诸空行母供养的所依内"
+    note: 胜密经函第三份
+
+  - rel_id: R_S5_020
+    type: revealedBy
+    source: 嘉纳思札
+    target: 吉祥门殿堂
+    symmetric: false
+    derived_from: EVT_009
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "嘉纳思札从指定地点取出了所有秘密法本"
+    note: 取出西日桑哈伏藏的心滴密诀法本
+
+# ============================================================
+# H. 成就/修证关系 (attainedBy)
+# ============================================================
+
+  - rel_id: R_S5_021
+    type: attainedBy
+    source: 布玛莫札
+    target: 大虹身
+    symmetric: false
+    derived_from: EVT_022
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "阿阇黎他自己最后成就大虹身"
+    note: null
+
+  - rel_id: R_S5_022
+    type: attainedBy
+    source: 嘉纳思札
+    target: 化光
+    symmetric: false
+    derived_from: EVT_017
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "嘉纳思札身体化光"
+    note: null
+
+# ============================================================
+# I. 教派/传承归属关系 (affiliatedWith)
+# ============================================================
+
+  - rel_id: R_S5_023
+    type: affiliatedWith
+    source: 够绕卡
+    target: 奏革派
+    symmetric: false
+    derived_from: EVT_030
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "一部分是大成就者够绕卡的随行者奏革十二部"
+    note: null
+
+  - rel_id: R_S5_024
+    type: affiliatedWith
+    source: 现达革巴
+    target: 奏革派
+    symmetric: false
+    derived_from: EVT_030
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "金刚大阿阇黎现达革巴及心子的随行者奏革派数量极其可观"
+    note: null

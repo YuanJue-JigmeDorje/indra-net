@@ -1,0 +1,528 @@
+# ============================================================
+# 知识图谱关系抽取 -- 第二品 金刚密乘 seg3 (lines 401-600)
+# 来源: source/dudjom/chapter_md/02_金刚密乘.md lines 401-600
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 name（人类可读名），不使用 entity ID
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/02_金刚密乘.md
+  source_lines: "401-600"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 38
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 师承/传法关系 (teacherOf)
+# ============================================================
+
+# --- 吽嘎日传承链 ---
+
+  - rel_id: R_001
+    type: teacherOf
+    source: 佛智
+    target: 吽嘎日
+    specialty: [戒律]
+    symmetric: false
+    derived_from: EVT_008
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "到印度中央那烂陀寺，在阿阇黎佛智与班智达罗睺罗尊者前出家。"
+    note: 吽嘎日出家的亲教师
+
+  - rel_id: R_002
+    type: teacherOf
+    source: 班智达罗睺罗
+    target: 吽嘎日
+    specialty: [戒律]
+    symmetric: false
+    derived_from: EVT_008
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "到印度中央那烂陀寺，在阿阇黎佛智与班智达罗睺罗尊者前出家。"
+    note: 吽嘎日出家的亲教师
+
+  - rel_id: R_003
+    type: teacherOf
+    source: 吽嘎日
+    target: 阿瓦达德巴
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_012
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在这位上师前，阿瓦达德巴阿阇黎与邬金大师佛寂请求了生起次第的所有言传。"
+    note: 生起次第传承
+
+  - rel_id: R_004
+    type: teacherOf
+    source: 吽嘎日
+    target: 佛寂
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_012
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在这位上师前，阿瓦达德巴阿阇黎与邬金大师佛寂请求了生起次第的所有言传。"
+    note: 生起次第传承
+
+  - rel_id: R_005
+    type: teacherOf
+    source: 阿瓦达德巴
+    target: 大菩提迦耶索热巴
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_013
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他们传给大菩提迦耶索热巴。"
+    note: null
+
+  - rel_id: R_006
+    type: teacherOf
+    source: 佛寂
+    target: 大菩提迦耶索热巴
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_013
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他们传给大菩提迦耶索热巴。"
+    note: null
+
+  - rel_id: R_007
+    type: teacherOf
+    source: 大菩提迦耶索热巴
+    target: 晋美炯内为巴
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_014
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "大菩提迦耶索热巴又培养了晋美炯内为巴（无畏源护）大师及弟众。"
+    note: null
+
+# --- 蒋花西宁传承链 ---
+
+  - rel_id: R_008
+    type: teacherOf
+    source: 嘎绕多吉
+    target: 蒋花西宁
+    specialty: [灌顶, 密法]
+    symmetric: false
+    derived_from: EVT_015
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "据说他后来在如朗塔多（起尸灰色，也就是嘎绕多吉）阿阇黎等面前得受了内外密的所有灌顶以及共同不共教言。"
+    note: null
+
+  - rel_id: R_009
+    type: teacherOf
+    source: 如毕多吉
+    target: 蒋花西宁
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_016
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "于如毕多吉（游舞金刚）上师前恭听了《黑敌续》、《狮面佛母续》、《大威德续》等法要。"
+    note: null
+
+  - rel_id: R_010
+    type: teacherOf
+    source: 蒋花西宁
+    target: 达玛瓦
+    specialty: [灌顶, 密法]
+    symmetric: false
+    derived_from: EVT_022
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "国王达玛瓦拜其为师，并为自己的太子传授圣文殊灌顶，使其获得成就。"
+    note: null
+
+  - rel_id: R_011
+    type: teacherOf
+    source: 蒋花西宁
+    target: 益西多吉
+    specialty: [密法]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "这位阿阇黎的弟子就是《时轮后续》中授记的婆罗门益西多吉（智慧金刚）与香切多吉（菩提金刚），许多续部的言传都来源于他们。"
+    note: null
+
+  - rel_id: R_012
+    type: teacherOf
+    source: 蒋花西宁
+    target: 香切多吉
+    specialty: [密法]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "这位阿阇黎的弟子就是《时轮后续》中授记的婆罗门益西多吉（智慧金刚）与香切多吉（菩提金刚），许多续部的言传都来源于他们。"
+    note: null
+
+  - rel_id: R_013
+    type: teacherOf
+    source: 蒋花西宁
+    target: 大不空金刚
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_023
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "大不空金刚在这位阿阇黎面前得受了所有大威德类。"
+    note: 大威德类传承
+
+  - rel_id: R_014
+    type: teacherOf
+    source: 大不空金刚
+    target: 小不空金刚
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_023
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "又传给小不空金刚……藏地众所周知玖派的大威德类的源流都起自于他。"
+    note: 大威德类传承续
+
+# --- 札巴哈德 → 莲师 ---
+
+  - rel_id: R_015
+    type: teacherOf
+    source: 札巴哈德
+    target: 莲花生大士
+    specialty: [密法]
+    symmetric: false
+    derived_from: EVT_028
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "莲师在札巴哈德大师面前也听闻了十八遍《革拉雅续》，并且成为橛事业一切教法的教主。"
+    note: 十八遍《革拉雅续》
+
+# --- 布玛莫札师承 ---
+
+  - rel_id: R_016
+    type: teacherOf
+    source: 哦达革雅
+    target: 布玛莫札
+    specialty: [密法]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在哦达革雅等众多大金刚持上师座下聆听了所有续部，通过修行而领悟了大手印殊胜悉地。"
+    note: null
+
+# --- 阿努约嘎传承 ---
+
+  - rel_id: R_017
+    type: teacherOf
+    source: 金刚手菩萨
+    target: 国王匝
+    specialty: [灌顶]
+    symmetric: false
+    derived_from: EVT_031
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "密主金刚手菩萨为国王匝或者龙丹多吉（金刚授记）灌顶，结果他对一切教义心领神会。"
+    note: 阿努约嘎传承起点
+
+  - rel_id: R_018
+    type: teacherOf
+    source: 乐匝布
+    target: 国王匝
+    specialty: [灌顶, 密法]
+    symmetric: false
+    derived_from: EVT_032
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "通过依止人持明居士乐匝布无垢称，请求一切灌顶与教法。"
+    note: null
+
+  - rel_id: R_019
+    type: teacherOf
+    source: 国王匝
+    target: 俄巴燃匝
+    specialty: [灌顶, 密法]
+    symmetric: false
+    derived_from: EVT_033
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "以幻化坛城为同修道友俄巴燃匝大师与自己的太子夏札布哲、那嘎布哲、革雅布哲灌顶并宣讲教言。"
+    note: null
+
+  - rel_id: R_020
+    type: teacherOf
+    source: 国王匝
+    target: 夏札布哲
+    specialty: [灌顶, 密法]
+    symmetric: false
+    derived_from: EVT_033
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "以幻化坛城为同修道友俄巴燃匝大师与自己的太子夏札布哲、那嘎布哲、革雅布哲灌顶并宣讲教言。"
+    note: 夏札布哲即小恩札布德
+
+  - rel_id: R_021
+    type: teacherOf
+    source: 国王匝
+    target: 那嘎布哲
+    specialty: [灌顶]
+    symmetric: false
+    derived_from: EVT_035
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在乐源城市为自己的三位太子灌顶。"
+    note: null
+
+  - rel_id: R_022
+    type: teacherOf
+    source: 国王匝
+    target: 革雅布哲
+    specialty: [灌顶]
+    symmetric: false
+    derived_from: EVT_035
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在乐源城市为自己的三位太子灌顶。"
+    note: null
+
+# ============================================================
+# B. 降伏关系 (subduedBy)
+# ============================================================
+
+  - rel_id: R_023
+    type: subduedBy
+    source: 十二鬼母
+    target: 莲花生大士
+    symmetric: false
+    derived_from: EVT_027
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "降伏十二鬼母与四地母等，让她们承诺誓言。"
+    note: null
+
+  - rel_id: R_024
+    type: subduedBy
+    source: 四地母
+    target: 莲花生大士
+    symmetric: false
+    derived_from: EVT_027
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "降伏十二鬼母与四地母等，让她们承诺誓言。"
+    note: null
+
+# ============================================================
+# C. 著作关系 (authorOf)
+# ============================================================
+
+  - rel_id: R_025
+    type: authorOf
+    source: 吽嘎日
+    target: 真实热乐金鬘论
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "撰著了《真实热乐金鬘论》、《开显佛陀平等行续·四支窍诀义论》、《大忿怒修法真实成就论》等等有关二次第的众多论典。"
+    note: null
+
+  - rel_id: R_026
+    type: authorOf
+    source: 吽嘎日
+    target: 开显佛陀平等行续·四支窍诀义论
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "撰著了《真实热乐金鬘论》、《开显佛陀平等行续·四支窍诀义论》、《大忿怒修法真实成就论》等等有关二次第的众多论典。"
+    note: null
+
+  - rel_id: R_027
+    type: authorOf
+    source: 吽嘎日
+    target: 大忿怒修法真实成就论
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "撰著了《真实热乐金鬘论》、《开显佛陀平等行续·四支窍诀义论》、《大忿怒修法真实成就论》等等有关二次第的众多论典。"
+    note: null
+
+  - rel_id: R_028
+    type: authorOf
+    source: 布玛莫札
+    target: 密藏续释·明灯论
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "造有《密藏续释·明灯论》、《上师颂释·除暗论》、《列拉现释》、《八十颂略释》、《睁开慧眼》、《三觉性》、《手印禅定》、《护摩》、《烧尸事业》、《明点次第论》、《浅释》等等数量可观的论典。"
+    note: null
+
+  - rel_id: R_029
+    type: authorOf
+    source: 布玛莫札
+    target: 上师颂释·除暗论
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "造有《密藏续释·明灯论》、《上师颂释·除暗论》……"
+    note: null
+
+  - rel_id: R_030
+    type: authorOf
+    source: 国王匝
+    target: 集密意续释
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "并且也撰著了《集密意续释》等论典。"
+    note: null
+
+# ============================================================
+# D. 家族关系 (fatherOf)
+# ============================================================
+
+  - rel_id: R_031
+    type: fatherOf
+    source: 萨达萨哲
+    target: 蒋花西宁
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "父亲萨达萨哲，母亲名为光明灯。"
+    note: null
+
+  - rel_id: R_032
+    type: fatherOf
+    source: 国王匝
+    target: 夏札布哲
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "以幻化坛城为同修道友俄巴燃匝大师与自己的太子夏札布哲、那嘎布哲、革雅布哲灌顶。"
+    note: null
+
+  - rel_id: R_033
+    type: fatherOf
+    source: 国王匝
+    target: 那嘎布哲
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "自己的太子夏札布哲、那嘎布哲、革雅布哲。"
+    note: null
+
+  - rel_id: R_034
+    type: fatherOf
+    source: 国王匝
+    target: 革雅布哲
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "自己的太子夏札布哲、那嘎布哲、革雅布哲。"
+    note: null
+
+# ============================================================
+# E. 传承所属 (lineageOf)
+# ============================================================
+
+  - rel_id: R_035
+    type: lineageOf
+    source: 吽嘎日
+    target: 黑日嘎嘎波续
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "意不动部《黑日嘎嘎波续》等真实意法行教是由阿阇黎吽嘎日传下的。"
+    note: 意不动部教法持有者
+
+  - rel_id: R_036
+    type: lineageOf
+    source: 蒋花西宁
+    target: 大威德类
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "身毗卢遮那佛部文殊猛密续等大威德所有教法是由蒋花西宁传下来的。"
+    note: 文殊部密宗持有者
+
+  - rel_id: R_037
+    type: lineageOf
+    source: 圣龙树
+    target: 马头游舞续
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "大阿阇黎圣龙树，秉承语无量光部《马头游舞续》等莲花语的所有续部教。"
+    note: 语无量光部持有者
+
+  - rel_id: R_038
+    type: lineageOf
+    source: 布玛莫札
+    target: 甘露八卷
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "阿阇黎布玛莫札继承功德宝生部《甘露八卷》等金刚甘露教。"
+    note: 功德宝生部持有者

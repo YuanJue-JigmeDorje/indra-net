@@ -1,0 +1,663 @@
+# ============================================================
+# 知识图谱事件抽取 — 第二品 金刚密乘 seg5 (lines 801-921)
+# 覆盖范围: 嘉纳思札 → 布玛莫札（大圆满段）→ 总结密宗弘传 → 品终
+# 来源: source/dudjom/chapter_md/02_金刚密乘.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 name（不使用 ID）
+# confidence 默认: 史传 0.85 / 典据 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 嘉纳思札段 (lines 806-838) ====================
+
+- event_id: EVT_001
+  type: 授记
+  title: 金刚萨埵亲自现身授记布玛莫札与嘉纳思札前往汉地
+  description: 金刚萨埵对布玛莫札和嘉纳思札说他们五百世为班智达仍未证果，须前往汉地菩提树殿堂
+  participants:
+    - entity: 金刚萨埵
+      role: 授记者
+    - entity: 布玛莫札
+      role: 受记者
+    - entity: 嘉纳思札
+      role: 受记者
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [神变, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "金刚萨埵亲自现身对他们说：'奇哉！二位善男子，你们俩虽然曾经五百世受身为班智达，修行妙法，可是以前没有获得果位，现在也没有证果，如果想要即生使有漏身体消失而成佛，就前往汉地菩提树殿堂去吧！'"
+  note: null
+
+- event_id: EVT_002
+  type: 传法
+  title: 布玛莫札在西日桑哈前二十年听受耳传教言
+  description: 布玛莫札即刻启程到达菩提树殿堂拜见西日桑哈，上师二十年间传授耳传内外密教言但未赐法本
+  participants:
+    - entity: 布玛莫札
+      role: 受法者
+    - entity: 西日桑哈
+      role: 主体
+  location: 菩提树飞檐殿堂
+  time_info:
+    text: "二十年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "布玛莫札即刻带上钵盂启程，到达目的地，拜见西日桑哈阿阇黎。上师在二十年期间将耳传内、外、密教言无余赐予他，然而并没有恩赐这些法本。"
+  note: null
+
+- event_id: EVT_003
+  type: 传法
+  title: 嘉纳思札在清凉大尸林拜见西日桑哈并承侍三年
+  description: 嘉纳思札以最大精进来到汉地，在清凉大尸林拜见西日桑哈，三年尽心承侍
+  participants:
+    - entity: 嘉纳思札
+      role: 受法者
+    - entity: 西日桑哈
+      role: 主体
+  location: 清凉尸陀林
+  time_info:
+    text: "三年承侍"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "嘉纳思札也以最大的精进来到汉地，按照空行授记在清凉大尸林拜见了上师西日桑哈。三年之中，尽心尽力承侍上师，令师欢喜"
+  note: null
+
+- event_id: EVT_004
+  type: 传法
+  title: 西日桑哈九年中赐予嘉纳思札耳传教授及法本
+  description: 嘉纳思札供上纯金曼茶罗请法后，上师在九年中把耳传教授及法本赐予他
+  participants:
+    - entity: 西日桑哈
+      role: 主体
+    - entity: 嘉纳思札
+      role: 受法者
+  location: 清凉尸陀林
+  time_info:
+    text: "九年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "最后供上纯金曼茶罗请求恩赐教授。上师在九年当中把耳传的教授及法本赐予他。"
+  note: null
+
+- event_id: EVT_005
+  type: 灌顶
+  title: 西日桑哈为嘉纳思札圆满赐予外有戏灌顶并传无上密窍诀三年
+  description: 西日桑哈先赐外有戏灌顶，随后三年传授无上密所有窍诀，要求实地修行
+  participants:
+    - entity: 西日桑哈
+      role: 主体
+    - entity: 嘉纳思札
+      role: 受者
+  location: null
+  time_info:
+    text: "三年传授无上密窍诀"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "上师圆满赐予外有戏灌顶，随后在三年中传授了无上密的所有窍诀，要求他实地修行。"
+  note: null
+
+- event_id: EVT_006
+  type: 灌顶
+  title: 西日桑哈逐步为嘉纳思札圆满赐予无戏至最无戏灌顶
+  description: 上师圆满赐予无戏灌顶后让嘉纳思札在够萨拉山顶作区分有寂行为，逐步将极无戏灌顶和最无戏灌顶也圆满恩赐
+  participants:
+    - entity: 西日桑哈
+      role: 主体
+    - entity: 嘉纳思札
+      role: 受者
+  location: 够萨拉山顶
+  time_info:
+    text: "十六年实地修行"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "上师又圆满赐予无戏灌顶，并让他在够萨拉山顶上作区分有寂的行为，逐步将极无戏灌顶和最无戏灌顶也圆满恩赐。他在十六年中实地修行，以种种特殊的行为安住。"
+  note: null
+
+- event_id: EVT_007
+  type: 圆寂
+  title: 西日桑哈趣入涅槃并赐《七钉遗教》给嘉纳思札
+  description: 嘉纳思札应龟兹国王迎请到该地时看到西日桑哈在虚空中，知上师要趣入涅槃，悲泣后《七钉遗教》落在手中
+  participants:
+    - entity: 西日桑哈
+      role: 主体
+    - entity: 嘉纳思札
+      role: 受遗教者
+  location: 龟兹国
+  time_info:
+    text: "七天之内传出巨响并出现大兆头"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在另一时间，他应龟兹国（如今的新疆）的国王迎请而到了该地，七天之内传出巨响并出现了大兆头，结果益西多看到上方虚空中安坐着上师，他知道上师要趣入涅槃，便悲哀哭喊。结果《七钉遗教》落在手中"
+  note: null
+
+- event_id: EVT_008
+  type: 授记
+  title: 西日桑哈授记嘉纳思札从吉祥门取法本往巴桑尸林
+  description: 嘉纳思札同时听到"心滴密诀的所有法本在吉祥门柱子内，取出它去往巴桑尸陀林"的授记
+  participants:
+    - entity: 西日桑哈
+      role: 授记者
+    - entity: 嘉纳思札
+      role: 受记者
+  location: 龟兹国
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "也听到了'心滴密诀的所有法本在吉祥门柱子内，取出它去往巴桑尸陀林'的授记。"
+  note: null
+
+- event_id: EVT_009
+  type: 伏藏开取
+  title: 嘉纳思札从吉祥门柱子取出秘密法本
+  description: 嘉纳思札按照授记从吉祥门殿堂柱子中取出所有秘密法本
+  participants:
+    - entity: 嘉纳思札
+      role: 主体
+  location: 吉祥门殿堂
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "于是嘉纳思札从指定地点取出了所有秘密法本"
+  note: null
+
+- event_id: EVT_010
+  type: 弘法
+  title: 嘉纳思札在巴桑尸林转秘密心滴法轮
+  description: 嘉纳思札取出法本后到印度巴桑尸林中，为世间及出世间空行、空行母转秘密心滴法轮
+  participants:
+    - entity: 嘉纳思札
+      role: 主体
+  location: 巴桑尸林
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "就到印度巴桑尸林中，一边为该处的世间及出世间空行、空行母转秘密心滴法轮，一边安住在此。"
+  note: null
+
+# ==================== 布玛莫札（大圆满段）(lines 840-861) ====================
+
+- event_id: EVT_011
+  type: 授记
+  title: 空行母授记布玛莫札前往巴桑大尸林求心滴教授
+  description: 布玛莫札奉持密宗禁行时空行母告诉他前往巴桑大尸林求更甚深心滴教授
+  participants:
+    - entity: 布玛莫札
+      role: 受记者
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [神变, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "空行母亲自告诉他说：'奇哉，具缘者，如果想求得较前更为甚深的心滴教授就去巴桑大尸林。'"
+  note: null
+
+- event_id: EVT_012
+  type: 传法
+  title: 布玛莫札拜见嘉纳思札请求摄受
+  description: 布玛莫札遵空行授记来到巴桑尸林，拜见嘉纳思札，请求更甚深的教授
+  participants:
+    - entity: 布玛莫札
+      role: 受法者
+    - entity: 嘉纳思札
+      role: 主体
+  location: 巴桑尸林
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "他遵此授记而来到巴桑尸林，拜见嘉纳思札，请求摄受、恩赐更为甚深的教授。"
+  note: null
+
+- event_id: EVT_013
+  type: 灌顶
+  title: 嘉纳思札为布玛莫札完整赐予有戏无戏灌顶
+  description: 嘉纳思札显示种种神变为布玛莫札完整赐予有戏、无戏灌顶，布玛莫札在日光山顶作区分有寂行为
+  participants:
+    - entity: 嘉纳思札
+      role: 主体
+    - entity: 布玛莫札
+      role: 受者
+  location: 日光山顶
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "上师显示种种神变，为他完整赐予有戏、无戏灌顶，随后他在日光山顶上作区分有寂行为。"
+  note: null
+
+- event_id: EVT_014
+  type: 灌顶
+  title: 嘉纳思札授予布玛莫札极无戏灌顶令生起不同寻常证悟
+  description: 上师圆满授予极无戏灌顶后布玛莫札生起不同寻常的证悟，鼻尖出现接近坠落的白色阿字
+  participants:
+    - entity: 嘉纳思札
+      role: 主体
+    - entity: 布玛莫札
+      role: 受者
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "他依靠上师圆满授予极无戏灌顶而生起了不同寻常的证悟，鼻尖上也出现了一个接近坠落的白色阿字。"
+  note: 白色阿字为证悟征兆
+
+- event_id: EVT_015
+  type: 灌顶
+  title: 嘉纳思札授予布玛莫札最无戏灌顶现见心的赤裸本性
+  description: 上师赐予最无戏灌顶后布玛莫札现见了心的赤裸本性
+  participants:
+    - entity: 嘉纳思札
+      role: 主体
+    - entity: 布玛莫札
+      role: 受者
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传, 证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "接着上师又圆满赐予最无戏灌顶，结果他现见了心的赤裸本性。"
+  note: null
+
+- event_id: EVT_016
+  type: 传法
+  title: 嘉纳思札无遗漏恩授大圆满四类教言及法本
+  description: 上师按照灌顶顺序无一遗漏地恩授了大圆满四类教言及法本，布玛莫札十年修行大彻大悟
+  participants:
+    - entity: 嘉纳思札
+      role: 主体
+    - entity: 布玛莫札
+      role: 受法者
+  location: null
+  time_info:
+    text: "十年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "上师按照这些灌顶的顺序也无一遗漏地恩授了大圆满四类的教言及法本。他在十年期间经过千锤百炼，终于大彻大悟。"
+  note: null
+
+- event_id: EVT_017
+  type: 圆寂
+  title: 嘉纳思札身体化光并赐《四安住法》遗教给布玛莫札
+  description: 嘉纳思札身体化光后再度现身，赐予五种珍宝盖印宝箧，布玛莫札得到《四安住法》遗教
+  participants:
+    - entity: 嘉纳思札
+      role: 主体
+    - entity: 布玛莫札
+      role: 受遗教者
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "此后，嘉纳思札身体化光，布玛莫札大声悲泣，上师又再度亲自现身，赐予一个五种珍宝盖印的宝箧，落到他的手里，他得到了《四安住法》的遗教，一五一十正确无误地掌握了词句。"
+  note: null
+
+- event_id: EVT_018
+  type: 弘法
+  title: 布玛莫札为狮子贤国王国师达二十年
+  description: 布玛莫札在东方嘎玛热城市作为狮子贤国王的国师达二十年
+  participants:
+    - entity: 布玛莫札
+      role: 主体
+    - entity: 狮子贤
+      role: 护持者
+  location: 嘎玛热城市
+  time_info:
+    text: "二十年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "布玛莫札在东方嘎玛热城市作为狮子贤国王的国师达二十年。"
+  note: null
+
+- event_id: EVT_019
+  type: 弘法
+  title: 布玛莫札为达玛巴拉国王应供处
+  description: 布玛莫札在西方布日城市作为达玛巴拉国王的应供处
+  participants:
+    - entity: 布玛莫札
+      role: 主体
+    - entity: 达玛巴拉
+      role: 护持者
+  location: 布日城市
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "又在西方名叫布日的城市作为达玛巴拉国王的应供处。"
+  note: null
+
+- event_id: EVT_020
+  type: 弘法
+  title: 布玛莫札在极能明大尸林行持禁行并讲经说法
+  description: 布玛莫札在极能明大尸林中行持克胜诸方的禁行，为凶猛残暴众生讲经说法
+  participants:
+    - entity: 布玛莫札
+      role: 主体
+  location: 极能明大尸林
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "在极能明大尸林中行持克胜诸方的禁行，并为凶猛残暴的众生讲经说法"
+  note: null
+
+- event_id: EVT_021
+  type: 伏藏埋藏
+  title: 布玛莫札将胜密经函写三遍分藏三处
+  description: 布玛莫札将胜密所有经函写三遍，一份藏邬金海岛，一份藏克什米尔金洲山岩，一份安放尸陀林空行母供养所依内
+  participants:
+    - entity: 布玛莫札
+      role: 主体
+  location: 邬金、克什米尔、极能明大尸林
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "将胜密的所有经函写了三遍，一份隐藏在邬金地方金沙铺地的海岛上，一份隐藏在克什米尔金洲的山岩处，一份安放在此尸陀林诸空行母供养的所依内。"
+  note: null
+
+- event_id: EVT_022
+  type: 圆寂
+  title: 布玛莫札成就大虹身
+  description: 阿阇黎布玛莫札最后成就大虹身，而相合适宜地住在印度
+  participants:
+    - entity: 布玛莫札
+      role: 主体
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "阿阇黎他自己最后成就大虹身，而相合适宜地住在印度"
+  note: null
+
+# ==================== 总结密宗弘传 (lines 863-920) ====================
+
+- event_id: EVT_023
+  type: 弘法
+  title: 印度密宗行者以秘密方式修持最终虹化显神变
+  description: 印度所有密宗行者保守秘密，获得成就前行为不被人知，一旦显现大神变、虹化或特殊威力时人们才知其为密宗行者
+  participants: []
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "印度所有密宗行者一直以稳如泰山的心来保守秘密，在没有获得成就之前，他们的密宗行为一直不被人知，一旦显现大神变，虹化而消逝或者显示特殊威力的时候，人们才完全知道"
+  note: 叙述性总结，无具体个人
+
+- event_id: EVT_024
+  type: 弘法
+  title: 国王匝时期无上续兴盛事续行续渐隐
+  description: 事续行续以往大规模弘扬但未公开行持；后来无上续兴盛，事续行续渐渐隐没；国王匝时期成就大师与空行母商议将续部迎请回来
+  participants:
+    - entity: 国王匝
+      role: 护持者
+  location: 邬金
+  time_info:
+    text: "国王匝或者中恩札布德时期"
+    relative_to: 国王匝
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "只是到了国王匝或者中恩札布德时期，诸位超群绝伦的成就大师们与来自于邬金地方德玛色塔绕等地的所有智慧空行母商议，将完整无缺的有些续部、有些续部的摄义以及个别开悟的要诀迎请回来"
+  note: null
+
+- event_id: EVT_025
+  type: 弘法
+  title: 仲瓦尊者得《明灯论》书函形成《密集续·圣类》兴盛的开端
+  description: 龙树菩萨及亲传弟子圆寂很长时间后，贡嘎那的仲瓦尊者才得到《明灯论》书函
+  participants:
+    - entity: 仲瓦
+      role: 受法者
+    - entity: 圣龙树
+      role: 著者
+  location: 贡嘎那
+  time_info:
+    text: "龙树菩萨和亲传弟子圆寂很长时间后"
+    relative_to: 圣龙树
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "龙树菩萨的所有密宗论典，包括他和亲传弟子在内圆寂以后过了很长时间，贡嘎那的仲瓦尊者才得到《明灯论》的书函。"
+  note: null
+
+- event_id: EVT_026
+  type: 神变
+  title: 玛拉当革巴见圣天论师智慧身形成密集续·圣类兴盛
+  description: 玛拉当革巴见到圣天论师的智慧身，由此形成《密集续·圣类》兴盛的开端
+  participants:
+    - entity: 玛拉当革巴
+      role: 主体
+    - entity: 圣天
+      role: 显现者
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.75
+  source_quote: "玛当革巴见到了圣天论师的智慧身……由此才形成了《密集续·圣类》兴盛的开端。"
+  note: null
+
+- event_id: EVT_027
+  type: 弘法
+  title: 大圆满类从化身嘎绕多吉宣讲开始口耳单传
+  description: 极为秘密的大圆满类从化身嘎绕多吉宣讲开始，对有缘大师口耳单传无经函
+  participants:
+    - entity: 嘎绕多吉
+      role: 主体
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "极为秘密的大圆满类是从化身嘎绕多吉宣讲开始，对具有殊胜缘分的那些大师，除了口耳单传以外也并没有经函，因为所有书函，在每一位教主（示现圆寂）之际便隐蔽不见了。"
+  note: null
+
+- event_id: EVT_028
+  type: 引文论证
+  title: 引《胜乐戒生续》论证密宗续部数量浩瀚
+  description: 作者引用《胜乐戒生续》中关于诸瑜伽续量六千万、瑜伽母续一亿六等的说法，论证密宗续部之浩瀚非凡人所能想象
+  participants:
+    - entity: 胜乐戒生续
+      role: 引文来源
+  quoted_text: "诸瑜伽续量，决定六千万，瑜伽母续数，称为一亿六。大乘外经藏，说为八亿数。如是显宗理，五亿一百万，佛以三身性，宣说此一切。"
+  argument: 论证密宗续部完全是金刚持的行境，数量远超人间所见，凡人不可限量
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "正如《胜乐戒生续》中说：'诸瑜伽续量，决定六千万，瑜伽母续数，称为一亿六。大乘外经藏，说为八亿数。如是显宗理，五亿一百万，佛以三身性，宣说此一切。'由此也可以表明这一点。"
+  note: null
+
+- event_id: EVT_029
+  type: 弘法
+  title: 印度边陲多地佛法经久未衰多秉持莲师教轨
+  description: 印度中部佛教主体隐没后，东方边陲、南方达莫卓德瓦、北方革则绕塔等地大小乘密乘佛法经久未衰，密宗行者多秉持莲花生大士教轨
+  participants:
+    - entity: 莲花生大士
+      role: 教轨源
+  location: null
+  time_info:
+    text: "后来"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在东方的边陲地方……大乘小乘密乘佛法从古至今一直经久未衰……所有密宗行者多数都秉持莲花生大士的教轨。"
+  note: null
+
+- event_id: EVT_030
+  type: 弘法
+  title: 够绕卡及现达革巴的奏革派随行者在印度弘法
+  description: 一部分是大成就者够绕卡的随行者奏革十二部，金刚大阿阇黎现达革巴及心子的随行者奏革派数量极其可观
+  participants:
+    - entity: 够绕卡
+      role: 传承祖师
+    - entity: 现达革巴
+      role: 传承祖师
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "一部分是大成就者够绕卡的随行者奏革十二部，特别是在塔巴绕中的哲夏绕部当中，金刚大阿阇黎现达革巴及心子的随行者奏革派数量极其可观。"
+  note: null
+
+- event_id: EVT_031
+  type: 恢复佛教
+  title: 巴拉巴札国王拜寂隐为师重新弘扬如来教
+  description: 印度南方波雪山布德戒地方成就密宗的国王巴拉巴札，拜寂隐及其弟众为上师，重新把如来教珍宝弘扬开来
+  participants:
+    - entity: 巴拉巴札
+      role: 主体
+    - entity: 寂隐
+      role: 上师
+  location: 布德戒
+  time_info:
+    text: "后来"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "执掌国政、成就密宗的国王名叫巴拉巴札，他统治了南方的大多数地带，拜寂隐及其弟众为上师，重新把如来教珍宝弘扬开来。"
+  note: null
+
+- event_id: EVT_032
+  type: 授记
+  title: 佛陀授记南方奔札山正法将重新兴盛
+  description: 据印度人传播，佛陀亲口授记将来南方地带奔札山内正法会重新兴盛
+  participants: []
+  location: 奔札山
+  time_info:
+    text: "将来"
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "据印度人传播：佛陀亲口授记，将来，南方地带奔札山内，正法会重新兴盛。"
+  note: null
