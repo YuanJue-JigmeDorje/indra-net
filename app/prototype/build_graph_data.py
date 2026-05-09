@@ -127,6 +127,11 @@ alias_to_canonical.update({
     '西绕炯内': '酿·西绕炯内',
     '巴够贝若札那': '贝若札那',
     '多昂丹增': '多昂丹增诺吾',
+    # 地名限定词变体
+    '印度金刚座': '金刚座',
+    # 称号变体
+    '圣天论师': '圣天',
+    '帝释天王': '帝释天',
 })
 
 # Substring-based auto-merge: if A is a strict substring of B (len>=3) and both in alias map's values
