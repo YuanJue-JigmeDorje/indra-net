@@ -1,0 +1,519 @@
+# ============================================================
+# 知识图谱事件抽取 — 第一品 佛教总况 seg2 (lines 101-200)
+# 覆盖范围: 十二相之（二）入胎 至（九）降伏魔众前半
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
+#
+# 实体引用: 使用实体 NAME（非 ID），引用 kg/entities/ch01-seg2.yaml
+# confidence 默认: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== （二）入胎 (lines 102-106) ====================
+
+- event_id: EVT_001
+  type: 神变
+  title: 白幢天子以六牙白象形象入母胎
+  description: 菩萨以婆罗门吠陀中说的灰白童象（即六牙白象）形象来到正在持斋戒的母亲胎中
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 摩耶夫人
+      role: 客体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "他便以婆罗门吠陀中说的灰白童象（即六牙白象）的形象来到正在持斋戒的母亲胎中"
+  note: null
+
+- event_id: EVT_002
+  type: 弘法
+  title: 菩萨在母胎中为无量天人宣说净化四生妙法
+  description: 菩萨入胎后加持母胎成为无量宫，并为无量无数的天人、人类众生宣说净化四生的妙法
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "他入到胎中也是加持母胎成为十分悦意、没有轮回之行、诸位佛子享用的无量宫，并为无量无数的天人、人类众生宣说净化四生的妙法"
+  note: null
+
+# ==================== （三）诞生 (lines 108-123) ====================
+
+- event_id: EVT_003
+  type: 神变
+  title: 太子于蓝毗尼花园从母亲右肋诞生
+  description: 住胎十月圆满后，太子以二十种相证得菩提之身从母亲右肋自然诞生
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 摩耶夫人
+      role: 客体
+  location: 蓝毗尼花园
+  time_info:
+    text: "住胎十月圆满"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "表示十地圆满而住胎十月圆满，他那以二十种相证得菩提的身体犹如纯金一般，当以世间福德力在蓝毗尼花园中降生的时刻已到，他在母亲没有任何损害的情况下从她的右肋自然诞生"
+  note: null
+
+- event_id: EVT_004
+  type: 神变
+  title: 天子沐浴太子、梵天帝释天供养妙衣
+  description: 众天子从天而降为太子沐浴；空中天人以妙音赞叹；梵天帝释天献上妙衣
+  participants:
+    - entity: 释迦牟尼佛
+      role: 受者
+    - entity: 梵天
+      role: 供养者
+    - entity: 帝释天
+      role: 供养者
+  location: 蓝毗尼花园
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "众天子从天而降精心为他沐浴；空中的天人恭恭敬敬以妙音赞叹；梵天帝释天献上精美的妙衣"
+  note: null
+
+- event_id: EVT_005
+  type: 神变
+  title: 太子降生向四方各迈七步
+  description: 菩萨刚刚降生便向四方各迈七步，脚下所踏莲花花蕊奕奕生辉，表示欢喜趋向四无量道
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 蓝毗尼花园
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "菩萨刚刚降生，便向四方各迈七步，脚下所踏天人供养的莲花花蕊也显得奕奕生辉"
+  note: null
+
+- event_id: EVT_006
+  type: 史传
+  title: 五百释迦童子等一同出生及菩提树五百宝藏出现
+  description: 难陀等五百释迦童子、耶输陀罗等八百童女、登巴等五百仆人、阿丹等五百良驹一同出生；南赡部洲中央菩提树、五百乐园、五百宝藏出现
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 难陀
+      role: 伴随者
+    - entity: 耶输陀罗
+      role: 伴随者
+    - entity: 登巴
+      role: 伴随者
+    - entity: 阿丹
+      role: 伴随者
+    - entity: 五百释迦童子
+      role: 伴随者
+    - entity: 八百童女
+      role: 伴随者
+    - entity: 五百仆人
+      role: 伴随者
+    - entity: 五百良驹
+      role: 伴随者
+  location: 蓝毗尼花园
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "难陀等五百释迦童子以及耶输陀罗等八百童女、登巴等五百仆人、阿丹等五百良驹也一同出生。此时，大地震动，大放光芒，遍布各处"
+  note: null
+
+- event_id: EVT_007
+  type: 授记
+  title: 相师预言太子命运——转轮王或佛陀
+  description: 相师们预言太子若在俗家将成为克胜四方的转轮王，若出家为僧将成为佛陀
+  participants:
+    - entity: 释迦牟尼佛
+      role: 受者
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "相师们预言说：如果太子身在俗家，就会成为克胜四方的转轮王；倘若离开尘世出家为僧，就会成为佛陀"
+  note: null
+
+# ==================== （四）精通工巧 (lines 125-146) ====================
+
+- event_id: EVT_008
+  type: 圆寂
+  title: 摩耶夫人于太子出生七日后离世
+  description: 太子出生后第七天，母亲摩耶夫人离开人世
+  participants:
+    - entity: 摩耶夫人
+      role: 主体
+    - entity: 释迦牟尼佛
+      role: 关联者
+  location: null
+  time_info:
+    text: "太子出生后的第七天"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "太子出生后的第七天，母亲摩耶夫人就离开了人世"
+  note: null
+
+- event_id: EVT_009
+  type: 史传
+  title: 三十二位姨母抚养太子
+  description: 净饭王把太子交给众生主母等三十二位姨母抚养成长
+  participants:
+    - entity: 释迦牟尼佛
+      role: 受者
+    - entity: 净饭王
+      role: 主体
+    - entity: 众生主母
+      role: 养育者
+    - entity: 三十二位姨母
+      role: 养育者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "于是国王把他交给众生主母等三十二位姨母，抚养成长"
+  note: null
+
+- event_id: EVT_010
+  type: 弘法
+  title: 太子于师长处学习文字历算及骑象技艺
+  description: 太子长大后在根戒西尼、真哦够恰等师长处学习文字、历算，在国舅桑林处学习骑象等技艺
+  participants:
+    - entity: 释迦牟尼佛
+      role: 受者
+    - entity: 根戒西尼
+      role: 师长
+    - entity: 真哦够恰
+      role: 师长
+    - entity: 桑林
+      role: 师长
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "在根戒西尼（意为众知识）、真哦够恰等等师长面前学习文字、历算，在国舅桑林（意为善取）那里学习了骑象等许多技艺，所有的知识、本领样样精通"
+  note: null
+
+- event_id: EVT_011
+  type: 史传
+  title: 太子比武——象力、箭术及六十四项本领
+  description: 太子与提婆达多、难陀比武，提婆达多击死大象、难陀抛象至城外，太子用脚拇趾挑象尾扔越七城墙；箭术比试太子一箭穿透所有目标，箭落地成"箭生井"
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 提婆达多
+      role: 对手
+    - entity: 难陀
+      role: 对手
+  location: 广严城
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "提婆达多怀着极大的嫉妒心以一掌力击死大象，难陀用力把大象从城门抛到城外。为了灭他们的威风，菩萨太子一边坐在马车上一边用脚拇趾尖挑起象尾扔到越过七个城墙的野外"
+  note: "箭落地处出现八功德水泉眼"
+
+# ==================== （五）嬉享妃眷 (lines 148-153) ====================
+
+- event_id: EVT_012
+  type: 史传
+  title: 太子迎娶三位太子妃及六万妃子
+  description: 菩萨迎娶远离五种过失、具有八种功德的耶输陀罗、耶惟檀与热达吉，连同各自二万眷属即六万妃子，如幻般享受妙欲
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 耶输陀罗
+      role: 受者
+    - entity: 耶惟檀
+      role: 受者
+    - entity: 热达吉
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子，如幻般享受妙欲"
+  note: null
+
+# ==================== （六）出家 (lines 155-165) ====================
+
+- event_id: EVT_013
+  type: 史传
+  title: 太子目睹生老病死四景后立誓出家
+  description: 太子乘登巴驾驶的马车到城市四方消遣时目睹生老病死四种景象，心中异常悲哀，对轮回生起极大厌离心，立誓出家
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 登巴
+      role: 驾驶者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "当他乘着登巴驾驶的马车到城市四方消遣的时候，目睹了生老病死的四种景象，心中异常悲哀"
+  note: null
+
+- event_id: EVT_014
+  type: 史传
+  title: 净饭王严加守护禁止太子外出
+  description: 净饭王担心太子出家，命监视者和夜间巡逻者在城周围严加守护，禁止太子外出
+  participants:
+    - entity: 净饭王
+      role: 主体
+    - entity: 释迦牟尼佛
+      role: 客体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "净饭王由于担心太子出家，于是命监视者和夜间巡逻者在城的周围严加守护，禁止太子外出"
+  note: null
+
+- event_id: EVT_015
+  type: 出家受戒
+  title: 太子夜间出家——向父王顶礼后跨马腾空
+  description: 太子一天夜里默默向父王顶礼以断除过失，跨上阿丹坐骑，在四大天王承侍下腾空而去
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 净饭王
+      role: 关联者
+    - entity: 阿丹
+      role: 坐骑
+    - entity: 四大天王
+      role: 护送者
+  location: null
+  time_info:
+    text: "一天夜里"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "一天夜里，太子默默向父王顶礼，以此断除父母没有允许出家的过失。他跨上阿丹坐骑，在四大天王的承侍下，腾空而去"
+  note: null
+
+- event_id: EVT_016
+  type: 出家受戒
+  title: 太子在清净塔前剃度出家
+  description: 太子来到清净塔前自己剃掉发须，正式出家，脱下俗衣换上袈裟
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "来到清净塔前，自己剃掉发须，标志着正式出家，脱下俗衣，换上袈裟"
+  note: null
+
+# ==================== （七）苦行 (lines 167-177) ====================
+
+- event_id: EVT_017
+  type: 弘法
+  title: 太子在让佩、拉秀处听闻无所有定与有顶等持
+  description: 太子出家后在广严城、王舍城于让佩与拉秀大师处听闻无所有定与有顶等持，虽现前上师果位但认识到不是解脱正道
+  participants:
+    - entity: 释迦牟尼佛
+      role: 受者
+    - entity: 让佩
+      role: 师长
+    - entity: 拉秀
+      role: 师长
+  location: 广严城
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "在广严城、王舍城，于身怀因明窍诀、大名鼎鼎的让佩与拉秀大师那里，听闻无所有定与有顶等持"
+  note: "文中指出太子认识到'这些等持与行为并不是解脱轮回过患的正道'"
+
+- event_id: EVT_018
+  type: 闭关修行
+  title: 太子与憍陈如等五人于尼连禅河畔六年苦行
+  description: 太子到尼连禅河畔与憍陈如等五人开始六年苦行禅修，最初两年每年吃一粒米，中间两年每年喝一滴水，最后两年什么都没有享用
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 憍陈如等五人
+      role: 伴随者
+    - entity: 憍陈如
+      role: 伴随者
+  location: 尼连禅河
+  time_info:
+    text: "六年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "到尼连禅河畔，与憍陈如等五人开始了长达六年的苦行禅修生涯。他们在最初两年当中每人每年只吃一粒米，中间的两年中每年只喝一滴水，最后的两年中什么饮食也没有享用"
+  note: null
+
+- event_id: EVT_019
+  type: 史传
+  title: 憍陈如等五人不悦离去往鹿野苑
+  description: 菩萨稍食粗食后憍陈如等五人心中不悦，离开前往鹿野苑
+  participants:
+    - entity: 憍陈如等五人
+      role: 主体
+    - entity: 释迦牟尼佛
+      role: 关联者
+  location: 鹿野苑
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "菩萨稍稍享用了一点粗食，结果使憍陈如等五人心中不悦，于是他们就去了鹿野苑"
+  note: null
+
+# ==================== （八）前往金刚座 (lines 179-186) ====================
+
+- event_id: EVT_020
+  type: 史传
+  title: 婆罗门女妙生母以醍醐供养菩萨
+  description: 婆罗门女妙生母以五百野黄牛乳汁提炼出的甘甜醍醐供养菩萨，菩萨身体即刻变得像纯金一般
+  participants:
+    - entity: 妙生母
+      role: 供养者
+    - entity: 释迦牟尼佛
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "婆罗门女妙生母以五百野黄牛乳汁提炼出的甘甜醍醐供养菩萨，（他接受并享受，）即刻身体变得像纯金一般"
+  note: null
+
+- event_id: EVT_021
+  type: 史传
+  title: 草商吉祥供养柔软草
+  description: 菩萨接受草商吉祥所供养的如孔雀颈般柔软的草
+  participants:
+    - entity: 吉祥
+      role: 供养者
+    - entity: 释迦牟尼佛
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "菩萨又接受了草商吉祥所供养的如孔雀颈般柔软的草"
+  note: null
+
+- event_id: EVT_022
+  type: 史传
+  title: 菩萨于金刚座菩提树下跏趺而坐立下成佛誓愿
+  description: 菩萨在一切佛陀加持中自然形成的金刚座菩提树下，于草垫上跏趺而坐，立誓身体纵干枯也绝不动
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 金刚座
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "在一切佛陀加持中自然形成的金刚座菩提树下，于草垫上跏趺而坐，立下誓愿：'于此垫上我身纵干枯，皮肤骨骼聚合纵散落，多劫难得菩提未获前，于此垫上身体绝不动'"
+  note: null
+
+# ==================== （九）降伏魔众 (lines 188-199) ====================
+
+- event_id: EVT_023
+  type: 降伏非人
+  title: 菩萨入定摧毁魔军等持光芒慑服魔众
+  description: 初夜时分菩萨入定于摧毁魔军的等持中，惊动慑服魔众所在地的光芒遍及各处
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 金刚座
+  time_info:
+    text: "初夜时分"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "在初夜时分，他入定于摧毁魔军的等持中，惊动、慑服魔众所在地的光芒遍及各处"
+  note: null
+
+- event_id: EVT_024
+  type: 降伏非人
+  title: 魔王波旬化现猎人试图扰乱菩萨
+  description: 魔王波旬化现猎人形象来到菩萨面前，谎称迦毗罗卫国已被提婆达多控制、王宫被摧毁、释迦族人被屠杀
+  participants:
+    - entity: 魔王波旬
+      role: 主体
+    - entity: 释迦牟尼佛
+      role: 客体
+    - entity: 提婆达多
+      role: 关联者
+  location: 金刚座
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "魔王波旬化现为猎人的形象来到他面前对他说：'迦毗罗卫国已经被提婆达多控制，王宫被他摧毁，所有释迦族人也被他屠杀，你为什么还呆在这里？'"
+  note: null
+
+- event_id: EVT_025
+  type: 降伏非人
+  title: 菩萨与魔王辩论资粮——魔王以无遮供施自夸
+  description: 魔王质疑菩萨仅有王子安乐不足以成佛，菩萨答以无量劫中已圆满二种资粮反问为何不能成佛；魔王举起双指破口大骂
+  participants:
+    - entity: 魔王波旬
+      role: 对手
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 金刚座
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "魔王说道：'真实圆满的佛陀是无量资粮的果。你仅仅拥有王子的幸福安乐。'菩萨答言：'你仅仅以一次无遮供施尚且赢得了欲界的荣华，那么我在无量无数劫当中已经圆满了二种资粮，为什么不能成佛？'"
+  note: "此处文本到line 199为止（本段范围），魔王对话继续到下一段"

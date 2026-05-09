@@ -1,0 +1,549 @@
+# ============================================================
+# 知识图谱事件抽取 — 第一品 佛教总况 seg5 (lines 401-500)
+# 覆盖范围: 教藏交付传代之情节（迦叶→阿难→麻衣→小护→有愧→黑色→善见）
+#           + 十六大罗汉护持佛法 + 引文论证
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09 (段落级抽取)
+# 规范: SKILL_04a v0.3 + entity-taxonomy v0.4 + narrative-layers v0.2
+# 实体引用: 使用实体 NAME（非 ID），引用 kg/entities/ch01-seg5.yaml
+# confidence 默认: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 教藏交付传代 — 迦叶段 (lines 401-444) ====================
+
+- event_id: EVT_001
+  type: 传法
+  title: 佛陀将佛法交付大迦叶及十六大阿罗汉
+  description: 佛陀在世时分一半坐垫给大迦叶让其作为继承人，将佛法交付大迦叶及十六大阿罗汉。
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 大迦叶
+      role: 受法者
+    - entity: 十六大阿罗汉
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛陀在世时把一半坐垫分给大迦叶尊者，让他作为自己的继承人。也就是说，佛陀将佛法交付给大迦叶及十六大阿罗汉。"
+  note: null
+
+- event_id: EVT_002
+  type: 出家受戒
+  title: 迦叶于哦芒塔佛前获得比丘戒
+  description: 迦叶一见佛陀即生本师想，三说"世尊是我之导师"后获得比丘戒，被赞为头陀行第一。
+  participants:
+    - entity: 大迦叶
+      role: 受戒者
+    - entity: 释迦牟尼佛
+      role: 亲教师
+  location: 哦芒塔
+  time_info:
+    text: "释迦世尊现前成佛还没过多久"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "迦叶一见到佛陀就生起了本师之想，不禁脱口说了三遍'世尊是我之导师，我是世尊之声闻'。佛陀回应'我是汝之本师，汝是我之声闻'三遍完毕，迦叶即已获得比丘戒，他在佛弟子当中被赞为'头陀行第一'。"
+  note: null
+
+- event_id: EVT_003
+  type: 弘法
+  title: 迦叶结集佛经护持佛教四十余年
+  description: 迦叶尊者结集佛经并护持佛教，经历四十多年，引导许多众生趋入解脱。
+  participants:
+    - entity: 大迦叶
+      role: 主体
+  location: null
+  time_info:
+    text: "四十多年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "迦叶尊者认真结集了佛经并且护持佛教，经历了四十多年的悠悠岁月，许多所化众生在这期间被引导趋入解脱。"
+  note: null
+
+- event_id: EVT_004
+  type: 传法
+  title: 迦叶将佛法交传阿难
+  description: 迦叶入灭前告诫阿难接手护持佛法，并嘱咐将来再交传麻衣。
+  participants:
+    - entity: 大迦叶
+      role: 主体
+    - entity: 阿难
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "阿难，你要知道，本师佛陀将圣教交付与我而趣入涅槃，现在我也将要入灭，因此以后佛法由你护持，你将来再交传与麻衣。"
+  note: null
+
+- event_id: EVT_005
+  type: 圆寂
+  title: 迦叶于鸡足山趣入涅槃
+  description: 迦叶登鸡足山，山门自开，铺草垫披祖衣，加持遗体不坏至弥勒成佛，示现众多神变后趣入涅槃，山门自闭。
+  participants:
+    - entity: 大迦叶
+      role: 主体
+  location: 鸡足山
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他在中央铺上草垫，披上世尊的粪扫祖衣，加持遗体不坏一直保持到弥勒成佛，接着示现众多神变而趣入涅槃。"
+  note: null
+
+- event_id: EVT_006
+  type: 神变
+  title: 迦叶加持遗体不坏至弥勒成佛
+  description: 迦叶加持其遗体不坏保存至弥勒成佛时，并加持未生怨王朝见时山门方开。
+  participants:
+    - entity: 大迦叶
+      role: 主体
+  location: 鸡足山
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "加持遗体不坏一直保持到弥勒成佛……迦叶尊者又作加持：当未生怨王前来朝见之时此门再打开。"
+  note: null
+
+- event_id: EVT_007
+  type: 授记
+  title: 阿难转述弥勒佛未来展示迦叶遗体之授记
+  description: 阿难阻止未生怨王焚烧遗体，转述弥勒佛将来与九十九俱胝声闻弟子展示迦叶遗体的授记，弥勒佛眷属将因此行持头陀功德证阿罗汉果。
+  participants:
+    - entity: 阿难
+      role: 授记转述者
+    - entity: 弥勒菩萨
+      role: 授记中主体
+    - entity: 大迦叶
+      role: 授记中客体
+    - entity: 未生怨王
+      role: 受者
+  location: 鸡足山
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "弥勒佛与首批眷属九十九俱胝声闻弟子来到此地，他将尊者的遗体放在掌中说：'这是释迦佛声闻弟子中头陀第一的尊者，他身披的祖衣也是释迦佛陀的祖衣。'"
+  note: null
+
+- event_id: EVT_008
+  type: 建寺
+  title: 阿难与未生怨王在鸡足山顶建造遗塔
+  description: 未生怨王与阿难前往鸡足山朝见迦叶遗体后，返回途中在山顶建造遗塔。
+  participants:
+    - entity: 阿难
+      role: 主体
+    - entity: 未生怨王
+      role: 主体
+  location: 鸡足山
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "后来阿难与未生怨王在鸡足山顶建造了遗塔。"
+  note: null
+
+# ==================== 教藏交付传代 — 阿难段 (lines 446-465) ====================
+
+- event_id: EVT_009
+  type: 出家受戒
+  title: 阿难在十力迦叶前受戒
+  description: 佛陀将阿难交给十力迦叶，以现今仪轨按次第给他传戒。
+  participants:
+    - entity: 阿难
+      role: 受戒者
+    - entity: 十力迦叶
+      role: 亲教师
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: null
+  time_info:
+    text: "过了六年作为佛陀父子相会之际"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "世尊把阿难交给十力迦叶，并以现今的仪轨按次第给他传戒。"
+  note: null
+
+- event_id: EVT_010
+  type: 弘法
+  title: 阿难护持佛教四十余年
+  description: 阿难当佛陀侍者，被赞为多闻第一，护持佛教四十余年。
+  participants:
+    - entity: 阿难
+      role: 主体
+  location: null
+  time_info:
+    text: "四十年之余"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他后来当佛陀的侍者，并被赞为佛弟子中'多闻第一'。阿难护持佛教有四十年之余。"
+  note: null
+
+- event_id: EVT_011
+  type: 传法
+  title: 阿难教诫麻衣并交传佛法
+  description: 阿难嘱咐麻衣护持佛教，并指示将来在觉拉摩仁达山将佛法交传给小护。
+  participants:
+    - entity: 阿难
+      role: 主体
+    - entity: 麻衣
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛陀把佛法交传与迦叶，迦叶又付教于我，我也即将入灭，因此由你来护持佛教。将来在觉拉地方摩仁达山……到时你把佛法交传给他。"
+  note: null
+
+- event_id: EVT_012
+  type: 出家受戒
+  title: 阿难在恒河中央为五百仙人传比丘戒
+  description: 阿难在恒河中央幻化岛屿，为携五百眷属的仙人传比丘戒，仙人即刻证得阿罗汉果，被称为日中罗汉（水中罗汉）。
+  participants:
+    - entity: 阿难
+      role: 亲教师
+    - entity: 日中罗汉
+      role: 受戒者
+  location: 恒河
+  time_info: null
+  layers: [史传, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "阿难便在恒河中央幻化一座岛屿，在那里为他们传了比丘戒。仙人刚刚受戒即刻证得阿罗汉果位，所以就被人们共称为'日中罗汉'或者'水中罗汉'。"
+  note: null
+
+- event_id: EVT_013
+  type: 授记
+  title: 阿难转达佛陀授记日中罗汉在克什米尔弘法
+  description: 阿难对日中罗汉说佛陀授记其将来在克什米尔弘扬佛法，日中罗汉承诺依教奉行。
+  participants:
+    - entity: 释迦牟尼佛
+      role: 授记者
+    - entity: 阿难
+      role: 授记转述者
+    - entity: 日中罗汉
+      role: 受记者
+  location: 恒河
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "阿难对他说：'佛陀授记你将来在克什米尔弘扬佛法，当如此而行。'日中罗汉也承诺依教奉行。"
+  note: null
+
+- event_id: EVT_014
+  type: 圆寂
+  title: 阿难于恒河中央示现涅槃
+  description: 阿难示现种种神变后入灭，遗体一半交未生怨王，一半由广严城民众带走，分别在广严城与萨那哦城建塔。
+  participants:
+    - entity: 阿难
+      role: 主体
+    - entity: 未生怨王
+      role: 见证者
+  location: 恒河
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "阿难尊者随即示现种种神变而入灭。他的遗体一半交与未生怨王，一半由广严城民众带走，在广严城与萨那哦城建塔。"
+  note: null
+
+# ==================== 教藏交付传代 — 麻衣段 (lines 467-474) ====================
+
+- event_id: EVT_015
+  type: 引文论证
+  title: 引《文殊根本续》授记阿育王出世建塔
+  participants:
+    - entity: 《文殊根本续》
+      role: 引文来源
+    - entity: 阿育王
+      role: 论证对象
+    - entity: 释迦牟尼佛
+      role: 论证对象
+  location: null
+  time_info: null
+  layers: [典据, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  quoted_text: "佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔，依此从七座舍利塔中出现佛舍利，在南赡部洲四面八方建造八万四千七宝塔。"
+  argument: 引《文殊根本续》中佛之授记论证阿育王出世建塔是佛早已安排的事业
+  source_quote: "按照佛在《文殊根本续》中授记：'佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔，依此从七座舍利塔中出现佛舍利，在南赡部洲四面八方建造八万四千七宝塔。'"
+  description: null
+
+- event_id: EVT_016
+  type: 授记
+  title: 佛在《文殊根本续》中授记阿育王出世
+  description: 佛在《文殊根本续》中授记阿育王将于佛灭百年后出世，寿命一百五十，八十七年供养佛塔，建八万四千七宝塔。
+  participants:
+    - entity: 释迦牟尼佛
+      role: 授记者
+    - entity: 阿育王
+      role: 受记者
+  location: null
+  time_info:
+    text: "佛陀入灭后一百年"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [授记, 典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔"
+  note: null
+
+- event_id: EVT_017
+  type: 建寺
+  title: 阿育王建造八万四千七宝塔
+  description: 阿育王从七座舍利塔中取出佛舍利，在南赡部洲四面八方建造八万四千七宝塔，香达夜叉协助。
+  participants:
+    - entity: 阿育王
+      role: 主体
+    - entity: 香达夜叉
+      role: 协助者
+  location: 南赡部洲
+  time_info:
+    text: "佛陀入灭后一百年"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在南赡部洲四面八方建造八万四千七宝塔。香达夜叉协助建造。"
+  note: null
+
+- event_id: EVT_018
+  type: 开光
+  title: 麻衣罗汉为阿育王佛塔开光
+  description: 麻衣罗汉对阿育王所建佛塔作了开光。
+  participants:
+    - entity: 麻衣
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "麻衣罗汉对这些佛塔作了开光"
+  note: null
+
+- event_id: EVT_019
+  type: 传法
+  title: 麻衣将佛法交传小护后趣入涅槃
+  description: 麻衣将佛法交传与小护以后趣入涅槃。
+  participants:
+    - entity: 麻衣
+      role: 主体
+    - entity: 小护
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "并将佛法交传与小护以后趣入涅槃。"
+  note: null
+
+# ==================== 教藏交付传代 — 小护段 (lines 476-489) ====================
+
+- event_id: EVT_020
+  type: 引文论证
+  title: 引《杂阿含经》授记小护出家
+  participants:
+    - entity: 《杂阿含经》
+      role: 引文来源
+    - entity: 小护
+      role: 论证对象
+    - entity: 释迦牟尼佛
+      role: 论证对象
+  location: null
+  time_info: null
+  layers: [典据, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  quoted_text: "我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。"
+  argument: 引佛在《杂阿含经》中的亲自授记论证小护出家和事业是佛早已预见安排的
+  source_quote: "一致共称佛在《杂阿含经》中亲自如此授记：'我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。'"
+  description: null
+
+- event_id: EVT_021
+  type: 授记
+  title: 佛在《杂阿含经》中授记小护出家
+  description: 佛亲自授记卖香者护藏之子小护将于佛灭百年后出家成为"无相佛"行持如来事业。
+  participants:
+    - entity: 释迦牟尼佛
+      role: 授记者
+    - entity: 小护
+      role: 受记者
+  location: null
+  time_info:
+    text: "佛入灭后百年"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [授记, 典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。"
+  note: null
+
+- event_id: EVT_022
+  type: 降伏非人
+  title: 小护以三尸花鬘降伏魔王波旬
+  description: 魔王波旬示现幻变障碍小护眷属证果，小护幻化三尸花鬘系于魔王头上，使其生恶心即臭气难熏、生善心则现鲜花，魔王最终恭敬顶礼承诺不再怀恶心。
+  participants:
+    - entity: 小护
+      role: 主体
+    - entity: 魔王波旬
+      role: 被降伏者
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小护幻化出三尸花鬘，系在魔王的头上，结果当他一生起恶心时就感到臭气难熏，一旦生起善心，就会现出鲜花的本面。这样的花冠谁也没办法使之抛弃，最后魔王自己恭敬顶礼说：从此以后不再怀有恶心。"
+  note: null
+
+- event_id: EVT_023
+  type: 弘法
+  title: 小护以七教言令众多弟子证果
+  description: 小护以七教言令众多弟子证得阿罗汉果，山洞中充满诸位阿罗汉的四指扦。佛陀入灭以来从未有如此多阿罗汉眷属。
+  participants:
+    - entity: 小护
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在长十八肘、宽十二肘的山洞里到处充满着依靠小护尊者七教言而证果的诸位阿罗汉的四指扦。可以说，自佛陀入灭以来从没有出现过这么多阿罗汉眷属的人。"
+  note: null
+
+- event_id: EVT_024
+  type: 传法
+  title: 小护将佛法交付有愧
+  description: 小护将佛法交付有愧后趣入涅槃。
+  participants:
+    - entity: 小护
+      role: 主体
+    - entity: 有愧
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "小护把佛法交付于有愧后便趣入涅槃。"
+  note: null
+
+# ==================== 教藏交付传代 — 有愧/黑色段 (lines 491-500) ====================
+
+- event_id: EVT_025
+  type: 传法
+  title: 有愧将佛法交付黑色
+  description: 有愧精通三藏，将佛法交付给摩竭陀国的圣者黑色后趣入涅槃。
+  participants:
+    - entity: 有愧
+      role: 主体
+    - entity: 黑色
+      role: 受法者
+  location: 摩竭陀国
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "有愧也是一位精通三藏的阿罗汉，他将佛法交付给摩竭陀国的圣者黑色后便趣入涅槃。"
+  note: null
+
+- event_id: EVT_026
+  type: 传法
+  title: 黑色将佛法交付善见
+  description: 黑色精通三藏广泛护持佛法，最后交付给善见后入于寂灭。
+  participants:
+    - entity: 黑色
+      role: 主体
+    - entity: 善见
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "圣者黑色也是精通三藏的阿罗汉，他广泛护持佛法，最后交付给善见，便入于寂灭。"
+  note: null
+
+# ==================== 十六大罗汉 (lines 498-500) ====================
+
+- event_id: EVT_027
+  type: 弘法
+  title: 十六大罗汉在四大部洲三十三天等处护持佛法
+  description: 十六大罗汉与各境五百阿罗汉一起护持佛法如意宝。有些论师将日中罗汉加入付法藏师，但自宗认为是龙树菩萨以上的七位。
+  participants:
+    - entity: 十六大阿罗汉
+      role: 主体
+    - entity: 五百阿罗汉
+      role: 随同
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十六大罗汉在四大部洲、三十三天等各境，与五百阿罗汉等一起护持佛法如意宝"
+  note: "自宗认为付法藏师为龙树菩萨以上的七位"
+
+# ============================================================
+# 质量检查结果:
+# 1. 无类型事件: 无 (全部有 type)
+# 2. 无参与者事件: 无 (全部至少一个 participant)
+# 3. entity name 有效: 全部匹配实体注册表
+# 4. layer 必填: 全部有 layers
+# 5. 通称非人泄漏: 无
+# 6. 重复事件: 无
+# 7. 授记双标: type=授记的EVT_007/EVT_013/EVT_016/EVT_021均含layer=授记
+# 8. 遗漏扫描:
+#    - 迦叶放弃家产 → 归入出家背景而非独立事件
+#    - 萨迦贤前去外道师 → 归入迦叶出家背景
+#    - 未生怨王梦境 → 归入EVT_007/EVT_008背景
+#    - 引文论证均已提取
+# ============================================================

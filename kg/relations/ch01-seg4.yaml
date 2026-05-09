@@ -1,0 +1,470 @@
+# ============================================================
+# 知识图谱关系抽取 -- 第一品 佛教总况 seg4 (lines 301-400)
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 规范: SKILL_05a v0.3 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 NAME（人类可读名），非 entity ID
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/01_佛教总况.md
+  source_lines: "301-400"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.3
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 亲属/政治关系 (fatherOf / grandparentOf)
+# ============================================================
+
+  - rel_id: R_001
+    type: grandparentOf
+    source: 达玛阿修嘎
+    target: 离忧
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "国王达玛阿修嘎的孙子名叫离忧"
+    note: "文本明确称离忧为达玛阿修嘎之孙"
+
+  - rel_id: R_002
+    type: fatherOf
+    source: 离忧
+    target: 勇部
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "自从离忧的儿子勇部时期开始"
+    note: null
+
+# ============================================================
+# B. 师承/付法 (teacherOf / successorOf)
+# ============================================================
+
+  - rel_id: R_010
+    type: teacherOf
+    source: 释迦牟尼佛
+    target: 大迦叶
+    specialty: [付法藏]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "佛陀将佛法连同四众眷属交付与上座大迦叶"
+    note: "第一代付法藏师"
+
+# ============================================================
+# C. 结集关系 (compiled / collected)
+# ============================================================
+
+  - rel_id: R_020
+    type: compiled
+    source: 优婆离
+    target: 律藏
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "优婆离结集律藏"
+    note: "第一次结集"
+
+  - rel_id: R_021
+    type: compiled
+    source: 阿难
+    target: 经藏
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "阿难结集经藏"
+    note: "第一次结集"
+
+  - rel_id: R_022
+    type: compiled
+    source: 大迦叶
+    target: 论藏
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "大迦叶结集所有论藏"
+    note: "第一次结集"
+
+  - rel_id: R_023
+    type: compiled
+    source: 弥勒菩萨
+    target: 律藏
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "弥勒结集律藏"
+    note: "不共大乘结集"
+
+  - rel_id: R_024
+    type: compiled
+    source: 文殊菩萨
+    target: 经藏
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "文殊结集经藏"
+    note: "不共大乘结集"
+
+  - rel_id: R_025
+    type: compiled
+    source: 金刚手菩萨
+    target: 论藏
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "金刚手结集论藏"
+    note: "不共大乘结集"
+
+  - rel_id: R_026
+    type: compiled
+    source: 文殊菩萨
+    target: 甚深见派
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "所有甚深见派法藏由文殊结集"
+    note: null
+
+  - rel_id: R_027
+    type: compiled
+    source: 弥勒菩萨
+    target: 广大行派
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "所有广大行派法藏由弥勒结集"
+    note: null
+
+# ============================================================
+# D. 施主/护持关系 (patronOf)
+# ============================================================
+
+  - rel_id: R_030
+    type: patronOf
+    source: 未生怨王
+    target: 五百阿罗汉
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "由未生怨王作施主，五百阿罗汉济济一堂"
+    note: "第一次结集施主"
+
+  - rel_id: R_031
+    type: patronOf
+    source: 阿育王
+    target: 七百罗汉
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "由阿育王作施主，耶舍等七百罗汉聚集一堂"
+    note: "第二次结集施主"
+
+  - rel_id: R_032
+    type: patronOf
+    source: 腻契波王
+    target: 五百阿罗汉
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "腻契波王作为施主开始第三次结集"
+    note: "第三次结集施主"
+
+# ============================================================
+# E. 度化/摄受关系 (liberatedBy)
+# ============================================================
+
+  - rel_id: R_040
+    type: liberatedBy
+    source: 乾闼婆极喜
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "佛陀以善巧方便、大慈大悲直接度化众生，甚至包括乾闼婆极喜、遍行外道极贤在内，全部予以摄受。"
+    note: null
+
+  - rel_id: R_041
+    type: liberatedBy
+    source: 遍行外道极贤
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "佛陀以善巧方便、大慈大悲直接度化众生，甚至包括乾闼婆极喜、遍行外道极贤在内，全部予以摄受。"
+    note: null
+
+# ============================================================
+# F. 教派分裂关系 (splitFrom)
+# ============================================================
+
+  - rel_id: R_050
+    type: splitFrom
+    source: 大众部
+    target: 说一切有部
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "龙长老扩大争端，使得说一切有部中又分出了大众部、上座部、正量部三部"
+    note: null
+
+  - rel_id: R_051
+    type: splitFrom
+    source: 上座部
+    target: 说一切有部
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "龙长老扩大争端，使得说一切有部中又分出了大众部、上座部、正量部三部"
+    note: null
+
+  - rel_id: R_052
+    type: splitFrom
+    source: 正量部
+    target: 说一切有部
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "龙长老扩大争端，使得说一切有部中又分出了大众部、上座部、正量部三部"
+    note: null
+
+# ============================================================
+# G. 引文/典据关系 (cites)
+# ============================================================
+
+  - rel_id: R_060
+    type: cites
+    source: 《大毗婆沙论》
+    target: 释迦牟尼佛
+    quoted_text: "说法处及广严城，具白地城与天界……如是佛寿为八十，尔后能仁趋涅槃。"
+    argument: 总结佛陀一生行迹和住世年数分配
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《大毗婆沙论》中这样总结佛陀现身于世的一生"
+    note: null
+
+  - rel_id: R_061
+    type: cites
+    source: 《杂阿含经》
+    target: 五百阿罗汉
+    quoted_text: "佛灭度后次夏季，王舍秘密山洞中，五百罗汉共集聚，未生怨施集三藏。"
+    argument: 佐证第一次结集的时间、地点、参与者与施主
+    about_entity: 五百阿罗汉
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《杂阿含经》中说：'佛灭度后次夏季……'"
+    note: null
+
+  - rel_id: R_062
+    type: cites
+    source: 《国王哲哲梦境授记经》
+    target: 释迦牟尼佛
+    quoted_text: "真实圆满正等觉迦叶佛告哲哲国王言：'国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。'"
+    argument: 建立十八部均是清净的佛教
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据, 授记]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "这次结集主要依据《国王哲哲梦境授记经》中所说"
+    note: null
+
+  - rel_id: R_063
+    type: cites
+    source: 《智燃论》
+    target: 长老母之子
+    quoted_text: "佛陀入灭后过了两百年，长老母之子结集教法。"
+    argument: 佐证第三次结集的时间
+    about_entity: 长老母之子
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 怀疑
+    confidence: 0.90
+    source_quote: "诚如《智燃论》中说：'佛陀入灭后过了两百年，长老母之子结集教法。'"
+    note: "作者认为此处两百年是把四百年每一年当半年计算，持怀疑态度"
+
+  - rel_id: R_064
+    type: cites
+    source: 《智燃论》
+    target: 释迦牟尼佛
+    quoted_text: "大乘佛法是佛所说，由普贤菩萨、文殊菩萨、密主金刚手以及弥勒菩萨等为首的结集者所结集。"
+    argument: 论证大乘佛法为佛亲说并由菩萨结集
+    about_entity: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "按照不共大乘的观点，诚如《智燃论》中说：'大乘佛法是佛所说……'"
+    note: null
+
+  - rel_id: R_065
+    type: cites
+    source: 《秘密不可思议经》
+    target: 金刚手菩萨
+    quoted_text: null
+    argument: 论证金刚手为千佛教法的结集者
+    about_entity: 金刚手菩萨
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《秘密不可思议经》中说金刚手是千佛教法的结集者。"
+    note: "原文未直接引用经文原句"
+
+# ============================================================
+# H. 地点关系 (locatedIn)
+# ============================================================
+
+  - rel_id: R_070
+    type: locatedIn
+    source: 列卓达山洞
+    target: 王舍城
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "在王舍城的列卓达山洞里"
+    note: null
+
+  - rel_id: R_071
+    type: locatedIn
+    source: 婆利迦精舍
+    target: 毗舍离城
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "在毗舍离城婆利迦精舍"
+    note: null
+
+  - rel_id: R_072
+    type: locatedIn
+    source: 耳饰精舍
+    target: 克什米尔
+    symmetric: false
+    derived_from: null
+    layers: [传闻]
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "在克什米尔境内的耳饰精舍"
+    note: null
+
+  - rel_id: R_073
+    type: locatedIn
+    source: 革瓦那精舍
+    target: 匝兰绕静处
+    symmetric: false
+    derived_from: null
+    layers: [传闻]
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "匝兰绕静处革瓦那精舍"
+    note: null
+
+  - rel_id: R_074
+    type: locatedIn
+    source: 布玛萨巴瓦山
+    target: 王舍城
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "在王舍城的南方布玛萨巴瓦山上"
+    note: "布玛萨巴瓦山在王舍城南方"
+
+# ============================================================
+# I. 王朝继承关系 (succeedsAsRuler)
+# ============================================================
+
+  - rel_id: R_080
+    type: succeedsAsRuler
+    source: 欢喜王
+    target: 勇部
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.80
+    source_quote: "在勇部国王的下半生，欢喜王、大莲花王的整个一生，嘎纳加嘎的上半生这四位国王统治期间"
+    note: "文本暗示欢喜王接续勇部，并列四王统治次序"
+
+  - rel_id: R_081
+    type: succeedsAsRuler
+    source: 大莲花王
+    target: 欢喜王
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.80
+    source_quote: "在勇部国王的下半生，欢喜王、大莲花王的整个一生，嘎纳加嘎的上半生这四位国王统治期间"
+    note: null
+
+  - rel_id: R_082
+    type: succeedsAsRuler
+    source: 嘎纳加嘎
+    target: 大莲花王
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.80
+    source_quote: "在勇部国王的下半生，欢喜王、大莲花王的整个一生，嘎纳加嘎的上半生这四位国王统治期间"
+    note: null

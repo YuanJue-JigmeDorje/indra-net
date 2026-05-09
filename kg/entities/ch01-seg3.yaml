@@ -1,0 +1,341 @@
+# ============================================================
+# 知识图谱实体抽取 — 第一品 佛教总况 seg3 (lines 201-300)
+# 覆盖范围: 降魔成道(续) + 大彻大悟 + 广转法轮(初转-三转)
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09 (段落级精提取)
+# 规范: SKILL_03a v0.3 + entity-taxonomy v0.4
+# 管线: gazetteer 预扫描确认 + Agent NER 发现
+# ============================================================
+# gazetteer 候选判定说明：
+# 已排除的通用词/动词短语（非实体）:
+#   成佛(动词), 最后(副词), 菩提(通称修证), 正等正觉(通称),
+#   转妙法轮(动词短语), 大菩萨(通称), 比丘尼(通称),
+#   天王(=四大天王子项), 阿罗汉(通称修证), 大比丘(通称),
+#   满成佛(无意义截断), 四十九日(时间量词), 如意宝珠(通称供物),
+#   福德资粮(通称), 请转法轮(动词短语), 三转法轮(=教法alias已收),
+#   人天(通称), 见佛(动词), 说经(动词), 鹫山(=灵鹫山alias已收),
+#   大天(此段无相关出现,指四大天王)
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 释迦牟尼佛
+  aliases: [释迦佛, 本师, 义成王子, 白幢, 菩萨太子, 沙门释迦牟尼, 如来, 世尊, 释迦牟尼, 佛陀, 能仁]
+  type: 圣众.大乘.佛
+  additional_types: [人物.帝王]
+  additional_types_source: text
+  attainments: [天眼, 漏尽通, 正等正觉]
+  note: "降魔成道、大彻大悟、广转三次法轮之主体；文本同时以凡常太子及圆满佛陀两种模式描述"
+  appearances: [201, 224, 229, 232, 237, 246, 252, 255, 260, 264, 267, 276, 280, 287, 294]
+
+# ==================== 非人 ====================
+
+E_002:
+  name: 地神安稳母
+  aliases: []
+  type: 非人.天部
+  note: "降魔时半个金色身躯破土而出为菩萨作证"
+  appearances: [203]
+
+E_003:
+  name: 魔王波旬
+  aliases: []
+  type: 非人.天部
+  note: "降魔失败后羞愧回处；再度发动魔军及七魔女引诱"
+  appearances: [207, 216]
+
+E_004:
+  name: 白莲母
+  aliases: []
+  type: 非人.天部
+  note: "七魔女之一；用媚态诱惑菩萨"
+  appearances: [217]
+
+E_005:
+  name: 美那嘎
+  aliases: []
+  type: 非人.天部
+  note: "七魔女之一；脖子上各种项链悬垂"
+  appearances: [217]
+
+E_006:
+  name: 妙饰女
+  aliases: []
+  type: 非人.天部
+  note: "七魔女之一；用腰带捆缚"
+  appearances: [218]
+
+E_007:
+  name: 卷发女
+  aliases: []
+  type: 非人.天部
+  note: "七魔女之一；用钉铛作响的钏镯"
+  appearances: [218]
+
+E_008:
+  name: 梵天
+  aliases: []
+  type: 非人.天部
+  note: "回忆往昔宏愿劝请佛转法轮；供养千辐金法轮并以偈颂劝请"
+  appearances: [237, 243]
+
+E_009:
+  name: 帝释天
+  aliases: []
+  type: 非人.天部
+  note: "与梵天一道前来；供上如意宝珠请求佛转法轮"
+  appearances: [239, 240]
+
+E_010:
+  name: 四大天王
+  aliases: []
+  type: 非人.天部
+  note: "成佛后四十九日中供养珍宝钵至石钵之间的四钵盂"
+  appearances: [230]
+
+E_011:
+  name: 乾闼婆
+  aliases: []
+  type: 非人.天部
+  note: "第二转法轮共同眷属之一（天龙乾闼婆等）"
+  appearances: [282]
+
+# ==================== 人物 ====================
+
+E_020:
+  name: 罗睺罗
+  aliases: []
+  type: 人物.其他
+  note: "菩萨成佛时月食之际降生人间"
+  appearances: [228]
+
+E_021:
+  name: 阿难
+  aliases: []
+  type: 人物.其他
+  note: "菩萨成佛时月食之际降生人间"
+  appearances: [228]
+
+E_022:
+  name: 商主嘎滚
+  aliases: []
+  type: 人物.其他
+  note: "菩萨成佛后四十九日中供养蜂蜜"
+  appearances: [229]
+
+E_023:
+  name: 护贤
+  aliases: []
+  type: 人物.其他
+  note: "供养蜂蜜（成佛后四十九日）；第二转法轮得地大菩萨之一"
+  appearances: [229, 282]
+
+E_024:
+  name: 正命
+  aliases: []
+  type: 人物.其他
+  note: "婆罗门；行途中问佛在谁面前出家"
+  appearances: [255]
+
+E_025:
+  name: 憍陈如
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  note: "鹿野苑得自然近圆戒；第一批大比丘僧团之一"
+  appearances: [259, 267, 274]
+
+E_026:
+  name: 让佩
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  note: "佛观察其具法器但已离世"
+  appearances: [251]
+
+E_027:
+  name: 拉秀
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  note: "佛观察其具法器但已离世"
+  appearances: [251]
+
+E_028:
+  name: 舍利子
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  attainments: [阿罗汉]
+  note: "第二转法轮五千阿罗汉之首提及"
+  appearances: [280]
+
+E_029:
+  name: 目犍连
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  attainments: [阿罗汉]
+  note: "第二转法轮五千阿罗汉之一"
+  appearances: [280]
+
+E_030:
+  name: 众生主母
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  note: "五百比丘尼之首；第二转法轮眷属"
+  appearances: [281]
+
+E_031:
+  name: 给孤独
+  aliases: []
+  type: 人物.其他
+  note: "优婆塞；第二转法轮眷属"
+  appearances: [282]
+
+E_032:
+  name: 萨嘎
+  aliases: []
+  type: 人物.其他
+  note: "优婆夷；第二转法轮眷属"
+  appearances: [282]
+
+E_033:
+  name: 宝生
+  aliases: []
+  type: 人物.法师
+  note: "得地大菩萨；第二转法轮不共眷属"
+  appearances: [282]
+
+E_034:
+  name: 网施
+  aliases: []
+  type: 人物.法师
+  note: "得地大菩萨；第二转法轮不共眷属"
+  appearances: [282]
+
+# ==================== 地名 ====================
+
+E_040:
+  name: 鹿野苑
+  aliases: []
+  type: 地名.圣地
+  note: "佛陀初转法轮之地；憍陈如等五人在此等待"
+  appearances: [252, 259, 265]
+
+E_041:
+  name: 灵鹫山
+  aliases: [圆满处]
+  type: 地名.圣地
+  note: "佛转第二无相法轮之处"
+  appearances: [280]
+
+E_042:
+  name: 色究竟天
+  aliases: []
+  type: 地名.神话地名
+  note: "如来应允转法轮的声音传至此处"
+  appearances: [248]
+
+# ==================== 经典 ====================
+
+E_050:
+  name: 《功德庄严经》
+  aliases: []
+  type: 经典.经
+  note: "论述佛语特法——三转法轮各随根基顿渐示现"
+  appearances: [291]
+
+# ==================== 教法 ====================
+
+E_060:
+  name: 四谛
+  aliases: []
+  type: 教法.教法体系
+  note: "菩萨究竟四谛而现前正等正觉果位；初转法轮之核心"
+  appearances: [226, 268]
+
+E_061:
+  name: 四谛法轮
+  aliases: [第一转法轮]
+  type: 教法.教法体系
+  note: "远离二边中道的四谛法轮；在鹿野苑转；重复三次成十二相法轮；主宣律藏戒学"
+  appearances: [268, 276]
+
+E_062:
+  name: 第二无相法轮
+  aliases: [第二转法轮]
+  type: 教法.教法体系
+  note: "于灵鹫山转；主宣经藏定学"
+  appearances: [283]
+
+E_063:
+  name: 第三了义法轮
+  aliases: [第三转法轮]
+  type: 教法.教法体系
+  note: "在天界、龙宫等不定地点转；主宣论藏慧学"
+  appearances: [288]
+
+E_064:
+  name: 第四静虑
+  aliases: []
+  type: 教法.教言法门
+  note: "成佛夜菩萨入于此等持境界"
+  appearances: [224]
+
+E_065:
+  name: 大慈等持
+  aliases: []
+  type: 教法.教言法门
+  note: "降魔时菩萨入定于此等持，兵器全部化为花雨"
+  appearances: [212]
+
+E_066:
+  name: 菩萨戒
+  aliases: []
+  type: 教法.戒律体系
+  note: "经藏之律藏讲菩萨戒的所有戒条"
+  appearances: [284]
+
+E_067:
+  name: 如来藏
+  aliases: []
+  type: 教法.教法体系
+  note: "第三转法轮论藏之论藏讲蕴界处根识以及如来藏自性清净"
+  appearances: [290]
+
+E_068:
+  name: 三乘
+  aliases: []
+  type: 教法.教法体系
+  note: "三乘的法理浩如烟海、无量无边"
+  appearances: [298]
+
+E_069:
+  name: 道果
+  aliases: []
+  type: 教法.教法体系
+  note: "将有情安置于道果法中"
+  appearances: [299]
+
+# ==================== 法器/圣物 ====================
+
+E_070:
+  name: 千辐金法轮
+  aliases: []
+  type: 法器圣物.法器
+  note: "梵天供养佛陀以劝请转法轮"
+  appearances: [243]
+
+# ==================== 集合 ====================
+
+E_080:
+  name: 憍陈如等五人
+  aliases: [五比丘]
+  type: 集合.弟子集合
+  cardinality: 5
+  members: [憍陈如]
+  note: "鹿野苑等待佛陀；得自然近圆戒；第一批大比丘僧团"
+  appearances: [253, 259, 267, 274]

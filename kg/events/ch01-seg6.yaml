@@ -1,0 +1,368 @@
+# ============================================================
+# 知识图谱事件抽取 — 第一品 佛教总况 seg6 (lines 501-579)
+# 覆盖范围: 日中罗汉弘法克什米尔 + 护持佛法及大乘兴盛
+#           + 六庄严/密宗续部传出/八十四大成就者
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.3 + narrative-layers v0.2
+# 实体引用: 使用实体 NAME（非 ID），引用 kg/entities/ch01-seg6.yaml
+# confidence 默认: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 日中罗汉弘法克什米尔 (lines 501-519) ====================
+
+- event_id: EVT_001
+  type: 弘法
+  title: 十六大罗汉在四大部洲三十三天等处护持佛法
+  participants:
+    - entity: 十六大阿罗汉
+      role: 主体
+    - entity: 五百阿罗汉
+      role: 随同
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十六大罗汉在四大部洲、三十三天等各境，与五百阿罗汉等一起护持佛法如意宝"
+  description: 十六大罗汉在四大部洲及三十三天等处与五百阿罗汉一起护持佛法，在唐玄宗、薛禅皇帝、益旺大帝时代人们可现量见到。
+
+- event_id: EVT_002
+  type: 弘法
+  title: 日中罗汉在克什米尔树立佛法
+  participants:
+    - entity: 日中罗汉
+      role: 主体
+  location: 克什米尔
+  time_info:
+    text: "佛陀入灭后过了一百年"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛陀入灭后过了一百年，日中罗汉在相应禅定之殊胜地克什米尔树立佛法。"
+  description: 佛灭百年后日中罗汉在殊胜禅定地克什米尔树立佛法，正如佛陀授记所说。
+
+- event_id: EVT_003
+  type: 降伏非人
+  title: 日中罗汉以跏趺镇压克什米尔龙类
+  participants:
+    - entity: 日中罗汉
+      role: 主体
+  location: 克什米尔
+  time_info:
+    text: "阿难圆寂后接近二十年"
+    relative_to: 阿难
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在有湖泊的九个山谷汇合处，以一跏趺进行镇压，结果惊扰了龙类。龙类使大地震动，并降下瓢泼大雨，可是日中罗汉连法衣边也没有动摇，并且把剑刃雨变成鲜花"
+  description: 日中罗汉至克什米尔九山谷汇合处以跏趺镇压，龙类降雨震地但罗汉法衣不动，将剑刃雨变为鲜花，龙类倍感稀奇。
+
+- event_id: EVT_004
+  type: 弘法
+  title: 日中罗汉建立克什米尔城邦（形成迦湿弥罗国）
+  participants:
+    - entity: 日中罗汉
+      role: 主体
+    - entity: 五百阿罗汉
+      role: 眷属
+  location: 克什米尔
+  time_info: null
+  layers: [史传, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "他让魔术师作幻化城，他加持一直保持完美不坏。并让民众安居该城，他又从香醉山取来藏红花，并加持直至佛法住世期间此花常开，就这样形成了有许多城市、极其赏心悦目的地方，如今仍旧被人们称为迦湿弥罗国。"
+  description: 日中罗汉获龙类供养地盘后让魔术师作幻化城，从香醉山取藏红花加持常开，形成迦湿弥罗国。
+
+# ==================== 护持佛法及大乘兴盛 — 造论祖师 (lines 520-538) ====================
+
+- event_id: EVT_005
+  type: 弘法
+  title: 龙树菩萨开创甚深见派
+  participants:
+    - entity: 龙树菩萨
+      role: 开宗祖师
+    - entity: 萨绕哈
+      role: 师长
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "依照本师释迦佛的授记，大婆罗门萨绕哈的高足——甚深见派的开宗祖师就是第二大佛陀龙树菩萨"
+  description: 依照释迦佛授记，大婆罗门萨绕哈高足龙树菩萨为甚深见派开宗祖师，被誉为第二大佛陀。
+
+- event_id: EVT_006
+  type: 弘法
+  title: 无著将广大行派在南赡部洲普遍弘扬
+  participants:
+    - entity: 无著
+      role: 弘扬者
+    - entity: 弥勒菩萨
+      role: 师长
+  location: 南赡部洲
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "至尊弥勒菩萨的弟子——将广大行派在整个南赡部洲普遍弘扬者就是圣者无著"
+  description: 弥勒菩萨弟子无著将广大行派在南赡部洲普遍弘扬。
+
+- event_id: EVT_007
+  type: 弘法
+  title: 陈那开创事势理
+  participants:
+    - entity: 陈那
+      role: 开宗祖师
+    - entity: 文殊菩萨
+      role: 摄受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "蒙受文殊菩萨亲自摄受、获得克胜诸方之悉地而开创事势理者就是陈那论师"
+  description: 陈那论师蒙文殊亲自摄受，获得克胜诸方之悉地，开创事势理。
+
+# ==================== 大乘出现在人间 (lines 546-553) ====================
+
+- event_id: EVT_008
+  type: 传法
+  title: 文殊菩萨以比丘相对护月国王宣讲大乘法
+  participants:
+    - entity: 文殊菩萨
+      role: 主体
+    - entity: 护月
+      role: 受法者
+  location: 邬哲波夏
+  time_info:
+    text: "大莲花王时期稍稍过后"
+    relative_to: 大莲花王
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "邬哲波夏地方出现了一位名叫护月的国王，圣者文殊菩萨以比丘相来到他的王宫，对护月国王相应宣讲大乘法，并且留下了一本经函。"
+  description: 大莲花王时期稍后，文殊菩萨以比丘相至邬哲波夏对护月国王宣讲大乘法并留下经函，此为佛灭后大乘出现在人间的开端。
+
+- event_id: EVT_008b
+  type: 引文论证
+  title: 显宗与密宗对文殊留给护月之经函的不同观点
+  participants:
+    - entity: 《般若八千颂》
+      role: 引文来源
+    - entity: 《摄真如续》
+      role: 引文来源
+    - entity: 护月
+      role: 论证对象
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.95
+  quoted_text: null
+  argument: 显宗认为文殊留下的经函是《般若八千颂》，密宗认为是《摄真如续》，作者不做判断
+  source_quote: "显宗的观点认为这本经函是《般若八千颂》。按照密宗的观点，说为《摄真如续》。"
+
+# ==================== 密宗续部传出 (lines 554-573) ====================
+
+- event_id: EVT_009
+  type: 传法
+  title: 佛陀将续部交传邬金国王恩札布德（一说）
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 恩札布德
+      role: 受法者
+  location: 邬金
+  time_info: null
+  layers: [传闻]
+  sub_layer: "一种说法"
+  author_stance: 中立
+  confidence: 0.60
+  source_quote: "也有说佛陀将所有续部交传给邬金国王恩札布德"
+  description: 一种说法认为佛陀将所有续部交传给邬金国王恩札布德。
+
+- event_id: EVT_009b
+  type: 传法
+  title: 金刚手菩萨将续部交传恩札布德（另一说）
+  participants:
+    - entity: 金刚手菩萨
+      role: 主体
+    - entity: 恩札布德
+      role: 受法者
+  location: 邬金
+  time_info: null
+  layers: [传闻]
+  sub_layer: "另一种说法"
+  author_stance: 中立
+  confidence: 0.60
+  source_quote: "也有说是金刚手菩萨交付的。"
+  description: 另一种说法认为金刚手菩萨将续部交传给恩札布德。
+
+- event_id: EVT_010
+  type: 弘法
+  title: 恩札布德在邬金宣讲续部使境内众生获得成就变虹身
+  participants:
+    - entity: 恩札布德
+      role: 主体
+  location: 邬金
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王的确是将所有续部造成经函，并且为众生宣讲，因此在他的境内包括细微含生在内都获得了成就，并变成虹身。"
+  description: 恩札布德将续部造成经函为众生宣讲，境内包括细微含生在内都获成就变虹身。
+
+- event_id: EVT_011
+  type: 传法
+  title: 密主金刚手为邬金龙类宣讲续部
+  participants:
+    - entity: 金刚手菩萨
+      role: 主体
+  location: 邬金
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "密主为这些龙类，宣讲续部并且使它们相续得以成熟，渐渐地，它们都转生为人"
+  description: 恩札布德后邬金变为汪洋充满龙类，密主金刚手为龙类宣讲续部使之成熟，渐渐转生为人在海岸边修行获得成就。
+
+- event_id: EVT_012
+  type: 伏藏开取
+  title: 瓦色嘎巴从黑日嘎殿堂取出《密集续》
+  participants:
+    - entity: 瓦色嘎巴
+      role: 主体
+    - entity: 《密集续》
+      role: 取出经典
+  location: 黑日嘎殿堂
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "国王瓦色嘎巴从中取出《密集续》"
+  description: 国王瓦色嘎巴从黑日嘎殿堂仓库中取出《密集续》。
+
+- event_id: EVT_013
+  type: 伏藏开取
+  title: 龙树菩萨从黑日嘎殿堂取出《喜金刚》
+  participants:
+    - entity: 龙树菩萨
+      role: 主体
+    - entity: 《喜金刚》
+      role: 取出经典
+  location: 黑日嘎殿堂
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "龙树菩萨取出《喜金刚》"
+  description: 龙树菩萨从黑日嘎殿堂取出《喜金刚》。
+
+- event_id: EVT_014
+  type: 伏藏开取
+  title: 革革热巴从黑日嘎殿堂取出《玛哈玛雅》《大威德续》等
+  participants:
+    - entity: 革革热巴
+      role: 主体
+    - entity: 《玛哈玛雅》
+      role: 取出经典
+    - entity: 《大威德续》
+      role: 取出经典
+  location: 黑日嘎殿堂
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "革革热巴取出《玛哈玛雅》、《大威德续》等"
+  description: 革革热巴从黑日嘎殿堂取出《玛哈玛雅》和《大威德续》等续部。
+
+- event_id: EVT_015
+  type: 伏藏开取
+  title: 则乐巴从香巴拉取来《时轮金刚》
+  participants:
+    - entity: 则乐巴
+      role: 主体
+    - entity: 《时轮金刚》
+      role: 取出经典
+  location: 香巴拉
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "则乐巴等从香巴拉取来《时轮金刚》等"
+  description: 则乐巴从香巴拉取来《时轮金刚》等续部。
+
+- event_id: EVT_016
+  type: 弘法
+  title: 八十四位大成就者等通过密宗使有缘者成熟解脱
+  participants:
+    - entity: 八十四位大成就者
+      role: 主体
+    - entity: 十二位阿阇黎
+      role: 主体
+    - entity: 六门班智达
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "吉祥萨绕哈等八十四位大成就者，以降伏威力相被赞叹的佛智等十二位阿阇黎，此外还有六门班智达，大小时轮尊者等言之不尽的成就者出现，他们主要通过大乘密宗使无量的有缘者相续得以成熟、解脱。"
+  description: 吉祥萨绕哈等八十四大成就者、佛智等十二位阿阇黎、六门班智达等通过大乘密宗使无量有缘者成熟解脱。
+
+# ==================== 授记事件 ====================
+
+- event_id: EVT_017
+  type: 授记
+  title: 释迦佛授记龙树为甚深见派祖师
+  participants:
+    - entity: 释迦牟尼佛
+      role: 授记者
+    - entity: 龙树菩萨
+      role: 受记者
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "依照本师释迦佛的授记，大婆罗门萨绕哈的高足——甚深见派的开宗祖师就是第二大佛陀龙树菩萨"
+  description: 释迦佛授记龙树菩萨为甚深见派开宗祖师。
+
+- event_id: EVT_018
+  type: 授记
+  title: 佛陀授记日中罗汉在克什米尔弘法
+  participants:
+    - entity: 释迦牟尼佛
+      role: 授记者
+    - entity: 日中罗汉
+      role: 受记者
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "正如此授记所说一样，阿难圆寂后接近二十年的时候，日中罗汉发现授记的时间已到"
+  description: 佛陀授记日中罗汉将在克什米尔弘扬佛法，日中罗汉发现时间已到遂前往。

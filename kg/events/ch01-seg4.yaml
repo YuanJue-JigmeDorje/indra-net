@@ -1,0 +1,582 @@
+# ============================================================
+# 知识图谱事件抽取 -- 第一品 佛教总况 seg4 (lines 301-400)
+# 覆盖范围: (十二)示现涅槃 + 结集教法(三次结集) + 分裂十八部
+#           + 不共大乘结集
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09 (段落级 gazetteer 管线)
+# 规范: SKILL_04a v0.3 + entity-taxonomy v0.4 + narrative-layers v0.2
+# 实体引用: 使用实体 NAME（非 ID），引用 kg/entities/ch01-seg4.yaml
+# confidence 默认: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== (十二) 示现涅槃 (lines 301-339) ====================
+
+- event_id: EVT_001
+  type: 弘法
+  title: 佛陀度化乾闼婆极喜与遍行外道极贤
+  description: 佛陀以善巧方便大慈大悲直接度化众生，甚至包括乾闼婆极喜和遍行外道极贤在内全部摄受。
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 乾闼婆极喜
+      role: 受者
+    - entity: 遍行外道极贤
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛陀以善巧方便、大慈大悲直接度化众生，甚至包括乾闼婆极喜、遍行外道极贤在内，全部予以摄受。"
+  note: null
+
+- event_id: EVT_002
+  type: 神变
+  title: 众生主母发愿佛陀住世三大阿僧祇劫
+  description: 佛陀示现涅槃前打喷嚏，众生主母听闻后发愿佛陀住世三大阿僧祇劫，声音从人间传至色究竟天。
+  participants:
+    - entity: 众生主母
+      role: 主体
+    - entity: 释迦牟尼佛
+      role: 受者
+  location: 拘尸那城
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "这声音被众生主母听到，她立即发愿说：'愿佛陀住世三大阿僧祇劫。'这一发愿的声音从人间一直传到色究竟天之间"
+  note: null
+
+- event_id: EVT_003
+  type: 圆寂
+  title: 众生主母与五百女阿罗汉趣入涅槃
+  description: 众生主母因发愿不当被佛陀纠正，为忏悔与五百女阿罗汉一道趣入涅槃。
+  participants:
+    - entity: 众生主母
+      role: 主体
+    - entity: 五百女阿罗汉
+      role: 随同
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "众生主母为了忏悔，与五百女阿罗汉一道趣入涅槃。"
+  note: null
+
+- event_id: EVT_004
+  type: 弘法
+  title: 目犍连与舍利子巡视地狱
+  description: 目犍连与舍利子到地狱巡视，外道上师请其向弟子捎口信。
+  participants:
+    - entity: 目犍连
+      role: 主体
+    - entity: 舍利子
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "目犍连与舍利子二位尊者到地狱巡视，正在感受业报的外道上师，对他们二位说：'我们自己的宗派追随着错误的法规，请你们将此口信捎给我们的弟子。'"
+  note: null
+
+- event_id: EVT_005
+  type: 圆寂
+  title: 目犍连被外道徒殴打致死
+  description: 目犍连向外道徒转告其上师在无间地狱受苦的口信后，被外道徒殴打身亡，身体摧残如苇草。
+  participants:
+    - entity: 目犍连
+      role: 受害者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "外道徒数数殴打目犍连，他的身体被摧残得简直像苇草一样。"
+  note: null
+
+- event_id: EVT_006
+  type: 圆寂
+  title: 舍利子与八万阿罗汉于那烂陀寺涅槃
+  description: 舍利子发现目犍连不可能再活，悲痛之下前往那烂陀寺，当天上午与八万阿罗汉一起涅槃。
+  participants:
+    - entity: 舍利子
+      role: 主体
+  location: 那烂陀寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "就前往那烂陀寺，当天上午与八万阿罗汉一起趣入涅槃。"
+  note: null
+
+- event_id: EVT_007
+  type: 圆寂
+  title: 目犍连与七万罗汉同时涅槃
+  description: 舍利子涅槃当日下午，目犍连与七万罗汉同时涅槃。
+  participants:
+    - entity: 目犍连
+      role: 主体
+  location: null
+  time_info:
+    text: "当日下午"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "当日下午目犍连与七万罗汉同时涅槃。"
+  note: null
+
+- event_id: EVT_008
+  type: 传法
+  title: 佛陀将佛法交付大迦叶
+  description: 佛陀将佛法连同四众眷属交付大迦叶。
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 大迦叶
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛陀将佛法连同四众眷属交付与上座大迦叶"
+  note: null
+
+- event_id: EVT_009
+  type: 圆寂
+  title: 佛陀于娑罗双树下示现圆满涅槃
+  description: 佛陀嘱托弟子后于娑罗双树下示现圆满涅槃，遗体自然焚烧化为舍利。
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 娑罗双树
+  time_info:
+    text: "佛寿为八十"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛陀到娑罗双树下示现圆满涅槃。"
+  note: null
+
+- event_id: EVT_010
+  type: 建寺
+  title: 迦叶将佛舍利分八份装藏八大佛塔
+  description: 迦叶根据众生各自缘分将佛舍利分八份，装藏于八大佛塔。
+  participants:
+    - entity: 大迦叶
+      role: 主体
+    - entity: 八大佛塔
+      role: 受造物
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "根据众生各自的缘分把舍利分成八份，作为八大佛塔的装藏物。"
+  note: null
+
+# ==================== 引文论证 -- 《大毗婆沙论》总结佛陀一生 (line 334) ====================
+
+- event_id: EVT_010b
+  type: 引文论证
+  title: 引《大毗婆沙论》总结佛陀现身于世之一生
+  participants:
+    - entity: 《大毗婆沙论》
+      role: 引文来源
+    - entity: 释迦牟尼佛
+      role: 论证对象
+  quoted_text: "说法处及广严城，具白地城与天界，雪巴瘦与憍赏弥，静处以及佛塔山，竹林园及具怨城，及与迦毗罗卫城，佛于此等圣地处，各自安住一年矣。舍卫城住廿三年，妙药林中住四载，炽热山洞住二年，王舍城中住五年，苦行之处住六年，王宫中住廿九年，如是佛寿为八十，尔后能仁趋涅槃。"
+  argument: 作者引用此论总结佛陀一生的行迹和年数分配，以印证佛陀住世八十年的整体事业
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "《大毗婆沙论》中这样总结佛陀现身于世的一生：'说法处及广严城……尔后能仁趋涅槃。'"
+  note: null
+
+# ==================== 结集教法 (lines 340-399) ====================
+
+- event_id: EVT_011
+  type: 弘法
+  title: 第一次结集
+  description: 佛灭后第二年夏安居，在王舍城列卓达山洞，未生怨王作施主，五百阿罗汉聚集进行第一次结集三藏。
+  participants:
+    - entity: 优婆离
+      role: 结集律藏
+    - entity: 阿难
+      role: 结集经藏
+    - entity: 大迦叶
+      role: 结集论藏
+    - entity: 未生怨王
+      role: 施主
+    - entity: 五百阿罗汉
+      role: 参与者
+  location: 列卓达山洞
+  time_info:
+    text: "佛陀灭度后的第二年夏令安居期间"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "佛陀灭度后的第二年夏令安居期间，在王舍城的列卓达山洞里，由未生怨王作施主，五百阿罗汉济济一堂"
+  note: null
+
+# ==================== 引文论证 -- 《杂阿含经》记第一次结集 (line 351) ====================
+
+- event_id: EVT_011b
+  type: 引文论证
+  title: 引《杂阿含经》记载第一次结集
+  participants:
+    - entity: 《杂阿含经》
+      role: 引文来源
+    - entity: 五百阿罗汉
+      role: 论证对象
+    - entity: 未生怨王
+      role: 论证对象
+  quoted_text: "佛灭度后次夏季，王舍秘密山洞中，五百罗汉共集聚，未生怨施集三藏。"
+  argument: 引经文佐证第一次结集的时间、地点、参与者与施主
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "《杂阿含经》中说：'佛灭度后次夏季，王舍秘密山洞中，五百罗汉共集聚，未生怨施集三藏。'"
+  note: null
+
+- event_id: EVT_012
+  type: 弘法
+  title: 第二次结集
+  description: 第一次结集后一百一十年，在毗舍离城婆利迦精舍，耶舍领衔七百罗汉结集三藏、摈除十非事。
+  participants:
+    - entity: 耶舍
+      role: 领衔者
+    - entity: 七百罗汉
+      role: 参与者
+    - entity: 阿育王
+      role: 施主
+  location: 婆利迦精舍
+  time_info:
+    text: "第一次结集之后过了一百一十年"
+    relative_to: null
+    absolute: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "继第一次结集之后过了一百一十年……耶舍等七百罗汉聚集一堂，摈除十种非事，完整地诵一遍三藏"
+  note: null
+
+- event_id: EVT_013
+  type: 弘法
+  title: 大天比丘等宣扬五种邪法
+  description: 勇部时期开始，受魔加持的大天比丘等宣扬五种邪法，导致僧团内部争论不休。
+  participants:
+    - entity: 大天比丘
+      role: 主体
+    - entity: 善贤
+      role: 主体
+    - entity: 龙长老
+      role: 主体
+    - entity: 安意
+      role: 主体
+  location: null
+  time_info:
+    text: "离忧的儿子勇部时期开始"
+    relative_to: 勇部
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "受到魔加持的大天比丘、善贤、龙长老、安意等相继出现，他们向别人宣扬……五种邪法"
+  note: null
+
+- event_id: EVT_014
+  type: 弘法
+  title: 僧团分裂为十八部
+  description: 由龙长老扩大争端分出根本四部，安意再度扩张使四部分成十八部。
+  participants:
+    - entity: 龙长老
+      role: 分裂者
+    - entity: 安意
+      role: 分裂者
+    - entity: 说一切有部
+      role: 被分裂
+    - entity: 大众部
+      role: 分出
+    - entity: 上座部
+      role: 分出
+    - entity: 正量部
+      role: 分出
+  location: null
+  time_info:
+    text: "勇部、欢喜王、大莲花王、嘎纳加嘎四位国王统治期间"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "龙长老扩大争端，使得说一切有部中又分出了大众部、上座部、正量部三部……安意再度使争论不断扩张，结果四部又逐步分成十八部"
+  note: null
+
+- event_id: EVT_015
+  type: 弘法
+  title: 第三次结集
+  description: 腻契波王作施主进行第三次结集，建立十八部均为清净佛教，并将律藏、经藏、论藏立成文字。
+  participants:
+    - entity: 腻契波王
+      role: 施主
+  location: null
+  time_info:
+    text: "争论稍有平息之后"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "腻契波王作为施主开始第三次结集。"
+  note: "将律藏立成文字；经藏与论藏先前没有立成文字的也在当时立成文字"
+
+# ==================== 引文论证 -- 《国王哲哲梦境授记经》(line 372) ====================
+
+- event_id: EVT_015a
+  type: 引文论证
+  title: 引《国王哲哲梦境授记经》论证十八部均为清净佛教
+  participants:
+    - entity: 《国王哲哲梦境授记经》
+      role: 引文来源
+    - entity: 迦叶佛
+      role: 论证对象
+    - entity: 释迦牟尼佛
+      role: 论证对象
+  quoted_text: "真实圆满正等觉迦叶佛告哲哲国王言：'国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。'"
+  argument: 第三次结集引用此经教证建立十八部均是清净的佛教
+  location: null
+  time_info: null
+  layers: [典据, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "这次结集主要依据《国王哲哲梦境授记经》中所说：'真实圆满正等觉迦叶佛告哲哲国王言……'"
+  note: null
+
+- event_id: EVT_015b
+  type: 授记
+  title: 迦叶佛授记释迦佛教法分成十八部
+  description: 迦叶佛于《国王哲哲梦境授记经》中授记释迦佛教法分成十八部，每部均有解脱。
+  participants:
+    - entity: 迦叶佛
+      role: 授记者
+    - entity: 哲哲国王
+      role: 受者
+  location: null
+  time_info: null
+  layers: [授记, 典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。"
+  note: null
+
+# ==================== 第三次结集异说 (lines 380-393) ====================
+
+- event_id: EVT_015c
+  type: 弘法
+  title: 第三次结集（克什米尔说法）
+  description: 克什米尔论师认为第三次结集在耳饰精舍由妙辐领衔举行。
+  participants:
+    - entity: 妙辐
+      role: 领衔者
+    - entity: 瓦色莫札
+      role: 参与者
+    - entity: 五百阿罗汉
+      role: 参与者
+    - entity: 五百菩萨
+      role: 参与者
+  location: 耳饰精舍
+  time_info: null
+  layers: [传闻]
+  sub_layer: "克什米尔论师说法"
+  author_stance: 中立
+  confidence: 0.60
+  source_quote: "克什米尔的论师们认为：'在克什米尔境内的耳饰精舍，圣者妙辐等五百阿罗汉、瓦色莫札等四百大尊者以及五百菩萨作第三次结集。'"
+  note: null
+
+- event_id: EVT_015d
+  type: 弘法
+  title: 第三次结集（印度班智达说法）
+  description: 印度班智达认为第三次结集在匝兰绕静处革瓦那精舍举行。
+  participants:
+    - entity: 五百阿罗汉
+      role: 参与者
+  location: 革瓦那精舍
+  time_info: null
+  layers: [传闻]
+  sub_layer: "印度班智达说法"
+  author_stance: 中立
+  confidence: 0.60
+  source_quote: "印度的部分班智达则认为：'第三次结集是在匝兰绕静处革瓦那精舍，由五百罗汉、五千大尊者结集的。'"
+  note: null
+
+- event_id: EVT_015e
+  type: 弘法
+  title: 第三次结集（藏地共许说法）
+  description: 藏地共许佛灭后四百年五百罗汉与菩萨进行第三次结集。
+  participants:
+    - entity: 五百阿罗汉
+      role: 参与者
+  location: null
+  time_info:
+    text: "佛陀入灭后接近四百年"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [传闻]
+  sub_layer: "藏地共许说法"
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛陀入灭后接近四百年时，五百罗汉、五百或一万六千菩萨集聚一堂作了第三次结集。"
+  note: null
+
+# ==================== 引文论证 -- 《智燃论》记载第三次结集 (line 386) ====================
+
+- event_id: EVT_015f
+  type: 引文论证
+  title: 引《智燃论》记载长老母之子结集教法
+  participants:
+    - entity: 《智燃论》
+      role: 引文来源
+    - entity: 长老母之子
+      role: 论证对象
+  quoted_text: "佛陀入灭后过了两百年，长老母之子结集教法。"
+  argument: 佐证第三次结集的时间；作者认为此处两百年是把四百年按半年计算
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 怀疑
+  confidence: 0.90
+  source_quote: "诚如《智燃论》中说：'佛陀入灭后过了两百年，长老母之子结集教法。'我认为这里是把四百年中的每一年当作半年来计算的"
+  note: "作者对年代计算持怀疑态度，认为需要进一步分析研究"
+
+# ==================== 不共大乘结集 (lines 394-400) ====================
+
+- event_id: EVT_016
+  type: 引文论证
+  title: 引《智燃论》论证大乘佛法为佛所说
+  participants:
+    - entity: 《智燃论》
+      role: 引文来源
+    - entity: 普贤菩萨
+      role: 论证对象
+    - entity: 文殊菩萨
+      role: 论证对象
+    - entity: 金刚手菩萨
+      role: 论证对象
+    - entity: 弥勒菩萨
+      role: 论证对象
+  quoted_text: "大乘佛法是佛所说，由普贤菩萨、文殊菩萨、密主金刚手以及弥勒菩萨等为首的结集者所结集。"
+  argument: 论证大乘佛法为佛亲说并由菩萨结集
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "按照不共大乘的观点，诚如《智燃论》中说：'大乘佛法是佛所说，由普贤菩萨、文殊菩萨、密主金刚手以及弥勒菩萨等为首的结集者所结集。'"
+  note: null
+
+- event_id: EVT_017
+  type: 引文论证
+  title: 引《秘密不可思议经》论证金刚手为千佛教法结集者
+  participants:
+    - entity: 《秘密不可思议经》
+      role: 引文来源
+    - entity: 金刚手菩萨
+      role: 论证对象
+  quoted_text: null
+  argument: 论证金刚手菩萨是千佛教法的结集者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "《秘密不可思议经》中说金刚手是千佛教法的结集者。"
+  note: "原文未直接引用经文原句"
+
+- event_id: EVT_018
+  type: 弘法
+  title: 不共大乘结集
+  description: 在王舍城南方布玛萨巴瓦山，百万菩萨聚集，弥勒结集律藏、文殊结集经藏、金刚手结集论藏。
+  participants:
+    - entity: 弥勒菩萨
+      role: 结集律藏
+    - entity: 文殊菩萨
+      role: 结集经藏
+    - entity: 金刚手菩萨
+      role: 结集论藏
+    - entity: 百万菩萨
+      role: 参与者
+  location: 布玛萨巴瓦山
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "在王舍城的南方布玛萨巴瓦山上，百万菩萨聚集，弥勒结集律藏、文殊结集经藏、金刚手结集论藏。"
+  note: null
+
+- event_id: EVT_019
+  type: 弘法
+  title: 甚深见派法藏由文殊结集
+  description: 所有甚深见派法藏由文殊结集。
+  participants:
+    - entity: 文殊菩萨
+      role: 主体
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "所有甚深见派法藏由文殊结集"
+  note: null
+
+- event_id: EVT_020
+  type: 弘法
+  title: 广大行派法藏由弥勒结集
+  description: 所有广大行派法藏由弥勒结集。
+  participants:
+    - entity: 弥勒菩萨
+      role: 主体
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "所有广大行派法藏由弥勒结集"
+  note: null

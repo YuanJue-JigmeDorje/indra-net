@@ -1,0 +1,435 @@
+# ============================================================
+# 知识图谱关系抽取 — 第一品 佛教总况 seg5 (lines 401-500)
+# 覆盖范围: 教藏交付传代之情节（迦叶→阿难→麻衣→小护→有愧→黑色→善见）
+#           + 十六大罗汉护持佛法
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 规范: SKILL_05a v0.3 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 NAME（人类可读名），非 entity ID
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/01_佛教总况.md
+  source_lines: "401-500"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.3
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 亲属关系 (fatherOf / consortOf)
+# ============================================================
+
+  - rel_id: R_001
+    type: fatherOf
+    source: 尼枸卢顶
+    target: 大迦叶
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "迦叶尊者出生在摩竭陀国的尼枸卢婆罗门村落中，当时婆罗门尼枸卢顶的儿子祈祷尼枸卢天尊，结果生下一子，由此给他取名尼枸卢生。"
+    note: null
+
+  - rel_id: R_002
+    type: consortOf
+    source: 大迦叶
+    target: 萨迦贤
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "给他迎娶了美丽的金色女子萨迦贤为妻，可是他们之间始终如同兄妹一样，一刹那也没有生起贪欲心。"
+    note: "名义上的夫妻关系，文本明确说始终如兄妹"
+
+  - rel_id: R_003
+    type: fatherOf
+    source: 甘露饭
+    target: 阿难
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "阿难尊者，其实就是佛陀的叔父甘露饭之子，当释迦牟尼成佛的时候他与罗睺罗同时诞生。"
+    note: null
+
+  - rel_id: R_004
+    type: fatherOf
+    source: 护藏
+    target: 小护
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "那时有个卖香人名为护藏，他的儿子名叫小护，他必定出家为僧，到时你把佛法交传给他。"
+    note: null
+
+  - rel_id: R_005
+    type: fatherOf
+    source: 商主
+    target: 那达
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "将来在觉拉地方摩仁达山，有商主之子那达和帕达建造精舍并作为施主。"
+    note: null
+
+  - rel_id: R_006
+    type: fatherOf
+    source: 商主
+    target: 帕达
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "将来在觉拉地方摩仁达山，有商主之子那达和帕达建造精舍并作为施主。"
+    note: null
+
+  - rel_id: R_007
+    type: kinOf
+    source: 甘露饭
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "阿难尊者，其实就是佛陀的叔父甘露饭之子"
+    note: "甘露饭是佛陀的叔父"
+
+# ============================================================
+# B. 师承/付法关系 (teacherOf / dharmaSuccessorOf)
+# ============================================================
+
+  - rel_id: R_010
+    type: dharmaSuccessorOf
+    source: 大迦叶
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "佛陀在世时把一半坐垫分给大迦叶尊者，让他作为自己的继承人。也就是说，佛陀将佛法交付给大迦叶及十六大阿罗汉。"
+    note: "第一代付法藏师"
+
+  - rel_id: R_011
+    type: dharmaSuccessorOf
+    source: 阿难
+    target: 大迦叶
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "现在我也将要入灭，因此以后佛法由你护持，你将来再交传与麻衣。"
+    note: "第二代付法藏师"
+
+  - rel_id: R_012
+    type: dharmaSuccessorOf
+    source: 麻衣
+    target: 阿难
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "佛陀把佛法交传与迦叶，迦叶又付教于我，我也即将入灭，因此由你来护持佛教。"
+    note: "第三代付法藏师"
+
+  - rel_id: R_013
+    type: dharmaSuccessorOf
+    source: 小护
+    target: 麻衣
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "并将佛法交传与小护以后趣入涅槃。"
+    note: "第四代付法藏师"
+
+  - rel_id: R_014
+    type: dharmaSuccessorOf
+    source: 有愧
+    target: 小护
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "小护把佛法交付于有愧后便趣入涅槃。"
+    note: "第五代付法藏师"
+
+  - rel_id: R_015
+    type: dharmaSuccessorOf
+    source: 黑色
+    target: 有愧
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他将佛法交付给摩竭陀国的圣者黑色后便趣入涅槃。"
+    note: "第六代付法藏师"
+
+  - rel_id: R_016
+    type: dharmaSuccessorOf
+    source: 善见
+    target: 黑色
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "圣者黑色也是精通三藏的阿罗汉，他广泛护持佛法，最后交付给善见，便入于寂灭。"
+    note: "第七代付法藏师"
+
+  - rel_id: R_017
+    type: teacherOf
+    source: 释迦牟尼佛
+    target: 大迦叶
+    specialty: [比丘戒]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "佛陀回应'我是汝之本师，汝是我之声闻'三遍完毕，迦叶即已获得比丘戒"
+    note: null
+
+  - rel_id: R_018
+    type: teacherOf
+    source: 十力迦叶
+    target: 阿难
+    specialty: [比丘戒]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "世尊把阿难交给十力迦叶，并以现今的仪轨按次第给他传戒。"
+    note: null
+
+  - rel_id: R_019
+    type: teacherOf
+    source: 阿难
+    target: 日中罗汉
+    specialty: [比丘戒]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "阿难便在恒河中央幻化一座岛屿，在那里为他们传了比丘戒。"
+    note: "日中罗汉受戒后即刻证得阿罗汉果"
+
+# ============================================================
+# C. 施主关系 (patronOf)
+# ============================================================
+
+  - rel_id: R_020
+    type: patronOf
+    source: 阿育王
+    target: 麻衣
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "麻衣是精通三藏的阿罗汉，无忧法王（即阿育王）作为他的施主。"
+    note: null
+
+  - rel_id: R_021
+    type: patronOf
+    source: 那达
+    target: 小护
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "将来在觉拉地方摩仁达山，有商主之子那达和帕达建造精舍并作为施主。"
+    note: "阿难嘱咐麻衣将来在此处把佛法交传给小护"
+
+  - rel_id: R_022
+    type: patronOf
+    source: 帕达
+    target: 小护
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "将来在觉拉地方摩仁达山，有商主之子那达和帕达建造精舍并作为施主。"
+    note: null
+
+# ============================================================
+# D. 地理归属关系 (locatedIn / bornIn)
+# ============================================================
+
+  - rel_id: R_030
+    type: bornIn
+    source: 大迦叶
+    target: 尼枸卢婆罗门村落
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "迦叶尊者出生在摩竭陀国的尼枸卢婆罗门村落中"
+    note: null
+
+  - rel_id: R_031
+    type: locatedIn
+    source: 尼枸卢婆罗门村落
+    target: 摩竭陀国
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "迦叶尊者出生在摩竭陀国的尼枸卢婆罗门村落中"
+    note: null
+
+  - rel_id: R_032
+    type: locatedIn
+    source: 摩仁达山
+    target: 觉拉
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "将来在觉拉地方摩仁达山"
+    note: null
+
+# ============================================================
+# E. 典据引用关系 (cites)
+# ============================================================
+
+  - rel_id: R_040
+    type: cites
+    source: 《文殊根本续》
+    target: 阿育王
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    quoted_text: "佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔，依此从七座舍利塔中出现佛舍利，在南赡部洲四面八方建造八万四千七宝塔。"
+    argument: 佛在此续中授记阿育王出世及其建塔事业
+    about_entity: 阿育王
+    source_quote: "按照佛在《文殊根本续》中授记：'佛陀入灭后一百年出世，寿命达一百五十……建造八万四千七宝塔。'"
+    note: null
+
+  - rel_id: R_041
+    type: cites
+    source: 《杂阿含经》
+    target: 小护
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    quoted_text: "我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。"
+    argument: 佛亲自授记小护出家成为"无相佛"行持如来事业
+    about_entity: 小护
+    source_quote: "一致共称佛在《杂阿含经》中亲自如此授记：'我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。'"
+    note: null
+
+# ============================================================
+# F. 降伏关系 (subduedBy)
+# ============================================================
+
+  - rel_id: R_050
+    type: subduedBy
+    source: 魔王波旬
+    target: 小护
+    symmetric: false
+    derived_from: null
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "小护幻化出三尸花鬘，系在魔王的头上，结果当他一生起恶心时就感到臭气难熏……最后魔王自己恭敬顶礼说：从此以后不再怀有恶心。"
+    note: null
+
+# ============================================================
+# G. 同时诞生 / 并世关系 (contemporaryOf)
+# ============================================================
+
+  - rel_id: R_060
+    type: contemporaryOf
+    source: 大迦叶
+    target: 释迦牟尼佛
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "迦叶尊者也是这其中的一位，因此他的年龄与世尊几乎相同。"
+    note: "众多天人为获甘露妙法投生南赡部洲，迦叶是其中之一"
+
+  - rel_id: R_061
+    type: contemporaryOf
+    source: 阿难
+    target: 罗睺罗
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "当释迦牟尼成佛的时候他与罗睺罗同时诞生。"
+    note: null
+
+# ============================================================
+# H. 侍者关系 (attendantOf)
+# ============================================================
+
+  - rel_id: R_070
+    type: attendantOf
+    source: 阿难
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他后来当佛陀的侍者，并被赞为佛弟子中'多闻第一'。"
+    note: null
+
+# ============================================================
+# I. 集合成员关系 (memberOf)
+# ============================================================
+
+  - rel_id: R_080
+    type: memberOf
+    source: 日中罗汉
+    target: 十六大阿罗汉
+    symmetric: false
+    derived_from: null
+    layers: [传闻]
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "有些论师将日中罗汉加在付法藏师中来算，但自宗认为是龙树菩萨以上的七位。"
+    note: "此为异说，自宗不采纳将日中罗汉加入付法藏师"
+
+# ============================================================
+# 质量检查结果:
+# 1. 所有 source/target 均为实体注册表中的 name
+# 2. 所有关系有 source_quote 支持
+# 3. 无外部知识泄漏
+# 4. 对称关系标注正确 (consortOf/contemporaryOf=true; 其余=false)
+# 5. 付法传承链完整: 释迦→迦叶→阿难→麻衣→小护→有愧→黑色→善见
+# ============================================================

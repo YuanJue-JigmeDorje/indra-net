@@ -1,0 +1,818 @@
+# ============================================================
+# 知识图谱事件 — 第一品 佛教总况（章级合并）
+# 来源: source/dudjom/chapter_md/01_佛教总况.md (lines 1-579)
+# 合并日期: 2026-05-09
+# 合并自: ch01-seg1 ~ ch01-seg6
+# 规范: SKILL_04a v0.3 + narrative-layers v0.2
+# 实体引用: 使用实体 NAME（非 ID）
+# ============================================================
+
+# ==================== 宇宙观/佛陀修道 (seg1) ====================
+
+- event_id: EVT_001
+  type: 典据
+  title: 毗卢遮那佛安住基藏花严世界
+  participants:
+    - entity: 毗卢遮那佛
+      role: 主体
+  location: 基藏花严世界
+  layers: [典据]
+  confidence: 0.95
+  source_quote: "报身毗卢遮那佛受用之处，基藏花严世界安住着的毗卢遮那佛一一毛孔都显现尘数刹海"
+
+- event_id: EVT_002
+  type: 典据
+  title: 千位殊胜化身佛于金刚座次第成佛
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 金刚座
+  time_info: {text: "贤劫"}
+  layers: [典据]
+  confidence: 0.95
+  source_quote: "南方赡部洲菩提迦耶中央自然形成金刚座，千位殊胜化身佛次第出世成佛"
+
+- event_id: EVT_003
+  type: 典据
+  title: 声闻有部论述释迦佛以凡夫身一座成佛
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 有部
+      role: 论述者
+  location: 金刚座
+  layers: [典据]
+  confidence: 0.90
+  source_quote: "声闻有部的论师们认为……在金刚座以大资粮道的身份，在一坐垫上获得加行道、见道、修道、无学道以后才成佛"
+
+- event_id: EVT_004
+  type: 典据
+  title: 共同大乘论述白幢天子受生为义成王子成佛
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 南赡部洲
+  time_info: {text: "三大阿僧祇劫积累资粮后"}
+  layers: [典据]
+  confidence: 0.90
+  source_quote: "释迦佛从发菩提心起在三大阿僧祇劫积累资粮，最终成为十地一来菩萨名叫'白幢'的天子"
+
+- event_id: EVT_005
+  type: 典据
+  title: 密宗观点——义成王子于尼连禅河畔入定后赴密严刹土成佛
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 密严刹土
+  layers: [典据]
+  confidence: 0.90
+  source_quote: "智慧身到达密严刹土，蒙受一切如来灌顶"
+
+- event_id: EVT_006
+  type: 典据
+  title: 不共大乘观点——释迦佛在密严刹土成佛后依次示现
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 密严刹土
+  layers: [典据]
+  confidence: 0.90
+  source_quote: "释迦佛是在密严庄严刹土中成佛以后依次在净居天、金刚座示现成佛"
+
+- event_id: EVT_007
+  type: 典据
+  title: 无上了义观点——释迦佛从无始时以来即在法性光明刹土现前菩提
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 法性光明刹土
+  time_info: {text: "无始时以来"}
+  layers: [典据]
+  confidence: 0.90
+  source_quote: "释迦佛从无始时以来就在本基法界中以自证智慧解脱的方式而现前菩提"
+
+# ==================== 十二相之（一）降天 ====================
+
+- event_id: EVT_008
+  type: 弘法
+  title: 白幢天子在兜率天宣讲正法
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 兜率天
+  layers: [神变]
+  confidence: 0.80
+  source_quote: "释迦佛自从在兜率天成为名叫'白幢'的天子，就对诸位天人宣讲正法"
+
+- event_id: EVT_009
+  type: 授记
+  title: 燃灯佛授记偈颂乐音在走廊中自然传出
+  participants:
+    - entity: 燃灯佛
+      role: 典据来源
+    - entity: 释迦牟尼佛
+      role: 受者
+  location: 兜率天
+  layers: [授记]
+  confidence: 0.85
+  source_quote: "周围的走廊中自然传出燃灯佛授记劝请偈颂的乐音"
+
+- event_id: EVT_010
+  type: 神变
+  title: 白幢天子五照见后决定投生南赡部洲
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 摩耶夫人
+      role: 关联者
+  location: 兜率天
+  layers: [神变]
+  confidence: 0.80
+  source_quote: "他观察要投生的洲、种姓、父亲、母亲、时间——五照见"
+
+# ==================== 十二相之（二）入胎 ====================
+
+- event_id: EVT_011
+  type: 神变
+  title: 白幢天子以六牙白象形象入母胎
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 摩耶夫人
+      role: 客体
+  layers: [神变]
+  confidence: 0.80
+  source_quote: "以婆罗门吠陀中说的灰白童象（即六牙白象）的形象来到正在持斋戒的母亲胎中"
+
+# ==================== 十二相之（三）诞生 ====================
+
+- event_id: EVT_012
+  type: 神变
+  title: 太子于蓝毗尼花园从母亲右肋诞生
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 摩耶夫人
+      role: 客体
+  location: 蓝毗尼花园
+  layers: [神变]
+  confidence: 0.80
+  source_quote: "住胎十月圆满……从她的右肋自然诞生"
+
+- event_id: EVT_013
+  type: 圆寂
+  title: 摩耶夫人于太子出生七日后离世
+  participants:
+    - entity: 摩耶夫人
+      role: 主体
+  time_info: {text: "太子出生后第七天"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "太子出生后的第七天，母亲摩耶夫人就离开了人世"
+
+# ==================== 十二相之（四）精通工巧 ====================
+
+- event_id: EVT_014
+  type: 史传
+  title: 太子比武——象力、箭术
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 提婆达多
+      role: 对手
+    - entity: 难陀
+      role: 对手
+  location: 广严城
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "提婆达多怀着极大的嫉妒心以一掌力击死大象"
+
+# ==================== 十二相之（五）嬉享妃眷 ====================
+
+- event_id: EVT_015
+  type: 史传
+  title: 太子迎娶三位太子妃及六万妃子
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 耶输陀罗
+      role: 受者
+    - entity: 耶惟檀
+      role: 受者
+    - entity: 热达吉
+      role: 受者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉"
+
+# ==================== 十二相之（六）出家 ====================
+
+- event_id: EVT_016
+  type: 史传
+  title: 太子目睹生老病死后立誓出家
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 登巴
+      role: 驾驶者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "目睹了生老病死的四种景象，心中异常悲哀"
+
+- event_id: EVT_017
+  type: 出家受戒
+  title: 太子夜间出家
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 阿丹
+      role: 坐骑
+    - entity: 四大天王
+      role: 护送者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "跨上阿丹坐骑，在四大天王的承侍下，腾空而去"
+
+# ==================== 十二相之（七）苦行 ====================
+
+- event_id: EVT_018
+  type: 闭关修行
+  title: 太子与憍陈如等五人于尼连禅河畔六年苦行
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 憍陈如等五人
+      role: 伴随者
+  location: 尼连禅河
+  time_info: {text: "六年"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "到尼连禅河畔，与憍陈如等五人开始了长达六年的苦行禅修生涯"
+
+# ==================== 十二相之（八）前往金刚座 ====================
+
+- event_id: EVT_019
+  type: 史传
+  title: 菩萨于金刚座菩提树下立下成佛誓愿
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 金刚座
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "在金刚座菩提树下，于草垫上跏趺而坐，立下誓愿"
+
+# ==================== 十二相之（九）降魔 ====================
+
+- event_id: EVT_020
+  type: 降伏非人
+  title: 魔王波旬发动魔军被菩萨以大慈等持降伏
+  participants:
+    - entity: 释迦牟尼佛
+      role: 降伏者
+    - entity: 魔王波旬
+      role: 被降伏者
+  layers: [史传, 神变]
+  confidence: 0.80
+  source_quote: "菩萨入定在大慈等持中，结果射向他的兵器全部降下花雨"
+
+- event_id: EVT_021
+  type: 神变
+  title: 地神安稳母为菩萨作证
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 地神安稳母
+      role: 证人
+  layers: [史传, 神变]
+  confidence: 0.80
+  source_quote: "地神安稳母的半个金色身躯便破土而出"
+
+# ==================== 十二相之（十）大彻大悟 ====================
+
+- event_id: EVT_022
+  type: 弘法
+  title: 菩萨入第四静虑获天眼漏尽通现前正等正觉
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  time_info: {text: "午夜时分……临近黎明"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "午夜时分，菩萨入于第四静虑的等持境界中，临近黎明……究竟四谛而现前真实圆满正等正觉果位"
+
+- event_id: EVT_023
+  type: 神变
+  title: 罗睺罗与阿难于月食时降生
+  participants:
+    - entity: 罗睺罗
+      role: 主体
+    - entity: 阿难
+      role: 主体
+  time_info: {text: "当出现月食的时候"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "罗睺罗与阿难也在此刻降生人间"
+
+# ==================== 十二相之（十一）广转法轮 ====================
+
+- event_id: EVT_024
+  type: 弘法
+  title: 梵天劝请佛转法轮
+  participants:
+    - entity: 梵天
+      role: 劝请者
+    - entity: 释迦牟尼佛
+      role: 受请者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "梵天回忆起往昔的宏愿，于是来到如来面前请求"
+
+- event_id: EVT_025
+  type: 弘法
+  title: 梵天供千辐金法轮再次劝请佛应允转法
+  participants:
+    - entity: 梵天
+      role: 劝请者
+    - entity: 释迦牟尼佛
+      role: 受请者
+    - entity: 千辐金法轮
+      role: 供品
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "梵天又供养千辐金法轮……佛陀接受法轮"
+
+- event_id: EVT_026
+  type: 弘法
+  title: 佛陀于鹿野苑初转四谛法轮
+  participants:
+    - entity: 释迦牟尼佛
+      role: 说法者
+    - entity: 憍陈如等五人
+      role: 闻法者
+  location: 鹿野苑
+  layers: [史传]
+  confidence: 0.90
+  source_quote: "佛陀为憍陈如等五人及八万天人转了远离二边中道的四谛法轮"
+
+- event_id: EVT_027
+  type: 出家受戒
+  title: 憍陈如等五人得自然近圆戒
+  participants:
+    - entity: 憍陈如等五人
+      role: 受戒者
+    - entity: 释迦牟尼佛
+      role: 授戒者
+  location: 鹿野苑
+  layers: [史传]
+  confidence: 0.90
+  source_quote: "憍陈如等五人得到了自然近圆戒，成为世间上前所未有的第一批大比丘僧团"
+
+- event_id: EVT_028
+  type: 弘法
+  title: 佛于灵鹫山转第二无相法轮
+  participants:
+    - entity: 释迦牟尼佛
+      role: 说法者
+    - entity: 舍利子
+      role: 闻法者
+    - entity: 目犍连
+      role: 闻法者
+  location: 灵鹫山
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "佛在圆满处灵鹫山……转了第二无相法轮"
+
+- event_id: EVT_029
+  type: 弘法
+  title: 佛转第三了义法轮
+  participants:
+    - entity: 释迦牟尼佛
+      role: 说法者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "佛陀还在天界、龙宫等不定的地点……转了第三了义法轮"
+
+# ==================== 十二相之（十二）示现涅槃 ====================
+
+- event_id: EVT_030
+  type: 传法
+  title: 佛陀将佛法交付大迦叶
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 大迦叶
+      role: 受法者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "佛陀将佛法连同四众眷属交付与上座大迦叶"
+
+- event_id: EVT_031
+  type: 圆寂
+  title: 舍利子与八万阿罗汉于那烂陀寺涅槃
+  participants:
+    - entity: 舍利子
+      role: 主体
+  location: 那烂陀寺
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "就前往那烂陀寺，当天上午与八万阿罗汉一起趣入涅槃"
+
+- event_id: EVT_032
+  type: 圆寂
+  title: 目犍连被外道徒殴打致死
+  participants:
+    - entity: 目犍连
+      role: 受害者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "外道徒数数殴打目犍连，他的身体被摧残得简直像苇草一样"
+
+- event_id: EVT_033
+  type: 圆寂
+  title: 佛陀于娑罗双树下示现圆满涅槃
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 娑罗双树
+  time_info: {text: "佛寿为八十"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "佛陀到娑罗双树下示现圆满涅槃"
+
+# ==================== 结集教法 ====================
+
+- event_id: EVT_034
+  type: 弘法
+  title: 第一次结集
+  participants:
+    - entity: 优婆离
+      role: 结集律藏
+    - entity: 阿难
+      role: 结集经藏
+    - entity: 大迦叶
+      role: 结集论藏
+    - entity: 未生怨王
+      role: 施主
+    - entity: 五百阿罗汉
+      role: 参与者
+  location: 列卓达山洞
+  time_info: {text: "佛灭后第二年夏安居"}
+  layers: [典据]
+  confidence: 0.95
+  source_quote: "佛陀灭度后的第二年夏令安居期间，在王舍城的列卓达山洞里"
+
+- event_id: EVT_035
+  type: 弘法
+  title: 第二次结集
+  participants:
+    - entity: 耶舍
+      role: 领衔者
+    - entity: 七百罗汉
+      role: 参与者
+    - entity: 阿育王
+      role: 施主
+  location: 婆利迦精舍
+  time_info: {text: "第一次结集后一百一十年"}
+  layers: [典据]
+  confidence: 0.95
+  source_quote: "耶舍等七百罗汉聚集一堂，摈除十种非事"
+
+- event_id: EVT_036
+  type: 弘法
+  title: 僧团分裂为十八部
+  participants:
+    - entity: 大天比丘
+      role: 主体
+    - entity: 龙长老
+      role: 分裂者
+    - entity: 安意
+      role: 分裂者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "安意再度使争论不断扩张，结果四部又逐步分成十八部"
+
+- event_id: EVT_037
+  type: 弘法
+  title: 第三次结集
+  participants:
+    - entity: 腻契波王
+      role: 施主
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "腻契波王作为施主开始第三次结集"
+
+- event_id: EVT_038
+  type: 弘法
+  title: 不共大乘结集
+  participants:
+    - entity: 弥勒菩萨
+      role: 结集律藏
+    - entity: 文殊菩萨
+      role: 结集经藏
+    - entity: 金刚手菩萨
+      role: 结集论藏
+    - entity: 百万菩萨
+      role: 参与者
+  location: 布玛萨巴瓦山
+  layers: [典据]
+  confidence: 0.95
+  source_quote: "弥勒结集律藏、文殊结集经藏、金刚手结集论藏"
+
+# ==================== 教藏交付传代 ====================
+
+- event_id: EVT_039
+  type: 出家受戒
+  title: 迦叶于哦芒塔佛前获得比丘戒
+  participants:
+    - entity: 大迦叶
+      role: 受戒者
+    - entity: 释迦牟尼佛
+      role: 亲教师
+  location: 哦芒塔
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "迦叶一见到佛陀就生起了本师之想"
+
+- event_id: EVT_040
+  type: 弘法
+  title: 迦叶结集佛经护持佛教四十余年
+  participants:
+    - entity: 大迦叶
+      role: 主体
+  time_info: {text: "四十多年"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "迦叶尊者认真结集了佛经并且护持佛教，经历了四十多年"
+
+- event_id: EVT_041
+  type: 传法
+  title: 迦叶将佛法交传阿难
+  participants:
+    - entity: 大迦叶
+      role: 主体
+    - entity: 阿难
+      role: 受法者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "以后佛法由你护持，你将来再交传与麻衣"
+
+- event_id: EVT_042
+  type: 圆寂
+  title: 迦叶于鸡足山趣入涅槃
+  participants:
+    - entity: 大迦叶
+      role: 主体
+  location: 鸡足山
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "加持遗体不坏一直保持到弥勒成佛，接着示现众多神变而趣入涅槃"
+
+- event_id: EVT_043
+  type: 弘法
+  title: 阿难护持佛教四十余年
+  participants:
+    - entity: 阿难
+      role: 主体
+  time_info: {text: "四十年之余"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "阿难护持佛教有四十年之余"
+
+- event_id: EVT_044
+  type: 传法
+  title: 阿难教诫麻衣并交传佛法
+  participants:
+    - entity: 阿难
+      role: 主体
+    - entity: 麻衣
+      role: 受法者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "因此由你来护持佛教"
+
+- event_id: EVT_045
+  type: 出家受戒
+  title: 阿难在恒河中央为日中罗汉传比丘戒
+  participants:
+    - entity: 阿难
+      role: 亲教师
+    - entity: 日中罗汉
+      role: 受戒者
+  location: 恒河
+  layers: [史传, 神变]
+  confidence: 0.80
+  source_quote: "阿难便在恒河中央幻化一座岛屿，在那里为他们传了比丘戒"
+
+- event_id: EVT_046
+  type: 圆寂
+  title: 阿难于恒河中央示现涅槃
+  participants:
+    - entity: 阿难
+      role: 主体
+  location: 恒河
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "阿难尊者随即示现种种神变而入灭"
+
+- event_id: EVT_047
+  type: 传法
+  title: 麻衣将佛法交传小护后趣入涅槃
+  participants:
+    - entity: 麻衣
+      role: 主体
+    - entity: 小护
+      role: 受法者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "并将佛法交传与小护以后趣入涅槃"
+
+- event_id: EVT_048
+  type: 降伏非人
+  title: 小护以三尸花鬘降伏魔王波旬
+  participants:
+    - entity: 小护
+      role: 主体
+    - entity: 魔王波旬
+      role: 被降伏者
+  layers: [神变]
+  confidence: 0.75
+  source_quote: "小护幻化出三尸花鬘，系在魔王的头上"
+
+- event_id: EVT_049
+  type: 传法
+  title: 小护将佛法交付有愧
+  participants:
+    - entity: 小护
+      role: 主体
+    - entity: 有愧
+      role: 受法者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "小护把佛法交付于有愧后便趣入涅槃"
+
+- event_id: EVT_050
+  type: 传法
+  title: 有愧将佛法交付黑色
+  participants:
+    - entity: 有愧
+      role: 主体
+    - entity: 黑色
+      role: 受法者
+  location: 摩竭陀国
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "他将佛法交付给摩竭陀国的圣者黑色后便趣入涅槃"
+
+- event_id: EVT_051
+  type: 传法
+  title: 黑色将佛法交付善见
+  participants:
+    - entity: 黑色
+      role: 主体
+    - entity: 善见
+      role: 受法者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "他广泛护持佛法，最后交付给善见，便入于寂灭"
+
+# ==================== 护持佛法及大乘兴盛 ====================
+
+- event_id: EVT_052
+  type: 建寺
+  title: 阿育王建造八万四千七宝塔
+  participants:
+    - entity: 阿育王
+      role: 主体
+    - entity: 香达夜叉
+      role: 协助者
+  location: 南赡部洲
+  time_info: {text: "佛灭后一百年"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "在南赡部洲四面八方建造八万四千七宝塔"
+
+- event_id: EVT_053
+  type: 弘法
+  title: 日中罗汉在克什米尔树立佛法
+  participants:
+    - entity: 日中罗汉
+      role: 主体
+  location: 克什米尔
+  time_info: {text: "佛灭后过了一百年"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "日中罗汉在相应禅定之殊胜地克什米尔树立佛法"
+
+- event_id: EVT_054
+  type: 弘法
+  title: 龙树菩萨开创甚深见派
+  participants:
+    - entity: 龙树菩萨
+      role: 开宗祖师
+    - entity: 萨绕哈
+      role: 师长
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "大婆罗门萨绕哈的高足——甚深见派的开宗祖师就是第二大佛陀龙树菩萨"
+
+- event_id: EVT_055
+  type: 弘法
+  title: 无著将广大行派在南赡部洲普遍弘扬
+  participants:
+    - entity: 无著
+      role: 弘扬者
+    - entity: 弥勒菩萨
+      role: 师长
+  location: 南赡部洲
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "将广大行派在整个南赡部洲普遍弘扬者就是圣者无著"
+
+- event_id: EVT_056
+  type: 弘法
+  title: 陈那开创事势理
+  participants:
+    - entity: 陈那
+      role: 开宗祖师
+    - entity: 文殊菩萨
+      role: 摄受者
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "蒙受文殊菩萨亲自摄受……开创事势理者就是陈那论师"
+
+- event_id: EVT_057
+  type: 传法
+  title: 文殊菩萨以比丘相对护月国王宣讲大乘法
+  participants:
+    - entity: 文殊菩萨
+      role: 主体
+    - entity: 护月
+      role: 受法者
+  location: 邬哲波夏
+  time_info: {text: "大莲花王时期稍后"}
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "圣者文殊菩萨以比丘相来到他的王宫，对护月国王相应宣讲大乘法"
+
+- event_id: EVT_058
+  type: 传法
+  title: 续部交传恩札布德
+  participants:
+    - entity: 恩札布德
+      role: 受法者
+  location: 邬金
+  layers: [传闻]
+  confidence: 0.60
+  source_quote: "佛陀将所有续部交传给邬金国王恩札布德"
+
+- event_id: EVT_059
+  type: 伏藏开取
+  title: 瓦色嘎巴从黑日嘎殿堂取出《密集续》
+  participants:
+    - entity: 瓦色嘎巴
+      role: 主体
+    - entity: 《密集续》
+      role: 取出经典
+  location: 黑日嘎殿堂
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "国王瓦色嘎巴从中取出《密集续》"
+
+- event_id: EVT_060
+  type: 伏藏开取
+  title: 龙树菩萨从黑日嘎殿堂取出《喜金刚》
+  participants:
+    - entity: 龙树菩萨
+      role: 主体
+    - entity: 《喜金刚》
+      role: 取出经典
+  location: 黑日嘎殿堂
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "龙树菩萨取出《喜金刚》"
+
+- event_id: EVT_061
+  type: 伏藏开取
+  title: 则乐巴从香巴拉取来《时轮金刚》
+  participants:
+    - entity: 则乐巴
+      role: 主体
+    - entity: 《时轮金刚》
+      role: 取出经典
+  location: 香巴拉
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "则乐巴等从香巴拉取来《时轮金刚》等"
+
+- event_id: EVT_062
+  type: 弘法
+  title: 八十四位大成就者等通过密宗使有缘者成熟解脱
+  participants:
+    - entity: 八十四位大成就者
+      role: 主体
+    - entity: 十二位阿阇黎
+      role: 主体
+  layers: [史传]
+  confidence: 0.85
+  source_quote: "吉祥萨绕哈等八十四位大成就者……通过大乘密宗使无量的有缘者相续得以成熟、解脱"

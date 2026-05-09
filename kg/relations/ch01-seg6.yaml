@@ -1,0 +1,486 @@
+# ============================================================
+# 知识图谱关系抽取 — 第一品 佛教总况 seg6 (lines 501-579)
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 规范: SKILL_05a v0.3 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 NAME（人类可读名），非 entity ID
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/01_佛教总况.md
+  source_lines: "501-579"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.3
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 政治/属地关系 (rulerOf)
+# ============================================================
+
+  - rel_id: R_001
+    type: rulerOf
+    source: 恩札布德
+    target: 邬金
+    symmetric: false
+    derived_from: null
+    layers: [传闻]
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "也有说佛陀将所有续部交传给邬金国王恩札布德"
+    note: null
+
+  - rel_id: R_002
+    type: rulerOf
+    source: 护月
+    target: 邬哲波夏
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "邬哲波夏地方出现了一位名叫护月的国王，圣者文殊菩萨以比丘相来到他的王宫"
+    note: null
+
+  - rel_id: R_003
+    type: rulerOf
+    source: 瓦色嘎巴
+    target: 邬金
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "国王瓦色嘎巴从中取出《密集续》"
+    note: "文中称其为国王，结合语境为邬金国王"
+
+# ============================================================
+# B. 师承关系 (teacherOf + specialty)
+# ============================================================
+
+  - rel_id: R_010
+    type: teacherOf
+    source: 萨绕哈
+    target: 龙树菩萨
+    specialty: [密法]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "大婆罗门萨绕哈的高足——甚深见派的开宗祖师就是第二大佛陀龙树菩萨"
+    note: null
+
+  - rel_id: R_011
+    type: teacherOf
+    source: 弥勒菩萨
+    target: 无著
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "至尊弥勒菩萨的弟子——将广大行派在整个南赡部洲普遍弘扬者就是圣者无著"
+    note: null
+
+  - rel_id: R_012
+    type: teacherOf
+    source: 文殊菩萨
+    target: 陈那
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "蒙受文殊菩萨亲自摄受、获得克胜诸方之悉地而开创事势理者就是陈那论师"
+    note: null
+
+  - rel_id: R_013
+    type: teacherOf
+    source: 龙树菩萨
+    target: 圣天
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "再加上龙树菩萨的弟子——由莲花花蕊中化生的圣天论师"
+    note: null
+
+  - rel_id: R_014
+    type: teacherOf
+    source: 陈那
+    target: 法称
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "陈那论师的弟子——随学辩论自在者而能顿时驳倒一切外道宗派的具德法称论师"
+    note: null
+
+  - rel_id: R_015
+    type: teacherOf
+    source: 文殊菩萨
+    target: 护月
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "圣者文殊菩萨以比丘相来到他的王宫，对护月国王相应宣讲大乘法，并且留下了一本经函。"
+    note: null
+
+# ============================================================
+# C. 亲属关系 (siblingOf)
+# ============================================================
+
+  - rel_id: R_020
+    type: siblingOf
+    source: 无著
+    target: 世亲
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "无著菩萨的胞弟、能背诵九十九部《广般若》、抵达广闻博学大海彼岸的世亲论师"
+    note: null
+
+# ============================================================
+# D. 归属关系 (memberOf / foundedBy / lineageOf)
+# ============================================================
+
+  - rel_id: R_030
+    type: memberOf
+    source: 龙树菩萨
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "这六位就是南赡部洲的六庄严。"
+    note: "三位造论者之一"
+
+  - rel_id: R_031
+    type: memberOf
+    source: 无著
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "这六位就是南赡部洲的六庄严。"
+    note: "三位造论者之一"
+
+  - rel_id: R_032
+    type: memberOf
+    source: 陈那
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "以上是三位造论者。"
+    note: "三位造论者之一"
+
+  - rel_id: R_033
+    type: memberOf
+    source: 圣天
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "以上三位是著疏者。这六位就是南赡部洲的六庄严。"
+    note: "三位著疏者之一"
+
+  - rel_id: R_034
+    type: memberOf
+    source: 世亲
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "以上三位是著疏者。这六位就是南赡部洲的六庄严。"
+    note: "三位著疏者之一"
+
+  - rel_id: R_035
+    type: memberOf
+    source: 法称
+    target: 六庄严
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "以上三位是著疏者。这六位就是南赡部洲的六庄严。"
+    note: "三位著疏者之一"
+
+  - rel_id: R_036
+    type: memberOf
+    source: 龙树菩萨
+    target: 二殊胜
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "大多数论师共称龙树、无著为二殊胜"
+    note: null
+
+  - rel_id: R_037
+    type: memberOf
+    source: 无著
+    target: 二殊胜
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "大多数论师共称龙树、无著为二殊胜"
+    note: null
+
+  - rel_id: R_038
+    type: memberOf
+    source: 寂天
+    target: 二大稀有论师
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "具有七种稀奇传记的大菩萨寂天与一切明处无所不知、证得悉地的簪札贡美（即八戒居士皎月）被赞为二大稀有论师。"
+    note: null
+
+  - rel_id: R_039
+    type: memberOf
+    source: 簪札贡美
+    target: 二大稀有论师
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "具有七种稀奇传记的大菩萨寂天与一切明处无所不知、证得悉地的簪札贡美（即八戒居士皎月）被赞为二大稀有论师。"
+    note: null
+
+  - rel_id: R_040
+    type: memberOf
+    source: 萨绕哈
+    target: 八十四位大成就者
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "吉祥萨绕哈等八十四位大成就者"
+    note: "为首之一"
+
+  - rel_id: R_041
+    type: memberOf
+    source: 佛智
+    target: 十二位阿阇黎
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "以降伏威力相被赞叹的佛智等十二位阿阇黎"
+    note: null
+
+  - rel_id: R_042
+    type: foundedBy
+    source: 甚深见派
+    target: 龙树菩萨
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "甚深见派的开宗祖师就是第二大佛陀龙树菩萨"
+    note: null
+
+  - rel_id: R_043
+    type: foundedBy
+    source: 事势理
+    target: 陈那
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "获得克胜诸方之悉地而开创事势理者就是陈那论师"
+    note: null
+
+  - rel_id: R_044
+    type: lineageOf
+    source: 广大行派
+    target: 弥勒菩萨
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "至尊弥勒菩萨的弟子——将广大行派在整个南赡部洲普遍弘扬者就是圣者无著"
+    note: "弥勒为广大行派法藏来源，无著为弘扬者"
+
+# ============================================================
+# E. 著作/取出关系 (authored / retrievedFrom)
+# ============================================================
+
+  - rel_id: R_050
+    type: authored
+    source: 龙树菩萨
+    target: 《大毗婆沙论》
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.70
+    source_quote: "按照声闻经部的观点，是造《大毗婆沙论》的诸位阿罗汉"
+    note: "文本说造《大毗婆沙论》的是诸位阿罗汉而非龙树——此处标注为声闻经部观点的论典开宗祖师；关系主体实为'诸位阿罗汉'（集合），此处以经典为核心记录"
+
+  - rel_id: R_051
+    type: retrievedFrom
+    source: 瓦色嘎巴
+    target: 《密集续》
+    location: 黑日嘎殿堂
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "国王瓦色嘎巴从中取出《密集续》"
+    note: null
+
+  - rel_id: R_052
+    type: retrievedFrom
+    source: 龙树菩萨
+    target: 《喜金刚》
+    location: 黑日嘎殿堂
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "龙树菩萨取出《喜金刚》"
+    note: null
+
+  - rel_id: R_053
+    type: retrievedFrom
+    source: 革革热巴
+    target: 《玛哈玛雅》
+    location: 黑日嘎殿堂
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "革革热巴取出《玛哈玛雅》、《大威德续》等"
+    note: null
+
+  - rel_id: R_054
+    type: retrievedFrom
+    source: 革革热巴
+    target: 《大威德续》
+    location: 黑日嘎殿堂
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "革革热巴取出《玛哈玛雅》、《大威德续》等"
+    note: null
+
+  - rel_id: R_055
+    type: retrievedFrom
+    source: 则乐巴
+    target: 《时轮金刚》
+    location: 香巴拉
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "则乐巴等从香巴拉取来《时轮金刚》等"
+    note: null
+
+# ============================================================
+# F. 声闻经部论典开宗观点 (cites)
+# ============================================================
+
+  - rel_id: R_060
+    type: cites
+    source: 声闻经部论述论典开宗祖师
+    target: 《大毗婆沙论》
+    quoted_text: null
+    argument: 声闻经部认为论典的开宗祖师是造《大毗婆沙论》的诸位阿罗汉
+    about_entity: 《大毗婆沙论》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "关于论典的开宗祖师，按照声闻经部的观点，是造《大毗婆沙论》的诸位阿罗汉"
+    note: null
+
+  - rel_id: R_061
+    type: cites
+    source: 大乘论述论典开宗祖师
+    target: 弥勒菩萨
+    quoted_text: null
+    argument: 大乘认为论典的开宗祖师是弥勒菩萨与龙猛菩萨两位大德
+    about_entity: 龙树菩萨
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "依照大乘的观点，就是指补处怙主弥勒菩萨与龙猛菩萨两位大德。"
+    note: null
+
+# ============================================================
+# G. 佛法弘传交付关系 (传法)
+# ============================================================
+
+  - rel_id: R_070
+    type: teacherOf
+    source: 释迦牟尼佛
+    target: 恩札布德
+    specialty: [密法]
+    symmetric: false
+    derived_from: null
+    layers: [传闻]
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "也有说佛陀将所有续部交传给邬金国王恩札布德"
+    note: "一种说法；另一种说法为金刚手交付"
+
+  - rel_id: R_071
+    type: teacherOf
+    source: 金刚手菩萨
+    target: 恩札布德
+    specialty: [密法]
+    symmetric: false
+    derived_from: null
+    layers: [传闻]
+    author_stance: 中立
+    confidence: 0.60
+    source_quote: "也有说是金刚手菩萨交付的。"
+    note: "另一种说法"

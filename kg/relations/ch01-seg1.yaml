@@ -1,0 +1,353 @@
+# ============================================================
+# 知识图谱关系抽取 — 第一品 佛教总况 seg1 (lines 1-100)
+# 覆盖范围: 引言 + 宗派观点段 + 无上了义观点 + 化身分类 + 降天
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.3 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 NAME（人类可读名），非 entity ID
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/01_佛教总况.md
+  source_lines: "1-100"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.3
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 身份/本体关系 (identityOf / manifestationOf)
+# ============================================================
+
+  - rel_id: R_001
+    type: identityOf
+    source: 释迦牟尼佛
+    target: 金刚持
+    symmetric: true
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《如意宝庄严续》中云：'始初正等觉，大密金刚持，游戏无边刹……'"
+    note: "密续认为释迦佛即大密金刚持"
+
+  - rel_id: R_002
+    type: identityOf
+    source: 释迦牟尼佛
+    target: 六能仁
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "所谓'大悲加持'的六能仁，是由善逝之身语意金刚中出现的"
+    note: "六能仁从释迦佛（善逝）身语意金刚中出现"
+
+# ============================================================
+# B. 地理/空间关系 (locatedIn / partOf)
+# ============================================================
+
+  - rel_id: R_010
+    type: locatedIn
+    source: 金刚座
+    target: 菩提迦耶
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "南方赡部洲菩提迦耶中央自然形成金刚座"
+
+  - rel_id: R_011
+    type: locatedIn
+    source: 菩提迦耶
+    target: 南赡部洲
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "南方赡部洲菩提迦耶中央自然形成金刚座"
+
+  - rel_id: R_012
+    type: partOf
+    source: 南赡部洲
+    target: 娑婆世界
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "位于其中第十三层的这个娑婆世界，也有着具百俱胝四洲的三千大千世界"
+
+  - rel_id: R_013
+    type: partOf
+    source: 娑婆世界
+    target: 基藏花严世界
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "基藏花严世界安住着的毗卢遮那佛……依于手掌香水海的所有莲花上有二十五层世界，位于其中第十三层的这个娑婆世界"
+
+  - rel_id: R_014
+    type: locatedIn
+    source: 毗卢遮那佛
+    target: 基藏花严世界
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.95
+    source_quote: "报身毗卢遮那佛受用之处，基藏花严世界"
+
+# ============================================================
+# C. 引文关系 (cites) — 含 quoted_text / argument / about_entity
+# ============================================================
+
+  - rel_id: R_020
+    type: cites
+    source: 有部
+    target: 《俱舍论》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.90
+    source_quote: "声闻有部的论师们认为……《俱舍论》中说：'本师麟角喻者非，依于第四之静虑，一座上得菩提故。'"
+    quoted_text: "本师麟角喻者非，依于第四之静虑，一座上得菩提故。"
+    argument: 有部引《俱舍论》论证释迦佛以凡夫身一座成佛
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_021
+    type: cites
+    source: 有部
+    target: 《俱舍论》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.90
+    source_quote: "《俱舍论》中说：'彼前乃随解脱分。'"
+    quoted_text: "彼前乃随解脱分。"
+    argument: 论证最后有菩萨之前阶段乃随解脱分
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_022
+    type: cites
+    source: 有部
+    target: 《俱舍论》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 中立
+    confidence: 0.90
+    source_quote: "并且说：'虽非圣者然而于，父母病人说法者，最后有者之菩萨，供养功德无有量。'"
+    quoted_text: "虽非圣者然而于，父母病人说法者，最后有者之菩萨，供养功德无有量。"
+    argument: 论证供养最后有菩萨功德无量
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_023
+    type: cites
+    source: 大乘
+    target: 《功德圆满庄严经》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "按照共同大乘一致共称的观点……《功德圆满庄严经》中记载"
+    quoted_text: "我自开始发起无上菩提心时起，在三大阿僧祇劫以最大的精进累积资粮，并且照见在人寿百岁之时一切无有导师盲目的有情而在此赡部洲成佛，之后广转不可思议法轮……"
+    argument: 论证释迦佛三大阿僧祇劫积资粮后在赡部洲成佛
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_024
+    type: cites
+    source: 密宗
+    target: 佛智论师
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "佛智论师说：'何故释迦牟尼佛，经三大劫积资粮……广转微妙之法轮。'"
+    quoted_text: "何故释迦牟尼佛，经三大劫积资粮，未悟此义尼连河，安住无所有定中。尔时十方之善逝，顿现遣除贪求心，如虚空界极清净，深明无二尽宣说，午夜时分如佛陀，修行真如拂晓时，一刹那间悟真性。"
+    argument: 论证密宗观点中释迦佛尼连河入定后一刹那悟真性
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_025
+    type: cites
+    source: 密宗
+    target: 圣天论师
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "按照圣天论师所说：'现前二菩提，说为外与内。'"
+    quoted_text: "现前二菩提，说为外与内。"
+    argument: 论证外内现前二菩提——离贪成佛与四种贪欲法理现前光明法身
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_026
+    type: cites
+    source: 大乘
+    target: 《密严庄严经》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "依照不共大乘的观点……《密严庄严经》中说"
+    quoted_text: "真实菩提正等觉，成佛胜处密严刹，并非未曾成佛果，始于欲界成正觉。彼等赴往密严刹，俱胝化身之佛陀，恒常安住瑜伽定，化身方便一游舞，犹如明月照诸国。各处随机而调伏，彼前以彼而示现。"
+    argument: 论证释迦佛先在密严刹土成佛后以化身示现
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_027
+    type: cites
+    source: 大乘
+    target: 《楞伽经》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《楞伽经》中说：'远离净居之诸处……化身于此示成佛。'"
+    quoted_text: "远离净居之诸处，于彼悦意密严刹，真实佛陀成正觉，化身于此示成佛。"
+    argument: 论证释迦佛在密严刹成正觉后化身示现
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_028
+    type: cites
+    source: 密宗
+    target: 《如意宝庄严续》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《如意宝庄严续》中云：'始初正等觉，大密金刚持……饶益无量众。'"
+    quoted_text: "始初正等觉，大密金刚持，游戏无边刹，无数前后时，寂猛无量相，猎人娼妓等，以异相利生。然此贤劫中，转变千导师，显现种种相，饶益无量众。"
+    argument: 论证释迦佛即大密金刚持从无始以来以各种形象利益众生
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_029
+    type: cites
+    source: 密宗
+    target: 《密藏根本续》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《密藏根本续》中也说：'所谓大悲加持的六能仁……以四种调伏方式利益五道有情。'"
+    quoted_text: "所谓'大悲加持'的六能仁，是由善逝之身语意金刚中出现的，出现以后也是以众生业力所感而在下立行、倒栽行的六趣十方无边无际每一三千大千世界中，每一大能仁出有坏都以四种调伏方式利益五道有情。"
+    argument: 论证六能仁由善逝身语意金刚中出现以四种调伏利益五道有情
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_030
+    type: cites
+    source: 密宗
+    target: 《妙法白莲经》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《妙法白莲经》中说：'不可思千俱胝劫，彼之限量永无有，殊胜菩提我已得，我亦恒常说妙法。'"
+    quoted_text: "不可思千俱胝劫，彼之限量永无有，殊胜菩提我已得，我亦恒常说妙法。"
+    argument: 论证释迦佛于不可思千俱胝劫前已得殊胜菩提
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_031
+    type: cites
+    source: 密宗
+    target: 《父子相会经》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《父子相会经》中说：'善巧方便大勇士……示现众多正等觉。'"
+    quoted_text: "善巧方便大勇士，为令众生普成熟，成百俱胝劫之前，如来示现成正觉，仍为引导有情汝，示现众多正等觉。"
+    argument: 论证如来成百俱胝劫前已示现成正觉
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_032
+    type: cites
+    source: 大乘
+    target: 《经庄严论》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《经庄严论》中说：'佛陀幻化无有量……即是解脱大方便。'"
+    quoted_text: "佛陀幻化无有量，即承许此为化身，自他二利圆满者，安住一切种相中。恒时示现为工巧，投生菩提涅槃相，佛陀之此化身者，即是解脱大方便。"
+    argument: 论述化身分类——工巧化身、投生化身、殊胜化身
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_033
+    type: cites
+    source: 密宗
+    target: 《幻化根本续》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "其中殊胜大化身从示现十二相的角度而言，在《幻化根本续》中宣说了以四种调伏方式利益有情。"
+    quoted_text: null
+    argument: 论述殊胜大化身以四种调伏方式利益有情（间接引用无直接引文）
+    about_entity: 释迦牟尼佛
+
+  - rel_id: R_034
+    type: cites
+    source: 大乘
+    target: 《宝性论》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "《宝性论》中说：'法身不动中，以异化身性……无间示安住。'"
+    quoted_text: "法身不动中，以异化身性，真实而投生，从兜率天降，入胎及诞生，精通工巧明，嬉享妃眷属，出家与苦行，趋至菩提树，降魔圆正觉，转大妙法轮，示现涅槃相，于诸不净刹，无间示安住。"
+    argument: 论述化身佛示现十二相的完整次第
+    about_entity: 释迦牟尼佛
+
+# ============================================================
+# D. 授记关系 (prophecyAbout)
+# ============================================================
+
+  - rel_id: R_040
+    type: prophecyAbout
+    source: 燃灯佛
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "周围的走廊中自然传出燃灯佛授记劝请偈颂的乐音"
+    note: "燃灯佛对释迦佛的授记在兜率天以乐音形式重现"
+
+# ============================================================
+# E. 亲属关系 (motherOf)
+# ============================================================
+
+  - rel_id: R_050
+    type: motherOf
+    source: 摩耶夫人
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [神变]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "我要到南赡部洲摩诃摩耶胎中结生"
+    note: "白幢天子五照见中选定投生之母"

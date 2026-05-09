@@ -1,0 +1,466 @@
+# ============================================================
+# 知识图谱实体抽取 — 第一品 佛教总况 seg5 (lines 401-500)
+# 覆盖范围: 教藏交付传代之情节（迦叶→阿难→麻衣→小护→有愧→黑色→善见）
+#           + 十六大罗汉护持佛法
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09 (段落级抽取)
+# 规范: SKILL_03a v0.3 + entity-taxonomy v0.4
+# 管线: gazetteer 预扫描确认 + Agent NER 发现
+# ============================================================
+# gazetteer 候选判定说明：
+# 已排除的通用词汇（非实体）:
+#   成佛(动词短语), 最后(副词), 灭后(时间短语), 国王(通称), 涅槃(通称状态),
+#   阿罗汉(通称修证, 个别场合作集合), 佛弟子(通称), 阿罗汉果(通称修证),
+#   一刹那(时间副词), 一刹(同上截断), 佛经(通称), 宝塔(通称),
+#   多闻第一(赞誉属性), 头陀第一(赞誉属性), 大阿罗汉(通称), 大罗汉(通称),
+#   付法藏(通称制度名), 入法界(动词短语), 无相佛(称号,收入小护note),
+#   三天(数字截断=三十三天alias), 后佛(残片), 法王(通称),
+#   玄宗(=唐玄宗alias,已收于ch01-part2), 称佛(残片), 讲经(动词),
+#   本师(=释迦佛alias), 世尊(=释迦佛alias), 如来(=释迦佛alias),
+#   赡部(截断=南赡部洲), 赡部洲(=南赡部洲alias)
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 释迦牟尼佛
+  aliases: [佛陀, 世尊, 如来, 本师, 释迦佛, 释迦世尊, 释迦牟尼]
+  type: 圣众.大乘.佛
+  note: "将佛法交付大迦叶及十六大阿罗汉；在《文殊根本续》中授记阿育王；在《杂阿含经》中授记小护"
+  appearances: [405, 406, 413, 415, 417, 447, 448, 469, 477, 486]
+
+E_002:
+  name: 弥勒菩萨
+  aliases: [弥勒, 弥勒佛]
+  type: 圣众.大乘.菩萨
+  note: "迦叶加持遗体保存至弥勒成佛；弥勒佛将与九十九俱胝声闻弟子展示迦叶遗体"
+  appearances: [430, 437, 438, 440, 442]
+
+# ==================== 非人 ====================
+
+E_003:
+  name: 魔王波旬
+  aliases: []
+  type: 非人.天部
+  note: "示现幻变障碍小护眷属证果；被小护以三尸花鬘降伏"
+  appearances: [480, 481, 483]
+
+E_004:
+  name: 香达夜叉
+  aliases: []
+  type: 非人.天部
+  note: "协助阿育王建造八万四千七宝塔"
+  appearances: [471]
+
+# ==================== 人物 — 付法藏师（阿罗汉） ====================
+
+E_010:
+  name: 大迦叶
+  aliases: [迦叶尊者, 迦叶, 尼枸卢生]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  origin: 摩竭陀国
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [头陀行第一]
+  note: "佛法第一代付法藏师；出生于摩竭陀国尼枸卢婆罗门村落；与释迦佛年龄相近；护持佛教四十余年；鸡足山趣入涅槃加持遗体不坏至弥勒成佛"
+  appearances: [403, 405, 407, 409, 412, 415, 418, 419, 421, 423, 425, 428, 432, 435, 436, 439, 441]
+
+E_011:
+  name: 阿难
+  aliases: [阿难尊者]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [多闻第一]
+  note: "佛陀叔父甘露饭之子；与罗睺罗同时诞生；佛法第二代付法藏师；当佛陀侍者；护持佛教四十余年；恒河中央入灭；遗体分两处建塔"
+  appearances: [425, 436, 441, 443, 446, 447, 449, 450, 456, 457, 458, 460, 462, 463, 464]
+
+E_012:
+  name: 麻衣
+  aliases: [麻衣尊者, 麻衣罗汉]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [精通三藏]
+  note: "佛法第三代付法藏师；阿育王为其施主；为八万四千七宝塔开光；将佛法交传小护后趣入涅槃"
+  appearances: [427, 451, 467, 468, 473, 474]
+
+E_013:
+  name: 小护
+  aliases: [小护尊者]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [精通三藏]
+  note: "佛法第四代付法藏师；卖香人护藏之子；佛亲自授记'无相佛行持如来事业'；以七教言使大量弟子证果（山洞中充满四指扦）；以三尸花鬘降伏魔王波旬；将佛法交付有愧"
+  appearances: [454, 474, 476, 477, 479, 480, 481, 485, 486, 488]
+
+E_014:
+  name: 有愧
+  aliases: [有愧尊者]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [精通三藏]
+  note: "佛法第五代付法藏师；将佛法交付给摩竭陀国圣者黑色后趣入涅槃"
+  appearances: [488, 491, 492]
+
+E_015:
+  name: 黑色
+  aliases: [圣者黑色, 黑色尊者]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  origin: 摩竭陀国
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [精通三藏]
+  note: "佛法第六代付法藏师；广泛护持佛法后交付善见"
+  appearances: [492, 495, 496, 497]
+
+E_016:
+  name: 善见
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "黑色尊者将佛法交付给善见"
+  appearances: [497]
+
+E_017:
+  name: 日中罗汉
+  aliases: [水中罗汉]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: [阿罗汉果]
+  note: "阿难为其传戒后即刻证得阿罗汉；被称为日中罗汉或水中罗汉；佛陀授记其在克什米尔弘扬佛法；有些论师将其加入付法藏师"
+  appearances: [461, 462, 498]
+
+# ==================== 人物 — 其他 ====================
+
+E_020:
+  name: 萨迦贤
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "迦叶尊者之妻；金色女子；与迦叶如兄妹般未生贪欲"
+  appearances: [410, 413]
+
+E_021:
+  name: 尼枸卢顶
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: 摩竭陀国
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "婆罗门；迦叶尊者之父；祈祷尼枸卢天尊后生子"
+  appearances: [408]
+
+E_022:
+  name: 护藏
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "卖香人；小护之父"
+  appearances: [453, 478]
+
+E_023:
+  name: 商主
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "那达和帕达之父"
+  appearances: [453]
+
+E_024:
+  name: 那达
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "商主之子；在觉拉地方摩仁达山建造精舍并作施主"
+  appearances: [453]
+
+E_025:
+  name: 帕达
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "商主之子；在觉拉地方摩仁达山建造精舍并作施主"
+  appearances: [453]
+
+# ==================== 人物 — 帝王 ====================
+
+E_030:
+  name: 未生怨王
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "梦到王族后继无人；前往鸡足山朝见迦叶遗体；与阿难一起建造鸡足山遗塔"
+  appearances: [432, 434, 435, 444, 456, 464]
+
+E_031:
+  name: 阿育王
+  aliases: [无忧法王, 无忧王]
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "麻衣尊者的施主；佛陀在《文殊根本续》中授记其于入灭后百年出世；建八万四千七宝塔；寿命一百五十"
+  appearances: [468, 469, 472]
+
+E_032:
+  name: 甘露饭
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛陀的叔父；阿难之父"
+  appearances: [447]
+
+E_033:
+  name: 罗睺罗
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "释迦牟尼成佛时与阿难同时诞生"
+  appearances: [448]
+
+E_034:
+  name: 十力迦叶
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "世尊把阿难交给十力迦叶传戒"
+  appearances: [449]
+
+# ==================== 人物 — 论师 ====================
+
+E_040:
+  name: 龙树菩萨
+  aliases: [龙树]
+  type: 人物.法师
+  additional_types: [圣众.大乘.菩萨]
+  additional_types_source: text
+  specialty: [阿阇黎, 大成就者]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "自宗认为付法藏师为龙树菩萨以上的七位"
+  appearances: [498, 499]
+
+# ==================== 经典 ====================
+
+E_050:
+  name: 《文殊根本续》
+  aliases: []
+  type: 经典.密续
+  note: "佛在此续中授记阿育王出世建塔"
+  appearances: [469]
+
+E_051:
+  name: 《杂阿含经》
+  aliases: []
+  type: 经典.经
+  note: "佛在此经中亲自授记小护出家成为'无相佛'行持如来事业"
+  appearances: [477]
+
+# ==================== 集合 ====================
+
+E_060:
+  name: 十六大阿罗汉
+  aliases: [十六大罗汉]
+  type: 集合.人物集合
+  cardinality: 16
+  members: []
+  note: "佛陀将佛法交付大迦叶及十六大阿罗汉；在四大部洲三十三天等各境护持佛法；有些论师将日中罗汉加入付法藏师来算，但自宗认为是龙树菩萨以上七位"
+  appearances: [406, 498, 499]
+
+E_061:
+  name: 五百阿罗汉
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 500
+  members: []
+  note: "十六大罗汉与五百阿罗汉等一起护持佛法"
+  appearances: [499]
+
+# ==================== 地名 ====================
+
+E_070:
+  name: 摩竭陀国
+  aliases: []
+  type: 地名.国
+  note: "迦叶尊者出生地；有愧将佛法交付给摩竭陀国的圣者黑色"
+  appearances: [407, 492]
+
+E_071:
+  name: 尼枸卢婆罗门村落
+  aliases: []
+  type: 地名.区域
+  note: "迦叶尊者出生的村落，在摩竭陀国"
+  appearances: [407]
+
+E_072:
+  name: 鸡足山
+  aliases: []
+  type: 地名.圣地
+  note: "位于南方；迦叶趣入涅槃处；山门闭合后未生怨王前来朝见时打开；阿难与未生怨王在山顶建遗塔"
+  appearances: [428, 435, 444]
+
+E_073:
+  name: 哦芒塔
+  aliases: []
+  type: 地名.圣地
+  note: "释迦世尊成佛不久住在此处，迦叶来此处见佛出家"
+  appearances: [415]
+
+E_074:
+  name: 南赡部洲
+  aliases: [赡部洲]
+  type: 地名.神话地名
+  note: "众多天人投生处；阿育王在南赡部洲四面八方建塔"
+  appearances: [421, 471]
+
+E_075:
+  name: 广严城
+  aliases: []
+  type: 地名.区域
+  note: "阿难入灭后遗体一半由广严城民众带走；建塔处"
+  appearances: [456, 464, 465]
+
+E_076:
+  name: 恒河
+  aliases: []
+  type: 地名.自然地理
+  note: "阿难到达恒河中央幻化岛屿传戒；阿难在恒河中央入灭"
+  appearances: [457, 458]
+
+E_077:
+  name: 克什米尔
+  aliases: []
+  type: 地名.区域
+  note: "佛陀授记日中罗汉将在克什米尔弘扬佛法"
+  appearances: [462]
+
+E_078:
+  name: 觉拉
+  aliases: []
+  type: 地名.区域
+  note: "将来商主之子那达和帕达在此地方建造精舍"
+  appearances: [452]
+
+E_079:
+  name: 摩仁达山
+  aliases: []
+  type: 地名.圣地
+  note: "在觉拉地方；商主之子那达和帕达建造精舍处"
+  appearances: [453]
+
+E_080:
+  name: 萨那哦城
+  aliases: []
+  type: 地名.区域
+  note: "阿难遗体一半在此城建塔"
+  appearances: [465]
+
+E_081:
+  name: 四大部洲
+  aliases: []
+  type: 地名.神话地名
+  note: "十六大罗汉在四大部洲护持佛法"
+  appearances: [499]
+
+E_082:
+  name: 三十三天
+  aliases: []
+  type: 地名.神话地名
+  note: "十六大罗汉在三十三天等各境护持佛法"
+  appearances: [499]
+
+# ==================== 教法 ====================
+
+E_090:
+  name: 头陀行
+  aliases: [头陀功德]
+  type: 教法.教言法门
+  note: "迦叶被赞为头陀行第一；弥勒佛眷属依迦叶遗体行持头陀功德证阿罗汉果"
+  appearances: [418, 442]
+
+# ============================================================
+# 质量检查结果:
+# 1. 无 type 的 entity: 无 (全部有 type)
+# 2. alias 不当: 无
+# 3. 外部知识泄漏: 无 (所有字段均来自源文本)
+# 4. 通称非人泄漏: 无 (夜叉仅保留有名字的"香达夜叉")
+# 5. R1 误触发: 无 (付法藏师均文本中以凡常法师+阿罗汉圣众双模式描述)
+# 6. 去重: 无重复
+# 7. 《》扫描: 《文殊根本续》《杂阿含经》均已提取
+# ============================================================

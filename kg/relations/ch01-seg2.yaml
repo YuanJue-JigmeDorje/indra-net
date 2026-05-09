@@ -1,0 +1,341 @@
+# ============================================================
+# 知识图谱关系抽取 — 第一品 佛教总况 seg2 (lines 101-200)
+# 覆盖范围: 十二相之（二）入胎 至（九）降伏魔众前半
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 规范: SKILL_05a v0.3 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 NAME（人类可读名），非 entity ID
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/01_佛教总况.md
+  source_lines: "101-200"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.3
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 亲属/政治关系 (fatherOf / motherOf / consortOf / rulerOf)
+# ============================================================
+
+  - rel_id: R_001
+    type: fatherOf
+    source: 净饭王
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "于是国王把他交给众生主母等三十二位姨母，抚养成长。"
+    note: "文中多次以'父王'称之"
+
+  - rel_id: R_002
+    type: motherOf
+    source: 摩耶夫人
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "他便以婆罗门吠陀中说的灰白童象（即六牙白象）的形象来到正在持斋戒的母亲胎中。"
+    note: null
+
+  - rel_id: R_003
+    type: consortOf
+    source: 释迦牟尼佛
+    target: 耶输陀罗
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子，如幻般享受妙欲。"
+    note: null
+
+  - rel_id: R_004
+    type: consortOf
+    source: 释迦牟尼佛
+    target: 耶惟檀
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子，如幻般享受妙欲。"
+    note: null
+
+  - rel_id: R_005
+    type: consortOf
+    source: 释迦牟尼佛
+    target: 热达吉
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "迎娶了远离五种过失、具有八种功德的女子——耶输陀罗、耶惟檀与热达吉，连同她们各自的二万眷属，即六万妃子，如幻般享受妙欲。"
+    note: null
+
+  - rel_id: R_006
+    type: rulerOf
+    source: 净饭王
+    target: 迦毗罗卫国
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "父王下令：'持棍等三位释迦族的女儿作太子妃。'"
+    note: "由太子为王子可推知净饭王为迦毗罗卫国王"
+
+# ============================================================
+# B. 师承关系 (teacherOf)
+# ============================================================
+
+  - rel_id: R_010
+    type: teacherOf
+    source: 根戒西尼
+    target: 释迦牟尼佛
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "在根戒西尼（意为众知识）、真哦够恰等等师长面前学习文字、历算"
+    note: null
+
+  - rel_id: R_011
+    type: teacherOf
+    source: 真哦够恰
+    target: 释迦牟尼佛
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "在根戒西尼（意为众知识）、真哦够恰等等师长面前学习文字、历算"
+    note: null
+
+  - rel_id: R_012
+    type: teacherOf
+    source: 桑林
+    target: 释迦牟尼佛
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "在国舅桑林（意为善取）那里学习了骑象等许多技艺，所有的知识、本领样样精通"
+    note: null
+
+  - rel_id: R_013
+    type: teacherOf
+    source: 让佩
+    target: 释迦牟尼佛
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "于身怀因明窍诀、大名鼎鼎的让佩与拉秀大师那里，听闻无所有定与有顶等持"
+    note: null
+
+  - rel_id: R_014
+    type: teacherOf
+    source: 拉秀
+    target: 释迦牟尼佛
+    specialty: [教授]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "于身怀因明窍诀、大名鼎鼎的让佩与拉秀大师那里，听闻无所有定与有顶等持"
+    note: null
+
+# ============================================================
+# C. 归属关系 (memberOf)
+# ============================================================
+
+  - rel_id: R_020
+    type: memberOf
+    source: 憍陈如
+    target: 憍陈如等五人
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.90
+    source_quote: "与憍陈如等五人开始了长达六年的苦行禅修生涯"
+    note: null
+
+  - rel_id: R_021
+    type: memberOf
+    source: 难陀
+    target: 五百释迦童子
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "难陀等五百释迦童子以及耶输陀罗等八百童女、登巴等五百仆人、阿丹等五百良驹也一同出生"
+    note: null
+
+  - rel_id: R_022
+    type: memberOf
+    source: 耶输陀罗
+    target: 八百童女
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "耶输陀罗等八百童女……也一同出生"
+    note: null
+
+  - rel_id: R_023
+    type: memberOf
+    source: 登巴
+    target: 五百仆人
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "登巴等五百仆人……也一同出生"
+    note: null
+
+  - rel_id: R_024
+    type: memberOf
+    source: 阿丹
+    target: 五百良驹
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "阿丹等五百良驹也一同出生"
+    note: null
+
+  - rel_id: R_025
+    type: memberOf
+    source: 众生主母
+    target: 三十二位姨母
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "国王把他交给众生主母等三十二位姨母，抚养成长"
+    note: null
+
+# ============================================================
+# D. 降伏关系 (subduedBy)
+# ============================================================
+
+  - rel_id: R_030
+    type: subduedBy
+    source: 魔王波旬
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "在初夜时分，他入定于摧毁魔军的等持中，惊动、慑服魔众所在地的光芒遍及各处"
+    note: "降魔事件在本段开始（line 188），完整降伏过程延续到下一段"
+
+# ============================================================
+# E. 地理关系 (locatedIn)
+# ============================================================
+
+  - rel_id: R_040
+    type: locatedIn
+    source: 菩提树
+    target: 金刚座
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "在一切佛陀加持中自然形成的金刚座菩提树下，于草垫上跏趺而坐"
+    note: null
+
+  - rel_id: R_041
+    type: locatedIn
+    source: 蓝毗尼花园
+    target: 南赡部洲
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "当以世间福德力在蓝毗尼花园中降生的时刻已到"
+    note: "蓝毗尼花园为南赡部洲中的圣地"
+
+  - rel_id: R_042
+    type: locatedIn
+    source: 尼连禅河
+    target: 南赡部洲
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "到尼连禅河畔，与憍陈如等五人开始了长达六年的苦行禅修生涯"
+    note: null
+
+# ============================================================
+# F. 对立/竞争关系 (rivalOf / antagonistOf)
+# ============================================================
+
+  - rel_id: R_050
+    type: antagonistOf
+    source: 提婆达多
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "提婆达多怀着极大的嫉妒心以一掌力击死大象"
+    note: "提婆达多在比武段中表现为竞争对手；降魔段中魔王以其名恐吓菩萨"
+
+  - rel_id: R_051
+    type: antagonistOf
+    source: 魔王波旬
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [神变]
+    author_stance: 中立
+    confidence: 0.80
+    source_quote: "魔王波旬化现为猎人的形象来到他面前对他说：'迦毗罗卫国已经被提婆达多控制，王宫被他摧毁，所有释迦族人也被他屠杀，你为什么还呆在这里？'"
+    note: "魔王企图阻挠菩萨成佛"
+
+# ============================================================
+# G. 亲属扩展 (kinOf — 泛亲属)
+# ============================================================
+
+  - rel_id: R_060
+    type: kinOf
+    source: 桑林
+    target: 释迦牟尼佛
+    symmetric: true
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "在国舅桑林（意为善取）那里学习了骑象等许多技艺"
+    note: "桑林为太子的国舅（母系亲属）"

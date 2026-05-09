@@ -1,0 +1,1533 @@
+# ============================================================
+# 知识图谱实体 — 第一品 佛教总况（章级合并）
+# 来源: source/dudjom/chapter_md/01_佛教总况.md (lines 1-579)
+# 合并日期: 2026-05-09
+# 合并自: ch01-seg1 ~ ch01-seg6
+# 规范: SKILL_03a v0.3 + entity-taxonomy v0.4
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 释迦牟尼佛
+  aliases: ["释迦佛", "本师", "义成王子", "白幢", "菩萨太子", "如来", "世尊", "释迦牟尼", "佛陀", "能仁", "义成", "菩萨", "沙门释迦牟尼", "白幢天子", "释迦世尊"]
+  type: 圣众.大乘.佛
+  additional_types: ["人物.帝王"]
+  additional_types_source: text
+  attainments: ["天眼", "漏尽通", "正等正觉"]
+  note: "贤劫第四位导师；文本同时以凡常太子身份及圆满佛陀两种模式描述；十二相之主体；三次结集教法之源"
+
+E_002:
+  name: 毗卢遮那佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "报身佛，受用基藏花严世界"
+
+E_003:
+  name: 燃灯佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "兜率天中传出燃灯佛授记劝请偈颂的乐音"
+
+E_004:
+  name: 金刚持
+  aliases: ["大密金刚持"]
+  type: 圣众.大乘.佛
+  note: "《如意宝庄严续》中称'始初正等觉，大密金刚持'"
+
+E_005:
+  name: 迦叶佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "于《国王哲哲梦境授记经》中授记释迦佛教法分成十八部"
+
+E_006:
+  name: 弥勒菩萨
+  aliases: ["弥勒", "弥勒佛", "补处怙主弥勒菩萨"]
+  type: 圣众.大乘.菩萨
+  note: "不共大乘结集中结集律藏；广大行派法藏来源；无著之师；迦叶遗体保存至其成佛"
+
+E_007:
+  name: 文殊菩萨
+  aliases: ["文殊", "圣者文殊菩萨"]
+  type: 圣众.大乘.菩萨
+  note: "不共大乘结集中结集经藏；甚深见派法藏由其结集；亲自摄受陈那；以比丘相对护月宣讲大乘法"
+
+E_008:
+  name: 金刚手菩萨
+  aliases: ["密主金刚手", "金刚手", "密主"]
+  type: 圣众.大乘.菩萨
+  note: "千佛教法的结集者；不共大乘结集中结集论藏；一说将续部交付恩札布德"
+
+E_009:
+  name: 普贤菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "不共大乘结集者之一"
+
+E_010:
+  name: 六能仁
+  aliases: []
+  type: 圣众.大乘.佛
+  cardinality: 6
+  note: "《密藏根本续》所述'大悲加持的六能仁'，由善逝身语意金刚中出现"
+
+E_011:
+  name: 麟角喻独觉
+  aliases: []
+  type: 圣众.缘觉圣众
+  note: "利根独觉；释迦佛成佛方式与其相同"
+
+# ==================== 非人 ====================
+
+E_020:
+  name: 梵天
+  aliases: []
+  type: 非人.天部
+  note: "太子诞生时献妙衣；回忆宏愿劝请佛转法轮；供养千辐金法轮"
+
+E_021:
+  name: 帝释天
+  aliases: ["天帝释"]
+  type: 非人.天部
+  note: "太子诞生时献妙衣；供如意宝珠请佛转法轮"
+
+E_022:
+  name: 四大天王
+  aliases: []
+  type: 非人.天部
+  note: "太子出家时护送腾空；成佛后供养四钵"
+
+E_023:
+  name: 魔王波旬
+  aliases: []
+  type: 非人.天部
+  note: "化猎人阻挠菩萨；发动魔军及七魔女；被菩萨大慈等持降伏；又被小护三尸花鬘降伏"
+
+E_024:
+  name: 地神安稳母
+  aliases: []
+  type: 非人.天部
+  note: "降魔时半个金色身躯破土而出为菩萨作证"
+
+E_025:
+  name: 白莲母
+  aliases: []
+  type: 非人.天部
+  note: "七魔女之一"
+
+E_026:
+  name: 美那嘎
+  aliases: []
+  type: 非人.天部
+  note: "七魔女之一"
+
+E_027:
+  name: 妙饰女
+  aliases: []
+  type: 非人.天部
+  note: "七魔女之一"
+
+E_028:
+  name: 卷发女
+  aliases: []
+  type: 非人.天部
+  note: "七魔女之一"
+
+E_029:
+  name: 乾闼婆
+  aliases: []
+  type: 非人.天部
+  note: "第二转法轮共同眷属之一"
+
+E_030:
+  name: 乾闼婆极喜
+  aliases: ["极喜"]
+  type: 非人.天部
+  note: "被佛陀以善巧方便摄受度化"
+
+E_031:
+  name: 香达夜叉
+  aliases: []
+  type: 非人.天部
+  note: "协助阿育王建造八万四千七宝塔"
+
+# ==================== 人物 — 付法藏师 ====================
+
+E_040:
+  name: 大迦叶
+  aliases: ["迦叶尊者", "上座大迦叶", "迦叶", "尼枸卢生"]
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  origin: "摩竭陀国"
+  attainments: ["头陀行第一"]
+  note: "佛法第一代付法藏师；护持佛教四十余年；鸡足山涅槃加持遗体不坏至弥勒成佛"
+
+E_041:
+  name: 阿难
+  aliases: ["阿难尊者"]
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  attainments: ["多闻第一"]
+  note: "佛法第二代付法藏师；佛陀叔父甘露饭之子；当佛陀侍者；护持佛教四十余年；恒河中央入灭"
+
+E_042:
+  name: 麻衣
+  aliases: ["麻衣尊者", "麻衣罗汉"]
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  attainments: ["精通三藏"]
+  note: "佛法第三代付法藏师；阿育王为其施主；为佛塔开光"
+
+E_043:
+  name: 小护
+  aliases: ["小护尊者"]
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  attainments: ["精通三藏"]
+  note: "佛法第四代付法藏师；佛亲自授记'无相佛行持如来事业'；以三尸花鬘降伏魔王"
+
+E_044:
+  name: 有愧
+  aliases: ["有愧尊者"]
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  attainments: ["精通三藏"]
+  note: "佛法第五代付法藏师"
+
+E_045:
+  name: 黑色
+  aliases: ["圣者黑色", "黑色尊者"]
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  origin: "摩竭陀国"
+  attainments: ["精通三藏"]
+  note: "佛法第六代付法藏师"
+
+E_046:
+  name: 善见
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "佛法第七代付法藏师"
+
+E_047:
+  name: 日中罗汉
+  aliases: ["水中罗汉"]
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  attainments: ["阿罗汉果"]
+  note: "阿难传戒后即证阿罗汉；佛授记其在克什米尔弘法；建立迦湿弥罗国"
+
+# ==================== 人物 — 声闻弟子 ====================
+
+E_050:
+  name: 舍利子
+  aliases: []
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  note: "第二转法轮眷属；佛灭前先行入灭于那烂陀寺"
+
+E_051:
+  name: 目犍连
+  aliases: []
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  note: "第二转法轮眷属；到地狱巡视后被外道殴打身亡"
+
+E_052:
+  name: 憍陈如
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "与太子六年苦行；鹿野苑得自然近圆戒；第一批大比丘僧团之一"
+
+E_053:
+  name: 优婆离
+  aliases: []
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  note: "第一次结集中结集律藏"
+
+E_054:
+  name: 罗睺罗
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "释迦牟尼成佛时与阿难同时诞生"
+
+E_055:
+  name: 众生主母
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "姨母之一抚养太子；五百比丘尼之首；发愿佛住世被纠正后与五百女阿罗汉涅槃"
+
+E_056:
+  name: 十力迦叶
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "世尊把阿难交给十力迦叶传戒"
+
+# ==================== 人物 — 帝王 ====================
+
+E_060:
+  name: 净饭王
+  aliases: []
+  type: 人物.帝王
+  note: "太子之父王"
+
+E_061:
+  name: 未生怨王
+  aliases: []
+  type: 人物.帝王
+  note: "第一次结集施主；前往鸡足山朝见迦叶遗体"
+
+E_062:
+  name: 阿育王
+  aliases: ["无忧法王", "无忧王"]
+  type: 人物.帝王
+  note: "第二次结集施主；麻衣尊者施主；建八万四千七宝塔"
+
+E_063:
+  name: 达玛阿修嘎
+  aliases: []
+  type: 人物.帝王
+  note: "其孙为离忧"
+
+E_064:
+  name: 离忧
+  aliases: []
+  type: 人物.帝王
+  note: "达玛阿修嘎之孙"
+
+E_065:
+  name: 勇部
+  aliases: []
+  type: 人物.帝王
+  note: "离忧之子；其时期大天比丘出现"
+
+E_066:
+  name: 欢喜王
+  aliases: []
+  type: 人物.帝王
+  note: "勇部之后；僧团争论不休"
+
+E_067:
+  name: 大莲花王
+  aliases: []
+  type: 人物.帝王
+  note: "欢喜王之后；僧团争论不休；大乘在其时期稍后出现在人间"
+
+E_068:
+  name: 嘎纳加嘎
+  aliases: []
+  type: 人物.帝王
+  note: "大莲花王之后"
+
+E_069:
+  name: 腻契波王
+  aliases: []
+  type: 人物.帝王
+  note: "第三次结集施主"
+
+E_070:
+  name: 哲哲国王
+  aliases: []
+  type: 人物.帝王
+  note: "迦叶佛在其梦中授记释迦佛教法分十八部"
+
+E_071:
+  name: 唐玄宗
+  aliases: []
+  type: 人物.帝王
+  note: "汉地帝王；其时代可现量见十六大罗汉"
+
+E_072:
+  name: 薛禅皇帝
+  aliases: []
+  type: 人物.帝王
+  note: "汉地帝王；其时代可现量见十六大罗汉"
+
+E_073:
+  name: 益旺大帝
+  aliases: []
+  type: 人物.帝王
+  note: "汉地帝王；其时代可现量见十六大罗汉"
+
+E_074:
+  name: 护月
+  aliases: ["护月国王"]
+  type: 人物.帝王
+  origin: "邬哲波夏"
+  note: "文殊菩萨以比丘相对其宣讲大乘法并留下经函"
+
+E_075:
+  name: 恩札布德
+  aliases: []
+  type: 人物.帝王
+  origin: "邬金"
+  note: "将续部造成经函宣讲使境内众生获成就变虹身"
+
+E_076:
+  name: 瓦色嘎巴
+  aliases: []
+  type: 人物.帝王
+  origin: "邬金"
+  note: "从黑日嘎殿堂取出《密集续》"
+
+E_077:
+  name: 妙胜善
+  aliases: []
+  type: 人物.帝王
+  note: "护持佛法的国王之一"
+
+# ==================== 人物 — 太子身边 ====================
+
+E_080:
+  name: 摩耶夫人
+  aliases: ["摩诃摩耶"]
+  type: 人物.王妃
+  note: "释迦佛投生之母；太子出生七日后离世"
+
+E_081:
+  name: 耶输陀罗
+  aliases: []
+  type: 人物.王妃
+  note: "太子妃之一"
+
+E_082:
+  name: 耶惟檀
+  aliases: []
+  type: 人物.王妃
+  note: "太子妃之一"
+
+E_083:
+  name: 热达吉
+  aliases: []
+  type: 人物.王妃
+  note: "太子妃之一"
+
+E_084:
+  name: 提婆达多
+  aliases: []
+  type: 人物.其他
+  note: "怀嫉妒心击死大象；降魔段中魔王以其名恐吓菩萨"
+
+E_085:
+  name: 难陀
+  aliases: []
+  type: 人物.其他
+  note: "五百释迦童子之一"
+
+E_086:
+  name: 登巴
+  aliases: []
+  type: 人物.其他
+  note: "五百仆人之一；太子出城时驾驶马车"
+
+E_087:
+  name: 阿丹
+  aliases: []
+  type: 人物.其他
+  note: "五百良驹之一；太子出家时坐骑"
+
+E_088:
+  name: 根戒西尼
+  aliases: ["众知识"]
+  type: 人物.其他
+  note: "太子师长之一，教授文字历算"
+
+E_089:
+  name: 真哦够恰
+  aliases: []
+  type: 人物.其他
+  note: "太子师长之一"
+
+E_090:
+  name: 桑林
+  aliases: ["善取"]
+  type: 人物.其他
+  note: "国舅；教太子骑象等技艺"
+
+E_091:
+  name: 让佩
+  aliases: []
+  type: 人物.法师
+  specialty: ["瑜伽士"]
+  note: "太子出家后听闻无所有定与有顶等持；佛观察其具法器但已离世"
+
+E_092:
+  name: 拉秀
+  aliases: []
+  type: 人物.法师
+  specialty: ["瑜伽士"]
+  note: "太子出家后听闻教法；佛观察其具法器但已离世"
+
+# ==================== 人物 — 其他弟子/供养者 ====================
+
+E_093:
+  name: 正命
+  aliases: []
+  type: 人物.其他
+  note: "婆罗门；行途中问佛在谁面前出家"
+
+E_094:
+  name: 妙生母
+  aliases: []
+  type: 人物.其他
+  note: "婆罗门女；以五百野黄牛乳汁提炼醍醐供养菩萨"
+
+E_095:
+  name: 吉祥
+  aliases: []
+  type: 人物.其他
+  note: "草商；供养菩萨如孔雀颈般柔软的草"
+
+E_096:
+  name: 商主嘎滚
+  aliases: []
+  type: 人物.其他
+  note: "成佛后四十九日中供养蜂蜜"
+
+E_097:
+  name: 护贤
+  aliases: []
+  type: 人物.其他
+  note: "供养蜂蜜；第二转法轮得地大菩萨之一"
+
+E_098:
+  name: 给孤独
+  aliases: []
+  type: 人物.其他
+  note: "优婆塞；第二转法轮眷属"
+
+E_099:
+  name: 萨嘎
+  aliases: []
+  type: 人物.其他
+  note: "优婆夷；第二转法轮眷属"
+
+E_100:
+  name: 宝生
+  aliases: []
+  type: 人物.法师
+  note: "得地大菩萨；第二转法轮不共眷属"
+
+E_101:
+  name: 网施
+  aliases: []
+  type: 人物.法师
+  note: "得地大菩萨；第二转法轮不共眷属"
+
+E_102:
+  name: 遍行外道极贤
+  aliases: ["极贤"]
+  type: 人物.其他
+  note: "被佛陀以大慈大悲直接度化摄受"
+
+# ==================== 人物 — 结集/分裂相关法师 ====================
+
+E_103:
+  name: 耶舍
+  aliases: []
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  note: "第二次结集领衔者"
+
+E_104:
+  name: 大天比丘
+  aliases: ["大天"]
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "受魔加持者；宣扬五种邪法"
+
+E_105:
+  name: 善贤
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "受魔加持者；宣扬五种邪法"
+
+E_106:
+  name: 龙长老
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "扩大争端使说一切有部中分出大众部、上座部、正量部"
+
+E_107:
+  name: 安意
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "再度使争论扩张，四部分成十八部"
+
+E_108:
+  name: 妙辐
+  aliases: ["圣者妙辐"]
+  type: 人物.法师
+  additional_types: ["圣众.声闻圣众.阿罗汉"]
+  additional_types_source: text
+  specialty: ["比丘"]
+  note: "克什米尔说法中第三次结集领衔者"
+
+E_109:
+  name: 瓦色莫札
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "克什米尔说法中第三次结集参与者"
+
+E_110:
+  name: 长老母之子
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "《智燃论》记载其佛灭后两百年结集教法"
+
+# ==================== 人物 — 六庄严/大论师 ====================
+
+E_111:
+  name: 龙树菩萨
+  aliases: ["龙猛菩萨", "龙树", "第二大佛陀龙树菩萨"]
+  type: 人物.法师
+  additional_types: ["圣众.大乘.菩萨"]
+  additional_types_source: text
+  specialty: ["阿阇黎", "大成就者"]
+  note: "甚深见派开宗祖师；萨绕哈高足；被誉为第二大佛陀；从黑日嘎殿堂取出《喜金刚》；六庄严之一"
+
+E_112:
+  name: 无著
+  aliases: ["无著菩萨", "圣者无著"]
+  type: 人物.法师
+  additional_types: ["圣众.大乘.菩萨"]
+  additional_types_source: text
+  specialty: ["阿阇黎"]
+  note: "弥勒菩萨弟子；广大行派弘扬者；世亲之兄；六庄严之一"
+
+E_113:
+  name: 陈那
+  aliases: ["陈那论师"]
+  type: 人物.法师
+  specialty: ["阿阇黎", "班智达"]
+  attainments: ["克胜诸方之悉地"]
+  note: "蒙文殊亲自摄受；事势理开创者；六庄严之一"
+
+E_114:
+  name: 圣天
+  aliases: ["圣天论师"]
+  type: 人物.法师
+  specialty: ["阿阇黎"]
+  note: "龙树弟子；由莲花花蕊中化生；六庄严之一"
+
+E_115:
+  name: 世亲
+  aliases: ["世亲论师"]
+  type: 人物.法师
+  specialty: ["阿阇黎", "班智达"]
+  note: "无著胞弟；能背诵九十九部《广般若》；六庄严之一"
+
+E_116:
+  name: 法称
+  aliases: ["法称论师", "具德法称论师"]
+  type: 人物.法师
+  specialty: ["阿阇黎", "班智达"]
+  note: "陈那弟子；驳倒一切外道宗派；六庄严之一"
+
+E_117:
+  name: 功德光
+  aliases: []
+  type: 人物.法师
+  specialty: ["阿阇黎"]
+  note: "六庄严另一种算法中的成员"
+
+E_118:
+  name: 释迦光
+  aliases: []
+  type: 人物.法师
+  specialty: ["阿阇黎"]
+  note: "六庄严另一种算法中的成员"
+
+E_119:
+  name: 寂天
+  aliases: []
+  type: 人物.法师
+  additional_types: ["圣众.大乘.菩萨"]
+  additional_types_source: text
+  specialty: ["阿阇黎"]
+  note: "具有七种稀奇传记的大菩萨；二大稀有论师之一"
+
+E_120:
+  name: 簪札贡美
+  aliases: ["八戒居士皎月"]
+  type: 人物.法师
+  specialty: ["阿阇黎"]
+  attainments: ["一切明处无所不知", "证得悉地"]
+  note: "二大稀有论师之一"
+
+E_121:
+  name: 佛智论师
+  aliases: ["佛智"]
+  type: 人物.法师
+  specialty: ["班智达"]
+  note: "引述释迦佛尼连河悟道经过；十二位阿阇黎之一"
+
+# ==================== 人物 — 大成就者 ====================
+
+E_122:
+  name: 萨绕哈
+  aliases: ["大婆罗门萨绕哈", "吉祥萨绕哈"]
+  type: 人物.法师
+  specialty: ["大成就者"]
+  note: "龙树菩萨之师；八十四位大成就者之首"
+
+E_123:
+  name: 革革热巴
+  aliases: []
+  type: 人物.法师
+  specialty: ["大成就者"]
+  note: "从黑日嘎殿堂取出《玛哈玛雅》《大威德续》等"
+
+E_124:
+  name: 则乐巴
+  aliases: []
+  type: 人物.法师
+  specialty: ["大成就者"]
+  note: "从香巴拉取来《时轮金刚》"
+
+# ==================== 人物 — 其他 ====================
+
+E_125:
+  name: 萨迦贤
+  aliases: []
+  type: 人物.其他
+  note: "迦叶尊者之妻；与迦叶如兄妹般未生贪欲"
+
+E_126:
+  name: 尼枸卢顶
+  aliases: []
+  type: 人物.其他
+  origin: "摩竭陀国"
+  note: "婆罗门；迦叶尊者之父"
+
+E_127:
+  name: 护藏
+  aliases: []
+  type: 人物.其他
+  note: "卖香人；小护之父"
+
+E_128:
+  name: 商主
+  aliases: []
+  type: 人物.其他
+  note: "那达和帕达之父"
+
+E_129:
+  name: 那达
+  aliases: []
+  type: 人物.其他
+  note: "商主之子；在觉拉摩仁达山建造精舍"
+
+E_130:
+  name: 帕达
+  aliases: []
+  type: 人物.其他
+  note: "商主之子；在觉拉摩仁达山建造精舍"
+
+E_131:
+  name: 甘露饭
+  aliases: []
+  type: 人物.其他
+  note: "佛陀的叔父；阿难之父"
+
+E_132:
+  name: 札巴上师
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  attainments: ["阿罗汉"]
+  note: "护持佛法的阿罗汉众之一"
+
+# ==================== 地名 ====================
+
+E_140:
+  name: 南赡部洲
+  aliases: ["赡部洲", "南方赡部洲"]
+  type: 地名.神话地名
+  note: "娑婆世界中赡部树严饰的南方大洲；菩提迦耶所在"
+
+E_141:
+  name: 金刚座
+  aliases: []
+  type: 地名.圣地
+  note: "菩提迦耶中央自然形成；千佛成道处"
+
+E_142:
+  name: 尼连禅河
+  aliases: ["尼连禅河畔", "尼连河"]
+  type: 地名.自然地理
+  note: "义成王子安住不动三摩地及六年苦行之处"
+
+E_143:
+  name: 菩提迦耶
+  aliases: []
+  type: 地名.圣地
+  note: "南赡部洲中央金刚座所在"
+
+E_144:
+  name: 基藏花严世界
+  aliases: []
+  type: 地名.神话地名
+  note: "报身毗卢遮那佛受用之处"
+
+E_145:
+  name: 娑婆世界
+  aliases: []
+  type: 地名.神话地名
+  note: "二十五层世界中第十三层"
+
+E_146:
+  name: 密严刹土
+  aliases: ["密严庄严刹土"]
+  type: 地名.神话地名
+  note: "不共大乘认为释迦佛在此成佛"
+
+E_147:
+  name: 法性光明刹土
+  aliases: ["光明刹土"]
+  type: 地名.神话地名
+  note: "无上了义观点中释迦佛从无始以来安住之处"
+
+E_148:
+  name: 兜率天
+  aliases: []
+  type: 地名.神话地名
+  note: "白幢天子所住天界；降天出发处"
+
+E_149:
+  name: 净居天
+  aliases: []
+  type: 地名.神话地名
+  note: "释迦佛密严成佛后次第在此示现"
+
+E_150:
+  name: 菩提树
+  aliases: []
+  type: 地名.圣地
+  note: "金刚座上菩萨在此树下成佛"
+
+E_151:
+  name: 蓝毗尼花园
+  aliases: ["蓝毗尼"]
+  type: 地名.圣地
+  note: "太子诞生之处"
+
+E_152:
+  name: 迦毗罗卫国
+  aliases: ["迦毗罗卫"]
+  type: 地名.国
+  note: "太子的家国"
+
+E_153:
+  name: 广严城
+  aliases: []
+  type: 地名.区域
+  note: "太子比武处；佛住一年；第二次结集比丘宣扬十非事处"
+
+E_154:
+  name: 王舍城
+  aliases: []
+  type: 地名.圣地
+  note: "第一次结集所在；不共大乘结集在其南方"
+
+E_155:
+  name: 鹿野苑
+  aliases: []
+  type: 地名.圣地
+  note: "佛陀初转法轮之地"
+
+E_156:
+  name: 灵鹫山
+  aliases: ["圆满处"]
+  type: 地名.圣地
+  note: "佛转第二无相法轮之处"
+
+E_157:
+  name: 色究竟天
+  aliases: []
+  type: 地名.神话地名
+  note: "众生主母发愿声及佛应允转法声传至此处"
+
+E_158:
+  name: 拘尸那城
+  aliases: ["拘尸那"]
+  type: 地名.圣地
+  note: "佛陀示现涅槃之地"
+
+E_159:
+  name: 娑罗双树
+  aliases: []
+  type: 地名.圣地
+  note: "佛陀最终涅槃之地"
+
+E_160:
+  name: 克什米尔
+  aliases: ["迦湿弥罗国"]
+  type: 地名.国
+  note: "日中罗汉树立佛法之地；第三次结集地之一说"
+
+E_161:
+  name: 毗舍离城
+  aliases: ["毗舍离"]
+  type: 地名.圣地
+  note: "第二次结集所在"
+
+E_162:
+  name: 舍卫城
+  aliases: []
+  type: 地名.圣地
+  note: "佛陀住二十三年"
+
+E_163:
+  name: 布玛萨巴瓦山
+  aliases: []
+  type: 地名.圣地
+  note: "不共大乘结集地点"
+
+E_164:
+  name: 匝兰绕静处
+  aliases: []
+  type: 地名.圣地
+  note: "印度班智达说法中第三次结集所在地"
+
+E_165:
+  name: 鸡足山
+  aliases: []
+  type: 地名.圣地
+  note: "迦叶涅槃处；弥勒佛将来展示遗体处"
+
+E_166:
+  name: 摩竭陀国
+  aliases: []
+  type: 地名.国
+  note: "迦叶出生地；有愧交付黑色之地"
+
+E_167:
+  name: 尼枸卢婆罗门村落
+  aliases: []
+  type: 地名.区域
+  note: "迦叶出生的村落"
+
+E_168:
+  name: 恒河
+  aliases: []
+  type: 地名.自然地理
+  note: "阿难传戒及入灭处"
+
+E_169:
+  name: 邬金
+  aliases: ["邬金空行洲"]
+  type: 地名.国
+  note: "续部交传之地；恩札布德为其国王"
+
+E_170:
+  name: 邬哲波夏
+  aliases: []
+  type: 地名.区域
+  note: "护月国王所在之地"
+
+E_171:
+  name: 香巴拉
+  aliases: []
+  type: 地名.神话地名
+  note: "则乐巴从此取来《时轮金刚》"
+
+E_172:
+  name: 香醉山
+  aliases: []
+  type: 地名.自然地理
+  note: "日中罗汉从此取来藏红花"
+
+E_173:
+  name: 哦芒塔
+  aliases: []
+  type: 地名.圣地
+  note: "释迦佛成佛不久住此处，迦叶来此出家"
+
+E_174:
+  name: 觉拉
+  aliases: []
+  type: 地名.区域
+  note: "商主之子建造精舍处"
+
+E_175:
+  name: 摩仁达山
+  aliases: []
+  type: 地名.圣地
+  note: "在觉拉地方；精舍所在"
+
+E_176:
+  name: 萨那哦城
+  aliases: []
+  type: 地名.区域
+  note: "阿难遗体一半在此建塔"
+
+E_177:
+  name: 欲界
+  aliases: []
+  type: 地名.神话地名
+  note: "释迦佛在欲界示现成佛；魔王波旬所得欲界荣华"
+
+E_178:
+  name: 色界
+  aliases: []
+  type: 地名.神话地名
+  note: "释迦佛在色界刹土示现成佛"
+
+E_179:
+  name: 光明洲
+  aliases: []
+  type: 地名.神话地名
+  note: "金刚座成佛之处的别称"
+
+E_180:
+  name: 四洲
+  aliases: []
+  type: 地名.神话地名
+  note: "百俱胝四洲构成三千大千世界"
+
+E_181:
+  name: 香水海
+  aliases: []
+  type: 地名.自然地理
+  note: "手掌香水海上有莲花承托二十五层世界"
+
+E_182:
+  name: 四大部洲
+  aliases: []
+  type: 地名.神话地名
+  note: "十六大罗汉在此护持佛法"
+
+E_183:
+  name: 三十三天
+  aliases: []
+  type: 地名.神话地名
+  note: "十六大罗汉在此护持佛法"
+
+# ==================== 寺院/建筑 ====================
+
+E_190:
+  name: 列卓达山洞
+  aliases: []
+  type: 寺院.修行处
+  note: "第一次结集在此进行"
+
+E_191:
+  name: 婆利迦精舍
+  aliases: []
+  type: 寺院.寺庙
+  note: "第二次结集在此进行"
+
+E_192:
+  name: 耳饰精舍
+  aliases: []
+  type: 寺院.寺庙
+  note: "克什米尔说法中第三次结集地点"
+
+E_193:
+  name: 那烂陀寺
+  aliases: ["那烂陀"]
+  type: 寺院.寺庙
+  note: "舍利子与八万阿罗汉在此涅槃"
+
+E_194:
+  name: 革瓦那精舍
+  aliases: []
+  type: 寺院.寺庙
+  note: "印度班智达说法中第三次结集地点"
+
+E_195:
+  name: 黑日嘎殿堂
+  aliases: []
+  type: 寺院.道场
+  note: "邬金大海干涸后自然出现；保存所有续部经函"
+
+E_196:
+  name: 妙法增上宫殿
+  aliases: []
+  type: 寺院.王宫
+  note: "兜率天中白幢端坐其中法座上的宫殿"
+
+# ==================== 经典 ====================
+
+E_200:
+  name: 《俱舍论》
+  aliases: ["俱舍论"]
+  type: 经典.论
+  note: "引证释迦佛成佛方式如麟角喻独觉"
+
+E_201:
+  name: 《功德圆满庄严经》
+  aliases: ["功德圆满庄严经"]
+  type: 经典.经
+  note: "引证释迦佛三大阿僧祇劫积资粮成佛"
+
+E_202:
+  name: 《如意宝庄严续》
+  aliases: ["如意宝庄严续"]
+  type: 经典.密续
+  note: "引证大密金刚持以异相利生"
+
+E_203:
+  name: 《密严庄严经》
+  aliases: ["密严庄严经"]
+  type: 经典.经
+  note: "引证释迦佛在密严刹土成佛"
+
+E_204:
+  name: 《妙法白莲经》
+  aliases: ["妙法白莲经"]
+  type: 经典.经
+  note: "引证释迦佛于不可思千俱胝劫前已得殊胜菩提"
+
+E_205:
+  name: 《父子相会经》
+  aliases: ["父子相会经"]
+  type: 经典.经
+  note: "引证如来成百俱胝劫前已示现成正觉"
+
+E_206:
+  name: 《密藏根本续》
+  aliases: ["密藏根本续"]
+  type: 经典.密续
+  note: "引证六能仁以四种调伏方式利益五道有情"
+
+E_207:
+  name: 《幻化根本续》
+  aliases: ["幻化根本续"]
+  type: 经典.密续
+  note: "论述殊胜大化身以四种调伏方式利益有情"
+
+E_208:
+  name: 《经庄严论》
+  aliases: ["经庄严论"]
+  type: 经典.论
+  note: "引证化身三分类——工巧化身、投生化身、殊胜化身"
+
+E_209:
+  name: 《楞伽经》
+  aliases: ["楞伽经"]
+  type: 经典.经
+  note: "引证真实佛陀在密严刹成正觉后化身示现"
+
+E_210:
+  name: 《宝性论》
+  aliases: ["宝性论"]
+  type: 经典.论
+  note: "引证十二相——从兜率天降至示现涅槃相"
+
+E_211:
+  name: 《杂阿含经》
+  aliases: ["杂阿含经", "阿含经"]
+  type: 经典.经
+  note: "记载第一次结集；佛授记小护出家"
+
+E_212:
+  name: 《大毗婆沙论》
+  aliases: ["大毗婆沙论"]
+  type: 经典.论
+  note: "总结佛陀住世八十年行迹；声闻经部论典开宗之作"
+
+E_213:
+  name: 《国王哲哲梦境授记经》
+  aliases: ["国王哲哲梦境授记经"]
+  type: 经典.经
+  note: "第三次结集引用此经建立十八部均是清净佛教"
+
+E_214:
+  name: 《智燃论》
+  aliases: ["智燃论"]
+  type: 经典.论
+  note: "记载长老母之子结集教法；记载大乘佛法由菩萨结集"
+
+E_215:
+  name: 《秘密不可思议经》
+  aliases: ["秘密不可思议经"]
+  type: 经典.经
+  note: "说金刚手是千佛教法的结集者"
+
+E_216:
+  name: 《别解脱经》
+  aliases: ["别解脱经"]
+  type: 经典.律
+  note: "其诵法不同而导致僧团分裂十八部"
+
+E_217:
+  name: 《功德庄严经》
+  aliases: []
+  type: 经典.经
+  note: "论述佛语特法——三转法轮各随根基顿渐示现"
+
+E_218:
+  name: 《文殊根本续》
+  aliases: []
+  type: 经典.密续
+  note: "佛在此续中授记阿育王出世建塔"
+
+E_219:
+  name: 《般若八千颂》
+  aliases: []
+  type: 经典.经
+  note: "显宗认为文殊留给护月国王的经函即此经"
+
+E_220:
+  name: 《摄真如续》
+  aliases: []
+  type: 经典.密续
+  note: "密宗认为文殊留给护月国王的经函即此续"
+
+E_221:
+  name: 《密集续》
+  aliases: []
+  type: 经典.密续
+  note: "瓦色嘎巴从黑日嘎殿堂取出"
+
+E_222:
+  name: 《喜金刚》
+  aliases: []
+  type: 经典.密续
+  note: "龙树菩萨从黑日嘎殿堂取出"
+
+E_223:
+  name: 《玛哈玛雅》
+  aliases: []
+  type: 经典.密续
+  note: "革革热巴从黑日嘎殿堂取出"
+
+E_224:
+  name: 《大威德续》
+  aliases: []
+  type: 经典.密续
+  note: "革革热巴从黑日嘎殿堂取出"
+
+E_225:
+  name: 《时轮金刚》
+  aliases: []
+  type: 经典.密续
+  note: "则乐巴从香巴拉取来"
+
+E_226:
+  name: 《广般若》
+  aliases: []
+  type: 经典.经
+  note: "世亲能背诵九十九部"
+
+# ==================== 教法 ====================
+
+E_230:
+  name: 大乘
+  aliases: ["共同大乘", "不共大乘"]
+  type: 教法.教法体系
+  note: "文中提及共同大乘、不共大乘观点"
+
+E_231:
+  name: 密宗
+  aliases: ["金刚乘", "大密无上金刚乘"]
+  type: 教法.教法体系
+  note: "本师如来教之精华"
+
+E_232:
+  name: 四谛
+  aliases: []
+  type: 教法.教法体系
+  note: "初转法轮核心"
+
+E_233:
+  name: 四谛法轮
+  aliases: ["第一转法轮"]
+  type: 教法.教法体系
+  note: "在鹿野苑转；重复三次成十二相法轮"
+
+E_234:
+  name: 第二无相法轮
+  aliases: ["第二转法轮"]
+  type: 教法.教法体系
+  note: "于灵鹫山转；主宣经藏定学"
+
+E_235:
+  name: 第三了义法轮
+  aliases: ["第三转法轮"]
+  type: 教法.教法体系
+  note: "在天界、龙宫等不定地点转；主宣论藏慧学"
+
+E_236:
+  name: 甚深见派
+  aliases: []
+  type: 教法.教法体系
+  note: "龙树菩萨开创；所有法藏由文殊结集"
+
+E_237:
+  name: 广大行派
+  aliases: []
+  type: 教法.教法体系
+  note: "弥勒法藏；无著弘扬于南赡部洲"
+
+E_238:
+  name: 事势理
+  aliases: []
+  type: 教法.教法体系
+  note: "陈那论师开创"
+
+E_239:
+  name: 如来藏
+  aliases: []
+  type: 教法.教法体系
+  note: "第三转法轮论藏之论藏核心"
+
+E_240:
+  name: 三大阿僧祇劫
+  aliases: []
+  type: 教法.修法元素
+  note: "释迦佛积累资粮的时间跨度"
+
+E_241:
+  name: 菩提心
+  aliases: []
+  type: 教法.教言法门
+  note: "释迦佛成佛修道起点"
+
+E_242:
+  name: 十地
+  aliases: []
+  type: 教法.教法体系
+  note: "白幢天子为十地一来菩萨"
+
+E_243:
+  name: 头陀行
+  aliases: ["头陀功德"]
+  type: 教法.教言法门
+  note: "迦叶被赞为头陀行第一"
+
+E_244:
+  name: 十种非事
+  aliases: ["十非事"]
+  type: 教法.戒律体系
+  note: "广严城比丘宣扬的十种非法；第二次结集为摈除此事"
+
+E_245:
+  name: 五种邪法
+  aliases: []
+  type: 教法.教言法门
+  note: "大天比丘等宣扬的五种错误法"
+
+# ==================== 教派 ====================
+
+E_250:
+  name: 有部
+  aliases: ["声闻有部"]
+  type: 教派.印度部派
+  note: "声闻有部论师认为释迦佛以凡夫身一座成佛"
+
+E_251:
+  name: 说一切有部
+  aliases: ["一切有部"]
+  type: 教派.印度部派
+  note: "根本四部之一；分出七部"
+
+E_252:
+  name: 大众部
+  aliases: []
+  type: 教派.印度部派
+  note: "从说一切有部中分出"
+
+E_253:
+  name: 上座部
+  aliases: []
+  type: 教派.印度部派
+  note: "从说一切有部中分出"
+
+E_254:
+  name: 正量部
+  aliases: []
+  type: 教派.印度部派
+  note: "从说一切有部中分出"
+
+# ==================== 法器/圣物 ====================
+
+E_260:
+  name: 千辐金法轮
+  aliases: []
+  type: 法器圣物.法器
+  note: "梵天供养佛陀以劝请转法轮"
+
+E_261:
+  name: 八大佛塔
+  aliases: []
+  type: 法器圣物.圣物
+  cardinality: 8
+  note: "大迦叶将佛舍利分八份装藏"
+
+# ==================== 集合 ====================
+
+E_270:
+  name: 憍陈如等五人
+  aliases: ["五比丘"]
+  type: 集合.弟子集合
+  cardinality: 5
+  members: ["憍陈如"]
+  note: "与太子六年苦行；鹿野苑得自然近圆戒；第一批大比丘僧团"
+
+E_271:
+  name: 五百释迦童子
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 500
+  members: ["难陀"]
+  note: "太子诞生时一同出生"
+
+E_272:
+  name: 八百童女
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 800
+  members: ["耶输陀罗"]
+  note: "太子诞生时一同出生"
+
+E_273:
+  name: 五百仆人
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 500
+  members: ["登巴"]
+  note: "太子诞生时一同出生"
+
+E_274:
+  name: 五百良驹
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 500
+  members: ["阿丹"]
+  note: "太子诞生时一同出生"
+
+E_275:
+  name: 三十二位姨母
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 32
+  members: ["众生主母"]
+  note: "抚养太子成长"
+
+E_276:
+  name: 五百阿罗汉
+  aliases: ["五百罗汉"]
+  type: 集合.人物集合
+  cardinality: 500
+  note: "第一次结集参与者；十六大罗汉的随从"
+
+E_277:
+  name: 五百女阿罗汉
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 500
+  note: "与众生主母一道趣入涅槃"
+
+E_278:
+  name: 七百罗汉
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 700
+  note: "第二次结集参与者"
+
+E_279:
+  name: 五百菩萨
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 500
+  note: "克什米尔说法中第三次结集参与者"
+
+E_280:
+  name: 百万菩萨
+  aliases: []
+  type: 集合.人物集合
+  note: "不共大乘结集中聚集"
+
+E_281:
+  name: 十六大阿罗汉
+  aliases: ["十六大罗汉"]
+  type: 集合.人物集合
+  cardinality: 16
+  note: "佛陀将佛法交付之；在四大部洲三十三天等各境护持佛法"
+
+E_282:
+  name: 六庄严
+  aliases: ["南赡部洲的六庄严"]
+  type: 集合.人物集合
+  cardinality: 6
+  members: ["龙树菩萨", "无著", "陈那", "圣天", "世亲", "法称"]
+  note: "另一种算法以功德光和释迦光替换圣天和法称"
+
+E_283:
+  name: 二殊胜
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 2
+  members: ["龙树菩萨", "无著"]
+  note: "大多数论师共称"
+
+E_284:
+  name: 二大稀有论师
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 2
+  members: ["寂天", "簪札贡美"]
+
+E_285:
+  name: 八十四位大成就者
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 84
+  note: "以吉祥萨绕哈为首"
+
+E_286:
+  name: 十二位阿阇黎
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 12
+  note: "以降伏威力相被赞叹；佛智为其中之一"
+
+E_287:
+  name: 六门班智达
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 6
+  note: "护持佛法的成就者群体之一"
+
+E_288:
+  name: 三千大千世界
+  aliases: []
+  type: 地名.神话地名
+  note: "百俱胝四洲组成"

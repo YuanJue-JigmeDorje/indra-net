@@ -1,0 +1,377 @@
+# ============================================================
+# 知识图谱事件抽取 — 第一品 佛教总况 seg3 (lines 201-300)
+# 覆盖范围: 降魔成道(续) + 大彻大悟 + 广转法轮(初转-三转)
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09 (段落级精提取)
+# 规范: SKILL_04a + narrative-layers v0.2
+# 实体引用: participants 中使用实体 name（非 ID）
+# confidence 默认: 史传 0.85 / 典据 0.95 / 神变 0.75
+# ============================================================
+
+# ==================== (九)降魔续 (lines 201-221) ====================
+
+- event_id: EVT_001
+  type: 神变
+  title: 地神安稳母为菩萨作证
+  description: 菩萨按地祈证，地神安稳母半个金色身躯破土而出为其作证布施功德不可数尽
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 地神安稳母
+      role: 证人
+  location: null
+  time_info: null
+  layers: [史传, 神变]
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "菩萨则用百种福德所形成的妙手按着大地说：'大地众生之见证，动静平等无亲怨，此即我证我无妄，此地汝为我作证。'他的话音刚落，地神安稳母的半个金色身躯便破土而出"
+
+- event_id: EVT_002
+  type: 降伏非人
+  title: 魔王波旬发动魔军被菩萨以大慈等持降伏
+  description: 魔王率千万亿魔军进攻菩萨，菩萨入大慈等持，兵器化为花雨，魔军全溃
+  participants:
+    - entity: 释迦牟尼佛
+      role: 降伏者
+    - entity: 魔王波旬
+      role: 被降伏者
+  location: null
+  time_info: null
+  layers: [史传, 神变]
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "他又发动数以千万亿的魔军……菩萨没有任何嗔恨、害他的妄念，入定在大慈等持中，结果射向他的兵器全部降下花雨，所有刺耳的声音都变成赞叹的妙音。"
+
+- event_id: EVT_003
+  type: 降伏非人
+  title: 七魔女幻变引诱被菩萨化为老太婆
+  description: 魔王幻变七魔女以三十二种伎俩引诱菩萨，菩萨毫毛未动反加持她们变成老太婆
+  participants:
+    - entity: 释迦牟尼佛
+      role: 降伏者
+    - entity: 魔王波旬
+      role: 指使者
+    - entity: 白莲母
+      role: 魔女
+    - entity: 美那嘎
+      role: 魔女
+    - entity: 妙饰女
+      role: 魔女
+    - entity: 卷发女
+      role: 魔女
+  location: null
+  time_info: null
+  layers: [史传, 神变]
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "魔王再度幻变成七个妖艳魔女的形象……菩萨甚至连一根毫毛尖也没有动摇，反而加持她们变成了七个老太婆"
+
+# ==================== (十)大彻大悟 (lines 223-234) ====================
+
+- event_id: EVT_004
+  type: 弘法
+  title: 菩萨入第四静虑获天眼漏尽通现前正等正觉
+  description: 午夜入第四静虑等持，临近黎明获天眼及漏尽通，究竟四谛现前圆满正等正觉果位
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: null
+  time_info:
+    text: "午夜时分……临近黎明"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "午夜时分，菩萨入于第四静虑的等持境界中，临近黎明胜利鼓就要敲响之际，获得了天眼以及漏尽通，究竟四谛而现前真实圆满正等正觉果位。"
+
+- event_id: EVT_005
+  type: 神变
+  title: 成佛时大地普皆震动
+  description: 菩萨成佛时整个大地普皆震动，中脉光明法身现前菩提
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: null
+  time_info:
+    text: "成佛时"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传, 神变]
+  author_stance: 中立
+  confidence: 0.80
+  source_quote: "此时整个大地普皆震动，中脉光明法身美妙室中，一切所净的所取能取之界无余在无二智慧中现前菩提"
+
+- event_id: EVT_006
+  type: 神变
+  title: 罗睺罗与阿难于月食时降生
+  description: 菩萨成佛时月食出现，罗睺罗与阿难同时降生人间
+  participants:
+    - entity: 罗睺罗
+      role: 主体
+    - entity: 阿难
+      role: 主体
+    - entity: 释迦牟尼佛
+      role: 关联者
+  location: null
+  time_info:
+    text: "当出现月食的时候"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "当出现月食的时候，罗睺罗与阿难也在此刻降生人间。"
+
+- event_id: EVT_007
+  type: 弘法
+  title: 商主嘎滚和护贤供养蜂蜜、四大天王供养四钵
+  description: 成佛后四十九日中商主嘎滚和护贤供养蜂蜜；四大天王供养四钵；佛只接受石钵
+  participants:
+    - entity: 释迦牟尼佛
+      role: 受供者
+    - entity: 商主嘎滚
+      role: 施主
+    - entity: 护贤
+      role: 施主
+    - entity: 四大天王
+      role: 施主
+  location: null
+  time_info:
+    text: "七七四十九日中"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "菩萨成佛以后在七七四十九日中，商主嘎滚和护贤供养蜂蜜，四大天王供养珍宝钵到石钵之间的四钵盂，佛陀考虑到前三质地的钵不是僧侣所用之具而拒绝，只是接受了石钵"
+
+- event_id: EVT_008
+  type: 弘法
+  title: 佛陀说甘露法偈表示不说法
+  description: 佛说深寂离戏光明无为法偈，表示甘露妙法非寻思者行境，欲默然安住林间
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: null
+  time_info:
+    text: "成佛后四十九日期间"
+    relative_to: 释迦牟尼佛
+    absolute: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "佛陀说道：'深寂离戏光明无为法，犹如甘露妙法吾已得，纵为谁说亦不能了知，故当默然安住于林间。'"
+
+# ==================== (十一)广转法轮 (lines 236-297) ====================
+
+- event_id: EVT_009
+  type: 弘法
+  title: 梵天劝请佛转法轮
+  description: 梵天回忆往昔宏愿来到如来面前以偈颂劝请并撒檀香粉
+  participants:
+    - entity: 梵天
+      role: 劝请者
+    - entity: 释迦牟尼佛
+      role: 受请者
+  location: null
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "梵天回忆起往昔的宏愿，于是来到如来面前请求道：'佛陀今日为何住等舍，祈请擂击微妙大法鼓，祈请吹奏微妙之法螺……'依靠这些偈颂劝请，并撒檀香粉。"
+
+- event_id: EVT_010
+  type: 弘法
+  title: 帝释天供如意宝珠劝请佛转法轮
+  description: 帝释天供上如意宝珠以偈颂请佛陀慧光驱除世间暗，佛陀并没有应允
+  participants:
+    - entity: 帝释天
+      role: 劝请者
+    - entity: 释迦牟尼佛
+      role: 受请者
+  location: null
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "帝释天供上如意宝珠请求：'犹如满月已离曜，能仁您意尽解脱，祈请沙场得胜者，慧光驱除世间暗。'结果佛陀并没有应允。"
+
+- event_id: EVT_011
+  type: 弘法
+  title: 梵天供千辐金法轮再次劝请佛应允转法
+  description: 梵天供养千辐金法轮并以偈颂再次劝请，佛陀接受法轮并说"开启甘露门"偈
+  participants:
+    - entity: 梵天
+      role: 劝请者
+    - entity: 释迦牟尼佛
+      role: 受请者
+    - entity: 千辐金法轮
+      role: 供品
+  location: null
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "梵天知晓屡屡劝请能获得大福德资粮，于是又供养千辐金法轮……佛陀接受法轮说道：'梵天摩竭陀地诸有情，具有耳根信心及智慧，人生诸行恒时闻正法，我于彼等开启甘露门。'"
+
+- event_id: EVT_012
+  type: 弘法
+  title: 佛陀观察法器得见憍陈如等五人前赴鹿野苑
+  description: 佛发现让佩拉秀已离世，回想夙愿得见憍陈如等五人堪为法器，前赴鹿野苑
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 让佩
+      role: 被观察者
+    - entity: 拉秀
+      role: 被观察者
+    - entity: 憍陈如等五人
+      role: 法器
+  location: 鹿野苑
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "佛陀考虑到……让佩、拉秀才具备，可是他们二人已经离开人世。此时此刻佛陀回想起夙愿，得见憍陈如等五人堪为法器，于是前赴鹿野苑。"
+
+- event_id: EVT_013
+  type: 弘法
+  title: 途中遇婆罗门正命并以三问答示圆满正觉
+  description: 行途中婆罗门正命问佛在谁面前出家，佛以三偈回答示自圆满正等觉
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 正命
+      role: 提问者
+  location: null
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "有一个名叫正命的婆罗门不假思索顺口就问：'释迦牟尼，你是在谁面前出家的？'佛告诉他：'我无任何传戒师，无有与我相同者，我唯圆满正等觉，已得清凉漏永尽……'"
+
+- event_id: EVT_014
+  type: 弘法
+  title: 憍陈如等五人定规矩不向佛顶礼后规矩自然瓦解
+  description: 五人议论释迦牟尼失戒定不顶礼，但佛至鹿野苑如日光灿烂规矩自然瓦解
+  participants:
+    - entity: 憍陈如等五人
+      role: 主体
+    - entity: 释迦牟尼佛
+      role: 关联者
+  location: 鹿野苑
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "他们五人正在议论：'沙门释迦牟尼修行松懈，而且享用许多饮食，失毁了戒律。'……佛到了鹿野苑，此刻就像灿烂的阳光下群星暗淡无光一样，憍陈如等五人所定的规矩自然瓦解"
+
+- event_id: EVT_015
+  type: 弘法
+  title: 佛陀于鹿野苑初转四谛法轮
+  description: 佛为憍陈如等五人及八万天人转远离二边中道的四谛法轮，重复三次成十二相法轮
+  participants:
+    - entity: 释迦牟尼佛
+      role: 说法者
+    - entity: 憍陈如等五人
+      role: 闻法者
+  location: 鹿野苑
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.90
+  source_quote: "佛陀为憍陈如等五人及八万天人转了远离二边中道的四谛法轮，重复了三次，也就是十二相法轮"
+
+- event_id: EVT_016
+  type: 出家受戒
+  title: 憍陈如等五人得自然近圆戒成为第一批大比丘僧团
+  description: 憍陈如等五人获得自然近圆戒，成为世间前所未有的第一批大比丘僧团
+  participants:
+    - entity: 憍陈如等五人
+      role: 受戒者
+    - entity: 释迦牟尼佛
+      role: 授戒者
+  location: 鹿野苑
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.90
+  source_quote: "憍陈如等五人得到了自然近圆戒，成为世间上前所未有的第一批大比丘僧团。其余八万眷属全部现见真谛。"
+
+- event_id: EVT_017
+  type: 弘法
+  title: 佛于灵鹫山转第二无相法轮
+  description: 佛在灵鹫山于舍利子目犍连等共同及不共眷属前转第二无相法轮，主宣经藏定学
+  participants:
+    - entity: 释迦牟尼佛
+      role: 说法者
+    - entity: 舍利子
+      role: 闻法者
+    - entity: 目犍连
+      role: 闻法者
+    - entity: 众生主母
+      role: 闻法者
+    - entity: 给孤独
+      role: 闻法者
+    - entity: 萨嘎
+      role: 闻法者
+    - entity: 护贤
+      role: 闻法者
+    - entity: 宝生
+      role: 闻法者
+    - entity: 网施
+      role: 闻法者
+  location: 灵鹫山
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "佛在圆满处灵鹫山，于舍利子、目犍连等五千阿罗汉、众生主母等五百比丘尼、给孤独等优婆塞、萨嘎等优婆夷……转了第二无相法轮。"
+
+- event_id: EVT_018
+  type: 弘法
+  title: 佛转第三了义法轮
+  description: 佛在天界龙宫等不定地点为比丘比丘尼天龙菩萨转第三了义法轮，主宣论藏慧学
+  participants:
+    - entity: 释迦牟尼佛
+      role: 说法者
+  location: null
+  time_info: null
+  layers: [史传]
+  author_stance: 中立
+  confidence: 0.85
+  source_quote: "佛陀还在天界、龙宫等不定的地点，为不可胜数的比丘、比丘尼、天龙、菩萨转了第三了义法轮，此次法轮中，主要宣讲论藏慧学。"
+
+- event_id: EVT_019
+  type: 引文论证
+  title: 引《功德庄严经》论证佛语随根基顿渐示现
+  participants:
+    - entity: 《功德庄严经》
+      role: 引文来源
+    - entity: 释迦牟尼佛
+      role: 论证对象
+  quoted_text: "我未宣说任何法，诸有情前遍显现，何时欲求次第者，于彼等说次第法，于一时间悟入者，显现圆满之法门。称各心意满其愿，此即佛语之特法。"
+  argument: 论证佛语具有超越自相言词的特点——随根基渐悟者次第听闻三转法轮，顿悟者同一时刻全部听到
+  location: null
+  time_info: null
+  layers: [典据]
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "关于这些道理，《功德庄严经》中说：'我未宣说任何法，诸有情前遍显现……此即佛语之特法。'"
+
+# ==================== 神变段 (lines 201-215) 补充 ====================
+
+- event_id: EVT_020
+  type: 神变
+  title: 佛陀于鹿野苑出现千宝座向三佛顶礼
+  description: 鹿野苑出现一千个宝座，释迦佛向过去三位佛陀宝座恭敬顶礼后坐第四座，余座消失
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+  location: 鹿野苑
+  time_info: null
+  layers: [史传, 神变]
+  author_stance: 中立
+  confidence: 0.75
+  source_quote: "正当此时，鹿野苑出现了一千个宝座，释迦佛向过去的三位佛陀的宝座恭敬顶礼，而巍然安坐在第四个宝座上，即刻，其余所有宝座便消失无踪。"

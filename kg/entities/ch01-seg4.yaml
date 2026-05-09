@@ -1,0 +1,588 @@
+# ============================================================
+# 知识图谱实体抽取 -- 第一品 佛教总况 seg4 (lines 301-400)
+# 覆盖范围: (十二)示现涅槃 + 结集教法(三次结集) + 分裂十八部
+#           + 不共大乘结集
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09 (段落级 gazetteer 管线)
+# 规范: SKILL_03a v0.3 + entity-taxonomy v0.4
+# 管线: gazetteer 预扫描确认 + Agent NER 发现
+# ============================================================
+# gazetteer 候选判定说明 (92 个候选逐一处理):
+# 已排除的通用词汇/片段（非实体）:
+#   不可思议 — 形容词短语，非专名
+#   阿罗汉 — 通称修证果位（但"五百阿罗汉"作集合收入）
+#   涅槃 — 通用佛教术语/动词（不独立建entity）
+#   本师 — 释迦佛 alias（已收）
+#   世尊 — 释迦佛 alias（已收）
+#   如来 — 释迦佛 alias（已收）
+#   国王 — 通称，无专名意义
+#   大乘 — 通用车乘名称（广大行派/甚深见派单独收）
+#   最后 — 普通副词
+#   灭后 — 普通副词短语
+#   八部 — "十八部"的片段
+#   三部/四部/五部 — 数量描述片段
+#   大佛 — "八大佛塔"片段
+#   愿佛 — 句中动宾片段
+#   诸天 — 通称天人（不建entity）
+#   佛灭度 — 动词短语
+#   大乘经 — "大乘经藏"片段
+#   千佛 — 数量概念
+#   非天 — "众非天"通称（=阿修罗通称）
+#   三大阿僧祇劫 / 阿僧祇劫 — 时间概念
+#   佛塔 — 通用名词（但"八大佛塔"作法器收入）
+#   五百罗汉 — 同"五百阿罗汉"集合
+#   杂阿含经 — 同《杂阿含经》重复
+#   大天 — 同"大天比丘"
+#   宗派 — 通用名词
+#   有部 — "说一切有部"的缩写（已收）
+#   大毗婆沙论 / 毗婆沙论 / 婆沙论 — 同《大毗婆沙论》重复
+#   一切有部 — "说一切有部"的缩写（已收）
+#   智燃论 — 同《智燃论》重复
+#   一切有为法 / 一切有为 — 教理概念，非专名
+#   不可思议经 — "秘密不可思议经"片段
+#   迦毗罗卫 — 地名片段（《大毗婆沙论》引文中出现）
+#   大慈大悲 — 形容词
+#   昙花一现 — 成语
+#   阿难结集 — 动词短语
+#   大乘经藏 — 通用类目名
+#   阿含经 — 同《杂阿含经》重复
+#   别解脱经 — 通称戒律经名（非特定文本，此处指诵法不同）
+#   拘尸那 — "拘尸那城"片段
+#   毗舍离 — "毗舍离城"片段
+#   那烂陀 — "那烂陀寺"片段
+#   无间地狱 — 通用地名概念（非特定实体）
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 释迦牟尼佛
+  aliases: [佛陀, 世尊, 如来, 本师, 能仁, 释迦佛]
+  type: 圣众.大乘.佛
+  note: "示现涅槃于拘尸那城娑罗双树间；将佛法交付大迦叶；《大毗婆沙论》总结其住世八十年"
+  appearances: [301, 303, 307, 312, 328, 330, 331, 339, 385, 394, 396]
+
+E_002:
+  name: 弥勒菩萨
+  aliases: [弥勒]
+  type: 圣众.大乘.菩萨
+  note: "不共大乘结集中结集律藏；广大行派法藏由弥勒结集"
+  appearances: [395, 398]
+
+E_003:
+  name: 文殊菩萨
+  aliases: [文殊]
+  type: 圣众.大乘.菩萨
+  note: "不共大乘结集中结集经藏；甚深见派法藏由文殊结集"
+  appearances: [395, 398, 399]
+
+E_004:
+  name: 金刚手菩萨
+  aliases: [密主金刚手, 金刚手, 密主]
+  type: 圣众.大乘.菩萨
+  note: "千佛教法的结集者；不共大乘结集中结集论藏"
+  appearances: [395, 396, 398]
+
+E_005:
+  name: 普贤菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "不共大乘结集者之一"
+  appearances: [395]
+
+E_006:
+  name: 迦叶佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "于《国王哲哲梦境授记经》中授记释迦佛教法分成十八部"
+  appearances: [373]
+
+# ==================== 人物 — 声闻圣众 / 阿罗汉 ====================
+
+E_010:
+  name: 大迦叶
+  aliases: [迦叶尊者, 上座大迦叶, 迦叶]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  attainments: []
+  note: "佛法连同四众眷属交付给大迦叶；从龙宫返回面对如来遗体祈祷，佛身自然焚烧化为舍利；将舍利分八份装八大佛塔"
+  appearances: [328, 332, 333]
+
+E_011:
+  name: 阿难
+  aliases: [阿难尊者]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  attainments: [多闻第一]
+  note: "第一次结集中结集经藏"
+  appearances: [349]
+
+E_012:
+  name: 舍利子
+  aliases: []
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  attainments: []
+  note: "佛灭前先行入灭；与八万阿罗汉一起于那烂陀寺涅槃"
+  appearances: [315, 317, 322, 324, 343]
+
+E_013:
+  name: 目犍连
+  aliases: []
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  attainments: []
+  note: "到地狱巡视；向外道徒转告口信后被殴打身亡；与七万罗汉同时涅槃"
+  appearances: [315, 318, 321, 325, 344]
+
+E_014:
+  name: 优婆离
+  aliases: []
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  attainments: []
+  note: "第一次结集中结集律藏"
+  appearances: [349]
+
+E_015:
+  name: 众生主母
+  aliases: []
+  type: 人物.其他
+  note: "听到佛陀打喷嚏声后发愿佛陀住世三大阿僧祇劫；被佛陀纠正后与五百女阿罗汉一道趣入涅槃"
+  appearances: [310, 312, 314]
+
+# ==================== 人物 — 帝王 ====================
+
+E_030:
+  name: 未生怨王
+  aliases: []
+  type: 人物.帝王
+  note: "第一次结集之施主"
+  appearances: [348]
+
+E_031:
+  name: 阿育王
+  aliases: [无忧法王, 无忧王]
+  type: 人物.帝王
+  note: "第二次结集之施主"
+  appearances: [357]
+
+E_032:
+  name: 达玛阿修嘎
+  aliases: []
+  type: 人物.帝王
+  note: "其孙子名为离忧"
+  appearances: [359]
+
+E_033:
+  name: 离忧
+  aliases: []
+  type: 人物.帝王
+  note: "达玛阿修嘎之孙"
+  appearances: [359]
+
+E_034:
+  name: 勇部
+  aliases: []
+  type: 人物.帝王
+  note: "离忧之子；其时期大天比丘等出现宣扬五种邪法"
+  appearances: [360, 363]
+
+E_035:
+  name: 欢喜王
+  aliases: []
+  type: 人物.帝王
+  note: "勇部之后的国王；其整个一生僧团内部争论不休"
+  appearances: [363]
+
+E_036:
+  name: 大莲花王
+  aliases: []
+  type: 人物.帝王
+  note: "欢喜王之后的国王；其整个一生僧团争论不休"
+  appearances: [363]
+
+E_037:
+  name: 嘎纳加嘎
+  aliases: []
+  type: 人物.帝王
+  note: "大莲花王之后的国王；其上半生僧团争论持续"
+  appearances: [363]
+
+E_038:
+  name: 腻契波王
+  aliases: []
+  type: 人物.帝王
+  note: "第三次结集之施主"
+  appearances: [370]
+
+E_039:
+  name: 哲哲国王
+  aliases: []
+  type: 人物.帝王
+  note: "迦叶佛在其梦中授记释迦佛教法分成十八部"
+  appearances: [372, 373]
+
+# ==================== 人物 — 法师 / 论师 ====================
+
+E_050:
+  name: 大天比丘
+  aliases: [大天]
+  type: 人物.法师
+  specialty: [比丘]
+  note: "受魔加持者；宣扬五种邪法"
+  appearances: [360]
+
+E_051:
+  name: 善贤
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  note: "受魔加持者；宣扬五种邪法"
+  appearances: [360]
+
+E_052:
+  name: 龙长老
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  note: "受魔加持者；扩大争端使说一切有部中分出大众部、上座部、正量部"
+  appearances: [360, 366]
+
+E_053:
+  name: 安意
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  note: "受魔加持者；再度使争论扩张，四部分成十八部"
+  appearances: [360, 368]
+
+E_054:
+  name: 耶舍
+  aliases: []
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  note: "第二次结集领衔者；七百罗汉之首"
+  appearances: [357]
+
+E_055:
+  name: 妙辐
+  aliases: [圣者妙辐]
+  type: 人物.法师
+  additional_types: [圣众.声闻圣众.阿罗汉]
+  additional_types_source: text
+  specialty: [比丘]
+  note: "克什米尔说法中第三次结集的领衔者"
+  appearances: [382]
+
+E_056:
+  name: 瓦色莫札
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  note: "克什米尔说法中第三次结集的参与者；四百大尊者之首"
+  appearances: [382]
+
+E_057:
+  name: 长老母之子
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  note: "《智燃论》中记载其在佛陀入灭后两百年结集教法"
+  appearances: [387]
+
+# ==================== 非人 ====================
+
+E_060:
+  name: 乾闼婆极喜
+  aliases: [极喜]
+  type: 非人.天部
+  note: "被佛陀以善巧方便摄受度化"
+  appearances: [304]
+
+# ==================== 人物 — 外道 ====================
+
+E_061:
+  name: 遍行外道极贤
+  aliases: [极贤]
+  type: 人物.其他
+  note: "遍行外道；被佛陀以大慈大悲直接度化摄受"
+  appearances: [304]
+
+# ==================== 集合 ====================
+
+E_070:
+  name: 五百阿罗汉
+  aliases: [五百罗汉]
+  type: 集合.人物集合
+  cardinality: 500
+  note: "第一次结集的参与者；第三次结集各说法中也有五百罗汉参与"
+  appearances: [348, 382, 384, 386]
+
+E_071:
+  name: 五百女阿罗汉
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 500
+  note: "与众生主母一道趣入涅槃"
+  appearances: [314]
+
+E_072:
+  name: 七百罗汉
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 700
+  note: "第二次结集的参与者"
+  appearances: [357]
+
+E_073:
+  name: 五百菩萨
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 500
+  note: "克什米尔说法中第三次结集的参与者"
+  appearances: [382]
+
+E_074:
+  name: 百万菩萨
+  aliases: []
+  type: 集合.人物集合
+  note: "不共大乘结集中在布玛萨巴瓦山聚集"
+  appearances: [397]
+
+# ==================== 地名 ====================
+
+E_080:
+  name: 拘尸那城
+  aliases: [拘尸那]
+  type: 地名.圣地
+  note: "佛陀示现涅槃之地"
+  appearances: [307]
+
+E_081:
+  name: 王舍城
+  aliases: []
+  type: 地名.圣地
+  note: "第一次结集之所在；不共大乘结集在其南方"
+  appearances: [335, 347, 397]
+
+E_082:
+  name: 色究竟天
+  aliases: []
+  type: 地名.神话地名
+  note: "众生主母发愿的声音从人间传到色究竟天；诸天人传颂佛法长久住世"
+  appearances: [311, 350]
+
+E_083:
+  name: 克什米尔
+  aliases: []
+  type: 地名.区域
+  note: "论师们认为第三次结集在此地进行"
+  appearances: [381, 382, 392]
+
+E_084:
+  name: 舍卫城
+  aliases: []
+  type: 地名.圣地
+  note: "佛陀住二十三年；第三次结集地点之一说"
+  appearances: [337, 392]
+
+E_085:
+  name: 广严城
+  aliases: []
+  type: 地名.圣地
+  note: "佛陀安住一年；第二次结集时有比丘在此宣扬十种非事"
+  appearances: [335, 354]
+
+E_086:
+  name: 毗舍离城
+  aliases: [毗舍离]
+  type: 地名.圣地
+  note: "第二次结集之所在（婆利迦精舍位于此地）"
+  appearances: [356]
+
+E_087:
+  name: 布玛萨巴瓦山
+  aliases: []
+  type: 地名.圣地
+  note: "不共大乘结集地点；位于王舍城南方"
+  appearances: [397]
+
+E_088:
+  name: 匝兰绕静处
+  aliases: []
+  type: 地名.圣地
+  note: "印度班智达说法中第三次结集所在地"
+  appearances: [384, 392]
+
+# ==================== 寺院 / 修行处 ====================
+
+E_090:
+  name: 列卓达山洞
+  aliases: []
+  type: 寺院.修行处
+  note: "第一次结集在此进行；位于王舍城"
+  appearances: [348]
+
+E_091:
+  name: 婆利迦精舍
+  aliases: []
+  type: 寺院.寺庙
+  note: "第二次结集在此进行；位于毗舍离城"
+  appearances: [357]
+
+E_092:
+  name: 耳饰精舍
+  aliases: []
+  type: 寺院.寺庙
+  note: "克什米尔说法中第三次结集的地点；位于克什米尔境内"
+  appearances: [382]
+
+E_093:
+  name: 那烂陀寺
+  aliases: [那烂陀]
+  type: 寺院.寺庙
+  note: "舍利子前往此寺后与八万阿罗汉一起涅槃"
+  appearances: [324]
+
+E_094:
+  name: 革瓦那精舍
+  aliases: []
+  type: 寺院.寺庙
+  note: "印度班智达说法中第三次结集的地点；位于匝兰绕静处"
+  appearances: [384]
+
+E_095:
+  name: 娑罗双树
+  aliases: []
+  type: 寺院.修行处
+  note: "佛陀最终涅槃之地"
+  appearances: [307, 331]
+
+# ==================== 经典 ====================
+
+E_100:
+  name: 《杂阿含经》
+  aliases: [杂阿含经, 阿含经]
+  type: 经典.经
+  note: "记载第一次结集偈颂；第三次结集情节未在此经中记载"
+  appearances: [351, 380]
+
+E_101:
+  name: 《大毗婆沙论》
+  aliases: [大毗婆沙论]
+  type: 经典.论
+  note: "总结佛陀现身于世一生的行迹和住世年数"
+  appearances: [334]
+
+E_102:
+  name: 《国王哲哲梦境授记经》
+  aliases: [国王哲哲梦境授记经]
+  type: 经典.经
+  note: "第三次结集引用此经建立十八部均是清净佛教"
+  appearances: [372]
+
+E_103:
+  name: 《智燃论》
+  aliases: [智燃论]
+  type: 经典.论
+  note: "记载佛陀入灭后两百年长老母之子结集教法；记载大乘佛法由普贤等结集"
+  appearances: [387, 394]
+
+E_104:
+  name: 《秘密不可思议经》
+  aliases: [秘密不可思议经]
+  type: 经典.经
+  note: "说金刚手是千佛教法的结集者"
+  appearances: [396]
+
+E_105:
+  name: 《别解脱经》
+  aliases: [别解脱经]
+  type: 经典.律
+  note: "由于其诵法不同而导致僧团分裂十八部"
+  appearances: [365]
+
+# ==================== 教法 ====================
+
+E_110:
+  name: 甚深见派
+  aliases: []
+  type: 教法.教法体系
+  vehicle: 大乘
+  note: "所有甚深见派法藏由文殊结集"
+  appearances: [399]
+
+E_111:
+  name: 广大行派
+  aliases: []
+  type: 教法.教法体系
+  vehicle: 大乘
+  note: "所有广大行派法藏由弥勒结集"
+  appearances: [399]
+
+E_112:
+  name: 十种非事
+  aliases: [十非事]
+  type: 教法.戒律体系
+  note: "广严城比丘公开宣扬的十种非法之事；第二次结集为摈除此事"
+  appearances: [355, 356, 358]
+
+E_113:
+  name: 五种邪法
+  aliases: []
+  type: 教法.教言法门
+  note: "大天比丘等宣扬的五种错误法；内容为'答复他不知，怀疑皆观察，能养活自己，此乃佛教法'"
+  appearances: [361, 362]
+
+# ==================== 教派 ====================
+
+E_120:
+  name: 说一切有部
+  aliases: [有部, 一切有部]
+  type: 教派.印度部派
+  note: "根本四部之一；分出七部"
+  appearances: [366, 369]
+
+E_121:
+  name: 大众部
+  aliases: []
+  type: 教派.印度部派
+  note: "从说一切有部中分出；根本四部之一；分成五部"
+  appearances: [366, 369]
+
+E_122:
+  name: 上座部
+  aliases: []
+  type: 教派.印度部派
+  note: "从说一切有部中分出；根本四部之一；分成三部"
+  appearances: [366, 369]
+
+E_123:
+  name: 正量部
+  aliases: []
+  type: 教派.印度部派
+  note: "从说一切有部中分出；根本四部之一；分成三部"
+  appearances: [366, 369]
+
+# ==================== 法器 / 圣物 ====================
+
+E_130:
+  name: 八大佛塔
+  aliases: []
+  type: 法器圣物.圣物
+  cardinality: 8
+  note: "大迦叶将佛舍利分八份作为八大佛塔装藏物"
+  appearances: [334]

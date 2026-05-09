@@ -1,0 +1,282 @@
+# ============================================================
+# 知识图谱关系抽取 — 第一品 佛教总况 seg3 (lines 201-300)
+# 覆盖范围: 降魔成道(续) + 大彻大悟 + 广转法轮(初转-三转)
+# 来源: source/dudjom/chapter_md/01_佛教总况.md
+# 提取日期: 2026-05-09 (段落级精提取)
+# 规范: SKILL_05a v0.3 + relation-types v0.1
+# 实体引用: 使用实体 NAME（人类可读名），非 entity ID
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/01_佛教总况.md
+  source_lines: "201-300"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.3
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 师承 / 弘法关系 (teacherOf)
+# ============================================================
+
+  - rel_id: R_001
+    type: teacherOf
+    source: 释迦牟尼佛
+    target: 憍陈如
+    specialty: [戒律, 四谛]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.90
+    source_quote: "佛陀为憍陈如等五人及八万天人转了远离二边中道的四谛法轮……憍陈如等五人得到了自然近圆戒，成为世间上前所未有的第一批大比丘僧团。"
+    note: "初转法轮；自然近圆戒"
+
+  - rel_id: R_002
+    type: teacherOf
+    source: 释迦牟尼佛
+    target: 舍利子
+    specialty: [定学]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "佛在圆满处灵鹫山，于舍利子、目犍连等五千阿罗汉……转了第二无相法轮。"
+    note: "第二转法轮眷属"
+
+  - rel_id: R_003
+    type: teacherOf
+    source: 释迦牟尼佛
+    target: 目犍连
+    specialty: [定学]
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "佛在圆满处灵鹫山，于舍利子、目犍连等五千阿罗汉……转了第二无相法轮。"
+    note: "第二转法轮眷属"
+
+# ============================================================
+# B. 供养 / 劝请关系 (offeringTo / requestOf)
+# ============================================================
+
+  - rel_id: R_010
+    type: offeringTo
+    source: 商主嘎滚
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "菩萨成佛以后在七七四十九日中，商主嘎滚和护贤供养蜂蜜"
+    note: "供物：蜂蜜"
+
+  - rel_id: R_011
+    type: offeringTo
+    source: 护贤
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "商主嘎滚和护贤供养蜂蜜"
+    note: "供物：蜂蜜"
+
+  - rel_id: R_012
+    type: offeringTo
+    source: 四大天王
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "四大天王供养珍宝钵到石钵之间的四钵盂，佛陀考虑到前三质地的钵不是僧侣所用之具而拒绝，只是接受了石钵"
+    note: "供物：四钵盂（佛只受石钵）"
+
+  - rel_id: R_013
+    type: requestOf
+    source: 梵天
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "梵天回忆起往昔的宏愿，于是来到如来面前请求道：'佛陀今日为何住等舍，祈请擂击微妙大法鼓，祈请吹奏微妙之法螺……'"
+    note: "首次劝请转法轮"
+
+  - rel_id: R_014
+    type: requestOf
+    source: 帝释天
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "帝释天供上如意宝珠请求：'犹如满月已离曜，能仁您意尽解脱，祈请沙场得胜者，慧光驱除世间暗。'结果佛陀并没有应允。"
+    note: "帝释天劝请；佛未应允"
+
+  - rel_id: R_015
+    type: offeringTo
+    source: 梵天
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "梵天知晓屡屡劝请能获得大福德资粮，于是又供养千辐金法轮"
+    note: "供物：千辐金法轮；第二次劝请后佛应允"
+
+# ============================================================
+# C. 降伏 / 对抗关系 (defeatedBy / opposedBy)
+# ============================================================
+
+  - rel_id: R_020
+    type: defeatedBy
+    source: 魔王波旬
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传, 神变]
+    author_stance: 中立
+    confidence: 0.80
+    source_quote: "魔王波旬羞愧难当，灰溜溜地回到自己的住处。"
+    note: "地神作证后魔王首败"
+
+  - rel_id: R_021
+    type: defeatedBy
+    source: 魔王波旬
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传, 神变]
+    author_stance: 中立
+    confidence: 0.80
+    source_quote: "菩萨没有任何嗔恨、害他的妄念，入定在大慈等持中，结果射向他的兵器全部降下花雨……所有魔军变得晕头转向。"
+    note: "大慈等持降伏魔军"
+
+  - rel_id: R_022
+    type: defeatedBy
+    source: 白莲母
+    target: 释迦牟尼佛
+    symmetric: false
+    derived_from: null
+    layers: [史传, 神变]
+    author_stance: 中立
+    confidence: 0.80
+    source_quote: "菩萨甚至连一根毫毛尖也没有动摇，反而加持她们变成了七个老太婆"
+    note: "七魔女之一被加持变老太婆"
+
+# ============================================================
+# D. 成员关系 (memberOf)
+# ============================================================
+
+  - rel_id: R_030
+    type: memberOf
+    source: 憍陈如
+    target: 憍陈如等五人
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.90
+    source_quote: "佛陀为憍陈如等五人及八万天人转了远离二边中道的四谛法轮"
+    note: null
+
+# ============================================================
+# E. 法轮内容关系 (teachingContains)
+# ============================================================
+
+  - rel_id: R_040
+    type: teachingContains
+    source: 四谛法轮
+    target: 四谛
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.90
+    source_quote: "转了远离二边中道的四谛法轮，重复了三次，也就是十二相法轮"
+    note: "初转法轮核心教法"
+
+  - rel_id: R_041
+    type: teachingContains
+    source: 第二无相法轮
+    target: 菩萨戒
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "经藏之律藏，是讲菩萨戒的所有戒条"
+    note: "经藏之律藏的内容"
+
+  - rel_id: R_042
+    type: teachingContains
+    source: 第三了义法轮
+    target: 如来藏
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "论藏之论藏是讲蕴、界、处、根、识以及如来藏自性清净的详细分类及部分"
+    note: "论藏之论藏的核心教法"
+
+# ============================================================
+# F. 引文论证关系 (cites)
+# ============================================================
+
+  - rel_id: R_050
+    type: cites
+    source: 释迦牟尼佛
+    target: 《功德庄严经》
+    symmetric: false
+    derived_from: null
+    layers: [典据]
+    author_stance: 认可
+    confidence: 0.95
+    quoted_text: "我未宣说任何法，诸有情前遍显现，何时欲求次第者，于彼等说次第法，于一时间悟入者，显现圆满之法门。称各心意满其愿，此即佛语之特法。"
+    argument: 论证佛语随众生根基顿渐两种方式示现——佛陀无量事业的法门以凡夫分别心永远无法想象
+    about_entity: 释迦牟尼佛
+    source_quote: "关于这些道理，《功德庄严经》中说：'我未宣说任何法，诸有情前遍显现……此即佛语之特法。'随着根基的次第，顿悟者同一时刻听到了三转法轮，渐悟者次第听闻"
+    note: null
+
+# ============================================================
+# G. 转法轮地点关系 (locatedAt)
+# ============================================================
+
+  - rel_id: R_060
+    type: locatedAt
+    source: 四谛法轮
+    target: 鹿野苑
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.90
+    source_quote: "佛到了鹿野苑……佛陀为憍陈如等五人及八万天人转了远离二边中道的四谛法轮"
+    note: "初转法轮地点"
+
+  - rel_id: R_061
+    type: locatedAt
+    source: 第二无相法轮
+    target: 灵鹫山
+    symmetric: false
+    derived_from: null
+    layers: [史传]
+    author_stance: 中立
+    confidence: 0.85
+    source_quote: "佛在圆满处灵鹫山……转了第二无相法轮"
+    note: "第二转法轮地点"
