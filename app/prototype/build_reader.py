@@ -63,6 +63,43 @@ def load_entities():
     return entities
 
 
+def auto_detect_texts_from_source(chapter_files: list[str], existing_entities: list) -> list:
+    """
+    Scan all chapter source texts for 《XXX》 patterns.
+    Any book title not already in the entity list gets added as 经典.
+    """
+    known_names = set()
+    for ent in existing_entities:
+        known_names.add(ent["id"])
+        for a in ent.get("aliases", []):
+            known_names.add(a)
+
+    new_entities = []
+    seen = set()
+    for fpath in chapter_files:
+        if not os.path.exists(fpath):
+            continue
+        with open(fpath, "r") as f:
+            raw = f.read()
+        # Merge line breaks inside 《》 (PDF page breaks)
+        raw = re.sub(r'《([^》]*)\n([^》]*)》', lambda m: '《' + m.group(1) + m.group(2) + '》', raw)
+        raw = re.sub(r'《([^》]*)\n([^》]*)》', lambda m: '《' + m.group(1) + m.group(2) + '》', raw)  # twice for nested
+        matches = re.findall(r'《([^》]+)》', raw)
+        for m in matches:
+            name = m.strip()
+            if not name or len(name) < 2:
+                continue
+            full = '《' + name + '》'
+            if name in known_names or full in known_names or name in seen:
+                continue
+            seen.add(name)
+            new_entities.append({"id": full, "type": "经典", "aliases": [name]})
+            known_names.add(name)
+            known_names.add(full)
+
+    return new_entities
+
+
 def build_name_index(entities):
     """
     Return a dict mapping surface_form -> {canonical_id, type}.
@@ -712,7 +749,13 @@ def build_index_html() -> str:
 def main():
     print("Loading entities from graph_data.js ...")
     entities = load_entities()
-    print(f"  {len(entities)} entities loaded")
+    print(f"  {len(entities)} entities loaded from graph_data.js")
+
+    # Auto-detect 《》 book titles from source texts
+    chapter_paths = [str(CHAPTER_DIR / fn) for _, fn, _ in CHAPTERS]
+    auto_texts = auto_detect_texts_from_source(chapter_paths, entities)
+    entities.extend(auto_texts)
+    print(f"  +{len(auto_texts)} auto-detected 《》 texts → {len(entities)} total entities")
 
     name_index, sorted_names = build_name_index(entities)
     print(f"  {len(sorted_names)} surface forms indexed (longest first)")
