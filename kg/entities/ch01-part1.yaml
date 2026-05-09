@@ -2,8 +2,19 @@
 # 知识图谱实体抽取 — 第一品 佛教总况 (lines 1-300)
 # 覆盖范围: 佛教总况引言 + 本师佛陀现世（十二相: 降天至广转法轮）
 # 来源: source/dudjom/chapter_md/01_佛教总况.md
-# 提取日期: 2026-05-09 (重新提取：修补漏提的经典名与引文关系)
+# 提取日期: 2026-05-09 (gazetteer 管线重提取)
 # 规范: SKILL_03a v0.1 + entity-taxonomy v0.4
+# 管线: gazetteer 预扫描确认 + Agent NER 发现
+# ============================================================
+# gazetteer 候选判定说明：
+# 已排除的通用词汇（非实体）:
+#   不可思议, 成佛, 最后, 灭后, 大乘, 密宗, 化身, 菩提, 涅槃,
+#   国王, 宗派, 有部(单独出现时), 魔王(通称), 阿罗汉(通称),
+#   大千世界, 大天, 八部, 赡部(单字), 赡部洲(=南赡部洲alias),
+#   最后有, 一切如来, 发菩提心, 一切有部(=有部alias已收),
+#   大婆罗门(通称), 正等正觉(通称), 转妙法轮(动词短语),
+#   阿罗汉果(通称修证), 一刹那, 阿僧祇劫, 本师(=释迦佛alias),
+#   如来(=释迦佛alias), 世尊(=释迦佛alias), 义成(=释迦佛alias)
 # ============================================================
 
 # ==================== 圣众 ====================
@@ -12,23 +23,14 @@ E_001:
   name: 毗卢遮那佛
   aliases: []
   type: 圣众.大乘.佛
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "报身佛，受用基藏花严世界"
 
 E_002:
   name: 释迦牟尼佛
-  aliases: ["释迦佛", "本师", "义成王子", "白幢", "菩萨太子", "沙门释迦牟尼"]
+  aliases: ["释迦佛", "本师", "义成王子", "白幢", "菩萨太子", "沙门释迦牟尼", "如来", "世尊", "释迦牟尼"]
   type: 圣众.大乘.佛
   additional_types: ["人物.帝王"]
   additional_types_source: text
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
   attainments: ["天眼", "漏尽通"]
   note: "贤劫第四位导师；文本同时以凡常太子身份（义成王子）及圆满佛陀两种模式描述，故R1触发"
 
@@ -36,990 +38,610 @@ E_003:
   name: 燃灯佛
   aliases: []
   type: 圣众.大乘.佛
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "兜率天中传出燃灯佛授记劝请偈颂的乐音"
 
 E_004:
   name: 金刚持
   aliases: ["大密金刚持"]
   type: 圣众.大乘.佛
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "《如意宝庄严续》中称'始初正等觉，大密金刚持'"
 
 E_005:
   name: 弥勒菩萨
   aliases: ["弥勒", "弥勒佛"]
   type: 圣众.大乘.菩萨
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "补处怙主；迦叶加持遗体至弥勒成佛；广大行派法藏结集者（律藏）"
+  note: "补处怙主；广大行派法藏结集者（律藏）；第二转法轮不共眷属中提及"
+
+E_005a:
+  name: 普贤菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "不共大乘结集经典的结集者之一"
+
+E_005b:
+  name: 文殊菩萨
+  aliases: ["文殊"]
+  type: 圣众.大乘.菩萨
+  note: "结集经藏；甚深见派法藏由其结集；后以比丘相为护月国王宣讲大乘法"
+
+E_005c:
+  name: 金刚手
+  aliases: ["密主金刚手", "金刚手菩萨", "密主"]
+  type: 圣众.大乘.菩萨
+  note: "千佛教法的结集者；结集论藏；后向龙类宣讲续部"
 
 # ==================== 非人 ====================
 
-E_005b:
+E_006:
   name: 梵天
   aliases: []
   type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "诞生时献上妙衣；后回忆往昔宏愿劝请佛转法轮，供养千辐金法轮"
 
-E_006:
+E_007:
   name: 帝释天
   aliases: []
   type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "诞生时献上妙衣；后供上如意宝珠劝请佛转法轮"
 
-E_007:
+E_008:
+  name: 四大天王
+  aliases: []
+  type: 非人.天部
+  note: "太子出家时在其承侍下腾空而去；成佛后供养四钵盂"
+
+E_009:
   name: 地神安稳母
   aliases: []
   type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "降魔时半个金色身躯破土而出为菩萨作证"
 
-E_008:
+E_010:
   name: 魔王波旬
   aliases: []
   type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "化现为猎人形象阻挠菩萨成佛；发动魔军；又幻变七个魔女引诱"
+  note: "化现猎人形象阻挠菩萨成佛；发动魔军；幻变七魔女引诱"
 
-# ==================== 魔女（非人.天部，具名者） ====================
-
-E_040:
+E_011:
   name: 白莲母
   aliases: []
   type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "七魔女之一；用媚态诱惑菩萨"
 
-E_041:
+E_012:
   name: 美那嘎
   aliases: []
   type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "七魔女之一；脖子上各种项链悬垂"
 
-E_042:
+E_013:
   name: 妙饰女
   aliases: []
   type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "七魔女之一；用腰带捆缚"
 
-E_043:
+E_014:
   name: 卷发女
   aliases: []
   type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "七魔女之一；用钉铛作响的钏镯"
 
 # ==================== 人物 — 法师 / 论师 ====================
 
-E_010:
+E_020:
   name: 佛智论师
-  aliases: []
+  aliases: ["佛智"]
   type: 人物.法师
   specialty: ["班智达"]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "引述其论述释迦佛在尼连河安住定中、十方善逝遣除贪求心"
 
-E_011:
+E_021:
   name: 圣天论师
-  aliases: []
+  aliases: ["圣天"]
   type: 人物.法师
   specialty: ["班智达"]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "引述其'现前二菩提，说为外与内'的教言；由莲花花蕊中化生，龙树菩萨弟子"
+  note: "引述其'现前二菩提，说为外与内'的教言；由莲花花蕊中化生，龙树弟子"
 
 # ==================== 人物 — 帝王 / 王妃 / 其他 ====================
 
-E_012:
+E_030:
   name: 净饭王
   aliases: []
   type: 人物.帝王
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "释迦佛的父王；担心太子出家而严加守护"
 
-E_013:
+E_031:
   name: 摩耶夫人
   aliases: ["摩诃摩耶"]
   type: 人物.王妃
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "释迦佛之母；太子出生后第七天离世"
 
-E_014:
+E_032:
   name: 耶输陀罗
   aliases: []
   type: 人物.王妃
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "太子妃之一；诞生时与八百童女一同出生"
 
-E_015:
+E_033:
   name: 耶惟檀
   aliases: []
   type: 人物.王妃
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "太子妃之一"
 
-E_016:
+E_034:
   name: 热达吉
   aliases: []
   type: 人物.王妃
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "太子妃之一"
 
-E_017:
+E_035:
   name: 提婆达多
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "怀着极大嫉妒心击死大象；射穿三个目标；降魔段中魔王谎称其控制迦毗罗卫国"
 
-E_018:
+E_036:
   name: 难陀
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "五百释迦童子之一；抛象至城外；射穿五个目标"
 
-E_019:
+E_037:
   name: 憍陈如
   aliases: []
   type: 人物.法师
   specialty: ["比丘"]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "与太子在尼连禅河畔六年苦行；后于鹿野苑得自然近圆戒，成为第一批大比丘僧团"
+  note: "与太子于尼连禅河畔六年苦行；后于鹿野苑得自然近圆戒"
 
-E_020:
+E_038:
   name: 登巴
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "五百仆人之一；太子出城消遣时驾驶马车"
 
-E_021:
+E_039:
   name: 根戒西尼
   aliases: ["众知识"]
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "太子的师长之一，教授文字、历算"
+  note: "太子师长之一，教授文字、历算"
 
-E_022:
+E_040:
   name: 真哦够恰
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "太子的师长之一"
+  note: "太子师长之一"
 
-E_023:
+E_041:
   name: 桑林
   aliases: ["善取"]
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "国舅；教太子骑象等技艺"
 
-E_024:
+E_042:
   name: 让佩
   aliases: []
   type: 人物.法师
   specialty: ["瑜伽士"]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "身怀因明窍诀的大师；太子出家后在其处听闻无所有定与有顶等持；后佛观察其为法器但已离世"
 
-E_025:
+E_043:
   name: 拉秀
   aliases: []
   type: 人物.法师
   specialty: ["瑜伽士"]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "大师；太子出家后在其处听闻；后佛观察其为法器但已离世"
 
-E_026:
+E_044:
   name: 妙生母
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "婆罗门女；以五百野黄牛乳汁提炼醍醐供养菩萨"
 
-E_027:
+E_045:
   name: 吉祥
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "草商；供养菩萨如孔雀颈般柔软的草"
 
-E_028:
+E_046:
   name: 正命
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "婆罗门；行途中问佛在谁面前出家"
 
-E_029:
+E_047:
   name: 商主嘎滚
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "菩萨成佛后四十九日中供养蜂蜜"
 
-E_030:
+E_048:
   name: 护贤
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "供养蜂蜜；第二转法轮中为不共眷属之一的得地大菩萨"
 
-E_031:
+E_049:
   name: 罗睺罗
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "菩萨成佛时月食之际降生人间"
 
-E_032:
+E_050:
   name: 阿难
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "菩萨成佛时月食之际降生人间"
 
-E_033:
+E_051:
   name: 舍利子
   aliases: []
   type: 人物.法师
   specialty: ["比丘"]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
   attainments: ["阿罗汉"]
   note: "第二转法轮中五千阿罗汉之一"
 
-E_034:
+E_052:
   name: 目犍连
   aliases: []
   type: 人物.法师
   specialty: ["比丘"]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
   attainments: ["阿罗汉"]
   note: "第二转法轮中五千阿罗汉之一"
 
-E_035:
+E_053:
   name: 众生主母
   aliases: []
   type: 人物.法师
   specialty: ["比丘"]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "姨母之一抚养太子；后领五百比丘尼在第二转法轮中为眷属"
 
-E_036:
+E_054:
   name: 给孤独
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "优婆塞；第二转法轮眷属"
 
-E_037:
+E_055:
   name: 萨嘎
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "优婆夷；第二转法轮眷属"
 
-E_038:
+E_056:
   name: 宝生
   aliases: []
   type: 人物.法师
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "得地大菩萨；第二转法轮不共眷属"
 
-E_039:
+E_057:
   name: 网施
   aliases: []
   type: 人物.法师
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "得地大菩萨；第二转法轮不共眷属"
 
-E_107:
+E_058:
   name: 阿丹
   aliases: []
   type: 人物.其他
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "五百良驹之一；太子出家时的坐骑；文本将其与人物并列描述诞生"
 
 # ==================== 地名 ====================
 
-E_050:
+E_060:
   name: 娑婆世界
   aliases: []
   type: 地名.神话地名
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "位于二十五层世界中第十三层"
 
-E_051:
+E_061:
   name: 南赡部洲
   aliases: ["赡部洲"]
   type: 地名.神话地名
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "赡部树严饰；菩萨在此成佛转法轮的主要场所"
 
-E_052:
+E_062:
   name: 菩提迦耶
   aliases: []
   type: 地名.圣地
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "南赡部洲中央；金刚座所在之处"
 
-E_053:
+E_063:
   name: 金刚座
   aliases: []
   type: 地名.圣地
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "菩提迦耶中央自然形成；千位殊胜化身佛次第出世成佛之处"
+  note: "菩提迦耶中央自然形成；千位殊胜化身佛次第出世成佛；菩萨在此树下跏趺成佛"
 
-E_054:
+E_064:
   name: 兜率天
   aliases: []
   type: 地名.神话地名
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "释迦佛示现受生前身为白幢天子所在之天界"
 
-E_055:
+E_065:
   name: 密严刹土
   aliases: ["密严庄严刹土"]
   type: 地名.神话地名
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "密宗观点中释迦佛在此受灌顶并成佛的刹土"
 
-E_056:
+E_066:
   name: 净居天
   aliases: []
   type: 地名.神话地名
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "不共大乘观点中释迦佛在密严刹土成佛后依次在此及金刚座示现成佛"
 
-E_057:
+E_067:
   name: 蓝毗尼花园
-  aliases: []
+  aliases: ["蓝毗尼"]
   type: 地名.圣地
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "太子诞生之处"
 
-E_058:
+E_068:
   name: 迦毗罗卫国
-  aliases: []
+  aliases: ["迦毗罗卫"]
   type: 地名.国
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "降魔时魔王谎称此国已被提婆达多控制"
 
-E_059:
+E_069:
   name: 广严城
   aliases: []
   type: 地名.区域
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "供养太子大象之城；出家后太子在此听闻教法"
 
-E_060:
+E_070:
   name: 王舍城
   aliases: []
   type: 地名.区域
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "太子出家后在此听闻让佩与拉秀的教法"
 
-E_061:
+E_071:
   name: 尼连禅河
-  aliases: []
+  aliases: ["尼连禅河畔"]
   type: 地名.自然地理
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "太子六年苦行之处；密宗观点中义成王子在此安住不动三摩地"
 
-E_062:
+E_072:
   name: 鹿野苑
   aliases: []
   type: 地名.圣地
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "憍陈如等五人去此处；佛陀初转法轮之地"
 
-E_063:
+E_073:
   name: 灵鹫山
   aliases: ["圆满处"]
   type: 地名.圣地
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "佛转第二无相法轮之处"
 
-E_064:
+E_074:
   name: 基藏花严世界
   aliases: []
   type: 地名.神话地名
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "报身毗卢遮那佛受用之处"
 
-E_065:
+E_075:
   name: 法性光明刹土
   aliases: []
   type: 地名.神话地名
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "无上了义观点中释迦佛从无始时以来在此现前菩提"
+
+E_076:
+  name: 色究竟天
+  aliases: []
+  type: 地名.神话地名
+  note: "如来应允转法轮的声音传至此处"
+
+E_077:
+  name: 菩提树
+  aliases: []
+  type: 地名.圣地
+  note: "金刚座上菩萨在此树下成佛；太子诞生时南赡部洲中央的菩提树出现"
 
 # ==================== 经典 ====================
 # 按原文《》出现顺序完整扫描 lines 1-300
 
-E_070:
+E_080:
   name: 《俱舍论》
   aliases: []
   type: 经典.论
-  specialty: []
-  origin: ""
   sect_affiliation: ["有部"]
-  manifestation_of: []
-  attainments: []
-  note: "引述声闻有部论师关于释迦佛成佛方式的论述；两次引用（line 23, 26）"
+  note: "引述声闻有部论师关于释迦佛成佛方式的论述；三次引用"
 
-E_071:
+E_081:
   name: 《功德圆满庄严经》
   aliases: []
   type: 经典.经
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "记载释迦佛三大阿僧祇劫积累资粮并在赡部洲成佛的经文"
 
-E_072:
+E_082:
   name: 《密严庄严经》
   aliases: []
   type: 经典.经
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "论述释迦佛在密严刹土成佛后化身示现的经典"
 
-E_073:
+E_083:
   name: 《楞伽经》
   aliases: []
   type: 经典.经
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "引述释迦佛在密严刹成佛、化身示现的教证"
 
-E_074:
+E_084:
   name: 《如意宝庄严续》
   aliases: []
   type: 经典.密续
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "引述释迦佛以不同形象利益众生"
+  note: "引述释迦佛即金刚持以不同形象利益众生"
 
-E_075:
+E_085:
   name: 《密藏根本续》
   aliases: []
   type: 经典.密续
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "论述六能仁以四种调伏方式利益五道有情"
 
-E_076:
+E_086:
   name: 《妙法白莲经》
   aliases: []
   type: 经典.经
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "引述佛已于不可思千俱胝劫前成佛的经文"
 
-E_077:
+E_087:
   name: 《父子相会经》
   aliases: []
   type: 经典.经
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "引述如来成百俱胝劫前已示现成正觉的经文"
 
-E_078:
+E_088:
   name: 《经庄严论》
   aliases: []
   type: 经典.论
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "论述化身分类——工巧化身、投生化身与殊胜化身三种"
 
-E_079:
+E_089:
   name: 《幻化根本续》
   aliases: []
   type: 经典.密续
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "宣说殊胜大化身以四种调伏方式利益有情"
 
-E_080:
+E_090:
   name: 《宝性论》
   aliases: []
   type: 经典.论
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "论述十二相——从兜率天降至示现涅槃"
 
-E_081:
+E_091:
   name: 《功德庄严经》
   aliases: []
   type: 经典.经
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "论述佛语特法——三转法轮中各随根基示现"
 
 # ==================== 教法 ====================
 
-E_090:
+E_100:
   name: 四谛法轮
   aliases: ["第一转法轮"]
   type: 教法.教法体系
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "远离二边中道的四谛法轮，重复三次成十二相法轮；主要宣说律藏戒学"
 
-E_091:
+E_101:
   name: 第二无相法轮
   aliases: ["第二转法轮"]
   type: 教法.教法体系
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "于灵鹫山转；主要宣说经藏定学"
 
-E_092:
+E_102:
   name: 第三了义法轮
   aliases: ["第三转法轮"]
   type: 教法.教法体系
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "在天界、龙宫等不定地点转；主要宣讲论藏慧学"
 
-E_093:
+E_103:
   name: 无所有定
   aliases: []
   type: 教法.教言法门
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "太子在让佩处听闻此定"
 
-E_094:
+E_104:
   name: 有顶等持
   aliases: []
   type: 教法.教言法门
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "太子在让佩、拉秀处听闻此等持"
 
-E_095a:
+E_105:
   name: 不动三摩地
   aliases: []
   type: 教法.教言法门
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "密宗观点中义成王子在尼连禅河畔安住于此三摩地"
 
-E_095b:
+E_106:
   name: 第四静虑
   aliases: []
   type: 教法.教言法门
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "成佛时菩萨入于此等持境界"
 
-E_095c:
+E_107:
   name: 大慈等持
   aliases: []
   type: 教法.教言法门
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "降魔时菩萨入定于此等持，兵器全部化为花雨"
+
+E_108:
+  name: 四谛
+  aliases: []
+  type: 教法.教法体系
+  note: "佛陀究竟四谛而现前正等正觉果位"
+
+E_109:
+  name: 菩提心
+  aliases: []
+  type: 教法.教言法门
+  note: "释迦佛先发菩提心开始积累资粮"
+
+E_110:
+  name: 贤劫
+  aliases: []
+  type: 教法.教法体系
+  note: "光明洲，千位化身佛次第出世之劫"
 
 # ==================== 教派 ====================
 
-E_096a:
+E_120:
   name: 有部
   aliases: ["声闻有部", "说一切有部"]
   type: 教派.印度部派
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "声闻有部论师认为释迦佛以薄地凡夫身在一坐垫上获得四道后才成佛"
+  note: "声闻有部论师认为释迦佛以薄地凡夫身在一坐垫上成佛"
 
 # ==================== 法器/圣物 ====================
 
-E_096b:
+E_130:
   name: 千辐金法轮
   aliases: []
   type: 法器圣物.法器
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   note: "梵天供养佛陀以劝请转法轮"
 
 # ==================== 集合 ====================
 
-E_100:
+E_140:
   name: 憍陈如等五人
   aliases: ["五比丘"]
   type: 集合.弟子集合
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   cardinality: 5
   members: ["憍陈如"]
   note: "与太子于尼连禅河畔六年苦行；后于鹿野苑得自然近圆戒，成为第一批大比丘僧团"
 
-E_101:
+E_141:
   name: 五百释迦童子
   aliases: []
   type: 集合.人物集合
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   cardinality: 500
   members: ["难陀"]
   note: "太子诞生时一同出生；以难陀为首"
 
-E_102:
+E_142:
   name: 八百童女
   aliases: []
   type: 集合.人物集合
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   cardinality: 800
   members: ["耶输陀罗"]
   note: "太子诞生时一同出生"
 
-E_103:
+E_143:
   name: 五百仆人
   aliases: []
   type: 集合.人物集合
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   cardinality: 500
   members: ["登巴"]
   note: "太子诞生时一同出生"
 
-E_104:
+E_144:
   name: 五百良驹
   aliases: []
   type: 集合.人物集合
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   cardinality: 500
   members: ["阿丹"]
-  note: "太子诞生时一同出生；阿丹为首"
+  note: "太子诞生时一同出生"
 
-E_105:
+E_145:
   name: 三十二位姨母
   aliases: []
   type: 集合.人物集合
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
   cardinality: 32
   members: ["众生主母"]
-  note: "太子母亲离世后抚养太子成长"
-
-E_106:
-  name: 七魔女
-  aliases: []
-  type: 集合.人物集合
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  cardinality: 7
-  members: ["白莲母", "美那嘎", "妙饰女", "卷发女"]
-  note: "魔王波旬幻变七个魔女引诱菩萨，文本具名四位"
+  note: "抚养太子成长"

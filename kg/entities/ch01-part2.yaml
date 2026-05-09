@@ -3,8 +3,9 @@
 # 覆盖范围: (十二)示现涅槃 + 结集教法 + 教藏交付传代
 #           + 护持佛法及大乘兴盛
 # 来源: source/dudjom/chapter_md/01_佛教总况.md
-# 提取日期: 2026-05-09 (重新提取：补全经典名、引文关系、并列人名)
-# 规范: SKILL_03a v0.1 + entity-taxonomy v0.4
+# 提取日期: 2026-05-09 (gazetteer 双轨重提取)
+# 规范: SKILL_03a v0.3 + entity-taxonomy v0.4
+# 方法: 轨道1 gazetteer 确认 + 轨道2 Agent NER 发现新实体
 # ============================================================
 
 # ==================== 圣众 ====================
@@ -30,7 +31,7 @@ E_002:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "大乘结集中结集律藏；广大行派法藏由弥勒结集；无著的弟子之师"
+  note: "大乘结集中结集律藏；广大行派法藏由弥勒结集；无著之师"
   appearances: [395, 398, 437, 525, 528]
 
 E_003:
@@ -429,6 +430,42 @@ E_043:
   note: "护持佛法的国王之一"
   appearances: [522]
 
+E_043b:
+  name: 唐玄宗
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "汉地帝王；人们在其时代可以现量见到十六大罗汉"
+  appearances: [500]
+
+E_043c:
+  name: 薛禅皇帝
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "汉地帝王；人们在其时代可以现量见到十六大罗汉"
+  appearances: [500]
+
+E_043d:
+  name: 益旺大帝
+  aliases: []
+  type: 人物.帝王
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "汉地帝王；人们在其时代可以现量见到十六大罗汉"
+  appearances: [500]
+
 # ==================== 人物 — 法师（论师/大成就者等） ====================
 
 E_050:
@@ -564,7 +601,7 @@ E_060:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "第三次结集参与者之一（克什米尔说法）"
+  note: "第三次结集参与者之一（克什米尔说法）；四百大尊者之一"
   appearances: [382]
 
 E_061:
@@ -813,6 +850,32 @@ E_080:
   note: "佛陀般的大声闻之外，护持佛法的阿罗汉众之一"
   appearances: [521]
 
+# ==================== 人物 — 被动提及（gazetteer 新增确认） ====================
+
+E_081:
+  name: 乾闼婆极喜
+  aliases: [极喜]
+  type: 非人.天部
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "佛陀以善巧方便大慈大悲直接度化的众生之一"
+  appearances: [304]
+
+E_082:
+  name: 遍行外道极贤
+  aliases: [极贤]
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "遍行外道；佛陀以善巧方便大慈大悲直接度化的众生之一"
+  appearances: [304]
+
 # ==================== 非人 ====================
 
 E_085:
@@ -864,7 +927,7 @@ E_101:
   name: 色究竟天
   aliases: []
   type: 地名.神话地名
-  note: "众生主母发愿声传至色究竟天"
+  note: "众生主母发愿声传至色究竟天；第一次结集后天人传颂声传至色究竟天"
   appearances: [311, 350]
 
 E_102:
@@ -878,7 +941,7 @@ E_103:
   name: 王舍城
   aliases: []
   type: 地名.圣地
-  note: "第一次结集地；列卓达山洞所在；佛陀住五年"
+  note: "第一次结集地；列卓达山洞所在；佛陀住五年；大乘结集在其南方布玛萨巴瓦山"
   appearances: [337, 338, 347, 352, 397]
 
 E_104:
@@ -962,7 +1025,7 @@ E_115:
   name: 恒河
   aliases: []
   type: 地名.自然地理
-  note: "阿难在恒河中央涅槃"
+  note: "阿难在恒河中央涅槃并幻化岛屿传戒"
   appearances: [457]
 
 E_116:
@@ -1104,6 +1167,27 @@ E_135:
   type: 地名.修行处
   note: "佛陀住二年之地（《大毗婆沙论》引文）"
   appearances: [338]
+
+E_136:
+  name: 四大部洲
+  aliases: []
+  type: 地名.神话地名
+  note: "十六大罗汉在此护持佛法"
+  appearances: [499]
+
+E_137:
+  name: 三十三天
+  aliases: []
+  type: 地名.神话地名
+  note: "十六大罗汉在此等处护持佛法"
+  appearances: [499]
+
+E_138:
+  name: 迦纳哦
+  aliases: []
+  type: 地名.圣地
+  note: "无忧王住此处（《大毗婆沙论》赞叹偈中提及）"
+  appearances: [472]
 
 # ==================== 经典 ====================
 
@@ -1253,7 +1337,7 @@ E_305:
   name: 五种邪法
   aliases: []
   type: 教法.教言法门
-  note: "大天比丘等宣扬的邪法"
+  note: "大天比丘等宣扬的邪法：'答复他不知，怀疑皆观察，能养活自己，此乃佛教法'"
   appearances: [362]
 
 # ==================== 教派 ====================
@@ -1393,7 +1477,7 @@ E_708:
   aliases: []
   type: 集合.人物集合
   cardinality: 12
-  note: "以降伏威力相被赞叹"
+  note: "以降伏威力相被赞叹；佛智为其中之一"
   appearances: [571]
 
 E_709:

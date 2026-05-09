@@ -2,7 +2,7 @@
 # 知识图谱事件抽取 — 第一品 佛教总况 (lines 1-300)
 # 覆盖范围: 佛教总况引言 + 本师佛陀现世十二相（降天至广转法轮）
 # 来源: source/dudjom/chapter_md/01_佛教总况.md
-# 提取日期: 2026-05-09 (重新提取：补充所有引文论证事件)
+# 提取日期: 2026-05-09 (gazetteer 管线重提取)
 # 规范: SKILL_04a + entity-taxonomy v0.4 + narrative-layers
 #
 # 实体引用说明:
@@ -227,7 +227,7 @@
     - entity: 释迦牟尼佛
       role: 论证对象
   quoted_text: "远离净居之诸处，于彼悦意密严刹，真实佛陀成正觉，化身于此示成佛。"
-  argument: 论证释迦佛在密严刹成正觉后以化身方式在此世间示现成佛（与《密严庄严经》同一论点）
+  argument: 论证释迦佛在密严刹成正觉后以化身方式在此世间示现成佛
   about_entity: 释迦牟尼佛
   location: null
   time_info: null
@@ -314,7 +314,7 @@
     - entity: 释迦牟尼佛
       role: 论证对象
   quoted_text: "善巧方便大勇士，为令众生普成熟，成百俱胝劫之前，如来示现成正觉，仍为引导有情汝，示现众多正等觉。"
-  argument: 论证如来以善巧方便成百俱胝劫前已示现成正觉（与《妙法白莲经》同一论点）
+  argument: 论证如来以善巧方便成百俱胝劫前已示现成正觉
   about_entity: 释迦牟尼佛
   location: null
   time_info: null
@@ -657,6 +657,8 @@
       role: 坐骑
     - entity: 净饭王
       role: 关联者
+    - entity: 四大天王
+      role: 护送者
   location: null
   time_info:
     text: "一天夜里"
@@ -836,8 +838,6 @@
   participants:
     - entity: 魔王波旬
       role: 主体
-    - entity: 七魔女
-      role: 执行者
     - entity: 白莲母
       role: 执行者
     - entity: 美那嘎
@@ -895,6 +895,8 @@
     - entity: 商主嘎滚
       role: 供养者
     - entity: 护贤
+      role: 供养者
+    - entity: 四大天王
       role: 供养者
     - entity: 释迦牟尼佛
       role: 受者

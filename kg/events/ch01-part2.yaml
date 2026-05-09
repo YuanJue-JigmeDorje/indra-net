@@ -4,16 +4,35 @@
 #           + 教藏交付传代(迦叶→阿难→麻衣→小护→有愧→黑色)
 #           + 护持佛法及大乘兴盛
 # 来源: source/dudjom/chapter_md/01_佛教总况.md
-# 提取日期: 2026-05-09 (重新提取：补全引文论证事件)
-# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
+# 提取日期: 2026-05-09 (gazetteer 双轨重提取)
+# 规范: SKILL_04a v0.3 + entity-taxonomy v0.4 + narrative-layers v0.2
 #
 # 实体引用: 使用实体 NAME（非 ID），引用 kg/entities/ch01-part2.yaml
 # confidence 默认: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
 # ============================================================
 
-# ==================== (十二) 示现涅槃 (lines 306-339) ====================
+# ==================== (十二) 示现涅槃 (lines 301-339) ====================
 
 - event_id: EV_001
+  type: 弘法
+  title: 佛陀度化乾闼婆极喜与遍行外道极贤
+  participants:
+    - entity: 释迦牟尼佛
+      role: 主体
+    - entity: 乾闼婆极喜
+      role: 受者
+    - entity: 遍行外道极贤
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛陀以善巧方便、大慈大悲直接度化众生，甚至包括乾闼婆极喜、遍行外道极贤在内，全部予以摄受。"
+  description: 佛陀以善巧方便大慈大悲直接度化众生，甚至包括乾闼婆极喜和遍行外道极贤在内全部摄受。
+
+- event_id: EV_002
   type: 神变
   title: 众生主母发愿佛陀住世三大阿僧祇劫
   participants:
@@ -30,7 +49,7 @@
   source_quote: "这声音被众生主母听到，她立即发愿说：'愿佛陀住世三大阿僧祇劫。'"
   description: 佛陀示现涅槃前打喷嚏，众生主母听闻后发愿佛陀住世三大阿僧祇劫，声音从人间传至色究竟天。
 
-- event_id: EV_002
+- event_id: EV_003
   type: 圆寂
   title: 众生主母与五百女阿罗汉趣入涅槃
   participants:
@@ -47,7 +66,7 @@
   source_quote: "众生主母为了忏悔，与五百女阿罗汉一道趣入涅槃。"
   description: 众生主母因发愿不当被佛陀纠正，为忏悔与五百女阿罗汉一道趣入涅槃。
 
-- event_id: EV_003
+- event_id: EV_004
   type: 弘法
   title: 目犍连与舍利子巡视地狱
   participants:
@@ -64,7 +83,7 @@
   source_quote: "目犍连与舍利子二位尊者到地狱巡视，正在感受业报的外道上师，对他们二位说……"
   description: 目犍连与舍利子到地狱巡视，外道上师请其向弟子捎口信。
 
-- event_id: EV_004
+- event_id: EV_005
   type: 圆寂
   title: 目犍连被外道徒殴打致死
   participants:
@@ -79,7 +98,7 @@
   source_quote: "外道徒数数殴打目犍连，他的身体被摧残得简直像苇草一样。"
   description: 目犍连向外道徒转告其上师在无间地狱受苦的口信后，被外道徒殴打身亡。
 
-- event_id: EV_005
+- event_id: EV_006
   type: 圆寂
   title: 舍利子与八万阿罗汉于那烂陀寺涅槃
   participants:
@@ -94,7 +113,7 @@
   source_quote: "就前往那烂陀寺，当天上午与八万阿罗汉一起趣入涅槃。"
   description: 舍利子发现目犍连不可能再活，悲痛之下前往那烂陀寺，当天上午与八万阿罗汉一起涅槃。
 
-- event_id: EV_006
+- event_id: EV_007
   type: 圆寂
   title: 目犍连与七万罗汉同时涅槃
   participants:
@@ -112,7 +131,7 @@
   source_quote: "当日下午目犍连与七万罗汉同时涅槃。"
   description: 舍利子涅槃当日下午，目犍连与七万罗汉同时涅槃。
 
-- event_id: EV_007
+- event_id: EV_008
   type: 传法
   title: 佛陀将佛法交付大迦叶
   participants:
@@ -129,7 +148,7 @@
   source_quote: "佛陀将佛法连同四众眷属交付与上座大迦叶"
   description: 佛陀将佛法连同四众眷属交付大迦叶。
 
-- event_id: EV_008
+- event_id: EV_009
   type: 圆寂
   title: 佛陀于娑罗双树下示现圆满涅槃
   participants:
@@ -147,7 +166,7 @@
   source_quote: "佛陀到娑罗双树下示现圆满涅槃。"
   description: 佛陀嘱托弟子后于娑罗双树下示现圆满涅槃，遗体自然焚烧化为舍利。
 
-- event_id: EV_009
+- event_id: EV_010
   type: 建寺
   title: 迦叶将佛舍利分八份装藏八大佛塔
   participants:
@@ -164,7 +183,7 @@
 
 # ==================== 引文论证 — 《大毗婆沙论》总结佛陀一生 ====================
 
-- event_id: EV_009b
+- event_id: EV_010b
   type: 引文论证
   title: 引《大毗婆沙论》总结佛陀现身于世之一生
   participants:
@@ -184,7 +203,7 @@
 
 # ==================== 结集教法 (lines 340-399) ====================
 
-- event_id: EV_010
+- event_id: EV_011
   type: 弘法
   title: 第一次结集
   participants:
@@ -212,7 +231,7 @@
 
 # ==================== 引文论证 — 《杂阿含经》记第一次结集 ====================
 
-- event_id: EV_010b
+- event_id: EV_011b
   type: 引文论证
   title: 引《杂阿含经》记载第一次结集
   participants:
@@ -232,7 +251,7 @@
   argument: 引经文佐证第一次结集的时间、地点、参与者与施主
   source_quote: "《杂阿含经》中说：'佛灭度后次夏季，王舍秘密山洞中，五百罗汉共集聚，未生怨施集三藏。'"
 
-- event_id: EV_011
+- event_id: EV_012
   type: 弘法
   title: 第二次结集
   participants:
@@ -254,7 +273,7 @@
   source_quote: "继第一次结集之后过了一百一十年……耶舍等七百罗汉聚集一堂，摈除十种非事，完整地诵一遍三藏"
   description: 第一次结集后一百一十年，在毗舍离城婆利迦精舍，耶舍领衔七百罗汉结集三藏、摈除十非事。
 
-- event_id: EV_012
+- event_id: EV_013
   type: 弘法
   title: 大天比丘等宣扬五种邪法
   participants:
@@ -278,7 +297,7 @@
   source_quote: "受到魔加持的大天比丘、善贤、龙长老、安意等相继出现，他们向别人宣扬……五种邪法"
   description: 勇部时期开始，受魔加持的大天比丘等宣扬五种邪法，导致僧团内部争论不休。
 
-- event_id: EV_013
+- event_id: EV_014
   type: 弘法
   title: 僧团分裂为十八部
   participants:
@@ -306,7 +325,7 @@
   source_quote: "龙长老扩大争端，使得说一切有部中又分出了大众部、上座部、正量部三部……安意再度使争论不断扩张，结果四部又逐步分成十八部"
   description: 由龙长老扩大争端分出根本四部，安意再度扩张使四部分成十八部。
 
-- event_id: EV_014
+- event_id: EV_015
   type: 弘法
   title: 第三次结集
   participants:
@@ -326,7 +345,7 @@
 
 # ==================== 引文论证 — 《国王哲哲梦境授记经》 ====================
 
-- event_id: EV_014a
+- event_id: EV_015a
   type: 引文论证
   title: 引《国王哲哲梦境授记经》论证十八部均为清净佛教
   participants:
@@ -346,7 +365,24 @@
   argument: 第三次结集引用此经教证建立十八部均是清净的佛教
   source_quote: "这次结集主要依据《国王哲哲梦境授记经》中所说：'真实圆满正等觉迦叶佛告哲哲国王言……'"
 
-- event_id: EV_014b
+- event_id: EV_015b
+  type: 授记
+  title: 迦叶佛授记释迦佛教法分成十八部
+  participants:
+    - entity: 迦叶佛
+      role: 授记者
+    - entity: 哲哲国王
+      role: 受者
+  location: null
+  time_info: null
+  layers: [授记, 典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。"
+  description: 迦叶佛于《国王哲哲梦境授记经》中授记释迦佛教法分成十八部，每部均有解脱。
+
+- event_id: EV_015c
   type: 弘法
   title: 第三次结集（克什米尔说法）
   participants:
@@ -367,7 +403,7 @@
   source_quote: "克什米尔的论师们认为：'在克什米尔境内的耳饰精舍，圣者妙辐等五百阿罗汉、瓦色莫札等四百大尊者以及五百菩萨作第三次结集。'"
   description: 克什米尔论师认为第三次结集在耳饰精舍由妙辐领衔举行。
 
-- event_id: EV_014c
+- event_id: EV_015d
   type: 弘法
   title: 第三次结集（印度班智达说法）
   participants:
@@ -382,7 +418,7 @@
   source_quote: "印度的部分班智达则认为：'第三次结集是在匝兰绕静处革瓦那精舍，由五百罗汉、五千大尊者结集的。'"
   description: 印度班智达认为第三次结集在匝兰绕静处革瓦那精舍举行。
 
-- event_id: EV_014d
+- event_id: EV_015e
   type: 弘法
   title: 第三次结集（藏地共许说法）
   participants:
@@ -402,7 +438,7 @@
 
 # ==================== 引文论证 — 《智燃论》记载长老母之子结集 ====================
 
-- event_id: EV_014e
+- event_id: EV_015f
   type: 引文论证
   title: 引《智燃论》记载长老母之子结集教法
   participants:
@@ -420,26 +456,9 @@
   argument: 引《智燃论》为第三次结集的时间提供典据，作者认为此处两百年是以半年计
   source_quote: "诚如《智燃论》中说：'佛陀入灭后过了两百年，长老母之子结集教法。'"
 
-- event_id: EV_015
-  type: 授记
-  title: 迦叶佛授记释迦佛教法分成十八部
-  participants:
-    - entity: 迦叶佛
-      role: 授记者
-    - entity: 哲哲国王
-      role: 受者
-  location: null
-  time_info: null
-  layers: [授记, 典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  source_quote: "国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。"
-  description: 迦叶佛于《国王哲哲梦境授记经》中授记释迦佛教法分成十八部，每部均有解脱。
-
 # ==================== 引文论证 — 《智燃论》记大乘结集 ====================
 
-- event_id: EV_015b
+- event_id: EV_016
   type: 引文论证
   title: 引《智燃论》论证大乘佛法由四菩萨结集
   participants:
@@ -465,7 +484,7 @@
 
 # ==================== 引文论证 — 《秘密不可思议经》 ====================
 
-- event_id: EV_015c
+- event_id: EV_016b
   type: 引文论证
   title: 引《秘密不可思议经》论证金刚手为千佛教法结集者
   participants:
@@ -483,7 +502,7 @@
   argument: 引此经证明金刚手不仅结集释迦佛教法，更是千佛教法的结集者
   source_quote: "《秘密不可思议经》中说金刚手是千佛教法的结集者。"
 
-- event_id: EV_016
+- event_id: EV_017
   type: 弘法
   title: 大乘结集（不共大乘观点）
   participants:
@@ -506,7 +525,7 @@
 
 # ==================== 引文论证 — 大乘经藏记甚深见/广大行法藏分工 ====================
 
-- event_id: EV_016b
+- event_id: EV_017b
   type: 引文论证
   title: 引大乘经藏论证甚深见派与广大行派法藏分工
   participants:
@@ -526,7 +545,7 @@
 
 # ==================== 教藏交付传代 — 迦叶段 (lines 401-444) ====================
 
-- event_id: EV_017
+- event_id: EV_018
   type: 传法
   title: 佛陀分坐垫让迦叶为继承人
   participants:
@@ -543,7 +562,7 @@
   source_quote: "佛陀在世时把一半坐垫分给大迦叶尊者，让他作为自己的继承人。"
   description: 佛陀在世时以分坐垫方式指定大迦叶为佛法继承人。
 
-- event_id: EV_018
+- event_id: EV_019
   type: 出家受戒
   title: 迦叶在佛陀面前出家获得比丘戒
   participants:
@@ -563,7 +582,7 @@
   source_quote: "迦叶一见到佛陀就生起了本师之想……佛陀回应'我是汝之本师，汝是我之声闻'三遍完毕，迦叶即已获得比丘戒"
   description: 迦叶见佛即生本师想，三说"世尊是我之导师"后获得比丘戒，被赞为头陀行第一。
 
-- event_id: EV_019
+- event_id: EV_020
   type: 弘法
   title: 迦叶护持佛教四十余年
   participants:
@@ -581,7 +600,7 @@
   source_quote: "迦叶尊者认真结集了佛经并且护持佛教，经历了四十多年的悠悠岁月"
   description: 迦叶尊者结集佛经并护持佛教四十余年。
 
-- event_id: EV_020
+- event_id: EV_021
   type: 传法
   title: 迦叶将佛法交传与阿难
   participants:
@@ -598,7 +617,7 @@
   source_quote: "现在我也将要入灭，因此以后佛法由你护持，你将来再交传与麻衣。"
   description: 迦叶入灭前将佛法交传阿难，并嘱咐阿难将来交传麻衣。
 
-- event_id: EV_021
+- event_id: EV_022
   type: 圆寂
   title: 迦叶于鸡足山趣入涅槃
   participants:
@@ -613,7 +632,7 @@
   source_quote: "他在中央铺上草垫，披上世尊的粪扫祖衣，加持遗体不坏一直保持到弥勒成佛，接着示现众多神变而趣入涅槃。"
   description: 迦叶登鸡足山，铺草垫披祖衣，加持遗体不坏保持至弥勒成佛后趣入涅槃，山门自闭。
 
-- event_id: EV_022
+- event_id: EV_023
   type: 神变
   title: 迦叶加持遗体不坏至弥勒成佛
   participants:
@@ -628,7 +647,7 @@
   source_quote: "加持遗体不坏一直保持到弥勒成佛"
   description: 迦叶加持遗体不坏保持至弥勒成佛时。
 
-- event_id: EV_023
+- event_id: EV_024
   type: 授记
   title: 阿难转述弥勒佛将展示迦叶遗体之授记
   participants:
@@ -647,7 +666,7 @@
   source_quote: "弥勒佛与首批眷属九十九俱胝声闻弟子来到此地，他将尊者的遗体放在掌中说：'这是释迦佛声闻弟子中头陀第一的尊者'"
   description: 阿难阻止未生怨王焚烧迦叶遗体，转述弥勒佛将在未来展示迦叶遗体的授记。
 
-- event_id: EV_024
+- event_id: EV_025
   type: 建寺
   title: 阿难与未生怨王在鸡足山顶建造遗塔
   participants:
@@ -666,7 +685,7 @@
 
 # ==================== 教藏交付传代 — 阿难段 (lines 446-465) ====================
 
-- event_id: EV_025
+- event_id: EV_026
   type: 出家受戒
   title: 阿难在十力迦叶前按次第受戒
   participants:
@@ -686,7 +705,7 @@
   source_quote: "世尊把阿难交给十力迦叶，并以现今的仪轨按次第给他传戒。"
   description: 佛陀将阿难交给十力迦叶按次第传戒。
 
-- event_id: EV_026
+- event_id: EV_027
   type: 弘法
   title: 阿难护持佛教四十余年
   participants:
@@ -704,7 +723,7 @@
   source_quote: "阿难护持佛教有四十年之余。"
   description: 阿难护持佛教四十余年。
 
-- event_id: EV_027
+- event_id: EV_028
   type: 传法
   title: 阿难将佛法交传麻衣
   participants:
@@ -721,7 +740,7 @@
   source_quote: "佛陀把佛法交传与迦叶，迦叶又付教于我，我也即将入灭，因此由你来护持佛教。"
   description: 阿难嘱咐麻衣护持佛教，并指示将来把佛法交传给小护。
 
-- event_id: EV_028
+- event_id: EV_029
   type: 出家受戒
   title: 阿难在恒河中央为五百仙人传比丘戒
   participants:
@@ -738,7 +757,7 @@
   source_quote: "阿难便在恒河中央幻化一座岛屿，在那里为他们传了比丘戒。仙人刚刚受戒即刻证得阿罗汉果位"
   description: 阿难在恒河中央幻化岛屿，为携五百眷属的仙人传比丘戒，仙人即刻证得阿罗汉果，被称为日中罗汉。
 
-- event_id: EV_029
+- event_id: EV_030
   type: 授记
   title: 佛陀授记日中罗汉将在克什米尔弘法
   participants:
@@ -755,7 +774,7 @@
   source_quote: "佛陀授记你将来在克什米尔弘扬佛法，当如此而行。"
   description: 阿难转达佛陀授记，令日中罗汉将来在克什米尔弘扬佛法。
 
-- event_id: EV_030
+- event_id: EV_031
   type: 圆寂
   title: 阿难在恒河中央示现涅槃
   participants:
@@ -776,7 +795,7 @@
 
 # ==================== 引文论证 — 《文殊根本续》授记阿育王 ====================
 
-- event_id: EV_031
+- event_id: EV_032
   type: 引文论证
   title: 引《文殊根本续》授记阿育王出世建塔
   participants:
@@ -796,7 +815,7 @@
   argument: 引《文殊根本续》中佛之授记，论证阿育王出世建塔是佛早已安排的事业
   source_quote: "按照佛在《文殊根本续》中授记：'佛陀入灭后一百年出世，寿命达一百五十……建造八万四千七宝塔。'"
 
-- event_id: EV_031b
+- event_id: EV_032b
   type: 授记
   title: 佛在《文殊根本续》中授记阿育王出世
   participants:
@@ -816,7 +835,7 @@
   source_quote: "佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔"
   description: 佛在《文殊根本续》中授记阿育王将于佛灭百年后出世，建八万四千七宝塔。
 
-- event_id: EV_032
+- event_id: EV_033
   type: 建寺
   title: 阿育王建造八万四千七宝塔
   participants:
@@ -836,7 +855,7 @@
   source_quote: "在南赡部洲四面八方建造八万四千七宝塔。香达夜叉协助建造。"
   description: 阿育王在南赡部洲建造八万四千七宝塔，香达夜叉协助建造。
 
-- event_id: EV_033
+- event_id: EV_034
   type: 开光
   title: 麻衣罗汉为阿育王佛塔开光
   participants:
@@ -851,7 +870,7 @@
   source_quote: "麻衣罗汉对这些佛塔作了开光"
   description: 麻衣罗汉为阿育王所建佛塔作开光。
 
-- event_id: EV_034
+- event_id: EV_035
   type: 传法
   title: 麻衣将佛法交传与小护
   participants:
@@ -872,7 +891,7 @@
 
 # ==================== 引文论证 — 《杂阿含经》授记小护 ====================
 
-- event_id: EV_035
+- event_id: EV_036
   type: 引文论证
   title: 引《杂阿含经》授记小护出家
   participants:
@@ -892,7 +911,7 @@
   argument: 引佛在《杂阿含经》中的亲自授记，论证小护的出家和事业是佛预见并安排的
   source_quote: "一致共称佛在《杂阿含经》中亲自如此授记：'我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。'"
 
-- event_id: EV_035b
+- event_id: EV_036b
   type: 授记
   title: 佛在《杂阿含经》中授记小护出家
   participants:
@@ -912,7 +931,7 @@
   source_quote: "我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。"
   description: 佛在《杂阿含经》中授记小护将于佛灭百年后出家成为"无相佛"行持如来事业。
 
-- event_id: EV_036
+- event_id: EV_037
   type: 降伏非人
   title: 小护以三尸花鬘降伏魔王波旬
   participants:
@@ -929,7 +948,7 @@
   source_quote: "小护幻化出三尸花鬘，系在魔王的头上，结果当他一生起恶心时就感到臭气难熏"
   description: 小护幻化三尸花鬘系于魔王头上，使其生恶心即臭气难熏、生善心则现鲜花，魔王最终恭敬顶礼不再怀恶心。
 
-- event_id: EV_037
+- event_id: EV_038
   type: 传法
   title: 小护将佛法交付有愧
   participants:
@@ -948,7 +967,7 @@
 
 # ==================== 教藏交付传代 — 有愧/黑色段 (lines 491-497) ====================
 
-- event_id: EV_038
+- event_id: EV_039
   type: 传法
   title: 有愧将佛法交付黑色
   participants:
@@ -965,7 +984,7 @@
   source_quote: "他将佛法交付给摩竭陀国的圣者黑色后便趣入涅槃。"
   description: 有愧将佛法交付给摩竭陀国的圣者黑色后趣入涅槃。
 
-- event_id: EV_039
+- event_id: EV_040
   type: 传法
   title: 黑色将佛法交付善见
   participants:
@@ -984,7 +1003,7 @@
 
 # ==================== 日中罗汉弘法克什米尔 (lines 498-519) ====================
 
-- event_id: EV_040
+- event_id: EV_041
   type: 弘法
   title: 十六大罗汉在四大部洲三十三天等护持佛法
   participants:
@@ -999,7 +1018,7 @@
   source_quote: "十六大罗汉在四大部洲、三十三天等各境，与五百阿罗汉等一起护持佛法如意宝"
   description: 十六大罗汉在四大部洲及三十三天等处与五百阿罗汉一起护持佛法。
 
-- event_id: EV_041
+- event_id: EV_042
   type: 降伏非人
   title: 日中罗汉以跏趺镇压克什米尔龙类
   participants:
@@ -1017,7 +1036,7 @@
   source_quote: "在有湖泊的九个山谷汇合处，以一跏趺进行镇压，结果惊扰了龙类。龙类使大地震动，并降下瓢泼大雨，可是日中罗汉连法衣边也没有动摇"
   description: 日中罗汉至克什米尔九山谷汇合处以跏趺镇压龙类，龙类降雨震地但罗汉法衣不动，将剑刃雨变为鲜花。
 
-- event_id: EV_042
+- event_id: EV_043
   type: 弘法
   title: 日中罗汉在克什米尔建立佛法
   participants:
@@ -1034,27 +1053,7 @@
 
 # ==================== 护持佛法及大乘兴盛 (lines 520-576) ====================
 
-# ==================== 引文论证 — 《大毗婆沙论》为论典开宗 ====================
-
-- event_id: EV_042b
-  type: 引文论证
-  title: 引声闻经部观点以《大毗婆沙论》为论典开宗之作
-  participants:
-    - entity: 《大毗婆沙论》
-      role: 引文来源
-    - entity: 五百阿罗汉
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: null
-  argument: 按声闻经部观点，论典的开宗祖师是造《大毗婆沙论》的诸位阿罗汉
-  source_quote: "关于论典的开宗祖师，按照声闻经部的观点，是造《大毗婆沙论》的诸位阿罗汉"
-
-- event_id: EV_043
+- event_id: EV_044
   type: 传法
   title: 文殊菩萨以比丘相对护月国王宣讲大乘法
   participants:
@@ -1074,7 +1073,7 @@
   source_quote: "圣者文殊菩萨以比丘相来到他的王宫，对护月国王相应宣讲大乘法，并且留下了一本经函。"
   description: 文殊菩萨以比丘相至邬哲波夏对护月国王宣讲大乘法并留下经函，此为佛灭后大乘出现在人间的开端。
 
-- event_id: EV_044
+- event_id: EV_045
   type: 传法
   title: 佛陀将续部交传邬金国王恩札布德
   participants:
@@ -1091,7 +1090,7 @@
   source_quote: "也有说佛陀将所有续部交传给邬金国王恩札布德"
   description: 一种说法认为佛陀将所有续部交传给邬金国王恩札布德。
 
-- event_id: EV_044b
+- event_id: EV_045b
   type: 传法
   title: 金刚手菩萨将续部交传恩札布德
   participants:
@@ -1108,7 +1107,7 @@
   source_quote: "也有说是金刚手菩萨交付的。"
   description: 另一种说法认为金刚手菩萨将续部交传给恩札布德。
 
-- event_id: EV_045
+- event_id: EV_046
   type: 弘法
   title: 恩札布德在邬金宣讲续部使境内众生获得成就
   participants:
@@ -1123,7 +1122,7 @@
   source_quote: "国王的确是将所有续部造成经函，并且为众生宣讲，因此在他的境内包括细微含生在内都获得了成就，并变成虹身。"
   description: 恩札布德将续部造成经函为众生宣讲，境内众生均获成就变成虹身。
 
-- event_id: EV_046
+- event_id: EV_047
   type: 传法
   title: 密主金刚手为邬金龙类宣讲续部
   participants:
@@ -1138,7 +1137,7 @@
   source_quote: "密主为这些龙类，宣讲续部并且使它们相续得以成熟"
   description: 恩札布德后邬金变为汪洋充满龙类，密主金刚手为龙类宣讲续部使之成熟。
 
-- event_id: EV_047
+- event_id: EV_048
   type: 伏藏开取
   title: 瓦色嘎巴从黑日嘎殿堂取出《密集续》
   participants:
@@ -1155,7 +1154,7 @@
   source_quote: "国王瓦色嘎巴从中取出《密集续》"
   description: 国王瓦色嘎巴从黑日嘎殿堂仓库中取出《密集续》。
 
-- event_id: EV_048
+- event_id: EV_049
   type: 伏藏开取
   title: 龙树菩萨从黑日嘎殿堂取出《喜金刚》
   participants:
@@ -1172,7 +1171,7 @@
   source_quote: "龙树菩萨取出《喜金刚》"
   description: 龙树菩萨从黑日嘎殿堂取出《喜金刚》。
 
-- event_id: EV_049
+- event_id: EV_050
   type: 伏藏开取
   title: 革革热巴从黑日嘎殿堂取出《玛哈玛雅》《大威德续》等
   participants:
@@ -1191,7 +1190,7 @@
   source_quote: "革革热巴取出《玛哈玛雅》、《大威德续》等"
   description: 革革热巴从黑日嘎殿堂取出《玛哈玛雅》和《大威德续》等续部。
 
-- event_id: EV_050
+- event_id: EV_051
   type: 伏藏开取
   title: 则乐巴从香巴拉取来《时轮金刚》
   participants:
