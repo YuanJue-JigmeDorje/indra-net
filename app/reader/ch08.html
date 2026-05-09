@@ -93,42 +93,46 @@ article h1 {
 /* ---- entity spans ---- */
 .entity {
   cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: background .15s;
+  padding: 1px 3px;
+  border-radius: 3px;
+  border-bottom: 2px solid;
+  transition: background .15s, color .15s;
 }
-.entity:hover {
-  border-radius: 2px;
-}
-/* type colours -- underline */
-.entity-人物   { border-bottom-color: #7eb8da; }
-.entity-人物:hover { background: rgba(126,184,218,0.15); }
-
-.entity-圣众   { border-bottom-color: #c9a96e; }
-.entity-圣众:hover { background: rgba(201,169,110,0.15); }
-
-.entity-非人   { border-bottom-color: #b05a5a; }
-.entity-非人:hover { background: rgba(176,90,90,0.15); }
-
-.entity-寺院   { border-bottom-color: #6ba386; }
-.entity-寺院:hover { background: rgba(107,163,134,0.15); }
-
-.entity-地名   { border-bottom-color: #8895a7; }
-.entity-地名:hover { background: rgba(136,149,167,0.15); }
-
-.entity-经典   { border-bottom-color: #9a85a8; }
-.entity-经典:hover { background: rgba(154,133,168,0.15); }
-
-.entity-教法   { border-bottom-color: #c4956a; }
-.entity-教法:hover { background: rgba(196,149,106,0.15); }
-
-.entity-教派   { border-bottom-color: #a09080; }
-.entity-教派:hover { background: rgba(160,144,128,0.15); }
-
-.entity-仪轨   { border-bottom-color: #9a9080; }
-.entity-仪轨:hover { background: rgba(154,144,128,0.15); }
-
-.entity-法器圣物 { border-bottom-color: #8a8a78; }
-.entity-法器圣物:hover { background: rgba(138,138,120,0.15); }
+/* type colours: text + bg tint + underline */
+.entity-人物   { color: #9ccbee; background: rgba(126,184,218,0.12); border-bottom-color: rgba(126,184,218,0.4); }
+.entity-人物:hover { background: rgba(126,184,218,0.3); }
+.entity-圣众   { color: #dfc07a; background: rgba(201,169,110,0.12); border-bottom-color: rgba(201,169,110,0.4); }
+.entity-圣众:hover { background: rgba(201,169,110,0.3); }
+.entity-非人   { color: #d08080; background: rgba(176,90,90,0.12); border-bottom-color: rgba(176,90,90,0.4); }
+.entity-非人:hover { background: rgba(176,90,90,0.3); }
+.entity-寺院   { color: #85c4a5; background: rgba(107,163,134,0.12); border-bottom-color: rgba(107,163,134,0.4); }
+.entity-寺院:hover { background: rgba(107,163,134,0.3); }
+.entity-地名   { color: #a0b0c0; background: rgba(136,149,167,0.10); border-bottom-color: rgba(136,149,167,0.3); }
+.entity-地名:hover { background: rgba(136,149,167,0.25); }
+.entity-经典   { color: #b8a0c8; background: rgba(154,133,168,0.12); border-bottom-color: rgba(154,133,168,0.4); }
+.entity-经典:hover { background: rgba(154,133,168,0.3); }
+.entity-教法   { color: #d4a87a; background: rgba(196,149,106,0.12); border-bottom-color: rgba(196,149,106,0.4); }
+.entity-教法:hover { background: rgba(196,149,106,0.3); }
+.entity-教派   { color: #c0a890; background: rgba(160,144,128,0.12); border-bottom-color: rgba(160,144,128,0.3); }
+.entity-教派:hover { background: rgba(160,144,128,0.25); }
+.entity-仪轨   { color: #b0a890; background: rgba(154,144,128,0.12); border-bottom-color: rgba(154,144,128,0.3); }
+.entity-仪轨:hover { background: rgba(154,144,128,0.25); }
+.entity-法器圣物 { color: #a8a888; background: rgba(138,138,120,0.12); border-bottom-color: rgba(138,138,120,0.3); }
+.entity-法器圣物:hover { background: rgba(138,138,120,0.25); }
+.entity-集合   { color: #c0c098; background: rgba(180,180,138,0.10); border-bottom-color: rgba(180,180,138,0.3); }
+.entity-集合:hover { background: rgba(180,180,138,0.25); }
+/* Light theme entity overrides */
+body.light .entity-人物   { color: #2a6a9a; background: rgba(126,184,218,0.15); }
+body.light .entity-圣众   { color: #8a6510; background: rgba(201,169,110,0.15); }
+body.light .entity-非人   { color: #903030; background: rgba(176,90,90,0.12); }
+body.light .entity-寺院   { color: #306850; background: rgba(107,163,134,0.15); }
+body.light .entity-地名   { color: #506070; background: rgba(136,149,167,0.12); }
+body.light .entity-经典   { color: #6a4a7a; background: rgba(154,133,168,0.15); }
+body.light .entity-教法   { color: #8a5a2a; background: rgba(196,149,106,0.15); }
+body.light .entity-教派   { color: #6a5a48; background: rgba(160,144,128,0.12); }
+body.light .entity-仪轨   { color: #6a5a48; background: rgba(154,144,128,0.12); }
+body.light .entity-法器圣物 { color: #5a5a40; background: rgba(138,138,120,0.12); }
+body.light .entity-集合   { color: #5a5a30; background: rgba(180,180,138,0.12); }
 
 .entity-集合   { border-bottom-color: #90887a; }
 .entity-集合:hover { background: rgba(144,136,122,0.15); }
