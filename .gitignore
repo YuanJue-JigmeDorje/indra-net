@@ -33,3 +33,7 @@ build/
 # 环境变量
 .env
 .env.local
+
+# Dictionary raw files (too large)
+resources/dictionaries/raw/
+resources/dictionaries/*_headwords.txt
