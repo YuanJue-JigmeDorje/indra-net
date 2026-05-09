@@ -209,6 +209,7 @@
     background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
     color: #999; transition: background 0.2s, color 0.2s;
   }
+  #nav-bar input { position: relative; z-index: 31; }
   #nav-bar a:hover, #nav-bar span:hover { background: rgba(255,255,255,0.15); color: #ccc; }
   #nav-bar a.active { background: rgba(212,175,55,0.2); border-color: rgba(212,175,55,0.4); color: #d4af37; }
 
@@ -12782,6 +12783,11 @@ function clickEntity(name) {
 var searchInput = document.getElementById("search-input");
 var searchResults = document.getElementById("search-results");
 var searchTimeout = null;
+
+// Prevent canvas drag from stealing input focus
+searchInput.addEventListener("mousedown", function(e) { e.stopPropagation(); });
+searchInput.addEventListener("touchstart", function(e) { e.stopPropagation(); });
+searchResults.addEventListener("mousedown", function(e) { e.stopPropagation(); });
 
 searchInput.addEventListener("input", function() {
   clearTimeout(searchTimeout);
