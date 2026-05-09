@@ -148,6 +148,9 @@ chapter_files = {
     'ch03': os.path.join(ROOT, 'source/dudjom/chapter_md/03_藏传佛法.md'),
     'ch04': os.path.join(ROOT, 'source/dudjom/chapter_md/04_内密三续.md'),
     'ch05': os.path.join(ROOT, 'source/dudjom/chapter_md/05_远传经幻心.md'),
+    'ch06': os.path.join(ROOT, 'source/dudjom/chapter_md/06_近传伏藏史.md'),
+    'ch07': os.path.join(ROOT, 'source/dudjom/chapter_md/07_遣除邪见.md'),
+    'ch08': os.path.join(ROOT, 'source/dudjom/chapter_md/08_佛教年表与自传.md'),
 }
 for ch, fpath in chapter_files.items():
     if os.path.exists(fpath):
@@ -286,7 +289,7 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
 
         # Source: book > chapter
         fname_base = os.path.basename(fpath).replace('.yaml', '')
-        chapter_map = {'ch01': '第一品 佛教总况', 'ch02': '第二品 金刚密乘', 'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心'}
+        chapter_map = {'ch01': '第一品 佛教总况', 'ch02': '第二品 金刚密乘', 'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心', 'ch06': '第六品 近传伏藏史', 'ch07': '第七品 遣除邪见', 'ch08': '第八品 佛教年表与自传'}
         chapter = '《藏密佛教史》> ' + chapter_map.get(fname_base, fname_base)
 
         # Expand short quotes with surrounding context from source text
@@ -379,7 +382,7 @@ with open(out_path, 'w') as f:
 # 4. 从 events yaml 提取事件，按参与者索引
 # ============================================================
 all_events = []  # list of {event_id, type, title, participants, location, time_info, layers, source_quote, chapter}
-event_chapter_map = {'ch01': '第一品 佛教总况', 'ch02': '第二品 金刚密乘', 'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心'}
+event_chapter_map = {'ch01': '第一品 佛教总况', 'ch02': '第二品 金刚密乘', 'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心', 'ch06': '第六品 近传伏藏史', 'ch07': '第七品 遣除邪见', 'ch08': '第八品 佛教年表与自传'}
 
 for fpath in sorted(glob.glob(os.path.join(KG, "events", "*.yaml")) + glob.glob(os.path.join(KG, "poc", "*.yaml"))):
     fname_base = os.path.basename(fpath).replace('.yaml', '')
