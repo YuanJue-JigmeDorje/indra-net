@@ -409,7 +409,10 @@ footer {
         if (rels.length > 20) relHTML += '<div style="color:var(--fg-muted);font-size:0.8rem">...及更多 ' + (rels.length-20) + ' 条</div>';
       }
     }
+    // If no relations AND no events, show hint
+    var hasData = false;
     cardRels.innerHTML = relHTML;
+    if (relHTML) hasData = true;
 
     // -- Events --
     var evtHTML = '';
@@ -429,6 +432,12 @@ footer {
       if (indices.length > 15) evtHTML += '<div style="color:var(--fg-muted);font-size:0.8rem">...及更多 ' + (indices.length-15) + ' 条</div>';
     }
     cardEvts.innerHTML = evtHTML;
+    if (evtHTML) hasData = true;
+
+    // No data hint
+    if (!hasData) {
+      cardRels.innerHTML = '<div style="color:var(--fg-muted);font-size:0.8rem;padding:8px 0;">此实体来自术语词表自动匹配，尚未经 Agent 提取关系和事件。<br>完整管线重跑后将补充。</div>';
+    }
 
     card.style.display = 'block';
   }
