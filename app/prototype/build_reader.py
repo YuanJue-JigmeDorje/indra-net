@@ -8,6 +8,7 @@ merges PDF hard line-breaks, annotates known entities with clickable
 """
 
 import json
+import yaml
 import os
 import re
 import html as html_mod
@@ -98,6 +99,24 @@ def auto_detect_texts_from_source(chapter_files: list[str], existing_entities: l
             known_names.add(full)
 
     return new_entities
+
+
+def load_buddhist_vocab(vocab_path: str) -> list:
+    """Load Buddhist vocabulary gazetteer as supplementary entities."""
+    if not os.path.exists(vocab_path):
+        return []
+    with open(vocab_path, 'r') as f:
+        data = yaml.safe_load(f)
+    if not isinstance(data, dict):
+        return []
+    entities = []
+    for etype, names in data.items():
+        if not isinstance(names, list):
+            continue
+        for name in names:
+            if isinstance(name, str) and len(name) >= 2:
+                entities.append({"id": name, "type": etype, "aliases": []})
+    return entities
 
 
 def build_name_index(entities):
@@ -925,6 +944,18 @@ def main():
     print("Loading entities from graph_data.js ...")
     entities = load_entities()
     print(f"  {len(entities)} entities loaded from graph_data.js")
+
+    # Load Buddhist vocabulary gazetteer
+    vocab_path = str(ROOT / "doc" / "buddhist-vocab.yaml")
+    vocab_entities = load_buddhist_vocab(vocab_path)
+    # Only add vocab entries not already in entity list
+    existing_names = {e["id"] for e in entities}
+    for a in entities:
+        for al in a.get("aliases", []):
+            existing_names.add(al)
+    new_vocab = [v for v in vocab_entities if v["id"] not in existing_names]
+    entities.extend(new_vocab)
+    print(f"  +{len(new_vocab)} from buddhist-vocab.yaml → {len(entities)} entities")
 
     # Auto-detect 《》 book titles from source texts
     chapter_paths = [str(CHAPTER_DIR / fn) for _, fn, _ in CHAPTERS]
