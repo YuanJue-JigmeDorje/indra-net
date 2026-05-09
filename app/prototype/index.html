@@ -12410,7 +12410,8 @@ let currentTransform = d3.zoomIdentity;
 let hoveredNode = null;
 let selectedNode = null;
 let draggedNode = null;
-let filteredType = null; // for legend filtering
+let filteredType = null; // for entity type legend filtering
+let filteredRelType = null; // for relation type legend filtering
 
 // Build adjacency index for fast neighbor lookup
 const adjacency = new Map();
@@ -12476,6 +12477,15 @@ function draw() {
       alpha = 0.06;
       lw = 0.6;
     }
+    if (filteredRelType) {
+      if (l.type === filteredRelType) {
+        alpha = 0.7;
+        lw = 2;
+      } else {
+        alpha = 0.03;
+        lw = 0.4;
+      }
+    }
 
     ctx.beginPath();
     ctx.moveTo(sx, sy);
@@ -12503,6 +12513,11 @@ function draw() {
     }
     if (filteredType) {
       nodeAlpha = (n.type === filteredType) ? 1 : 0.08;
+    }
+    if (filteredRelType) {
+      // Highlight nodes that participate in this relation type
+      const inRel = links.some(l => l.type === filteredRelType && (l.source.id === n.id || l.target.id === n.id));
+      nodeAlpha = inRel ? 1 : 0.08;
     }
 
     ctx.globalAlpha = nodeAlpha;
@@ -12985,7 +13000,7 @@ const relTypeCounts = {};
 links.forEach(l => { relTypeCounts[l.type] = (relTypeCounts[l.type] || 0) + 1; });
 Object.keys(relTypeCounts).sort((a,b) => relTypeCounts[b] - relTypeCounts[a]).forEach(rt => {
   const label = relTypeLabels[rt] || rt;
-  legendHTML += `<div class="legend-line">
+  legendHTML += `<div class="legend-line" data-reltype="${rt}" style="cursor:pointer">
     <div class="legend-line-sample" style="background:${getRelColor(rt)}"></div>
     <span>${label} (${relTypeCounts[rt]})</span>
   </div>`;
@@ -13001,6 +13016,8 @@ legendEl.querySelectorAll('.legend-item[data-type]').forEach(el => {
     if (allActive) {
       // Filter to this type
       filteredType = t;
+      filteredRelType = null;
+      legendEl.querySelectorAll('.legend-line[data-reltype]').forEach(e => { e.style.opacity = ''; });
       selectedNode = null;
       legendEl.querySelectorAll('.legend-item[data-type]').forEach(e => e.classList.add('dimmed'));
       el.classList.remove('dimmed');
@@ -13013,6 +13030,25 @@ legendEl.querySelectorAll('.legend-item[data-type]').forEach(el => {
         e.style.opacity = '';
       });
     }
+    draw();
+  });
+});
+
+// Relation type legend click to filter
+legendEl.querySelectorAll('.legend-line[data-reltype]').forEach(el => {
+  el.addEventListener('click', () => {
+    const rt = el.dataset.reltype;
+    if (filteredRelType === rt) {
+      // Reset
+      filteredRelType = null;
+      legendEl.querySelectorAll('.legend-line[data-reltype]').forEach(e => { e.style.opacity = ''; });
+    } else {
+      filteredRelType = rt;
+      filteredType = null;
+      legendEl.querySelectorAll('.legend-item[data-type]').forEach(e => { e.classList.remove('dimmed'); e.style.opacity = ''; });
+      legendEl.querySelectorAll('.legend-line[data-reltype]').forEach(e => { e.style.opacity = e.dataset.reltype === rt ? '1' : '0.25'; });
+    }
+    selectedNode = null;
     draw();
   });
 });
