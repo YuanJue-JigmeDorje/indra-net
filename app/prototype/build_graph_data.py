@@ -19,8 +19,27 @@ def clean_name(name):
 # ============================================================
 id_to_entity = {}  # key = "ch04-part1:E_001" or "E_001" etc.
 
-entity_files = sorted(glob.glob(os.path.join(KG, "entities", "*.yaml")) +
-                       glob.glob(os.path.join(KG, "poc", "*.yaml")))
+def filter_chapter_files(file_list):
+    """If ch01.yaml exists, skip ch01-seg*.yaml and ch01-part*.yaml (avoid duplication)."""
+    import re
+    # Find which chapters have a merged file (e.g., ch01.yaml without -seg/-part)
+    merged = set()
+    for f in file_list:
+        base = os.path.basename(f).replace('.yaml', '')
+        if re.match(r'^ch\d{2}$', base):
+            merged.add(base)  # e.g., 'ch01'
+    # Filter out segment/part files for chapters that have a merged file
+    filtered = []
+    for f in file_list:
+        base = os.path.basename(f).replace('.yaml', '')
+        m = re.match(r'^(ch\d{2})[-_](seg|part)', base)
+        if m and m.group(1) in merged:
+            continue  # skip segment file, merged version exists
+        filtered.append(f)
+    return filtered
+
+entity_files = filter_chapter_files(sorted(glob.glob(os.path.join(KG, "entities", "*.yaml")) +
+                       glob.glob(os.path.join(KG, "poc", "*.yaml"))))
 
 for fpath in entity_files:
     fname = os.path.basename(fpath).replace('.yaml', '')
@@ -232,7 +251,7 @@ links = []
 node_set = {}  # name → type
 unresolved = []
 
-for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
+for fpath in filter_chapter_files(sorted(glob.glob(os.path.join(KG, "relations", "*.yaml")))):
     with open(fpath, 'r') as f:
         data = yaml.safe_load(f)
 
@@ -432,7 +451,7 @@ with open(out_path, 'w') as f:
 all_events = []  # list of {event_id, type, title, participants, location, time_info, layers, source_quote, chapter}
 event_chapter_map = {'ch01': '第一品 佛教总况', 'ch02': '第二品 金刚密乘', 'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心', 'ch06': '第六品 近传伏藏史', 'ch07': '第七品 遣除邪见', 'ch08': '第八品 佛教年表与自传'}
 
-for fpath in sorted(glob.glob(os.path.join(KG, "events", "*.yaml")) + glob.glob(os.path.join(KG, "poc", "*.yaml"))):
+for fpath in filter_chapter_files(sorted(glob.glob(os.path.join(KG, "events", "*.yaml")) + glob.glob(os.path.join(KG, "poc", "*.yaml")))):
     fname_base = os.path.basename(fpath).replace('.yaml', '')
     # Determine chapter
     ch_key = fname_base.split('-')[0]  # ch01-part1 → ch01
