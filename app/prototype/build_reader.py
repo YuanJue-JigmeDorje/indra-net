@@ -144,8 +144,9 @@ def preprocess_text(raw: str) -> list[str]:
     SENT_END = set('。！？；」）】…"\'')
     raw = raw.replace("\r\n", "\n").replace("\r", "\n")
 
-    # Step 0: clean footnote markers (e.g., "俱胝 10 四洲" → "俱胝四洲")
-    raw = re.sub(r'(?<=[一-鿿）」、。]) ?\d{1,3} ?(?=[一-鿿（「，。])', '', raw)
+    # Step 0: clean footnote markers (e.g., "俱胝 10\n四洲" → "俱胝四洲")
+    # Footnote numbers may be followed by \n (PDF line break), so include \n in the pattern
+    raw = re.sub(r'(?<=[一-鿿）」、。]) ?\d{1,3}[\s]*(?=[一-鿿（「，。])', '', raw)
 
     # Step 1: merge all lines, tracking where blank lines were
     lines = raw.split("\n")
