@@ -115,11 +115,17 @@ def build_name_index(entities):
                 continue
             if name not in index:
                 index[name] = {"id": ent["id"], "type": ent["type"]}
-            # For 经典 with brackets in the id, also index the bare name
+            # For 经典: index both 《name》 and bare name forms
             bare = name.strip("《》")
             if bare != name and len(bare) >= MIN_NAME_LEN:
+                # Has brackets → also index without
                 if bare not in index:
                     index[bare] = {"id": ent["id"], "type": ent["type"]}
+            elif ent["type"] == "经典" and not name.startswith("《") and len(name) >= MIN_NAME_LEN:
+                # No brackets → also index with brackets
+                bracketed = "《" + name + "》"
+                if bracketed not in index:
+                    index[bracketed] = {"id": ent["id"], "type": ent["type"]}
     # sort longest first so greedy matching works
     sorted_names = sorted(index.keys(), key=lambda x: -len(x))
     return index, sorted_names
@@ -551,8 +557,20 @@ def build_legend():
 def build_chapter_html(ch_num: str, title: str, paragraphs: list[str],
                        name_index: dict, sorted_names: list[str]) -> str:
     idx = int(ch_num)
-    # First paragraph is the title line from the md -- skip it in body
-    body_paragraphs = paragraphs[1:] if paragraphs else []
+    # The title (e.g. "第一品 佛教总况") may be merged into the first paragraph.
+    # Split it out: if first paragraph starts with "第X品", extract just that prefix as title.
+    body_paragraphs = list(paragraphs)
+    if body_paragraphs:
+        first = body_paragraphs[0]
+        # Try to split title from content
+        m = re.match(r'^(第[一二三四五六七八九十]+品\s*\S+)', first)
+        if m:
+            title_text = m.group(1)
+            rest = first[len(title_text):].strip()
+            if rest:
+                body_paragraphs[0] = rest  # keep the rest as first body paragraph
+            else:
+                body_paragraphs = body_paragraphs[1:]  # title was the whole paragraph
 
     # Count entities for stats
     entity_count = 0
