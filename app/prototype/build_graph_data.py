@@ -339,6 +339,29 @@ def get_base_type(full_type):
 # Manual type overrides for known entities not in yaml files
 manual_types = {
     '噶玛噶举派': '教派',
+    # 教法
+    '灌顶': '仪轨', '伏藏': '教法', '伏藏必要': '教法', '伏藏本体': '教法',
+    '宁玛伏藏': '教法', '帕单巴息法窍诀': '教法', '达波噶举六法大手印': '教法',
+    '前译派六殊胜': '教法', '莲师出世': '教法',
+    '上师、大圆满、大悲观音三种伏藏': '教法',
+    # 经典
+    '《三根本修法》': '经典', '《三根本修类》': '经典',
+    '《上师集密意续论》': '经典', '《大圆满集普贤密意续》': '经典',
+    '《教集后持明总集之法类七品祈祷修法》': '经典', '《普贤通彻密意》': '经典',
+    '《长寿修法赐无死吉祥》': '经典',
+    # 人物
+    '依钦仁波切': '人物', '单真如巴': '人物', '多吉札巴': '人物', '扬攀塔益': '人物',
+}
+
+# Non-entity strings to filter out (debate topics from ch07, leaked descriptions)
+non_entities = {
+    "['大圆满', '大手印', '道果']",
+    "['布敦大师舍置宁玛续之说', '布敦大师实修宁玛法之事']",
+    '古拉则否定宁玛续之说', '大圆满是和尚宗之说', '大手印是刚波巴伪造之说',
+    '宁玛与苯波意趣相同之说', '宁玛续在印度不存在之说', '宁玛续非正法之说',
+    '后译续部优于前译之说', '佛法住世五千年说', '舍法之过', '苯波辨别',
+    '龙钦巴弘法至海边', '藏地鬼神', '嘉滚罗珠塔益授记',
+    '布敦大师舍置宁玛续之说', '布敦大师实修宁玛法之事',
 }
 
 # Filter out bad nodes: raw IDs, None, leaked descriptions
@@ -353,6 +376,8 @@ def is_valid_node(name):
         if len(name) > 8:  # long strings with these keywords are descriptions
             return False
     if name == '授记':  # layer name, not entity
+        return False
+    if name in non_entities:
         return False
     return True
 
