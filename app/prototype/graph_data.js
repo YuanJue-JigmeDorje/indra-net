@@ -1,5 +1,5 @@
 // Auto-generated: 786 nodes, 928 links, 1434 events
-// Unknown type: 2
+// Unknown type: 0
 
 const nodes = [
   {
@@ -3526,8 +3526,8 @@ const nodes = [
   },
   {
     "id": "经藏",
-    "type": "unknown",
-    "sub_type": "",
+    "type": "经典",
+    "sub_type": "经典",
     "aliases": []
   },
   {
@@ -3958,8 +3958,8 @@ const nodes = [
   },
   {
     "id": "论藏",
-    "type": "unknown",
-    "sub_type": "",
+    "type": "经典",
+    "sub_type": "经典",
     "aliases": []
   },
   {

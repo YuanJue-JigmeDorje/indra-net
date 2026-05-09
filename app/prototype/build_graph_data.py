@@ -379,6 +379,8 @@ def get_base_type(full_type):
 # Manual type overrides for known entities not in yaml files
 manual_types = {
     '噶玛噶举派': '教派',
+    '经藏': '经典',
+    '论藏': '经典',
     # 教法
     '灌顶': '仪轨', '伏藏': '教法', '伏藏必要': '教法', '伏藏本体': '教法',
     '宁玛伏藏': '教法', '帕单巴息法窍诀': '教法', '达波噶举六法大手印': '教法',
