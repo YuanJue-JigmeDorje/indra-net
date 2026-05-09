@@ -36,7 +36,7 @@
     margin-top: 4px;
     letter-spacing: 2px;
   }
-  svg { display: block; }
+  canvas { display: block; }
 
   /* Legend */
   #legend {
@@ -198,8 +198,6 @@
     margin-top: 2px;
   }
 
-  /* Glow filter defs are in SVG */
-
   /* Nav bar */
   #nav-bar {
     position: absolute; top: 0; right: 16px; z-index: 30;
@@ -287,7 +285,7 @@
 <div id="nav-bar">
   <a href="index.html" id="nav-graph" class="active">星图</a>
   <a href="lineage.html" id="nav-lineage">传承谱系</a>
-  <span id="theme-toggle" onclick="document.body.classList.toggle('light'); this.textContent = document.body.classList.contains('light') ? '深色' : '浅色'">浅色</span>
+  <span id="theme-toggle" onclick="document.body.classList.toggle('light'); this.textContent = document.body.classList.contains('light') ? '深色' : '浅色'; if(typeof draw==='function') draw();">浅色</span>
 </div>
 
 <div id="info-panel">
@@ -12352,52 +12350,48 @@ links.forEach(l => {
 // D3 Visualization
 // ============================================================
 
-const width = window.innerWidth;
-const height = window.innerHeight;
+let width = window.innerWidth;
+let height = window.innerHeight;
 
-const svg = d3.select("body").append("svg")
-  .attr("width", width)
-  .attr("height", height);
+// ============================================================
+// Canvas setup (replaces SVG for performance)
+// ============================================================
+const dpr = window.devicePixelRatio || 1;
+const canvas = d3.select("body").append("canvas")
+  .attr("width", width * dpr)
+  .attr("height", height * dpr)
+  .style("width", width + "px")
+  .style("height", height + "px");
+const ctx = canvas.node().getContext("2d");
+ctx.scale(dpr, dpr);
 
-// Defs: glow filter
-const defs = svg.append("defs");
+// Current zoom transform
+let currentTransform = d3.zoomIdentity;
 
-const glowFilter = defs.append("filter")
-  .attr("id", "glow")
-  .attr("x", "-50%").attr("y", "-50%")
-  .attr("width", "200%").attr("height", "200%");
-glowFilter.append("feGaussianBlur")
-  .attr("stdDeviation", "2")
-  .attr("result", "coloredBlur");
-const feMerge = glowFilter.append("feMerge");
-feMerge.append("feMergeNode").attr("in", "coloredBlur");
-feMerge.append("feMergeNode").attr("in", "SourceGraphic");
+// Interaction state
+let hoveredNode = null;
+let selectedNode = null;
+let draggedNode = null;
+let filteredType = null; // for legend filtering
 
-// Arrow markers for each relation type
-Object.entries(relColors).forEach(([type, color]) => {
-  defs.append("marker")
-    .attr("id", "arrow-" + type)
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 20)
-    .attr("refY", 0)
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
-    .attr("orient", "auto")
-    .append("path")
-    .attr("d", "M0,-4L10,0L0,4")
-    .attr("fill", color)
-    .attr("opacity", 0.6);
+// Build adjacency index for fast neighbor lookup
+const adjacency = new Map();
+nodes.forEach(n => adjacency.set(n.id, new Set()));
+links.forEach(l => {
+  const sid = typeof l.source === 'object' ? l.source.id : l.source;
+  const tid = typeof l.target === 'object' ? l.target.id : l.target;
+  if (adjacency.has(sid)) adjacency.get(sid).add(tid);
+  if (adjacency.has(tid)) adjacency.get(tid).add(sid);
 });
 
-const g = svg.append("g");
+function isConnected(nodeId, centerId) {
+  return adjacency.get(centerId) && adjacency.get(centerId).has(nodeId);
+}
 
-// Zoom
-const zoom = d3.zoom()
-  .scaleExtent([0.15, 5])
-  .on("zoom", (event) => {
-    g.attr("transform", event.transform);
-  });
-svg.call(zoom);
+function nodeRadius(d) {
+  const deg = degreeMap[d.id] || 1;
+  return Math.min(4 + Math.sqrt(deg) * 3, 20);
+}
 
 // Simulation
 const simulation = d3.forceSimulation(nodes)
@@ -12408,165 +12402,290 @@ const simulation = d3.forceSimulation(nodes)
   .force("x", d3.forceX(width / 2).strength(0.03))
   .force("y", d3.forceY(height / 2).strength(0.03));
 
-function nodeRadius(d) {
-  const deg = degreeMap[d.id] || 1;
-  return Math.min(4 + Math.sqrt(deg) * 3, 20);
+// ============================================================
+// Canvas draw function
+// ============================================================
+function draw() {
+  ctx.save();
+  ctx.clearRect(0, 0, width, height);
+
+  // Background fill (respects light/dark theme)
+  const isLight = document.body.classList.contains('light');
+  ctx.fillStyle = isLight ? '#f5f3ee' : '#1a1a2e';
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.translate(currentTransform.x, currentTransform.y);
+  ctx.scale(currentTransform.k, currentTransform.k);
+
+  const zoomLevel = currentTransform.k;
+  const activeNode = selectedNode || hoveredNode; // node being highlighted
+
+  // --- Draw links ---
+  ctx.lineCap = "round";
+  links.forEach(l => {
+    const sx = l.source.x, sy = l.source.y;
+    const tx = l.target.x, ty = l.target.y;
+    if (sx == null || tx == null) return;
+
+    let alpha = 0.18;
+    let lw = 1.2;
+    if (activeNode) {
+      const connected = (l.source.id === activeNode.id || l.target.id === activeNode.id);
+      alpha = connected ? 0.9 : 0.06;
+      lw = connected ? 2.5 : 0.6;
+    }
+    if (filteredType) {
+      alpha = 0.06;
+      lw = 0.6;
+    }
+
+    ctx.beginPath();
+    ctx.moveTo(sx, sy);
+    ctx.lineTo(tx, ty);
+    ctx.strokeStyle = `rgba(106,174,214,${alpha})`;
+    ctx.lineWidth = lw;
+    ctx.stroke();
+  });
+
+  // --- Draw nodes ---
+  nodes.forEach(n => {
+    if (n.x == null) return;
+    const r = nodeRadius(n);
+    const color = typeColors[n.type] || typeColors["unknown"];
+
+    let nodeAlpha = 1;
+    if (activeNode) {
+      if (n.id === activeNode.id) {
+        nodeAlpha = 1;
+      } else if (isConnected(n.id, activeNode.id)) {
+        nodeAlpha = 1;
+      } else {
+        nodeAlpha = 0.12;
+      }
+    }
+    if (filteredType) {
+      nodeAlpha = (n.type === filteredType) ? 1 : 0.08;
+    }
+
+    ctx.globalAlpha = nodeAlpha;
+
+    // Node fill
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = color;
+    ctx.fill();
+
+    // Node stroke
+    ctx.strokeStyle = color;
+    ctx.lineWidth = (activeNode && n.id === activeNode.id) ? 2.5 : 1;
+    ctx.globalAlpha = (activeNode && n.id === activeNode.id) ? nodeAlpha : nodeAlpha * 0.4;
+    ctx.stroke();
+
+    ctx.globalAlpha = 1;
+  });
+
+  // --- Draw labels ---
+  // Skip all labels when zoomed out too far
+  if (zoomLevel > 0.35) {
+    const labelColor = isLight ? '#333' : '#ddd';
+    ctx.textAlign = "center";
+    ctx.textBaseline = "bottom";
+
+    nodes.forEach(n => {
+      if (n.x == null) return;
+      const deg = degreeMap[n.id] || 0;
+      const r = nodeRadius(n);
+
+      let showLabel = false;
+      let fontSize = 0;
+      let labelAlpha = 0;
+
+      if (activeNode) {
+        if (n.id === activeNode.id) {
+          showLabel = true; fontSize = 13; labelAlpha = 1;
+        } else if (isConnected(n.id, activeNode.id)) {
+          showLabel = true; fontSize = 10; labelAlpha = 0.9;
+        }
+      } else if (filteredType) {
+        if (n.type === filteredType && deg >= 2) {
+          showLabel = true; fontSize = 10; labelAlpha = 0.9;
+        }
+      } else {
+        // Default: only show labels for degree >= 3
+        if (deg >= 8) { showLabel = true; fontSize = 12; labelAlpha = 0.85; }
+        else if (deg >= 3) { showLabel = true; fontSize = 10; labelAlpha = 0.85; }
+      }
+
+      // Also show label for hovered node (even if low degree)
+      if (hoveredNode && n.id === hoveredNode.id && !showLabel) {
+        showLabel = true; fontSize = 12; labelAlpha = 1;
+      }
+
+      if (showLabel && fontSize > 0) {
+        ctx.globalAlpha = labelAlpha;
+        ctx.font = `${fontSize}px "PingFang SC", "Microsoft YaHei", system-ui, sans-serif`;
+        ctx.fillStyle = labelColor;
+        ctx.fillText(n.id, n.x, n.y - r - 4);
+        ctx.globalAlpha = 1;
+      }
+    });
+  }
+
+  ctx.restore();
 }
 
-// Links
-const link = g.append("g")
-  .selectAll("line")
-  .data(links)
-  .join("line")
-  .attr("stroke", d => getRelColor(d.type))
-  .attr("stroke-opacity", 0.18)
-  .attr("stroke-width", 1.2)
-  .attr("marker-end", d => `url(#arrow-${d.type})`);
+// ============================================================
+// Simulation tick
+// ============================================================
+simulation.on("tick", draw);
 
-// Nodes
-const node = g.append("g")
-  .selectAll("circle")
-  .data(nodes)
-  .join("circle")
-  .attr("r", d => nodeRadius(d))
-  .attr("fill", d => typeColors[d.type] || typeColors["unknown"])
-  .attr("stroke", d => d3.color(typeColors[d.type] || typeColors["unknown"]).brighter(0.8))
-  .attr("stroke-width", 1)
-  .attr("stroke-opacity", 0.4)
-  .attr("filter", "url(#glow)")
-  .attr("cursor", "pointer")
-  .call(d3.drag()
-    .on("start", dragstarted)
-    .on("drag", dragged)
-    .on("end", dragended));
+// ============================================================
+// Hit test: convert mouse/pointer coords to simulation space
+// ============================================================
+function screenToSim(event) {
+  const rect = canvas.node().getBoundingClientRect();
+  const mx = (event.clientX != null ? event.clientX : event.x) - rect.left;
+  const my = (event.clientY != null ? event.clientY : event.y) - rect.top;
+  const x = (mx - currentTransform.x) / currentTransform.k;
+  const y = (my - currentTransform.y) / currentTransform.k;
+  return [x, y];
+}
 
-// Labels (only for high-degree nodes)
-const label = g.append("g")
-  .selectAll("text")
-  .data(nodes)
-  .join("text")
-  .text(d => d.id)
-  .attr("font-size", d => {
-    const deg = degreeMap[d.id] || 0;
-    if (deg >= 8) return "12px";
-    if (deg >= 4) return "10px";
-    return "0px";  // hide low-degree labels by default
-  })
-  .attr("fill", "#ddd")
-  .attr("text-anchor", "middle")
-  .attr("dy", d => -(nodeRadius(d) + 4))
-  .attr("pointer-events", "none")
-  .attr("opacity", d => {
-    const deg = degreeMap[d.id] || 0;
-    return deg >= 4 ? 0.85 : 0;
+function findNodeAt(sx, sy) {
+  let closest = null, minDist = Infinity;
+  for (let i = 0; i < nodes.length; i++) {
+    const n = nodes[i];
+    if (n.x == null) continue;
+    const dx = n.x - sx, dy = n.y - sy;
+    const d = dx * dx + dy * dy; // squared distance for speed
+    const r = nodeRadius(n) + 4; // small tolerance
+    if (d < r * r && d < minDist) {
+      minDist = d;
+      closest = n;
+    }
+  }
+  return closest;
+}
+
+// ============================================================
+// Zoom
+// ============================================================
+const zoom = d3.zoom()
+  .scaleExtent([0.15, 5])
+  .on("zoom", (event) => {
+    currentTransform = event.transform;
+    draw();
   });
 
-// Tooltip
+canvas.call(zoom);
+canvas.on("dblclick.zoom", null);
+
+// ============================================================
+// Drag (applied AFTER zoom so drag takes priority)
+// When subject() returns a node, d3.drag consumes the gesture;
+// when it returns null the event falls through to zoom (pan).
+// ============================================================
+function dragsubject(event) {
+  const [sx, sy] = screenToSim(event.sourceEvent);
+  const found = findNodeAt(sx, sy);
+  return found || undefined;
+}
+
+canvas.call(d3.drag()
+  .subject(dragsubject)
+  .on("start", function(event) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    draggedNode = event.subject;
+    event.subject.fx = event.subject.x;
+    event.subject.fy = event.subject.y;
+  })
+  .on("drag", function(event) {
+    // Convert drag coordinates from screen to simulation space
+    event.subject.fx = currentTransform.invertX(event.x);
+    event.subject.fy = currentTransform.invertY(event.y);
+  })
+  .on("end", function(event) {
+    if (!event.active) simulation.alphaTarget(0);
+    draggedNode = null;
+    event.subject.fx = null;
+    event.subject.fy = null;
+  })
+);
+
+// ============================================================
+// Mouse interaction: hover + tooltip + click
+// ============================================================
 const tooltip = d3.select("#tooltip");
 
-node.on("mouseover", function(event, d) {
-  const deg = degreeMap[d.id] || 0;
-  let html = `<div class="tt-name">${d.id}</div>`;
-  html += `<div class="tt-type">${d.type}${d.sub_type ? ' · ' + d.sub_type : ''}</div>`;
-  if (d.aliases && d.aliases.length > 0) {
-    html += `<div class="tt-aliases">别名: ${d.aliases.join(", ")}</div>`;
-  }
-  html += `<div class="tt-rel" style="margin-top:4px;color:#999">连接数: ${deg}</div>`;
-  tooltip.html(html)
-    .style("display", "block")
-    .style("left", (event.pageX + 14) + "px")
-    .style("top", (event.pageY - 10) + "px");
-
-  // Highlight connected
-  d3.select(this).attr("stroke-width", 2.5).attr("stroke-opacity", 1);
-  link.attr("stroke-opacity", l =>
-    (l.source.id === d.id || l.target.id === d.id) ? 0.9 : 0.08
-  ).attr("stroke-width", l =>
-    (l.source.id === d.id || l.target.id === d.id) ? 2.5 : 0.8
-  );
-  node.attr("opacity", n => {
-    if (n.id === d.id) return 1;
-    const connected = links.some(l =>
-      (l.source.id === d.id && l.target.id === n.id) ||
-      (l.target.id === d.id && l.source.id === n.id)
-    );
-    return connected ? 1 : 0.15;
-  });
-  label.attr("opacity", n => {
-    if (n.id === d.id) return 1;
-    const connected = links.some(l =>
-      (l.source.id === d.id && l.target.id === n.id) ||
-      (l.target.id === d.id && l.source.id === n.id)
-    );
-    return connected ? 0.9 : 0;
-  }).attr("font-size", n => {
-    if (n.id === d.id) return "13px";
-    const connected = links.some(l =>
-      (l.source.id === d.id && l.target.id === n.id) ||
-      (l.target.id === d.id && l.source.id === n.id)
-    );
-    return connected ? "10px" : "0px";
-  });
-})
-.on("mousemove", function(event) {
-  tooltip
-    .style("left", (event.pageX + 14) + "px")
-    .style("top", (event.pageY - 10) + "px");
-})
-.on("mouseout", function() {
-  tooltip.style("display", "none");
-  node.attr("opacity", 1);
-  d3.select(this).attr("stroke-width", 1).attr("stroke-opacity", 0.4);
-  link.attr("stroke-opacity", 0.18).attr("stroke-width", 1.2);
-  label.attr("opacity", d => (degreeMap[d.id] || 0) >= 4 ? 0.85 : 0)
-    .attr("font-size", d => {
-      const deg = degreeMap[d.id] || 0;
-      if (deg >= 8) return "12px";
-      if (deg >= 4) return "10px";
-      return "0px";
-    });
-});
-
-// Link tooltip
-link.on("mouseover", function(event, d) {
-  let html = `<div class="tt-name" style="font-size:12px">${d.source.id} → ${d.target.id}</div>`;
-  html += `<div class="tt-type">关系: ${d.type}</div>`;
-  if (d.specialty) html += `<div class="tt-aliases">专长: ${d.specialty}</div>`;
-  tooltip.html(html)
-    .style("display", "block")
-    .style("left", (event.pageX + 14) + "px")
-    .style("top", (event.pageY - 10) + "px");
-  d3.select(this).attr("stroke-opacity", 0.9).attr("stroke-width", 3);
-})
-.on("mousemove", function(event) {
-  tooltip
-    .style("left", (event.pageX + 14) + "px")
-    .style("top", (event.pageY - 10) + "px");
-})
-.on("mouseout", function() {
-  tooltip.style("display", "none");
-  d3.select(this).attr("stroke-opacity", 0.18).attr("stroke-width", 1.2);
-});
-
-// Click to lock highlight + show info panel
-let selectedNode = null;
-node.on("click", function(event, d) {
-  event.stopPropagation();
-  if (selectedNode === d.id) {
-    selectedNode = null;
-    resetHighlight();
-    document.getElementById('info-panel').style.display = 'none';
+canvas.on("mousemove.tooltip", function(event) {
+  if (draggedNode) {
+    tooltip.style("display", "none");
     return;
   }
-  selectedNode = d.id;
-  highlightNode(d);
-  showInfoPanel(d);
+
+  const [sx, sy] = screenToSim(event);
+  const found = findNodeAt(sx, sy);
+
+  if (found !== hoveredNode) {
+    hoveredNode = found;
+    canvas.node().style.cursor = found ? "pointer" : "default";
+    draw();
+  }
+
+  if (found) {
+    const deg = degreeMap[found.id] || 0;
+    let html = `<div class="tt-name">${found.id}</div>`;
+    html += `<div class="tt-type">${found.type}${found.sub_type ? ' · ' + found.sub_type : ''}</div>`;
+    if (found.aliases && found.aliases.length > 0) {
+      html += `<div class="tt-aliases">别名: ${found.aliases.join(", ")}</div>`;
+    }
+    html += `<div class="tt-rel" style="margin-top:4px;color:#999">连接数: ${deg}</div>`;
+    tooltip.html(html)
+      .style("display", "block")
+      .style("left", (event.pageX + 14) + "px")
+      .style("top", (event.pageY - 10) + "px");
+  } else {
+    tooltip.style("display", "none");
+  }
 });
 
-svg.on("click", () => {
-  selectedNode = null;
-  resetHighlight();
-  document.getElementById('info-panel').style.display = 'none';
+canvas.on("mouseleave.tooltip", function() {
+  hoveredNode = null;
+  tooltip.style("display", "none");
+  draw();
+});
+
+// ============================================================
+// Click: select node / deselect (with drag guard)
+// ============================================================
+let _mouseDownPos = null;
+canvas.on("mousedown.clickguard", function(event) { _mouseDownPos = [event.clientX, event.clientY]; });
+canvas.on("click.select", function(event) {
+  // Ignore if mouse moved significantly (drag gesture, not click)
+  if (_mouseDownPos) {
+    const dx = event.clientX - _mouseDownPos[0], dy = event.clientY - _mouseDownPos[1];
+    if (dx * dx + dy * dy > 25) return;
+  }
+
+  const [sx, sy] = screenToSim(event);
+  const found = findNodeAt(sx, sy);
+
+  if (found) {
+    if (selectedNode && selectedNode.id === found.id) {
+      selectedNode = null;
+      document.getElementById('info-panel').style.display = 'none';
+    } else {
+      selectedNode = found;
+      showInfoPanel(found);
+    }
+  } else {
+    selectedNode = null;
+    document.getElementById('info-panel').style.display = 'none';
+  }
+  filteredType = null;
+  const legendEl2 = document.getElementById("legend");
+  if (legendEl2) legendEl2.querySelectorAll('.legend-item[data-type]').forEach(e => { e.classList.remove('dimmed'); e.style.opacity = ''; });
+  draw();
 });
 
 function showInfoPanel(d) {
@@ -12614,86 +12733,10 @@ function showInfoPanel(d) {
 function clickEntity(name) {
   var target = nodes.find(function(n) { return n.id === name; });
   if (target) {
-    selectedNode = name;
-    highlightNode(target);
+    selectedNode = target;
     showInfoPanel(target);
+    draw();
   }
-}
-
-function highlightNode(d) {
-  link.attr("stroke-opacity", l =>
-    (l.source.id === d.id || l.target.id === d.id) ? 0.9 : 0.06
-  ).attr("stroke-width", l =>
-    (l.source.id === d.id || l.target.id === d.id) ? 2.5 : 0.6
-  );
-  node.attr("opacity", n => {
-    if (n.id === d.id) return 1;
-    const connected = links.some(l =>
-      (l.source.id === d.id && l.target.id === n.id) ||
-      (l.target.id === d.id && l.source.id === n.id)
-    );
-    return connected ? 1 : 0.1;
-  });
-  label.attr("opacity", n => {
-    if (n.id === d.id) return 1;
-    const connected = links.some(l =>
-      (l.source.id === d.id && l.target.id === n.id) ||
-      (l.target.id === d.id && l.source.id === n.id)
-    );
-    return connected ? 0.9 : 0;
-  }).attr("font-size", n => {
-    if (n.id === d.id) return "13px";
-    const connected = links.some(l =>
-      (l.source.id === d.id && l.target.id === n.id) ||
-      (l.target.id === d.id && l.source.id === n.id)
-    );
-    return connected ? "10px" : "0px";
-  });
-}
-
-function resetHighlight() {
-  node.attr("opacity", 1);
-  link.attr("stroke-opacity", 0.18).attr("stroke-width", 1.2);
-  label.attr("opacity", d => (degreeMap[d.id] || 0) >= 4 ? 0.85 : 0)
-    .attr("font-size", d => {
-      const deg = degreeMap[d.id] || 0;
-      if (deg >= 8) return "12px";
-      if (deg >= 4) return "10px";
-      return "0px";
-    });
-}
-
-// Tick
-simulation.on("tick", () => {
-  link
-    .attr("x1", d => d.source.x)
-    .attr("y1", d => d.source.y)
-    .attr("x2", d => d.target.x)
-    .attr("y2", d => d.target.y);
-
-  node
-    .attr("cx", d => d.x)
-    .attr("cy", d => d.y);
-
-  label
-    .attr("x", d => d.x)
-    .attr("y", d => d.y - nodeRadius(d) - 4);
-});
-
-// Drag handlers
-function dragstarted(event, d) {
-  if (!event.active) simulation.alphaTarget(0.3).restart();
-  d.fx = d.x;
-  d.fy = d.y;
-}
-function dragged(event, d) {
-  d.fx = event.x;
-  d.fy = event.y;
-}
-function dragended(event, d) {
-  if (!event.active) simulation.alphaTarget(0);
-  d.fx = null;
-  d.fy = null;
 }
 
 // ============================================================
@@ -12754,27 +12797,27 @@ Object.keys(relTypeCounts).sort((a,b) => relTypeCounts[b] - relTypeCounts[a]).fo
 
 legendEl.innerHTML = legendHTML;
 
-// Legend click to filter
+// Legend click to filter (canvas-based)
 legendEl.querySelectorAll('.legend-item[data-type]').forEach(el => {
   el.addEventListener('click', () => {
     const t = el.dataset.type;
     const allActive = !el.classList.contains('dimmed');
     if (allActive) {
-      // Dim all except this type
-      node.attr("opacity", d => d.type === t ? 1 : 0.08);
-      link.attr("stroke-opacity", 0.06);
-      label.attr("opacity", d => d.type === t && (degreeMap[d.id] || 0) >= 2 ? 0.9 : 0)
-        .attr("font-size", d => d.type === t && (degreeMap[d.id] || 0) >= 2 ? "10px" : "0px");
+      // Filter to this type
+      filteredType = t;
+      selectedNode = null;
       legendEl.querySelectorAll('.legend-item[data-type]').forEach(e => e.classList.add('dimmed'));
       el.classList.remove('dimmed');
       el.style.opacity = 1;
     } else {
-      resetHighlight();
+      // Reset filter
+      filteredType = null;
       legendEl.querySelectorAll('.legend-item[data-type]').forEach(e => {
         e.classList.remove('dimmed');
         e.style.opacity = '';
       });
     }
+    draw();
   });
 });
 
@@ -12816,8 +12859,18 @@ statsEl.innerHTML = statsHTML;
 
 // Initial zoom to fit
 setTimeout(() => {
-  svg.call(zoom.transform, d3.zoomIdentity.translate(width * 0.1, height * 0.1).scale(0.8));
+  canvas.call(zoom.transform, d3.zoomIdentity.translate(width * 0.1, height * 0.1).scale(0.8));
 }, 200);
+
+// Handle window resize
+window.addEventListener('resize', () => {
+  width = window.innerWidth;
+  height = window.innerHeight;
+  canvas.attr("width", width * dpr).attr("height", height * dpr)
+    .style("width", width + "px").style("height", height + "px");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  draw();
+});
 </script>
 </body>
 </html>
