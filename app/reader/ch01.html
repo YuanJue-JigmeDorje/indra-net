@@ -141,39 +141,116 @@ body.light .entity-集合   { color: #5a5a30; background: rgba(180,180,138,0.12)
 #entity-card {
   display: none;
   position: fixed;
+  right: 20px;
+  top: 60px;
   z-index: 200;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 20px;
-  min-width: 260px;
-  max-width: 360px;
+  width: 380px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
   box-shadow: 0 8px 32px rgba(0,0,0,0.4);
   transition: background .3s, border-color .3s;
 }
+.card-close {
+  position: absolute; top: 8px; right: 12px;
+  cursor: pointer; color: var(--fg-muted); font-size: 1.2rem;
+}
+.card-close:hover { color: var(--fg); }
 #entity-card h3 {
   font-size: 1.1rem;
   color: var(--accent);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  padding-right: 20px;
 }
 #entity-card .card-type {
   font-size: 0.85rem;
   color: var(--fg-muted);
   margin-bottom: 12px;
 }
+#card-relations, #card-events {
+  margin-bottom: 12px;
+}
+.card-section-title {
+  font-size: 0.75rem;
+  color: var(--fg-muted);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+.card-rel-item {
+  font-size: 0.85rem;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(128,128,128,0.1);
+  line-height: 1.6;
+}
+.card-rel-type {
+  font-size: 0.7rem;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(212,175,55,0.12);
+  color: var(--accent);
+  margin-right: 4px;
+}
+.card-rel-target {
+  color: #7eb8da;
+  cursor: pointer;
+}
+.card-rel-target:hover { text-decoration: underline; }
+.card-rel-quote {
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+  margin-top: 3px;
+  padding-left: 8px;
+  border-left: 2px solid rgba(212,175,55,0.3);
+  line-height: 1.5;
+}
+.card-rel-chapter {
+  font-size: 0.65rem;
+  color: rgba(128,128,128,0.6);
+}
+.card-evt-item {
+  font-size: 0.85rem;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(128,128,128,0.1);
+  cursor: pointer;
+  line-height: 1.6;
+}
+.card-evt-item:hover { background: rgba(212,175,55,0.05); }
+.card-evt-type {
+  font-size: 0.7rem;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(106,174,214,0.12);
+  color: #6aaed6;
+  margin-right: 4px;
+}
+.card-evt-quote {
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+  margin-top: 3px;
+  display: none;
+  padding-left: 8px;
+  border-left: 2px solid rgba(106,174,214,0.3);
+  line-height: 1.5;
+}
+.card-evt-item.expanded .card-evt-quote { display: block; }
 #entity-card .card-btns {
-  display: flex; flex-direction: column; gap: 8px;
+  display: flex; gap: 8px; margin-top: 12px;
 }
 #entity-card .card-btns a {
-  display: block;
+  flex: 1;
   text-align: center;
   padding: 6px 0;
   border: 1px solid var(--border);
   border-radius: 4px;
   color: var(--accent);
   text-decoration: none;
-  font-size: 0.85rem;
-  transition: background .15s, border-color .15s;
+  font-size: 0.8rem;
+  transition: background .15s;
 }
 #entity-card .card-btns a:hover {
   background: rgba(212,175,55,0.1);
@@ -260,8 +337,11 @@ footer {
   </article>
 
   <div id="entity-card">
+    <span class="card-close" onclick="document.getElementById('entity-card').style.display='none'">&times;</span>
     <h3 id="card-name"></h3>
     <div class="card-type" id="card-type"></div>
+    <div id="card-relations"></div>
+    <div id="card-events"></div>
     <div class="card-btns">
       <a id="link-graph" href="#">在星图中查看</a>
       <a id="link-lineage" href="#">在传承谱系中查看</a>
@@ -270,6 +350,8 @@ footer {
 
   <footer>藏密佛教史 知识图谱 &middot; 阅读视图</footer>
 
+  <script src="../prototype/graph_data.js"></script>
+  <script src="../prototype/events_data.js"></script>
   <script>
 (function(){
   // -- theme toggle --
@@ -299,27 +381,87 @@ footer {
   const linkGraph = document.getElementById('link-graph');
   const linkLineage = document.getElementById('link-lineage');
 
+  const cardRels = document.getElementById('card-relations');
+  const cardEvts = document.getElementById('card-events');
+
+  // Helper: get source/target name from link (D3 may have mutated to objects)
+  function lsrc(l) { return (typeof l.source === 'object' ? l.source.id : l.source) || ''; }
+  function ltgt(l) { return (typeof l.target === 'object' ? l.target.id : l.target) || ''; }
+
+  function showEntityCard(eid, etype) {
+    cardName.textContent = eid;
+    cardType.textContent = etype;
+    linkGraph.href = '../prototype/index.html?highlight=' + encodeURIComponent(eid);
+    linkLineage.href = '../prototype/lineage.html?highlight=' + encodeURIComponent(eid);
+
+    // -- Relations --
+    var relHTML = '';
+    if (typeof links !== 'undefined') {
+      var rels = links.filter(function(l) {
+        return lsrc(l) === eid || ltgt(l) === eid;
+      });
+      if (rels.length > 0) {
+        relHTML = '<div class="card-section-title">关系 (' + rels.length + ')</div>';
+        rels.slice(0, 20).forEach(function(l) {
+          var src = lsrc(l), tgt = ltgt(l);
+          var other = (src === eid) ? tgt : src;
+          var dir = (src === eid) ? '→' : '←';
+          var q = l.quote || '';
+          var qShort = q.length > 80 ? q.substring(0, 80) + '…' : q;
+          relHTML += '<div class="card-rel-item">'
+            + '<span class="card-rel-type">' + (l.type || '') + '</span>'
+            + dir + ' <span class="card-rel-target" onclick="highlightInText(\'' + other.replace(/'/g,"\\'") + '\')">' + other + '</span>'
+            + (l.specialty ? ' <span style="font-size:0.7rem;color:var(--fg-muted)">[' + l.specialty + ']</span>' : '')
+            + (qShort ? '<div class="card-rel-quote">「' + qShort + '」<span class="card-rel-chapter">' + (l.chapter || '') + '</span></div>' : '')
+            + '</div>';
+        });
+        if (rels.length > 20) relHTML += '<div style="color:var(--fg-muted);font-size:0.8rem">...及更多 ' + (rels.length-20) + ' 条</div>';
+      }
+    }
+    cardRels.innerHTML = relHTML;
+
+    // -- Events --
+    var evtHTML = '';
+    if (typeof allEvents !== 'undefined' && typeof entityEventIndex !== 'undefined' && entityEventIndex[eid]) {
+      var indices = entityEventIndex[eid];
+      evtHTML = '<div class="card-section-title">相关事件 (' + indices.length + ')</div>';
+      indices.slice(0, 15).forEach(function(idx) {
+        var evt = allEvents[idx];
+        if (!evt) return;
+        var q = evt.quote || '';
+        evtHTML += '<div class="card-evt-item" onclick="this.classList.toggle(\'expanded\')">'
+          + '<span class="card-evt-type">' + (evt.type || '') + '</span>'
+          + (evt.title || '')
+          + '<div class="card-evt-quote">「' + q + '」<div class="card-rel-chapter">' + (evt.chapter || '') + '</div></div>'
+          + '</div>';
+      });
+      if (indices.length > 15) evtHTML += '<div style="color:var(--fg-muted);font-size:0.8rem">...及更多 ' + (indices.length-15) + ' 条</div>';
+    }
+    cardEvts.innerHTML = evtHTML;
+
+    card.style.display = 'block';
+  }
+
+  // Highlight entity name in text (scroll to first occurrence)
+  window.highlightInText = function(name) {
+    var spans = document.querySelectorAll('.entity[data-entity="' + name + '"]');
+    if (spans.length > 0) {
+      spans[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      spans[0].style.outline = '2px solid var(--accent)';
+      setTimeout(function() { spans[0].style.outline = ''; }, 2000);
+      showEntityCard(name, spans[0].getAttribute('title') || '');
+    }
+  };
+
   document.addEventListener('click', function(e) {
+    var evtItem = e.target.closest('.card-evt-item');
+    if (evtItem) return; // let toggle work
+
     const span = e.target.closest('.entity');
     if (span) {
       const eid = span.getAttribute('data-entity');
       const etype = span.getAttribute('title');
-      cardName.textContent = eid;
-      cardType.textContent = etype;
-      linkGraph.href = '../prototype/index.html?highlight=' + encodeURIComponent(eid);
-      linkLineage.href = '../prototype/lineage.html?highlight=' + encodeURIComponent(eid);
-
-      // position card near click
-      const rect = span.getBoundingClientRect();
-      let top = rect.bottom + 8;
-      let left = rect.left;
-      // keep within viewport
-      if (top + 200 > window.innerHeight) top = rect.top - 200;
-      if (left + 340 > window.innerWidth) left = window.innerWidth - 360;
-      if (left < 10) left = 10;
-      card.style.top = top + 'px';
-      card.style.left = left + 'px';
-      card.style.display = 'block';
+      showEntityCard(eid, etype);
       e.stopPropagation();
       return;
     }

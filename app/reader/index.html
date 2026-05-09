@@ -141,39 +141,116 @@ body.light .entity-集合   { color: #5a5a30; background: rgba(180,180,138,0.12)
 #entity-card {
   display: none;
   position: fixed;
+  right: 20px;
+  top: 60px;
   z-index: 200;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 20px;
-  min-width: 260px;
-  max-width: 360px;
+  width: 380px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
   box-shadow: 0 8px 32px rgba(0,0,0,0.4);
   transition: background .3s, border-color .3s;
 }
+.card-close {
+  position: absolute; top: 8px; right: 12px;
+  cursor: pointer; color: var(--fg-muted); font-size: 1.2rem;
+}
+.card-close:hover { color: var(--fg); }
 #entity-card h3 {
   font-size: 1.1rem;
   color: var(--accent);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  padding-right: 20px;
 }
 #entity-card .card-type {
   font-size: 0.85rem;
   color: var(--fg-muted);
   margin-bottom: 12px;
 }
+#card-relations, #card-events {
+  margin-bottom: 12px;
+}
+.card-section-title {
+  font-size: 0.75rem;
+  color: var(--fg-muted);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+.card-rel-item {
+  font-size: 0.85rem;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(128,128,128,0.1);
+  line-height: 1.6;
+}
+.card-rel-type {
+  font-size: 0.7rem;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(212,175,55,0.12);
+  color: var(--accent);
+  margin-right: 4px;
+}
+.card-rel-target {
+  color: #7eb8da;
+  cursor: pointer;
+}
+.card-rel-target:hover { text-decoration: underline; }
+.card-rel-quote {
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+  margin-top: 3px;
+  padding-left: 8px;
+  border-left: 2px solid rgba(212,175,55,0.3);
+  line-height: 1.5;
+}
+.card-rel-chapter {
+  font-size: 0.65rem;
+  color: rgba(128,128,128,0.6);
+}
+.card-evt-item {
+  font-size: 0.85rem;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(128,128,128,0.1);
+  cursor: pointer;
+  line-height: 1.6;
+}
+.card-evt-item:hover { background: rgba(212,175,55,0.05); }
+.card-evt-type {
+  font-size: 0.7rem;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(106,174,214,0.12);
+  color: #6aaed6;
+  margin-right: 4px;
+}
+.card-evt-quote {
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+  margin-top: 3px;
+  display: none;
+  padding-left: 8px;
+  border-left: 2px solid rgba(106,174,214,0.3);
+  line-height: 1.5;
+}
+.card-evt-item.expanded .card-evt-quote { display: block; }
 #entity-card .card-btns {
-  display: flex; flex-direction: column; gap: 8px;
+  display: flex; gap: 8px; margin-top: 12px;
 }
 #entity-card .card-btns a {
-  display: block;
+  flex: 1;
   text-align: center;
   padding: 6px 0;
   border: 1px solid var(--border);
   border-radius: 4px;
   color: var(--accent);
   text-decoration: none;
-  font-size: 0.85rem;
-  transition: background .15s, border-color .15s;
+  font-size: 0.8rem;
+  transition: background .15s;
 }
 #entity-card .card-btns a:hover {
   background: rgba(212,175,55,0.1);
