@@ -4748,7 +4748,7 @@ const links = [
   {
     "source": "摩耶夫人",
     "target": "释迦佛",
-    "type": "motherOf",
+    "type": "母子",
     "specialty": "",
     "quote": "以六牙白象的形象来到正在持斋戒的母亲胎中",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -4804,7 +4804,7 @@ const links = [
   {
     "source": "甘露饭",
     "target": "释迦佛",
-    "type": "kinOf",
+    "type": "亲族",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -4812,7 +4812,7 @@ const links = [
   {
     "source": "桑林",
     "target": "释迦佛",
-    "type": "kinOf",
+    "type": "亲族",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5036,7 +5036,7 @@ const links = [
   {
     "source": "大迦叶",
     "target": "释迦佛",
-    "type": "dharmaSuccessorOf",
+    "type": "法嗣",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5044,7 +5044,7 @@ const links = [
   {
     "source": "阿难",
     "target": "大迦叶",
-    "type": "dharmaSuccessorOf",
+    "type": "法嗣",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5052,7 +5052,7 @@ const links = [
   {
     "source": "麻衣",
     "target": "阿难",
-    "type": "dharmaSuccessorOf",
+    "type": "法嗣",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5060,7 +5060,7 @@ const links = [
   {
     "source": "小护",
     "target": "麻衣",
-    "type": "dharmaSuccessorOf",
+    "type": "法嗣",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5068,7 +5068,7 @@ const links = [
   {
     "source": "有愧",
     "target": "小护",
-    "type": "dharmaSuccessorOf",
+    "type": "法嗣",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5076,7 +5076,7 @@ const links = [
   {
     "source": "黑色",
     "target": "有愧",
-    "type": "dharmaSuccessorOf",
+    "type": "法嗣",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5084,7 +5084,7 @@ const links = [
   {
     "source": "善见",
     "target": "黑色",
-    "type": "dharmaSuccessorOf",
+    "type": "法嗣",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5092,7 +5092,7 @@ const links = [
   {
     "source": "魔王波旬",
     "target": "释迦佛",
-    "type": "defeatedBy",
+    "type": "降伏",
     "specialty": "",
     "quote": "菩萨入定在大慈等持中，兵器全部降下花雨",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5108,7 +5108,7 @@ const links = [
   {
     "source": "提婆达多",
     "target": "释迦佛",
-    "type": "antagonistOf",
+    "type": "对立",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5116,7 +5116,7 @@ const links = [
   {
     "source": "魔王波旬",
     "target": "释迦佛",
-    "type": "antagonistOf",
+    "type": "对立",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5124,7 +5124,7 @@ const links = [
   {
     "source": "未生怨王",
     "target": "五百阿罗汉",
-    "type": "patronOf",
+    "type": "护持",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5132,7 +5132,7 @@ const links = [
   {
     "source": "阿育王",
     "target": "七百罗汉",
-    "type": "patronOf",
+    "type": "护持",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5140,7 +5140,7 @@ const links = [
   {
     "source": "阿育王",
     "target": "麻衣",
-    "type": "patronOf",
+    "type": "护持",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5148,7 +5148,7 @@ const links = [
   {
     "source": "腻契波王",
     "target": "五百阿罗汉",
-    "type": "patronOf",
+    "type": "护持",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5156,7 +5156,7 @@ const links = [
   {
     "source": "优婆离",
     "target": "《戒律》",
-    "type": "compiled",
+    "type": "结集",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5164,7 +5164,7 @@ const links = [
   {
     "source": "阿难",
     "target": "经藏",
-    "type": "compiled",
+    "type": "结集",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5172,7 +5172,7 @@ const links = [
   {
     "source": "大迦叶",
     "target": "论藏",
-    "type": "compiled",
+    "type": "结集",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5180,7 +5180,7 @@ const links = [
   {
     "source": "弥勒菩萨",
     "target": "《戒律》",
-    "type": "compiled",
+    "type": "结集",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5188,7 +5188,7 @@ const links = [
   {
     "source": "妙吉祥",
     "target": "经藏",
-    "type": "compiled",
+    "type": "结集",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5196,7 +5196,7 @@ const links = [
   {
     "source": "密主金刚手菩萨",
     "target": "论藏",
-    "type": "compiled",
+    "type": "结集",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5204,7 +5204,7 @@ const links = [
   {
     "source": "妙吉祥",
     "target": "甚深见派",
-    "type": "compiled",
+    "type": "结集",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5212,7 +5212,7 @@ const links = [
   {
     "source": "弥勒菩萨",
     "target": "广大行派",
-    "type": "compiled",
+    "type": "结集",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5444,7 +5444,7 @@ const links = [
   {
     "source": "四谛法轮",
     "target": "鹿野苑",
-    "type": "locatedAt",
+    "type": "位于",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5452,7 +5452,7 @@ const links = [
   {
     "source": "第二无相法轮",
     "target": "灵鹫山",
-    "type": "locatedAt",
+    "type": "位于",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5460,7 +5460,7 @@ const links = [
   {
     "source": "瓦色嘎巴",
     "target": "密集续",
-    "type": "retrievedFrom",
+    "type": "取出地",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5468,7 +5468,7 @@ const links = [
   {
     "source": "圣龙树",
     "target": "喜金刚",
-    "type": "retrievedFrom",
+    "type": "取出地",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5476,7 +5476,7 @@ const links = [
   {
     "source": "革革热巴",
     "target": "《玛哈玛雅》",
-    "type": "retrievedFrom",
+    "type": "取出地",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5484,7 +5484,7 @@ const links = [
   {
     "source": "革革热巴",
     "target": "《大威德续》",
-    "type": "retrievedFrom",
+    "type": "取出地",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5492,7 +5492,7 @@ const links = [
   {
     "source": "则乐巴",
     "target": "时轮金刚",
-    "type": "retrievedFrom",
+    "type": "取出地",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5500,7 +5500,7 @@ const links = [
   {
     "source": "燃灯佛",
     "target": "释迦佛",
-    "type": "prophecyAbout",
+    "type": "授记",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5508,7 +5508,7 @@ const links = [
   {
     "source": "迦叶佛",
     "target": "释迦佛",
-    "type": "prophecyAbout",
+    "type": "授记",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5516,7 +5516,7 @@ const links = [
   {
     "source": "释迦佛",
     "target": "阿育王",
-    "type": "prophecyAbout",
+    "type": "授记",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5524,7 +5524,7 @@ const links = [
   {
     "source": "释迦佛",
     "target": "小护",
-    "type": "prophecyAbout",
+    "type": "授记",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5532,7 +5532,7 @@ const links = [
   {
     "source": "释迦佛",
     "target": "日中罗汉",
-    "type": "prophecyAbout",
+    "type": "授记",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5540,7 +5540,7 @@ const links = [
   {
     "source": "释迦佛",
     "target": "圣龙树",
-    "type": "prophecyAbout",
+    "type": "授记",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5548,7 +5548,7 @@ const links = [
   {
     "source": "阿难",
     "target": "释迦佛",
-    "type": "attendantOf",
+    "type": "侍者",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5556,7 +5556,7 @@ const links = [
   {
     "source": "大迦叶",
     "target": "释迦佛",
-    "type": "contemporaryOf",
+    "type": "同代",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5564,7 +5564,7 @@ const links = [
   {
     "source": "阿难",
     "target": "班智达罗睺罗",
-    "type": "contemporaryOf",
+    "type": "同代",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5572,7 +5572,7 @@ const links = [
   {
     "source": "大迦叶",
     "target": "弥勒菩萨",
-    "type": "prophecyAbout",
+    "type": "授记",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5580,7 +5580,7 @@ const links = [
   {
     "source": "乾闼婆极喜",
     "target": "释迦佛",
-    "type": "liberatedBy",
+    "type": "度化",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5588,7 +5588,7 @@ const links = [
   {
     "source": "遍行外道极贤",
     "target": "释迦佛",
-    "type": "liberatedBy",
+    "type": "度化",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5596,7 +5596,7 @@ const links = [
   {
     "source": "四谛法轮",
     "target": "四谛",
-    "type": "teachingContains",
+    "type": "教法含",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5604,7 +5604,7 @@ const links = [
   {
     "source": "第三了义法轮",
     "target": "如来藏",
-    "type": "teachingContains",
+    "type": "教法含",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"
@@ -5612,7 +5612,7 @@ const links = [
   {
     "source": "大迦叶",
     "target": "尼枸卢婆罗门村落",
-    "type": "bornIn",
+    "type": "出生地",
     "specialty": "",
     "quote": "",
     "chapter": "《藏密佛教史》> 第一品 佛教总况"

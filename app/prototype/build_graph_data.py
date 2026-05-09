@@ -273,13 +273,22 @@ for fpath in filter_chapter_files(sorted(glob.glob(os.path.join(KG, "relations",
         rtype_map = {
             'teacherOf': '师承', 'manifestationOf': '化身', 'formOf': '形态', 'form_of': '形态',
             'builtBy': '修建', 'foundedBy': '创立', 'rulerOf': '统治', 'fatherOf': '父子',
-            'sonOf': '子父', 'consortOf': '配偶', 'consort': '配偶', 'ministerOf': '臣属',
-            'siblingOf': '兄弟', 'translatedBy': '译经', 'revisedBy': '译校',
-            'subduedBy': '降伏', 'protects': '守护', 'concealedBy': '埋藏',
-            'revealedBy': '开取', 'revealedFrom': '掘藏地', 'memberOf': '归属',
-            'belongsToSect': '宗派归属', 'locatedIn': '位于', 'cites': '引用',
-            'refutes': '驳斥', 'reconciles': '调和', 'alternativeOf': '异说',
+            'sonOf': '子父', 'motherOf': '母子', 'consortOf': '配偶', 'consort': '配偶',
+            'ministerOf': '臣属', 'siblingOf': '兄弟', 'kinOf': '亲族',
+            'translatedBy': '译经', 'revisedBy': '译校',
+            'subduedBy': '降伏', 'defeatedBy': '降伏', 'protects': '守护',
+            'concealedBy': '埋藏', 'revealedBy': '开取', 'revealedFrom': '掘藏地',
+            'retrievedFrom': '取出地', 'memberOf': '归属',
+            'belongsToSect': '宗派归属', 'locatedIn': '位于', 'locatedAt': '位于',
+            'cites': '引用', 'refutes': '驳斥', 'reconciles': '调和', 'alternativeOf': '异说',
             'authorOf': '著作', 'lineageOf': '法脉',
+            # v2 pipeline new types
+            'dharmaSuccessorOf': '法嗣', 'compiled': '结集', 'compiledBy': '结集',
+            'attendantOf': '侍者', 'contemporaryOf': '同代',
+            'patronOf': '护持', 'bornIn': '出生地',
+            'prophecyAbout': '授记', 'requestOf': '请法',
+            'offeringTo': '供养', 'antagonistOf': '对立',
+            'teachingContains': '教法含', 'liberatedBy': '度化',
         }
         rtype = rtype_map.get(raw_rtype, raw_rtype)
         raw_spec = rel.get('specialty', '') or ''
