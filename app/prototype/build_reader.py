@@ -176,18 +176,16 @@ def build_name_index(entities):
                 bracketed = "《" + name + "》"
                 if bracketed not in index:
                     index[bracketed] = {"id": ent["id"], "type": ent["type"]}
-    # Apply synonym mappings: if "律藏" → "《戒律》", make sure "律藏" points to 《戒律》's data
+    # Apply synonym mappings: 律藏 → 《戒律》 etc.
+    # OVERRIDE existing entries (don't skip if already present)
     for surface, canonical in SYNONYMS.items():
-        if canonical in ent_by_id or canonical in index:
-            target = index.get(canonical, ent_by_id.get(canonical))
-            if target:
-                info = {"id": target.get("id", canonical), "type": target.get("type", "")}
-                if surface not in index:
-                    index[surface] = info
-                # Also with/without brackets
-                bare = surface.strip("《》")
-                if bare != surface and bare not in index:
-                    index[bare] = info
+        target = index.get(canonical) or ent_by_id.get(canonical)
+        if target:
+            info = {"id": target.get("id", canonical), "type": target.get("type", "")}
+            index[surface] = info  # override, not skip
+            bare = surface.strip("《》")
+            if bare != surface:
+                index[bare] = info
 
     # sort longest first so greedy matching works
     sorted_names = sorted(index.keys(), key=lambda x: -len(x))
