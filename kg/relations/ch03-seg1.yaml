@@ -1,0 +1,555 @@
+# ============================================================
+# 知识图谱关系抽取 — 第三品 藏传佛法 seg1 (lines 1-200)
+# 覆盖范围: 引言 + 涅赤赞普 + 拉托托日涅赞 + 松赞干布 + 师君三尊 + 莲师驻藏/离藏/伏藏/加持
+# 来源: source/dudjom/chapter_md/03_藏传佛法.md
+# 规范: SKILL_05a v0.1 + entity-taxonomy v0.4
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/03_藏传佛法.md
+  source_lines: "1-200"
+  spec_versions:
+    entity-taxonomy: v0.4
+    skill: SKILL_05a v0.1
+  total_relations: 56
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 化身/形态关系 (manifestationOf / form_of)
+# ============================================================
+
+  - rel_id: REL_001
+    type: manifestationOf
+    source: 松赞干布
+    target: 观世音菩萨
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "观世音菩萨示现为人君的形象法王松赞干布"
+
+  - rel_id: REL_002
+    type: manifestationOf
+    source: 拉托托日涅赞
+    target: 普贤菩萨
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "普贤菩萨的化身拉托托日涅赞"
+
+  - rel_id: REL_003
+    type: manifestationOf
+    source: 赤松德赞
+    target: 文殊菩萨
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "文殊菩萨幻化人君赤松德赞出世"
+
+  - rel_id: REL_004
+    type: manifestationOf
+    source: 噶尔东赞
+    target: 金刚手
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "金刚手幻化的法臣噶尔东赞"
+
+  - rel_id: REL_005
+    type: manifestationOf
+    source: 赤尊公主
+    target: 颦眉度母
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "颦眉度母的化身——尼泊尔赤尊公主"
+
+  - rel_id: REL_006
+    type: manifestationOf
+    source: 文成公主
+    target: 度母
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "度母的化身——汉族文成公主"
+
+  - rel_id: REL_007
+    type: manifestationOf
+    source: 囤弥桑布札
+    target: 文殊菩萨
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "文殊菩萨的化身囤弥桑布札"
+
+  - rel_id: REL_008
+    type: form_of
+    source: 多吉卓罗
+    target: 莲花生大士
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "莲师示现令人望而生畏的忿怒威猛相...当时莲师被人们尊称为'多吉卓罗'"
+
+# ============================================================
+# B. 师承关系 (teacherOf)
+# ============================================================
+
+  - rel_id: REL_009
+    type: teacherOf
+    source: 静命
+    target: 巴赤则
+    specialty: [戒律]
+    derived_from: EVT_044
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "菩提萨埵作为亲教师...巴赤则出家为僧并受了比丘戒"
+
+  - rel_id: REL_010
+    type: teacherOf
+    source: 静命
+    target: 巴色朗
+    specialty: [戒律]
+    derived_from: EVT_045
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "预试七人...出家受比丘戒"
+    note: "静命作为亲教师为预试七人全员授戒"
+
+  - rel_id: REL_011
+    type: teacherOf
+    source: 静命
+    target: 贝若札那
+    specialty: [戒律]
+    derived_from: EVT_045
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "预试七人...出家受比丘戒"
+
+  - rel_id: REL_012
+    type: teacherOf
+    source: 静命
+    target: 恩烂嘉巴秋扬
+    specialty: [戒律]
+    derived_from: EVT_045
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "预试七人...出家受比丘戒"
+
+  - rel_id: REL_013
+    type: teacherOf
+    source: 静命
+    target: 玛·仁钦秋
+    specialty: [戒律]
+    derived_from: EVT_045
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "预试七人...出家受比丘戒"
+
+  - rel_id: REL_014
+    type: teacherOf
+    source: 静命
+    target: 坤类旺波忠巴
+    specialty: [戒律]
+    derived_from: EVT_045
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "预试七人...出家受比丘戒"
+
+  - rel_id: REL_015
+    type: teacherOf
+    source: 静命
+    target: 拉色嘉瓦香切
+    specialty: [戒律]
+    derived_from: EVT_045
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "预试七人...出家受比丘戒"
+
+  - rel_id: REL_016
+    type: teacherOf
+    source: 西日桑哈
+    target: 贝若札那
+    specialty: [大圆满]
+    derived_from: EVT_048
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "贝若札那在西日桑哈前听受大圆满"
+
+  - rel_id: REL_017
+    type: teacherOf
+    source: 吽嘎日
+    target: 南卡酿波
+    specialty: [密法]
+    derived_from: EVT_049
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "南卡酿波在吽嘎日座下聆听真实意法"
+
+  - rel_id: REL_018
+    type: teacherOf
+    source: 莲花生大士
+    target: 赤松德赞
+    specialty: [灌顶, 密法]
+    derived_from: EVT_050
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "莲花生大士也为君臣中有缘分的人们赐予下密与无上续相应的灌顶，并宣讲了《金刚橛》法部、《窍诀见鬘论》等"
+
+# ============================================================
+# C. 建寺关系 (builtBy)
+# ============================================================
+
+  - rel_id: REL_019
+    type: builtBy
+    source: 大昭寺
+    target: 松赞干布
+    derived_from: EVT_017
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "兴建起大昭寺与小昭寺的所依能依"
+
+  - rel_id: REL_020
+    type: builtBy
+    source: 小昭寺
+    target: 松赞干布
+    derived_from: EVT_017
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "兴建起大昭寺与小昭寺的所依能依"
+
+  - rel_id: REL_021
+    type: builtBy
+    source: 镇肢寺
+    target: 松赞干布
+    derived_from: EVT_017
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "建起镇肢寺与镇节寺"
+
+  - rel_id: REL_022
+    type: builtBy
+    source: 镇节寺
+    target: 松赞干布
+    derived_from: EVT_017
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "建起镇肢寺与镇节寺"
+
+  - rel_id: REL_023
+    type: builtBy
+    source: 桑耶寺
+    target: 赤松德赞
+    derived_from: EVT_041
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "吉祥桑耶无变自成寺宇...五年内竣工"
+    note: "赤松德赞为施主，静命观察地基，莲师加持"
+
+# ============================================================
+# D. 政治关系 (rulerOf / fatherOf / consort / ministerOf)
+# ============================================================
+
+  - rel_id: REL_024
+    type: rulerOf
+    source: 涅赤赞普
+    target: 藏地
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在藏地出现了第一位国王涅赤赞普"
+
+  - rel_id: REL_025
+    type: rulerOf
+    source: 松赞干布
+    target: 藏地
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他在十三岁时执掌国政"
+
+  - rel_id: REL_026
+    type: rulerOf
+    source: 赤松德赞
+    target: 藏地
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "国王赤松德赞在十三岁时执掌国政"
+
+  - rel_id: REL_027
+    type: fatherOf
+    source: 涅赤赞普
+    target: 莫赤赞普
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他的太子莫赤赞普"
+
+  - rel_id: REL_028
+    type: fatherOf
+    source: 赤松德赞
+    target: 木赤
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在太子木赤执政的时候"
+    note: "赤松德赞圆寂后木赤继位"
+
+  - rel_id: REL_029
+    type: consort
+    source: 松赞干布
+    target: 赤尊公主
+    symmetric: true
+    derived_from: EVT_015
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "迎娶了颦眉度母的化身——尼泊尔赤尊公主"
+
+  - rel_id: REL_030
+    type: consort
+    source: 松赞干布
+    target: 文成公主
+    symmetric: true
+    derived_from: EVT_015
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "度母的化身——汉族文成公主"
+
+  - rel_id: REL_031
+    type: ministerOf
+    source: 噶尔东赞
+    target: 松赞干布
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "法臣噶尔东赞"
+
+# ============================================================
+# E. 译经关系 (translatedBy)
+# ============================================================
+
+  - rel_id: REL_032
+    type: translatedBy
+    source: 语言学书籍
+    target: 囤弥桑布札
+    derived_from: EVT_024
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "撰著了藏文字形和《语言学书籍》八本"
+
+# ============================================================
+# F. 降伏关系 (subduedBy)
+# ============================================================
+
+  - rel_id: REL_033
+    type: subduedBy
+    source: 十二地母
+    target: 莲花生大士
+    derived_from: EVT_036
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "降伏了十二地母、十三革绕神、二十一优婆塞为主的一切大力非人"
+
+  - rel_id: REL_034
+    type: subduedBy
+    source: 十三革绕神
+    target: 莲花生大士
+    derived_from: EVT_036
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "降伏了十二地母、十三革绕神、二十一优婆塞"
+
+  - rel_id: REL_035
+    type: subduedBy
+    source: 二十一优婆塞
+    target: 莲花生大士
+    derived_from: EVT_036
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "降伏了十二地母、十三革绕神、二十一优婆塞"
+
+  - rel_id: REL_036
+    type: subduedBy
+    source: 无恼龙
+    target: 莲花生大士
+    derived_from: EVT_039
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "莲师又降伏了无恼龙等所有龙类"
+
+# ============================================================
+# G. 伏藏关系 (concealedBy / revealedBy)
+# ============================================================
+
+  - rel_id: REL_037
+    type: concealedBy
+    source: 国王遗教
+    target: 松赞干布
+    derived_from: EVT_021
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "当时所有言教综合一起的《国王遗教》隐藏成三个伏藏"
+
+  - rel_id: REL_038
+    type: revealedBy
+    source: 国王遗教
+    target: 哲土哦哲
+    derived_from: EVT_022
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "由哲土哦哲、阿达尼、敦巴释迦光三位开取伏藏"
+
+  - rel_id: REL_039
+    type: revealedBy
+    source: 国王遗教
+    target: 阿达尼
+    derived_from: EVT_022
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "由哲土哦哲、阿达尼、敦巴释迦光三位开取伏藏"
+
+  - rel_id: REL_040
+    type: revealedBy
+    source: 国王遗教
+    target: 敦巴释迦光
+    derived_from: EVT_022
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "由哲土哦哲、阿达尼、敦巴释迦光三位开取伏藏"
+
+  - rel_id: REL_041
+    type: concealedBy
+    source: 一百国王魂伏藏
+    target: 莲花生大士
+    derived_from: EVT_061
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "莲师又隐藏了一百国王魂伏藏、五大意伏藏、二十五甚深大伏藏为主的有名称无名称不可胜数的伏藏品"
+
+  - rel_id: REL_042
+    type: concealedBy
+    source: 五大意伏藏
+    target: 莲花生大士
+    derived_from: EVT_061
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "莲师又隐藏了一百国王魂伏藏、五大意伏藏、二十五甚深大伏藏"
+
+  - rel_id: REL_043
+    type: concealedBy
+    source: 二十五甚深大伏藏
+    target: 莲花生大士
+    derived_from: EVT_061
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "莲师又隐藏了一百国王魂伏藏、五大意伏藏、二十五甚深大伏藏"
+
+# ============================================================
+# H. 归属关系 (memberOf / belongsToSect)
+# ============================================================
+
+  - rel_id: REL_044
+    type: memberOf
+    source: 巴赤则
+    target: 预试七人
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "以上七位就是众所共称的预试七人"
+
+  - rel_id: REL_045
+    type: memberOf
+    source: 巴色朗
+    target: 预试七人
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "巴色朗、巴够贝若札那...以上七位就是众所共称的预试七人"
+
+  - rel_id: REL_046
+    type: memberOf
+    source: 贝若札那
+    target: 预试七人
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "巴色朗、巴够贝若札那...以上七位就是众所共称的预试七人"
+
+  - rel_id: REL_047
+    type: memberOf
+    source: 恩烂嘉巴秋扬
+    target: 预试七人
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "以上七位就是众所共称的预试七人"
+
+  - rel_id: REL_048
+    type: memberOf
+    source: 玛·仁钦秋
+    target: 预试七人
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "以上七位就是众所共称的预试七人"
+
+  - rel_id: REL_049
+    type: memberOf
+    source: 坤类旺波忠巴
+    target: 预试七人
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "以上七位就是众所共称的预试七人"
+
+  - rel_id: REL_050
+    type: memberOf
+    source: 拉色嘉瓦香切
+    target: 预试七人
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "以上七位就是众所共称的预试七人"
+
+  - rel_id: REL_051
+    type: memberOf
+    source: 松赞干布
+    target: 师君三尊
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "松赞干布、赤松德赞与赤热巴坚被称为祖孙三尊"
+
+  - rel_id: REL_052
+    type: memberOf
+    source: 赤松德赞
+    target: 师君三尊
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "松赞干布、赤松德赞与赤热巴坚被称为祖孙三尊"
+
+  - rel_id: REL_053
+    type: memberOf
+    source: 赤热巴坚
+    target: 师君三尊
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "松赞干布、赤松德赞与赤热巴坚被称为祖孙三尊"
+
+# ============================================================
+# I. 引文关系 (cites)
+# ============================================================
+
+  - rel_id: REL_054
+    type: cites
+    source: 藏族起源论证
+    target: 文殊根本续
+    quoted_text: "雪域由湖减，出现娑罗林"
+    argument: "论证藏地地理形成有经典授记依据"
+    about_entity: 藏地
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "按照《文殊根本续》中'雪域由湖减，出现娑罗林'的授记"
+
+  - rel_id: REL_055
+    type: cites
+    source: 莲师驻藏时长论证
+    target: 贤愚经
+    quoted_text: null
+    argument: "论证莲师长短住世两种说法可同时成立——如佛于舍卫城神变天数有多有少"
+    about_entity: 莲花生大士
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "这也就像《贤愚经》、《毗奈耶经》中所说的佛于舍卫城（调伏外道六本师）的神变天数显得有多有少一样"
+
+  - rel_id: REL_056
+    type: cites
+    source: 莲师驻藏时长论证
+    target: 毗奈耶经
+    quoted_text: null
+    argument: "论证莲师长短住世两种说法可同时成立——如佛于舍卫城神变天数有多有少"
+    about_entity: 莲花生大士
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "这也就像《贤愚经》、《毗奈耶经》中所说的佛于舍卫城（调伏外道六本师）的神变天数显得有多有少一样"

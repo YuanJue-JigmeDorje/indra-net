@@ -1,0 +1,504 @@
+# ============================================================
+# 知识图谱关系抽取 — 第三品 藏传佛法 seg2 (lines 201-305)
+# 覆盖范围: 莲师降伏鬼王 + 莲师离藏 + 赤热巴坚 + 朗达玛灭法 + 后弘恢复 + 结尾
+# 来源: source/dudjom/chapter_md/03_藏传佛法.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.3 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用实体 NAME（人类可读名），非 entity ID
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/03_藏传佛法.md
+  source_lines: "201-305"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.3
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 53
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 化身/形态关系 (manifestationOf)
+# ============================================================
+
+  - rel_id: R_001
+    type: manifestationOf
+    source: 赤热巴坚
+    target: 金刚手菩萨
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "金刚手菩萨的化身——赤热巴坚"
+    note: null
+
+  - rel_id: R_002
+    type: manifestationOf
+    source: 达玛西日
+    target: 耶札酿波
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "耶札酿波的幻化——大译师达玛西日"
+    note: 人物对人物的化身关系，非圣众
+
+# ============================================================
+# B. 师承/传法关系 (teacherOf)
+# ============================================================
+
+# --- 巴绕那 → 携律藏三僧 ---
+
+  - rel_id: R_010
+    type: teacherOf
+    source: 巴绕那
+    target: 玛尔·释迦牟尼
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "巴绕那的弟子——高僧玛尔·释迦牟尼"
+    note: 弟子关系直接陈述
+
+  - rel_id: R_011
+    type: teacherOf
+    source: 巴绕那
+    target: 约·格威穹
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "巴绕那的弟子——高僧玛尔·释迦牟尼、约·格威穹及藏·绕色三人"
+    note: 弟子关系直接陈述
+
+  - rel_id: R_012
+    type: teacherOf
+    source: 巴绕那
+    target: 藏·绕色
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "巴绕那的弟子——高僧玛尔·释迦牟尼、约·格威穹及藏·绕色三人"
+    note: 弟子关系直接陈述
+
+# --- 玛尔·释迦牟尼 / 约·格威穹 → 贡巴绕色 ---
+
+  - rel_id: R_013
+    type: teacherOf
+    source: 玛尔·释迦牟尼
+    target: 贡巴绕色
+    specialty: [戒律, 教授]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "由玛尔·释迦牟尼作亲教师...给他传出家戒"
+    derived_from: [EV_020, EV_022]
+    note: 出家戒亲教师 + 十五年听受《戒律》
+
+  - rel_id: R_014
+    type: teacherOf
+    source: 约·格威穹
+    target: 贡巴绕色
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "约·格威穹为规范师"
+    derived_from: EV_020
+    note: 出家戒规范师
+
+  - rel_id: R_015
+    type: teacherOf
+    source: 贡荣桑格札
+    target: 贡巴绕色
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "后来又在贡荣桑格札座下聆听了《戒律》"
+    derived_from: EV_022
+    note: 戒律方面进一步听闻
+
+  - rel_id: R_016
+    type: teacherOf
+    source: 噶巴哦秋札
+    target: 贡巴绕色
+    specialty: [般若]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在噶巴哦秋札面前听了《般若》"
+    derived_from: EV_022
+    note: 般若学
+
+  - rel_id: R_017
+    type: teacherOf
+    source: 耶札酿波
+    target: 贡巴绕色
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在耶札酿波面前聆听了《大圆满心部》"
+    derived_from: EV_022
+    note: 大圆满心部传承
+
+# --- 贡巴绕色 → 鲁墨等 ---
+
+  - rel_id: R_018
+    type: teacherOf
+    source: 贡巴绕色
+    target: 鲁墨·赤诚西绕
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "贡巴绕色上师在一坐垫上以三启白次第传了一次性圆满比丘戒"
+    derived_from: EV_025
+    note: 贡巴绕色后任命鲁墨为亲教师
+
+  - rel_id: R_019
+    type: teacherOf
+    source: 贡巴绕色
+    target: 罗敦多吉旺修
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "来自后藏的罗敦多吉旺修等五人"
+    derived_from: EV_025
+    note: 后藏五人之首
+
+# --- 雅协 → 格西札巴 ---
+
+  - rel_id: R_020
+    type: teacherOf
+    source: 雅协
+    target: 格西札巴
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "雅协的弟子格西札巴"
+    note: 弟子关系直接陈述
+
+# --- 对法传承 ---
+
+  - rel_id: R_021
+    type: teacherOf
+    source: 则那莫札
+    target: 那南·达瓦多吉
+    specialty: [对法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "由班智达则那莫札和译师嘎瓦花则等翻译、传讲，他们传给那南·达瓦多吉、拉隆·拜吉多吉和卫·益西嘉瓦"
+    derived_from: EV_030
+    note: 上分对法及下分对法传承
+
+  - rel_id: R_022
+    type: teacherOf
+    source: 则那莫札
+    target: 拉隆·拜吉多吉
+    specialty: [对法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他们传给那南·达瓦多吉、拉隆·拜吉多吉和卫·益西嘉瓦"
+    derived_from: EV_030
+    note: 上分对法及下分对法传承
+
+  - rel_id: R_023
+    type: teacherOf
+    source: 则那莫札
+    target: 卫·益西嘉瓦
+    specialty: [对法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他们传给那南·达瓦多吉、拉隆·拜吉多吉和卫·益西嘉瓦"
+    derived_from: EV_030
+    note: 上分对法及下分对法传承
+
+# ============================================================
+# C. 修建/创立关系 (builtBy / foundedBy)
+# ============================================================
+
+  - rel_id: R_030
+    type: builtBy
+    source: 嘎穹多吉扬寺
+    target: 木迪赞普
+    role: patron
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "木迪赞普建造了嘎穹多吉扬寺"
+    derived_from: EV_009
+    note: null
+
+  - rel_id: R_031
+    type: builtBy
+    source: 吉祥善增寺
+    target: 赤热巴坚
+    role: patron
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在吉玛哦江多建起了无与伦比的吉祥善增寺"
+    derived_from: EV_012
+    note: null
+
+  - rel_id: R_032
+    type: foundedBy
+    source: 拉木
+    target: 鲁墨·赤诚西绕
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "创立了拉木、绕吉、也巴、瓦耶、凑迪等无数的道场"
+    derived_from: EV_028
+    note: null
+
+  - rel_id: R_033
+    type: foundedBy
+    source: 绕吉
+    target: 鲁墨·赤诚西绕
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "创立了拉木、绕吉、也巴、瓦耶、凑迪等无数的道场"
+    derived_from: EV_028
+    note: null
+
+  - rel_id: R_034
+    type: foundedBy
+    source: 也巴
+    target: 鲁墨·赤诚西绕
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "创立了拉木、绕吉、也巴、瓦耶、凑迪等无数的道场"
+    derived_from: EV_028
+    note: null
+
+  - rel_id: R_035
+    type: foundedBy
+    source: 瓦耶
+    target: 鲁墨·赤诚西绕
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "创立了拉木、绕吉、也巴、瓦耶、凑迪等无数的道场"
+    derived_from: EV_028
+    note: null
+
+  - rel_id: R_036
+    type: foundedBy
+    source: 凑迪
+    target: 鲁墨·赤诚西绕
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "创立了拉木、绕吉、也巴、瓦耶、凑迪等无数的道场"
+    derived_from: EV_028
+    note: null
+
+# ============================================================
+# D. 政治/世俗关系 (rulerOf / fatherOf / sonOf / siblingOf)
+# ============================================================
+
+# --- 父子关系 ---
+
+  - rel_id: R_040
+    type: fatherOf
+    source: 赤松德赞
+    target: 木奈赞普
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "法王赤松德赞有三位太子，长子叫木奈赞普"
+    note: 长子
+
+  - rel_id: R_041
+    type: fatherOf
+    source: 赤松德赞
+    target: 木赤赞普
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "次子叫木赤赞普"
+    note: 次子
+
+  - rel_id: R_042
+    type: fatherOf
+    source: 赤松德赞
+    target: 木迪赞普
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "三太子名叫木迪赞普或者色纳勒劲云"
+    note: 三太子
+
+  - rel_id: R_043
+    type: fatherOf
+    source: 木迪赞普
+    target: 赤热巴坚
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他生了五位太子，其中最出类拔萃的就是金刚手菩萨的化身——赤热巴坚"
+    note: 五太子之最出色者
+
+# --- 兄弟关系 ---
+
+  - rel_id: R_044
+    type: siblingOf
+    source: 朗达玛
+    target: 赤热巴坚
+    symmetric: true
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "君王赤热巴坚的胞兄朗达玛秃头王"
+    note: 朗达玛为赤热巴坚胞兄
+
+# ============================================================
+# E. 译经关系 (translatedBy / revisedBy)
+# ============================================================
+
+  - rel_id: R_050
+    type: revisedBy
+    source: 《广般若经》
+    target: 嘎瓦那波切
+    role: reviewer
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "对曾经翻译的《广般若经》进行译校以后，分成十六部"
+    derived_from: EV_014
+    note: 赤热巴坚时期译校
+
+  - rel_id: R_051
+    type: translatedBy
+    source: 上分对法
+    target: 则那莫札
+    role: translator
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "所有上分对法及下分对法，由班智达则那莫札和译师嘎瓦花则等翻译"
+    derived_from: EV_030
+    note: null
+
+  - rel_id: R_052
+    type: translatedBy
+    source: 上分对法
+    target: 嘎瓦花则
+    role: translator
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "由班智达则那莫札和译师嘎瓦花则等翻译"
+    derived_from: EV_030
+    note: null
+
+  - rel_id: R_053
+    type: translatedBy
+    source: 下分对法
+    target: 则那莫札
+    role: translator
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "所有上分对法及下分对法，由班智达则那莫札和译师嘎瓦花则等翻译"
+    derived_from: EV_030
+    note: null
+
+  - rel_id: R_054
+    type: translatedBy
+    source: 下分对法
+    target: 嘎瓦花则
+    role: translator
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "由班智达则那莫札和译师嘎瓦花则等翻译"
+    derived_from: EV_030
+    note: null
+
+# ============================================================
+# F. 降伏/守护关系 (subduedBy)
+# ============================================================
+
+  - rel_id: R_060
+    type: subduedBy
+    source: 鬼王香夏坚
+    target: 莲花生大士
+    result: 保护僧财
+    layers: [史传, 神变]
+    confidence: 0.85
+    source_quote: "莲师示现威猛身相降伏了他，并吩咐他保护僧财"
+    derived_from: EV_001
+    note: null
+
+  - rel_id: R_061
+    type: subduedBy
+    source: 罗刹王绕卡土创
+    target: 莲花生大士
+    result: 被超度，莲师神识入其身
+    layers: [宗派, 神变]
+    confidence: 0.80
+    source_quote: "在铜色吉祥山顶超度了罗刹王绕卡土创，莲师神识进入他的身体"
+    derived_from: EV_004
+    note: null
+
+# ============================================================
+# G. 归属关系 (memberOf / belongsToSect / locatedIn)
+# ============================================================
+
+# --- memberOf ---
+
+  - rel_id: R_070
+    type: memberOf
+    source: 松赞干布
+    target: 祖孙三法王
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "人们共称的祖孙三法王"
+    note: null
+
+  - rel_id: R_071
+    type: memberOf
+    source: 赤松德赞
+    target: 祖孙三法王
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "人们共称的祖孙三法王，其中松赞干布与赤松德赞恩德超群绝伦"
+    note: null
+
+  - rel_id: R_072
+    type: memberOf
+    source: 赤热巴坚
+    target: 祖孙三法王
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "人们共称的祖孙三法王"
+    note: null
+
+# --- belongsToSect ---
+
+  - rel_id: R_073
+    type: belongsToSect
+    source: 邬金敏珠朗佛学院
+    target: 东律传承
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "藏地雪域的一大庄严邬金敏珠朗佛学院以及它的所有分院戒律传承都属于这一传承"
+    note: 东律传承归属
+
+# --- locatedIn ---
+
+  - rel_id: R_074
+    type: locatedIn
+    source: 吉祥善增寺
+    target: 吉玛哦江多
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在吉玛哦江多建起了无与伦比的吉祥善增寺"
+    note: null
+
+  - rel_id: R_075
+    type: locatedIn
+    source: 丹迪寺
+    target: 康区
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "到了康区，在玛龙多吉札绕安穹那炯或者丹迪寺修行安住"
+    note: null
+
+  - rel_id: R_076
+    type: locatedIn
+    source: 铜色吉祥山
+    target: 妙拂洲
+    layers: [宗派]
+    confidence: 0.85
+    source_quote: "到达了妙拂洲，在铜色吉祥山顶"
+    note: null
+
+  - rel_id: R_077
+    type: locatedIn
+    source: 巴达霍修行院
+    target: 藏地
+    layers: [史传]
+    confidence: 0.75
+    source_quote: "国王派太子木赤赞普去摧毁巴达霍修行院"
+    note: 具体位置文中未详述，在藏地境内
