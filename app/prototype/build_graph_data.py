@@ -239,7 +239,20 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
 
         src_raw = str(rel.get('source', '')).strip()
         tgt_raw = str(rel.get('target', '')).strip()
-        rtype = str(rel.get('type', '')).strip()
+        raw_rtype = str(rel.get('type', '')).strip()
+        # Normalize relation type to Chinese
+        rtype_map = {
+            'teacherOf': '师承', 'manifestationOf': '化身', 'formOf': '形态', 'form_of': '形态',
+            'builtBy': '修建', 'foundedBy': '创立', 'rulerOf': '统治', 'fatherOf': '父子',
+            'sonOf': '子父', 'consortOf': '配偶', 'consort': '配偶', 'ministerOf': '臣属',
+            'siblingOf': '兄弟', 'translatedBy': '译经', 'revisedBy': '译校',
+            'subduedBy': '降伏', 'protects': '守护', 'concealedBy': '埋藏',
+            'revealedBy': '开取', 'revealedFrom': '掘藏地', 'memberOf': '归属',
+            'belongsToSect': '宗派归属', 'locatedIn': '位于', 'cites': '引用',
+            'refutes': '驳斥', 'reconciles': '调和', 'alternativeOf': '异说',
+            'authorOf': '著作', 'lineageOf': '法脉',
+        }
+        rtype = rtype_map.get(raw_rtype, raw_rtype)
         raw_spec = rel.get('specialty', '') or ''
         if isinstance(raw_spec, list):
             specialty = ', '.join(str(s) for s in raw_spec)
