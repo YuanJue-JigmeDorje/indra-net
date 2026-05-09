@@ -976,14 +976,10 @@ def main():
         existing_names.add(v["id"])
     print(f"  +{len(new_vocab)} from buddhist-vocab.yaml → {len(entities)} entities")
 
-    # Load merged gazetteer (82k terms from dictionaries, type=佛学术语)
-    gazetteer_path = str(ROOT / "resources" / "dictionaries" / "merged_gazetteer_st.txt")
-    gazetteer_entities = load_merged_gazetteer(gazetteer_path)
-    new_gaz = [g for g in gazetteer_entities if g["id"] not in existing_names]
-    entities.extend(new_gaz)
-    for g in new_gaz:
-        existing_names.add(g["id"])
-    print(f"  +{len(new_gaz)} from merged_gazetteer_st.txt → {len(entities)} entities")
+    # NOTE: merged_gazetteer_st.txt (82k terms) is NOT loaded here.
+    # It's used by gazetteer_prescan.py to generate candidate lists for Agents.
+    # Only Agent-confirmed entities should appear in the reader view.
+    # Direct gazetteer → reader annotation is anti-NER (no classification, no relations).
 
     # Auto-detect 《》 book titles from source texts
     chapter_paths = [str(CHAPTER_DIR / fn) for _, fn, _ in CHAPTERS]

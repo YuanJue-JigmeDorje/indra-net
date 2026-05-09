@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 VOCAB_PATH = ROOT / "doc" / "buddhist-vocab.yaml"
 CHAPTER_DIR = ROOT / "source" / "dudjom" / "chapter_md"
 GRAPH_DATA = ROOT / "app" / "prototype" / "graph_data.js"
-MERGED_GAZETTEER = ROOT / "resources" / "dictionaries" / "merged_gazetteer_st.txt"
+MERGED_GAZETTEER = ROOT / "resources" / "dictionaries" / "gazetteer_entities_only.txt"
 OUT_DIR = ROOT / "kg" / "prescan"
 
 CHAPTERS = [
