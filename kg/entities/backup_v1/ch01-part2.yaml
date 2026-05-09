@@ -3,7 +3,7 @@
 # 覆盖范围: (十二)示现涅槃 + 结集教法 + 教藏交付传代
 #           + 护持佛法及大乘兴盛
 # 来源: source/dudjom/chapter_md/01_佛教总况.md
-# 提取日期: 2026-05-09 (重新提取：补全经典名、引文关系、并列人名)
+# 提取日期: 2026-04-11
 # 规范: SKILL_03a v0.1 + entity-taxonomy v0.4
 # ============================================================
 
@@ -167,7 +167,7 @@ E_015:
 
 E_016:
   name: 麻衣
-  aliases: [麻衣尊者, 麻衣罗汉]
+  aliases: [麻衣尊者]
   type: 人物.法师
   additional_types: [圣众.声闻圣众.阿罗汉]
   additional_types_source: text
@@ -416,18 +416,6 @@ E_042:
   attainments: []
   note: "佛陀（或金刚手）将所有续部交传给邬金国王恩札布德；将续部造成经函宣讲众生获得成就"
   appearances: [557, 558]
-
-E_043:
-  name: 妙胜善
-  aliases: []
-  type: 人物.帝王
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "护持佛法的国王之一"
-  appearances: [522]
 
 # ==================== 人物 — 法师（论师/大成就者等） ====================
 
@@ -766,28 +754,30 @@ E_076:
   appearances: [453]
 
 E_077:
-  name: 那达
-  aliases: []
-  type: 人物.其他
+  name: 魔王波旬
+  aliases: [魔王]
+  type: 非人.天部
   specialty: []
-  origin: 觉拉
+  origin: ""
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "商主之子；在觉拉地方摩仁达山建造精舍并作施主"
-  appearances: [453]
+  note: "对小护尊者眷属制造障碍；小护幻化三尸花鬘系于其头上"
+  appearances: [480, 483]
 
 E_078:
-  name: 帕达
+  name: 香达夜叉
   aliases: []
-  type: 人物.其他
+  type: 非人.天部
   specialty: []
-  origin: 觉拉
+  origin: ""
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "商主之子；与那达一起在觉拉地方建造精舍并作施主"
-  appearances: [453]
+  note: "协助阿育王建造七宝塔"
+  appearances: [471]
+
+# ==================== 人物 — 付法藏五百仙人 ====================
 
 E_079:
   name: 长老母之子
@@ -801,45 +791,9 @@ E_079:
   note: "《智燃论》中说佛灭后二百年其结集教法"
   appearances: [387]
 
+# ==================== 非人 — 天部 ====================
+
 E_080:
-  name: 札巴上师
-  aliases: []
-  type: 人物.法师
-  specialty: [比丘]
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: [阿罗汉]
-  note: "佛陀般的大声闻之外，护持佛法的阿罗汉众之一"
-  appearances: [521]
-
-# ==================== 非人 ====================
-
-E_085:
-  name: 魔王波旬
-  aliases: [魔王]
-  type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "对小护尊者眷属制造障碍；小护幻化三尸花鬘系于其头上"
-  appearances: [480, 483]
-
-E_086:
-  name: 香达夜叉
-  aliases: []
-  type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "协助阿育王建造七宝塔"
-  appearances: [471]
-
-E_087:
   name: 尼枸卢天尊
   aliases: []
   type: 非人.天部
@@ -878,8 +832,8 @@ E_103:
   name: 王舍城
   aliases: []
   type: 地名.圣地
-  note: "第一次结集地；列卓达山洞所在；佛陀住五年"
-  appearances: [337, 338, 347, 352, 397]
+  note: "第一次结集地；列卓达山洞所在"
+  appearances: [337, 347, 352, 397]
 
 E_104:
   name: 列卓达山洞
@@ -892,7 +846,7 @@ E_105:
   name: 广严城
   aliases: []
   type: 地名.圣地
-  note: "比丘宣扬十非事之地；第二次结集相关；阿难遗体一半被广严城民众带走；佛陀安住之圣地之一"
+  note: "比丘宣扬十非事之地；第二次结集相关；阿难遗体一半被广严城民众带走"
   appearances: [335, 354, 456, 464]
 
 E_106:
@@ -1035,178 +989,108 @@ E_125:
   note: "日中罗汉从此取来藏红花"
   appearances: [517]
 
-E_126:
-  name: 尼枸卢婆罗门村落
-  aliases: []
-  type: 地名.区域
-  note: "迦叶尊者出生的村落，位于摩竭陀国"
-  appearances: [407]
-
-E_127:
-  name: 哦芒塔
-  aliases: []
-  type: 地名.圣地
-  note: "释迦世尊成佛后正住于此处时迦叶前来"
-  appearances: [415]
-
-E_128:
-  name: 摩仁达山
-  aliases: []
-  type: 地名.自然地理
-  note: "位于觉拉；商主之子那达和帕达在此建造精舍"
-  appearances: [452]
-
-E_129:
-  name: 具白地城
-  aliases: []
-  type: 地名.圣地
-  note: "佛陀安住之圣地之一（《大毗婆沙论》引文）"
-  appearances: [335]
-
-E_130:
-  name: 雪巴瘦
-  aliases: []
-  type: 地名.圣地
-  note: "佛陀安住之圣地之一（《大毗婆沙论》引文）"
-  appearances: [336]
-
-E_131:
-  name: 佛塔山
-  aliases: []
-  type: 地名.圣地
-  note: "佛陀安住之圣地之一（《大毗婆沙论》引文）"
-  appearances: [336]
-
-E_132:
-  name: 竹林园
-  aliases: []
-  type: 地名.圣地
-  note: "佛陀安住之圣地之一（《大毗婆沙论》引文）"
-  appearances: [336]
-
-E_133:
-  name: 具怨城
-  aliases: []
-  type: 地名.圣地
-  note: "佛陀安住之圣地之一（《大毗婆沙论》引文）"
-  appearances: [336]
-
-E_134:
-  name: 妙药林
-  aliases: []
-  type: 地名.圣地
-  note: "佛陀住四载之地（《大毗婆沙论》引文）"
-  appearances: [337]
-
-E_135:
-  name: 炽热山洞
-  aliases: []
-  type: 地名.修行处
-  note: "佛陀住二年之地（《大毗婆沙论》引文）"
-  appearances: [338]
-
 # ==================== 经典 ====================
 
 E_200:
-  name: 《大毗婆沙论》
+  name: 大毗婆沙论
   aliases: []
   type: 经典.论
-  note: "总结佛陀一生之论典；声闻经部认为其为论典开宗之作；引用偈颂列举佛陀安住各圣地年数"
+  note: "总结佛陀一生之论典；声闻经部认为其为论典开宗之作"
   appearances: [334, 525]
 
 E_201:
-  name: 《杂阿含经》
+  name: 杂阿含经
   aliases: []
   type: 经典.经
-  note: "记载第一次结集偈颂；佛亲自授记小护之经；第三次结集情节在此经中无记载"
+  note: "记载第一次结集偈颂；佛亲自授记小护之经"
   appearances: [351, 380, 477]
 
 E_202:
-  name: 《智燃论》
+  name: 智燃论
   aliases: []
   type: 经典.论
   note: "记载大乘佛法由普贤文殊金刚手弥勒结集；记载长老母之子结集教法"
   appearances: [387, 394]
 
 E_203:
-  name: 《秘密不可思议经》
+  name: 秘密不可思议经
   aliases: []
   type: 经典.经
   note: "说金刚手是千佛教法的结集者"
   appearances: [396]
 
 E_204:
-  name: 《国王哲哲梦境授记经》
+  name: 国王哲哲梦境授记经
   aliases: []
   type: 经典.经
   note: "迦叶佛授记释迦佛教法分成十八部之依据"
   appearances: [372]
 
 E_205:
-  name: 《别解脱经》
+  name: 别解脱经
   aliases: []
   type: 经典.律
   note: "诵法不同导致僧团分裂为十八部"
   appearances: [365]
 
 E_206:
-  name: 《文殊根本续》
+  name: 文殊根本续
   aliases: []
   type: 经典.密续
   note: "佛在此中授记阿育王出世建塔"
   appearances: [469]
 
 E_207:
-  name: 《般若八千颂》
+  name: 般若八千颂
   aliases: []
   type: 经典.经
   note: "显宗认为文殊留给护月国王的经函即此经"
   appearances: [549]
 
 E_208:
-  name: 《摄真如续》
+  name: 摄真如续
   aliases: []
   type: 经典.密续
   note: "密宗认为文殊留给护月国王的经函即此续"
   appearances: [549]
 
 E_209:
-  name: 《密集续》
+  name: 密集续
   aliases: []
   type: 经典.密续
   note: "国王瓦色嘎巴从黑日嘎殿堂取出"
   appearances: [567]
 
 E_210:
-  name: 《喜金刚》
+  name: 喜金刚
   aliases: []
   type: 经典.密续
   note: "龙树菩萨从黑日嘎殿堂取出"
   appearances: [567]
 
 E_211:
-  name: 《玛哈玛雅》
+  name: 玛哈玛雅
   aliases: []
   type: 经典.密续
   note: "革革热巴从黑日嘎殿堂取出"
   appearances: [567]
 
 E_212:
-  name: 《大威德续》
+  name: 大威德续
   aliases: []
   type: 经典.密续
   note: "革革热巴从黑日嘎殿堂取出"
   appearances: [568]
 
 E_213:
-  name: 《时轮金刚》
+  name: 时轮金刚
   aliases: []
   type: 经典.密续
   note: "则乐巴从香巴拉取来"
   appearances: [569]
 
 E_214:
-  name: 《广般若》
+  name: 广般若
   aliases: []
   type: 经典.经
   note: "世亲能背诵九十九部"
@@ -1403,11 +1287,3 @@ E_709:
   cardinality: 500
   note: "克什米尔说法中第三次结集参与者"
   appearances: [383]
-
-E_710:
-  name: 六门班智达
-  aliases: []
-  type: 集合.人物集合
-  cardinality: 6
-  note: "护持佛法的成就者群体之一"
-  appearances: [572]

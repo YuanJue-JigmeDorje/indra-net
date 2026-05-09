@@ -2,11 +2,12 @@
 # 知识图谱事件抽取 — 第一品 佛教总况 (lines 1-300)
 # 覆盖范围: 佛教总况引言 + 本师佛陀现世十二相（降天至广转法轮）
 # 来源: source/dudjom/chapter_md/01_佛教总况.md
-# 提取日期: 2026-05-09 (重新提取：补充所有引文论证事件)
+# 提取日期: 2026-04-11
 # 规范: SKILL_04a + entity-taxonomy v0.4 + narrative-layers
 #
 # 实体引用说明:
 #   participants 中使用实体 name（非 ID），便于跨文件引用
+#   未注册实体以名称字符串标注
 #
 # confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
 # ============================================================
@@ -59,57 +60,6 @@
   confidence: 0.90
   source_quote: "声闻有部的论师们认为……具束缚的最后有者薄地凡夫义成王子在金刚座以大资粮道的身份，在一坐垫上获得加行道、见道、修道、无学道以后才成佛"
 
-- event_id: EV_003a
-  type: 引文论证
-  title: 引《俱舍论》论证释迦佛成佛方式如麟角喻独觉
-  participants:
-    - entity: 《俱舍论》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "本师麟角喻者非，依于第四之静虑，一座上得菩提故。"
-  argument: 论证释迦佛成佛的方式与利根麟角喻独觉相同
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《俱舍论》中说：'本师麟角喻者非，依于第四之静虑，一座上得菩提故。'其中指出释迦佛成佛的方式与利根麟角喻独觉相同。"
-
-- event_id: EV_003b
-  type: 引文论证
-  title: 引《俱舍论》论证最后有菩萨是异生凡夫
-  participants:
-    - entity: 《俱舍论》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "彼前乃随解脱分。"
-  argument: 论证最后有菩萨是异生凡夫
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "最后有菩萨是异生凡夫，关于这一点，《俱舍论》中说：'彼前乃随解脱分。'"
-
-- event_id: EV_003c
-  type: 引文论证
-  title: 引《俱舍论》论证供养最后有菩萨功德无量
-  participants:
-    - entity: 《俱舍论》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "虽非圣者然而于，父母病人说法者，最后有者之菩萨，供养功德无有量。"
-  argument: 论证虽非圣者，供养最后有者之菩萨功德无量
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "并且说：'虽非圣者然而于，父母病人说法者，最后有者之菩萨，供养功德无有量。'"
-
 - event_id: EV_004
   type: 典据
   title: 共同大乘论述白幢天子受生为义成王子成佛
@@ -125,23 +75,6 @@
   confidence: 0.90
   source_quote: "释迦佛从发菩提心起在三大阿僧祇劫积累资粮，最终成为十地一来菩萨名叫'白幢'的天子，他受生为最后有者十地菩萨义成王子而在此刹土成佛"
 
-- event_id: EV_004a
-  type: 引文论证
-  title: 引《功德圆满庄严经》论证释迦佛三大阿僧祇劫积资粮成佛
-  participants:
-    - entity: 《功德圆满庄严经》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "我自开始发起无上菩提心时起，在三大阿僧祇劫以最大的精进累积资粮，并且照见在人寿百岁之时一切无有导师盲目的有情而在此赡部洲成佛，之后广转不可思议法轮……"
-  argument: 论证共同大乘的观点——释迦佛三大阿僧祇劫积累资粮后在赡部洲成佛
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《功德圆满庄严经》中记载：'我自开始发起无上菩提心时起，在三大阿僧祇劫以最大的精进累积资粮……'"
-
 - event_id: EV_005
   type: 典据
   title: 密宗观点——义成王子于尼连禅河畔入定后赴密严刹土成佛
@@ -153,41 +86,6 @@
   layers: [典据]
   confidence: 0.90
   source_quote: "义成王子在尼连禅河畔安住于不动三摩地的时候，所有佛陀唤他出定并劝请，结果他把假合的身体放在河边，而智慧身到达密严刹土，蒙受一切如来灌顶"
-
-- event_id: EV_005a
-  type: 引文论证
-  title: 引佛智论师论述释迦佛尼连河悟道经过
-  participants:
-    - entity: 佛智论师
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "何故释迦牟尼佛，经三大劫积资粮，未悟此义尼连河，安住无所有定中。尔时十方之善逝，顿现遣除贪求心，如虚空界极清净，深明无二尽宣说，午夜时分如佛陀，修行真如拂晓时，一刹那间悟真性。为调一切诸众生，安住菩提迦耶已，尽摧一切大魔军，为能摄受诸有情，广转微妙之法轮。"
-  argument: 论证密宗观点中释迦佛在尼连禅河安住无所有定后一刹那悟真性的过程
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "佛智论师说：'何故释迦牟尼佛，经三大劫积资粮，未悟此义尼连河……广转微妙之法轮。'"
-  note: "佛智论师非经典而是论师引述，但结构与引文论证一致"
-
-- event_id: EV_005b
-  type: 引文论证
-  title: 引圣天论师论述外内现前二菩提
-  participants:
-    - entity: 圣天论师
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "现前二菩提，说为外与内。"
-  argument: 论证外现前菩提以离贪方式成佛，内现前菩提以四种贪欲法理现前光明法身
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "按照圣天论师所说：'现前二菩提，说为外与内。'承许外现前菩提是以离贪的方式成佛；内现前菩提是以四种贪欲法理而现前光明法身之后证得双运身。"
 
 - event_id: EV_006
   type: 典据
@@ -201,49 +99,13 @@
   confidence: 0.90
   source_quote: "释迦佛是在密严庄严刹土中成佛以后依次在净居天、金刚座示现成佛"
 
-- event_id: EV_006a
-  type: 引文论证
-  title: 引《密严庄严经》论证释迦佛在密严刹土成佛
-  participants:
-    - entity: 《密严庄严经》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "真实菩提正等觉，成佛胜处密严刹，并非未曾成佛果，始于欲界成正觉。彼等赴往密严刹，俱胝化身之佛陀，恒常安住瑜伽定，化身方便一游舞，犹如明月照诸国。各处随机而调伏，彼前以彼而示现。"
-  argument: 论证释迦佛并非未曾成佛始于欲界成正觉，而是先在密严刹土成佛后以化身示现
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《密严庄严经》中说：'真实菩提正等觉，成佛胜处密严刹……彼前以彼而示现。'"
-
-- event_id: EV_006b
-  type: 引文论证
-  title: 引《楞伽经》论证佛在密严刹成正觉后化身示现
-  participants:
-    - entity: 《楞伽经》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "远离净居之诸处，于彼悦意密严刹，真实佛陀成正觉，化身于此示成佛。"
-  argument: 论证释迦佛在密严刹成正觉后以化身方式在此世间示现成佛（与《密严庄严经》同一论点）
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《楞伽经》中说：'远离净居之诸处，于彼悦意密严刹，真实佛陀成正觉，化身于此示成佛。'"
-
-# ==================== 无上了义观点段 (lines 58-91) ====================
-
 - event_id: EV_007
   type: 典据
   title: 无上了义观点——释迦佛从无始时以来即在法性光明刹土现前菩提
   participants:
     - entity: 释迦牟尼佛
       role: 主体
-  location: 法性光明刹土
+  location: null
   time_info:
     text: "无始时以来"
     relative_to: null
@@ -251,128 +113,6 @@
   layers: [典据]
   confidence: 0.90
   source_quote: "释迦佛从无始时以来就在本基法界中以自证智慧解脱的方式而现前菩提，在法性光明刹土，与三世一切佛陀密意一味一体安住"
-
-- event_id: EV_007a
-  type: 引文论证
-  title: 引《如意宝庄严续》论证释迦佛从无始以来以各种形象利益众生
-  participants:
-    - entity: 《如意宝庄严续》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-    - entity: 金刚持
-      role: 论证对象
-  quoted_text: "始初正等觉，大密金刚持，游戏无边刹，无数前后时，寂猛无量相，猎人娼妓等，以异相利生。然此贤劫中，转变千导师，显现种种相，饶益无量众。"
-  argument: 论证释迦佛即大密金刚持，从无始以来以各种形象游戏无边刹利益众生
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《如意宝庄严续》中云：'始初正等觉，大密金刚持，游戏无边刹……饶益无量众。'"
-
-- event_id: EV_007b
-  type: 引文论证
-  title: 引《密藏根本续》论证六能仁以四种调伏方式利益众生
-  participants:
-    - entity: 《密藏根本续》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "所谓'大悲加持'的六能仁，是由善逝之身语意金刚中出现的，出现以后也是以众生业力所感而在下立行、倒栽行的六趣十方无边无际每一三千大千世界中，每一大能仁出有坏都以四种调伏方式利益五道有情。"
-  argument: 论证六能仁由善逝身语意金刚中出现，以四种调伏方式利益五道有情
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《密藏根本续》中也说：'所谓大悲加持的六能仁……以四种调伏方式利益五道有情。'"
-
-- event_id: EV_007c
-  type: 引文论证
-  title: 引《妙法白莲经》论证释迦佛于不可思千俱胝劫前已成佛
-  participants:
-    - entity: 《妙法白莲经》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "不可思千俱胝劫，彼之限量永无有，殊胜菩提我已得，我亦恒常说妙法。"
-  argument: 论证释迦佛成佛非近事，早于不可思千俱胝劫前已得殊胜菩提并恒常说法
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《妙法白莲经》中说：'不可思千俱胝劫，彼之限量永无有，殊胜菩提我已得，我亦恒常说妙法。'"
-
-- event_id: EV_007d
-  type: 引文论证
-  title: 引《父子相会经》论证如来成百俱胝劫前已示现成正觉
-  participants:
-    - entity: 《父子相会经》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "善巧方便大勇士，为令众生普成熟，成百俱胝劫之前，如来示现成正觉，仍为引导有情汝，示现众多正等觉。"
-  argument: 论证如来以善巧方便成百俱胝劫前已示现成正觉（与《妙法白莲经》同一论点）
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《父子相会经》中说：'善巧方便大勇士，为令众生普成熟，成百俱胝劫之前，如来示现成正觉……'"
-
-- event_id: EV_007e
-  type: 引文论证
-  title: 引《经庄严论》论述化身三种分类
-  participants:
-    - entity: 《经庄严论》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "佛陀幻化无有量，即承许此为化身，自他二利圆满者，安住一切种相中。恒时示现为工巧，投生菩提涅槃相，佛陀之此化身者，即是解脱大方便。"
-  argument: 论述化身分类——工巧化身、投生化身与殊胜化身三种
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《经庄严论》中说：'佛陀幻化无有量……即是解脱大方便。'"
-
-- event_id: EV_007f
-  type: 引文论证
-  title: 引《幻化根本续》论述殊胜大化身以四种调伏方式利益有情
-  participants:
-    - entity: 《幻化根本续》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: null
-  argument: 论述殊胜大化身从示现十二相的角度以四种调伏方式利益有情
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "其中殊胜大化身从示现十二相的角度而言，在《幻化根本续》中宣说了以四种调伏方式利益有情。"
-  note: "此处为间接引用，无直接引文"
-
-- event_id: EV_007g
-  type: 引文论证
-  title: 引《宝性论》论述十二相——从兜率天降至示现涅槃
-  participants:
-    - entity: 《宝性论》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "法身不动中，以异化身性，真实而投生，从兜率天降，入胎及诞生，精通工巧明，嬉享妃眷属，出家与苦行，趋至菩提树，降魔圆正觉，转大妙法轮，示现涅槃相，于诸不净刹，无间示安住。"
-  argument: 论述化身佛示现十二相的完整次第——从兜率天降至示现涅槃
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "《宝性论》中说：'法身不动中，以异化身性……无间示安住。'"
 
 # ==================== （一）降天 (lines 93-100) ====================
 
@@ -389,7 +129,7 @@
   source_quote: "释迦佛自从在兜率天成为名叫'白幢'的天子，就对诸位天人宣讲正法并且与众天人在一起"
 
 - event_id: EV_011
-  type: 授记
+  type: 神变
   title: 燃灯佛授记偈颂乐音在走廊中自然传出
   participants:
     - entity: 燃灯佛
@@ -408,8 +148,6 @@
   participants:
     - entity: 释迦牟尼佛
       role: 主体
-    - entity: 摩耶夫人
-      role: 关联者
   location: 兜率天
   time_info: null
   layers: [神变]
@@ -431,18 +169,6 @@
   layers: [神变]
   confidence: 0.80
   source_quote: "他便以婆罗门吠陀中说的灰白童象（即六牙白象）的形象来到正在持斋戒的母亲胎中"
-
-- event_id: EV_013a
-  type: 弘法
-  title: 菩萨在母胎中为无量天人宣说净化四生妙法
-  participants:
-    - entity: 释迦牟尼佛
-      role: 主体
-  location: null
-  time_info: null
-  layers: [神变]
-  confidence: 0.80
-  source_quote: "他入到胎中也是加持母胎成为十分悦意、没有轮回之行、诸位佛子享用的无量宫，并为无量无数的天人、人类众生宣说净化四生的妙法"
 
 # ==================== （三）诞生 (lines 108-123) ====================
 
@@ -494,14 +220,6 @@
   participants:
     - entity: 释迦牟尼佛
       role: 主体
-    - entity: 难陀
-      role: 伴随者
-    - entity: 耶输陀罗
-      role: 伴随者
-    - entity: 登巴
-      role: 伴随者
-    - entity: 阿丹
-      role: 伴随者
     - entity: 五百释迦童子
       role: 伴随者
     - entity: 八百童女
@@ -517,21 +235,21 @@
   source_quote: "难陀等五百释迦童子以及耶输陀罗等八百童女、登巴等五百仆人、阿丹等五百良驹也一同出生"
 
 - event_id: EV_018
-  type: 授记
+  type: 史传
   title: 相师预言太子命运——转轮王或佛陀
   participants:
     - entity: 释迦牟尼佛
       role: 受者
   location: null
   time_info: null
-  layers: [授记]
+  layers: [史传]
   confidence: 0.85
   source_quote: "相师们预言说：如果太子身在俗家，就会成为克胜四方的转轮王；倘若离开尘世出家为僧，就会成为佛陀"
 
 # ==================== （四）精通工巧 (lines 125-146) ====================
 
 - event_id: EV_019
-  type: 圆寂
+  type: 史传
   title: 摩耶夫人于太子出生七日后离世
   participants:
     - entity: 摩耶夫人
@@ -564,7 +282,7 @@
   source_quote: "国王把他交给众生主母等三十二位姨母，抚养成长"
 
 - event_id: EV_021
-  type: 弘法
+  type: 史传
   title: 太子于师长处学习文字历算
   participants:
     - entity: 释迦牟尼佛
@@ -648,7 +366,7 @@
   source_quote: "净饭王由于担心太子出家，于是命监视者和夜间巡逻者在城的周围严加守护，禁止太子外出"
 
 - event_id: EV_026
-  type: 出家受戒
+  type: 史传
   title: 太子夜间出家——向父王顶礼后跨马腾空
   participants:
     - entity: 释迦牟尼佛
@@ -667,7 +385,7 @@
   source_quote: "太子默默向父王顶礼，以此断除父母没有允许出家的过失。他跨上阿丹坐骑，在四大天王的承侍下，腾空而去"
 
 - event_id: EV_027
-  type: 出家受戒
+  type: 史传
   title: 太子在清净塔前剃度出家
   participants:
     - entity: 释迦牟尼佛
@@ -681,7 +399,7 @@
 # ==================== （七）苦行 (lines 167-177) ====================
 
 - event_id: EV_028
-  type: 弘法
+  type: 史传
   title: 太子在让佩、拉秀处听闻无所有定与有顶等持
   participants:
     - entity: 释迦牟尼佛
@@ -697,7 +415,7 @@
   source_quote: "在广严城、王舍城，于身怀因明窍诀、大名鼎鼎的让佩与拉秀大师那里，听闻无所有定与有顶等持"
 
 - event_id: EV_029
-  type: 闭关修行
+  type: 史传
   title: 太子与憍陈如等五人于尼连禅河畔六年苦行
   participants:
     - entity: 释迦牟尼佛
@@ -772,7 +490,7 @@
 # ==================== （九）降伏魔众 (lines 188-221) ====================
 
 - event_id: EV_034
-  type: 降伏非人
+  type: 神变
   title: 菩萨入定摧毁魔军等持，光芒慑服魔众
   participants:
     - entity: 释迦牟尼佛
@@ -787,15 +505,13 @@
   source_quote: "在初夜时分，他入定于摧毁魔军的等持中，惊动、慑服魔众所在地的光芒遍及各处"
 
 - event_id: EV_035
-  type: 降伏非人
+  type: 神变
   title: 魔王波旬化现猎人试图扰乱菩萨
   participants:
     - entity: 魔王波旬
       role: 主体
     - entity: 释迦牟尼佛
       role: 客体
-    - entity: 提婆达多
-      role: 关联者
   location: 金刚座
   time_info: null
   layers: [神变]
@@ -817,13 +533,13 @@
   source_quote: "地神安稳母的半个金色身躯便破土而出，手里拿着一个极微尘说：'我有能力把这个大地的微尘数得一清二楚，可是这位善男子布施的头颅、肢体，我却无法数尽'"
 
 - event_id: EV_037
-  type: 降伏非人
+  type: 神变
   title: 魔王发动千万亿魔军被大慈等持降服
   participants:
     - entity: 魔王波旬
       role: 主体
     - entity: 释迦牟尼佛
-      role: 降伏者
+      role: 主体
   location: 金刚座
   time_info: null
   layers: [神变]
@@ -831,7 +547,7 @@
   source_quote: "他又发动数以千万亿的魔军……菩萨没有任何嗔恨、害他的妄念，入定在大慈等持中，结果射向他的兵器全部降下花雨"
 
 - event_id: EV_038
-  type: 降伏非人
+  type: 神变
   title: 魔王幻变七魔女引诱菩萨失败
   participants:
     - entity: 魔王波旬
@@ -968,7 +684,7 @@
   source_quote: "有一个名叫正命的婆罗门不假思索顺口就问：'释迦牟尼，你是在谁面前出家的？'佛告诉他：'我无任何传戒师，无有与我相同者'"
 
 - event_id: EV_046
-  type: 弘法
+  type: 史传
   title: 佛陀于鹿野苑初转四谛法轮——憍陈如等五人得近圆戒
   participants:
     - entity: 释迦牟尼佛
@@ -984,7 +700,7 @@
   source_quote: "佛陀为憍陈如等五人及八万天人转了远离二边中道的四谛法轮，重复了三次……憍陈如等五人得到了自然近圆戒，成为世间上前所未有的第一批大比丘僧团"
 
 - event_id: EV_047
-  type: 弘法
+  type: 史传
   title: 佛陀于灵鹫山转第二无相法轮
   participants:
     - entity: 释迦牟尼佛
@@ -1012,7 +728,7 @@
   source_quote: "佛在圆满处灵鹫山，于舍利子、目犍连等五千阿罗汉、众生主母等五百比丘尼、给孤独等优婆塞、萨嘎等优婆夷……转了第二无相法轮"
 
 - event_id: EV_048
-  type: 弘法
+  type: 史传
   title: 佛陀于不定地点转第三了义法轮
   participants:
     - entity: 释迦牟尼佛
@@ -1022,20 +738,3 @@
   layers: [史传]
   confidence: 0.90
   source_quote: "佛陀还在天界、龙宫等不定的地点，为不可胜数的比丘、比丘尼、天龙、菩萨转了第三了义法轮"
-
-- event_id: EV_049
-  type: 引文论证
-  title: 引《功德庄严经》论证佛语特法——三转法轮各随根基示现
-  participants:
-    - entity: 《功德庄严经》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  quoted_text: "我未宣说任何法，诸有情前遍显现，何时欲求次第者，于彼等说次第法，于一时间悟入者，显现圆满之法门。称各心意满其愿，此即佛语之特法。"
-  argument: 论证佛语具有超越自相言词的特点——顿悟者同一时刻听三转法轮，渐悟者次第听闻
-  about_entity: 释迦牟尼佛
-  location: null
-  time_info: null
-  layers: [典据]
-  confidence: 0.95
-  source_quote: "关于这些道理，《功德庄严经》中说：'我未宣说任何法，诸有情前遍显现……此即佛语之特法。'"

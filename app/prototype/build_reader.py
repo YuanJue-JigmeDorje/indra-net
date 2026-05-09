@@ -136,31 +136,33 @@ def build_name_index(entities):
 # ---------------------------------------------------------------------------
 def preprocess_text(raw: str) -> list[str]:
     """
-    Merge PDF hard wraps into continuous text with smart paragraph detection.
-    A double newline is a paragraph break ONLY if the line before it ends with
-    sentence-ending punctuation (。！？；」）】…"). Otherwise it's just a PDF page break.
+    LOSSLESS preprocessing: every character from source appears in output.
+    Merge PDF hard wraps (single \\n) into continuous text.
+    Split into paragraphs at sentence-ending punctuation followed by blank line.
+    If a blank line appears mid-sentence, ignore it (PDF page break).
     """
     SENT_END = set('。！？；」）】…"\'')
     raw = raw.replace("\r\n", "\n").replace("\r", "\n")
+
+    # Step 1: merge all lines, tracking where blank lines were
     lines = raw.split("\n")
-    paragraphs = []
-    current = []
-    for line in lines:
-        stripped = line.strip()
-        if stripped == "":
-            # Blank line: check if previous line ended a sentence
-            if current:
-                prev_text = "".join(current).strip()
-                if prev_text and prev_text[-1] in SENT_END:
-                    # Real paragraph break
-                    paragraphs.append(prev_text)
-                    current = []
-                # else: PDF page break mid-sentence, ignore the blank line
+    merged = ""
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if line == "":
+            # Blank line: check if we should break paragraph
+            if merged and merged[-1] in SENT_END:
+                # Sentence ended → paragraph break
+                merged += "\n\n"
+            # else: mid-sentence page break → just continue (no insertion)
         else:
-            current.append(stripped)
-    if current:
-        paragraphs.append("".join(current).strip())
-    return [p for p in paragraphs if p]
+            merged += line
+        i += 1
+
+    # Step 2: split into paragraphs by \n\n
+    parts = merged.split("\n\n")
+    return [p.strip() for p in parts if p.strip()]
 
 
 # ---------------------------------------------------------------------------
@@ -558,19 +560,24 @@ def build_chapter_html(ch_num: str, title: str, paragraphs: list[str],
                        name_index: dict, sorted_names: list[str]) -> str:
     idx = int(ch_num)
     # The title (e.g. "第一品 佛教总况") may be merged into the first paragraph.
-    # Split it out: if first paragraph starts with "第X品", extract just that prefix as title.
+    # Strip ONLY the exact title prefix, keep everything else.
     body_paragraphs = list(paragraphs)
     if body_paragraphs:
         first = body_paragraphs[0]
-        # Try to split title from content
-        m = re.match(r'^(第[一二三四五六七八九十]+品\s*\S+)', first)
-        if m:
-            title_text = m.group(1)
-            rest = first[len(title_text):].strip()
-            if rest:
-                body_paragraphs[0] = rest  # keep the rest as first body paragraph
-            else:
-                body_paragraphs = body_paragraphs[1:]  # title was the whole paragraph
+        # Match title patterns like "第一品 佛教总况" or "第四品 内密三续"
+        title_patterns = [
+            r'^第[一二三四五六七八九十]+品\s*[一-鿿]+',  # 第X品 XX
+            r'^《[^》]+》',  # 《书名》 at start
+        ]
+        for pat in title_patterns:
+            m = re.match(pat, first)
+            if m:
+                rest = first[m.end():].strip()
+                if rest:
+                    body_paragraphs[0] = rest
+                else:
+                    body_paragraphs = body_paragraphs[1:]
+                break
 
     # Count entities for stats
     entity_count = 0

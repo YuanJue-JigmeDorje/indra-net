@@ -2,7 +2,7 @@
 # 知识图谱实体抽取 — 第一品 佛教总况 (lines 1-300)
 # 覆盖范围: 佛教总况引言 + 本师佛陀现世（十二相: 降天至广转法轮）
 # 来源: source/dudjom/chapter_md/01_佛教总况.md
-# 提取日期: 2026-05-09 (重新提取：修补漏提的经典名与引文关系)
+# 提取日期: 2026-04-11
 # 规范: SKILL_03a v0.1 + entity-taxonomy v0.4
 # ============================================================
 
@@ -21,7 +21,7 @@ E_001:
 
 E_002:
   name: 释迦牟尼佛
-  aliases: ["释迦佛", "本师", "义成王子", "白幢", "菩萨太子", "沙门释迦牟尼"]
+  aliases: ["释迦佛", "本师", "义成王子", "白幢"]
   type: 圣众.大乘.佛
   additional_types: ["人物.帝王"]
   additional_types_source: text
@@ -55,19 +55,6 @@ E_004:
   note: "《如意宝庄严续》中称'始初正等觉，大密金刚持'"
 
 E_005:
-  name: 弥勒菩萨
-  aliases: ["弥勒", "弥勒佛"]
-  type: 圣众.大乘.菩萨
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "补处怙主；迦叶加持遗体至弥勒成佛；广大行派法藏结集者（律藏）"
-
-# ==================== 非人 ====================
-
-E_005b:
   name: 梵天
   aliases: []
   type: 非人.天部
@@ -76,7 +63,7 @@ E_005b:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "诞生时献上妙衣；后回忆往昔宏愿劝请佛转法轮，供养千辐金法轮"
+  note: "诞生时从天献上妙衣；后回忆往昔宏愿劝请佛转法轮，供养千辐金法轮"
 
 E_006:
   name: 帝释天
@@ -87,7 +74,7 @@ E_006:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "诞生时献上妙衣；后供上如意宝珠劝请佛转法轮"
+  note: "诞生时从天献上妙衣；后供上如意宝珠劝请佛转法轮"
 
 E_007:
   name: 地神安稳母
@@ -109,53 +96,7 @@ E_008:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "化现为猎人形象阻挠菩萨成佛；发动魔军；又幻变七个魔女引诱"
-
-# ==================== 魔女（非人.天部，具名者） ====================
-
-E_040:
-  name: 白莲母
-  aliases: []
-  type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "七魔女之一；用媚态诱惑菩萨"
-
-E_041:
-  name: 美那嘎
-  aliases: []
-  type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "七魔女之一；脖子上各种项链悬垂"
-
-E_042:
-  name: 妙饰女
-  aliases: []
-  type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "七魔女之一；用腰带捆缚"
-
-E_043:
-  name: 卷发女
-  aliases: []
-  type: 非人.天部
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "七魔女之一；用钉铛作响的钏镯"
+  note: "化现为猎人形象来阻挠菩萨成佛；后发动魔军；又幻变七个魔女引诱"
 
 # ==================== 人物 — 法师 / 论师 ====================
 
@@ -168,7 +109,7 @@ E_010:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "引述其论述释迦佛在尼连河安住定中、十方善逝遣除贪求心"
+  note: "引述其论述释迦佛在尼连河安住定中、十方善逝遣除贪求心、午夜修行拂晓悟真性"
 
 E_011:
   name: 圣天论师
@@ -179,9 +120,9 @@ E_011:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "引述其'现前二菩提，说为外与内'的教言；由莲花花蕊中化生，龙树菩萨弟子"
+  note: "引述其'现前二菩提，说为外与内'的教言"
 
-# ==================== 人物 — 帝王 / 王妃 / 其他 ====================
+# ==================== 人物 — 其他 ====================
 
 E_012:
   name: 净饭王
@@ -247,7 +188,7 @@ E_017:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "怀着极大嫉妒心击死大象；射穿三个目标；降魔段中魔王谎称其控制迦毗罗卫国"
+  note: "怀着极大嫉妒心击死大象；后射穿三个目标；降魔段中魔王谎称其控制迦毗罗卫国"
 
 E_018:
   name: 难陀
@@ -491,16 +432,51 @@ E_039:
   attainments: []
   note: "得地大菩萨；第二转法轮不共眷属"
 
-E_107:
-  name: 阿丹
+# ==================== 魔女（非人.天部，具名者） ====================
+
+E_040:
+  name: 白莲母
   aliases: []
-  type: 人物.其他
+  type: 非人.天部
   specialty: []
   origin: ""
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "五百良驹之一；太子出家时的坐骑；文本将其与人物并列描述诞生"
+  note: "七魔女之一；用媚态诱惑菩萨"
+
+E_041:
+  name: 美那嘎
+  aliases: []
+  type: 非人.天部
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "七魔女之一；脖子上各种项链悬垂"
+
+E_042:
+  name: 妙饰女
+  aliases: []
+  type: 非人.天部
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "七魔女之一；用腰带捆缚"
+
+E_043:
+  name: 卷发女
+  aliases: []
+  type: 非人.天部
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "七魔女之一；用钉铛作响的钏镯"
 
 # ==================== 地名 ====================
 
@@ -634,7 +610,7 @@ E_061:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "太子六年苦行之处；密宗观点中义成王子在此安住不动三摩地"
+  note: "太子六年苦行之处"
 
 E_062:
   name: 鹿野苑
@@ -669,19 +645,7 @@ E_064:
   attainments: []
   note: "报身毗卢遮那佛受用之处"
 
-E_065:
-  name: 法性光明刹土
-  aliases: []
-  type: 地名.神话地名
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "无上了义观点中释迦佛从无始时以来在此现前菩提"
-
 # ==================== 经典 ====================
-# 按原文《》出现顺序完整扫描 lines 1-300
 
 E_070:
   name: 《俱舍论》
@@ -689,10 +653,10 @@ E_070:
   type: 经典.论
   specialty: []
   origin: ""
-  sect_affiliation: ["有部"]
+  sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "引述声闻有部论师关于释迦佛成佛方式的论述；两次引用（line 23, 26）"
+  note: "引述声闻有部论师关于释迦佛成佛方式的论述"
 
 E_071:
   name: 《功德圆满庄严经》
@@ -725,7 +689,7 @@ E_073:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "引述释迦佛在密严刹成佛、化身示现的教证"
+  note: "引述'远离净居之诸处，于彼悦意密严刹，真实佛陀成正觉，化身于此示成佛'"
 
 E_074:
   name: 《如意宝庄严续》
@@ -736,7 +700,7 @@ E_074:
   sect_affiliation: []
   manifestation_of: []
   attainments: []
-  note: "引述释迦佛以不同形象利益众生"
+  note: "引述释迦佛以不同形象利益众生的续典"
 
 E_075:
   name: 《密藏根本续》
@@ -872,44 +836,11 @@ E_094:
   attainments: []
   note: "太子在让佩、拉秀处听闻此等持"
 
-E_095a:
-  name: 不动三摩地
-  aliases: []
-  type: 教法.教言法门
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "密宗观点中义成王子在尼连禅河畔安住于此三摩地"
-
-E_095b:
-  name: 第四静虑
-  aliases: []
-  type: 教法.教言法门
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "成佛时菩萨入于此等持境界"
-
-E_095c:
-  name: 大慈等持
-  aliases: []
-  type: 教法.教言法门
-  specialty: []
-  origin: ""
-  sect_affiliation: []
-  manifestation_of: []
-  attainments: []
-  note: "降魔时菩萨入定于此等持，兵器全部化为花雨"
-
 # ==================== 教派 ====================
 
-E_096a:
+E_095:
   name: 有部
-  aliases: ["声闻有部", "说一切有部"]
+  aliases: ["声闻有部"]
   type: 教派.印度部派
   specialty: []
   origin: ""
@@ -920,7 +851,7 @@ E_096a:
 
 # ==================== 法器/圣物 ====================
 
-E_096b:
+E_096:
   name: 千辐金法轮
   aliases: []
   type: 法器圣物.法器
@@ -995,7 +926,7 @@ E_104:
   manifestation_of: []
   attainments: []
   cardinality: 500
-  members: ["阿丹"]
+  members: []
   note: "太子诞生时一同出生；阿丹为首"
 
 E_105:
@@ -1023,3 +954,16 @@ E_106:
   cardinality: 7
   members: ["白莲母", "美那嘎", "妙饰女", "卷发女"]
   note: "魔王波旬幻变七个魔女引诱菩萨，文本具名四位"
+
+# ==================== 坐骑（法器/圣物类不建；此为具名者） ====================
+
+E_107:
+  name: 阿丹
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五百良驹之一；太子出家时的坐骑；文本将其与人物并列描述诞生"

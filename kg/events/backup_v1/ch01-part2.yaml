@@ -4,7 +4,7 @@
 #           + 教藏交付传代(迦叶→阿难→麻衣→小护→有愧→黑色)
 #           + 护持佛法及大乘兴盛
 # 来源: source/dudjom/chapter_md/01_佛教总况.md
-# 提取日期: 2026-05-09 (重新提取：补全引文论证事件)
+# 提取日期: 2026-04-11
 # 规范: SKILL_04a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
 #
 # 实体引用: 使用实体 NAME（非 ID），引用 kg/entities/ch01-part2.yaml
@@ -162,26 +162,6 @@
   source_quote: "根据众生各自的缘分把舍利分成八份，作为八大佛塔的装藏物。"
   description: 迦叶根据众生各自缘分将佛舍利分八份，装藏于八大佛塔。
 
-# ==================== 引文论证 — 《大毗婆沙论》总结佛陀一生 ====================
-
-- event_id: EV_009b
-  type: 引文论证
-  title: 引《大毗婆沙论》总结佛陀现身于世之一生
-  participants:
-    - entity: 《大毗婆沙论》
-      role: 引文来源
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: "说法处及广严城，具白地城与天界，雪巴瘦与憍赏弥，静处以及佛塔山，竹林园及具怨城，及与迦毗罗卫城，佛于此等圣地处，各自安住一年矣。舍卫城住廿三年，妙药林中住四载，炽热山洞住二年，王舍城中住五年，苦行之处住六年，王宫中住廿九年，如是佛寿为八十，尔后能仁趋涅槃。"
-  argument: 作者引用此论总结佛陀一生的行迹和年数分配，以印证佛陀住世八十年的整体事业
-  source_quote: "《大毗婆沙论》中这样总结佛陀现身于世的一生：'说法处及广严城……尔后能仁趋涅槃。'"
-
 # ==================== 结集教法 (lines 340-399) ====================
 
 - event_id: EV_010
@@ -209,28 +189,6 @@
   confidence: 0.95
   source_quote: "佛陀灭度后的第二年夏令安居期间，在王舍城的列卓达山洞里，由未生怨王作施主，五百阿罗汉济济一堂"
   description: 佛灭后第二年夏安居，在王舍城列卓达山洞，未生怨王作施主，五百阿罗汉聚集进行第一次结集三藏。
-
-# ==================== 引文论证 — 《杂阿含经》记第一次结集 ====================
-
-- event_id: EV_010b
-  type: 引文论证
-  title: 引《杂阿含经》记载第一次结集
-  participants:
-    - entity: 《杂阿含经》
-      role: 引文来源
-    - entity: 五百阿罗汉
-      role: 论证对象
-    - entity: 未生怨王
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: "佛灭度后次夏季，王舍秘密山洞中，五百罗汉共集聚，未生怨施集三藏。"
-  argument: 引经文佐证第一次结集的时间、地点、参与者与施主
-  source_quote: "《杂阿含经》中说：'佛灭度后次夏季，王舍秘密山洞中，五百罗汉共集聚，未生怨施集三藏。'"
 
 - event_id: EV_011
   type: 弘法
@@ -286,14 +244,6 @@
       role: 分裂者
     - entity: 安意
       role: 分裂者
-    - entity: 说一切有部
-      role: 被分裂
-    - entity: 大众部
-      role: 分出
-    - entity: 上座部
-      role: 分出
-    - entity: 正量部
-      role: 分出
   location: null
   time_info:
     text: "勇部、欢喜王、大莲花王、嘎纳加嘎四位国王统治期间"
@@ -323,28 +273,6 @@
   confidence: 0.85
   source_quote: "腻契波王作为施主开始第三次结集。"
   description: 腻契波王作施主进行第三次结集，建立十八部均为清净佛教，并将律藏、经藏、论藏立成文字。
-
-# ==================== 引文论证 — 《国王哲哲梦境授记经》 ====================
-
-- event_id: EV_014a
-  type: 引文论证
-  title: 引《国王哲哲梦境授记经》论证十八部均为清净佛教
-  participants:
-    - entity: 《国王哲哲梦境授记经》
-      role: 引文来源
-    - entity: 迦叶佛
-      role: 论证对象
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据, 授记]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: "真实圆满正等觉迦叶佛告哲哲国王言：'国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。'"
-  argument: 第三次结集引用此经教证建立十八部均是清净的佛教
-  source_quote: "这次结集主要依据《国王哲哲梦境授记经》中所说：'真实圆满正等觉迦叶佛告哲哲国王言……'"
 
 - event_id: EV_014b
   type: 弘法
@@ -400,26 +328,6 @@
   source_quote: "佛陀入灭后接近四百年时，五百罗汉、五百或一万六千菩萨集聚一堂作了第三次结集。"
   description: 藏地共许佛灭后四百年五百罗汉与菩萨进行第三次结集。
 
-# ==================== 引文论证 — 《智燃论》记载长老母之子结集 ====================
-
-- event_id: EV_014e
-  type: 引文论证
-  title: 引《智燃论》记载长老母之子结集教法
-  participants:
-    - entity: 《智燃论》
-      role: 引文来源
-    - entity: 长老母之子
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: "佛陀入灭后过了两百年，长老母之子结集教法。"
-  argument: 引《智燃论》为第三次结集的时间提供典据，作者认为此处两百年是以半年计
-  source_quote: "诚如《智燃论》中说：'佛陀入灭后过了两百年，长老母之子结集教法。'"
-
 - event_id: EV_015
   type: 授记
   title: 迦叶佛授记释迦佛教法分成十八部
@@ -436,52 +344,6 @@
   confidence: 0.95
   source_quote: "国王，你在梦中见十八人同扯一匹布，即预示释迦佛教法分成十八部，每一块布不曾毁坏预示十八部每一部均有解脱。"
   description: 迦叶佛于《国王哲哲梦境授记经》中授记释迦佛教法分成十八部，每部均有解脱。
-
-# ==================== 引文论证 — 《智燃论》记大乘结集 ====================
-
-- event_id: EV_015b
-  type: 引文论证
-  title: 引《智燃论》论证大乘佛法由四菩萨结集
-  participants:
-    - entity: 《智燃论》
-      role: 引文来源
-    - entity: 普贤菩萨
-      role: 论证对象
-    - entity: 文殊菩萨
-      role: 论证对象
-    - entity: 金刚手菩萨
-      role: 论证对象
-    - entity: 弥勒菩萨
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: "大乘佛法是佛所说，由普贤菩萨、文殊菩萨、密主金刚手以及弥勒菩萨等为首的结集者所结集。"
-  argument: 引《智燃论》论证大乘佛法是佛亲口所说并由四大菩萨结集，为不共大乘观点提供依据
-  source_quote: "诚如《智燃论》中说：'大乘佛法是佛所说，由普贤菩萨、文殊菩萨、密主金刚手以及弥勒菩萨等为首的结集者所结集。'"
-
-# ==================== 引文论证 — 《秘密不可思议经》 ====================
-
-- event_id: EV_015c
-  type: 引文论证
-  title: 引《秘密不可思议经》论证金刚手为千佛教法结集者
-  participants:
-    - entity: 《秘密不可思议经》
-      role: 引文来源
-    - entity: 金刚手菩萨
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: null
-  argument: 引此经证明金刚手不仅结集释迦佛教法，更是千佛教法的结集者
-  source_quote: "《秘密不可思议经》中说金刚手是千佛教法的结集者。"
 
 - event_id: EV_016
   type: 弘法
@@ -503,26 +365,6 @@
   confidence: 0.95
   source_quote: "在王舍城的南方布玛萨巴瓦山上，百万菩萨聚集，弥勒结集律藏、文殊结集经藏、金刚手结集论藏。"
   description: 不共大乘观点：百万菩萨于王舍城南布玛萨巴瓦山聚集，弥勒结集律藏、文殊结集经藏、金刚手结集论藏。
-
-# ==================== 引文论证 — 大乘经藏记甚深见/广大行法藏分工 ====================
-
-- event_id: EV_016b
-  type: 引文论证
-  title: 引大乘经藏论证甚深见派与广大行派法藏分工
-  participants:
-    - entity: 文殊菩萨
-      role: 论证对象
-    - entity: 弥勒菩萨
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: "所有甚深见派法藏由文殊结集，所有广大行派法藏由弥勒结集。"
-  argument: 引大乘经藏进一步说明文殊负责甚深见派法藏、弥勒负责广大行派法藏的分工
-  source_quote: "大乘经藏中说：'所有甚深见派法藏由文殊结集，所有广大行派法藏由弥勒结集。'"
 
 # ==================== 教藏交付传代 — 迦叶段 (lines 401-444) ====================
 
@@ -727,8 +569,6 @@
   participants:
     - entity: 阿难
       role: 亲教师
-    - entity: 日中罗汉
-      role: 受戒者
   location: 恒河
   time_info: null
   layers: [史传, 神变]
@@ -774,29 +614,7 @@
 
 # ==================== 教藏交付传代 — 麻衣段 (lines 467-474) ====================
 
-# ==================== 引文论证 — 《文殊根本续》授记阿育王 ====================
-
 - event_id: EV_031
-  type: 引文论证
-  title: 引《文殊根本续》授记阿育王出世建塔
-  participants:
-    - entity: 《文殊根本续》
-      role: 引文来源
-    - entity: 阿育王
-      role: 论证对象
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据, 授记]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: "佛陀入灭后一百年出世，寿命达一百五十，八十七年供养佛塔，依此从七座舍利塔中出现佛舍利，在南赡部洲四面八方建造八万四千七宝塔。"
-  argument: 引《文殊根本续》中佛之授记，论证阿育王出世建塔是佛早已安排的事业
-  source_quote: "按照佛在《文殊根本续》中授记：'佛陀入灭后一百年出世，寿命达一百五十……建造八万四千七宝塔。'"
-
-- event_id: EV_031b
   type: 授记
   title: 佛在《文殊根本续》中授记阿育王出世
   participants:
@@ -870,29 +688,7 @@
 
 # ==================== 教藏交付传代 — 小护段 (lines 476-489) ====================
 
-# ==================== 引文论证 — 《杂阿含经》授记小护 ====================
-
 - event_id: EV_035
-  type: 引文论证
-  title: 引《杂阿含经》授记小护出家
-  participants:
-    - entity: 《杂阿含经》
-      role: 引文来源
-    - entity: 小护
-      role: 论证对象
-    - entity: 释迦牟尼佛
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据, 授记]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: "我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。"
-  argument: 引佛在《杂阿含经》中的亲自授记，论证小护的出家和事业是佛预见并安排的
-  source_quote: "一致共称佛在《杂阿含经》中亲自如此授记：'我入灭后百年时卖香者护藏之子名为小护，出家后成为无相佛，行持如来事业。'"
-
-- event_id: EV_035b
   type: 授记
   title: 佛在《杂阿含经》中授记小护出家
   participants:
@@ -1034,26 +830,6 @@
 
 # ==================== 护持佛法及大乘兴盛 (lines 520-576) ====================
 
-# ==================== 引文论证 — 《大毗婆沙论》为论典开宗 ====================
-
-- event_id: EV_042b
-  type: 引文论证
-  title: 引声闻经部观点以《大毗婆沙论》为论典开宗之作
-  participants:
-    - entity: 《大毗婆沙论》
-      role: 引文来源
-    - entity: 五百阿罗汉
-      role: 论证对象
-  location: null
-  time_info: null
-  layers: [典据]
-  sub_layer: null
-  author_stance: 认可
-  confidence: 0.95
-  quoted_text: null
-  argument: 按声闻经部观点，论典的开宗祖师是造《大毗婆沙论》的诸位阿罗汉
-  source_quote: "关于论典的开宗祖师，按照声闻经部的观点，是造《大毗婆沙论》的诸位阿罗汉"
-
 - event_id: EV_043
   type: 传法
   title: 文殊菩萨以比丘相对护月国王宣讲大乘法
@@ -1144,8 +920,6 @@
   participants:
     - entity: 瓦色嘎巴
       role: 主体
-    - entity: 《密集续》
-      role: 取出经典
   location: 黑日嘎殿堂
   time_info: null
   layers: [史传]
@@ -1161,8 +935,6 @@
   participants:
     - entity: 龙树菩萨
       role: 主体
-    - entity: 《喜金刚》
-      role: 取出经典
   location: 黑日嘎殿堂
   time_info: null
   layers: [史传]
@@ -1178,10 +950,6 @@
   participants:
     - entity: 革革热巴
       role: 主体
-    - entity: 《玛哈玛雅》
-      role: 取出经典
-    - entity: 《大威德续》
-      role: 取出经典
   location: 黑日嘎殿堂
   time_info: null
   layers: [史传]
@@ -1197,8 +965,6 @@
   participants:
     - entity: 则乐巴
       role: 主体
-    - entity: 《时轮金刚》
-      role: 取出经典
   location: 香巴拉
   time_info: null
   layers: [史传]
