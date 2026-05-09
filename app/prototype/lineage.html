@@ -12888,7 +12888,7 @@ document.addEventListener("click", function(e) {
 // ============================================================
 // Default: show 莲花生大士
 // ============================================================
-selectEntity("莲花生大士");
+var params = new URLSearchParams(window.location.search); var highlightName = params.get("highlight"); selectEntity(highlightName || "莲花生大士");
 </script>
 </body>
 </html>
