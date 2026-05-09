@@ -93,23 +93,31 @@ def build_name_index(entities):
 # ---------------------------------------------------------------------------
 def preprocess_text(raw: str) -> list[str]:
     """
-    Merge single newlines (PDF hard wraps) into continuous text.
-    Double newlines become paragraph breaks.
-    Returns list of paragraph strings (the first is the title line).
+    Merge PDF hard wraps into continuous text with smart paragraph detection.
+    A double newline is a paragraph break ONLY if the line before it ends with
+    sentence-ending punctuation (。！？；」）】…"). Otherwise it's just a PDF page break.
     """
-    # normalise line endings
+    SENT_END = set('。！？；」）】…"\'')
     raw = raw.replace("\r\n", "\n").replace("\r", "\n")
-    # split into blocks by blank lines
-    blocks = re.split(r"\n\n+", raw)
+    lines = raw.split("\n")
     paragraphs = []
-    for block in blocks:
-        block = block.strip()
-        if not block:
-            continue
-        # within a block, join single-newline lines
-        merged = block.replace("\n", "")
-        paragraphs.append(merged)
-    return paragraphs
+    current = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped == "":
+            # Blank line: check if previous line ended a sentence
+            if current:
+                prev_text = "".join(current).strip()
+                if prev_text and prev_text[-1] in SENT_END:
+                    # Real paragraph break
+                    paragraphs.append(prev_text)
+                    current = []
+                # else: PDF page break mid-sentence, ignore the blank line
+        else:
+            current.append(stripped)
+    if current:
+        paragraphs.append("".join(current).strip())
+    return [p for p in paragraphs if p]
 
 
 # ---------------------------------------------------------------------------
