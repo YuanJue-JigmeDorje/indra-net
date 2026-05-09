@@ -151,6 +151,10 @@ alias_to_canonical.update({
     # 称号变体
     '圣天论师': '圣天',
     '帝释天王': '帝释天',
+    # 经典同义词
+    '《律藏》': '《戒律》',
+    '律藏': '《戒律》',
+    '《论藏》': '论藏',
 })
 
 # Substring-based auto-merge: if A is a strict substring of B (len>=3) and both in alias map's values
