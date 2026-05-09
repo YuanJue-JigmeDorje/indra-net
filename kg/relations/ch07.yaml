@@ -1,0 +1,1040 @@
+# ============================================================
+# 知识图谱关系抽取 — 第七品 遣除邪见 (lines 1-721)
+# 覆盖范围: 前译密宗辩护 + 大圆满见地阐释 + 伏藏法源辩护
+# 来源: source/dudjom/chapter_md/07_遣除邪见.md
+# 实体: kg/entities/ch07.yaml
+# 事件: kg/events/ch07.yaml
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.2 (NAME 不用 ID) + relation-types v0.1
+#
+# 注: 第七品为辩论文体，cites / refutes / reconciles 关系密集。
+#     source/target 使用实体 name 字段值（人类可读名），不使用 entity ID。
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/07_遣除邪见.md
+  source_lines: "1-721"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.2
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 99
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 化身关系 (manifestationOf)
+  # ============================================================
+
+  - rel_id: R7_001
+    type: manifestationOf
+    source: 赤松德赞
+    target: 文殊菩萨
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "圣者文殊菩萨的化现雪域国王赤松德赞"
+    note: null
+
+  - rel_id: R7_002
+    type: manifestationOf
+    source: 宗喀巴大师
+    target: 文殊菩萨
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "文殊菩萨的化身宗喀巴大师亲口说"
+    note: null
+
+  - rel_id: R7_003
+    type: manifestationOf
+    source: 第五世达赖喇嘛
+    target: 赤松德赞
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "第五世达赖喇嘛是法王赤松德赞为了再度增上西藏百姓的幸福安乐而以发心愿力成熟降临人间的"
+    note: "转世化身——非圣众对人物"
+
+  - rel_id: R7_004
+    type: manifestationOf
+    source: 全知自生金刚
+    target: 布玛莫札
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "全知自生金刚亲口承认他是布玛莫札的化身"
+    note: null
+
+  # ============================================================
+  # B. 师承关系 (teacherOf)
+  # ============================================================
+
+  - rel_id: R7_010
+    type: teacherOf
+    source: 莲花生大士
+    target: 大成就者寂隐
+    specialty: [灌顶, 口传, 教授]
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7038
+    source_quote: "大成就者寂隐从莲花生大士那里直接恭听许多续部的讲解、灌顶、窍诀等"
+    note: null
+
+  - rel_id: R7_011
+    type: teacherOf
+    source: 莲花生大士
+    target: 扬耶札巴
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7039
+    source_quote: "扬耶札巴在莲花生大士、菩提萨埵、布玛莫札面前直接听受大圆满"
+    note: null
+
+  - rel_id: R7_012
+    type: teacherOf
+    source: 菩提萨埵
+    target: 扬耶札巴
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7039
+    source_quote: "扬耶札巴在莲花生大士、菩提萨埵、布玛莫札面前直接听受大圆满"
+    note: null
+
+  - rel_id: R7_013
+    type: teacherOf
+    source: 布玛莫札
+    target: 扬耶札巴
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7039
+    source_quote: "扬耶札巴在莲花生大士、菩提萨埵、布玛莫札面前直接听受大圆满"
+    note: null
+
+  - rel_id: R7_014
+    type: teacherOf
+    source: 努·克隆巴
+    target: 米拉日巴
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7040
+    source_quote: "至尊米拉日巴最初在努·克隆巴面前听受大圆满心部"
+    note: "初授大圆满，但米拉日巴暂时法与人似乎背道而驰"
+
+  - rel_id: R7_015
+    type: teacherOf
+    source: 卡嘎绕多吉
+    target: 噶玛巴巴卡
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7041
+    source_quote: "噶玛巴巴卡成为卡嘎绕多吉的高足"
+    note: null
+
+  - rel_id: R7_016
+    type: teacherOf
+    source: 噶托巴香巴波
+    target: 噶玛巴巴卡
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7041
+    source_quote: "在噶托巴香巴波面前闻受大圆满等而获得成就"
+    note: null
+
+  - rel_id: R7_017
+    type: teacherOf
+    source: 帕旺卡巴华玖棱珠
+    target: 第五世达赖喇嘛
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7044
+    source_quote: "第五世达赖喇嘛在这位尊者面前听受大圆满窍诀"
+    note: null
+
+  - rel_id: R7_018
+    type: teacherOf
+    source: 持明才旺诺吉
+    target: 帕旺卡巴华玖棱珠
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "依止自己的父亲持明才旺诺吉和让珠尼达桑吉成为大圆满心滴之妙道得以稳固的瑜伽大自在者"
+    note: null
+
+  - rel_id: R7_019
+    type: teacherOf
+    source: 让珠尼达桑吉
+    target: 帕旺卡巴华玖棱珠
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "依止自己的父亲持明才旺诺吉和让珠尼达桑吉成为大圆满心滴之妙道得以稳固的瑜伽大自在者"
+    note: null
+
+  - rel_id: R7_020
+    type: teacherOf
+    source: 莲花生大士
+    target: 大班智达释迦西日
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "大班智达释迦西日从大阿阇黎莲师那里直接听受普巴金刚"
+    note: null
+
+  - rel_id: R7_021
+    type: teacherOf
+    source: 恰译师
+    target: 邬金巴仁钦华
+    specialty: [灌顶]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "恰译师本是我自己求灌顶的上师"
+    note: null
+
+  - rel_id: R7_022
+    type: teacherOf
+    source: 素温南卡多吉
+    target: 敦珠仁波切
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "我的殊胜导师伏藏大师素温南卡多吉"
+    note: "敦珠仁波切为本书作者，此处以'我'自称"
+
+  - rel_id: R7_023
+    type: teacherOf
+    source: 班玛灯德
+    target: 让热多吉
+    specialty: [教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "其后他的亲传弟子伏藏大师让热多吉"
+    note: null
+
+  - rel_id: R7_024
+    type: teacherOf
+    source: 法王宿巴
+    target: 古拉则
+    specialty: []
+    layers: [史传]
+    confidence: 0.60
+    source_quote: "古拉则到法王宿巴面前去求法，依靠没有得到的心病而到了印度"
+    note: "求法未得，严格说师承关系未成立；confidence 低"
+
+  - rel_id: R7_025
+    type: teacherOf
+    source: 金刚手菩萨
+    target: 南卡嘉灿
+    specialty: [大圆满, 密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "南岩大成就者南卡嘉灿或者业金刚能够直接从密主那里接受传承"
+    note: "金刚手菩萨恩授耳传的二次第窍诀"
+
+  - rel_id: R7_026
+    type: teacherOf
+    source: 玛尔巴
+    target: 米拉日巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "最后以南岩马尔巴译师的绝地火为因而经过大圆满心尽法尽之道而证得成就"
+    note: "马尔巴传绝地火给米拉日巴"
+
+  # ============================================================
+  # C. 译经关系 (translatedBy)
+  # ============================================================
+
+  - rel_id: R7_030
+    type: translatedBy
+    source: 医学四续
+    target: 贝若札那
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7035
+    source_quote: "幻化的译师贝若札那翻译的《医学四续》也给予无量众生莫大的安慰"
+    note: null
+
+  # ============================================================
+  # D. 著作关系 (authorOf) — 扩展类型
+  # ============================================================
+
+  - rel_id: R7_035
+    type: authorOf
+    source: 布夏莫札
+    target: 密集续大疏
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "布夏莫札论师所造的《密集续大疏》"
+    note: null
+
+  - rel_id: R7_036
+    type: authorOf
+    source: 海生阿阇黎
+    target: 密集续释·密成论
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "海生阿阇黎所造的《密集续释·密成论》"
+    note: null
+
+  - rel_id: R7_037
+    type: authorOf
+    source: 热波绕哲
+    target: 密藏续修法
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "大德——热波绕哲在《密藏续修法》中如此说道"
+    note: null
+
+  - rel_id: R7_038
+    type: authorOf
+    source: 智称论师
+    target: 入真如论
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "智称论师在《入真如论》中也说"
+    note: null
+
+  - rel_id: R7_039
+    type: authorOf
+    source: 巴夏论师
+    target: 中观宝灯论
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "巴夏论师的《中观宝灯论》"
+    note: null
+
+  - rel_id: R7_040
+    type: authorOf
+    source: 萨迦班智达
+    target: 分析三戒
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "萨迦班智达在《辨析三戒论》中对六法及大手印等达波噶举进行了大力破斥"
+    note: null
+
+  - rel_id: R7_041
+    type: authorOf
+    source: 罗桑秋杰嘉灿
+    target: 大手印引导文
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "大班智达罗桑秋杰嘉灿在《大手印引导文》中说"
+    note: null
+
+  # ============================================================
+  # E. 归属关系 (belongsToSect / memberOf / lineageOf)
+  # ============================================================
+
+  - rel_id: R7_050
+    type: belongsToSect
+    source: 贝若札那
+    target: 宁玛派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "前代的大译师贝若札那"
+    note: "前译大译师"
+
+  - rel_id: R7_051
+    type: belongsToSect
+    source: 噶瓦拜则
+    target: 宁玛派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "前代的大译师……噶瓦拜则"
+    note: null
+
+  - rel_id: R7_052
+    type: belongsToSect
+    source: 焦若·鲁坚赞
+    target: 宁玛派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "前代的大译师……焦若·鲁坚赞"
+    note: null
+
+  - rel_id: R7_053
+    type: belongsToSect
+    source: 祥·益西德
+    target: 宁玛派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "前代的大译师……祥·益西德三位"
+    note: null
+
+  - rel_id: R7_054
+    type: belongsToSect
+    source: 玛·仁钦秋
+    target: 宁玛派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "前代的大译师……玛·仁钦秋"
+    note: null
+
+  - rel_id: R7_055
+    type: belongsToSect
+    source: 涅·赞那革玛绕
+    target: 宁玛派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "前代的大译师……涅·赞那革玛绕等幻化的译师们"
+    note: null
+
+  - rel_id: R7_056
+    type: belongsToSect
+    source: 萨迦班智达
+    target: 萨迦派
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "萨迦班智达在《辨析三戒论》中"
+    note: null
+
+  - rel_id: R7_057
+    type: belongsToSect
+    source: 宗喀巴大师
+    target: 格鲁派
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "文殊菩萨的化身宗喀巴大师"
+    note: null
+
+  - rel_id: R7_058
+    type: belongsToSect
+    source: 米拉日巴
+    target: 噶举派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "达波噶举……米拉日巴尊者"
+    note: null
+
+  - rel_id: R7_059
+    type: belongsToSect
+    source: 刚波巴
+    target: 噶举派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "无等达波仁波切依靠噶举派成就"
+    note: null
+
+  - rel_id: R7_060
+    type: belongsToSect
+    source: 第五世达赖喇嘛
+    target: 格鲁派
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "几乎接近不被列入噶丹派（即格鲁派）中"
+    note: "因不堕偏方而闻思真实教，差点不被列入格鲁派"
+
+  - rel_id: R7_061
+    type: belongsToSect
+    source: 蒋扬钦则旺修
+    target: 萨迦派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "受持萨迦派的大德"
+    note: null
+
+  - rel_id: R7_062
+    type: belongsToSect
+    source: 格西南卡白
+    target: 噶当派
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "噶当派的格西南卡白"
+    note: null
+
+  - rel_id: R7_063
+    type: lineageOf
+    source: 大圆满
+    target: 宁玛派
+    layers: [宗派]
+    confidence: 0.95
+    source_quote: "自性大圆满……一切乘之顶"
+    note: "大圆满为宁玛派核心教法"
+
+  - rel_id: R7_064
+    type: lineageOf
+    source: 道果
+    target: 萨迦派
+    layers: [宗派]
+    confidence: 0.90
+    source_quote: "来源于传承轨的言教如意宝及道果的此教言"
+    note: null
+
+  - rel_id: R7_065
+    type: lineageOf
+    source: 金刚橛
+    target: 宁玛派
+    layers: [宗派]
+    confidence: 0.90
+    source_quote: "公认的宁玛续全部是由编大藏经《续集目录》的这些大德已证明是真实的，并且《金刚橛》也无可诤议"
+    note: null
+
+  - rel_id: R7_066
+    type: lineageOf
+    source: 真实意黑日嘎
+    target: 宁玛派
+    layers: [宗派]
+    confidence: 0.90
+    source_quote: "真实意和金刚橛掌握着萨迦派本尊之命"
+    note: "虽与萨迦派实修有关，但教法本身归属宁玛前译"
+
+  # ============================================================
+  # F. 政治/亲属关系 (fatherOf / rulerOf)
+  # ============================================================
+
+  - rel_id: R7_070
+    type: fatherOf
+    source: 持明才旺诺吉
+    target: 帕旺卡巴华玖棱珠
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "依止自己的父亲持明才旺诺吉"
+    note: null
+
+  - rel_id: R7_071
+    type: rulerOf
+    source: 赤松德赞
+    target: 西藏
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "国王赤松德赞虽然点亮正法明灯"
+    note: "文中以'国王'称之"
+
+  # ============================================================
+  # G. 伏藏关系 (concealedBy)
+  # ============================================================
+
+  - rel_id: R7_075
+    type: concealedBy
+    source: 宁玛伏藏
+    target: 莲花生大士
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7045
+    source_quote: "从所有深广续部中撷取修法、事业、会供、窍诀等齐全的道法，立成空行黄纸文字续以后在深山、岩石、湖泊等处委托交付给非人伏藏主"
+    note: "宁玛伏藏为概括性称呼，莲师为伏藏埋藏之根本祖师"
+
+  # ============================================================
+  # H. 引文关系 (cites)
+  # ============================================================
+
+  # --- H1. 人物引用经典 ---
+
+  - rel_id: R7_080
+    type: cites
+    source: 荣索班智达
+    target: 前译派六殊胜
+    layers: [典据]
+    confidence: 0.90
+    derived_from: EV_7002
+    source_quote: "阿底峡尊者也无法辩胜的大智者荣索班智达亲口说过：密宗前译派有超胜后译派的六种殊胜特点"
+    note: "六殊胜为荣索班智达自己的论述，非引经"
+
+  - rel_id: R7_081
+    type: cites
+    source: 色隆巴释迦秋单
+    target: 分析三戒
+    layers: [典据]
+    confidence: 0.90
+    derived_from: EV_7010
+    source_quote: "大班智达色隆巴释迦秋单对《分析三戒》的密意直接宣说不了义，以金扦释来讲解"
+    note: null
+
+  - rel_id: R7_082
+    type: cites
+    source: 热波绕哲
+    target: 密集续大疏
+    layers: [典据]
+    confidence: 0.90
+    derived_from: EV_7022
+    source_quote: "此续真实的理由即布夏莫札论师所造的《密集续大疏》，其中引用《密藏续》"
+    note: null
+
+  - rel_id: R7_083
+    type: cites
+    source: 密集续大疏
+    target: 密藏续
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "引用《密藏续》云：'密严刹土无有边际，基无量本智坛城明现'"
+    note: "布夏莫札大疏中多处引用密藏续教证"
+
+  - rel_id: R7_084
+    type: cites
+    source: 罗桑秋杰嘉灿
+    target: 大手印引导文
+    layers: [典据]
+    confidence: 0.90
+    derived_from: EV_7043
+    source_quote: "大班智达罗桑秋杰嘉灿在《大手印引导文》中说：大圆满与大手印，中观道果断法等，纵然安立各自名，然实修者瑜伽士，分析获得一密意"
+    note: null
+
+  - rel_id: R7_085
+    type: cites
+    source: 智称论师
+    target: 入真如论
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "智称论师在《入真如论》中也说：'般若佛母之别名即是大手印，彼即无二之智慧体性故。'"
+    note: null
+
+  # --- H2. 论证引用佛经/密续 ---
+
+  - rel_id: R7_086
+    type: cites
+    source: 大圆满
+    target: 普作王续
+    layers: [典据]
+    confidence: 0.95
+    derived_from: EV_7013
+    source_quote: "如《普作王续》云：'约嘎之顶大圆满，若说有因亦有果，彼不具证大圆义'"
+    note: "作者引此续论证大圆满超越因果二法"
+
+  - rel_id: R7_087
+    type: cites
+    source: 大圆满
+    target: 觉性自现续
+    layers: [典据]
+    confidence: 0.95
+    derived_from: EV_7014
+    source_quote: "《觉性自现续》云：'任运自成之法身，显现明蔽黑暗散'"
+    note: "多处引用论证十度波罗蜜多集于本智中"
+
+  - rel_id: R7_088
+    type: cites
+    source: 大圆满
+    target: 应成续
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "《应成续》中云：'自性大圆边，诸法住本位，境心法性融，证本解直定'"
+    note: null
+
+  - rel_id: R7_089
+    type: cites
+    source: 大圆满
+    target: 梵胜心请问经
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "《梵胜心请问经》云：'诸法之自性为何？诸法具空性之自性，远离所缘'"
+    note: null
+
+  - rel_id: R7_090
+    type: cites
+    source: 大圆满
+    target: 熔金石
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "自宗心部大续《熔金石》中云：'成为无余善逝佛母，故是一切如来唯一道，戒律等波罗蜜多成为行道大海之基'"
+    note: null
+
+  - rel_id: R7_091
+    type: cites
+    source: 大手印
+    target: 趋入诸佛境智光庄严经
+    layers: [典据]
+    confidence: 0.95
+    derived_from: EV_7019
+    source_quote: "《趋入诸佛境智光庄严经》云：'法印即诸法之手印，乃无手印，乃无作之手印，乃无别之手印'"
+    note: "论证佛陀直接宣说大手印"
+
+  - rel_id: R7_092
+    type: cites
+    source: 灌顶
+    target: 楞伽经
+    layers: [典据]
+    confidence: 0.95
+    derived_from: EV_7020
+    source_quote: "菩萨大菩萨金刚藏……如转轮王、君王由顶上灌顶。身、面、臂皆作灌顶"
+    note: "论证灌顶在显宗中也有详细宣说"
+
+  - rel_id: R7_093
+    type: cites
+    source: 灌顶
+    target: 三百颂
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "在《三百颂》中云：'出离戒律离痛苦……赐圆菩提即灌顶。'将受沙弥戒名为灌顶"
+    note: null
+
+  - rel_id: R7_094
+    type: cites
+    source: 伏藏
+    target: 圣三摩地经
+    layers: [典据]
+    confidence: 0.95
+    derived_from: EV_7046
+    source_quote: "欲求法之诸菩萨大菩萨伏藏置于山、山丘、树内。无量陀罗尼与法门作成经函亦到手中"
+    note: null
+
+  - rel_id: R7_095
+    type: cites
+    source: 伏藏
+    target: 摄正法经
+    layers: [典据]
+    confidence: 0.95
+    derived_from: EV_7047
+    source_quote: "若将此等法之法类写成经函而隐成伏藏作供养，则彼者得到十得"
+    note: null
+
+  - rel_id: R7_096
+    type: cites
+    source: 阿底峡尊者
+    target: 龙树菩萨
+    layers: [典据]
+    confidence: 0.90
+    derived_from: EV_7015
+    source_quote: "阿底峡解释圣者龙树菩萨的密意说：'安住于远离寻伺的入定寂止与胜观中时……尽断一切忆念作意'"
+    note: "阿底峡引用/解释龙树密意"
+
+  - rel_id: R7_097
+    type: cites
+    source: 舍法之过
+    target: 宝性论
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "补处弥勒大菩萨也（在《宝性论》校量品中）言：'失毁甚深法，智者于猛火……何人嗔正法，焉能有解脱？'"
+    note: "论证舍法罪业之严重"
+
+  - rel_id: R7_098
+    type: cites
+    source: 舍法之过
+    target: 涅槃经
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "《涅槃经》中云：'迦叶，世间三种人之疾极难治愈。何为三种？诽谤大乘、造五无间罪、有邪爱者'"
+    note: null
+
+  - rel_id: R7_099
+    type: cites
+    source: 舍法之过
+    target: 慧海请问经
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "《慧海请问经》云：'世不知诸法，住于二种想，谓此真此妄，无知起争论'"
+    note: null
+
+  - rel_id: R7_100
+    type: cites
+    source: 宗喀巴大师
+    target: 问答甘露妙药
+    layers: [典据]
+    confidence: 0.90
+    derived_from: EV_7042
+    source_quote: "密主言教之甘露，满足我心愿望已"
+    note: "宗喀巴特意说明此为密主亲传"
+
+  - rel_id: R7_101
+    type: cites
+    source: 问答甘露妙药
+    target: 空行心滴问答金鬘论
+    layers: [典据]
+    confidence: 0.85
+    source_quote: "此问答基本与《空行心滴问答金鬘论》相同"
+    note: "两者内容基本一致"
+
+  - rel_id: R7_102
+    type: cites
+    source: 大圆满
+    target: 菩萨殊行
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "《菩萨殊行》云：'宝施言：莫断贪心，莫毁嗔心，莫思痴心'"
+    note: "引经论证法性大平等义"
+
+  - rel_id: R7_103
+    type: cites
+    source: 大圆满
+    target: 宣说胜义世俗谛经
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "《圣宣说胜义世俗谛经》中也说：'文殊言：天子，胜义中与真如、法界、极无生平等，胜义中五无间罪亦与之平等'"
+    note: null
+
+  - rel_id: R7_104
+    type: cites
+    source: 大圆满
+    target: 解深密意经
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "《解深密意经》中云：'各别自证法相境，无所言说断名言，远离辩论胜义法'"
+    note: null
+
+  - rel_id: R7_105
+    type: cites
+    source: 苯波辨别
+    target: 月灯经
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "正如《月灯经》所说：'世间他外道，心中不怀恨，于彼生悲悯，此乃初法忍'"
+    note: "论证对外道应生悲悯"
+
+  # ============================================================
+  # I. 驳斥/异说关系 (refutes / alternativeOf / reconciles)
+  # ============================================================
+
+  # --- I1. 驳斥关系 (refutes) ---
+
+  - rel_id: R7_110
+    type: refutes
+    source: 荣索班智达
+    target: 后译续部优于前译之说
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.90
+    source_quote: "密宗前译派有超胜后译派的六种殊胜特点"
+    note: "荣索班智达以六殊胜论证前译超胜后译"
+
+  - rel_id: R7_111
+    type: refutes
+    source: 邬金巴仁钦华
+    target: 宁玛续在印度不存在之说
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.90
+    derived_from: EV_7004
+    source_quote: "这是他们自己智慧浅薄的言辞。这些译师只是去过印度东方一次，而又怎么能了解印度的所有情况呢？"
+    note: null
+
+  - rel_id: R7_112
+    type: refutes
+    source: 色隆巴释迦秋单
+    target: 宁玛续非正法之说
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.90
+    derived_from: EV_7010
+    source_quote: "如果有人认为宁玛续不是正法，那么当时这样承许者就必须要承认，噶、焦、祥三位所翻译的三藏所有法……都不是正法"
+    note: "归谬论证"
+
+  - rel_id: R7_113
+    type: refutes
+    source: 敦珠仁波切
+    target: 大圆满是和尚宗之说
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.85
+    derived_from: EV_7012
+    source_quote: "个别藏人说出'舍弃行为就成了与和尚宗一致'这样令人目瞪口呆的指责"
+    note: "作者引三转法轮、《普作王续》、《觉性自现续》等大量教证驳斥"
+
+  - rel_id: R7_114
+    type: refutes
+    source: 敦珠仁波切
+    target: 大手印是刚波巴伪造之说
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.85
+    derived_from: EV_7018
+    source_quote: "声称因乘中连大手印的名字也没有提及，仅是刚波巴伪造等"
+    note: "引《趋入诸佛境智光庄严经》等论证大手印佛说"
+
+  - rel_id: R7_115
+    type: refutes
+    source: 敦珠仁波切
+    target: 古拉则否定宁玛续之说
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.85
+    derived_from: EV_7021
+    source_quote: "他们自己去印度，只在一些小地方没有听过，由此并不能证明前译派不存在"
+    note: null
+
+  - rel_id: R7_116
+    type: refutes
+    source: 敦珠仁波切
+    target: 宁玛与苯波意趣相同之说
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.85
+    derived_from: EV_7057
+    source_quote: "法语等相同之处倒有许多，但他们是根据苯教的需要而抄袭的，又怎么能与宁玛派等量齐观呢？"
+    note: null
+
+  - rel_id: R7_117
+    type: refutes
+    source: 萨迦班智达
+    target: 达波噶举六法大手印
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7048
+    source_quote: "萨迦班智达在《辨析三戒论》中对六法及大手印等达波噶举进行了大力破斥"
+    note: "作者中立列举宗派互驳史"
+
+  - rel_id: R7_118
+    type: refutes
+    source: 格西南卡白
+    target: 大手印
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7049
+    source_quote: "我认为哲达大手印此法轨与任何续藏皆不符合，我想这不是正道"
+    note: null
+
+  - rel_id: R7_119
+    type: refutes
+    source: 帕单巴
+    target: 噶当派
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7050
+    source_quote: "对噶当派，帕单巴尊者等加以遮破"
+    note: null
+
+  - rel_id: R7_120
+    type: refutes
+    source: 仁达瓦
+    target: 时轮金刚
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7052
+    source_quote: "至尊仁达瓦说……'根本续无诶与旺……从多方面驳斥《时轮金刚》'"
+    note: null
+
+  - rel_id: R7_121
+    type: refutes
+    source: 大智者热绕
+    target: 时轮金刚
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "大智者热绕对于《时轮金刚》中所说星辰运行东方、汉地位于西藏的北方等评价说不是真实续"
+    note: null
+
+  - rel_id: R7_122
+    type: refutes
+    source: 古拉则
+    target: 道果
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7053
+    source_quote: "古拉则说：'扰乱抄袭空行续，嘎雅达绕金法生。'而遮破道果"
+    note: "实为嫉妒弘扬道果的卓莫大译师"
+
+  - rel_id: R7_123
+    type: refutes
+    source: 古拉则
+    target: 密藏续
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "对《密藏续》罗列了四过等过失"
+    note: null
+
+  - rel_id: R7_124
+    type: refutes
+    source: 月波尼桑
+    target: 帕单巴息法窍诀
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "帕单巴尊者的所有息法窍诀，月波尼桑和觉哲登椎等说是臆造的法"
+    note: null
+
+  - rel_id: R7_125
+    type: refutes
+    source: 觉哲登椎
+    target: 帕单巴息法窍诀
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "帕单巴尊者的所有息法窍诀，月波尼桑和觉哲登椎等说是臆造的法"
+    note: null
+
+  # --- I2. 异说关系 (alternativeOf) ---
+
+  - rel_id: R7_130
+    type: alternativeOf
+    source: 问答甘露妙药
+    target: 空行心滴问答金鬘论
+    symmetric: true
+    layers: [典据]
+    confidence: 0.85
+    source_quote: "此问答基本与《空行心滴问答金鬘论》相同"
+    note: "两个文本内容基本相同，属异名同实"
+
+  # --- I3. 调和关系 (reconciles) ---
+
+  - rel_id: R7_135
+    type: reconciles
+    source: 敦珠仁波切
+    target: [萨迦班智达阿底约嘎非乘之说, 大圆满为乘之说]
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.85
+    source_quote: "虽然从甚深见解的实相无误成立的反体角度善加说明是智慧，但是说它不是乘是有密意的……安立为乘正是经续的甚深密意"
+    note: "调和萨迦班智达'阿底约嘎非乘'与宁玛'大圆满为乘'两种立场"
+
+  - rel_id: R7_136
+    type: reconciles
+    source: 敦珠仁波切
+    target: [大圆满远离取舍之说, 不舍方便行为之说]
+    symmetric: false
+    layers: [宗派]
+    confidence: 0.85
+    source_quote: "不舍弃成为智慧分支的方便行为是此大宗派善巧方便的缘故，暂时不舍世俗谛，然而现量证悟实相谛的法性无迷乱自本体时，不堕于二谛轮番一方"
+    note: "调和大圆满'无取舍'与'不舍方便'的表面矛盾"
+
+  - rel_id: R7_137
+    type: reconciles
+    source: 罗桑秋杰嘉灿
+    target: [大圆满, 大手印, 道果]
+    symmetric: false
+    layers: [典据]
+    confidence: 0.90
+    source_quote: "大圆满与大手印，中观道果断法等，纵然安立各自名，然实修者瑜伽士，分析获得一密意"
+    note: "调和不同教法名相下的同一实修密意"
+
+  - rel_id: R7_138
+    type: reconciles
+    source: 敦珠仁波切
+    target: [布敦大师舍置宁玛续之说, 布敦大师实修宁玛法之事]
+    symmetric: false
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "布敦大师十分重视秉持前译的宗轨，实修酿伏藏品四臂怙主等……他所说的'对宁玛的所有续舍置'显然也是顾及当时宗派诤论的他人情面"
+    note: "调和布敦大师表面舍置宁玛续与实际依止宁玛法的矛盾"
+
+  - rel_id: R7_139
+    type: reconciles
+    source: 道果
+    target: 真实意黑日嘎嘎波续
+    symmetric: false
+    layers: [典据]
+    confidence: 0.85
+    source_quote: "前译《真实意黑日嘎嘎波续》中直接宣说的四灌顶、四障、四道、四宗派……以量成立道果的教言就是此续的窍诀"
+    note: "论证道果教言实际上源自前译续"
+
+  # ============================================================
+  # J. 降伏关系 (subduedBy)
+  # ============================================================
+
+  - rel_id: R7_140
+    type: subduedBy
+    source: 藏地鬼神
+    target: 莲花生大士
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7058
+    source_quote: "莲花生大士，以降伏的禁行威力使他们不由自主惟命是从，取受了他们的命心，吩咐他们作为护法神"
+    note: "通称非人（'无形的黑法鬼神'），无具名个体"
+
+  - rel_id: R7_141
+    type: subduedBy
+    source: 杵雪嘎波
+    target: 萨迦班智达
+    layers: [史传]
+    confidence: 0.85
+    derived_from: EV_7036
+    source_quote: "萨迦班智达虽然能以正理击败杵雪嘎波，可是当对方准备飞到空中时，还是要用金刚橛明咒束缚住他"
+    note: "杵雪嘎波为人物，此处以降伏框架记录"
