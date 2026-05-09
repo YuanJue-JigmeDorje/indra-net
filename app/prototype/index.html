@@ -12839,18 +12839,23 @@ function doSearch(q) {
   }
 
   // 2. Search relations (by quote text)
+  // Note: D3 force replaces link.source/target strings with node objects
+  function linkSrc(l) { return (typeof l.source === 'object' ? l.source.id : l.source) || ''; }
+  function linkTgt(l) { return (typeof l.target === 'object' ? l.target.id : l.target) || ''; }
+
   var matchedLinks = links.filter(function(l) {
     return (l.quote && l.quote.toLowerCase().indexOf(ql) >= 0) ||
-           (l.source && l.source.toLowerCase().indexOf(ql) >= 0) ||
-           (l.target && l.target.toLowerCase().indexOf(ql) >= 0);
+           (linkSrc(l).toLowerCase().indexOf(ql) >= 0) ||
+           (linkTgt(l).toLowerCase().indexOf(ql) >= 0);
   }).slice(0, 10);
 
   if (matchedLinks.length > 0) {
     html += '<div class="sr-section"><div class="sr-section-title">关系 · 原文</div>';
     matchedLinks.forEach(function(l) {
+      var src = linkSrc(l), tgt = linkTgt(l);
       var quoteSnippet = l.quote ? excerptAround(l.quote, q, 60) : "";
-      html += '<div class="sr-item" onclick="focusNode(\'' + l.source.replace(/'/g, "\\'") + '\')">'
-        + '<span class="sr-relation">' + l.source + ' → ' + l.target
+      html += '<div class="sr-item" onclick="focusNode(\'' + src.replace(/'/g, "\\'") + '\')">'
+        + '<span class="sr-relation">' + src + ' → ' + tgt
         + ' <span class="sr-type-tag">' + l.type + '</span></span>'
         + (quoteSnippet ? '<div class="sr-quote">' + quoteSnippet + '</div>' : '')
         + '<div class="sr-chapter">' + (l.chapter || '') + '</div></div>';
