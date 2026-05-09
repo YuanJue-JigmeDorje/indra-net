@@ -1,0 +1,1331 @@
+# ============================================================
+# 知识图谱事件抽取 — 第六品 近传伏藏史 (lines 501-999)
+# 覆盖范围: 邬金朗巴伏藏法类尾声 + 仁真钦波邬哲嘉村 + 桑吉朗巴 +
+#           多吉朗巴 + 绕那朗巴 + 邬金班玛朗巴 + 噶玛朗巴 +
+#           唐东嘉波 + 阿里大班智达班玛旺嘉多吉 + 列楚朗巴 + 敦珠多吉
+# 来源: source/dudjom/chapter_md/06_近传伏藏史.md
+# 提取日期: 2026-04-11
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: 均使用 NAME（人类可读名）
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 邬金朗巴伏藏法类尾声 (lines 500-523) ====================
+
+- event_id: EV_6050
+  type: 弘法
+  title: 达赖喇嘛与普玖香滚仁波切补全邬金朗巴遗体
+  participants:
+    - entity: 达赖喇嘛
+      role: 主体
+    - entity: 普玖香滚仁波切
+      role: 协助者
+  location: 万藏寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "达赖喇嘛亲自动手将遗体补全恢复本面"
+  description: 达赖喇嘛亲自与经师普玖香滚仁波切一道将邬金朗巴遗体补全恢复本面，置于镀金铜遗塔中。
+
+- event_id: EV_6051
+  type: 立法
+  title: 达赖喇嘛下诏保护邬金朗巴法体
+  participants:
+    - entity: 达赖喇嘛
+      role: 主体
+  location: 万藏寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "达赖喇嘛又下诏书命令：柳吾地方的官民与万藏寺的僧众要齐心协力一同保存此法体"
+  description: 达赖喇嘛下诏书十七页，命柳吾官民与万藏寺僧众齐心保存邬金朗巴法体。
+
+- event_id: EV_6052
+  type: 神变
+  title: 达赖喇嘛赐予寺院的体肉丸增长四倍
+  participants:
+    - entity: 达赖喇嘛
+      role: 施者
+  location: 万藏寺
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "达赖喇嘛赐予寺院的体肉丸，放在木匣里，后来打开一看，竟然比以前增长了四倍左右"
+  description: 邬金朗巴体肉丸放在木匣中后增长约四倍，本论作者亲自礼见。
+
+# ==================== 仁真钦波邬哲嘉村段 (lines 525-570) ====================
+
+- event_id: EV_6053
+  type: 伏藏开取
+  title: 邬哲嘉村从札桑山顶峰取出三大伏藏和一百小伏藏钥匙
+  participants:
+    - entity: 邬哲嘉村
+      role: 伏藏师
+  location: 札桑山
+  time_info:
+    text: "火马年蛇月上弦初八"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从札桑山顶峰，在藏白岩的三块长形石中开取出三大伏藏和一百小伏藏的钥匙"
+  description: 邬哲嘉村于火马年从札桑山顶峰藏白岩三块长形石中取出三大伏藏和一百小伏藏钥匙，将替代物隐藏，遗迹至今名为龙桑。
+
+- event_id: EV_6054
+  type: 伏藏开取
+  title: 邬哲嘉村从桑藏拉札山洞取出五宝库甚深大伏藏
+  participants:
+    - entity: 邬哲嘉村
+      role: 伏藏师
+  location: 桑藏拉札山洞
+  time_info:
+    text: "那一年的羊月初四黄昏"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从岩山上如蛇堆般的半山腰上桑藏拉札山洞取出四方形蓝色伏藏宝箧，里面隔开五格"
+  description: 从桑藏拉札山洞取出四方形蓝色伏藏宝箧五格，内含以《普贤通彻密意》为首的法及圣物，五百法部弘扬藏区。
+
+- event_id: EV_6055
+  type: 弘法
+  title: 邬哲嘉村被拜为上师利益藏地安宁
+  participants:
+    - entity: 邬哲嘉村
+      role: 上师
+    - entity: 贡塘国王秋哲德
+      role: 弟子
+  location: 哲木雄
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "贡塘国王秋哲德也拜他为上师，而对藏地的幸福安宁大有利益"
+  description: 邬哲嘉村下半生来到哲木雄安住，贡塘国王秋哲德拜其为上师，对藏地幸福安宁大有利益。
+
+- event_id: EV_6056
+  type: 圆寂
+  title: 邬哲嘉村七十二岁融入法界
+  participants:
+    - entity: 邬哲嘉村
+      role: 主体
+  location: null
+  time_info:
+    text: "七十二岁"
+    relative_to: 邬哲嘉村
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "事业究竟后在七十二岁，伴随着纷纷的稀奇瑞相而融入法界密意中"
+  description: 邬哲嘉村七十二岁伴随稀奇瑞相融入法界密意。
+
+- event_id: EV_6057
+  type: 弘法
+  title: 第四世持明班玛陈列广弘讲修业
+  participants:
+    - entity: 持明班玛陈列
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从第四世持明班玛陈列开始广弘讲修业的伟业，由此成为前译教法的一个源头"
+  description: 第四世持明班玛陈列开始广弘讲修伟业，成为前译教法一个源头。
+
+# ==================== 桑吉朗巴段 (lines 572-646) ====================
+
+- event_id: EV_6058
+  type: 出家受戒
+  title: 桑吉朗巴五岁听受居士戒
+  participants:
+    - entity: 桑吉朗巴
+      role: 受戒者
+    - entity: 堪布云尼华
+      role: 堪布
+  location: null
+  time_info:
+    text: "五岁时"
+    relative_to: 桑吉朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "五岁时在堪布云尼华面前听受居士戒"
+  description: 桑吉朗巴五岁时在堪布云尼华面前听受居士戒。
+
+- event_id: EV_6059
+  type: 出家受戒
+  title: 桑吉朗巴在菩提寺出家
+  participants:
+    - entity: 桑吉朗巴
+      role: 受戒者
+    - entity: 香切多吉
+      role: 亲教师
+    - entity: 释迦益西
+      role: 轨范师
+  location: 菩提寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在亲教师香切多吉、轨范师释迦益西面前出家，取名为桑吉桑波"
+  description: 桑吉朗巴在菩提寺于亲教师香切多吉、轨范师释迦益西前出家，取名桑吉桑波。
+
+- event_id: EV_6060
+  type: 授记
+  title: 如毕多吉授记桑吉朗巴为众生导师
+  participants:
+    - entity: 如毕多吉
+      role: 授记者
+    - entity: 桑吉朗巴
+      role: 被授记者
+    - entity: 香切多吉
+      role: 供养者
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "令如毕多吉极为欢喜，并授记他会成为芸芸众生的导师"
+  description: 如毕多吉从卫藏来到后，香切多吉将桑吉朗巴供养给他，如毕多吉授记其为众生导师。
+
+- event_id: EV_6061
+  type: 弘法
+  title: 桑吉朗巴面见莲花生大士并立下闭关三年誓言
+  participants:
+    - entity: 桑吉朗巴
+      role: 主体
+    - entity: 莲花生大士
+      role: 被礼见者
+  location: 拉萨
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "见到莲花生大士的尊颜，从此开始屡屡见到，并立下闭关修行三年的誓言"
+  description: 桑吉朗巴到拉萨面见观世音菩萨，尤其见到莲师尊颜后屡屡得见，立下闭关三年誓言。
+
+- event_id: EV_6062
+  type: 伏藏开取
+  title: 赞古钦波供养伏藏纸并桑吉朗巴修行伏藏法
+  participants:
+    - entity: 赞古钦波
+      role: 供养者
+    - entity: 桑吉朗巴
+      role: 伏藏师
+    - entity: 秋戒罗珠
+      role: 上师
+  location: 棱珠
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "保护伏藏的赞古钦波亲自供养他三卷纸，里面有伏藏标题、授记、伏藏修法言教"
+  description: 桑吉朗巴闭关修金刚橛法时，保护伏藏的赞古钦波亲供三卷纸含伏藏标题授记。上师赐予顺缘，蒙受空行灌顶。
+
+- event_id: EV_6063
+  type: 伏藏开取
+  title: 桑吉朗巴从波山大山洞取出《上师集密意续论》及《大悲法类》
+  participants:
+    - entity: 桑吉朗巴
+      role: 伏藏师
+  location: 波山大山洞
+  time_info:
+    text: "木龙年八月二十五日"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从波山大山洞开取出藏地所有地下的一伏藏教集《上师集密意续论》及窍诀《大悲法类》"
+  description: 桑吉朗巴于木龙年八月二十五日从波山大山洞取出《上师集密意续论》及《大悲法类》。
+
+- event_id: EV_6064
+  type: 伏藏开取
+  title: 桑吉朗巴从多处取出普巴修法心髓等伏藏
+  participants:
+    - entity: 桑吉朗巴
+      role: 伏藏师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "逐渐从嘎则仓、吉波荣、则钦札、龙波香得白巴……取出《普巴修法心髓》、《达察黑乌龟》、《黑马头明王》等"
+  description: 桑吉朗巴从嘎则仓、吉波荣等多处取出《普巴修法心髓》、《大悲观音极无上密》等伏藏及圣物。
+
+- event_id: EV_6065
+  type: 伏藏开取
+  title: 桑吉朗巴与哲美酣波共同取出贡波青伏藏
+  participants:
+    - entity: 桑吉朗巴
+      role: 伏藏师
+    - entity: 伏藏师哲美酣波
+      role: 伏藏师
+  location: 贡波青
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在开取贡波青地方伏藏时，伏藏师哲美酣波也以空行授记劝请"
+  description: 桑吉朗巴与哲美酣波在贡波青地方共同取出金刚手像、曼巴德德恶咒、邬金佛父佛母菩提甘露。
+
+- event_id: EV_6066
+  type: 伏藏开取
+  title: 桑吉朗巴从各处取出圣观音法类等并从贡波单热取出集密意根本六续
+  participants:
+    - entity: 桑吉朗巴
+      role: 伏藏师
+  location: null
+  time_info:
+    text: "从二十五岁到三十二岁"
+    relative_to: 桑吉朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从二十五岁到三十二岁之间共开取了十八大伏藏品"
+  description: 桑吉朗巴二十五至三十二岁间取出十八大伏藏品，从波山取圣观音法类，从贡波单热取集密意根本六续等。
+
+- event_id: EV_6067
+  type: 弘法
+  title: 噶玛巴德云香巴携集密意续献给明朝皇帝
+  participants:
+    - entity: 如毕多吉
+      role: 使者
+    - entity: 桑吉朗巴
+      role: 伏藏来源
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "法王德云香巴带着深法《集密意续》、稀有蓝宝瓶、誓言纯金金刚前去献给皇帝"
+  description: 汉地大明皇帝迎请噶玛巴德云香巴，法王携桑吉朗巴伏藏《集密意续》等献给皇帝，皇帝供养玉印衣物。
+
+- event_id: EV_6068
+  type: 建寺
+  title: 明朝皇帝建起尼坡得钦桑哲寺
+  participants:
+    - entity: 桑吉朗巴
+      role: 道场主
+  location: 尼坡得钦桑哲寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "建起尼坡得钦桑哲寺而作为桑吉朗巴的道场"
+  description: 明朝皇帝建起尼坡得钦桑哲寺作为桑吉朗巴道场。
+
+- event_id: EV_6069
+  type: 圆寂
+  title: 桑吉朗巴五十七岁融入法界
+  participants:
+    - entity: 桑吉朗巴
+      role: 主体
+  location: 菩提寺
+  time_info:
+    text: "五十七岁火鼠年三月三十"
+    relative_to: 桑吉朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在五十七岁火鼠年三月三十那天，于静处菩提寺融入法界密意中"
+  description: 桑吉朗巴五十七岁火鼠年三月三十日于菩提寺融入法界密意。
+
+- event_id: EV_6070
+  type: 弘法
+  title: 特钦阿旺南嘉得受集密意续完整灌顶并建立初十会供传统
+  participants:
+    - entity: 霍哲侍从活佛特钦阿旺南嘉
+      role: 法主
+    - entity: 贡仁真酿波
+      role: 传法者
+  location: 帮塘得瓦钦波
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "以法主的身份得受了《上师集密意续》完整的能成熟之灌顶和能解脱之教言"
+  description: 特钦阿旺南嘉从第七代贡仁真酿波处得受《上师集密意续》完整灌顶教言，在帮塘得瓦钦波建立初十会供传统。
+
+# ==================== 多吉朗巴段 (lines 648-699) ====================
+
+- event_id: EV_6071
+  type: 出家受戒
+  title: 多吉朗巴七岁得受沙弥戒
+  participants:
+    - entity: 多吉朗巴
+      role: 受戒者
+    - entity: 全知察巴释迦
+      role: 戒师
+  location: 帮雄神山
+  time_info:
+    text: "七岁"
+    relative_to: 多吉朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "七岁在帮雄神山附近，于全知察巴释迦面前得受沙弥戒"
+  description: 多吉朗巴七岁在帮雄神山附近于全知察巴释迦面前得受沙弥戒。
+
+- event_id: EV_6072
+  type: 伏藏开取
+  title: 多吉朗巴十三岁取出第一个伏藏品三根本修法
+  participants:
+    - entity: 多吉朗巴
+      role: 伏藏师
+    - entity: 莲花生大士
+      role: 授记者
+  location: 察哲觉姆
+  time_info:
+    text: "十三岁时"
+    relative_to: 多吉朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十三岁时七次面见邬金仁波切莲花生大士……从察哲觉姆身背后取出第一个伏藏品《三根本修法》"
+  description: 多吉朗巴十三岁七次面见莲师后从察哲觉姆取出《三根本修法》等一百零八伏藏品。
+
+- event_id: EV_6073
+  type: 灌顶
+  title: 莲花生大士在香达邬嘎札为多吉朗巴灌顶
+  participants:
+    - entity: 莲花生大士
+      role: 灌顶者
+    - entity: 多吉朗巴
+      role: 受灌者
+  location: 香达邬嘎札
+  time_info:
+    text: "十五岁"
+    relative_to: 多吉朗巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲花生大士亲自降临而陈设坛城为他灌顶"
+  description: 多吉朗巴十五岁开启香达邬嘎札伏藏门时，莲师亲自降临在宽广修行山洞陈设坛城灌顶。
+
+- event_id: EV_6074
+  type: 伏藏开取
+  title: 多吉朗巴从香达邬嘎札取出大量伏藏法
+  participants:
+    - entity: 多吉朗巴
+      role: 伏藏师
+  location: 香达邬嘎札
+  time_info:
+    text: "十五岁"
+    relative_to: 多吉朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "也取出佛像、上师四函、百数卷纸、长寿水四瓶、圣物嘎喔盒等"
+  description: 多吉朗巴从香达邬嘎札取出《法藏专集唐文八品》、《大圆满父续见解广界》等大量法类及圣物。
+
+- event_id: EV_6075
+  type: 伏藏开取
+  title: 益西措嘉在哦塘香切殿堂赐予多吉朗巴长寿水等
+  participants:
+    - entity: 益西措嘉
+      role: 赐予者
+    - entity: 多吉朗巴
+      role: 受者
+  location: 哦塘香切殿堂
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "益西措嘉亲自降临而恩赐长寿水以及在扬列秀修行的法药"
+  description: 益西措嘉在哦塘香切殿堂长寿洞亲自降临，赐予多吉朗巴长寿水、法药及法王和益西措嘉的神魂璁玉等。
+
+- event_id: EV_6076
+  type: 神变
+  title: 多吉朗巴在切哦山幻化二身公开取出伏藏
+  participants:
+    - entity: 多吉朗巴
+      role: 主体
+  location: 切哦山
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在切哦山，他幻化二身以后，在众人当中公开取出伏藏，并且留下一肘的脚印"
+  description: 多吉朗巴在切哦山幻化二身于众人中公开取伏藏，留下一肘脚印。
+
+- event_id: EV_6077
+  type: 弘法
+  title: 多吉朗巴在藏龙建立八大法行大修并为鬼神灌顶
+  participants:
+    - entity: 多吉朗巴
+      role: 主体
+  location: 藏龙美措酿山洞
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "召集雪域的所有大力鬼神而建立八大法行的大修，为所有鬼神灌顶"
+  description: 多吉朗巴在藏龙美措酿山洞建立八大法行大修，为雪域大力鬼神灌顶，以幻化身到八大尸林礼见八大持明。
+
+- event_id: EV_6078
+  type: 圆寂
+  title: 多吉朗巴六十岁留下遗教示现圆寂
+  participants:
+    - entity: 多吉朗巴
+      role: 主体
+  location: 札龙
+  time_info:
+    text: "六十岁"
+    relative_to: 多吉朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在六十岁留下遗教授记，伴随着稀有的瑞相在札龙地方示现圆寂"
+  description: 多吉朗巴六十岁留下遗教授记在札龙示现圆寂。
+
+- event_id: EV_6079
+  type: 神变
+  title: 多吉朗巴法体三年安放期间开口教诫并出现大量舍利
+  participants:
+    - entity: 多吉朗巴
+      role: 主体
+    - entity: 札西炯尼
+      role: 心子
+    - entity: 土美嘉嘎瓦
+      role: 弟子
+  location: 札龙
+  time_info:
+    text: "圆寂后三年安放期间"
+    relative_to: 多吉朗巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "法体在三年安放期间，时而开口教诫恩赐四句回向文而利益有情"
+  description: 多吉朗巴法体三年安放期间时而开口教诫赐四句回向文，荼毗后出现大量舍利，右脚予札西炯尼，左脚予土美嘉嘎瓦。
+
+# ==================== 绕那朗巴段 (lines 701-736) ====================
+
+- event_id: EV_6080
+  type: 伏藏开取
+  title: 绕那朗巴三十岁取出第一个伏藏品三根本修类
+  participants:
+    - entity: 绕那朗巴
+      role: 伏藏师
+  location: 大鹏岩
+  time_info:
+    text: "三十岁时"
+    relative_to: 绕那朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "三十岁时，从大鹏岩处开取第一个伏藏品《三根本修类》等"
+  description: 绕那朗巴三十岁从大鹏岩取出第一个伏藏品《三根本修类》。
+
+- event_id: EV_6081
+  type: 授记
+  title: 莲花生大士幻化为舍事者赐予绕那朗巴伏藏标题
+  participants:
+    - entity: 莲花生大士
+      role: 授记者
+    - entity: 绕那朗巴
+      role: 被授记者
+  location: null
+  time_info:
+    text: "二十七岁时"
+    relative_to: 绕那朗巴
+    absolute: null
+  layers: [授记, 证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲花生大士幻化成一位头带黄帽、身着黄衣的舍事者，亲自赐予他伏藏标题"
+  description: 绕那朗巴二十七岁时莲师幻化为黄帽黄衣舍事者赐予伏藏标题并进行教授。
+
+- event_id: EV_6082
+  type: 伏藏开取
+  title: 绕那朗巴取出二十五个伏藏品
+  participants:
+    - entity: 绕那朗巴
+      role: 伏藏师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从拉札南给坚，取出《集密意续》四类等、《寂猛上师》、《大悲密集》、《大圆满明界日》为主二十五个伏藏品"
+  description: 绕那朗巴从哲塘古如岩等处取出马头明王修法、《集密意续》四类等共二十五个伏藏品。
+
+- event_id: EV_6083
+  type: 弘法
+  title: 绕那朗巴与美古桑单桑波编集《宁玛续全集》
+  participants:
+    - entity: 绕那朗巴
+      role: 主体
+    - entity: 美古桑单桑波
+      role: 传承持有者
+  location: 哲西棱珠宫殿
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在哲西棱珠宫殿里，编集成《宁玛续全集》的一个正文，先用墨写，后用金撰、金刻"
+  description: 绕那朗巴知完整教传承唯美古桑单桑波一人保有，师徒二人精进听受后在哲西棱珠宫殿编集《宁玛续全集》。
+
+- event_id: EV_6084
+  type: 圆寂
+  title: 绕那朗巴七十六岁前往莲花光宫殿
+  participants:
+    - entity: 绕那朗巴
+      role: 主体
+  location: null
+  time_info:
+    text: "七十六岁"
+    relative_to: 绕那朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在七十六岁伴随着稀有的大神变而前往莲花光宫殿"
+  description: 绕那朗巴七十六岁伴随大神变前往莲花光宫殿。
+
+# ==================== 邬金班玛朗巴段 (lines 738-782) ====================
+
+- event_id: EV_6085
+  type: 伏藏开取
+  title: 邬金班玛朗巴从烈火湖取出大圆满明界类
+  participants:
+    - entity: 邬金班玛朗巴
+      role: 伏藏师
+  location: 那让岩
+  time_info:
+    text: "二十七岁时"
+    relative_to: 邬金班玛朗巴
+    absolute: null
+  layers: [史传, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他手拿一盏灯无有阻碍走进湖内，当出来之时手中的灯还没有熄灭，瓷罐大小的伏藏大宝箧已夹在腋下"
+  description: 邬金班玛朗巴二十七岁在众人聚集中手持灯走入烈火湖取出大圆满明界类伏藏宝箧，灯未熄灭，众人生起信心。
+
+- event_id: EV_6086
+  type: 伏藏开取
+  title: 邬金班玛朗巴从桑耶青普取出大圆满集普贤密意续
+  participants:
+    - entity: 邬金班玛朗巴
+      role: 伏藏师
+  location: 桑耶青普
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从桑耶青普取出《大圆满集普贤密意续》"
+  description: 邬金班玛朗巴从桑耶青普取出《大圆满集普贤密意续》。
+
+- event_id: EV_6087
+  type: 伏藏开取
+  title: 邬金班玛朗巴从不同地点取出多种伏藏
+  participants:
+    - entity: 邬金班玛朗巴
+      role: 伏藏师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从不同的伏藏地点，开取《大圆满无二孺子续》类、《上师宝珠海》、《大悲遣暗灯》……等许多伏藏"
+  description: 邬金班玛朗巴从多处取出《大圆满无二孺子续》《上师宝珠海》《大悲遣暗灯》等大量伏藏及圣物。
+
+- event_id: EV_6088
+  type: 神变
+  title: 邬金班玛朗巴从山丘除土石使众人朝礼霍吉河佛堂
+  participants:
+    - entity: 邬金班玛朗巴
+      role: 主体
+  location: 霍吉河佛堂
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "这位伏藏师从一个山丘除去所有土石，使当代众人有朝礼此殿堂的机会"
+  description: 邬金班玛朗巴从山丘除去所有土石，使众人有缘朝礼以前见所未见的霍吉河佛堂。
+
+- event_id: EV_6089
+  type: 授记
+  title: 邬金班玛朗巴得到成佛授记
+  participants:
+    - entity: 邬金班玛朗巴
+      role: 被授记者
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "得到'未来时于莲花庄严刹土成佛，佛号金刚藏'的授记"
+  description: 邬金班玛朗巴得到"于莲花庄严刹土成佛、佛号金刚藏"的授记。
+
+# ==================== 噶玛朗巴段 (lines 784-796) ====================
+
+- event_id: EV_6090
+  type: 伏藏开取
+  title: 噶玛朗巴十五岁从刚波达神山取出寂猛密意自解脱等
+  participants:
+    - entity: 噶玛朗巴
+      role: 伏藏师
+  location: 刚波达神山
+  time_info:
+    text: "十五岁时"
+    relative_to: 噶玛朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十五岁时依授记和缘起聚合，从刚波达神山如起舞岩石内取出《寂猛密意自解脱》及《大悲莲花寂猛》等法要"
+  description: 噶玛朗巴十五岁从刚波达神山如起舞岩石内取出《寂猛密意自解脱》及《大悲莲花寂猛》等法要。
+
+- event_id: EV_6091
+  type: 传法
+  title: 噶玛朗巴传《莲花寂猛》与《密意自解脱》
+  participants:
+    - entity: 噶玛朗巴
+      role: 传法者
+    - entity: 尼达秋吉
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "将《莲花寂猛》法类完整赐予十四位法主大弟子，《密意自解脱》所有法类独传给亲子尼达秋吉"
+  description: 噶玛朗巴将《莲花寂猛》完整赐予十四位法主，《密意自解脱》独传亲子尼达秋吉。
+
+- event_id: EV_6092
+  type: 弘法
+  title: 南卡秋吉嘉措开始广泛弘扬寂猛密意自解脱
+  participants:
+    - entity: 南卡秋吉嘉措
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从第三代南卡秋吉嘉措开始广泛弘扬"
+  description: 噶玛朗巴第三代南卡秋吉嘉措开始广泛弘扬《寂猛密意自解脱》，中阴闻解脱事业遍及各地。
+
+# ==================== 唐东嘉波段 (lines 798-832) ====================
+
+- event_id: EV_6093
+  type: 弘法
+  title: 唐东嘉波依止五百多位善知识并闻受香派伏藏法
+  participants:
+    - entity: 唐东嘉波
+      role: 弟子
+    - entity: 根帮敦友嘉灿
+      role: 上师
+    - entity: 多吉云尼
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他依止了五百多位善知识进行不可估量的闻思"
+  description: 唐东嘉波依止五百多位善知识闻思，在根帮敦友嘉灿前闻完整香派伏藏法，在多吉云尼前闻香派法，示现成就相。
+
+- event_id: EV_6094
+  type: 建寺
+  title: 唐东嘉波在藏地建许多佛殿及五十八座铁桥
+  participants:
+    - entity: 唐东嘉波
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在藏地抵制边军的要地建起许多佛殿……共建五十八座铁桥，造了一百一十八皮船"
+  description: 唐东嘉波在藏地要地建许多佛殿、造不可思议佛像佛经佛塔、建五十八座铁桥、一百一十八皮船。
+
+- event_id: EV_6095
+  type: 伏藏开取
+  title: 唐东嘉波从桑耶青普等多处取出甚深伏藏
+  participants:
+    - entity: 唐东嘉波
+      role: 伏藏师
+  location: 桑耶青普
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从桑耶青普取出《长寿修法赐无死吉祥》等五卷纸"
+  description: 唐东嘉波从桑耶青普取出《长寿修法赐无死吉祥》五卷纸，从札巴江取《意修无上最密》，从匝热取多种伏藏。
+
+- event_id: EV_6096
+  type: 弘法
+  title: 唐东嘉波创立藏戏
+  participants:
+    - entity: 唐东嘉波
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "为了劝勉人们行善而把往昔菩萨法王等传记编成歌舞表演，当代藏戏一直延续着"
+  description: 唐东嘉波将往昔菩萨法王传记编成歌舞表演以劝勉行善，藏戏由此延续。
+
+- event_id: EV_6097
+  type: 圆寂
+  title: 唐东嘉波一百二十五岁前往空行刹土
+  participants:
+    - entity: 唐东嘉波
+      role: 主体
+    - entity: 尼玛桑波
+      role: 心子
+  location: null
+  time_info:
+    text: "一百二十五岁"
+    relative_to: 唐东嘉波
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "最后在他一百二十五岁时，真身前往空行刹土之际，心子尼玛桑波唱起悲歌，于是他再度返回留下详细遗教"
+  description: 唐东嘉波一百二十五岁前往空行刹土，心子尼玛桑波唱悲歌，尊者再度返回留详细遗教后示现前往吉祥山瑞相。
+
+# ==================== 阿里大班智达班玛旺嘉多吉段 (lines 834-888) ====================
+
+- event_id: EV_6098
+  type: 出家受戒
+  title: 班玛旺嘉多吉八岁受居士戒
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 受戒者
+    - entity: 嘉扬仁钦嘉灿
+      role: 父亲/上师
+  location: null
+  time_info:
+    text: "八岁"
+    relative_to: 班玛旺嘉多吉
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他八岁时受居士戒，在父亲面前发菩提心，并听受《经幻心》为主的前译教法"
+  description: 班玛旺嘉多吉八岁受居士戒，在父亲面前发菩提心并听受《经幻心》等前译教法。
+
+- event_id: EV_6099
+  type: 弘法
+  title: 班玛旺嘉多吉二十岁通达百部大论典
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 主体
+  location: null
+  time_info:
+    text: "二十岁起"
+    relative_to: 班玛旺嘉多吉
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从二十岁起，通达中观、因明、般若为主的一百部大论典"
+  description: 班玛旺嘉多吉从二十岁起通达中观因明般若等一百部大论典，被一致共称为善知识。
+
+- event_id: EV_6100
+  type: 闭关修行
+  title: 班玛旺嘉多吉修红大威德见到威猛文殊
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 修行者
+    - entity: 嘉扬秋炯
+      role: 上师
+    - entity: 赤诚华
+      role: 上师
+  location: null
+  time_info:
+    text: "二十一岁"
+    relative_to: 班玛旺嘉多吉
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在嘉扬秋炯和赤诚华等上师前恭听《红大威德》等……结果直接见到威猛文殊尊颜"
+  description: 班玛旺嘉多吉二十一岁在上师前恭听《红大威德》等灌顶教言后依修，直接见到威猛文殊尊颜。
+
+- event_id: EV_6101
+  type: 出家受戒
+  title: 班玛旺嘉多吉二十五岁受比丘戒
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 受戒者
+    - entity: 罗哦大堪布索南棱珠
+      role: 亲教师
+  location: 桑哲朗佛学院
+  time_info:
+    text: "二十五岁"
+    relative_to: 班玛旺嘉多吉
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "文殊萨迦班智达的幻化罗哦大堪布、索南棱珠作为亲教师、轨范师而受比丘戒"
+  description: 班玛旺嘉多吉二十五岁在桑哲朗佛学院于罗哦大堪布索南棱珠前受比丘戒，此后守持头陀禁行。
+
+- event_id: EV_6102
+  type: 弘法
+  title: 班玛旺嘉多吉到卫藏恢复衰落法脉
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 主体
+    - entity: 勒单多吉
+      role: 同行者
+  location: 卫藏
+  time_info:
+    text: "三十八岁以来"
+    relative_to: 班玛旺嘉多吉
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "发心在卫藏后藏使衰落的新旧派法脉恢复"
+  description: 班玛旺嘉多吉三十八岁后发心恢复卫藏后藏新旧派衰落法脉，与兄弟勒单多吉同到卫藏朝拜大昭寺。
+
+- event_id: EV_6103
+  type: 弘法
+  title: 班玛旺嘉多吉在桑耶举行八大法行集善逝大修
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 主体
+  location: 桑耶寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在中殿举行《八大法行·集善逝》大修"
+  description: 班玛旺嘉多吉到达桑耶后明显苏醒法王赤松德赞习气，在中殿举行《八大法行集善逝》大修。
+
+- event_id: EV_6104
+  type: 伏藏开取
+  title: 班玛旺嘉多吉从桑耶上殿取出教集后持明总集之法类
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 伏藏师
+  location: 桑耶寺
+  time_info:
+    text: "四十六岁"
+    relative_to: 班玛旺嘉多吉
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "尊者四十六岁从桑耶上殿的毗卢遮那四像背靠背的密箧内取出《教集后持明总集之法类七品祈祷修法》伏藏"
+  description: 班玛旺嘉多吉四十六岁从桑耶上殿毗卢遮那四像密箧取出《教集后持明总集之法类七品祈祷修法》伏藏。
+
+- event_id: EV_6105
+  type: 开光
+  title: 班玛旺嘉多吉与仁真勒单及哲贡仁钦彭措重新对桑耶开光
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 主体
+    - entity: 仁真勒单
+      role: 介绍者
+    - entity: 哲贡仁钦彭措
+      role: 迎请者
+  location: 桑耶寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "经仁真勒单尊者作介绍，哲贡仁钦彭措迎请大师，师徒三人重新对桑耶作开光"
+  description: 仁真勒单介绍，哲贡仁钦彭措迎请班玛旺嘉多吉，师徒三人重新对桑耶开光，成为藏区利乐源泉。
+
+- event_id: EV_6106
+  type: 圆寂
+  title: 班玛旺嘉多吉五十六岁前往铜色吉祥山
+  participants:
+    - entity: 班玛旺嘉多吉
+      role: 主体
+  location: 温门塘
+  time_info:
+    text: "五十六岁"
+    relative_to: 班玛旺嘉多吉
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "最终五十六岁由温门塘前往铜色吉祥山"
+  description: 班玛旺嘉多吉五十六岁由温门塘前往铜色吉祥山。
+
+# ==================== 列楚朗巴段 (lines 890-951) ====================
+
+- event_id: EV_6107
+  type: 出家受戒
+  title: 列楚朗巴在法王麦彭札西罗珠前出家
+  participants:
+    - entity: 列楚朗巴
+      role: 受戒者
+    - entity: 法王麦彭札西罗珠
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "逃到法王麦彭札西罗珠面前……他出家为僧，取名为阿旺秋嘉旺波"
+  description: 列楚朗巴以出离心逃到法王麦彭札西罗珠面前出家为僧，取名阿旺秋嘉旺波。
+
+- event_id: EV_6108
+  type: 出家受戒
+  title: 列楚朗巴在拉则瓦前受近圆戒
+  participants:
+    - entity: 列楚朗巴
+      role: 受戒者
+    - entity: 拉则瓦
+      role: 戒师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在拉则瓦上师前受近圆戒，以真正的比丘身份来修行"
+  description: 列楚朗巴在拉则瓦上师前受近圆戒，成为真正比丘。
+
+- event_id: EV_6109
+  type: 闭关修行
+  title: 列楚朗巴泥封修行十七年
+  participants:
+    - entity: 列楚朗巴
+      role: 修行者
+  location: null
+  time_info:
+    text: "十七年"
+    relative_to: 列楚朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十七年中始终泥封修行"
+  description: 列楚朗巴十七年中始终泥封修行，期间置伏藏授记于度外。
+
+- event_id: EV_6110
+  type: 伏藏开取
+  title: 列楚朗巴首次取伏藏从铁大鹏鸟内取出伏藏标题
+  participants:
+    - entity: 列楚朗巴
+      role: 伏藏师
+    - entity: 法王麦彭札西罗珠
+      role: 劝请者
+  location: null
+  time_info:
+    text: "铁猴年一月初十"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "于铁猴年一月初十，第一次取伏藏之际，从雏鸟大小的铁合金大鹏鸟内取出伏藏的标题，得到益西措嘉的手稿"
+  description: 列楚朗巴在法王劝请下于铁猴年一月初十首次取伏藏，从铁大鹏鸟内取出标题及益西措嘉手稿。
+
+- event_id: EV_6111
+  type: 伏藏开取
+  title: 列楚朗巴秘密取出最深三宝总集等
+  participants:
+    - entity: 列楚朗巴
+      role: 伏藏师
+  location: 札龙霍察
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从札龙霍察铁门中秘密取出《最深三宝总集》等伏藏"
+  description: 列楚朗巴从札龙霍察铁门中秘密取出《最深三宝总集》等伏藏。
+
+- event_id: EV_6112
+  type: 伏藏开取
+  title: 列楚朗巴从多处取出大悲观音等甚深伏藏
+  participants:
+    - entity: 列楚朗巴
+      role: 伏藏师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "逐渐从贡波哦切、香创则均巴龙的伏藏门、尼木神山……取出《大悲观音》、《马头明王如意宝》……等许多甚深伏藏品"
+  description: 列楚朗巴从贡波哦切、尼木神山等多处取出《大悲观音》《马头明王如意宝》《寂猛了义藏》等甚深伏藏。
+
+- event_id: EV_6113
+  type: 神变
+  title: 列楚朗巴在尼木神山取伏藏时大显神变
+  participants:
+    - entity: 列楚朗巴
+      role: 主体
+    - entity: 贡波札德瓦
+      role: 阻碍者
+  location: 尼木神山
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "骑马驶到只有飞禽才能到的如镜面般光滑的悬崖峭壁，在岩石表面留下了坐骑的足迹"
+  description: 贡波札德瓦等动用军队阻止，列楚朗巴骑马登上悬崖留下坐骑足迹，取伏藏后大显神变使军人生起信心。
+
+- event_id: EV_6114
+  type: 弘法
+  title: 列楚朗巴将深法甘露恩赐刚波侍从活佛等众多弟子
+  participants:
+    - entity: 列楚朗巴
+      role: 传法者
+    - entity: 刚波侍从活佛诺吾坚巴
+      role: 第一法主
+    - entity: 嘉察札巴敦哲
+      role: 弟子
+    - entity: 哲贡秋杰札巴
+      role: 弟子
+    - entity: 多札仁真阿革旺波
+      role: 弟子
+    - entity: 持明陈列棱珠
+      role: 弟子
+    - entity: 德格哲土根嘎嘉措
+      role: 弟子
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从卫藏、后藏、康区广泛聚集了红黑帽噶玛巴……对他们恩赐完整的深法甘露"
+  description: 自刚波侍从活佛诺吾坚巴开启事业之门后，卫藏后藏康区各大德聚集领受列楚朗巴深法甘露。
+
+- event_id: EV_6115
+  type: 圆寂
+  title: 列楚朗巴七十二岁示现前往大净土
+  participants:
+    - entity: 列楚朗巴
+      role: 主体
+  location: 旺热玖波
+  time_info:
+    text: "七十二岁"
+    relative_to: 列楚朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在七十二岁，于旺热玖波，公开显现验相和神变、神通，示现前往大净土之相"
+  description: 列楚朗巴七十二岁在旺热玖波公开显现验相和神变，示现前往大净土。
+
+# ==================== 敦珠多吉段 (lines 953-999) ====================
+
+- event_id: EV_6116
+  type: 弘法
+  title: 敦珠多吉在德格哲土根嘎嘉措面前供养发心取名
+  participants:
+    - entity: 敦珠多吉
+      role: 弟子
+    - entity: 德格哲土根嘎嘉措
+      role: 上师
+  location: 棱珠
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在持明鹫翎尊者的化身德格哲土根嘎嘉措面前供养发新，取名为根嘎索南秋帕"
+  description: 敦珠多吉在持明鹫翎尊者化身德格哲土根嘎嘉措面前供养发新，取名根嘎索南秋帕。
+
+- event_id: EV_6117
+  type: 弘法
+  title: 敦珠多吉在真巴滚秋嘉灿面前听受大圆满后恍然大悟
+  participants:
+    - entity: 敦珠多吉
+      role: 弟子
+    - entity: 真巴滚秋嘉灿
+      role: 上师
+  location: 莫桑
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在真巴滚秋嘉灿面前听受大圆满等许多深法，并且实地修行，结果恍然大悟"
+  description: 敦珠多吉到莫桑修行地，在真巴滚秋嘉灿面前听受大圆满等深法，修行后恍然大悟。
+
+- event_id: EV_6118
+  type: 闭关修行
+  title: 敦珠多吉在白岩修行风脉明点瑜伽
+  participants:
+    - entity: 敦珠多吉
+      role: 修行者
+    - entity: 酿波大成就者札西才单
+      role: 上师
+  location: 白岩
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在白岩神河断除饮食，只是依摄生术，修行深道风脉明点瑜伽达到究竟"
+  description: 敦珠多吉到卫藏拜见札西才单，恭听灌顶教言后在白岩神河断食依摄生术修风脉明点瑜伽达究竟。
+
+- event_id: EV_6119
+  type: 弘法
+  title: 敦珠多吉在大持明者嘉村酿波面前闻受伏藏法
+  participants:
+    - entity: 敦珠多吉
+      role: 弟子
+    - entity: 列楚朗巴
+      role: 上师
+  location: 旺热
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在旺热依止大持明者嘉村酿波，圆满闻受尊者的甚深伏藏为主的诸多灌顶、引导及窍诀"
+  description: 敦珠多吉在旺热依止大持明者嘉村酿波（列楚朗巴），闻受甚深伏藏为主的灌顶引导窍诀。
+
+- event_id: EV_6120
+  type: 伏藏开取
+  title: 敦珠多吉二十九岁开始取出甚深伏藏
+  participants:
+    - entity: 敦珠多吉
+      role: 伏藏师
+  location: 布哦东切大乐密洞
+  time_info:
+    text: "二十九岁"
+    relative_to: 敦珠多吉
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从璁玉湖宝岩处取出伏藏标题，从布哦东切大乐密洞里开取《妙法密意总集诸门》"
+  description: 敦珠多吉二十九岁从璁玉湖宝岩取出伏藏标题，从布哦东切大乐密洞取出《妙法密意总集诸门》。
+
+- event_id: EV_6121
+  type: 伏藏开取
+  title: 敦珠多吉从多处取出各种伏藏品
+  participants:
+    - entity: 敦珠多吉
+      role: 伏藏师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从察瓦卓岩处开取《妙法化身心滴》及护法类……从布热达堡山洞里取出《深义秘密心滴吉祥胜乐》……"
+  description: 敦珠多吉从察瓦卓岩、布热达堡山洞、桑耶寺上殿、大昭寺上殿等多处取出各种甚深伏藏品。
+
+- event_id: EV_6122
+  type: 伏藏开取
+  title: 敦珠多吉在一百个伏藏地点取出千个享解脱
+  participants:
+    - entity: 敦珠多吉
+      role: 伏藏师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "总之，在一百个伏藏地点，取出一千个享解脱等，按照授记中所说，基本上都已取出"
+  description: 敦珠多吉总计在一百个伏藏地点取出一千个享解脱等，基本按授记取出。
+
+- event_id: EV_6123
+  type: 建寺
+  title: 敦珠多吉应邀建起敦珠寺
+  participants:
+    - entity: 敦珠多吉
+      role: 主体
+    - entity: 香巴彭措
+      role: 迎请者
+  location: 敦珠寺
+  time_info:
+    text: "四十二岁"
+    relative_to: 敦珠多吉
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "应德格上师香巴彭措叔侄迎请，建起尊者前世驻锡的敦珠寺"
+  description: 敦珠多吉四十二岁应德格上师香巴彭措叔侄迎请建起前世驻锡的敦珠寺，成办教政大业。

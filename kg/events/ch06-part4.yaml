@@ -1,0 +1,1211 @@
+# ============================================================
+# 知识图谱事件抽取 — 第六品 近传伏藏史 Part 4 (lines 1501-2007)
+# 覆盖范围: 蒋扬钦则旺波闻思修弘法续 + 密传记(七教传) +
+#           嘉滚云丹嘉措罗珠塔益(蒋贡康楚)事迹 +
+#           麦彭嘉扬南嘉嘉措事迹 + 品末结语
+# 来源: source/dudjom/chapter_md/06_近传伏藏史.md
+# 提取日期: 2026-04-11
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: E_1100+ — 引用 kg/entities/ch06-part4.yaml
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 蒋扬钦则旺波闻思修行段 (lines 1500-1542) ====================
+
+- event_id: EV_6100
+  type: 弘法
+  title: 蒋扬钦则旺波十三年唯一闻法
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+  location: null
+  time_info:
+    text: "十三年中"
+    relative_to: 蒋扬钦则旺波 (E_1100)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他在十三年中唯一闻法，共称的讲传十大顶梁之柱的多数宗义基本上都已听受"
+  description: 蒋扬钦则旺波用十三年时间闻法，听受宁玛、噶当、萨迦、噶举等各派灌顶教言和七百函传承。
+
+- event_id: EV_6101
+  type: 弘法
+  title: 蒋扬钦则旺波广传经续论典
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "所听受的经续论典的能成熟之灌顶和能解脱之教言，大多数都传讲了多次，至少也传过一遍"
+  description: 蒋扬钦则旺波将所受一切灌顶教言大多数传讲多次，以清净法布施满足求法者心愿。
+
+- event_id: EV_6102
+  type: 建寺
+  title: 蒋扬钦则旺波造佛像经典佛塔建殿堂
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "金铜身所依的佛像就达两千尊，刻印语所依的经典近四十函……佛塔……一百余座……十三座殿堂"
+  description: 蒋扬钦则旺波造金铜佛像两千尊、经典近四十函、手写刻版经函两千余、佛塔一百余座、建殿堂十三座。
+
+- event_id: EV_6103
+  type: 弘法
+  title: 蒋扬钦则旺波恢复因战乱受损的寺院
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "通过与所有汉藏的官员、法王德格君臣达成协议使以前存在的道场得以恢复、重建"
+  description: 蒋扬钦则旺波因战乱寺院受损，布施茶砖三千余块，与汉藏官员及德格君臣协议恢复重建道场。
+
+- event_id: EV_6104
+  type: 闭关修行
+  title: 蒋扬钦则旺波十三年修行新旧派本尊
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+  location: null
+  time_info:
+    text: "十三年中"
+    relative_to: 蒋扬钦则旺波 (E_1100)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "先后在十三年中，修行新旧派续部的本尊之依修"
+  description: 蒋扬钦则旺波十三年间修行新旧派续部本尊依修及至尊珠秋的一百言传引导等甚深引导。
+
+# ==================== 蒋扬钦则旺波授记与密传记段 (lines 1543-1650) ====================
+
+- event_id: EV_6105
+  type: 授记
+  title: 唐东嘉波对蒋扬钦则旺波的金刚语授记
+  participants:
+    - entity: 唐东嘉波 (E_1103)
+      role: 授记者
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 被授记者
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "与我无二瑜伽士，具足五种法相者，自此七百年之内，龙年生于多康境……如幻之士现世间"
+  description: 大成就者唐东嘉波以金刚语授记蒋扬钦则旺波的降生、种姓、法相及弘法事业。
+
+- event_id: EV_6106
+  type: 灌顶
+  title: 蒋扬钦则旺波八岁时莲师益西措嘉现身赐灌顶
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 受灌者
+    - entity: 莲花生大士 (E_1104)
+      role: 灌顶师
+    - entity: 益西措嘉 (E_1105)
+      role: 灌顶师
+  location: null
+  time_info:
+    text: "八岁时"
+    relative_to: 蒋扬钦则旺波 (E_1100)
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲花生大士和益西措嘉现身，在金刚橛坛城中赐予灌顶并予以加持和随教"
+  description: 蒋扬钦则旺波八岁身患重病时，莲师与益西措嘉现身在金刚橛坛城中赐灌顶加持，战胜违缘。
+
+- event_id: EV_6107
+  type: 传法
+  title: 蒋扬钦则旺波十五岁净相中蒋华西宁授经
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 受法者
+    - entity: 蒋华西宁 (E_1107)
+      role: 授法者
+  location: 金刚座 (E_1159)
+  time_info:
+    text: "十五岁"
+    relative_to: 蒋扬钦则旺波 (E_1100)
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "从左方取来一本经函——《般若摄颂》的梵文本，放在他头上指点密意……从右面取来一本经函……《大圆满金刚萨埵意镜续》"
+  description: 蒋扬钦则旺波十五岁净相中到金刚座九层楼阁第八层，蒋华西宁授《般若摄颂》圆满显宗和《大圆满金刚萨埵意镜续》圆满密宗加持后化光融入。
+
+- event_id: EV_6108
+  type: 神变
+  title: 蒋扬钦则旺波净相中入火粗身焚烧见布玛莫札光明身
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+    - entity: 布玛莫札 (E_1149)
+      role: 关联圣众
+  location: null
+  time_info:
+    text: "十五岁"
+    relative_to: 蒋扬钦则旺波 (E_1100)
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在他的门口有一堆熊熊燃烧的大火，他不由自主地走入火里，结果粗大的身蕴焚烧成无实法，他认为是布玛莫札的光明身灿然出现"
+  description: 净相中蒋扬钦则旺波从无分别等持觉醒后入火，粗身焚烧成无实，显现布玛莫札光明身。
+
+- event_id: EV_6109
+  type: 传法
+  title: 唐东嘉波梦中现身赐予蒋扬钦则旺波教授
+  participants:
+    - entity: 唐东嘉波 (E_1103)
+      role: 授法者
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 受法者
+  location: null
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "成就自在者唐东嘉波在他梦中现身并加持，赐予教授及随教"
+  description: 成就自在者唐东嘉波在蒋扬钦则旺波梦中现身加持，赐予教授及随教，其后《六圆满次第》等自现。
+
+- event_id: EV_6110
+  type: 传法
+  title: 第一教藏传——莲师赐七教传承
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 受法者
+    - entity: 莲花生大士 (E_1104)
+      role: 授法者
+  location: 妙拂莲花光刹土 (E_1160)
+  time_info:
+    text: "十六岁时，萨迦月初十黎明"
+    relative_to: 蒋扬钦则旺波 (E_1100)
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲师以密意加持，并授予表示的灌顶和七教传承……连同眷属一起融入尊者"
+  description: 蒋扬钦则旺波十六岁净相中到妙拂莲花光刹土，莲师赐密意加持、表示灌顶和七教传承后融入尊者，从此实相境界稳固。
+
+- event_id: EV_6111
+  type: 伏藏开取
+  title: 第二地伏藏传——蒋扬钦则旺波二十岁到妙颈红岩取伏藏
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 伏藏师
+    - entity: 年钦塘拉 (E_1142)
+      role: 护法供养者
+  location: 妙颈红岩 (E_1161)
+  time_info:
+    text: "二十岁"
+    relative_to: 蒋扬钦则旺波 (E_1100)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "蒋扬钦则旺波在二十岁到了妙颈红岩时，智慧空行亲自供养伏藏宝箧，其中有大悲心性休息的法要和二十一梵志的遗骨"
+  description: 蒋扬钦则旺波二十岁到妙颈红岩，智慧空行供养伏藏宝箧，年钦塘拉护法从单秀酿仲取出上师四身修法和莲师舍利。
+
+- event_id: EV_6112
+  type: 伏藏开取
+  title: 空行母从色俄耶湖和班玛西热取出伏藏供养蒋扬钦则旺波
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 受供者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "空行母以神变从色俄耶湖取出《三根本幻化网》类，从伏藏河班玛西热取出《三根本总集》类"
+  description: 空行母以神变分别从色俄耶湖取出《三根本幻化网》、从班玛西热取出《三根本总集》供养蒋扬钦则旺波。
+
+- event_id: EV_6113
+  type: 伏藏开取
+  title: 秋杰朗巴劝请开取心滴修法如意宝类
+  participants:
+    - entity: 秋杰朗巴 (E_1106)
+      role: 伏藏师
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+  location: 则革诺吾苯 (E_1165)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "心滴修法如意宝类和莲师像悉地盛燃，保存在则革诺吾苯三处，经秋杰朗巴特意劝请而开取并加以抉择"
+  description: 心滴修法如意宝类和莲师像保存于则革诺吾苯三处，经秋杰朗巴劝请开取并由蒋扬钦则旺波抉择成文。
+
+- event_id: EV_6114
+  type: 传法
+  title: 第三极密伏藏——莲师以桑吉朗巴身相赐法
+  participants:
+    - entity: 莲花生大士 (E_1104)
+      role: 授法者
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 受法者
+    - entity: 桑吉朗巴 (E_1108)
+      role: 示现身相
+  location: null
+  time_info:
+    text: "土羊年"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲师显现为伏藏大师桑吉朗巴的身相而赐给他经函并予以加持"
+  description: 土羊年净相中，莲师显现桑吉朗巴身相赐经函加持，打开智慧，以前伏藏大师所藏极密伏藏黄纸由智慧空行取出。
+
+- event_id: EV_6115
+  type: 传法
+  title: 第四甚深密意伏藏——莲师在桑耶加持嘉滚罗珠塔益
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 受法者
+    - entity: 莲花生大士 (E_1104)
+      role: 授法者
+    - entity: 莲师金刚像 (E_1251)
+      role: 圣物
+  location: 桑耶 (E_1167)
+  time_info:
+    text: "二十九岁土猴年"
+    relative_to: 嘉滚罗珠塔益 (E_1101)
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "于年伏藏品莲师金刚像前作供养时，那尊佛像变成真正的莲花生大士给予加持并恩授教言"
+  description: 嘉滚罗珠塔益二十九岁到桑耶，在莲师金刚像前供养时佛像化为真正莲师赐加持教言，莲师心滴法自然浮现。
+
+- event_id: EV_6116
+  type: 神变
+  title: 莲师在香卓格嘉亲自现身加持嘉滚罗珠塔益
+  participants:
+    - entity: 莲花生大士 (E_1104)
+      role: 加持者
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 受加持者
+  location: 香卓格嘉 (E_1166)
+  time_info:
+    text: "二十九岁土猴年"
+    relative_to: 嘉滚罗珠塔益 (E_1101)
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "途经香卓格嘉，在初十会供期间，莲师亲自现身作加持"
+  description: 嘉滚罗珠塔益途经香卓格嘉初十会供时莲师亲自现身加持。
+
+- event_id: EV_6117
+  type: 神变
+  title: 嘉滚罗珠塔益面见十字妙音圣母
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 主体
+    - entity: 十字妙音圣母 (E_1151)
+      role: 显现者
+  location: null
+  time_info:
+    text: "三十五岁木虎年十二月"
+    relative_to: 嘉滚罗珠塔益 (E_1101)
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "进行无死如意轮的依修，结果直接面见十字妙音圣母而得加持"
+  description: 嘉滚罗珠塔益三十五岁修无死如意轮时直接面见十字妙音圣母获得加持。
+
+- event_id: EV_6118
+  type: 弘法
+  title: 第五回忆前世——嘉滚罗珠塔益忆起杰珍桑给旺修
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 主体
+    - entity: 杰珍桑给旺修 (E_1109)
+      role: 前世
+  location: 藏哦耶 (E_1168)
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "抵达藏哦耶的山脚时一五一十地回忆起前世转为杰珍桑给旺修成就光明身"
+  description: 嘉滚罗珠塔益到藏哦耶山脚时回忆前世为杰珍桑给旺修成就光明身，开显杰珍心滴。
+
+- event_id: EV_6119
+  type: 弘法
+  title: 第七耳传——莲师八相赐八大法行灌顶教言
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 受法者
+    - entity: 莲花生大士 (E_1104)
+      role: 授法者
+  location: 炯秀集善逝 (E_1177)
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在塔的四面八方和中央有莲师八相和总集莲师身像，他们赐予他八大法行、寂猛幻化网的能成熟之灌顶和能解脱之教言精华耳传"
+  description: 蒋扬钦则旺波在炯秀集善逝乐积佛塔前净相中，莲师八相和总集莲师赐八大法行、寂猛幻化网灌顶教言耳传。
+
+- event_id: EV_6120
+  type: 圆寂
+  title: 蒋扬钦则旺波圆寂
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+    - entity: 布玛莫札 (E_1149)
+      role: 法界融入
+  location: null
+  time_info:
+    text: "七十三岁水龙年六月初六清晨"
+    relative_to: 蒋扬钦则旺波 (E_1100)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "于七十三岁水龙年六月初六清晨，尊者一边散花一边恩授许多吉祥文后入定，色身融入大阿阇黎布玛莫札的密意界中"
+  description: 蒋扬钦则旺波七十三岁水龙年六月初六散花入定圆寂，色身融入布玛莫札密意界，按授记从五台山显现五化身。
+
+# ==================== 嘉滚罗珠塔益段 (lines 1652-1810) ====================
+
+- event_id: EV_6121
+  type: 授记
+  title: 《三摩地王经》授记嘉滚罗珠塔益
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 被授记者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "圣者慈氏名远扬，广行一切有情利，罗珠塔益（意为智慧无边）我授记"
+  description: 《三摩地王经》中佛陀授记名为罗珠塔益(智慧无边)者行持有情利。
+
+- event_id: EV_6122
+  type: 授记
+  title: 《楞伽经》授记嘉滚罗珠塔益
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 被授记者
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "导师罗珠者，宣说五所知，大勇现世间"
+  description: 《楞伽经》授记导师罗珠者宣说五所知、大勇现世间。
+
+- event_id: EV_6123
+  type: 弘法
+  title: 嘉滚罗珠塔益在色钦晋美特多南嘉等前闻法
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 弟子
+    - entity: 色钦晋美特多南嘉 (E_1114)
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在五明大班智达色钦晋美特多南嘉等众多智者成就者持教大德前听受共同十种明处"
+  description: 嘉滚罗珠塔益在色钦晋美特多南嘉等众多智者面前听受十种明处及法相乘诸经教注释。
+
+- event_id: EV_6124
+  type: 弘法
+  title: 嘉滚罗珠塔益在司徒班玛年学旺波足下求法
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 弟子
+    - entity: 司徒班玛年学旺波 (E_1115)
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在香滚达的司徒班玛年学旺波足下恭敬顶戴，以三戒甘露为主究竟了义秘密俱生大乐智慧得以现前"
+  description: 嘉滚罗珠塔益在司徒班玛年学旺波足下获得三戒甘露为主的究竟了义秘密俱生大乐智慧。
+
+- event_id: EV_6125
+  type: 弘法
+  title: 嘉滚罗珠塔益在蒋扬钦则旺波等五十余位善知识前闻受八大教派
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 弟子
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主要上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在真正的文殊菩萨蒋扬钦则旺波为主的五十余位无偏善知识面前，圆满闻受八大教派的道轨"
+  description: 嘉滚罗珠塔益在蒋扬钦则旺波为主的五十余位善知识前圆满闻受八大教派灌顶教言并一一实修证得二种悉地。
+
+- event_id: EV_6126
+  type: 弘法
+  title: 嘉滚罗珠塔益编纂五大宝藏
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "如此五大宝藏在赡部洲前所未有……使无偏佛法的慧命得以延续的卓越典籍达九十函之多"
+  description: 嘉滚罗珠塔益编纂《所知宝藏》《教言宝藏》《教传密藏》《大宝伏藏》《广大宝藏》五大宝藏共九十函。
+
+- event_id: EV_6127
+  type: 建寺
+  title: 嘉滚罗珠塔益重建匝札仁钦岩和炯秀集善逝道场
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "于匝札仁钦岩和炯秀集善逝的修行地，重新兴建道场，并恢复许多陈旧的所依"
+  description: 嘉滚罗珠塔益在匝札仁钦岩和炯秀集善逝重建道场、恢复所依、塑佛像印经典造佛塔，举行大修超过一百五十二次。
+
+- event_id: EV_6128
+  type: 传法
+  title: 莲师梦中赐嘉滚罗珠塔益四灌顶及咒语加持
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 受灌者
+    - entity: 莲花生大士 (E_1104)
+      role: 灌顶师
+  location: null
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "梦中见到莲师，莲师赐予四灌顶及咒语的加持并说：今年遣除了寿障，再过几年，我们会真实相见"
+  description: 嘉滚罗珠塔益修《上师集密意续》依修时梦中见莲师，获四灌顶咒语加持及寿障遣除授记。
+
+- event_id: EV_6129
+  type: 弘法
+  title: 钦则仁波切与秋杰朗巴祈请嘉滚罗珠塔益安坐法座授名
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 受封者
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主持者
+    - entity: 秋杰朗巴 (E_1106)
+      role: 参与者
+  location: 匝达秘密山洞 (E_1180)
+  time_info:
+    text: "四十岁"
+    relative_to: 嘉滚罗珠塔益 (E_1101)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "全知钦则仁波切和伏藏大师秋杰朗巴一起，在匝达秘密山洞，祈请尊者安坐高高的法座……赐给的名字齐美丹尼永仲朗巴"
+  description: 嘉滚罗珠塔益四十岁时，钦则仁波切与秋杰朗巴在匝达秘密山洞祈请其安坐法座，莲师赐名齐美丹尼永仲朗巴。
+
+- event_id: EV_6130
+  type: 伏藏开取
+  title: 嘉滚罗珠塔益五十八岁从多处取出伏藏
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 伏藏师
+  location: null
+  time_info:
+    text: "五十八岁"
+    relative_to: 嘉滚罗珠塔益 (E_1101)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从拉多波木大乐莲花庄严处取出《集三根本密意》法部……从玛荣哲革札西伏藏堡取出……从荣卡水晶岩光芒堡取出……"
+  description: 嘉滚罗珠塔益五十八岁从拉多波木、胜身大乐洞、班玛拉则、玛绕德嘎、玛荣哲革、荣卡水晶岩、藏如札西则堡、匝札仁钦岩益西措嘉密洞等多处取出《集三根本密意》法部、黄纸、圣物等大量伏藏品。
+
+- event_id: EV_6131
+  type: 伏藏开取
+  title: 列绕朗巴与秋杰朗巴受派开取嘉滚罗珠塔益有缘伏藏
+  participants:
+    - entity: 列绕朗巴 (E_1111)
+      role: 伏藏师
+    - entity: 秋杰朗巴 (E_1106)
+      role: 伏藏师
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 有缘者
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 指派者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "钦则仁波切以其交代守护伏藏护法神的威力，派伏藏师列绕朗巴开取，一些由伏藏大师秋杰朗巴开取"
+  description: 嘉滚罗珠塔益有缘但未到手的伏藏品，由钦则仁波切指派列绕朗巴和秋杰朗巴分别开取后送至嘉滚尊者手中。
+
+- event_id: EV_6132
+  type: 传法
+  title: 钦则仁波切净相中嘉滚罗珠塔益显现为吽嘎日赐灌顶
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 显现者
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 受法者
+    - entity: 持明者吽嘎日 (E_1158)
+      role: 示现身相
+  location: null
+  time_info:
+    text: "二十九日晚上"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "钦则仁波切的清净所见前，嘉滚罗珠塔益显现为成就上师持明者吽嘎日的形象，赐予他《集三根本密意》的灌顶、引导及窍诀"
+  description: 在钦则仁波切净相中，嘉滚罗珠塔益显现持明者吽嘎日形象，赐予《集三根本密意》灌顶引导窍诀。
+
+- event_id: EV_6133
+  type: 弘法
+  title: 二位尊者共同抉择《集三根本密意》上师持明修部
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 主体
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他们二位尊者共同作了《集三根本密意》中上师持明殊胜修部的记录"
+  description: 嘉滚罗珠塔益与蒋扬钦则旺波共同翻译空行表示、抉择六类法部，后因访客和钦则旺波患病而中断。
+
+- event_id: EV_6134
+  type: 灌顶
+  title: 觉受光明中钦则仁波切赐嘉滚罗珠塔益四灌顶并直指
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 灌顶师
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 受灌者
+  location: null
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "钦则仁波切按照持明传承瑜伽随诵皈依、发心七支供……取来一个宝瓶放在他头顶，恩赐秘密灌顶与佛母双运的菩提甘露"
+  description: 嘉滚罗珠塔益觉受光明中，钦则仁波切（本体莲师）赐秘密灌顶、智慧灌顶并以水晶石直指法性后消失，又显现为事业黑日嘎交付经教。
+
+- event_id: EV_6135
+  type: 伏藏开取
+  title: 嘉滚罗珠塔益劝请秋杰朗巴开启炯秀集善逝神山
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 劝请者
+    - entity: 秋杰朗巴 (E_1106)
+      role: 伏藏师
+  location: 炯秀集善逝 (E_1177)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "劝请秋杰朗巴开启神山之门并抉择神山山志，结果二十五大圣地的略标题从吉祥岩处得到"
+  description: 嘉滚罗珠塔益劝请秋杰朗巴开启炯秀集善逝神山之门并抉择山志，从吉祥岩得二十五大圣地略标题。
+
+- event_id: EV_6136
+  type: 弘法
+  title: 嘉滚罗珠塔益向各派大德授灌顶传承
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "抉择法类完成的灌顶、传承授予噶托、白玉、西钦、竹青、萨迦、格鲁、噶玛噶举、竹巴噶举、哲贡噶举、达隆噶举的诸位大德"
+  description: 嘉滚罗珠塔益将抉择完成的伏藏法灌顶传承授予噶托、白玉、西钦、竹青及萨迦、格鲁、噶举各派大德。
+
+- event_id: EV_6137
+  type: 神变
+  title: 嘉滚罗珠塔益穿行房屋石上留印
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "尊者能通彻穿行房屋，在石头上留下手印、脚印"
+  description: 嘉滚罗珠塔益具有穿行房屋和在石头上留下手印脚印的神通能力。
+
+- event_id: EV_6138
+  type: 圆寂
+  title: 嘉滚罗珠塔益圆寂
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 主体
+  location: 西方现达哦热城 (E_1188)
+  time_info:
+    text: "八十七岁土狗年一月初三"
+    relative_to: 嘉滚罗珠塔益 (E_1101)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "八十七岁土狗年一月初三，伴随着众多稀奇的神变，身体前往西方现达哦热城，密意融入法界"
+  description: 嘉滚罗珠塔益八十七岁土狗年一月初三伴随神变圆寂，身体前往西方现达哦热城，密意融入法界。
+
+- event_id: EV_6139
+  type: 弘法
+  title: 嘉滚罗珠塔益将佛法交付噶玛巴大司徒等持教大德
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 传法者
+    - entity: 塔则阿阇黎嘉阳洛德旺波 (E_1116)
+      role: 弟子
+    - entity: 炯色阿里秋吉根嘎嘉阳 (E_1117)
+      role: 弟子
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 弟子
+    - entity: 列绕朗巴 (E_1111)
+      role: 弟子
+    - entity: 晋美俄敦旺波 (E_1118)
+      role: 弟子
+    - entity: 杰仲陈列香巴炯内 (E_1119)
+      role: 弟子
+    - entity: 益西贡佩 (E_1120)
+      role: 弟子
+    - entity: 阿旺单秋嘉措 (E_1121)
+      role: 弟子
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他完整交付佛法及成为义补处的第十四、第十五世噶玛巴、第十世和第十一世大司徒为主……从卫藏、后藏直至多康上中下地带的智者班智达"
+  description: 嘉滚罗珠塔益将佛法完整交付噶举、萨迦、宁玛、格鲁各派持教大德，弟子遍及卫藏至多康。
+
+# ==================== 麦彭嘉扬南嘉嘉措段 (lines 1812-1999) ====================
+
+- event_id: EV_6140
+  type: 弘法
+  title: 麦彭嘉扬南嘉六七岁背诵《三戒论》
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: null
+  time_info:
+    text: "六七岁"
+    relative_to: 麦彭嘉扬南嘉嘉措 (E_1102)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从六七岁开始便能背诵《三戒论》并听受了黑白历算的前行等法"
+  description: 麦彭嘉扬南嘉六七岁即背诵《三戒论》并听受历算前行。
+
+- event_id: EV_6141
+  type: 弘法
+  title: 麦彭嘉扬南嘉十二岁入朗寺则美霍密宗院
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: 朗寺则美霍密宗院 (E_1258)
+  time_info:
+    text: "十二岁之初"
+    relative_to: 麦彭嘉扬南嘉嘉措 (E_1102)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在邬金敏珠林巴的传承萨钦丹尼达吉朗寺则美霍密宗院，以普通僧侣的身份居住"
+  description: 麦彭嘉扬南嘉十二岁入邬金敏珠林巴传承的朗寺则美霍密宗院为普通僧侣，被赞为睿智小僧人。
+
+- event_id: EV_6142
+  type: 闭关修行
+  title: 麦彭嘉扬南嘉十五岁修文殊语狮子十八月
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: 则纽深山
+  time_info:
+    text: "十五岁"
+    relative_to: 麦彭嘉扬南嘉嘉措 (E_1102)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在则纽深山里修行文殊语狮子修法十八月，并且修炼妙丹事业，结果获得殊胜验相"
+  description: 麦彭嘉扬南嘉十五岁在则纽深山修文殊语狮子修法十八月获殊胜验相，此后对显密论典一看即通。
+
+- event_id: EV_6143
+  type: 弘法
+  title: 麦彭嘉扬南嘉十八岁朝拜拉萨读噶丹寺佛学院
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+    - entity: 杰桑 (E_1141)
+      role: 同行者
+  location: 拉萨 (E_1185)
+  time_info:
+    text: "十八岁"
+    relative_to: 麦彭嘉扬南嘉嘉措 (E_1102)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他和舅舅杰桑一起朝拜拉萨，当时在噶丹寺只读了一个月的佛学院"
+  description: 麦彭嘉扬南嘉十八岁与舅舅杰桑朝拜拉萨，在噶丹寺仅读一个月佛学院。
+
+- event_id: EV_6144
+  type: 神变
+  title: 麦彭嘉扬南嘉在南岩卡切显现空乐境界
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: 南岩卡切 (E_1183)
+  time_info:
+    text: "十八岁"
+    relative_to: 麦彭嘉扬南嘉嘉措 (E_1102)
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "来到南岩卡切时，平庸的显现转依，而呈现出空乐的境界，几天当中都处于暖乐的觉受中"
+  description: 麦彭嘉扬南嘉途经南岩卡切时平庸显现转依呈现空乐境界数天。
+
+- event_id: EV_6145
+  type: 灌顶
+  title: 麦彭嘉扬南嘉受玛德白文殊开许灌顶
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 受灌者
+    - entity: 德嘉滚旺钦极喜金刚 (E_1127)
+      role: 灌顶师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在德嘉滚旺钦极喜金刚面前，听受了玛德白文殊之开许灌顶……现前了论中所说的成就相，从而开启了智慧莲花"
+  description: 麦彭嘉扬南嘉在德嘉滚旺钦极喜金刚前受玛德白文殊开许灌顶，现前成就相开启智慧莲花。
+
+- event_id: EV_6146
+  type: 弘法
+  title: 麦彭嘉扬南嘉在华智仁波切前听受《入菩萨行论·智慧品》
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 弟子
+    - entity: 华智仁波切 (E_1126)
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在邬金晋美秋杰旺波即华智仁波切面前听受了五天的《入菩萨行论·智慧品》，结果所有句义完全通达"
+  description: 麦彭嘉扬南嘉在华智仁波切面前听受五天《入菩萨行论·智慧品》后所有句义完全通达，后著《澄清宝珠论》。
+
+- event_id: EV_6147
+  type: 弘法
+  title: 蒋扬钦则旺波以满瓶倾泻方式传法予麦彭嘉扬南嘉
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 上师
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 弟子
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "被他视为唯一心子……灌顶、教言、密诀、窍诀、实践法和直接引导全部以满瓶倾泻的方式恩赐于他"
+  description: 蒋扬钦则旺波视麦彭嘉扬南嘉为唯一心子，以满瓶倾泻方式传授教藏、伏藏、净相传一切灌顶教言。
+
+- event_id: EV_6148
+  type: 弘法
+  title: 麦彭嘉扬南嘉在嘉滚罗珠塔益前听受明处及灌顶
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 弟子
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在嘉滚罗珠塔益面前，听受了《声律学》、《水银炼洗法》等共同明处以及文殊长寿法等不同法能成熟之灌顶与能解脱之教言"
+  description: 麦彭嘉扬南嘉在嘉滚罗珠塔益前听受《声律学》《水银炼洗法》等共同明处及灌顶教言。
+
+- event_id: EV_6149
+  type: 弘法
+  title: 麦彭嘉扬南嘉闻受《般若摄颂》后即传讲
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 弟子/传法者
+    - entity: 则温晋美多吉 (E_1129)
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在善知识则温晋美多吉面前闻受《般若摄颂》的传承后，立即给别人传讲了一个月"
+  description: 麦彭嘉扬南嘉在则温晋美多吉前闻受《般若摄颂》传承后立即给他人传讲一个月。
+
+- event_id: EV_6150
+  type: 弘法
+  title: 白萨格西听麦彭嘉扬南嘉讲《入中论》后赞叹
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 讲者
+    - entity: 白萨格西阿旺炯内 (E_1130)
+      role: 上师/赞叹者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "格西在眷属中赞叹说：我虽然拥有格西的名称，但连此人的一部分智慧也不具足"
+  description: 麦彭嘉扬南嘉在白萨格西前闻《入中论》时请只念传承，格西令其讲考后在眷属中赞叹其智慧超过自己。
+
+- event_id: EV_6151
+  type: 弘法
+  title: 麦彭嘉扬南嘉与罗桑绕色格西书函辩论
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 辩论者
+    - entity: 罗桑绕色 (E_1133)
+      role: 辩论者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "尊者与大智者罗桑绕色格西，相互也是通过所造的善说书函往来进行辩论，最后，彼此密意融为一体，抛散赞叹的鲜花"
+  description: 麦彭嘉扬南嘉与大智者罗桑绕色格西通过书函辩论，最终密意融为一体互相赞叹。
+
+- event_id: EV_6152
+  type: 神变
+  title: 麦彭嘉扬南嘉梦中见萨迦班智达获得《释量论》宝剑
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+    - entity: 萨迦班智达 (E_1152)
+      role: 显现者
+  location: null
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "梦中光明境界里，本体是萨迦班智达……将《释量论》的法本一分两半交到尊者手中说：愿平等护持这两者。他刚刚收下，那法本就变成了一把宝剑"
+  description: 麦彭嘉扬南嘉阅《释量论》期间梦中见萨迦班智达将其分为破立两半授予，法本化宝剑令一切所知了然在前。
+
+- event_id: EV_6153
+  type: 弘法
+  title: 钦则仁波切正式交付麦彭嘉扬南嘉为法太子
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 传法者
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 法太子
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "这所有经函的经教都交付给您。从此以后，以讲辩著受持，愿佛法如意宝长久照亮这个世界……赐予成为法主的灌顶"
+  description: 钦则仁波切将所有经函供台经教交付麦彭嘉扬南嘉，赐法主灌顶、白度母唐卡、班智达帽等，称其为法太子。
+
+- event_id: EV_6154
+  type: 弘法
+  title: 麦彭嘉扬南嘉与嘉巴多昂辩论
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 辩论者
+    - entity: 嘉巴多昂 (E_1132)
+      role: 辩论者
+    - entity: 华智仁波切 (E_1126)
+      role: 见证者
+    - entity: 秋热 (E_1134)
+      role: 请问者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "格鲁派的大智者嘉巴多昂评说《入行论·智慧品释》不合理的部分，由智者成就者之首的华智仁波切作证"
+  description: 格鲁派嘉巴多昂评《入行论·智慧品释》不合理处，华智仁波切作证辩论数天，多昂弟子见文殊菩萨光线连接麦彭心间。
+
+- event_id: EV_6155
+  type: 弘法
+  title: 麦彭嘉扬南嘉在"大圆本智总色"研讨中获胜
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 辩论者
+    - entity: 嘉巴多昂 (E_1132)
+      role: 辩论者
+    - entity: 华智仁波切 (E_1126)
+      role: 开许者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "依其言教而进行研讨，结果麦彭尊者获胜。华智仁波切开许他著写经续窍诀之注释"
+  description: 华智仁波切提议就"大圆本智总色"进行研讨，麦彭嘉扬南嘉获胜，华智仁波切开许其著写经续窍诀注释。
+
+- event_id: EV_6156
+  type: 闭关修行
+  title: 麦彭嘉扬南嘉在嘎木达仓十三年闭关修行
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: 嘎木达仓 (E_1184)
+  time_info:
+    text: "十三年"
+    relative_to: 麦彭嘉扬南嘉嘉措 (E_1102)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在修行地之王嘎木达仓，树立十三年修行胜幢，尊者在念诵主要有缘本尊文殊大威德心咒时，论中所说的一切验相无不出现"
+  description: 麦彭嘉扬南嘉在嘎木达仓闭关十三年修文殊大威德心咒，一切验相现前，从不心不在焉念咒。
+
+- event_id: EV_6157
+  type: 弘法
+  title: 钦则仁波切问麦彭嘉扬南嘉闭关修行情况并传无垢光尊者窍诀
+  participants:
+    - entity: 蒋扬钦则旺波 (E_1100)
+      role: 上师
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 弟子
+    - entity: 无垢光尊者 (E_1263)
+      role: 窍诀来源
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "上师说：大全知无垢光尊者说过一无所作而安住本位。我就是如此安住，虽然没有见到所谓心本来面目一个有形有色的东西，但现在即使死也没有一丝一毫的畏惧"
+  description: 钦则仁波切问麦彭嘉扬南嘉闭关如何修行，后引无垢光尊者"一无所作安住本位"之教言笑谈，麦彭领悟此为上师窍诀。
+
+- event_id: EV_6158
+  type: 弘法
+  title: 麦彭嘉扬南嘉撰著三十二函论典
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "内部许多分类经函如意宝共有三十二妙相数，因此使总的佛法分别的前译教法延续了慧命"
+  description: 麦彭嘉扬南嘉撰著显密善说、明处、内明、意伏藏等论典共三十二函，延续前译教法慧命。
+
+- event_id: EV_6159
+  type: 弘法
+  title: 麦彭嘉扬南嘉水鼠年出关写遗嘱
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: null
+  time_info:
+    text: "水鼠年一月十三"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在水鼠年一月十三出关……二十一日突然这样写下手稿：顶礼文殊智慧勇识……书写最后遗言之文字"
+  description: 麦彭嘉扬南嘉水鼠年一月十三出关后对俗事生厌离，二十一日写下遗嘱，隐藏起来。
+
+- event_id: EV_6160
+  type: 闭关修行
+  title: 麦彭嘉扬南嘉念不动佛心咒二十万遍
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: null
+  time_info:
+    text: "二月三月期间"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在二月三月期间，念了不动佛心咒二十万遍"
+  description: 麦彭嘉扬南嘉于水鼠年二月三月念不动佛心咒二十万遍并对侍者喇嘛哦色讲了教言。
+
+- event_id: EV_6161
+  type: 弘法
+  title: 麦彭嘉扬南嘉自述菩萨乘愿投生
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "其实我并不是一个普普通通的凡夫人，是一位菩萨乘愿投生的"
+  description: 麦彭嘉扬南嘉临终前自述为菩萨乘愿投生，因宁玛派学人福报浅薄缘起破坏未能如愿弘法，但所著注释已完成。
+
+- event_id: EV_6162
+  type: 神变
+  title: 麦彭嘉扬南嘉临终顿超虹光境界
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+  location: null
+  time_info:
+    text: "从二十二日起"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "身体不调的疾病已经恶化，但我根本没有苦受，白天晚上都唯一处在顿超的虹光、明点、佛身及刹土的境界中"
+  description: 麦彭嘉扬南嘉从二十二日起身体疾病恶化但无苦受，日夜处于顿超虹光、明点、佛身及刹土境界。
+
+- event_id: EV_6163
+  type: 圆寂
+  title: 麦彭嘉扬南嘉嘉措圆寂
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+    - entity: 喇嘛哦色 (E_1136)
+      role: 办理后事者
+  location: 北方香巴拉 (E_1186)
+  time_info:
+    text: "六十七岁水鼠年四月二十九"
+    relative_to: 麦彭嘉扬南嘉嘉措 (E_1102)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "尊者六十七岁水鼠年四月二十九，身体跏趺，手结定印说法印，入定于无漏本来基法界中……火化时，虹光搭成帷幕等等稀有瑞相"
+  description: 麦彭嘉扬南嘉六十七岁水鼠年四月二十九跏趺入定于无漏法界圆寂，声言前往北方香巴拉，火化时虹光帷幕等瑞相众人共睹。
+
+- event_id: EV_6164
+  type: 弘法
+  title: 嘉滚云丹嘉措在麦彭嘉扬南嘉前闻受传承
+  participants:
+    - entity: 嘉滚罗珠塔益 (E_1101)
+      role: 弟子
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "嘉滚云丹嘉措也称之为玛哈班智达麦彭嘉措，并在其前闻受了尊者所造的《释量论释》、《八大法行释》等传承"
+  description: 嘉滚罗珠塔益称麦彭为玛哈班智达，在其前闻受《释量论释》《八大法行释》等传承，二人互为师徒。
+
+- event_id: EV_6165
+  type: 神变
+  title: 辩论中多昂弟子见文殊光线连接麦彭心间
+  participants:
+    - entity: 麦彭嘉扬南嘉嘉措 (E_1102)
+      role: 主体
+    - entity: 文殊菩萨 (E_1150)
+      role: 加持者
+    - entity: 嘉巴多昂 (E_1132)
+      role: 辩论对手
+  location: null
+  time_info: null
+  layers: [传闻]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.60
+  source_quote: "多昂的弟子们告诉我：先前辩论时，他们明显见到上师麦彭所依本尊文殊菩萨的身体，从他心间发射一道光线，连到上师麦彭的心间"
+  description: 嘉巴多昂的弟子在辩论中亲见文殊菩萨身体从心间发光线连接麦彭嘉扬南嘉心间。

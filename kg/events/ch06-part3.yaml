@@ -1,0 +1,1200 @@
+# ============================================================
+# 知识图谱事件抽取 — 第六品 近传伏藏史 (lines 1001-1500)
+# 覆盖范围: 竹青索南旺波弟子段尾 → 南卡晋美 → 第五世达赖喇嘛
+#   → 德达朗巴 → 全知晋美朗巴 → 德钦月波朗巴 → 蒋扬钦则旺波(前段)
+# 来源: source/dudjom/chapter_md/06_近传伏藏史.md
+# 提取日期: 2026-04-11
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: 引用 kg/entities/ch06-part3.yaml
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 前人段尾 (lines 1000-1014) ====================
+
+- event_id: EV_6300
+  type: 建寺
+  title: 前人在布多得钦塘和耶热刚古建起寺院
+  participants:
+    - entity: 南秋莫杰多吉
+      role: 在场者
+  location: 布多得钦塘
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在布多得钦塘和耶热刚古处建起寺院，长期安住那里。"
+  description: 前人在布多得钦塘和耶热刚古处建起寺院并长期安住。
+
+- event_id: EV_6301
+  type: 圆寂
+  title: 前人五十八岁水鼠年前往莲花光大宫殿
+  participants: []
+  location: 莲花光大刹土
+  time_info:
+    text: "五十八岁水鼠年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在五十八岁水鼠年前往莲花光大宫殿时，显现传出声音、出现光芒、天降花雨等无量稀有神变。"
+  description: 前人五十八岁水鼠年圆寂，化为光明，五大金刚舍利和舍利子成堆。
+
+# ==================== 南卡晋美段 (lines 1016-1052) ====================
+
+- event_id: EV_6302
+  type: 出家受戒
+  title: 南卡晋美在松年深山于邬金华玖活佛面前出家
+  participants:
+    - entity: 南卡晋美
+      role: 受戒者
+    - entity: 邬金华玖活佛
+      role: 亲教师
+  location: 松年深山
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "后来他在松年深山于邬金华玖活佛面前出家，法名为根桑南嘉。"
+  description: 南卡晋美在松年深山出家，法名根桑南嘉。
+
+- event_id: EV_6303
+  type: 传法
+  title: 南卡晋美依止竹青索南旺波十七年完整恭听心滴教授
+  participants:
+    - entity: 南卡晋美
+      role: 受者
+    - entity: 竹青索南旺波
+      role: 传法者
+  location: null
+  time_info:
+    text: "十七年期间"
+    relative_to: 南卡晋美
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "特别是在十七年期间依止竹青索南旺波，完整恭听心滴教授类，加以实修从而获得证悟的境界。"
+  description: 南卡晋美依止竹青索南旺波十七年听受心滴教授并获证悟。
+
+- event_id: EV_6304
+  type: 传法
+  title: 南卡晋美在阿旺莫玖多吉面前听受贪欲道窍诀
+  participants:
+    - entity: 南卡晋美
+      role: 受者
+    - entity: 阿旺莫玖多吉
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "又在阿旺莫玖多吉面前听受贪欲道的所有窍诀后，具足自身方便，修炼她身手印瑜伽空乐智慧妙力。"
+  description: 南卡晋美在阿旺莫玖多吉面前听受贪欲道窍诀，修炼手印瑜伽。
+
+- event_id: EV_6305
+  type: 降伏非人
+  title: 南卡晋美使藏地所有鬼神作为助伴并修复桑耶寺
+  participants:
+    - entity: 南卡晋美
+      role: 降伏者
+  location: 桑耶寺
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在藏地使所有鬼神作为助伴而修复了毁坏的桑耶寺。"
+  description: 南卡晋美以神通使鬼神为助伴，修复毁坏的桑耶寺。
+
+- event_id: EV_6306
+  type: 神变
+  title: 南卡晋美在匝热神山制止大山坍塌
+  participants:
+    - entity: 南卡晋美
+      role: 主体
+  location: 匝热神山
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在匝热神山，眼看大山要坍塌，尊者以看式和契克印加以制止。"
+  description: 南卡晋美在匝热神山以看式和契克印制止大山坍塌。
+
+- event_id: EV_6307
+  type: 伏藏开取
+  title: 南卡晋美五十岁于哲秀神山打开伏藏门建起寺院
+  participants:
+    - entity: 南卡晋美
+      role: 伏藏师
+  location: 哲秀神山
+  time_info:
+    text: "五十岁火狗年"
+    relative_to: 南卡晋美
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "尊者到了五十岁火狗年，亲临哲秀神山哦色酿波，打开伏藏门，按照授记建起寺院和修行道场。"
+  description: 南卡晋美五十岁火狗年于哲秀神山打开伏藏门并建寺。
+
+- event_id: EV_6308
+  type: 伏藏开取
+  title: 南卡晋美于札嘎札西当清净境界中浮现《持明命修》
+  participants:
+    - entity: 南卡晋美
+      role: 伏藏师
+  location: 札嘎札西当
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "阿底无上心滴不共教授《持明命修》法在清净境界中浮现出来。"
+  description: 南卡晋美于札革酿山洞清净境界中浮现阿底无上心滴不共教授《持明命修》。
+
+- event_id: EV_6309
+  type: 圆寂
+  title: 南卡晋美据说禁行达到究竟而无余圆寂
+  participants:
+    - entity: 南卡晋美
+      role: 主体
+  location: null
+  time_info: null
+  layers: [传闻]
+  sub_layer: null
+  author_stance: 中立
+  confidence: 0.60
+  source_quote: "后来，据说禁行行为达到究竟的这位成就者无余而圆寂。"
+  description: 南卡晋美据说禁行达到究竟后无余圆寂。
+
+# ==================== 第五世达赖喇嘛段 (lines 1054-1108) ====================
+
+- event_id: EV_6310
+  type: 灌顶
+  title: 香瓦仁真阿革旺波赐予五世达赖喇嘛《长寿帷幕》灌顶
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 受者
+    - entity: 香瓦仁真阿革旺波
+      role: 传法者
+  location: null
+  time_info:
+    text: "降生那一年"
+    relative_to: 第五世达赖喇嘛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在降生的那一年，香瓦仁真阿革旺波赐予《长寿帷幕》的灌顶以消灾免难。"
+  description: 五世达赖降生当年，香瓦仁真阿革旺波赐予《长寿帷幕》灌顶。
+
+- event_id: EV_6311
+  type: 授记
+  title: 班禅大师认定五世达赖为嘉瓦云丹嘉措转世
+  participants:
+    - entity: 罗桑秋杰嘉村
+      role: 认定者
+    - entity: 第五世达赖喇嘛
+      role: 转世灵童
+    - entity: 嘉瓦云丹嘉措
+      role: 前世
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "大班智达罗桑秋杰嘉村（即班禅大师）认定他为嘉瓦云丹嘉措的转世灵童后被迎请到哲蚌寺。"
+  description: 班禅大师认定五世达赖为四世达赖嘉瓦云丹嘉措的转世灵童。
+
+- event_id: EV_6312
+  type: 出家受戒
+  title: 五世达赖喇嘛出家坐床
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 受戒者
+  location: 哲蚌寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "出家名为罗桑嘉措并坐床。"
+  description: 五世达赖被迎请到哲蚌寺出家，法名罗桑嘉措，并坐床。
+
+- event_id: EV_6313
+  type: 传法
+  title: 五世达赖在班禅大师面前听受众多灌顶传承窍诀
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 受者
+    - entity: 罗桑秋杰嘉村
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在班禅大师面前听受众多灌顶、传承和窍诀。"
+  description: 五世达赖在班禅大师面前听受众多灌顶传承窍诀。
+
+- event_id: EV_6314
+  type: 出家受戒
+  title: 五世达赖二十二岁在班禅大师戒传承中受近圆戒
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 受戒者
+    - entity: 罗桑秋杰嘉村
+      role: 亲教师
+  location: null
+  time_info:
+    text: "二十二岁"
+    relative_to: 第五世达赖喇嘛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "二十二岁，在班禅大师的戒传承中受近圆戒，重新复加法名为阿革旺修。"
+  description: 五世达赖二十二岁受近圆戒，法名重新复加为阿革旺修。
+
+- event_id: EV_6315
+  type: 执政
+  title: 蒙古王革西日丹真秋嘉以兵力收复西藏供养五世达赖
+  participants:
+    - entity: 革西日丹真秋嘉
+      role: 施主
+    - entity: 第五世达赖喇嘛
+      role: 受供者
+  location: 西藏
+  time_info:
+    text: "二十五岁"
+    relative_to: 第五世达赖喇嘛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在他二十五岁时，蒙古王革西日丹真秋嘉以兵力收复西藏三区之后全盘供养。"
+  description: 五世达赖二十五岁时蒙古王以兵力收复西藏三区后全盘供养。
+
+- event_id: EV_6316
+  type: 迎请
+  title: 东方皇帝迎请五世达赖到北京敬为帝师
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 受迎请者
+  location: 北京
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "东方皇帝将五世达赖喇嘛迎请到北京，献上写有'教主金刚持达赖喇嘛国师'金字的诏书等，敬为帝师或阿阇黎。"
+  description: 东方皇帝迎请五世达赖到北京，授予金字诏书，结成师徒关系。
+
+- event_id: EV_6317
+  type: 建寺
+  title: 五世达赖在布达拉山上兴建大布达拉宫
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 建造者
+  location: 布达拉宫
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他在布达拉山上兴建起大布达拉宫。"
+  description: 五世达赖在布达拉山上兴建大布达拉宫。
+
+- event_id: EV_6318
+  type: 弘法
+  title: 五世达赖创立与敏朗伏藏大师法主施主缘起
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 施主
+    - entity: 敏朗伏藏大师
+      role: 法主
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "按照授记，善妙创立起与敏朗伏藏大师之间法主与施主的缘起，奠定了西藏政治长存的根本。"
+  description: 五世达赖按授记创立与敏朗伏藏大师法主施主缘起。
+
+- event_id: EV_6319
+  type: 圆寂
+  title: 五世达赖六十六岁水狗年于布达拉宫圆寂
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 主体
+  location: 布达拉宫
+  time_info:
+    text: "六十六岁水狗年三月二十五日"
+    relative_to: 第五世达赖喇嘛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在六十六岁水狗年三月二十五日，依靠未来自在事业的缘起，入定于作明佛母等持而在布达拉宫安享圆寂。"
+  description: 五世达赖六十六岁水狗年于布达拉宫入定于作明佛母等持圆寂。
+
+# ==================== 德达朗巴段 (lines 1110-1269) ====================
+
+- event_id: EV_6320
+  type: 灌顶
+  title: 德达朗巴四岁在父亲面前听受八大法行灌顶
+  participants:
+    - entity: 德达朗巴
+      role: 受者
+    - entity: 纽敦桑达陈列棱珠
+      role: 传法者
+  location: null
+  time_info:
+    text: "四岁之初"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "四岁之初，他在父亲面前听受八大法行秘密圆满的灌顶时，所有对境显现以坛城轮印持。"
+  description: 德达朗巴四岁在父亲面前听受八大法行灌顶，照见主尊与上师无二无别。
+
+- event_id: EV_6321
+  type: 灌顶
+  title: 德达朗巴十岁听闻《集善逝续》灌顶时莲师显现
+  participants:
+    - entity: 德达朗巴
+      role: 受者
+    - entity: 莲花生大士
+      role: 加持者
+  location: null
+  time_info:
+    text: "十岁木羊年初秋"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "十岁木羊年初秋听闻《集善逝续》灌顶时，在光明境界中，莲花生大士予以灌顶并使加持力增长。"
+  description: 德达朗巴十岁听闻灌顶时光明境界中莲师予以灌顶加持。
+
+- event_id: EV_6322
+  type: 传法
+  title: 德达朗巴十一岁于哲蚌寺礼见五世达赖
+  participants:
+    - entity: 德达朗巴
+      role: 受者
+    - entity: 第五世达赖喇嘛
+      role: 传法者
+  location: 哲蚌寺
+  time_info:
+    text: "十一岁"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十一岁，在吉祥哲蚌寺，于全知第五世达赖喇嘛面前供养发新，给他取名为阿旺班玛丹真。"
+  description: 德达朗巴十一岁于哲蚌寺礼见五世达赖，获赐名阿旺班玛丹真。
+
+- event_id: EV_6323
+  type: 神变
+  title: 天然观音像面带微笑心间放光融入德达朗巴
+  participants:
+    - entity: 天然观音像
+      role: 主体
+    - entity: 德达朗巴
+      role: 受益者
+  location: 哲蚌寺
+  time_info:
+    text: "十一岁"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "当时，观音像面带微笑，神态鲜明，心间放光融入他身体。"
+  description: 天然观音像面带微笑，心间放光融入德达朗巴身体。
+
+- event_id: EV_6324
+  type: 传法
+  title: 德达朗巴在达敦秋嘉丹真和班玛陈列面前听受密集续灌顶等
+  participants:
+    - entity: 德达朗巴
+      role: 受者
+    - entity: 达敦秋嘉丹真
+      role: 传法者
+    - entity: 持明班玛陈列
+      role: 传法者
+  location: 多吉札
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在达敦秋嘉丹真面前，《密集续灌顶仪轨——珍宝鬘》上面分成四十五坛城...再者，于多吉札持明班玛陈列面前...全面听受。"
+  description: 德达朗巴在两位上师前听受密集续全部灌顶传承，获密名杰美多吉匝。
+
+- event_id: EV_6325
+  type: 伏藏开取
+  title: 德达朗巴十八岁从雅玛隆取出《持明心滴》
+  participants:
+    - entity: 德达朗巴
+      role: 伏藏师
+  location: 雅玛隆
+  time_info:
+    text: "十八岁水兔年五月初十"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在他十八岁水兔年五月初十那一天，从雅玛隆取出《持明心滴》。"
+  description: 德达朗巴十八岁从雅玛隆取出《持明心滴》。
+
+- event_id: EV_6326
+  type: 伏藏开取
+  title: 德达朗巴二十二岁从水晶岩取出《大威德》
+  participants:
+    - entity: 德达朗巴
+      role: 伏藏师
+  location: 水晶岩
+  time_info:
+    text: "二十二岁火羊年八月初八"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "二十二岁火羊年八月初八，依靠神变从水晶岩取出《大威德》。"
+  description: 德达朗巴二十二岁依靠神变从水晶岩取出《大威德》。
+
+- event_id: EV_6327
+  type: 伏藏开取
+  title: 德达朗巴三十一岁从嗡呷岩取出帷幕《猛修》和《金刚萨埵阿底》
+  participants:
+    - entity: 德达朗巴
+      role: 伏藏师
+  location: 嗡呷岩
+  time_info:
+    text: "三十一岁火龙年虎月十五"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "三十一岁火龙年虎月（正月）十五，从嗡呷岩取出帷幕《猛修》和《金刚萨埵阿底》类。"
+  description: 德达朗巴三十一岁从嗡呷岩取出帷幕《猛修》和《金刚萨埵阿底》类。
+
+- event_id: EV_6328
+  type: 伏藏开取
+  title: 德达朗巴三十五岁从夏哦达门当众公开取出《大悲善逝总集》
+  participants:
+    - entity: 德达朗巴
+      role: 伏藏师
+  location: 夏哦达门当
+  time_info:
+    text: "三十五岁铁猴年五月二十九日"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "三十五岁铁猴年五月二十九日，从夏哦达门当众公开取出《大悲善逝总集》法门。"
+  description: 德达朗巴三十五岁从夏哦达门当众公开取出《大悲善逝总集》。
+
+- event_id: EV_6329
+  type: 闭关修行
+  title: 德达朗巴在多处圣地闭关修行次第取出三十五位本尊依修法
+  participants:
+    - entity: 德达朗巴
+      role: 修行者
+  location: 红岩青普
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在红岩青普、雅玛隆等...闭关六个月、三个月、一个月，次第取出寂猛上师...等三十五位本尊的依修法以及大圆满直断实修。"
+  description: 德达朗巴在红岩青普等圣地闭关，次第取出三十五位本尊依修法及大圆满直断实修。
+
+- event_id: EV_6330
+  type: 弘法
+  title: 德达朗巴讲经说法事业——五世达赖等拜其为国师
+  participants:
+    - entity: 德达朗巴
+      role: 传法者
+    - entity: 第五世达赖喇嘛
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "主要是第五世达赖喇嘛在他面前听受了前译续全集宝为主深广法门而拜其为国师。"
+  description: 五世达赖在德达朗巴面前听受前译续全集等深广法门，拜其为国师。
+
+- event_id: EV_6331
+  type: 恢复佛教
+  title: 德达朗巴使衰落的前译宁玛教法从根本上恢复
+  participants:
+    - entity: 德达朗巴
+      role: 复法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "前译宁玛《经幻心》为主自宗殊胜的讲修如油尽之灯濒临绝境之际，他以毫无怯懦的魄力、最大的努力百般寻觅，通过讲修事业使衰落的佛法从根本上得以恢复。"
+  description: 德达朗巴在前译教法衰落之际以最大努力使其从根本上恢复。
+
+- event_id: EV_6332
+  type: 圆寂
+  title: 德达朗巴六十九岁木马年圆寂
+  participants:
+    - entity: 德达朗巴
+      role: 主体
+  location: null
+  time_info:
+    text: "六十九岁木马年霍尔月"
+    relative_to: 德达朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "第二个霍尔月初二上午...刹那间出现稀奇瑞相，示现大神变而前往地行莲花光大刹土。"
+  description: 德达朗巴六十九岁木马年示现大神变后前往莲花光大刹土。
+
+- event_id: EV_6333
+  type: 神变
+  title: 德达朗巴圆寂前向东方迈七步口述遗偈
+  participants:
+    - entity: 德达朗巴
+      role: 主体
+  location: null
+  time_info:
+    text: "第二个霍尔月初二上午"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "尊者说要向东方迈七步，于是站起身移动七步，最后跏趺而坐...说罢双手作摇晃金刚铃的表示，眼睛作看式，刹那间出现稀奇瑞相。"
+  description: 德达朗巴圆寂前向东方迈七步、跏趺而坐、口述遗偈、作金刚铃手印，空行前来迎接。
+
+# ==================== 全知晋美朗巴段 (lines 1271-1356) ====================
+
+- event_id: EV_6334
+  type: 出家受戒
+  title: 全知晋美朗巴在益西措嘉化身前出家
+  participants:
+    - entity: 全知晋美朗巴
+      role: 受戒者
+    - entity: 阿旺罗桑班玛
+      role: 亲教师
+  location: 吉祥山寺
+  time_info:
+    text: "六岁"
+    relative_to: 全知晋美朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "六岁就进入至尊札匝绕莫讲、修、事业的吉祥山佛学院，在益西措嘉化身阿旺罗桑班玛前出家，取名为班玛钦哲哦色。"
+  description: 晋美朗巴六岁进入吉祥山佛学院，在益西措嘉化身前出家，取名班玛钦哲哦色。
+
+- event_id: EV_6335
+  type: 传法
+  title: 全知晋美朗巴十三岁礼见持明特秋多吉
+  participants:
+    - entity: 全知晋美朗巴
+      role: 受者
+    - entity: 持明特秋多吉
+      role: 传法者
+  location: null
+  time_info:
+    text: "十三岁"
+    relative_to: 全知晋美朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "尤其是在十三岁，礼见持明特秋多吉以后，听受大手印智慧见解脱等，最初相续得以成熟。"
+  description: 晋美朗巴十三岁礼见持明特秋多吉听受大手印智慧见解脱等法。
+
+- event_id: EV_6336
+  type: 闭关修行
+  title: 全知晋美朗巴二十八岁起在吉祥山闭关三年
+  participants:
+    - entity: 全知晋美朗巴
+      role: 修行者
+  location: 吉祥山寺
+  time_info:
+    text: "二十八岁火牛年神变月起三年"
+    relative_to: 全知晋美朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "二十八岁，从火牛年神变月开始，他就在自己的寺院吉祥山唯一明点禅房严格闭关三年。"
+  description: 晋美朗巴二十八岁起在吉祥山严格闭关三年，修生起次第圆满次第。
+
+- event_id: EV_6337
+  type: 神变
+  title: 全知晋美朗巴修上师集密意续依修时头顶发出马鸣声获莲师赐名
+  participants:
+    - entity: 全知晋美朗巴
+      role: 主体
+    - entity: 莲花生大士
+      role: 赐名者
+  location: 吉祥山寺
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "修持《上师集密意续》的依修时，从头顶发出马鸣声，邬金莲花生大士赐予吉祥班玛旺钦的美名冠冕。"
+  description: 晋美朗巴修《上师集密意续》时头顶发出马鸣声，莲师赐名班玛旺钦。
+
+- event_id: EV_6338
+  type: 伏藏开取
+  title: 全知晋美朗巴在夏绒卡秀佛塔光明境界中得大圆满大界心滴法藏
+  participants:
+    - entity: 全知晋美朗巴
+      role: 伏藏师
+  location: 夏绒卡秀佛塔
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他于光明境界中在尼泊尔夏绒卡秀佛塔前，依靠法身智慧空行母赐予空行表示，大圆满大界心滴众所周知的大法藏，都运用自如。"
+  description: 晋美朗巴在夏绒卡秀佛塔光明境界中依空行表示得大圆满大界心滴法藏。
+
+- event_id: EV_6339
+  type: 闭关修行
+  title: 全知晋美朗巴到桑耶青普大密花山洞苦行三年
+  participants:
+    - entity: 全知晋美朗巴
+      role: 修行者
+  location: 桑耶青普
+  time_info:
+    text: "三年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在那个地方安住三年后到了桑耶青普，在大密花山洞，以极度的苦行再度一心专注修行精华义三年。"
+  description: 晋美朗巴到桑耶青普大密花山洞以极度苦行专修三年。
+
+- event_id: EV_6340
+  type: 神变
+  title: 全知晋美朗巴三次见到无垢光尊者智慧身得加持
+  participants:
+    - entity: 全知晋美朗巴
+      role: 受者
+    - entity: 无垢光尊者
+      role: 加持者
+  location: 桑耶青普
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "三次见到全知法王龙钦绕降吉祥贤的智慧身，得到身语意的直接加持，并且获得恩赐言教。"
+  description: 晋美朗巴在桑耶青普三次见无垢光尊者智慧身得身语意加持。
+
+- event_id: EV_6341
+  type: 弘法
+  title: 全知晋美朗巴首次为十五位弟子开启广大意伏藏成熟解脱之门
+  participants:
+    - entity: 全知晋美朗巴
+      role: 传法者
+  location: 桑耶青普
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在那里，他首次为具有缘分的十五位弟子开启广大意伏藏的成熟解脱之门，自此开始，甚深义源源不断，因此成为大圆满心滴的一位祖师。"
+  description: 晋美朗巴首次为十五位具缘弟子开启意伏藏成熟解脱之门，成为大圆满心滴祖师。
+
+- event_id: EV_6342
+  type: 建寺
+  title: 全知晋美朗巴在贡革深山重新建造寺院
+  participants:
+    - entity: 全知晋美朗巴
+      role: 建造者
+  location: 长寿域
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在穹结松赞旺索的南方贡革深山敦喀山谷、吉祥长寿域莲花光明胜乘洲的山间重新建造寺院佛像等。"
+  description: 晋美朗巴在贡革深山长寿域重新建造寺院并安住。
+
+- event_id: EV_6343
+  type: 弘法
+  title: 全知晋美朗巴出资将前译续全集二十五函重新书写
+  participants:
+    - entity: 全知晋美朗巴
+      role: 出资者
+  location: 敏朗
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "尊者实在于心不忍，于是由他出资，将敏朗保存下来的宁玛续珍宝的完整法本，开头五页用珍宝书写，其余以普通书写，共有二十五函。"
+  description: 晋美朗巴出资将敏朗保存的前译续全集二十五函重新书写。
+
+- event_id: EV_6344
+  type: 圆寂
+  title: 全知晋美朗巴七十岁土马年圆寂
+  participants:
+    - entity: 全知晋美朗巴
+      role: 主体
+  location: 长寿域
+  time_info:
+    text: "七十岁土马年九月初三"
+    relative_to: 全知晋美朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在七十岁土马年九月初三，于自处长寿域的最寂静处解脱顶峰莲花光大刹土，伴随着瑞相和神变而前往净土。"
+  description: 晋美朗巴七十岁土马年于长寿域圆寂，伴随瑞相神变前往净土。
+
+# ==================== 德钦月波朗巴段 (lines 1358-1479) ====================
+
+- event_id: EV_6345
+  type: 神变
+  title: 德钦月波朗巴十三岁时莲师亲自降临并授记
+  participants:
+    - entity: 德钦月波朗巴
+      role: 受授记者
+    - entity: 莲花生大士
+      role: 授记者
+  location: 玛尼卡
+  time_info:
+    text: "十三岁"
+    relative_to: 德钦月波朗巴
+    absolute: null
+  layers: [神变, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "十三岁，他去玛尼卡地方玩耍时，邬金莲花生大士亲自降临...为他授记说：'萨拉玛尼卡，诺吾丹真汝，拉阿雅山谷，世间汝超胜。'之后便如彩虹般消失了。"
+  description: 德钦月波朗巴十三岁时莲师亲降玛尼卡，授记后如彩虹消失。
+
+- event_id: EV_6346
+  type: 出家受戒
+  title: 德钦月波朗巴在达隆玛仁波切前受沙弥戒
+  participants:
+    - entity: 德钦月波朗巴
+      role: 受戒者
+    - entity: 达隆玛仁波切
+      role: 亲教师
+  location: null
+  time_info:
+    text: "十三岁"
+    relative_to: 德钦月波朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "也就是在此时，他于达隆玛仁波切前受沙弥戒。"
+  description: 德钦月波朗巴十三岁在达隆玛仁波切前受沙弥戒。
+
+- event_id: EV_6347
+  type: 传法
+  title: 德钦月波朗巴二十五岁礼见司徒班玛年雪旺波
+  participants:
+    - entity: 德钦月波朗巴
+      role: 受者
+    - entity: 司徒班玛年雪旺波
+      role: 传法者
+  location: 哲蚌寺
+  time_info:
+    text: "二十五岁"
+    relative_to: 德钦月波朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "二十五岁，经莲花生大士的授记敦促，他来到吉祥哲蚌寺，礼见司徒班玛年雪旺波，供养了《金刚橛喜笑大自在》等法。"
+  description: 德钦月波朗巴二十五岁于哲蚌寺礼见司徒仁波切，创立遣除违缘缘起。
+
+- event_id: EV_6348
+  type: 传法
+  title: 德钦月波朗巴拜见蒋扬钦则旺波受法得殊胜境界
+  participants:
+    - entity: 德钦月波朗巴
+      role: 受者
+    - entity: 蒋扬钦则旺波
+      role: 传法者
+  location: null
+  time_info:
+    text: "同年二月"
+    relative_to: 德钦月波朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "就在那一年的二月，他去拜见蒋扬钦则旺波时，钦则尊者也知道国王世代依次相传的关系，首先赐予《金刚橛·最秘剑》。"
+  description: 德钦月波朗巴拜见蒋扬钦则旺波受《金刚橛·最秘剑》等法，直接见其为布玛莫札。
+
+- event_id: EV_6349
+  type: 灌顶
+  title: 蒋扬钦则旺波授德钦月波朗巴心滴如意宝灌顶
+  participants:
+    - entity: 蒋扬钦则旺波
+      role: 传法者
+    - entity: 德钦月波朗巴
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传, 证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "在进行心滴如意宝的灌顶期间，他直接照见上师就是大班智达布玛莫札...并认识了赤裸觉性。"
+  description: 灌顶期间德钦月波朗巴直接照见钦则尊者为布玛莫札并认识赤裸觉性。
+
+- event_id: EV_6350
+  type: 神变
+  title: 德钦月波朗巴受护法灌顶时直接见到一髻佛母
+  participants:
+    - entity: 德钦月波朗巴
+      role: 受者
+    - entity: 一髻佛母
+      role: 主体
+    - entity: 蒋扬钦则旺波
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在授予阿仲玛护法神听命灌顶时，出现大地震动的大威力，他直接见到一髻佛母阿仲玛，她说：三年之内予与师徒二人大悉地。"
+  description: 德钦月波朗巴受护法灌顶时大地震动，直接见到一髻佛母并得授记。
+
+- event_id: EV_6351
+  type: 灌顶
+  title: 德钦月波朗巴二十七岁听受真实九本尊大灌顶心间脉结解开
+  participants:
+    - entity: 德钦月波朗巴
+      role: 受者
+    - entity: 蒋扬钦则旺波
+      role: 传法者
+  location: null
+  time_info:
+    text: "二十七岁"
+    relative_to: 德钦月波朗巴
+    absolute: null
+  layers: [史传, 证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "他二十七岁在听受真实九本尊大灌顶期间，显现出大上师黑日嘎从头上融入的觉受，从而心间脉结解开。"
+  description: 德钦月波朗巴二十七岁受真实九本尊灌顶时黑日嘎融入，心间脉结解开。
+
+- event_id: EV_6352
+  type: 闭关修行
+  title: 德钦月波朗巴在哦门嘎玛闭关三年修行究竟
+  participants:
+    - entity: 德钦月波朗巴
+      role: 修行者
+  location: 哦门嘎玛
+  time_info:
+    text: "三年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "按照莲师的授记，在哦门嘎玛闭关三年，精进修行，生起次第、圆满次第和大圆满的实修达到究竟。"
+  description: 德钦月波朗巴在哦门嘎玛闭关三年，三种次第实修究竟。
+
+- event_id: EV_6353
+  type: 伏藏开取
+  title: 德钦月波朗巴十三岁从札嘎宗穹开取二十四天子修法等
+  participants:
+    - entity: 德钦月波朗巴
+      role: 伏藏师
+  location: 札嘎宗穹
+  time_info:
+    text: "十三岁"
+    relative_to: 德钦月波朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他十三岁从札嘎宗穹开取二十四天子修法以及《集密意续》、官印、《金刚顶镜》。"
+  description: 德钦月波朗巴十三岁从札嘎宗穹开取二十四天子修法等多部伏藏。
+
+- event_id: EV_6354
+  type: 伏藏开取
+  title: 德钦月波朗巴共开取三十七个殊胜伏藏
+  participants:
+    - entity: 德钦月波朗巴
+      role: 伏藏师
+  location: null
+  time_info:
+    text: "十三岁至三十九岁"
+    relative_to: 德钦月波朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "自此开始一直到三十九岁...共开取三十七个殊胜伏藏。"
+  description: 德钦月波朗巴从十三岁到三十九岁共开取三十七个殊胜伏藏。
+
+- event_id: EV_6355
+  type: 伏藏开取
+  title: 德钦月波朗巴从达年卡拉荣门取出《心滴修法除障法》
+  participants:
+    - entity: 德钦月波朗巴
+      role: 伏藏师
+  location: 达年卡拉荣门
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从达年卡拉荣门取出《心滴修法除障法》。"
+  description: 德钦月波朗巴从达年卡拉荣门取出最重要伏藏《心滴修法除障法》。
+
+- event_id: EV_6356
+  type: 伏藏开取
+  title: 德钦月波朗巴从多处取出系列伏藏品
+  participants:
+    - entity: 德钦月波朗巴
+      role: 伏藏师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从那万堡取出《大悲莲花心滴》，由哦门嘎玛后面取出《甚深实修七类》...以此为例，从每一伏藏地点也取出了极其可观的不同物品。"
+  description: 德钦月波朗巴从多处圣地取出大悲莲花心滴、甚深实修七类、密意总集、妙法六部、大悲莲花幻化网等系列伏藏。
+
+- event_id: EV_6357
+  type: 弘法
+  title: 钦则旺波与德钦月波朗巴成为如日月般两位伏藏大师
+  participants:
+    - entity: 蒋扬钦则旺波
+      role: 传法者
+    - entity: 德钦月波朗巴
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "钦则尊者也在其前接受了新伏藏的成熟、解脱甘露，由此他们成为如日月般无有诤议、众所周知的两位伏藏大师。"
+  description: 蒋扬钦则旺波与德钦月波朗巴互授伏藏成熟解脱法，成为众所周知的两位伏藏大师。
+
+- event_id: EV_6358
+  type: 伏藏开取
+  title: 德钦月波朗巴回忆前世抉择努氏口传和《集密意续》灌顶引导
+  participants:
+    - entity: 德钦月波朗巴
+      role: 伏藏师
+    - entity: 努·克隆巴云丹嘉措
+      role: 前世
+  location: null
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "尊者回忆起他前世转生为努·克隆巴云丹嘉措...他将努氏口传简略立成文字。"
+  description: 德钦月波朗巴回忆前世为努·克隆巴云丹嘉措，将努氏口传立成文字。
+
+- event_id: EV_6359
+  type: 神变
+  title: 德钦月波朗巴面见布玛莫札得教授抉择甚深心滴
+  participants:
+    - entity: 德钦月波朗巴
+      role: 受者
+    - entity: 布玛莫札
+      role: 传法者
+  location: 旺耶山
+  time_info: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "尊者开启旺耶山伏藏之门时在布玛莫札的修行山洞面见大班智达布玛莫札，布玛莫札赐予他教授。"
+  description: 德钦月波朗巴在旺耶山面见布玛莫札得其教授，抉择甚深心滴。
+
+- event_id: EV_6360
+  type: 弘法
+  title: 德钦月波朗巴对多派持教大德直接间接授予深法灌顶
+  participants:
+    - entity: 德钦月波朗巴
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "尊者对噶玛噶举、竹巴噶举、哲贡噶举、达隆噶举为主的噶举派，敏朗、噶托、白玉、西钦、竹青为主的宁玛派以及萨迦派等无偏的持教大德，直接与间接授予深法的灌顶与教言。"
+  description: 德钦月波朗巴对噶举、宁玛、萨迦等各派大德无偏授予深法灌顶教言。
+
+- event_id: EV_6361
+  type: 建寺
+  title: 德钦月波朗巴在噶玛山静处等建起寺院佛堂
+  participants:
+    - entity: 德钦月波朗巴
+      role: 建造者
+  location: 噶玛山静处
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在噶玛山静处、内单刚、则革得多建起寺院佛堂。于后两处也创立僧团。"
+  description: 德钦月波朗巴在噶玛山静处、内单刚、则革得多建寺院佛堂并创立僧团。
+
+- event_id: EV_6362
+  type: 圆寂
+  title: 德钦月波朗巴四十二岁铁马年圆寂
+  participants:
+    - entity: 德钦月波朗巴
+      role: 主体
+  location: null
+  time_info:
+    text: "四十二岁铁马年霍尔五月初一"
+    relative_to: 德钦月波朗巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "于四十二岁铁马年示现生病...霍尔五月初一，大地震动、虹光萦绕等，显示稀奇神变而入定于寂灭法界中。"
+  description: 德钦月波朗巴四十二岁铁马年示现大地震动虹光等神变后圆寂。
+
+- event_id: EV_6363
+  type: 神变
+  title: 钦则旺波净相中见德钦月波朗巴现为莲芽菩萨
+  participants:
+    - entity: 蒋扬钦则旺波
+      role: 见者
+    - entity: 德钦月波朗巴
+      role: 被见者
+    - entity: 莲芽菩萨
+      role: 显现形象
+  location: null
+  time_info:
+    text: "当年正月十五"
+    relative_to: null
+    absolute: null
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "钦则旺波尊者的清净所见中，西方刹土被莲花覆盖，他见到伏藏大师现为莲芽菩萨。"
+  description: 德钦月波朗巴圆寂后，钦则旺波净相中见其现为莲芽菩萨于西方刹土。
+
+# ==================== 蒋扬钦则旺波段(前段) (lines 1481-1499) ====================
+
+- event_id: EV_6364
+  type: 出家受戒
+  title: 蒋扬钦则旺波二十一岁在邬金敏珠林寺受近圆戒
+  participants:
+    - entity: 蒋扬钦则旺波
+      role: 受戒者
+    - entity: 仁真桑波
+      role: 亲教师
+  location: 邬金敏珠林寺
+  time_info:
+    text: "二十一岁"
+    relative_to: 蒋扬钦则旺波
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "二十一岁，在邬金敏珠林寺的堪布仁真桑波面前受近圆戒。"
+  description: 蒋扬钦则旺波二十一岁在邬金敏珠林寺堪布仁真桑波面前受近圆戒。
+
+- event_id: EV_6365
+  type: 灌顶
+  title: 蒋扬钦则旺波在益钦巴面前恭听寂猛幻化网灌顶
+  participants:
+    - entity: 蒋扬钦则旺波
+      role: 受者
+    - entity: 益钦巴杰美特多南嘉
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在益钦巴杰美特多南嘉面前恭听《寂猛幻化网》的灌顶，依此奠定了密乘戒的基础。"
+  description: 蒋扬钦则旺波在益钦巴面前恭听寂猛幻化网灌顶，奠定密乘戒基础。
+
+- event_id: EV_6366
+  type: 传法
+  title: 蒋扬钦则旺波共依止约一百五十位上师
+  participants:
+    - entity: 蒋扬钦则旺波
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "历经千辛万苦，以最大的努力和精进依止卫藏、后藏、康区的上师金刚持、善知识、精通明处的智者等，共依止了一百五十位左右。"
+  description: 蒋扬钦则旺波历经千辛万苦，依止卫藏后藏康区约一百五十位上师。
