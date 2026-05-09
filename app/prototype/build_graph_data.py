@@ -255,7 +255,9 @@ links = []
 node_set = {}  # name → type
 unresolved = []
 
-for fpath in filter_chapter_files(sorted(glob.glob(os.path.join(KG, "relations", "*.yaml")))):
+# Relations: load ALL files (don't filter segments — chapter-level Agent may have missed some)
+# Dedup by (source, target, type) happens downstream
+for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
     with open(fpath, 'r') as f:
         data = yaml.safe_load(f)
 
