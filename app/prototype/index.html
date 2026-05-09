@@ -13419,10 +13419,16 @@ Object.keys(relTypeCounts).sort((a,b) => relTypeCounts[b] - relTypeCounts[a]).fo
 
 statsEl.innerHTML = statsHTML;
 
-// Initial zoom to fit
+// Initial zoom — or focus on highlighted entity from URL param
 setTimeout(() => {
-  canvas.call(zoom.transform, d3.zoomIdentity.translate(width * 0.1, height * 0.1).scale(0.8));
-}, 200);
+  var params = new URLSearchParams(window.location.search);
+  var highlightName = params.get('highlight');
+  if (highlightName) {
+    focusNode(highlightName);
+  } else {
+    canvas.call(zoom.transform, d3.zoomIdentity.translate(width * 0.1, height * 0.1).scale(0.8));
+  }
+}, 500);
 
 // Handle window resize
 window.addEventListener('resize', () => {
