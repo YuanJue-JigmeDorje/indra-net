@@ -564,15 +564,19 @@ def build_chapter_html(ch_num: str, title: str, paragraphs: list[str],
     body_paragraphs = list(paragraphs)
     if body_paragraphs:
         first = body_paragraphs[0]
-        # Match title patterns like "第一品 佛教总况" or "第四品 内密三续"
-        title_patterns = [
-            r'^第[一二三四五六七八九十]+品\s*[一-鿿]+',  # 第X品 XX
-            r'^《[^》]+》',  # 《书名》 at start
+        # Known chapter title prefixes (hardcoded — only 8 chapters)
+        known_titles = [
+            '第一品 佛教总况', '第一品 佛教总况', '第二品 金刚密乘',
+            '第三品 藏传佛法', '第四品 内密三续', '第五品 远传经幻心',
+            '第六品 近传伏藏史', '第七品 遣除邪见', '第八品 略说佛教年表',
+            # Also without space
+            '第一品佛教总况', '第二品金刚密乘', '第三品藏传佛法',
+            '第四品内密三续', '第五品远传经幻心', '第六品近传伏藏史',
+            '第七品遣除邪见', '第八品略说佛教年表',
         ]
-        for pat in title_patterns:
-            m = re.match(pat, first)
-            if m:
-                rest = first[m.end():].strip()
+        for t in sorted(known_titles, key=len, reverse=True):
+            if first.startswith(t):
+                rest = first[len(t):].strip()
                 if rest:
                     body_paragraphs[0] = rest
                 else:
