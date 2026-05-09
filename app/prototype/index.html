@@ -12792,8 +12792,17 @@ searchResults.addEventListener("mousedown", function(e) { e.stopPropagation(); }
 searchInput.addEventListener("input", function() {
   clearTimeout(searchTimeout);
   var q = this.value.trim();
+  console.log("search input:", q);
   if (q.length < 2) { searchResults.style.display = "none"; return; }
   searchTimeout = setTimeout(function() { doSearch(q); }, 200);
+});
+
+// Also support Enter key
+searchInput.addEventListener("keyup", function(e) {
+  if (e.key === "Enter") {
+    var q = this.value.trim();
+    if (q.length >= 1) doSearch(q);
+  }
 });
 
 searchInput.addEventListener("keydown", function(e) {
@@ -12807,6 +12816,7 @@ document.addEventListener("click", function(e) {
 });
 
 function doSearch(q) {
+  try {
   var ql = q.toLowerCase();
   var html = "";
   var count = 0;
@@ -12881,6 +12891,10 @@ function doSearch(q) {
 
   searchResults.innerHTML = html;
   searchResults.style.display = "block";
+  } catch(err) {
+    searchResults.innerHTML = '<div class="sr-empty">搜索出错: ' + err.message + '</div>';
+    searchResults.style.display = "block";
+  }
 }
 
 function highlight(text, q) {
