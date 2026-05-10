@@ -1,0 +1,677 @@
+# ============================================================
+# 知识图谱关系抽取 — 第六品 近传伏藏史 seg3 (lines 801-1400)
+# 覆盖范围: 唐东嘉波(续) → 阿里大班智达班玛旺嘉多吉 → 列楚朗巴
+#   → 敦珠多吉 → 南卡晋美 → 第五世达赖喇嘛 → 德达朗巴
+#   → 全知晋美朗巴 → 德钦月波朗巴(前段)
+# 来源: source/dudjom/chapter_md/06_近传伏藏史.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: kg/entities/ch06-seg3.yaml
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/06_近传伏藏史.md
+  source_lines: "801-1400"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 68
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 化身/形态关系 (manifestationOf)
+  # ============================================================
+
+  - rel_id: RS3_001
+    type: manifestationOf
+    source: 班玛旺嘉多吉
+    target: 赤松德赞
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "法王赤松德赞的意化身嘉哲拉吉的第九世——阿里大班智达班玛旺嘉多吉"
+    note: "赤松德赞意化身嘉哲拉吉第九世"
+
+  - rel_id: RS3_002
+    type: manifestationOf
+    source: 列楚朗巴
+    target: 年万当珍桑波
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "年万当珍桑波以究竟果位的大悲幻化出世"
+    note: "莲花生大士弟子之首年万当珍桑波以究竟果位大悲幻化"
+
+  - rel_id: RS3_003
+    type: manifestationOf
+    source: 敦珠多吉
+    target: 卓万切穹译师
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "卓万切穹译师的最后转世伏藏师大持明者敦珠多吉"
+    note: "卓万切穹译师最后转世"
+
+  - rel_id: RS3_004
+    type: manifestationOf
+    source: 南卡晋美
+    target: 布玛莫札
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "大班智达布玛莫札和全知无垢光尊者双重大悲化现的自相——南卡晋美尊者"
+    note: "双重化现之一"
+
+  - rel_id: RS3_005
+    type: manifestationOf
+    source: 南卡晋美
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "大班智达布玛莫札和全知无垢光尊者双重大悲化现的自相——南卡晋美尊者"
+    note: "双重化现之二"
+
+  - rel_id: RS3_006
+    type: manifestationOf
+    source: 第五世达赖喇嘛
+    target: 赤松德赞
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "法王赤松德赞的事业幻化"
+    note: "赤松德赞事业幻化"
+
+  - rel_id: RS3_007
+    type: manifestationOf
+    source: 第五世达赖喇嘛
+    target: 观世音菩萨
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "雪域怙主观世音菩萨的大悲自相"
+    note: "观世音菩萨大悲自相"
+
+  - rel_id: RS3_008
+    type: manifestationOf
+    source: 德达朗巴
+    target: 贝若札那
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "大译师贝若札那的语化身——持明德达朗巴"
+    note: "贝若札那语化身"
+
+  - rel_id: RS3_009
+    type: manifestationOf
+    source: 全知晋美朗巴
+    target: 布玛莫札
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "大班智达布玛莫札和法王赤松德赞双重化现持明秋吉朗巴法的转世"
+    note: "双重化现之一"
+
+  - rel_id: RS3_010
+    type: manifestationOf
+    source: 全知晋美朗巴
+    target: 赤松德赞
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "大班智达布玛莫札和法王赤松德赞双重化现持明秋吉朗巴法的转世"
+    note: "双重化现之二"
+
+  - rel_id: RS3_011
+    type: manifestationOf
+    source: 德钦月波朗巴
+    target: 丹真木如赞普
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "国王丹真木如赞普智慧幻变力的化现伏藏大师德钦月波朗巴"
+    note: "丹真木如赞普智慧幻变力化现"
+
+  - rel_id: RS3_012
+    type: manifestationOf
+    source: 晋美陈列哦色
+    target: 木热赞普
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "木热赞普的化现成就自在者晋美陈列哦色"
+    note: "木热赞普化现"
+
+  # ============================================================
+  # B. 师承关系 (teacherOf)
+  # ============================================================
+
+  # --- 唐东嘉波段 ---
+
+  - rel_id: RS3_020
+    type: teacherOf
+    source: 根帮敦友嘉灿
+    target: 唐东嘉波
+    specialty: [香派伏藏法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于根帮敦友嘉灿前听受完整的香派伏藏法"
+
+  - rel_id: RS3_021
+    type: teacherOf
+    source: 多吉云尼
+    target: 唐东嘉波
+    specialty: [香派法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在上师多吉云尼前听受香派法"
+
+  # --- 班玛旺嘉多吉段 ---
+
+  - rel_id: RS3_025
+    type: teacherOf
+    source: 嘉扬仁钦嘉灿
+    target: 班玛旺嘉多吉
+    specialty: [前译教法, 经幻心]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在父亲面前发菩提心，并听受《经幻心》为主的前译教法"
+
+  - rel_id: RS3_026
+    type: teacherOf
+    source: 诺丹桑波
+    target: 班玛旺嘉多吉
+    specialty: [律藏, 经藏, 噶当派法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在诺丹桑波面前听闻律藏、经藏及噶当派法类"
+
+  - rel_id: RS3_027
+    type: teacherOf
+    source: 嘉扬秋炯
+    target: 班玛旺嘉多吉
+    specialty: [红大威德灌顶]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在嘉扬秋炯和赤诚华等上师前恭听《红大威德》等能成熟的灌顶"
+
+  - rel_id: RS3_028
+    type: teacherOf
+    source: 哦译师
+    target: 班玛旺嘉多吉
+    specialty: [道果]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "二十三岁先后在哦译师面前听受两遍道果"
+
+  - rel_id: RS3_029
+    type: teacherOf
+    source: 革给大班智达南嘉华桑
+    target: 班玛旺嘉多吉
+    specialty: [声明, 因明, 新密灌顶]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在革给大班智达南嘉华桑、嘉扬罗珠华座下听受声明、因明、新密的许多灌顶"
+
+  - rel_id: RS3_030
+    type: teacherOf
+    source: 创索邬金秋桑
+    target: 班玛旺嘉多吉
+    specialty: [上师集密意续]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在创索邬金秋桑和贡钦南卡华单面前听受《上师集密意续》"
+
+  - rel_id: RS3_031
+    type: teacherOf
+    source: 南卡那玖
+    target: 班玛旺嘉多吉
+    specialty: [八大法行集善逝]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在南岩白寺无与伦比的大成就者牧民种姓南卡那玖面前得到的"
+
+  # --- 列楚朗巴段 ---
+
+  - rel_id: RS3_035
+    type: teacherOf
+    source: 法王麦彭札西罗珠
+    target: 列楚朗巴
+    specialty: [密宗灌顶, 引导, 传承]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "听受了密宗的灌顶、引导、传承等无量教授"
+
+  - rel_id: RS3_036
+    type: teacherOf
+    source: 拉则瓦
+    target: 列楚朗巴
+    specialty: [近圆戒]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在拉则瓦上师前受近圆戒"
+
+  # --- 敦珠多吉段 ---
+
+  - rel_id: RS3_040
+    type: teacherOf
+    source: 真巴滚秋嘉灿
+    target: 敦珠多吉
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在真巴滚秋嘉灿面前听受大圆满等许多深法"
+
+  - rel_id: RS3_041
+    type: teacherOf
+    source: 酿波大成就者札西才单
+    target: 敦珠多吉
+    specialty: [灌顶, 教言]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "拜见酿波大成就者札西才单，恭听众多能成熟之灌顶、能解脱之教言"
+
+  - rel_id: RS3_042
+    type: teacherOf
+    source: 列楚朗巴
+    target: 敦珠多吉
+    specialty: [甚深伏藏灌顶, 引导, 窍诀]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在旺热依止大持明者嘉村酿波，圆满闻受尊者的甚深伏藏为主的诸多灌顶、引导及窍诀"
+    note: "列楚朗巴即持明嘉村酿波"
+
+  # --- 南卡晋美段 ---
+
+  - rel_id: RS3_045
+    type: teacherOf
+    source: 竹青索南旺波
+    target: 南卡晋美
+    specialty: [心滴教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在十七年期间依止竹青索南旺波，完整恭听心滴教授类"
+
+  - rel_id: RS3_046
+    type: teacherOf
+    source: 阿旺莫玖多吉
+    target: 南卡晋美
+    specialty: [贪欲道窍诀]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在阿旺莫玖多吉面前听受贪欲道的所有窍诀"
+
+  # --- 第五世达赖喇嘛段 ---
+
+  - rel_id: RS3_050
+    type: teacherOf
+    source: 罗桑秋杰嘉村
+    target: 第五世达赖喇嘛
+    specialty: [灌顶, 传承, 窍诀]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在班禅大师面前听受众多灌顶、传承和窍诀"
+
+  - rel_id: RS3_051
+    type: teacherOf
+    source: 朗曼巴滚乔秋佩
+    target: 第五世达赖喇嘛
+    specialty: [因明摄类学, 大论典]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于全知第五世达赖喇嘛面前，从《因明摄类学》开始潜心研学诸大论典"
+    note: "原文是五世达赖在其面前学习"
+
+  - rel_id: RS3_052
+    type: teacherOf
+    source: 敏珠班智达
+    target: 第五世达赖喇嘛
+    specialty: [诗学, 声明, 声律, 词藻学]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在敏珠班智达父子面前听受诗学、声明、声律、词藻学"
+
+  - rel_id: RS3_053
+    type: teacherOf
+    source: 德达朗巴
+    target: 第五世达赖喇嘛
+    specialty: [前译续全集]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "第五世达赖喇嘛在他面前听受了前译续全集宝为主深广法门而拜其为国师"
+
+  # --- 德达朗巴段 ---
+
+  - rel_id: RS3_055
+    type: teacherOf
+    source: 第五世达赖喇嘛
+    target: 德达朗巴
+    specialty: [灌顶, 加持]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "第五世达赖喇嘛和父亲密主陈列棱珠不仅亲身摄受的恩德深厚"
+    note: "五世达赖为其根本上师之一"
+
+  - rel_id: RS3_056
+    type: teacherOf
+    source: 纽敦桑达陈列棱珠
+    target: 德达朗巴
+    specialty: [八大法行, 前译教法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "四岁之初，他在父亲面前听受八大法行秘密圆满的灌顶"
+
+  - rel_id: RS3_057
+    type: teacherOf
+    source: 达敦秋嘉丹真
+    target: 德达朗巴
+    specialty: [密集续灌顶仪轨]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在达敦秋嘉丹真面前，《密集续灌顶仪轨——珍宝鬘》上面分成四十五坛城"
+
+  - rel_id: RS3_058
+    type: teacherOf
+    source: 持明班玛陈列
+    target: 德达朗巴
+    specialty: [灌顶仪轨珍宝鬘]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于多吉札持明班玛陈列面前...全面听受《灌顶仪轨——珍宝鬘》为首所有灌顶"
+
+  # --- 全知晋美朗巴段 ---
+
+  - rel_id: RS3_060
+    type: teacherOf
+    source: 持明特秋多吉
+    target: 全知晋美朗巴
+    specialty: [大手印智慧见解脱]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "礼见持明特秋多吉以后，听受大手印智慧见解脱等，最初相续得以成熟"
+
+  - rel_id: RS3_061
+    type: teacherOf
+    source: 根桑哦色
+    target: 全知晋美朗巴
+    specialty: [解脱顶, 上师集密意续]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从上座根桑哦色前得受《解脱顶》和《上师集密意续》的灌顶、传承"
+
+  # --- 德钦月波朗巴段 ---
+
+  - rel_id: RS3_065
+    type: teacherOf
+    source: 蒋扬钦则旺波
+    target: 德钦月波朗巴
+    specialty: [金刚橛最秘剑, 昆派金刚橛大灌顶, 心滴如意宝灌顶]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "首先赐予《金刚橛·最秘剑》，后来又授予昆派金刚橛大灌顶"
+
+  - rel_id: RS3_066
+    type: teacherOf
+    source: 嘉滚罗珠塔益
+    target: 德钦月波朗巴
+    specialty: [大悲善逝总集, 寂猛幻化网, 宁玛教藏法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在嘉滚罗珠塔益面前听受《大悲善逝总集》为首的寂猛幻化网的灌顶、讲解"
+
+  - rel_id: RS3_067
+    type: teacherOf
+    source: 香色达桑活佛
+    target: 德钦月波朗巴
+    specialty: [发菩提心, 深法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在大堪布香色达桑活佛面前得受发菩提心等一些深法"
+
+  # ============================================================
+  # C. 弟子关系 (discipleOf) — 重要弟子
+  # ============================================================
+
+  - rel_id: RS3_070
+    type: discipleOf
+    source: 尼玛桑波
+    target: 唐东嘉波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "心子尼玛桑波唱起悲歌"
+    note: "唐东嘉波心子"
+
+  - rel_id: RS3_071
+    type: discipleOf
+    source: 刚波侍从活佛诺吾坚巴
+    target: 列楚朗巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "第一位法主——刚波侍从活佛诺吾坚巴开启事业之门"
+    note: "列楚朗巴第一位法主"
+
+  - rel_id: RS3_072
+    type: discipleOf
+    source: 拉尊钦波南卡晋美
+    target: 敦珠多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "亲传弟子法主之首拉尊钦波南卡晋美"
+    note: "法主之首"
+
+  - rel_id: RS3_073
+    type: discipleOf
+    source: 晋美陈列哦色
+    target: 全知晋美朗巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "唯一的心子就是木热赞普的化现成就自在者晋美陈列哦色"
+    note: "唯一心子"
+
+  - rel_id: RS3_074
+    type: discipleOf
+    source: 晋美嘉为尼革
+    target: 全知晋美朗巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "大菩萨晋美嘉为尼革（即如来芽尊者）"
+    note: "重要弟子"
+
+  - rel_id: RS3_075
+    type: discipleOf
+    source: 晋美根珠
+    target: 全知晋美朗巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "门地智者成就者晋美根珠"
+    note: "重要弟子"
+
+  - rel_id: RS3_076
+    type: discipleOf
+    source: 德哲桑吉嘉措
+    target: 德达朗巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "享受语甘露的亲传弟子主要是第五世达赖喇嘛、德哲桑吉嘉措"
+    note: "主要亲传弟子"
+
+  # ============================================================
+  # D. 取伏藏关系 (revealedTerma)
+  # ============================================================
+
+  - rel_id: RS3_080
+    type: revealedTerma
+    source: 唐东嘉波
+    target: 长寿修法赐无死吉祥
+    location: 桑耶青普
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从桑耶青普取出《长寿修法赐无死吉祥》等五卷纸"
+
+  - rel_id: RS3_081
+    type: revealedTerma
+    source: 唐东嘉波
+    target: 意修无上最密
+    location: 札巴江
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从札巴江地方取出《意修无上最密》"
+
+  - rel_id: RS3_082
+    type: revealedTerma
+    source: 唐东嘉波
+    target: 深法意伏藏
+    location: 匝热密宗宫
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从匝热密宗宫取出《深法意伏藏》"
+
+  - rel_id: RS3_083
+    type: revealedTerma
+    source: 班玛旺嘉多吉
+    target: 教集后持明总集之法类七品祈祷修法
+    location: 桑耶寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从桑耶上殿的毗卢遮那四像背靠背的密箧内取出"
+
+  - rel_id: RS3_084
+    type: revealedTerma
+    source: 列楚朗巴
+    target: 最深三宝总集
+    location: 札龙霍察
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从札龙霍察铁门中秘密取出《最深三宝总集》"
+
+  - rel_id: RS3_085
+    type: revealedTerma
+    source: 敦珠多吉
+    target: 妙法密意总集诸门
+    location: 布哦东切大乐密洞
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从布哦东切大乐密洞里开取《妙法密意总集诸门》"
+
+  - rel_id: RS3_086
+    type: revealedTerma
+    source: 德达朗巴
+    target: 持明心滴
+    location: 雅玛隆
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从雅玛隆取出《持明心滴》"
+
+  - rel_id: RS3_087
+    type: revealedTerma
+    source: 德达朗巴
+    target: 大悲善逝总集
+    location: 夏哦达门
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从夏哦达门当众公开取出《大悲善逝总集》法门"
+
+  # ============================================================
+  # E. 著作关系 (authorOf)
+  # ============================================================
+
+  - rel_id: RS3_090
+    type: authorOf
+    source: 班玛旺嘉多吉
+    target: 三戒论
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他所造的语言简略、内容丰富的《三戒论》"
+
+  - rel_id: RS3_091
+    type: authorOf
+    source: 全知晋美朗巴
+    target: 龙钦心滴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他的意伏藏龙钦心滴论及注释"
+
+  - rel_id: RS3_092
+    type: authorOf
+    source: 全知晋美朗巴
+    target: 功德藏颂释
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "意伏藏以论典的方式撰著了佛法完整的道次第《功德藏颂释》"
+
+  - rel_id: RS3_093
+    type: authorOf
+    source: 全知晋美朗巴
+    target: 前译续全集珍宝史——周遍世界之庄严
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "造了《前译续全集珍宝史——周遍世界之庄严》"
+
+  # ============================================================
+  # F. 建寺关系 (foundedMonastery)
+  # ============================================================
+
+  - rel_id: RS3_095
+    type: foundedMonastery
+    source: 敦珠多吉
+    target: 敦珠寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "建起尊者前世驻锡的敦珠寺"
+
+  - rel_id: RS3_096
+    type: foundedMonastery
+    source: 第五世达赖喇嘛
+    target: 布达拉宫
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他在布达拉山上兴建起大布达拉宫"
+
+  # ============================================================
+  # G. 施主关系 (patronOf)
+  # ============================================================
+
+  - rel_id: RS3_098
+    type: patronOf
+    source: 革西日丹真秋嘉
+    target: 第五世达赖喇嘛
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "蒙古王革西日丹真秋嘉以兵力收复西藏三区之后全盘供养"
+
+  # ============================================================
+  # H. 家族关系 (parentOf / siblingOf)
+  # ============================================================
+
+  - rel_id: RS3_100
+    type: parentOf
+    source: 嘉扬仁钦嘉灿
+    target: 班玛旺嘉多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "父亲为...嘉扬仁钦嘉灿"
+
+  - rel_id: RS3_101
+    type: parentOf
+    source: 纽敦桑达陈列棱珠
+    target: 德达朗巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "父亲是纽敦桑达陈列棱珠"
+
+  - rel_id: RS3_102
+    type: parentOf
+    source: 敦珠绕丹
+    target: 第五世达赖喇嘛
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "父亲是国王敦珠绕丹"
+
+  - rel_id: RS3_103
+    type: parentOf
+    source: 班玛旺修
+    target: 德钦月波朗巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "父亲是密咒师班玛旺修"
+
+  - rel_id: RS3_104
+    type: siblingOf
+    source: 勒单多吉
+    target: 班玛旺嘉多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "与兄弟勒单多吉一起到了卫藏"

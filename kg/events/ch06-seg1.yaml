@@ -1,0 +1,819 @@
+# ============================================================
+# 知识图谱事件抽取 — 第六品 近传伏藏史 seg1 (lines 1-400)
+# 覆盖范围: 伏藏总论(引文依据) + 桑吉喇嘛 + 蒋扬钦则旺波 +
+#           札巴温西 + 酿绕尼玛哦色 + 秋杰旺修
+# 来源: source/dudjom/chapter_md/06_近传伏藏史.md
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+# 提取日期: 2026-05-09
+#
+# 实体引用: 引用 kg/entities/ch06-seg1.yaml
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 伏藏总论引文段 (lines 1-97) ====================
+
+- event_id: EV_6001
+  type: 引文论证
+  title: 引《龙王请问经》论证伏藏本体
+  participants:
+    - entity: 龙王请问经
+      role: 引文来源
+    - entity: 伏藏
+      role: 论证对象
+  quoted_text: "三宝种族不间断之大伏藏无尽；大证法无量之大伏藏无尽；令众生喜悦之大伏藏无尽；等同虚空之大伏藏无尽，彼等四种即是无尽大伏藏。"
+  argument: 论证伏藏的本体或自性——四种无尽大伏藏
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "《龙王请问经》中云："三宝种族不间断之大伏藏无尽……""
+  description: 作者引用《龙王请问经》说明伏藏的四种无尽本体。
+
+- event_id: EV_6002
+  type: 引文论证
+  title: 引《圣三摩地经》论证伏藏法、伏藏处与取伏藏之人
+  participants:
+    - entity: 圣三摩地经
+      role: 引文来源
+    - entity: 伏藏
+      role: 论证对象
+  quoted_text: "无垢威光，欲求法之诸菩萨大菩萨，法之伏藏安置于高山、山丘、树木之内而存，无量总持与法门作成经函亦至手中。"
+  argument: 说明伏藏法安置之处与取伏藏者的条件
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "集诸福德之《圣三摩地经》云…"
+  description: 引经说明伏藏安置于山丘树木中，由欲求法的菩萨获得。
+
+- event_id: EV_6003
+  type: 引文论证
+  title: 引经论证意乐圆满者获伏藏之理
+  participants:
+    - entity: 伏藏
+      role: 论证对象
+  quoted_text: "纵使佛陀不住世，然虚空中、墙壁、树木皆会出现正法。"
+  argument: 论证天法等伏藏出现的原理——即使佛不住世正法也会从虚空等中出现
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "关于意乐圆满者获得伏藏之理，又云…"
+  description: 引经说明正法可从虚空墙壁等处出现。
+
+- event_id: EV_6004
+  type: 引文论证
+  title: 引《游戏江河经》论证隐蔽伏藏的必要
+  participants:
+    - entity: 游戏江河经
+      role: 引文来源
+    - entity: 伏藏
+      role: 论证对象
+  quoted_text: "我之教法宗，意中隐意藏，抑或作地藏，何故驳外道，彼者扰乱意，故瀑流不断。"
+  argument: 论证隐蔽伏藏的必要——外道扰乱故需将教法隐藏
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "《游戏江河经》中云…"
+  description: 引经说明隐蔽伏藏是为了防止外道扰乱。
+
+- event_id: EV_6005
+  type: 引文论证
+  title: 引绕那朗巴伏藏品论证浊世伏藏的必要
+  participants:
+    - entity: 绕那朗巴
+      role: 引文来源
+    - entity: 伏藏
+      role: 论证对象
+  quoted_text: "甚深究竟一切之心要，悲悯藏人喜新厌旧多，尤其慈悯浊世之众生，一切中边伏藏满安置……"
+  argument: 论证莲师出于悲悯在浊世安置伏藏的必要
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "法王绕那朗巴的伏藏品中记载…"
+  description: 引绕那朗巴伏藏品说明浊世伏藏的悲悯动机。
+
+- event_id: EV_6006
+  type: 引文论证
+  title: 引《涅槃经》授记莲花生大士出生
+  participants:
+    - entity: 涅槃经
+      role: 引文来源
+    - entity: 莲花生大士
+      role: 论证对象
+  quoted_text: "于我灭度已，历经十二年，达那够夏岛，胜我士出生。"
+  argument: 论证莲花生大士出生有经典授记依据
+  location: null
+  time_info: null
+  layers: [典据, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "按照《涅槃经》中授记…"
+  description: 引《涅槃经》授记莲花生大士降生于达那够夏岛。
+
+- event_id: EV_6007
+  type: 引文论证
+  title: 引经论证密意伏藏的来源
+  participants:
+    - entity: 文殊菩萨
+      role: 论证对象
+    - entity: 伏藏
+      role: 论证对象
+  quoted_text: "文殊，四大由虚空藏中而生，如是诸法以如来意伏藏中而生，是故当知享用伏藏之义。"
+  argument: 论证密意伏藏——诸法从如来意伏藏中生出
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "经中说："文殊，四大由虚空藏中而生…""
+  description: 引经说明密意伏藏的本质。
+
+- event_id: EV_6008
+  type: 引文论证
+  title: 引《摄正法经》论证菩萨密意伏藏
+  participants:
+    - entity: 摄正法经
+      role: 引文来源
+    - entity: 伏藏
+      role: 论证对象
+  quoted_text: "菩萨意乐清净即由自心所欲中出现一切随示教言。"
+  argument: 论证圣者密意中流露的法伏藏
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "《摄正法经》中云…"
+  description: 引经说明菩萨清净意乐中自然出现教言。
+
+- event_id: EV_6009
+  type: 引文论证
+  title: 引《圣三摩地经》第二次论证大菩萨得闻正法
+  participants:
+    - entity: 圣三摩地经
+      role: 引文来源
+  quoted_text: "无垢威光，欲求法之大菩萨具圆满意乐及恭敬，虽住于其他世间界，亦得佛陀出有坏显现尊颜，亦得闻正法。"
+  argument: 论证大菩萨即使在他方世界也能得见佛闻法
+  location: null
+  time_info: null
+  layers: [典据]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "集诸福德之《圣三摩地经》中云…"
+  description: 第二次引用圣三摩地经论证净相法的来源。
+
+# ==================== 伏藏埋藏事件 (lines 38-68) ====================
+
+- event_id: EV_6010
+  type: 伏藏埋藏
+  title: 莲花生大士在印度尼泊尔藏地隐藏伏藏品
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+  location: 印度、尼泊尔、西藏
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "莲师在印度、尼泊尔、藏地，隐藏了不计其数的财宝、妙药、三宝所依与誓言物伏藏品"
+  description: 莲花生大士在三地隐藏无数伏藏品。
+
+- event_id: EV_6011
+  type: 伏藏埋藏
+  title: 益西措嘉在西藏上下中三地隐藏伏藏品
+  participants:
+    - entity: 益西措嘉
+      role: 主体
+  location: 西藏
+  time_info: "莲师离藏后"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "益西措嘉空行母在人间住世百余年，在西藏上下中三地区隐藏了不可思议的伏藏品"
+  description: 益西措嘉在莲师离藏后于藏地三区隐藏伏藏。
+
+- event_id: EV_6012
+  type: 伏藏埋藏
+  title: 布玛莫札等大师隐藏甚深伏藏
+  participants:
+    - entity: 布玛莫札
+      role: 主体
+    - entity: 贝若札那
+      role: 主体
+    - entity: 努桑吉益西
+      role: 主体
+    - entity: 南卡酿波
+      role: 主体
+    - entity: 涅·嘉那革玛绕
+      role: 主体
+    - entity: 那南降魔金刚
+      role: 主体
+    - entity: 年万当珍桑波
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "大班智达布玛莫札、法王父子、大译师贝若札那、努桑吉益西和南卡酿波、涅·嘉那革玛绕、那南降魔金刚、年万当珍桑波等也隐藏了许多甚深伏藏"
+  description: 多位大师在莲师时代各自隐藏甚深伏藏。
+
+# ==================== 桑吉喇嘛段 (lines 99-120) ====================
+
+- event_id: EV_6013
+  type: 伏藏开取
+  title: 桑吉喇嘛从罗哦格嘎寺柱中取出三种伏藏
+  participants:
+    - entity: 桑吉喇嘛
+      role: 伏藏师
+  location: 罗哦格嘎寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他从阿里罗哦格嘎寺柱中取出上师、大圆满、大悲观音三种伏藏"
+  description: 第一位伏藏师桑吉喇嘛从罗哦格嘎寺柱中取出三类伏藏。
+
+- event_id: EV_6014
+  type: 伏藏开取
+  title: 桑吉喇嘛从马头明王岩山取出《三根本汇修·稳见悉地》
+  participants:
+    - entity: 桑吉喇嘛
+      role: 伏藏师
+  location: 马头明王岩山
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在其附近的马头明王岩山取出《三根本汇修·稳见悉地》"
+  description: 桑吉喇嘛在马头明王岩山取出修法伏藏。
+
+- event_id: EV_6015
+  type: 圆寂
+  title: 桑吉喇嘛住世八十年
+  participants:
+    - entity: 桑吉喇嘛
+      role: 主体
+  location: null
+  time_info: "住世八十年"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "利益众生圆满究竟，住世八十年"
+  description: 桑吉喇嘛住世八十年后圆寂。
+
+# ==================== 札巴温西段 (lines 122-139) ====================
+
+- event_id: EV_6016
+  type: 出家受戒
+  title: 札巴温西在雅谢嘉瓦哦面前出家
+  participants:
+    - entity: 札巴温西
+      role: 受戒者
+    - entity: 雅谢嘉瓦哦
+      role: 亲教师
+  location: 桑耶寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "到了桑耶寺，在鲁墨的弟子雅谢嘉瓦哦面前出家"
+  description: 札巴温西到桑耶寺在雅谢嘉瓦哦面前出家。
+
+- event_id: EV_6017
+  type: 伏藏开取
+  title: 札巴温西从桑耶顶层取出《红财神密修法》和《夜叉金刚降魔续》
+  participants:
+    - entity: 札巴温西
+      role: 伏藏师
+  location: 桑耶寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从顶层门上开取了《红财神密修法》、《夜叉金刚降魔续》及修法"
+  description: 札巴温西从桑耶顶层门开取两种伏藏。
+
+- event_id: EV_6018
+  type: 伏藏开取
+  title: 札巴温西从桑耶取出《具德四续》原本
+  participants:
+    - entity: 札巴温西
+      role: 伏藏师
+  location: 桑耶寺
+  time_info: "阳土虎年仲秋月十五夜半三时"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在阳土虎年仲秋月十五夜半三时，从桑耶顶层的中殿有宝瓶的柱中，开取了大译师贝若札那翻译的医方明《具德四续》的原本"
+  description: 札巴温西依护法授记在桑耶寺取出贝若札那所译《具德四续》原本。
+
+- event_id: EV_6019
+  type: 建寺
+  title: 札巴温西建立札囊达华札塘佛教大寺院
+  participants:
+    - entity: 札巴温西
+      role: 建寺者
+  location: 札囊
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "以此作为资本，建立起札囊达华札塘佛教大寺院"
+  description: 札巴温西以财神赐予金物悉地为资本建立寺院。
+
+# ==================== 酿绕尼玛哦色段 (lines 141-206) ====================
+
+- event_id: EV_6020
+  type: 神变
+  title: 酿绕尼玛哦色八岁净相中现见释迦牟尼佛等
+  participants:
+    - entity: 酿绕尼玛哦色
+      role: 主体
+    - entity: 释迦佛
+      role: 显现者
+    - entity: 大悲观音
+      role: 显现者
+    - entity: 莲花生大士
+      role: 显现者
+  location: null
+  time_info: "八岁"
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他八岁，在清净的境界中现见了释迦牟尼佛、大悲观世音、莲花生大士等"
+  description: 酿绕尼玛哦色八岁在净相中见到多位佛菩萨。
+
+- event_id: EV_6021
+  type: 灌顶
+  title: 莲花生大士以宝瓶甘露赐予酿绕尼玛哦色四灌顶
+  participants:
+    - entity: 莲花生大士
+      role: 灌顶师
+    - entity: 酿绕尼玛哦色
+      role: 受者
+  location: null
+  time_info: "八岁"
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "见到莲花生大士骑着一匹白马，由四部空行随行，以宝瓶甘露赐予他四灌顶"
+  description: 净相中莲师骑白马显现赐予四灌顶。
+
+- event_id: EV_6022
+  type: 伏藏开取
+  title: 酿绕尼玛哦色在珍姆白吉岩石取出伏藏
+  participants:
+    - entity: 酿绕尼玛哦色
+      role: 伏藏师
+  location: 珍姆白吉岩石
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他来到伏藏处珍姆白吉岩石前……开取了铜箧、瓷瓶、佛像、圣物、宝物等许多伏藏"
+  description: 酿绕尼玛哦色在珍姆白吉岩石开取大量伏藏品。
+
+- event_id: EV_6023
+  type: 伏藏开取
+  title: 酿绕尼玛哦色从库塘取出《八大法行·集善逝》等
+  participants:
+    - entity: 酿绕尼玛哦色
+      role: 伏藏师
+  location: 库塘
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从库塘毗卢遮那佛像后面取出紫色和灰白色两个宝箧，其中紫色宝箧内放有《八大法行·集善逝》"
+  description: 酿绕尼玛哦色从库塘佛像后取出两宝箧含一百三十类法。
+
+- event_id: EV_6024
+  type: 闭关修行
+  title: 酿绕尼玛哦色修《上师三身总集修法》三年面见莲师
+  participants:
+    - entity: 酿绕尼玛哦色
+      role: 主体
+    - entity: 莲花生大士
+      role: 显现者
+  location: null
+  time_info: "三年"
+  layers: [史传, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "《上师三身总集修法》修了三年，从而直接面见莲花生大士，获得许多言传"
+  description: 酿绕尼玛哦色修上师法三年后亲见莲师获言传。
+
+- event_id: EV_6025
+  type: 传法
+  title: 益西措嘉空行母赐予酿绕尼玛哦色《空行百题问答录》
+  participants:
+    - entity: 益西措嘉
+      role: 传法者
+    - entity: 酿绕尼玛哦色
+      role: 受者
+  location: 莫德西戒巴贡
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "益西措嘉空行母亲自降临，赐予《空行百题问答录》"
+  description: 益西措嘉显现赐予酿绕尼玛哦色《空行百题问答录》。
+
+- event_id: EV_6026
+  type: 灌顶
+  title: 八大持明在清凉尸林传授酿绕尼玛哦色八大法行
+  participants:
+    - entity: 八大持明
+      role: 灌顶师
+    - entity: 酿绕尼玛哦色
+      role: 受者
+    - entity: 莲花生大士
+      role: 灌顶师
+  location: 清凉尸林
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "莲师等八大持明将总的八大法行及分别的各自灌顶、续、窍诀完整传授给他"
+  description: 酿绕尼玛哦色被益西措嘉带到清凉尸林后获八大法行完整传授。
+
+- event_id: EV_6027
+  type: 传法
+  title: 殴哲佩巴将大悲法类五卷授予酿绕尼玛哦色
+  participants:
+    - entity: 殴哲佩巴
+      role: 传法者
+    - entity: 酿绕尼玛哦色
+      role: 受者
+  location: 拉萨
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "大成就者殴哲佩巴从拉萨开取出大悲法类五卷对他说："法主也是你自己。"之后恩授予他"
+  description: 殴哲佩巴开取大悲法类后认定酿绕尼玛哦色为法主并传授。
+
+- event_id: EV_6028
+  type: 神变
+  title: 酿绕尼玛哦色修药师佛法时药天女来供养
+  participants:
+    - entity: 酿绕尼玛哦色
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他修行药师佛修法期间，药天女带着湿润的藏青果和叶子直接来供养"
+  description: 酿绕尼玛哦色修药师佛时药天女亲来供养药果。
+
+- event_id: EV_6029
+  type: 神变
+  title: 酿绕尼玛哦色不解跏趺坐腾空飞行
+  participants:
+    - entity: 酿绕尼玛哦色
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在没有解开跏趺坐的情况下腾到空中，脚不沾地等示现无量神变"
+  description: 酿绕尼玛哦色以不解跏趺坐飞于空中示现神变。
+
+- event_id: EV_6030
+  type: 圆寂
+  title: 酿绕尼玛哦色六十九岁圆寂往生极乐世界
+  participants:
+    - entity: 酿绕尼玛哦色
+      role: 主体
+  location: null
+  time_info: "六十九岁阳水鼠年"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "六十九岁阳水鼠年伴随着稀奇的瑞相，以广大标志尤其是从心间一个白色"舍"字前往极乐世界而圆寂"
+  description: 酿绕尼玛哦色六十九岁圆寂往极乐世界。
+
+- event_id: EV_6031
+  type: 神变
+  title: 南卡华巴将石头如赶羊群般从虚空降下
+  participants:
+    - entity: 南卡华巴
+      role: 主体
+  location: 夏波
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "当他安住在境界中时，便将夏波前的所有石头像赶羊群一样从虚空而降"
+  description: 南卡华巴以神变令石头从虚空降下至拉萨觉沃河堤。
+
+# ==================== 秋杰旺修段 (lines 208-400) ====================
+
+- event_id: EV_6032
+  type: 神变
+  title: 帮吉尊叉以契克印反弹苯教霹雳箭
+  participants:
+    - entity: 帮吉尊叉
+      role: 主体
+    - entity: 赤松德赞
+      role: 被保护者
+  location: null
+  time_info: "佛法前弘时期"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "苯教同时射出五把霹雳箭，他以契克印接受，反而使他们自己苯教城区毁灭了"
+  description: 帮吉尊叉以咒力反弹苯教五把霹雳箭保护赤松德赞。
+
+- event_id: EV_6033
+  type: 弘法
+  title: 秋杰旺修四岁起学习声明等大量论典
+  participants:
+    - entity: 秋杰旺修
+      role: 学习者
+  location: null
+  time_info: "四岁起"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他从四岁起，就在父亲面前学习文字读写，《语门刃》、《明诵五部》、《大布达》等声明十三论……"
+  description: 秋杰旺修四岁起学习声明十三论、法规十论等大量世出世间论典。
+
+- event_id: EV_6034
+  type: 灌顶
+  title: 秋杰旺修十一岁圆满《幻化网》灌顶传承窍诀
+  participants:
+    - entity: 秋杰旺修
+      role: 受者
+  location: null
+  time_info: "十一岁"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十一岁圆满《幻化网》的所有灌顶、传承及窍诀"
+  description: 秋杰旺修十一岁完成幻化网全部灌顶传承。
+
+- event_id: EV_6035
+  type: 神变
+  title: 秋杰旺修十三岁觉受中见金刚萨埵和四面空行母
+  participants:
+    - entity: 秋杰旺修
+      role: 主体
+    - entity: 觉姆卓玛
+      role: 引导者
+    - entity: 金刚萨埵
+      role: 显现者
+  location: null
+  time_info: "十三岁"
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "觉姆卓玛把他带到一座水晶建筑顶上，见到金刚萨埵。在那里住着一位四面空行母"
+  description: 秋杰旺修十三岁觉受中被觉姆卓玛带到水晶建筑见金刚萨埵。
+
+- event_id: EV_6036
+  type: 弘法
+  title: 秋杰旺修十四岁在德色珠扬萨瓦面前听受因明等大论典
+  participants:
+    - entity: 秋杰旺修
+      role: 学习者
+    - entity: 德色珠扬萨瓦
+      role: 教授者
+  location: null
+  time_info: "十四岁"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他在德色珠扬萨瓦面前听受因明、《大乘阿毗达磨》、《入行论》、《喜金刚》等"
+  description: 秋杰旺修十四岁从德色珠扬萨瓦学因明等显密论典和窍诀。
+
+- event_id: EV_6037
+  type: 弘法
+  title: 秋杰旺修十七岁遇阿达珠滚成为伏藏之主
+  participants:
+    - entity: 秋杰旺修
+      role: 受法者
+    - entity: 阿达珠滚
+      role: 传法者
+  location: null
+  time_info: "十七岁"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十七岁遇到阿达珠滚，成为酿仁波切尼玛哦色的无量伏藏之主"
+  description: 秋杰旺修十七岁遇阿达珠滚，继承酿绕尼玛哦色的伏藏。
+
+- event_id: EV_6038
+  type: 出家受戒
+  title: 秋杰旺修十八岁在萨迦班智达面前得受发心
+  participants:
+    - entity: 秋杰旺修
+      role: 受戒者
+    - entity: 萨迦班智达
+      role: 授戒师
+  location: 刚波道场
+  time_info: "十八岁"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十八岁时于刚波道场在萨迦班智达面前得受发心"
+  description: 秋杰旺修十八岁于刚波道场在萨迦班智达前受菩提心戒。
+
+- event_id: EV_6039
+  type: 神变
+  title: 秋杰旺修梦中到五台山见文殊菩萨说法开悟
+  participants:
+    - entity: 秋杰旺修
+      role: 主体
+    - entity: 文殊菩萨
+      role: 说法者
+  location: 五台山
+  time_info: "十八岁"
+  layers: [证境]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "到汉地五台山去寻找昙花，结果文殊菩萨在青莲花上面说："匝那嘎雅达玛达德，法之自在是我，我是你心分别…""
+  description: 秋杰旺修梦中到五台山见文殊菩萨说法后对一切法获得深深定解。
+
+- event_id: EV_6040
+  type: 伏藏开取
+  title: 秋杰旺修从拉雅年山谷开取十九种伏藏
+  participants:
+    - entity: 秋杰旺修
+      role: 伏藏师
+  location: 拉雅年山谷
+  time_info: "二十二岁后"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "取出以此为首的十八大伏藏品，再加上意伏藏，共取出十九种伏藏"
+  description: 秋杰旺修开取包括天空阶梯、红岩、马头明王等十九种伏藏。
+
+- event_id: EV_6041
+  type: 灌顶
+  title: 秋杰旺修在霓虹宫面见金刚萨埵获觉性妙力灌顶
+  participants:
+    - entity: 秋杰旺修
+      role: 受者
+    - entity: 金刚萨埵
+      role: 灌顶师
+  location: 霓虹宫
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在三十层天空的上方虹光萦绕的霓虹宫内面见金刚萨埵，获得了觉性妙力灌顶"
+  description: 秋杰旺修骑大鹏鹰飞至霓虹宫获金刚萨埵灌顶。
+
+- event_id: EV_6042
+  type: 神变
+  title: 秋杰旺修在妙拂吉祥山面见莲师获灌顶和安慰
+  participants:
+    - entity: 秋杰旺修
+      role: 受者
+    - entity: 莲花生大士
+      role: 灌顶师
+  location: 妙拂洲
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "两个女子骑着有翅膀的白马把他带到妙拂吉祥山。莲花生大士为他圆满授予完整秘密的灌顶"
+  description: 秋杰旺修被空行带到妙拂洲面见莲师获灌顶及言传安慰。
+
+- event_id: EV_6043
+  type: 灌顶
+  title: 秋杰旺修为巴如则真灌顶传法使其开悟
+  participants:
+    - entity: 秋杰旺修
+      role: 灌顶师
+    - entity: 巴如则真
+      role: 受者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "上师从金刚身大坛城出代表毗卢遮那的大香甘露进行灌顶……从而使他顿超明现无漏大乐智慧"
+  description: 秋杰旺修以金刚身坛城和金刚秘密速道为巴如灌顶使其证悟大圆满。
+
+- event_id: EV_6044
+  type: 建寺
+  title: 秋杰旺修建起匆地革木和如意大乐寺
+  participants:
+    - entity: 秋杰旺修
+      role: 建寺者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他建起匆地革木和如意大乐寺两座寺院"
+  description: 秋杰旺修建造两座寺院。
+
+- event_id: EV_6045
+  type: 伏藏开取
+  title: 秋杰旺修从哈布雪山开取释迦佛像
+  participants:
+    - entity: 秋杰旺修
+      role: 伏藏师
+    - entity: 龙树
+      role: 原迎请者
+    - entity: 莲花生大士
+      role: 隐藏者
+  location: 哈布雪山
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "圣龙树曾经从当宗山迎请，莲师将它隐藏在哈布雪山，这位伏藏大师开取出来"
+  description: 秋杰旺修从哈布雪山开取莲师所隐的释迦佛像。
+
+- event_id: EV_6046
+  type: 圆寂
+  title: 秋杰旺修五十九岁前往莲花光大宫殿
+  participants:
+    - entity: 秋杰旺修
+      role: 主体
+  location: 莲花光大宫殿
+  time_info: "五十九岁"
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在五十九岁，显示不可思议的瑞相和神变前往莲花光大宫殿"
+  description: 秋杰旺修五十九岁以神变圆寂前往莲花光大宫殿。
+
+- event_id: EV_6047
+  type: 神变
+  title: 秋杰旺修示现降伏兔子和旱獭的咒力
+  participants:
+    - entity: 秋杰旺修
+      role: 主体
+    - entity: 巴如则真
+      role: 请求者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在地上画了个兔子的像。对着针诵了七遍咒语，然后把针插入像中，结果那只兔子径直向下滚落"
+  description: 秋杰旺修应巴如请求示现降伏咒力，随后誓言不为自利使用。
