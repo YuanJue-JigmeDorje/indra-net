@@ -1,0 +1,6850 @@
+# ============================================================
+# 知识图谱实体 — 第五品 远传经幻心（章级合并）
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md (lines 1-2692)
+# 合并日期: 2026-05-09
+# 合并自: ch05-seg1 + ch05-seg2 + ch05-seg3 + ch05-seg4 + ch05-seg5 + ch05-seg6
+# 规范: SKILL_03a v0.3 + entity-taxonomy v0.4
+# 实体总数: 974
+# 去重说明: 跨段重复实体合并为单条，appearances 取并集，
+#           note/aliases/attainments 取最丰富版本。
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 莲花生大士
+  aliases: ["莲师", "邬金佛父佛母", "邬金堪布班玛桑巴瓦"]
+  type: 圣众.大乘.本尊
+  note: "仁钦彭措在铜色吉祥山拜见黑日嘎形象的莲师；赐予灌顶教授；秋吉札巴梦中见莲师"
+  appearances: [12, 107, 129, 1632, 1654, 1655, 1656, 2231, 2236, 2310, 2318]
+
+E_002:
+  name: 密主金刚手菩萨
+  aliases: ["金刚手菩萨"]
+  type: 圣众.大乘.菩萨
+  note: "在金刚座亲自显现尊颜，赐予努·桑吉益西名称灌顶"
+  appearances: [152]
+
+E_003:
+  name: 雅门达嘎
+  aliases: ["大威德"]
+  type: 圣众.大乘.本尊
+  note: "在沃玛园显露容颜赐予努·桑吉益西灌顶和悉地；努·桑吉益西从印度尼泊尔迎请大威德海之猛咒"
+  appearances: [156, 159, 172, 180, 265]
+
+E_004:
+  name: 诶嘎匝哲
+  aliases: ["一髻佛母"]
+  type: 圣众.大乘.空行
+  note: "在印度桑隆那波尸陀林给努·桑吉益西悉地物"
+  appearances: [158]
+
+E_005:
+  name: 观世音菩萨
+  aliases: ["圣者观世音菩萨"]
+  type: 圣众.大乘.菩萨
+  note: "融入大宿·释迦炯内之母，知晓其为化身"
+  appearances: [307]
+
+E_006:
+  name: 吉祥黑日嘎
+  aliases: ["黑日嘎"]
+  type: 圣众.大乘.本尊
+  note: "嘉哦岩形似吉祥黑日嘎；古译师到小宿面前只想他是吉祥黑日嘎佛；小宿面见吉祥黑日嘎"
+  appearances: [305, 377, 833, 965, 976, 1654, 1884, 1900]
+
+E_007:
+  name: 莲舞自在
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "努·桑吉益西面见莲舞自在的圆满坛城"
+  appearances: [159]
+
+E_008:
+  name: 释迦牟尼佛
+  aliases: ["佛陀", "本师释迦佛", "释迦二尊", "释迦佛"]
+  type: 圣众.大乘.佛
+  note: "大昭寺和小昭寺内的两尊释迦牟尼佛像；月波尊者四次朝礼"
+  appearances: [217, 220, 1231]
+
+E_009:
+  name: 文殊
+  aliases: ["妙吉祥"]
+  type: 圣众.大乘.菩萨
+  note: "文殊授记努·桑吉益西在印度尸陀林获悉地；妙吉祥身坛城为努钦选择本尊时的坛城"
+  appearances: [130, 158]
+
+E_010:
+  name: 大日如来
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "大宿在美波仁钦嘉措处听受《大日如来》"
+  appearances: [313]
+
+E_011:
+  name: 帝释
+  aliases: ["帝释天"]
+  type: 圣众.大乘.护法
+  note: "鸱枭谷寺护法神殿中有帝释铸像"
+  appearances: [444]
+
+E_012:
+  name: 梵天
+  aliases: []
+  type: 圣众.大乘.护法
+  note: "鸱枭谷寺护法神殿中有梵天铸像"
+  appearances: [444]
+
+E_013:
+  name: 救八难度母
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "鸱枭谷寺前庭走廊壁画中绘有救八难度母"
+  appearances: [447]
+
+E_014:
+  name: 三部怙主
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "鸱枭谷寺前庭走廊壁画中绘有三部怙主"
+  appearances: [448]
+
+E_015:
+  name: 五部如来
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "释迦西日言鸱枭谷北面山显现为五部如来自性"
+  appearances: [424, 1328, 1885]
+
+E_016:
+  name: 因黑日嘎
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "小宿修真实意本尊时在香地禅房房梁上清楚见到的一面二臂因黑日嘎"
+  appearances: [483]
+
+E_017:
+  name: 毗卢遮那佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "小宿劈开蝎子后，所有蝎子变成毗卢遮那佛消失在空中"
+  appearances: [848]
+
+E_018:
+  name: 金刚手菩萨
+  aliases: ["金刚手", "密主"]
+  type: 圣众.大乘.菩萨
+  note: "小宿以五现前菩提等持迎请密主金刚手入母胎；单巴桑吉认出释迦桑给为金刚手化身；卓普巴直接显示金刚手形象"
+  appearances: [983, 1003, 1028, 1038, 1039]
+
+E_019:
+  name: 药师佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "杰敦嘉那修行药师佛时，药师佛宫殿中真实出现天女围绕坛城三匝融入（已存在于ch05-part3）"
+  appearances: [1103, 1814, 1883]
+
+E_020:
+  name: 单坚护法神
+  aliases: ["单坚"]
+  type: 圣众.大乘.护法
+  note: "小宿空行佛堂内塑造单坚像；小宿抽打问能否护法，像频频点头"
+  appearances: [971, 973, 974, 1350]
+
+E_021:
+  name: 大悲观音菩萨
+  aliases: ["大悲观音", "观音"]
+  type: 圣众.大乘.菩萨
+  note: "达敦觉益在宗卡塑大悲观音菩萨像"
+  appearances: [1297]
+
+E_022:
+  name: 马头明王
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "伏藏中出现的修法对象之一；桑吉仁钦嘉村传那哦巴派和达嘉派马头明王开许"
+  appearances: [1390, 1580, 1605, 2319]
+
+E_023:
+  name: 金刚萨埵
+  aliases: ["金刚萨埵佛父佛母"]
+  type: 圣众.大乘.本尊
+  note: "伏藏中出现的修法对象之一；汉土响铜金刚萨埵佛像迎请到西藏"
+  appearances: [1390, 1522]
+
+E_024:
+  name: 文殊菩萨
+  aliases: ["具密文殊", "圣者文殊菩萨", "文殊"]
+  type: 圣众.大乘.菩萨
+  note: "觉益听受《具密文殊》；宿·释迦炯奉嘉瓦大宿法衣片段装藏之文殊金像为鸱枭谷寺主佛"
+  appearances: [1263, 1541, 1882, 2121]
+
+E_025:
+  name: 黑日嘎五部佛
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "宿哈·释迦炯境界中明显见到"
+  appearances: [1555]
+
+E_026:
+  name: 金刚手
+  aliases: ["密主金刚手"]
+  type: 圣众.大乘.菩萨
+  note: "宿·香巴桑给在喇嘛云丹滚面前听《金刚手》"
+  appearances: [1435, 2628]
+
+E_027:
+  name: 观音菩萨
+  aliases: ["大悲观音"]
+  type: 圣众.大乘.菩萨
+  note: "第五世达赖为观音化现"
+  appearances: [1693]
+
+E_028:
+  name: 不动佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "噶托巴常见不动佛刹土；藏敦巴也在不动佛刹土中见授记"
+  appearances: [1883, 1918, 1920]
+
+E_029:
+  name: 阿弥陀佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "噶托巴常见其刹土"
+  appearances: [1883]
+
+E_030:
+  name: 吉祥天女
+  aliases: []
+  type: 圣众.大乘.护法
+  note: "使八位苯波师修行岩洞倒塌；藏敦巴经常见到"
+  appearances: [1871, 1901]
+
+E_031:
+  name: 那波尊
+  aliases: []
+  type: 圣众.大乘.护法
+  note: "藏敦巴经常见到"
+  appearances: [1901]
+
+E_032:
+  name: 无量寿如来
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "噶托巴获授记未来星布劫成为无量寿如来"
+  appearances: [1887]
+
+E_033:
+  name: 慧藏菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "噶托巴获授记下一世在极乐世界以慧藏菩萨身份安住"
+  appearances: [1886]
+
+E_034:
+  name: 宝藏菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "不动佛刹土中菩萨们称藏敦巴为宝藏菩萨"
+  appearances: [1918, 1920]
+
+E_035:
+  name: 发光如来
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "不动佛授记藏敦巴未来时成为发光如来"
+  appearances: [1921]
+
+E_036:
+  name: 四十二寂静本尊
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "藏敦巴亲睹四十二寂静本尊坛城"
+  appearances: [1900]
+
+E_037:
+  name: 胜乐六十二尊
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "噶托巴想见就能见到的坛城"
+  appearances: [1884]
+
+E_038:
+  name: 普巴金刚
+  aliases: ["金刚橛"]
+  type: 圣众.大乘.本尊
+  note: "普巴金刚弘扬六派；前代大德本尊以普巴金刚为主"
+  appearances: [2229]
+
+E_039:
+  name: 大威德金刚
+  aliases: ["大威德"]
+  type: 圣众.大乘.本尊
+  note: "绕译师以大威德猛咒降伏他人；荣索班智达翻译《大威德金刚》"
+  appearances: [2208, 2281]
+
+E_040:
+  name: 金刚童子
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "如烧铁般金刚童子出现在绕译师头顶"
+  appearances: [2294]
+
+E_041:
+  name: 多闻天子
+  aliases: ["黄财神"]
+  type: 圣众.大乘.护法
+  note: "绕译师从哦塘伏藏品中取出"
+  appearances: [2285]
+
+# ==================== 人物 ====================
+
+E_042:
+  name: 布玛莫札
+  aliases: []
+  type: 人物.法师
+  note: "已存在于ch05-part1。传承链：布玛莫札—哲姆—玛尔巴慧光—朗敦达玛索朗—卓普巴，中间仅三位上师"
+  appearances: [13, 41, 47, 50, 56, 59, 65, 132, 1074, 1075, 2166]
+
+E_043:
+  name: 贝若札那
+  aliases: []
+  type: 人物.法师
+  note: "与耶札酿波的发心使伏藏大师出现；在康区哦达香钦寺翻译密藏续释"
+  appearances: [13, 1781, 1842, 2160]
+
+E_044:
+  name: 静命
+  aliases: ["静命堪布"]
+  type: 人物.法师
+  note: "涅·赞那革玛绕在其前出家受比丘戒"
+  appearances: [11]
+
+E_045:
+  name: 涅·赞那革玛绕
+  aliases: ["涅大译师", "涅译师", "涅大师", "嘉巍罗珠", "涅译师益西云讷", "涅·赞革那绕"]
+  type: 人物.法师
+  note: "经幻心三部教主；依靠《耳传金刚桥》及窍诀部证得大成就，以明空虹身而圆寂"
+  appearances: [8, 9, 16, 22, 25, 36, 38, 50, 95]
+
+E_046:
+  name: 索布·华杰益西
+  aliases: ["拉·华杰益西"]
+  type: 人物.法师
+  note: "本为铁匠（索布），涅译师收为弟子后改名拉·华杰益西；莲花生大士时期已获成就；八华之首"
+  appearances: [79, 87, 101, 106, 112, 137]
+
+E_047:
+  name: 哦占·华杰云讷
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子，八华之一（前华）；努·桑吉益西七岁起跟随他"
+  appearances: [80, 101, 127]
+
+E_048:
+  name: 努·桑吉益西
+  aliases: ["努氏大师桑吉益西", "努钦", "多吉扬旺德", "多吉赤则", "大努·桑吉益西"]
+  type: 人物.法师
+  note: "阳水鼠年诞生；住世一百一十三年；自性大圆满道任运成就虹身；经藏赞叹为四地菩萨"
+  appearances: [120, 122, 151, 164, 169, 178, 199, 217, 1608, 1779]
+
+E_049:
+  name: 耶札酿波
+  aliases: []
+  type: 人物.法师
+  note: "涅·赞那革玛绕依止的四大上师之一"
+  appearances: [13, 1781, 2160]
+
+E_050:
+  name: 赞兰达热巴
+  aliases: []
+  type: 人物.法师
+  note: "能起死回生，布玛莫札以其为例"
+  appearances: [57]
+
+E_051:
+  name: 黑行尊者
+  aliases: []
+  type: 人物.法师
+  note: "赞兰达热巴的弟子，能起死回生"
+  appearances: [58]
+
+E_052:
+  name: 涅钦华扬
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子，八华之一（前华）"
+  appearances: [101]
+
+E_053:
+  name: 塔桑华杰多
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子，八华之一（前华）"
+  appearances: [101]
+
+E_054:
+  name: 烂秋·华杰多吉
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子，八华之一（后华）"
+  appearances: [102]
+
+E_055:
+  name: 达吉·华杰札巴
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子，八华之一（后华）"
+  appearances: [102]
+
+E_056:
+  name: 札·华杰酿波
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子，八华之一（后华）"
+  appearances: [102]
+
+E_057:
+  name: 拉隆·华杰多吉
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子，八华之一（后华）；降伏朗达玛"
+  appearances: [102, 201]
+
+E_058:
+  name: 俄巴多色
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子"
+  appearances: [103]
+
+E_059:
+  name: 吉帕巴西绕
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子"
+  appearances: [103]
+
+E_060:
+  name: 波色革秋
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子"
+  appearances: [103]
+
+E_061:
+  name: 西日桑哈
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的印度上师之一"
+  appearances: [132]
+
+E_062:
+  name: 嘎玛拉西拉
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的印度上师之一"
+  appearances: [132]
+
+E_063:
+  name: 达那达拉
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一；也是云丹嘉措前世的兄长，修夜叉母神足"
+  appearances: [132, 147, 231]
+
+E_064:
+  name: 渣通那波
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的印度上师之一"
+  appearances: [133]
+
+E_065:
+  name: 辛德嘎巴
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一"
+  appearances: [133]
+
+E_066:
+  name: 达那桑智达
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一"
+  appearances: [133]
+
+E_067:
+  name: 索甲德瓦
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一"
+  appearances: [133]
+
+E_068:
+  name: 达那绕杰达
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一；由切赞吉迎请来到哲夏地方"
+  appearances: [133, 147]
+
+E_069:
+  name: 婆罗门色瓦坚
+  aliases: ["阿匝雅色瓦坚"]
+  type: 人物.法师
+  note: "瓦色达绕的上师，住世长达一千六百年；努·桑吉益西在鹿野苑见到并请法"
+  appearances: [134, 142, 144]
+
+E_070:
+  name: 达玛布德
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一；由切赞吉迎请来到哲夏"
+  appearances: [134, 147]
+
+E_071:
+  name: 达玛燃匝
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一；由切赞吉迎请来到哲夏"
+  appearances: [134, 147]
+
+E_072:
+  name: 则拉华给
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一"
+  appearances: [134]
+
+E_073:
+  name: 瓦色达绕
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西在尼泊尔的重要上师；指引他去印度求法"
+  appearances: [134, 140, 142, 146, 174]
+
+E_074:
+  name: 切赞吉
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西依止的上师之一；迎请达那绕杰达等来哲夏"
+  appearances: [134, 147]
+
+E_075:
+  name: 玛·给瓦炯
+  aliases: []
+  type: 人物.法师
+  note: "涅译师弟子；努·桑吉益西依止的上师之一"
+  appearances: [137]
+
+E_076:
+  name: 扬·加瓦云丹
+  aliases: []
+  type: 人物.法师
+  note: "涅译师和玛·给瓦炯共同的再传弟子；努·桑吉益西主要依止的两位上师之一"
+  appearances: [137]
+
+E_077:
+  name: 如尊桑
+  aliases: []
+  type: 人物.法师
+  note: "认为婆罗门色瓦坚与得瓦色匝是同一人"
+  appearances: [145]
+
+E_078:
+  name: 得瓦色匝
+  aliases: []
+  type: 人物.法师
+  note: "如尊桑认为此人与婆罗门色瓦坚是同一人"
+  appearances: [145]
+
+E_079:
+  name: 巴古·罗钦帕巴
+  aliases: ["帕巴", "东擦帕巴仁波切"]
+  type: 人物.法师
+  note: "努·桑吉益西四大心子之一；精通《根本续》；大努弟子，大宿亦依止其足下"
+  appearances: [209, 212, 286]
+
+E_080:
+  name: 哲敦巴·勒毕卓美
+  aliases: []
+  type: 人物.法师
+  note: "努·桑吉益西四大心子之一；善巧叶《甘露》"
+  appearances: [212]
+
+E_081:
+  name: 旦云丹秋
+  aliases: ["旦戒云丹秋"]
+  type: 人物.法师
+  note: "努·桑吉益西四大心子之一；擅长辩论花"
+  appearances: [210, 213]
+
+E_082:
+  name: 益西旺修
+  aliases: ["索·益西旺修"]
+  type: 人物.法师
+  note: "努·桑吉益西四大心子之一；通达见解密意果实要点"
+  appearances: [211, 213, 281]
+
+E_083:
+  name: 克隆巴·云丹嘉措
+  aliases: ["云丹嘉措"]
+  type: 人物.法师
+  note: "努·桑吉益西殊胜心子；继承灌顶、续部、教言；面见众多本尊"
+  appearances: [214, 228, 230, 233, 239, 244, 252]
+
+E_084:
+  name: 益西嘉措
+  aliases: []
+  type: 人物.法师
+  note: "云丹嘉措之子（兄）；得父亲满瓶倾注传授；面见数多本尊；护法神听从差遣"
+  appearances: [251, 252]
+
+E_085:
+  name: 班玛旺嘉
+  aliases: []
+  type: 人物.法师
+  note: "云丹嘉措之子（弟），益西嘉措的弟弟；修成大威德"
+  appearances: [252, 264, 265]
+
+E_086:
+  name: 拉吉吽穹
+  aliases: []
+  type: 人物.法师
+  note: "益西嘉措的儿子；为米拉日巴传授猛咒"
+  appearances: [271, 272]
+
+E_087:
+  name: 米拉日巴
+  aliases: []
+  type: 人物.法师
+  note: "拉吉吽穹为其传授猛咒"
+  appearances: [272]
+
+E_088:
+  name: 酿·西绕秋
+  aliases: []
+  type: 人物.法师
+  note: "拉吉吽穹弟子中独占鳌头者；对生起圆满大圆满无所不通；建多拉雄经堂；面见金刚橛坛城"
+  appearances: [273, 283, 284]
+
+E_089:
+  name: 西绕炯内
+  aliases: ["秋隆酿·西绕炯内"]
+  type: 人物.法师
+  note: "拉吉吽穹弟子；对生起次第、圆满次第及大圆满通达无碍"
+  appearances: [278, 279]
+
+E_090:
+  name: 安通香切嘉灿
+  aliases: []
+  type: 人物.法师
+  note: "索·益西旺修的三大弟子之一"
+  appearances: [281]
+
+E_091:
+  name: 贡尊西绕益西
+  aliases: []
+  type: 人物.法师
+  note: "索·益西旺修的三大弟子之一"
+  appearances: [282]
+
+E_092:
+  name: 绕通西绕赤诚
+  aliases: []
+  type: 人物.法师
+  note: "索·益西旺修的三大弟子之一"
+  appearances: [282]
+
+E_093:
+  name: 益西炯内
+  aliases: []
+  type: 人物.法师
+  note: "酿·西绕秋的弟子；大宿的上师之一"
+  appearances: [284]
+
+E_094:
+  name: 古云讷华瓦
+  aliases: []
+  type: 人物.法师
+  note: "认为索·益西旺修三大弟子不是以次第传下来的"
+  appearances: [282]
+
+E_095:
+  name: 大宿·释迦炯内
+  aliases: ["大宿", "大宿上师", "拉吉大宿", "鸱枭谷上师"]
+  type: 人物.法师
+  note: "已存在于ch05-part1 (E_580)。本段记其令小宿讲经、渡河神变、让小宿出关、事业托付"
+  appearances: [290, 291, 305, 346, 370, 381, 384, 400, 807, 809, 811, 812, 818, 820, 953]
+
+E_096:
+  name: 小宿·西绕札巴
+  aliases: ["宿巴", "小宿"]
+  type: 人物.法师
+  note: "已存在于ch05-part1 (E_581)。本段大量记述其神变与弟子传承"
+  appearances: [291, 304, 400, 802, 804, 807, 813, 817, 828, 839, 845, 851, 856, 858, 864, 866, 879, 882, 884, 886, 890, 892, 907, 913, 929, 940, 950, 954, 957, 966, 969, 973, 976, 980, 982, 987]
+
+E_097:
+  name: 宿·释迦桑给
+  aliases: ["卓普巴", "宿巴式之子", "密主卓普巴", "至尊卓普巴", "霍波卓普巴"]
+  type: 人物.法师
+  note: "小宿之子；已存在于ch05-part2(E_878延伸)。金刚手化身降临北方弘密法；鄂大译师十六岁木虎年出生；六十一岁木虎年前往密严刹土"
+  appearances: [292, 984, 990, 991, 1002, 1014, 1027, 1031, 1037, 1042, 1044, 1049, 1052, 1057, 1063, 1067, 1075, 1537, 1538]
+
+E_098:
+  name: 光明天王具髻童子
+  aliases: []
+  type: 人物.其他
+  note: "宿氏家族在印度的远祖"
+  appearances: [294]
+
+E_099:
+  name: 曼达藏耶坚
+  aliases: []
+  type: 人物.其他
+  note: "光明天王具髻童子的儿子"
+  appearances: [294]
+
+E_100:
+  name: 宿·嘉瓦色札
+  aliases: []
+  type: 人物.其他
+  note: "曼达藏耶坚之子，在多康降生"
+  appearances: [295]
+
+E_101:
+  name: 宿·巴西尼达札坚
+  aliases: []
+  type: 人物.其他
+  note: "宿·嘉瓦色札的儿子"
+  appearances: [296]
+
+E_102:
+  name: 宿·仁钦嘉措
+  aliases: []
+  type: 人物.其他
+  note: "宿·巴西尼达札坚的儿子"
+  appearances: [296]
+
+E_103:
+  name: 措桑莫波切
+  aliases: ["莫波切"]
+  type: 人物.其他
+  note: "宿·仁钦嘉措的儿子；《青史》说是拉吉大宿的儿子，也有人认为是阿则绕的儿子"
+  appearances: [297, 299]
+
+E_104:
+  name: 宿·阿则绕
+  aliases: ["阿则绕"]
+  type: 人物.其他
+  note: "莫波切的长子；去往印度"
+  appearances: [298, 299, 302]
+
+E_105:
+  name: 宿·卡坚拉坚
+  aliases: []
+  type: 人物.其他
+  note: "莫波切的次子"
+  appearances: [299]
+
+E_106:
+  name: 宿·桑西绕炯内
+  aliases: []
+  type: 人物.其他
+  note: "莫波切的幼子；大宿·释迦炯内之父"
+  appearances: [299, 300]
+
+E_107:
+  name: 宿·敦喇嘛
+  aliases: []
+  type: 人物.其他
+  note: "宿·桑西绕炯内之子"
+  appearances: [300]
+
+E_108:
+  name: 宿·古多吉炯内
+  aliases: []
+  type: 人物.其他
+  note: "宿·桑西绕炯内之子"
+  appearances: [301]
+
+E_109:
+  name: 宿·古穹
+  aliases: []
+  type: 人物.其他
+  note: "宿·桑西绕炯内之子"
+  appearances: [301]
+
+E_110:
+  name: 尼玛酿波
+  aliases: []
+  type: 人物.其他
+  note: "阿则绕的儿子；回到西藏住在塔隆巴"
+  appearances: [302]
+
+E_111:
+  name: 宿·塔巴古钦
+  aliases: []
+  type: 人物.其他
+  note: "尼玛酿波的儿子"
+  appearances: [303]
+
+E_112:
+  name: 德瓦嘉
+  aliases: []
+  type: 人物.其他
+  note: "大宿·释迦炯内的母亲，一位女施主"
+  appearances: [306]
+
+E_113:
+  name: 贡巴绕色
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其座下以三白次第授法受比丘戒"
+  appearances: [310]
+
+E_114:
+  name: 美波仁钦嘉措
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前听受显宗三藏及密续"
+  appearances: [312]
+
+E_115:
+  name: 给贡的吉夏秋
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前听受《甘露药修法》"
+  appearances: [325]
+
+E_116:
+  name: 秋隆杰酿·益西炯内
+  aliases: []
+  type: 人物.法师
+  note: "大宿从其处得到宿氏有缘法《幻化网》与心部"
+  appearances: [327]
+
+E_117:
+  name: 南卡德
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前得受《经部·集密意续》及大圆满窍诀"
+  appearances: [328]
+
+E_118:
+  name: 耶色杰年那旺札
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其座下得受秘密灌顶及方便道"
+  appearances: [329]
+
+E_119:
+  name: 吉释迦嘉灿
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其座下得受秘密灌顶及方便道"
+  appearances: [329]
+
+E_120:
+  name: 酿多杰追措穹
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前听受本来清净与任运自成、《幻化道次第》"
+  appearances: [330]
+
+E_121:
+  name: 如·释迦炯
+  aliases: []
+  type: 人物.法师
+  note: "在青普获得长寿自在；有十八位秘密降伏骷髅鬼卒；为桑古赐予灌顶和法本"
+  appearances: [331, 348, 351, 359, 360, 361, 366]
+
+E_122:
+  name: 丹玛西策
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前听闻真实意"
+  appearances: [331]
+
+E_123:
+  name: 耶敦索南释迦
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前听受圆满的《经部·集密意续》"
+  appearances: [332]
+
+E_124:
+  name: 东擦香切
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前聆听《经部·集密意续》传承"
+  appearances: [333]
+
+E_125:
+  name: 嘉敦罗珠
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前聆听《经部·集密意续》传承"
+  appearances: [333]
+
+E_126:
+  name: 噶多益西酿波
+  aliases: []
+  type: 人物.法师
+  note: "大宿在其面前聆听《经部·集密意续》传承"
+  appearances: [333]
+
+E_127:
+  name: 桑古西绕嘉波
+  aliases: ["桑古西绕", "桑古"]
+  type: 人物.法师
+  note: "大宿弟子；受大宿派遣去如·释迦炯处求法"
+  appearances: [353, 357, 360, 365, 368]
+
+E_128:
+  name: 努萨瓦旺修
+  aliases: []
+  type: 人物.其他
+  note: "努·桑吉益西的父亲"
+  appearances: [122]
+
+E_129:
+  name: 切姆札西措
+  aliases: []
+  type: 人物.其他
+  note: "努·桑吉益西的母亲"
+  appearances: [122]
+
+E_130:
+  name: 赤松德赞
+  aliases: []
+  type: 人物.帝王
+  note: "涅·赞那革玛绕时期的国王；铁马年诞生；土龙年圆寂"
+  appearances: [18, 222, 223, 2236]
+
+E_131:
+  name: 才帮匝萨
+  aliases: []
+  type: 人物.王妃
+  note: "赤松德赞圆寂后的王妃；心行刚强难化，使译师班智达威望降低"
+  appearances: [19]
+
+E_132:
+  name: 涅·达札拉囊
+  aliases: []
+  type: 人物.其他
+  note: "涅·赞那革玛绕的父亲"
+  appearances: [10]
+
+E_133:
+  name: 哲萨卓吉
+  aliases: []
+  type: 人物.其他
+  note: "涅·赞那革玛绕的母亲"
+  appearances: [10]
+
+E_134:
+  name: 涅·格敦
+  aliases: ["格敦"]
+  type: 人物.其他
+  note: "涅·赞那革玛绕的伯父；诬蔑涅译师为外道咒师；后被护法神降伏"
+  appearances: [22, 65, 81, 85]
+
+E_135:
+  name: 拉莫哦赞
+  aliases: []
+  type: 人物.其他
+  note: "涅·赞那革玛绕的侍者"
+  appearances: [30]
+
+E_136:
+  name: 切夏如
+  aliases: []
+  type: 人物.其他
+  note: "诬蔑涅译师为盗贼并追杀；后被涅译师以金刚橛降伏并灭种"
+  appearances: [33, 53, 62, 63]
+
+E_137:
+  name: 珠哲穹
+  aliases: []
+  type: 人物.其他
+  note: "赶鹿者；马惊逃后气急败坏要杀涅译师；后被涅译师诛法降伏"
+  appearances: [38, 45, 91]
+
+E_138:
+  name: 天子赞普
+  aliases: []
+  type: 人物.帝王
+  note: "被母后玛坚毒死"
+  appearances: [41]
+
+E_139:
+  name: 玛坚
+  aliases: []
+  type: 人物.王妃
+  note: "天子赞普的母后；毒死天子赞普"
+  appearances: [41]
+
+E_140:
+  name: 现巴玛热则
+  aliases: []
+  type: 人物.其他
+  note: "努·桑吉益西前一世在印度的转生"
+  appearances: [164]
+
+E_141:
+  name: 朗达玛
+  aliases: []
+  type: 人物.帝王
+  note: "国王的侄子；毁坏佛法；后被拉隆·华杰多吉降伏"
+  appearances: [166, 191, 199, 201, 224]
+
+E_142:
+  name: 赤巴坚
+  aliases: []
+  type: 人物.帝王
+  note: "国王；努·桑吉益西降伏冤家后到国王赤巴坚之前"
+  appearances: [189]
+
+E_143:
+  name: 哲修江
+  aliases: []
+  type: 人物.法师
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_144:
+  name: 耶修那母
+  aliases: []
+  type: 人物.法师
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_145:
+  name: 杰修释迦嘉
+  aliases: []
+  type: 人物.法师
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_146:
+  name: 宿修多炯
+  aliases: []
+  type: 人物.法师
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_147:
+  name: 耶修觉白尔
+  aliases: []
+  type: 人物.法师
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_148:
+  name: 巴修行者索南酿波
+  aliases: ["巴修索南酿波"]
+  type: 人物.法师
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_149:
+  name: 达那牧民
+  aliases: []
+  type: 人物.其他
+  note: "二名达那牧民带着松石和铜锅与小宿结伴前往大宿处；不愿吃酒糟菜羹；供品被退还后悻悻离去，对宿氏正法妄加诽谤"
+  appearances: [751, 757, 760]
+
+E_150:
+  name: 香巴人
+  aliases: []
+  type: 人物.其他
+  note: "带着铠甲与小宿结伴前往大宿处；吃了少量酒糟；铠甲被上师留下"
+  appearances: [751, 757]
+
+E_151:
+  name: 马鸣论师
+  aliases: []
+  type: 人物.法师
+  note: "比喻：四位弟子如马鸣论师成为圣天菩萨的调伏对象"
+  appearances: [896]
+
+E_152:
+  name: 圣天菩萨
+  aliases: ["圣天"]
+  type: 人物.法师
+  note: "比喻中引用：马鸣论师被圣天菩萨调伏"
+  appearances: [896]
+
+E_153:
+  name: 多吉札
+  aliases: ["卓普巴亲生子多吉札"]
+  type: 人物.法师
+  note: "卓普巴亲生子；杰敦嘉那使其打开智慧，令卓普巴更加喜悦"
+  appearances: [1093]
+
+E_154:
+  name: 杰敦嘉那
+  aliases: ["拉吉嘉那", "嘉那尊者", "嘉那巴"]
+  type: 人物.法师
+  note: "已存在于ch05-part2 (E_858)。木狗年生；卓普巴四那士之一；驳倒嘉尊桑师徒；五十六岁土蛇年圆寂"
+  appearances: [1078, 1079, 1081, 1085, 1088, 1091, 1092, 1095, 1096, 1105]
+
+E_155:
+  name: 穹波札色
+  aliases: []
+  type: 人物.法师
+  note: "已存在于ch05-part2 (E_844)。大法相师；派四位弟子驳斥小宿；嫉妒心起说杀小宿能成佛；杰敦嘉那在其前听闻《般若》"
+  appearances: [873, 875, 905, 907, 908, 915, 1085]
+
+E_156:
+  name: 钦波云丹松
+  aliases: ["喇嘛钦波云丹松", "云丹松", "云丹宗"]
+  type: 人物.法师
+  note: "杰敦嘉那侄子；火马年诞生；十一岁起求学，十三年依止叔叔；二十四岁任住持"
+  appearances: [1107, 1108, 1110, 1185]
+
+E_157:
+  name: 螳螂尊者
+  aliases: ["卫巴敦夏", "卫巴敦夏嘎"]
+  type: 人物.法师
+  note: "旺侗族；去卓普巴寺院写字入门；跟随杰敦嘉那得一切续教授；在螳螂树岩山修行得名"
+  appearances: [1111, 1114, 1115, 1116, 1117, 1123, 1126, 1180]
+
+E_158:
+  name: 卫巴秀波
+  aliases: ["卫巴月波"]
+  type: 人物.法师
+  note: "在卓普巴寺院当文书入佛门；跟随嘉那尊者；芒境贡塘七日显大圆满智慧；七十岁圆寂；护持寺院十八年"
+  appearances: [1111, 1128, 1129, 1130, 1135, 1136, 1139, 1146, 1148, 1155]
+
+E_159:
+  name: 月波敦则
+  aliases: ["月波仁波切"]
+  type: 人物.法师
+  note: "卫巴秀波心子；木鼠年在善戒东寺诞生；成就者世家；其父桑吉单穹跟随达波嘉热"
+  appearances: [1156, 1160, 1161, 1165, 1169]
+
+E_160:
+  name: 桑吉单穹
+  aliases: ["小达波"]
+  type: 人物.法师
+  note: "月波敦则之父；跟随达波嘉热被称为小达波；到南岩后在霍多坡芒刚寺利益有情；对妻子预言自己死后趋至持明果位"
+  appearances: [1161, 1162, 1163, 1167]
+
+E_161:
+  name: 达波嘉热
+  aliases: []
+  type: 人物.法师
+  note: "桑吉单穹跟随他而被称为小达波"
+  appearances: [1162]
+
+E_162:
+  name: 帮姆
+  aliases: []
+  type: 人物.其他
+  note: "桑吉单穹之明妃，月波敦则之母"
+  appearances: [1165, 1175]
+
+E_163:
+  name: 单巴友穹瓦
+  aliases: []
+  type: 人物.法师
+  note: "在友瓦岩山挖掘岩石建寺的修行者"
+  appearances: [1119]
+
+E_164:
+  name: 敦巴喇嘉
+  aliases: []
+  type: 人物.法师
+  note: "卫巴秀波弟子之一"
+  appearances: [1156]
+
+E_165:
+  name: 为巴觉索
+  aliases: []
+  type: 人物.法师
+  note: "月波尊者六心子之一"
+  appearances: [1156, 1242]
+
+E_166:
+  name: 尼敦涅玛多吉
+  aliases: []
+  type: 人物.法师
+  note: "卫巴秀波弟子之一"
+  appearances: [1157]
+
+E_167:
+  name: 美敦滚波
+  aliases: []
+  type: 人物.法师
+  note: "巴卡释传承之一环"
+  appearances: [1157, 1321]
+
+E_168:
+  name: 夏根嘎多吉
+  aliases: []
+  type: 人物.法师
+  note: "依止过卫巴秀波"
+  appearances: [1157]
+
+E_169:
+  name: 努曼
+  aliases: []
+  type: 人物.法师
+  note: "赞叹月波敦则说'卫毕觉哲，你与我的宝马驹一样'，送十一斗青稞"
+  appearances: [1195]
+
+E_170:
+  name: 拉康巴
+  aliases: ["上师拉康巴", "拉康巴上师"]
+  type: 人物.法师
+  note: "已从根本上消除嫉妒心；捎青稞肉酥油给月波尊者；觉索后被月波尊者交传给拉康巴大师"
+  appearances: [1197, 1210, 1311]
+
+E_171:
+  name: 班善知识
+  aliases: []
+  type: 人物.法师
+  note: "杰敦嘉那在其前听闻《俱舍论》"
+  appearances: [1086]
+
+E_172:
+  name: 达巴卡切
+  aliases: []
+  type: 人物.法师
+  note: "杰敦嘉那在其面前听闻《中观》《因明》"
+  appearances: [1086]
+
+E_173:
+  name: 索南益西
+  aliases: []
+  type: 人物.法师
+  note: "杰敦嘉那也依止过他"
+  appearances: [1087]
+
+E_174:
+  name: 嘉尊桑
+  aliases: []
+  type: 人物.法师
+  note: "嘉尊桑师徒与拉吉秋库聚集时，杰敦嘉那将之驳倒"
+  appearances: [1091]
+
+E_175:
+  name: 拉吉秋库
+  aliases: []
+  type: 人物.法师
+  note: "与嘉尊桑师徒聚集，杰敦嘉那在此辩论"
+  appearances: [1091]
+
+E_176:
+  name: 嘉藏古瓦
+  aliases: []
+  type: 人物.法师
+  note: "杰敦嘉那在其面前得受甘露法"
+  appearances: [1097]
+
+E_177:
+  name: 卓达桑
+  aliases: []
+  type: 人物.法师
+  note: "杰敦嘉那在其面前得受《摧破金刚》《根本金刚橛》法"
+  appearances: [1097]
+
+E_178:
+  name: 单巴布芒
+  aliases: []
+  type: 人物.法师
+  note: "杰敦嘉那在其面前得受布派大圆满"
+  appearances: [1099]
+
+E_179:
+  name: 觉姆年姆
+  aliases: []
+  type: 人物.法师
+  note: "杰敦嘉那在其面前得受康派大圆满阿若精髓"
+  appearances: [1099]
+
+E_180:
+  name: 达德觉夏嘎够
+  aliases: ["达德措夏嘎", "达德"]
+  type: 人物.法师
+  note: "已存在于ch05-part2 (E_828)。本段：宿·释迦桑给在舅舅达德座下深入得受经部类"
+  appearances: [918, 993, 1018]
+
+E_181:
+  name: 烂敦夏嘎桑
+  aliases: []
+  type: 人物.法师
+  note: "穹波札色派去驳斥小宿的四位弟子之一"
+  appearances: [888]
+
+E_182:
+  name: 玖敦
+  aliases: []
+  type: 人物.法师
+  note: "穹波札色派去驳斥小宿的四位弟子之一"
+  appearances: [883]
+
+E_183:
+  name: 月波尊者
+  aliases: ["月波敦则"]
+  type: 人物.法师
+  note: "五十六岁土羊年圆寂；遗体安放哦嘎寺四月后迎请至善塘嘉经堂荼毗；心子六位"
+  appearances: [1204, 1213, 1220, 1235, 1241, 1267, 1289, 1309]
+
+E_184:
+  name: 扬仓巴
+  aliases: ["扬上师"]
+  type: 人物.法师
+  note: "弟子藏古舍波在月波尊者前讲述其生平"
+  appearances: [1204, 1206]
+
+E_185:
+  name: 藏古舍波
+  aliases: []
+  type: 人物.法师
+  note: "扬仓巴的弟子；在月波尊者面前讲述扬上师生平"
+  appearances: [1204]
+
+E_186:
+  name: 达敦觉益
+  aliases: ["觉益尊者", "觉益"]
+  type: 人物.法师
+  note: "月波尊者心子之一；水羊年出生；六十八岁铁虎年圆寂（邬金巴诞生那一年）；出现金刚舍利和普通舍利；七年形影不离依止月波尊者"
+  appearances: [1241, 1244, 1255, 1261, 1267, 1279, 1288, 1293, 1305]
+
+E_187:
+  name: 玛哈呵波
+  aliases: []
+  type: 人物.法师
+  note: "月波尊者六心子之一"
+  appearances: [1241]
+
+E_188:
+  name: 克巴觉南
+  aliases: []
+  type: 人物.法师
+  note: "月波尊者六心子之一"
+  appearances: [1241]
+
+E_189:
+  name: 桑敦霍札
+  aliases: []
+  type: 人物.法师
+  note: "月波尊者六心子之一"
+  appearances: [1242]
+
+E_190:
+  name: 尼敦喇嘛
+  aliases: []
+  type: 人物.法师
+  note: "月波尊者六心子之一"
+  appearances: [1242]
+
+E_191:
+  name: 达敦觉波
+  aliases: []
+  type: 人物.法师
+  note: "达敦觉益之父；上沃如地方首领；对轮回生厌离带四仆人出逃入佛门；对旧密教法极为精通"
+  appearances: [1245, 1247]
+
+E_192:
+  name: 纽切哦热巴
+  aliases: []
+  type: 人物.法师
+  note: "拉吉烂尼察的心子；达敦觉波主仆五人在其面前入佛门"
+  appearances: [1247, 1252]
+
+E_193:
+  name: 帕姆哲巴
+  aliases: []
+  type: 人物.法师
+  note: "觉波在其面前听道果及大手印；觉波视其为根本上师之一"
+  appearances: [1249, 1252]
+
+E_194:
+  name: 哦敦喇嘛察敦
+  aliases: []
+  type: 人物.法师
+  note: "觉波在其座下听受刚派大手印《道情歌集》"
+  appearances: [1250]
+
+E_195:
+  name: 桑热卓热
+  aliases: []
+  type: 人物.法师
+  note: "觉波在其面前听受热穹巴法要"
+  appearances: [1250]
+
+E_196:
+  name: 囊敦滚波
+  aliases: []
+  type: 人物.法师
+  note: "觉波在其面前听闻大威德、金刚橛等法门"
+  appearances: [1251]
+
+E_197:
+  name: 玛敦上师
+  aliases: []
+  type: 人物.法师
+  note: "觉益十二岁在其面前请求胜乐金刚和金刚手甘露滴法门"
+  appearances: [1256]
+
+E_198:
+  name: 上师匝
+  aliases: []
+  type: 人物.法师
+  note: "觉益从其得受大圆满教义及教言"
+  appearances: [1259]
+
+E_199:
+  name: 色德隆巴
+  aliases: []
+  type: 人物.法师
+  note: "觉益从其得受大圆满教义及教言"
+  appearances: [1259]
+
+E_200:
+  name: 吉赞拉
+  aliases: []
+  type: 人物.法师
+  note: "觉益父亲的弟子；觉益于其面前听闻刚派大手印"
+  appearances: [1262]
+
+E_201:
+  name: 桑热嘉瑞
+  aliases: []
+  type: 人物.法师
+  note: "觉益在其座下听受热穹巴法门、美派喜金刚、具密文殊、乐叶巴胜乐金刚、莲生金刚修法、雅派道果法、息法等"
+  appearances: [1262]
+
+E_202:
+  name: 囊敦觉恰
+  aliases: []
+  type: 人物.法师
+  note: "觉益从其闻受金刚橛法"
+  appearances: [1265]
+
+E_203:
+  name: 坡札匝波
+  aliases: []
+  type: 人物.其他
+  note: "抢走阿阇黎化身坐骑"
+  appearances: [1299]
+
+E_204:
+  name: 觉索
+  aliases: []
+  type: 人物.法师
+  note: "达敦觉益的弟弟；火狗年降生；从小在月波尊者跟前；成为出类拔萃的智者；三十一岁火龙年圆寂"
+  appearances: [1255, 1308, 1309, 1312]
+
+E_205:
+  name: 达敦宿则
+  aliases: []
+  type: 人物.法师
+  note: "桑吉温敦的弟子；对《密藏续》作广释；撰著有关传承多数历史；对幻部心部全部精通"
+  appearances: [1315, 1316, 1430]
+
+E_206:
+  name: 桑吉温敦
+  aliases: []
+  type: 人物.法师
+  note: "达敦宿则的上师"
+  appearances: [1316]
+
+E_207:
+  name: 雍敦巴
+  aliases: ["雍敦多吉华", "多吉白", "多吉华"]
+  type: 人物.法师
+  note: "种族为兰；木猴年出生；宿·香巴桑给早期弟子；成为噶玛巴自生金刚得意弟子；对《密藏续》作《明镜疏》；年青时奉诏到汉地；成布敦仁波切传承弟子精通时轮金刚；下半生受比丘戒改名多吉华；八十二岁木蛇年圆寂"
+  appearances: [1318, 1445, 1448, 1449, 1458, 1462, 1468, 1476, 1478]
+
+E_208:
+  name: 密主卓普巴
+  aliases: []
+  type: 人物.法师
+  note: "藏巴新敦和贡张巴尼敦秋吉桑给二人的上师"
+  appearances: [1320]
+
+E_209:
+  name: 藏巴新敦
+  aliases: []
+  type: 人物.法师
+  note: "密主卓普巴的弟子"
+  appearances: [1320]
+
+E_210:
+  name: 贡张巴尼敦秋吉桑给
+  aliases: []
+  type: 人物.法师
+  note: "密主卓普巴的弟子"
+  appearances: [1320]
+
+E_211:
+  name: 藏那哦白
+  aliases: []
+  type: 人物.法师
+  note: "巴卡释传承之一环"
+  appearances: [1321]
+
+E_212:
+  name: 喇嘛仲
+  aliases: []
+  type: 人物.法师
+  note: "巴卡释传承之一环"
+  appearances: [1321]
+
+E_213:
+  name: 巴卡释迦光
+  aliases: ["释迦光"]
+  type: 人物.法师
+  note: "宿氏后代；巴卡释传承一环"
+  appearances: [1321]
+
+E_214:
+  name: 宿·旺钦哦波
+  aliases: ["旺钦哦波"]
+  type: 人物.法师
+  note: "被誉为成就之王；能清清楚楚回忆前世；有五个女儿无儿子；后得二子释迦怙、释迦光"
+  appearances: [1325, 1326, 1333]
+
+E_215:
+  name: 大班智达释迦西日
+  aliases: ["释迦西日"]
+  type: 人物.法师
+  note: "木鼠年被迎请到措普；后到鸱枭谷；预言旺钦哦波将生二子弘法利生"
+  appearances: [1326, 1327]
+
+E_216:
+  name: 释迦怙
+  aliases: []
+  type: 人物.法师
+  note: "旺钦哦波长子；也有神奇之处"
+  appearances: [1333, 1334, 1341]
+
+E_217:
+  name: 宿·释迦光
+  aliases: ["释迦光", "巴式释迦光"]
+  type: 人物.法师
+  note: "旺钦哦波次子；从小顺口说神通；依嘉卡贡巴上师后听受父传法要；六十三岁圆寂遗体能愈麻风病；皇帝封号巴式国师；赏班霍四十五户土地"
+  appearances: [1334, 1335, 1341, 1345, 1347, 1354, 1372, 1381, 1384, 1387, 1397, 1400]
+
+E_218:
+  name: 嘉卡贡巴
+  aliases: ["嘉卡贡巴上师"]
+  type: 人物.法师
+  note: "宿·释迦光依止其后听受父亲传承所有法要"
+  appearances: [1335]
+
+E_219:
+  name: 莫尼嘎热
+  aliases: ["嘎热"]
+  type: 人物.法师
+  note: "亲友与其反目成仇；从释迦光得禅杖中出单坚护法；后建经堂造佛塔；携释迦光至南岩卡切修行；后去蒙古为忽必烈行勾召术"
+  appearances: [1344, 1349, 1352, 1354, 1358, 1362, 1366, 1368]
+
+E_220:
+  name: 忽必烈
+  aliases: ["国王忽必烈", "忽必烈皇帝"]
+  type: 人物.帝王
+  note: "嘎热为其行勾召术召回弟弟阿热霍嘎；享用长寿水据说活百岁；嘉奖颁布敕书封释迦光为国师"
+  appearances: [1360, 1362, 1366, 1374, 1394, 1395, 1800]
+
+E_221:
+  name: 阿热霍嘎
+  aliases: []
+  type: 人物.帝王
+  note: "忽必烈弟弟；执掌国土；被嘎热以勾召术召出"
+  appearances: [1359, 1367]
+
+E_222:
+  name: 阿达酿
+  aliases: []
+  type: 人物.法师
+  note: "释迦光与嘎热在南岩卡切见阿达酿父子并请受酿派法要；其伏藏品标题中载有长寿水伏藏信息"
+  appearances: [1355, 1373]
+
+E_223:
+  name: 敦巴绕呵
+  aliases: []
+  type: 人物.法师
+  note: "巴式释迦光派其去见嘎热；后受嘎热委托供养上师释迦光"
+  appearances: [1372, 1374]
+
+E_224:
+  name: 革日穹札
+  aliases: []
+  type: 人物.法师
+  note: "参与开取伏藏的人之一"
+  appearances: [1381]
+
+E_225:
+  name: 温钦释迦桑
+  aliases: []
+  type: 人物.法师
+  note: "参与开取伏藏的人之一"
+  appearances: [1381]
+
+E_226:
+  name: 阿嘎雅那
+  aliases: []
+  type: 人物.其他
+  note: "宣旨钦差；参与开取伏藏"
+  appearances: [1382]
+
+E_227:
+  name: 达那敦德
+  aliases: []
+  type: 人物.法师
+  note: "宿·释迦光弟子；法要传达释迦佩再传香巴桑给；父亲宿·尼玛桑给为祖父国师之子；在卓普出家；以诛法在刚札降伏三万军兵"
+  appearances: [1403, 1404, 1407, 1413]
+
+E_228:
+  name: 达释迦佩
+  aliases: []
+  type: 人物.法师
+  note: "达那敦德法要的承接者；宿·香巴桑给在其面前听受《密藏续》"
+  appearances: [1404, 1425]
+
+E_229:
+  name: 宿·尼玛桑给
+  aliases: []
+  type: 人物.法师
+  note: "达那敦德的父亲；祖父国师之子"
+  appearances: [1405]
+
+E_230:
+  name: 卓译师香巴花
+  aliases: []
+  type: 人物.法师
+  note: "达那敦德在卓普出家时赐其法名"
+  appearances: [1406]
+
+E_231:
+  name: 萨班德
+  aliases: []
+  type: 人物.其他
+  note: "蒙古军入侵时献给达那敦德大量黄金"
+  appearances: [1408]
+
+E_232:
+  name: 大官根云戒匝
+  aliases: []
+  type: 人物.大臣
+  note: "达那敦德依照其旨意以诛法降伏蒙古军"
+  appearances: [1413]
+
+E_233:
+  name: 宿·香巴桑给
+  aliases: ["香巴桑给"]
+  type: 人物.法师
+  note: "达那敦德之子；在卓普出家；十四岁开始讲经说法得智者称号；被苯波徒下毒仅住世二十七岁；确定无疑是位化身；弟众极多"
+  appearances: [1416, 1418, 1419, 1422, 1424, 1440, 1441, 1452, 1455, 1482, 1488, 1512]
+
+E_234:
+  name: 荣敦多吉华
+  aliases: []
+  type: 人物.法师
+  note: "赞叹宿·香巴桑给为'我的上师宿全知"
+  appearances: [1424]
+
+E_235:
+  name: 杰敦哲巴白
+  aliases: []
+  type: 人物.法师
+  note: "宿·香巴桑给十九岁在其面前听受《幻化网道次第》和大圆满顿然生起证悟"
+  appearances: [1428]
+
+E_236:
+  name: 宿隆巴哲土西年
+  aliases: []
+  type: 人物.法师
+  note: "宿·香巴桑给在其面前得受《经部·集密意续》灌顶及色派寂猛法门"
+  appearances: [1431]
+
+E_237:
+  name: 塔罗尼玛嘉村
+  aliases: []
+  type: 人物.法师
+  note: "宿·香巴桑给在其面前听声明学、因明"
+  appearances: [1432]
+
+E_238:
+  name: 卓普阿阇黎华秋
+  aliases: []
+  type: 人物.法师
+  note: "宿·香巴桑给在其面前听受《金刚鬘》及新派广大法门"
+  appearances: [1433]
+
+E_239:
+  name: 桑当哲巴华
+  aliases: []
+  type: 人物.法师
+  note: "宿·香巴桑给在其面前听受道果"
+  appearances: [1434]
+
+E_240:
+  name: 喇嘛云丹滚
+  aliases: []
+  type: 人物.法师
+  note: "宿·香巴桑给在其面前听《金刚手》和《摧破金刚》"
+  appearances: [1435]
+
+E_241:
+  name: 温华钦滚
+  aliases: []
+  type: 人物.法师
+  note: "宿·香巴桑给在其面前听受护法、医学、历算"
+  appearances: [1436]
+
+E_242:
+  name: 刚瓦释迦白
+  aliases: []
+  type: 人物.法师
+  note: "宿·香巴桑给在其面前得受红黑大威德和界部法要；雍敦巴在其后跟随宿·香巴桑给学修"
+  appearances: [1437, 1455]
+
+E_243:
+  name: 噶玛巴自生金刚
+  aliases: ["自生金刚"]
+  type: 人物.法师
+  note: "雍敦巴成为其得意弟子；赐大安慰使雍敦巴开始实修大圆满法"
+  appearances: [1451, 1471]
+
+E_244:
+  name: 布敦仁波切
+  aliases: []
+  type: 人物.法师
+  note: "雍敦巴成为其传承弟子后对时轮金刚极精通"
+  appearances: [1468]
+
+E_245:
+  name: 雅德大班智达
+  aliases: []
+  type: 人物.法师
+  note: "见到雍敦巴《显密成佛有别》论后生起无比信心，师徒十五人到其面前恭敬顶礼"
+  appearances: [1474]
+
+E_246:
+  name: 凑巴秋隆巴
+  aliases: []
+  type: 人物.法师
+  note: "雍敦巴下半生于其面前受比丘戒"
+  appearances: [1476]
+
+E_247:
+  name: 达那卓玛瓦桑哲多吉
+  aliases: ["桑哲多吉"]
+  type: 人物.法师
+  note: "哲坚之子；木羊年出生；宿·香巴桑给晚期弟子；在宿·香巴桑给面前广闻法尤精幻化网；修行大圆满心滴达觉性如量境界；八十二岁火龙年圆寂"
+  appearances: [1446, 1480, 1481, 1485, 1488, 1493]
+
+E_248:
+  name: 兰涅擦巴索南滚波
+  aliases: []
+  type: 人物.法师
+  note: "达那卓玛瓦桑哲多吉在其面前得受幻化网灌顶"
+  appearances: [1483]
+
+E_249:
+  name: 扬温的宿·释迦炯
+  aliases: []
+  type: 人物.法师
+  note: "与鸱枭谷上师桑给巴从小被达那卓玛瓦桑哲多吉养育"
+  appearances: [1488]
+
+E_250:
+  name: 上师桑给巴
+  aliases: []
+  type: 人物.法师
+  note: "与扬温的宿·释迦炯从小被达那卓玛瓦桑哲多吉养育"
+  appearances: [1488]
+
+E_251:
+  name: 兰萨瓦
+  aliases: ["香巴全知"]
+  type: 人物.法师
+  note: "孩提时代得受达那卓玛瓦桑哲多吉赐予众多灌顶加持而成大智者"
+  appearances: [1491]
+
+E_252:
+  name: 宿·桑波华
+  aliases: []
+  type: 人物.法师
+  note: "宿·释迦炯之父；接受弯颜特汗诏书奉诏往汉地任皇帝诵经师；在地德宫殿建立密宗；刻版《根本密藏续》等前译派二十八法部各印千份；染热病圆寂于汉地；住世三十八岁"
+  appearances: [1496, 1497, 1499, 1502, 1507, 1514, 1516, 1523, 1529]
+
+E_253:
+  name: 弯颜特汗
+  aliases: ["弯颜特", "国王弯颜特"]
+  type: 人物.帝王
+  note: "皇帝；在宿·桑波华面前请求真实九本尊灌顶和长寿灌顶；赏赐银子官印锦缎；因风病用热疗法后驾崩；死后在桑波华境界中现身问话"
+  appearances: [1498, 1504, 1511, 1517]
+
+E_254:
+  name: 宿哈·释迦炯
+  aliases: ["释迦炯", "释迦炯内"]
+  type: 人物.法师
+  note: "宿·桑波华之子；从小研修父辈祖辈法要觉醒前世缘分；七岁开始住持讲学院；成为宿派唯一教主；撰《集密意续释》等大量论典；三十八岁圆寂"
+  appearances: [1530, 1532, 1533, 1536, 1541, 1552, 1556, 1558, 1564]
+
+E_255:
+  name: 喇嘛根帮巴
+  aliases: []
+  type: 人物.法师
+  note: "宿哈·释迦炯在其面前受沙弥戒"
+  appearances: [1536]
+
+E_256:
+  name: 秋吉索朗札巴
+  aliases: []
+  type: 人物.法师
+  note: "宿哈·释迦炯在其面前受比丘戒"
+  appearances: [1537]
+
+E_257:
+  name: 特莫达
+  aliases: []
+  type: 人物.其他
+  note: "蒙古大人物；见宿哈·释迦炯生起信心求长寿灌顶；后亦为国王使者之一"
+  appearances: [1544, 1527]
+
+E_258:
+  name: 色桑列钦
+  aliases: []
+  type: 人物.法师
+  note: "宿哈·释迦炯依止的众多上师之一"
+  appearances: [1546]
+
+E_259:
+  name: 嘉瓦荣
+  aliases: []
+  type: 人物.法师
+  note: "宿哈·释迦炯依止的众多上师之一"
+  appearances: [1546]
+
+E_260:
+  name: 嘉扬桑哲多吉
+  aliases: []
+  type: 人物.法师
+  note: "宿哈·释迦炯依止的众多上师之一"
+  appearances: [1546]
+
+E_261:
+  name: 卓钦桑多
+  aliases: []
+  type: 人物.法师
+  note: "宿哈·释迦炯在其面前听受《经·集密意续》灌顶"
+  appearances: [1552]
+
+E_262:
+  name: 桑吉仁钦嘉村
+  aliases: ["桑吉仁钦", "小宿大师"]
+  type: 人物.法师
+  note: "卓玛瓦之子；铁虎年出生；六岁精通密藏续；十四岁成为灌顶阿阇黎；四十岁造《密藏续大疏》；出家后对幻化网通达无碍；七十二岁铁牛年来卫藏；八十二岁铁猪年圆寂；从小宿大师降生到此时已四百一十七年"
+  appearances: [1557, 1560, 1561, 1564, 1567, 1573, 1578, 1590, 1594]
+
+E_263:
+  name: 涅巴德勒巴
+  aliases: ["涅巴德勒"]
+  type: 人物.法师
+  note: "宿哈·释迦炯培养的弟子之一；也有其编辑的教言"
+  appearances: [1558]
+
+E_264:
+  name: 古罗益桑则巴
+  aliases: ["古译师益桑则巴"]
+  type: 人物.法师
+  note: "桑吉仁钦七十岁时摄受此人；传幻化网等大量灌顶和传承；自言已抵至听闻大海的彼岸"
+  appearances: [1578, 1587]
+
+E_265:
+  name: 旺札巴嘉村
+  aliases: []
+  type: 人物.法师
+  note: "桑吉仁钦七十二岁铁牛年在刚波山禅定洲恭敬依止；传其《集密意续》等灌顶及《密藏续》传承"
+  appearances: [1591]
+
+E_266:
+  name: 土巴多吉
+  aliases: []
+  type: 人物.法师
+  note: "桑吉仁钦嘉村的心子"
+  appearances: [1576]
+
+E_267:
+  name: 美龙巴
+  aliases: ["美龙巴尊者"]
+  type: 人物.法师
+  note: "桑吉仁钦在其所著文稿基础上作引导文"
+  appearances: [1585]
+
+E_268:
+  name: 香色益嘉瓦
+  aliases: []
+  type: 人物.法师
+  note: "大悲玛尔引导从其传下"
+  appearances: [1586]
+
+E_269:
+  name: 秋库刚
+  aliases: []
+  type: 人物.法师
+  note: "桑吉仁钦嘉村在其面前受近圆戒"
+  appearances: [1573]
+
+E_270:
+  name: 古云讷华
+  aliases: ["古云讷华大师"]
+  type: 人物.法师
+  note: "父亲古敦炯内多吉，母亲哲塔吉，水猴年出生；在金益堪钦面前出家"
+  appearances: [1597, 1598]
+
+E_271:
+  name: 古敦炯内多吉
+  aliases: []
+  type: 人物.其他
+  note: "古云讷华之父"
+  appearances: [1598]
+
+E_272:
+  name: 金益堪钦
+  aliases: []
+  type: 人物.法师
+  note: "古云讷华在其面前出家"
+  appearances: [1599]
+
+E_273:
+  name: 噶玛巴德云香巴
+  aliases: []
+  type: 人物.法师
+  note: "古云讷华于其前得受菩萨戒并听受六法"
+  appearances: [1599]
+
+E_274:
+  name: 王妃塔布拉
+  aliases: ["塔布拉"]
+  type: 人物.王妃
+  note: "弯颜特汗之妃；听闻桑波华所见国王亡灵事后感伤落泪；赐十升银子"
+  appearances: [1520]
+
+E_275:
+  name: 拉吉烂尼察
+  aliases: []
+  type: 人物.法师
+  note: "纽切哦热巴为其心子"
+  appearances: [1247]
+
+E_276:
+  name: 邬金巴
+  aliases: []
+  type: 人物.法师
+  note: "诞生的那一年即为觉益尊者圆寂之年（铁虎年）"
+  appearances: [1305]
+
+E_277:
+  name: 嘉扬
+  aliases: ["近侍嘉扬"]
+  type: 人物.其他
+  note: "被派去汉地迎请宿·桑波华回藏"
+  appearances: [1515]
+
+E_278:
+  name: 特王妃
+  aliases: []
+  type: 人物.王妃
+  note: "赠送宿·释迦桑给丰厚财物"
+  appearances: [1539]
+
+E_279:
+  name: 卓钦桑吉仁钦
+  aliases: []
+  type: 人物.法师
+  note: "前译密宗教主；七十岁土猪年时传灌顶；九十岁铁牛年圆寂"
+  appearances: [1603]
+
+E_280:
+  name: 瓦那绕那
+  aliases: ["大班智达瓦那绕那"]
+  type: 人物.法师
+  note: "赐予无上续部灌顶、真实名经等"
+  appearances: [1600]
+
+E_281:
+  name: 噶玛巴秋札嘉措
+  aliases: ["第七世噶玛巴", "第七世噶玛巴秋札嘉措"]
+  type: 人物.法师
+  note: "卓钦桑吉仁钦向其供养三类心释等法教"
+  appearances: [1616, 1625, 1639]
+
+E_282:
+  name: 秋吉札巴
+  aliases: ["第四世红帽金厄仁波切", "秋吉札巴益西吉祥贤"]
+  type: 人物.法师
+  note: "父亲东滚巴嘉，母亲札萨索南卓玛；水鸡年出生；七十三岁木鸡年圆寂；著有修法、注释、坛城仪轨、问答等丰富论典"
+  appearances: [1623, 1624, 1626, 1636, 1645]
+
+E_283:
+  name: 古大译师益桑则巴
+  aliases: ["古大译师"]
+  type: 人物.法师
+  note: "作为秋吉札巴的亲教师传比丘戒"
+  appearances: [1628]
+
+E_284:
+  name: 安兰嘉瓦秋扬
+  aliases: []
+  type: 人物.法师
+  note: "其后裔大译师索南嘉措传法给红帽"
+  appearances: [1631]
+
+E_285:
+  name: 索南嘉措
+  aliases: ["大译师索南嘉措"]
+  type: 人物.法师
+  note: "安兰嘉瓦秋扬的后裔；传新旧派法门给红帽"
+  appearances: [1631]
+
+E_286:
+  name: 龙钦巴
+  aliases: ["全知大师", "全知龙钦巴", "全知龙钦巴大师", "大全知龙钦巴", "无垢光尊者"]
+  type: 人物.法师
+  note: "在丹山洞闻法；注释《遣除十方黑暗》解释乘王之宗"
+  appearances: [1639, 1673, 2098, 2172]
+
+E_287:
+  name: 多哦巴
+  aliases: ["全知多哦巴"]
+  type: 人物.法师
+  note: "第三不退法轮最究竟观点与龙钦巴、第七世噶玛巴一致"
+  appearances: [1639]
+
+E_288:
+  name: 哲贡宿巴仁钦彭措
+  aliases: ["仁钦彭措"]
+  type: 人物.法师
+  note: "杰绕种姓；八岁出家于秋吉札巴前；身份改为白衣（在家）；在铜色吉祥山拜见莲花生大士；成了教藏法伏藏法的教主"
+  appearances: [1642, 1643, 1644, 1663]
+
+E_289:
+  name: 哲土多吉滚波
+  aliases: []
+  type: 人物.法师
+  note: "来到仁钦彭措面前"
+  appearances: [1650]
+
+E_290:
+  name: 扬珠尼达桑吉
+  aliases: ["尼达桑吉"]
+  type: 人物.法师
+  note: "仁钦彭措传幻化网法要给他；努·南卡酿波的化身"
+  appearances: [1663, 1676]
+
+E_291:
+  name: 阿阇黎才旺诺吉
+  aliases: ["才旺诺吉"]
+  type: 人物.法师
+  note: "昆种姓；扬珠尼达桑吉传法给他"
+  appearances: [1664]
+
+E_292:
+  name: 昆·敦华玖棱珠
+  aliases: ["华玖棱珠", "敦华玖棱珠"]
+  type: 人物.法师
+  note: "母亲嘉姆俊；铁鸡年出生；父亲才旺诺吉；三十四岁受比丘戒；苏醒卓普巴大师习气；七十六岁火牛年临近圆寂"
+  appearances: [1662, 1665, 1672, 1683, 1689, 1698]
+
+E_293:
+  name: 全知索南嘉措
+  aliases: []
+  type: 人物.法师
+  note: "昆·敦华玖棱珠十岁时在其面前出家"
+  appearances: [1667]
+
+E_294:
+  name: 努·南卡酿波
+  aliases: ["南卡酿波"]
+  type: 人物.法师
+  note: "扬珠尼达桑吉为其化身"
+  appearances: [1676]
+
+E_295:
+  name: 札滚金厄云讷秋华
+  aliases: []
+  type: 人物.法师
+  note: "昆·敦华玖棱珠在其前听受金刚鬘等法要"
+  appearances: [1681]
+
+E_296:
+  name: 嘉康则瓦华玖嘉措
+  aliases: ["华玖嘉措"]
+  type: 人物.法师
+  note: "昆·敦华玖棱珠三十四岁时的亲教师"
+  appearances: [1683]
+
+E_297:
+  name: 格敦嘉村
+  aliases: ["法王格敦嘉村"]
+  type: 人物.法师
+  note: "昆·敦华玖棱珠三十四岁时的轨范师"
+  appearances: [1683]
+
+E_298:
+  name: 札那法王邬金丹增
+  aliases: ["邬金丹增"]
+  type: 人物.法师
+  note: "前去昆·敦华玖棱珠座下听受密藏续讲解并对前五品作了记录"
+  appearances: [1687]
+
+E_299:
+  name: 宿钦·秋扬让珠
+  aliases: ["秋扬让珠", "宿秋扬让珠", "大宿·秋扬让珠", "法界自解脱"]
+  type: 人物.法师
+  note: "昆·敦华玖棱珠心子；木龙年出生；滚秋仁钦巴转世；水狗年二十岁受比丘戒；六十六岁土鸡年圆寂"
+  appearances: [1689, 1691, 1706, 1707]
+
+E_300:
+  name: 宿·云讷敦哲
+  aliases: ["云讷敦哲"]
+  type: 人物.法师
+  note: "秋扬让珠之父；大持明者革玛燃匝的化身"
+  appearances: [1709]
+
+E_301:
+  name: 革玛燃匝
+  aliases: ["大持明者革玛燃匝"]
+  type: 人物.法师
+  note: "宿·云讷敦哲为其化身"
+  appearances: [1709]
+
+E_302:
+  name: 滚秋仁钦巴
+  aliases: []
+  type: 人物.法师
+  note: "秋扬让珠被认定为其转世灵童"
+  appearances: [1710]
+
+E_303:
+  name: 香巴仁真阿革旺波
+  aliases: ["阿革旺波", "香巴仁真钦波"]
+  type: 人物.法师
+  note: "秋扬让珠九岁时遇到；授记秋扬让珠今世对宁玛教法大有裨益；后转世为阿杰丹毕尼玛仁真班玛陈列"
+  appearances: [1713, 1741, 1767, 2380]
+
+E_304:
+  name: 囊色仁波切阿旺益西哲巴
+  aliases: ["囊色仁波切"]
+  type: 人物.法师
+  note: "秋扬让珠年十二岁起一直留在其面前闻受法要"
+  appearances: [1716]
+
+E_305:
+  name: 噶玛朗巴
+  aliases: []
+  type: 人物.法师
+  note: "其伏藏法寂猛密意自解脱传给秋扬让珠"
+  appearances: [1717]
+
+E_306:
+  name: 帕旺卡巴华玖
+  aliases: ["帕旺卡巴", "金刚持帕旺卡巴华玖"]
+  type: 人物.法师
+  note: "秋扬让珠十七岁时到其面前，始终精心侍奉；即昆·敦华玖棱珠"
+  appearances: [1726, 1742]
+
+E_307:
+  name: 第五世达赖喇嘛
+  aliases: ["五世达赖", "五世达赖喇嘛"]
+  type: 人物.法师
+  note: "观音化现；拜秋扬让珠为师听受法要；对秋扬让珠作住世祈祷文；也在昆·敦华玖棱珠足下依止"
+  appearances: [1693, 1698, 1754, 1758, 1761, 1776, 1852, 2375, 2382, 2559]
+
+E_308:
+  name: 内萨巴滚波索南秋丹
+  aliases: ["索南秋丹"]
+  type: 人物.法师
+  note: "与秋扬让珠有互赐法宴的关系"
+  appearances: [1766]
+
+E_309:
+  name: 阿杰丹毕尼玛仁真班玛陈列
+  aliases: ["丹毕尼玛", "班玛陈列"]
+  type: 人物.法师
+  note: "香巴仁真阿革旺波的转世；在土丹多吉札寺坐床"
+  appearances: [1767, 1768]
+
+E_310:
+  name: 达当仁真钦波陈列棱珠
+  aliases: ["陈列棱珠"]
+  type: 人物.法师
+  note: "秋扬让珠暮年为其传授密藏续讲解；大努·桑吉益西的化身"
+  appearances: [1770, 1780]
+
+E_311:
+  name: 持明无变金刚
+  aliases: ["无变金刚"]
+  type: 人物.法师
+  note: "贝若札那与耶札酿波的发心时间成熟之伏藏大师；使密藏续法脉未间断"
+  appearances: [1782]
+
+E_312:
+  name: 雄吉嘉曼巴桑吉札
+  aliases: ["桑吉札", "嘉曼巴桑吉札"]
+  type: 人物.法师
+  note: "卓普巴大师传承弟子；涅氏种族；修财神法后获黄金悉地；建立多土特道场"
+  appearances: [1785, 1786]
+
+E_313:
+  name: 札些康玛
+  aliases: []
+  type: 人物.法师
+  note: "在琼波卓哦修真实法；桑吉札随之修行得见本尊"
+  appearances: [1791]
+
+E_314:
+  name: 酿那多波
+  aliases: []
+  type: 人物.法师
+  note: "卓普巴的弟子；桑吉札在其前闻法"
+  appearances: [1795]
+
+E_315:
+  name: 拉吉达桑给
+  aliases: []
+  type: 人物.法师
+  note: "酿那多波的弟子；桑吉札在其前闻幻化网"
+  appearances: [1795]
+
+E_316:
+  name: 嘉强热巴
+  aliases: []
+  type: 人物.法师
+  note: "酿瓦月波的弟子；依止多土巴（桑吉札）广泛闻法"
+  appearances: [1798]
+
+E_317:
+  name: 华哦杰秋戒桑给
+  aliases: ["杰秋戒桑给", "杰·秋戒桑给"]
+  type: 人物.法师
+  note: "桑吉札培养出的大智者大成就者弟子"
+  appearances: [1799, 1808, 1818, 1829]
+
+E_318:
+  name: 曼隆巴释迦光
+  aliases: ["曼隆巴"]
+  type: 人物.法师
+  note: "杰秋戒桑给弟子；炯波卡热涅大师所生五兄弟之长子；撰著密藏续科判和续释解义等"
+  appearances: [1807, 1808, 1818]
+
+E_319:
+  name: 滚波多吉
+  aliases: []
+  type: 人物.法师
+  note: "雅隆五活佛兄弟之次子；秋丹寺住持；身体靠墙壁融入留下印迹"
+  appearances: [1811]
+
+E_320:
+  name: 兰释迦光
+  aliases: []
+  type: 人物.法师
+  note: "其子兰克巴索南嘉也传幻化网"
+  appearances: [1819]
+
+E_321:
+  name: 兰克巴索南嘉
+  aliases: ["索南嘉"]
+  type: 人物.法师
+  note: "兰释迦光之子；曼隆巴再度在其前听闻"
+  appearances: [1819]
+
+E_322:
+  name: 达波桑吉贡拉瓦
+  aliases: ["达波"]
+  type: 人物.法师
+  note: "曼隆巴释迦光弟子；培养喇嘛年等数多弟子；成为够觉君主的上师"
+  appearances: [1821]
+
+E_323:
+  name: 温释迦白巴
+  aliases: []
+  type: 人物.法师
+  note: "在曼隆巴前学习密藏续讲解"
+  appearances: [1823]
+
+E_324:
+  name: 嘉·益西滚波
+  aliases: ["益西滚波"]
+  type: 人物.法师
+  note: "杰·秋戒桑给道场住持；精通集密意续和幻化网"
+  appearances: [1829]
+
+E_325:
+  name: 多吉嘉烂
+  aliases: ["温波多吉嘉烂"]
+  type: 人物.法师
+  note: "嘉·益西滚波的侄子；幼年往桑普研学定量论；造巴卡释论疏和灌顶仪轨等"
+  appearances: [1827, 1831, 1837]
+
+E_326:
+  name: 喇嘛赤嘉
+  aliases: []
+  type: 人物.法师
+  note: "多吉嘉烂的侄子；受其法要"
+  appearances: [1833]
+
+E_327:
+  name: 热东瓦西绕嘉烂
+  aliases: ["西绕嘉烂"]
+  type: 人物.法师
+  note: "在多吉嘉烂前闻受法要"
+  appearances: [1833, 1836]
+
+E_328:
+  name: 扬卡瓦索南桑波
+  aliases: []
+  type: 人物.法师
+  note: "西绕嘉烂弟子"
+  appearances: [1836]
+
+E_329:
+  name: 阿阇黎札西嘉措
+  aliases: ["札西嘉措"]
+  type: 人物.法师
+  note: "扬卡瓦索南桑波弟子；古云讷在其面前听闻"
+  appearances: [1837]
+
+E_330:
+  name: 噶托巴单巴德香
+  aliases: ["单巴德香", "德香巴", "德瓦夏巴", "喇嘛夏瓦布巴塔西", "西绕桑给"]
+  type: 人物.法师
+  note: "水虎年出生；与帕摩是姨表兄弟；嘎种姓；父亲藏巴华札，母亲藏姆仁钦；十七岁往卫藏出家法名西绕僧佫；在匝敦珠为滚波前闻幻化网等；建噶托寺于土鼠年；七十一岁水鼠年圆寂"
+  appearances: [1840, 1843, 1844, 1862, 1874, 1880]
+
+E_331:
+  name: 阿阇黎阿尼哦桑给
+  aliases: ["阿尼哦桑给"]
+  type: 人物.法师
+  note: "所著密藏续释在康区传讲"
+  appearances: [1841]
+
+E_332:
+  name: 香切桑给
+  aliases: ["上师香切桑给"]
+  type: 人物.法师
+  note: "香切罗珠法脉继承人；大力弘扬教藏法"
+  appearances: [1848, 1998, 1999]
+
+E_333:
+  name: 那吉堪钦玛德杰坚
+  aliases: ["玛德杰坚"]
+  type: 人物.法师
+  note: "按东律传承给噶托巴受比丘戒"
+  appearances: [1849]
+
+E_334:
+  name: 匝敦珠为滚波
+  aliases: ["匝敦仁波切"]
+  type: 人物.法师
+  note: "宿·卓普巴大师的心子；噶托巴在其前听受幻化网密藏续及心部等；至尊卓普巴和噶托巴之间仅有的一位上师"
+  appearances: [1850, 1852, 1862]
+
+E_335:
+  name: 嘎译师
+  aliases: []
+  type: 人物.法师
+  note: "绕译师的弟子；噶托巴在其前听闻十大胜乐续等"
+  appearances: [1855]
+
+E_336:
+  name: 焦如译师
+  aliases: []
+  type: 人物.法师
+  note: "噶托巴在其前听受金刚亥母后续和戒生续"
+  appearances: [1856]
+
+E_337:
+  name: 嘎秋杰益西
+  aliases: []
+  type: 人物.法师
+  note: "噶托巴在其前听受喜金刚"
+  appearances: [1856]
+
+E_338:
+  name: 东敦多吉酿波
+  aliases: []
+  type: 人物.法师
+  note: "古译师弟子；噶托巴在其前听受密集续"
+  appearances: [1857]
+
+E_339:
+  name: 布德扬敦
+  aliases: []
+  type: 人物.法师
+  note: "古译师弟子；噶托巴在其前听受密集续"
+  appearances: [1857]
+
+E_340:
+  name: 拉多华杰旺波
+  aliases: ["华杰旺波"]
+  type: 人物.法师
+  note: "东敦多吉酿波和布德扬敦的弟子；噶托巴在其前听受明灯释与大威德"
+  appearances: [1858]
+
+E_341:
+  name: 吉笛钦
+  aliases: []
+  type: 人物.法师
+  note: "噶托巴在其前得受胜乐轮灌顶、大手印及那诺六法窍诀"
+  appearances: [1859]
+
+E_342:
+  name: 藏敦巴
+  aliases: ["法王藏敦"]
+  type: 人物.法师
+  note: "噶托巴法脉继承人；火马年出生；十七岁遇德香巴上师；五十六岁任噶托寺住持；九十岁火鼠年圆寂；曾是益西秋译师与印度夏那伟的前世"
+  appearances: [1889, 1890, 1898, 1903, 1914, 1922]
+
+E_343:
+  name: 大菩萨布札巴
+  aliases: ["布札巴"]
+  type: 人物.法师
+  note: "因噶托的藏敦巴大名鼎鼎而欲察看；在藏敦巴前得受幻化网灌顶后智慧觉醒"
+  appearances: [1905, 1914, 1935]
+
+E_344:
+  name: 香巴波
+  aliases: []
+  type: 人物.法师
+  note: "藏敦巴法脉继承人；土猪年诞生；曾是印度匝兰德热巴心子秀强旺波；四十八岁继承法位；七十四岁水鼠年圆寂"
+  appearances: [1924, 1925, 1930, 1936, 1939]
+
+E_345:
+  name: 匝兰德热巴
+  aliases: []
+  type: 人物.法师
+  note: "印度大成就者；香巴波的前世秀强旺波曾是其心子"
+  appearances: [1925]
+
+E_346:
+  name: 秀强旺波
+  aliases: []
+  type: 人物.法师
+  note: "匝兰德热巴心子；香巴波之前世"
+  appearances: [1926]
+
+E_347:
+  name: 莫札觉革
+  aliases: ["至尊莫札觉革"]
+  type: 人物.法师
+  note: "对弟子索玛觉革说前往西藏噶托之事"
+  appearances: [1926]
+
+E_348:
+  name: 索玛觉革
+  aliases: []
+  type: 人物.法师
+  note: "莫札觉革的弟子"
+  appearances: [1926]
+
+E_349:
+  name: 嘎哈那巴
+  aliases: ["阿阇黎嘎哈那巴"]
+  type: 人物.法师
+  note: "香巴波的前世之一；在噶托寺受生利益众生"
+  appearances: [1928]
+
+E_350:
+  name: 噶玛巴哲嘉单巴
+  aliases: ["哲嘉单巴", "秋杰喇嘛"]
+  type: 人物.法师
+  note: "于秋修降生；在噶托寺由香巴波传近圆比丘戒；在其前听受幻化网与大圆满灌顶教授"
+  appearances: [1935, 1937, 1938]
+
+E_351:
+  name: 金厄芒波瓦索南波
+  aliases: ["金厄瓦索南波巴", "索南波巴"]
+  type: 人物.法师
+  note: "香巴波法脉继承人；水羊年出生；三十岁坐床任住持；弘扬集密意续、幻化网及大圆满；六十一岁圆寂；为噶玛巴传戒之羯磨师"
+  appearances: [1936, 1941, 1942]
+
+E_352:
+  name: 哦鸥益西
+  aliases: []
+  type: 人物.法师
+  note: "金厄瓦索南波巴法脉继承人；阳木虎年诞生；二十九岁坐床任住持；广转经幻心为主的显密大法轮"
+  appearances: [1946, 1947]
+
+E_353:
+  name: 萨迦班智达
+  aliases: ["法王萨迦班智达", "萨迦法王"]
+  type: 人物.法师
+  note: "受蒙古国王迎请而到达蒙古；在蒙古圆寂"
+  appearances: [1948, 1954, 1956, 1957, 2330]
+
+E_354:
+  name: 帕思巴
+  aliases: ["帕思巴仁波切"]
+  type: 人物.法师
+  note: "萨迦班智达侄；受噶托巴授幻化网寂猛灌顶；返回西藏时将灵塔和供水杯供在噶托寺"
+  appearances: [1949, 1955, 1957]
+
+E_355:
+  name: 香切华瓦
+  aliases: []
+  type: 人物.法师
+  note: "至尊哦巴法脉继承人；四十四岁来到寺院；六十四岁圆寂；弹指使被宰牲畜飞到空中"
+  appearances: [1960, 1961, 1963]
+
+E_356:
+  name: 索南桑波
+  aliases: []
+  type: 人物.法师
+  note: "香切华瓦法脉继承人；五十三岁来到寺院任住持；六十三岁圆寂"
+  appearances: [1967, 1968]
+
+E_357:
+  name: 根嘎波巴
+  aliases: []
+  type: 人物.法师
+  note: "索南桑波法脉继承人；三十八岁坐床任住持；主放专修；使降大雪退军兵；五十三岁圆寂"
+  appearances: [1972, 1973, 1980]
+
+E_358:
+  name: 罗珠波巴
+  aliases: []
+  type: 人物.法师
+  note: "根嘎波巴继承者；四十三岁坐床任住持；六十五岁圆寂"
+  appearances: [1982, 1983]
+
+E_359:
+  name: 罗珠桑给
+  aliases: []
+  type: 人物.法师
+  note: "罗珠波巴法脉继承人；三十六岁坐床任住持；使伏藏法门兴盛；六十岁圆寂"
+  appearances: [1989, 1990]
+
+E_360:
+  name: 香切罗珠
+  aliases: []
+  type: 人物.法师
+  note: "罗珠桑给法脉继承人；秉承先前传统；对四部幻化网及道庄严作讲解；广兴禅修道场"
+  appearances: [1993, 1994]
+
+E_361:
+  name: 香切嘉村
+  aliases: []
+  type: 人物.法师
+  note: "与香切桑给一起大力弘扬教藏法"
+  appearances: [1999]
+
+E_362:
+  name: 哲贡宿巴绕达
+  aliases: ["绕达"]
+  type: 人物.法师
+  note: "格鲁派与哲贡派矛盾时依靠护法神降伏法使噶丹赤巴圆寂"
+  appearances: [1746]
+
+E_363:
+  name: 噶托巴达喇班玛玛德
+  aliases: ["班玛玛德"]
+  type: 人物.法师
+  note: "来到拉萨后在秋扬让珠前听受密藏续释·遣除十方黑暗等"
+  appearances: [1747]
+
+E_364:
+  name: 卓普巴
+  aliases: ["密主卓普巴", "宿·卓普巴大师", "至尊卓普巴"]
+  type: 人物.法师
+  note: "嘉曼巴桑吉札为其传承弟子；匝敦珠为滚波为其心子；昆·敦华玖棱珠苏醒其习气"
+  appearances: [1674, 1786, 1793, 1795, 1850, 1851, 1853]
+
+E_365:
+  name: 美龙多吉
+  aliases: ["美龙多吉尊者"]
+  type: 人物.法师
+  note: "所著文稿基础上的引导文；秋扬让珠通过其著作学习"
+  appearances: [1610]
+
+E_366:
+  name: 堪布够西日札华巴
+  aliases: ["够西日札华巴"]
+  type: 人物.法师
+  note: "秋吉札巴在其前听受佛法"
+  appearances: [1626]
+
+E_367:
+  name: 万嘎巴
+  aliases: []
+  type: 人物.法师
+  note: "秋吉札巴在其前听受佛法"
+  appearances: [1627]
+
+E_368:
+  name: 东滚巴嘉
+  aliases: []
+  type: 人物.其他
+  note: "秋吉札巴的父亲"
+  appearances: [1624]
+
+E_369:
+  name: 札萨索南卓玛
+  aliases: []
+  type: 人物.其他
+  note: "秋吉札巴的母亲"
+  appearances: [1624]
+
+E_370:
+  name: 尼玛哦色
+  aliases: []
+  type: 人物.法师
+  note: "从索南桑波时期开始其伏藏法稍稍兴盛"
+  appearances: [1969]
+
+E_371:
+  name: 秋吉旺修
+  aliases: []
+  type: 人物.法师
+  note: "从索南桑波时期开始其伏藏法稍稍兴盛"
+  appearances: [1969]
+
+E_372:
+  name: 切索南卡波
+  aliases: []
+  type: 人物.法师
+  note: "罗珠波巴培养的获得成就的弟子"
+  appearances: [1983]
+
+E_373:
+  name: 仲巴尊者
+  aliases: []
+  type: 人物.法师
+  note: "认定秋扬让珠为滚秋仁钦巴转世灵童"
+  appearances: [1710]
+
+E_374:
+  name: 帕摩
+  aliases: ["至尊帕摩"]
+  type: 人物.法师
+  note: "噶托巴单巴德香的姨表兄弟；水虎年时十三岁"
+  appearances: [1845]
+
+E_375:
+  name: 哦色
+  aliases: ["至尊哦色"]
+  type: 人物.法师
+  note: "噶托巴成为其最大心子"
+  appearances: [1860]
+
+E_376:
+  name: 阿里大班智达仁波切
+  aliases: []
+  type: 人物.法师
+  note: "仁钦彭措按照其传统以教法为框架"
+  appearances: [1659]
+
+E_377:
+  name: 益西秋译师
+  aliases: []
+  type: 人物.法师
+  note: "藏敦巴能回忆的前世之一"
+  appearances: [1901]
+
+E_378:
+  name: 夏那伟
+  aliases: []
+  type: 人物.法师
+  note: "藏敦巴能回忆的前世之一"
+  appearances: [1901]
+
+E_379:
+  name: 现达德瓦
+  aliases: ["阿阇黎现达德瓦"]
+  type: 人物.法师
+  note: "莫札觉革提到的在西藏投生利益众生者"
+  appearances: [1927]
+
+E_380:
+  name: 秋杰吉
+  aliases: []
+  type: 人物.法师
+  note: "香巴波在其前闻思修行显密法理"
+  appearances: [1931]
+
+E_381:
+  name: 哦波克主匝那给都
+  aliases: []
+  type: 人物.法师
+  note: "香切嘉村弟子；被授记为涅译师益西云讷化身；精通显密道次第"
+  appearances: [2001]
+
+E_382:
+  name: 涅译师益西云讷
+  aliases: []
+  type: 人物.法师
+  note: "哦波克主匝那给都的前世"
+  appearances: [2001]
+
+E_383:
+  name: 札哦秋波
+  aliases: ["札哦秋杰波瓦"]
+  type: 人物.法师
+  note: "哦波克主匝那给都在其面前听受《集密意续》《幻化网》寂猛灌顶"
+  appearances: [2003]
+
+E_384:
+  name: 木敦多吉华桑
+  aliases: ["莫敦多吉华桑波", "噶托巴莫敦多吉华桑波"]
+  type: 人物.法师
+  note: "在札哦秋波面前得受《集密意续》；后来为西尼滚秋桑波灌顶"
+  appearances: [2004, 2068]
+
+E_385:
+  name: 达隆巴多吉南嘉
+  aliases: ["香萨达隆巴多吉南嘉"]
+  type: 人物.法师
+  note: "大菩萨；在札哦秋波前得受《集密意续》"
+  appearances: [2005, 2078]
+
+E_386:
+  name: 克主益西嘉村
+  aliases: ["哦波瓦克主益西嘉村", "哦波克主益西嘉村"]
+  type: 人物.法师
+  note: "使《密藏续颂释》《集密意续》大圆满心界窍诀三部如日轮开显；撰多部注疏"
+  appearances: [2007, 2056]
+
+E_387:
+  name: 卡瓦嘎波瓦南卡嘉措
+  aliases: []
+  type: 人物.法师
+  note: "克主益西嘉村弟子；造《旧密总义》科判、摄义"
+  appearances: [2015]
+
+E_388:
+  name: 根嘎达瓦
+  aliases: []
+  type: 人物.法师
+  note: "克主益西嘉村弟子"
+  appearances: [2015]
+
+E_389:
+  name: 秀美香色
+  aliases: []
+  type: 人物.法师
+  note: "克主益西嘉村弟子"
+  appearances: [2016]
+
+E_390:
+  name: 拉敦南卡仁钦
+  aliases: []
+  type: 人物.法师
+  note: "克主益西嘉村弟子"
+  appearances: [2016]
+
+E_391:
+  name: 空行母业自在母
+  aliases: []
+  type: 人物.空行母
+  note: "为卡瓦嘎波瓦授记往生极乐世界及成佛"
+  appearances: [2019]
+
+E_392:
+  name: 单巴德夏
+  aliases: ["单巴仁波切"]
+  type: 人物.法师
+  note: "弟子称荣波土秋三位"
+  appearances: [2026]
+
+E_393:
+  name: 西绕嘉村
+  aliases: []
+  type: 人物.法师
+  note: "荣波土秋三位之一；利根顿悟者"
+  appearances: [2026]
+
+E_394:
+  name: 西绕华瓦
+  aliases: []
+  type: 人物.法师
+  note: "荣波土秋三位之一；利根顿悟者"
+  appearances: [2027]
+
+E_395:
+  name: 西绕多吉
+  aliases: []
+  type: 人物.法师
+  note: "荣波土秋三位之一；利根顿悟者"
+  appearances: [2027]
+
+E_396:
+  name: 哲擦刚巴
+  aliases: []
+  type: 人物.法师
+  note: "嘎单巴四教子之一；建一百零八座寺院"
+  appearances: [2030]
+
+E_397:
+  name: 匝德金厄南卡多吉
+  aliases: ["匝德金厄瓦南卡多吉"]
+  type: 人物.法师
+  note: "建够觉匝寺；嘎单巴教子"
+  appearances: [2033, 2054]
+
+E_398:
+  name: 仲特吉益西
+  aliases: []
+  type: 人物.法师
+  note: "匝德金厄南卡多吉弟子；在敦巴旺玖等前得受幻化网和大圆满；传法至卫藏形成康派"
+  appearances: [2033, 2054]
+
+E_399:
+  name: 敦巴旺玖
+  aliases: []
+  type: 人物.法师
+  note: "传承人物"
+  appearances: [2034, 2055]
+
+E_400:
+  name: 木敦嘉华桑给
+  aliases: []
+  type: 人物.法师
+  note: "在哲杰地方建寺院弘法；出现木师十三代成就者"
+  appearances: [2035]
+
+E_401:
+  name: 玛尼仁钦
+  aliases: []
+  type: 人物.法师
+  note: "被革日秋杰旺修认定为汇集大悲心滴之根本的法主；以光蕴身消逝"
+  appearances: [2038]
+
+E_402:
+  name: 革日秋杰旺修
+  aliases: []
+  type: 人物.法师
+  note: "认定玛尼仁钦为法主并授记"
+  appearances: [2038]
+
+E_403:
+  name: 根珠波
+  aliases: []
+  type: 人物.其他
+  note: "革日秋杰旺修的女儿；与玛尼仁钦授记一起在噶托行持密行"
+  appearances: [2039]
+
+E_404:
+  name: 珠钦桑哲铭吉
+  aliases: []
+  type: 人物.法师
+  note: "中期多旺康派；传授给宿释迦炯尼妹妹二人"
+  appearances: [2060]
+
+E_405:
+  name: 宿姆格敦波
+  aliases: ["宿姆"]
+  type: 人物.法师
+  note: "自性瑜伽母显现；幼年出家为尼；安住尼曼则嘉禅房利益有情"
+  appearances: [2061, 2063]
+
+E_406:
+  name: 宿敦释迦西尼
+  aliases: ["桑阿朗巴宿敦释迦西尼"]
+  type: 人物.法师
+  note: "宿姆格敦波为其灌顶；曾侄"
+  appearances: [2066]
+
+E_407:
+  name: 西尼滚秋桑波
+  aliases: []
+  type: 人物.法师
+  note: "宿敦释迦西尼为其灌顶"
+  appearances: [2067]
+
+E_408:
+  name: 穹仓巴彻月罗珠华丹
+  aliases: []
+  type: 人物.法师
+  note: "灌顶传承中人物"
+  appearances: [2078]
+
+E_409:
+  name: 帮敦嘎玛革日
+  aliases: []
+  type: 人物.法师
+  note: "康派灌顶传承"
+  appearances: [2079]
+
+E_410:
+  name: 昂强根桑华玖
+  aliases: []
+  type: 人物.法师
+  note: "康派灌顶传承"
+  appearances: [2079]
+
+E_411:
+  name: 达敦秋嘉丹增
+  aliases: []
+  type: 人物.法师
+  note: "康派灌顶传承末端"
+  appearances: [2079]
+
+E_412:
+  name: 如西绕哦
+  aliases: ["如西绕"]
+  type: 人物.法师
+  note: "极广泛弘扬《经·集密意续》《幻化网》自释教；撰《幻化网基道果总纲》《道庄严释》"
+  appearances: [2081, 2087]
+
+E_413:
+  name: 如敦赞普
+  aliases: []
+  type: 人物.法师
+  note: "如西绕哦最初在其面前听受宿派《经幻心》"
+  appearances: [2082]
+
+E_414:
+  name: 拉哲玛贡巴
+  aliases: []
+  type: 人物.法师
+  note: "如西绕哦在其座下听受玖派《经·集密意续》《幻化网》"
+  appearances: [2083]
+
+E_415:
+  name: 宿秋巴阿阇黎耶秋鸥哲
+  aliases: []
+  type: 人物.法师
+  note: "拉哲玛贡巴在其面前闻受宿派《经·集密意续》《幻化网》"
+  appearances: [2084]
+
+E_416:
+  name: 努敦
+  aliases: []
+  type: 人物.法师
+  note: "卓普巴的弟子；拉哲玛贡巴在其面前闻受《幻化网多释》"
+  appearances: [2085]
+
+E_417:
+  name: 卡绕酿波
+  aliases: []
+  type: 人物.法师
+  note: "努敦在其前闻受过；也在哲班玛白面前闻受过"
+  appearances: [2086]
+
+E_418:
+  name: 哲班玛白
+  aliases: []
+  type: 人物.法师
+  note: "卡绕酿波在其面前闻受"
+  appearances: [2087]
+
+E_419:
+  name: 索达玛桑
+  aliases: []
+  type: 人物.法师
+  note: "哲班玛白在其面前闻受"
+  appearances: [2088]
+
+E_420:
+  name: 兰释迦桑波
+  aliases: []
+  type: 人物.法师
+  note: "中期法源；如西绕有由此传下的传承"
+  appearances: [2090]
+
+E_421:
+  name: 酿那多巴
+  aliases: []
+  type: 人物.法师
+  note: "拉吉涅热瓦的弟子；如西绕有由此传下的传承"
+  appearances: [2091]
+
+E_422:
+  name: 荣索班智达
+  aliases: ["荣索秋杰桑波", "达玛巴札"]
+  type: 人物.法师
+  note: "住世119岁；精通声明因明诸明处；造《密藏续释》(三宝释)等众多论典；前译密法无与伦比的教主"
+  appearances: [2100, 2112, 2155, 2219]
+
+E_423:
+  name: 荣万华吉仁波切
+  aliases: []
+  type: 人物.法师
+  note: "荣万仁钦赤诚之父"
+  appearances: [2101]
+
+E_424:
+  name: 荣万仁钦赤诚
+  aliases: []
+  type: 人物.法师
+  note: "荣万华吉仁波切之子；造《因位五现前菩提》仪轨"
+  appearances: [2102]
+
+E_425:
+  name: 美德嘉那革德
+  aliases: ["美德嘉那"]
+  type: 人物.法师
+  note: "佛法前弘时期班智达；到多康地区修改续部翻译；圆寂后转世为荣索班智达"
+  appearances: [2105]
+
+E_426:
+  name: 嘎敦赤诚桑波
+  aliases: ["嘎敦钦波"]
+  type: 人物.法师
+  note: "荣索班智达幼年在其面前听法；赞荣索'一切法只有他才懂"
+  appearances: [2113, 2118]
+
+E_427:
+  name: 阿底峡尊者
+  aliases: ["阿底峡"]
+  type: 人物.法师
+  note: "与荣索班智达会晤时赞叹其为阿匝雅黑行尊者转世"
+  appearances: [2151]
+
+E_428:
+  name: 阿匝雅黑行尊者
+  aliases: ["黑行尊者"]
+  type: 人物.法师
+  note: "阿底峡认定荣索班智达为此尊者转世"
+  appearances: [2152]
+
+E_429:
+  name: 降魔金刚
+  aliases: ["那南多吉敦珠"]
+  type: 人物.法师
+  note: "莲花生大士传承中第二位；噶托金刚座事业相关"
+  appearances: [2157, 2378, 2657]
+
+E_430:
+  name: 卡钦华杰旺修
+  aliases: []
+  type: 人物.法师
+  note: "莲师传承第三位；明妃卡钦萨将普巴传给哥哥即此人"
+  appearances: [2157, 2247]
+
+E_431:
+  name: 单阿匝绕华美多
+  aliases: []
+  type: 人物.法师
+  note: "莲师传承第四位"
+  appearances: [2158]
+
+E_432:
+  name: 札多吉云讷
+  aliases: []
+  type: 人物.法师
+  note: "莲师传承第五位"
+  appearances: [2158]
+
+E_433:
+  name: 扬扬云丹札
+  aliases: []
+  type: 人物.法师
+  note: "莲师传承第六位"
+  appearances: [2158]
+
+E_434:
+  name: 荣万云丹
+  aliases: ["荣万云丹仁钦"]
+  type: 人物.法师
+  note: "莲师传承第七位；据说直接依止莲花生大士，住世三百年"
+  appearances: [2158, 2255]
+
+E_435:
+  name: 荣万赤诚仁波切
+  aliases: ["仁钦赤诚"]
+  type: 人物.法师
+  note: "荣索班智达的父亲；住世一百五十岁"
+  appearances: [2159, 2257]
+
+E_436:
+  name: 贡巴绕色大师
+  aliases: ["贡巴绕色"]
+  type: 人物.法师
+  note: "心部传承第三位"
+  appearances: [2161]
+
+E_437:
+  name: 哲香乐坚
+  aliases: []
+  type: 人物.法师
+  note: "心部传承第四位"
+  appearances: [2161]
+
+E_438:
+  name: 努华丹
+  aliases: []
+  type: 人物.法师
+  note: "心部传承第五位"
+  appearances: [2161]
+
+E_439:
+  name: 宿万敦
+  aliases: []
+  type: 人物.法师
+  note: "心部传承第六位；传荣索班智达"
+  appearances: [2161]
+
+E_440:
+  name: 阿如益西炯内
+  aliases: []
+  type: 人物.法师
+  note: "具有印度七传承、汉地七师传承的教授"
+  appearances: [2163]
+
+E_441:
+  name: 玖如桑嘎奏克
+  aliases: []
+  type: 人物.法师
+  note: "阿如益西炯内传法对象"
+  appearances: [2164]
+
+E_442:
+  name: 雅宿万敦
+  aliases: []
+  type: 人物.法师
+  note: "康派大圆满传承"
+  appearances: [2165]
+
+E_443:
+  name: 酿当珍桑波
+  aliases: []
+  type: 人物.法师
+  note: "布玛莫札传法对象"
+  appearances: [2166]
+
+E_444:
+  name: 玛·仁钦秋
+  aliases: []
+  type: 人物.法师
+  note: "布玛莫札传窍诀对象"
+  appearances: [2166]
+
+E_445:
+  name: 涅·嘉那革玛绕
+  aliases: ["涅嘉那革玛绕"]
+  type: 人物.法师
+  note: "布玛莫札传窍诀对象"
+  appearances: [2167]
+
+E_446:
+  name: 多敦桑给
+  aliases: []
+  type: 人物.法师
+  note: "荣索班智达幼年在其面前听闻前译教法"
+  appearances: [2176]
+
+E_447:
+  name: 够热译师
+  aliases: ["够热译师比丘秋杰西绕"]
+  type: 人物.法师
+  note: "初责怪荣索后生信依止；在荣索前听受《文殊秘密续》等众多法要"
+  appearances: [2195, 2225]
+
+E_448:
+  name: 支那班智达
+  aliases: ["大支那巴"]
+  type: 人物.法师
+  note: "够热译师在其处得印度法本"
+  appearances: [2201]
+
+E_449:
+  name: 玛尔巴秋杰旺修
+  aliases: ["玛尔巴"]
+  type: 人物.法师
+  note: "顶礼荣索班智达之足"
+  appearances: [2204]
+
+E_450:
+  name: 古大译师
+  aliases: []
+  type: 人物.法师
+  note: "赞叹荣索班智达；弟子传承十七大译师之一"
+  appearances: [2220, 2225]
+
+E_451:
+  name: 宿杰白
+  aliases: []
+  type: 人物.法师
+  note: "荣索班智达亲子传承"
+  appearances: [2223]
+
+E_452:
+  name: 波白
+  aliases: []
+  type: 人物.法师
+  note: "荣索班智达亲子传承"
+  appearances: [2223]
+
+E_453:
+  name: 卡钦萨
+  aliases: ["明妃卡钦萨", "明妃觉母"]
+  type: 人物.王妃
+  note: "明妃派普巴传承主；在南方门卡那让狮子堡山洞修行成就"
+  appearances: [2237, 2239, 2246, 2312]
+
+E_454:
+  name: 玖如萨
+  aliases: []
+  type: 人物.法师
+  note: "嘉姆派传承；直接依止莲师但灌顶未在上师前得受；后由益西措嘉教授"
+  appearances: [2250]
+
+E_455:
+  name: 益西措嘉
+  aliases: ["益西措嘉空行母"]
+  type: 人物.空行母
+  note: "教授玖如萨普巴法；嘉姆派传承来源"
+  appearances: [2252]
+
+E_456:
+  name: 昆勒旺波
+  aliases: []
+  type: 人物.法师
+  note: "莲花生大士高足；萨派普巴由此次第传下"
+  appearances: [2268]
+
+E_457:
+  name: 哲阿匝绕萨列
+  aliases: []
+  type: 人物.法师
+  note: "黑尊普巴传承；邬金佛父佛母传法对象"
+  appearances: [2259]
+
+E_458:
+  name: 朗拉香切多吉
+  aliases: ["朗拉"]
+  type: 人物.法师
+  note: "黑尊普巴传承；幼年失父母受叔伯虐待；修普巴降伏叔伯；以下事业降伏著称"
+  appearances: [2259, 2275]
+
+E_459:
+  name: 雅卓巴革日扬达
+  aliases: []
+  type: 人物.法师
+  note: "黑尊普巴传承终端"
+  appearances: [2260]
+
+E_460:
+  name: 哲阿匝绕尼热
+  aliases: []
+  type: 人物.法师
+  note: "益西措嘉亲传弟子；获寿自在持明"
+  appearances: [2262, 2265]
+
+E_461:
+  name: 帕巴仁波切
+  aliases: []
+  type: 人物.法师
+  note: "一直没有得到下事业降伏灌顶传承；委托罗哦译师寻找"
+  appearances: [2263]
+
+E_462:
+  name: 罗哦译师
+  aliases: []
+  type: 人物.法师
+  note: "受帕巴仁波切委托携黄金寻阿匝绕尼热"
+  appearances: [2266]
+
+E_463:
+  name: 格西绕译师
+  aliases: ["绕译师"]
+  type: 人物.法师
+  note: "有权有势；以大威德猛咒降伏他人；被朗拉香切多吉以普巴法击败"
+  appearances: [2280, 2289]
+
+E_464:
+  name: 德巴嘉扬楚
+  aliases: []
+  type: 人物.法师
+  note: "从瓷桶伏藏中取出大威德类"
+  appearances: [2282]
+
+E_465:
+  name: 玛尔巴之子达玛多德
+  aliases: ["达玛多德"]
+  type: 人物.法师
+  note: "十三位菩萨之一；被绕译师降伏"
+  appearances: [2287]
+
+E_466:
+  name: 那南西绕赤诚
+  aliases: []
+  type: 人物.法师
+  note: "朗拉尊者主要弟子之一"
+  appearances: [2299]
+
+E_467:
+  name: 杰万香切仁钦
+  aliases: ["杰江吉", "倒墙者"]
+  type: 人物.法师
+  note: "朗拉弟子；房屋田地被叔伯抢夺；修普巴使墙倒塌杀敌"
+  appearances: [2302]
+
+E_468:
+  name: 让革章普哦古
+  aliases: []
+  type: 人物.法师
+  note: "朗拉弟子"
+  appearances: [2300]
+
+E_469:
+  name: 哦耶如波酿那
+  aliases: []
+  type: 人物.法师
+  note: "朗拉弟子"
+  appearances: [2300]
+
+E_470:
+  name: 美尼嘉瓦酿波
+  aliases: []
+  type: 人物.法师
+  note: "将金刚橛指向乌鸦使之坠落"
+  appearances: [2313]
+
+E_471:
+  name: 罗华戒罗珠
+  aliases: []
+  type: 人物.法师
+  note: "把金刚橛插入军兵茅屋使门军惨败"
+  appearances: [2314]
+
+E_472:
+  name: 达夏热瓦
+  aliases: []
+  type: 人物.法师
+  note: "在觉母那嘉上山洞修行亲见莲师；从益波色瓦隆取金刚橛伏藏"
+  appearances: [2322]
+
+E_473:
+  name: 楚雪嘎波
+  aliases: []
+  type: 人物.其他
+  note: "外道；与萨迦班智达辩论失败后不愿皈佛；最终在金城与西藏交界处身亡"
+  appearances: [2338]
+
+E_474:
+  name: 卓钦桑哲多吉
+  aliases: ["卓钦桑哲铭吉", "嘉扬桑哲多吉"]
+  type: 人物.法师
+  note: "第一宿杭传承起点；传到宿杭姐妹"
+  appearances: [2354, 2397]
+
+E_475:
+  name: 尼波瓦朗卓才旺嘉波
+  aliases: []
+  type: 人物.法师
+  note: "于扬温寺在宿杭面前听闻；在切瓦传给勒巴华桑"
+  appearances: [2357]
+
+E_476:
+  name: 勒巴华桑
+  aliases: []
+  type: 人物.法师
+  note: "秉持尼波瓦传承"
+  appearances: [2358]
+
+E_477:
+  name: 嘉扬仁钦嘉村
+  aliases: ["阿里哦则瓦嘉扬仁钦嘉村"]
+  type: 人物.法师
+  note: "在勒巴华桑面前听受；为亲子大班智达兄弟灌顶"
+  appearances: [2359]
+
+E_478:
+  name: 仁真勒丹
+  aliases: []
+  type: 人物.法师
+  note: "嘉扬仁钦嘉村弟弟；八岁听受《集密意续》灌顶；住世113年；广大讲修弘法"
+  appearances: [2361]
+
+E_479:
+  name: 杰敦才让旺波
+  aliases: []
+  type: 人物.法师
+  note: "在涅皇宫得以闻受《集密意续》四圆满灌顶"
+  appearances: [2363]
+
+E_480:
+  name: 喇钦作雄巴涅敦秋嘉多吉
+  aliases: ["喇钦作雄巴"]
+  type: 人物.法师
+  note: "以阿里哦色秋、贡绕罗钦、拉尊南卡晋美三位为根本上师"
+  appearances: [2365, 2368]
+
+E_481:
+  name: 芒绕瓦班玛敦珠
+  aliases: []
+  type: 人物.法师
+  note: "喇钦作雄巴之父"
+  appearances: [2366]
+
+E_482:
+  name: 南卡哲札桑波
+  aliases: []
+  type: 人物.法师
+  note: "大圆满师；喇钦作雄巴在其面前又听受"
+  appearances: [2367]
+
+E_483:
+  name: 曼隆巴罗秋多吉
+  aliases: ["曼隆巴钦波酿敦罗秋多吉", "酿敦罗秋多吉"]
+  type: 人物.法师
+  note: "喇钦作雄巴为其独传《集密意续》灌顶；精通秋杰旺修伏藏法；第五世达赖喇嘛尊为帝师"
+  appearances: [2058, 2371]
+
+E_484:
+  name: 大译师洋彭多吉
+  aliases: ["贡绕大译师洋彭多吉", "贡绕棱珠洋彭多吉"]
+  type: 人物.法师
+  note: "曼隆巴钦波第一根本上师；三次刻印《宁玛续全集》；六十一岁圆寂"
+  appearances: [2366, 2447]
+
+E_485:
+  name: 仁真吉
+  aliases: []
+  type: 人物.法师
+  note: "那南多吉敦珠转世"
+  appearances: [2379]
+
+E_486:
+  name: 多吉札仁真秋
+  aliases: ["根桑班玛陈列"]
+  type: 人物.法师
+  note: "仁真吉化身；铁蛇年出于夏那种姓；在第五世达赖喇嘛面前出家受比丘戒；造《集密意续灌顶仪轨坛城海之津梁》；住世七十七年"
+  appearances: [2378]
+
+E_487:
+  name: 嘎玛彭措旺波
+  aliases: ["德巴嘎玛彭措旺波"]
+  type: 人物.其他
+  note: "多吉札仁真秋之父"
+  appearances: [2380]
+
+E_488:
+  name: 宿·秋扬让珠
+  aliases: ["大宿·秋扬让珠"]
+  type: 人物.法师
+  note: "多吉札仁真秋所依止上师之一"
+  appearances: [2386]
+
+E_489:
+  name: 怙主索南秋单
+  aliases: []
+  type: 人物.法师
+  note: "多吉札仁真秋所依止上师之一"
+  appearances: [2386]
+
+E_490:
+  name: 桑吉仁钦
+  aliases: []
+  type: 人物.法师
+  note: "卓钦桑哲多吉之子；第三亲子传承"
+  appearances: [2397]
+
+E_491:
+  name: 扬敦南卡多吉
+  aliases: ["南当巴"]
+  type: 人物.法师
+  note: "卓玛巴父子弟子；在得钦卓玛面前听受《集密意续》灌顶"
+  appearances: [2400]
+
+E_492:
+  name: 得钦卓玛
+  aliases: []
+  type: 人物.法师
+  note: "有桑吉仁钦亲传；扬敦南卡多吉在其面前听受"
+  appearances: [2405]
+
+E_493:
+  name: 夏莫多吉嘉村
+  aliases: []
+  type: 人物.法师
+  note: "扬敦南卡多吉为其灌顶并授讲释教言"
+  appearances: [2408]
+
+E_494:
+  name: 仁真耶哲多吉
+  aliases: ["喇嘛哲钦"]
+  type: 人物.法师
+  note: "扬敦南卡多吉授其《集密意续》灌顶；居住卫藏深山静处；主要在达那拉革温寺实修"
+  appearances: [2412]
+
+E_495:
+  name: 克主罗珠嘉村
+  aliases: ["东卡措雪"]
+  type: 人物.法师
+  note: "仁真耶哲多吉传其《集密意续》；精通医方明；依止札巴仁钦等多位成就上师；住世七十三岁以上"
+  appearances: [2421]
+
+E_496:
+  name: 札巴仁钦
+  aliases: ["金刚持札巴仁钦"]
+  type: 人物.法师
+  note: "克主罗珠嘉村所依止大上师"
+  appearances: [2427]
+
+E_497:
+  name: 永真阿旺札巴
+  aliases: []
+  type: 人物.法师
+  note: "克主罗珠嘉村所依止上师"
+  appearances: [2427]
+
+E_498:
+  name: 班朗心子达瓦嘉村
+  aliases: ["达瓦嘉村"]
+  type: 人物.法师
+  note: "克主罗珠嘉村所依止上师"
+  appearances: [2428]
+
+E_499:
+  name: 月波朗巴
+  aliases: ["伏藏大师月波朗巴"]
+  type: 人物.法师
+  note: "克主罗珠嘉村所依止上师"
+  appearances: [2428]
+
+E_500:
+  name: 多吉桑给
+  aliases: []
+  type: 人物.法师
+  note: "克主罗珠嘉村所依止上师"
+  appearances: [2429]
+
+E_501:
+  name: 密主陈列棱珠
+  aliases: ["持明陈列棱珠", "邬金才佩"]
+  type: 人物.法师
+  note: "贡绕大译师传法对象；父为牛敦大智者多昂丹真；阴铁猪年出生；五十二岁水虎年圆寂"
+  appearances: [2473]
+
+E_502:
+  name: 多昂丹真
+  aliases: ["牛敦大智者成就者多昂丹真"]
+  type: 人物.法师
+  note: "密主陈列棱珠之父"
+  appearances: [2475]
+
+E_503:
+  name: 大努桑吉益西
+  aliases: []
+  type: 人物.法师
+  note: "密主陈列棱珠被认定为此人转世"
+  appearances: [2474]
+
+E_504:
+  name: 则拉嘉措
+  aliases: []
+  type: 人物.法师
+  note: "密主陈列棱珠在其面前出家"
+  appearances: [2481]
+
+E_505:
+  name: 化身赤诚多吉
+  aliases: ["赤诚多吉"]
+  type: 人物.法师
+  note: "密主陈列棱珠所依止上师之一"
+  appearances: [2483]
+
+E_506:
+  name: 拉吉根桑南嘉
+  aliases: []
+  type: 人物.法师
+  note: "密主陈列棱珠所依止上师"
+  appearances: [2484]
+
+E_507:
+  name: 哲札桑波
+  aliases: ["大圆满行者哲札桑波"]
+  type: 人物.法师
+  note: "密主陈列棱珠所依止上师"
+  appearances: [2484]
+
+E_508:
+  name: 温龙巴赤诚嘉村
+  aliases: []
+  type: 人物.法师
+  note: "密主陈列棱珠所依止上师"
+  appearances: [2484]
+
+E_509:
+  name: 赤月诺吾秋丹
+  aliases: []
+  type: 人物.法师
+  note: "密主陈列棱珠所依止上师"
+  appearances: [2485]
+
+E_510:
+  name: 札巴秋扬
+  aliases: []
+  type: 人物.法师
+  note: "新派法脉继承人；密主陈列棱珠所依止"
+  appearances: [2485]
+
+E_511:
+  name: 伏藏大师杰美多吉
+  aliases: ["仁真杰美多吉", "伏藏大师仁真杰美多吉"]
+  type: 人物.法师
+  note: "密主陈列棱珠身语意胜子；伏藏大师法王；前译教法大弘者"
+  appearances: [2507, 2538, 2555, 2616]
+
+E_512:
+  name: 大译师秋嘉丹真
+  aliases: ["秋嘉丹真"]
+  type: 人物.法师
+  note: "密主陈列棱珠摄受；铁羊年出生；七十八岁土鼠年圆寂"
+  appearances: [2512]
+
+E_513:
+  name: 索南仁钦
+  aliases: []
+  type: 人物.法师
+  note: "穹吉华热佛学院住持；为秋嘉丹真出家"
+  appearances: [2516]
+
+E_514:
+  name: 努敦札巴旺波
+  aliases: []
+  type: 人物.法师
+  note: "秋嘉丹真在其面前学习猛咒实践法和黑白历算"
+  appearances: [2521]
+
+E_515:
+  name: 化身秋陈列南嘉
+  aliases: ["秋陈列南嘉"]
+  type: 人物.法师
+  note: "与持明陈列棱珠同时被迎请到穹吉华山"
+  appearances: [2523]
+
+E_516:
+  name: 拉吉南卡晋美
+  aliases: []
+  type: 人物.法师
+  note: "秋嘉丹真所依止上师之一"
+  appearances: [2529]
+
+E_517:
+  name: 酿敦喇秋多吉
+  aliases: ["酿敦罗秋多吉"]
+  type: 人物.法师
+  note: "秋嘉丹真在其面前听取声明诗学等知识"
+  appearances: [2531]
+
+E_518:
+  name: 大译师达玛西日
+  aliases: ["达玛西日", "阿旺秋华", "丹增嘉扬旺波"]
+  type: 人物.法师
+  note: "伏藏大师杰美多吉之弟；木马年出生；佛教之日；传法培养弟子不可计数；论典十八函"
+  appearances: [2550, 2557]
+
+E_519:
+  name: 滚秋丹增
+  aliases: []
+  type: 人物.法师
+  note: "达玛西日在其前再度接受前译东律清净戒传承"
+  appearances: [2562]
+
+E_520:
+  name: 贡塘大班智达西年南嘉
+  aliases: ["贡塘大班智达"]
+  type: 人物.法师
+  note: "达玛西日在其面前学声明声律学文字语言学"
+  appearances: [2568]
+
+E_521:
+  name: 德巴敦哲旺嘉
+  aliases: []
+  type: 人物.法师
+  note: "达玛西日在其面前听受黑白历算元音数术"
+  appearances: [2570]
+
+E_522:
+  name: 达龙札巴
+  aliases: []
+  type: 人物.法师
+  note: "达玛西日在其面前听受绘画文字等"
+  appearances: [2571]
+
+E_523:
+  name: 嘉哲丹毕尼玛
+  aliases: []
+  type: 人物.法师
+  note: "达玛西日兄长；在其面前精通戒律开遮"
+  appearances: [2574]
+
+E_524:
+  name: 善知识桑吉秋达
+  aliases: ["桑吉秋达"]
+  type: 人物.法师
+  note: "达玛西日在其面前听受《戒律》《俱舍》《般若》讲解"
+  appearances: [2576]
+
+E_525:
+  name: 克主秋炯嘉灿
+  aliases: []
+  type: 人物.法师
+  note: "达玛西日在其面前听受甚深内义讲解"
+  appearances: [2578]
+
+E_526:
+  name: 持明班玛陈列
+  aliases: []
+  type: 人物.法师
+  note: "达玛西日在其面前听受《时轮金刚》圆满灌顶"
+  appearances: [2589]
+
+E_527:
+  name: 阿旺根嘎札西
+  aliases: []
+  type: 人物.法师
+  note: "具德萨迦巴大师；达玛西日授其新伏藏圆满灌顶传承等"
+  appearances: [2600]
+
+E_528:
+  name: 嘉哲仁钦南嘉
+  aliases: []
+  type: 人物.法师
+  note: "布玛莫札化身；传承达玛西日→嘉哲仁钦南嘉→大堪布邬金丹增多吉"
+  appearances: [2617]
+
+E_529:
+  name: 大堪布邬金丹增多吉
+  aliases: ["邬金丹增多吉", "邬金丹真多吉"]
+  type: 人物.法师
+  note: "大译师转世；从康区噶托白玉西钦竹青到嘉木绒安多果洛分出传承支流"
+  appearances: [2618]
+
+E_530:
+  name: 赤钦陈列南嘉
+  aliases: ["至尊陈列南嘉"]
+  type: 人物.法师
+  note: "陈列棱珠化身"
+  appearances: [2623]
+
+E_531:
+  name: 赤班玛旺嘉
+  aliases: []
+  type: 人物.法师
+  note: "伏藏大师幻化"
+  appearances: [2623]
+
+E_532:
+  name: 赤桑吉根嘎
+  aliases: []
+  type: 人物.法师
+  note: "耶札酿波化身"
+  appearances: [2624]
+
+E_533:
+  name: 多昂丹增诺吾
+  aliases: []
+  type: 人物.法师
+  note: "居化身智者贤者成就者之首"
+  appearances: [2627]
+
+E_534:
+  name: 杰美番德哦色
+  aliases: ["嘉华德瓦尼玛"]
+  type: 人物.法师
+  note: "密主金刚手化身；多昂丹增诺吾传法对象"
+  appearances: [2628]
+
+E_535:
+  name: 持明德达朗巴
+  aliases: ["仁真德达朗巴", "德达朗巴", "敏朗仁真德达朗巴"]
+  type: 人物.法师
+  note: "大圆满心部界部窍诀大心滴传承起始"
+  appearances: [2631, 2642]
+
+E_536:
+  name: 至尊门杰华卓
+  aliases: []
+  type: 人物.法师
+  note: "益西措嘉幻化"
+  appearances: [2631]
+
+E_537:
+  name: 至尊陈列秋卓
+  aliases: []
+  type: 人物.法师
+  note: "大圆满传承中陈列南嘉后继"
+  appearances: [2632]
+
+E_538:
+  name: 全知多吉宿则
+  aliases: ["蒋扬钦则旺波"]
+  type: 人物.法师
+  note: "布玛莫札和法王赤松德赞二尊幻化"
+  appearances: [2633]
+
+E_539:
+  name: 仲陈列香切炯内
+  aliases: []
+  type: 人物.法师
+  note: "朗卓幻化；亲自完整赐予能成熟灌顶能解脱教言窍诀"
+  appearances: [2634]
+
+E_540:
+  name: 杰美俄敦旺波
+  aliases: ["遍主杰美俄敦旺波"]
+  type: 人物.法师
+  note: "贝若札那幻化；亲自完整赐予敦珠仁波切能成熟灌顶"
+  appearances: [2634]
+
+E_541:
+  name: 绕那朗巴
+  aliases: ["伏藏大师绕那朗巴"]
+  type: 人物.法师
+  note: "汇集所有密续法流"
+  appearances: [2638]
+
+E_542:
+  name: 才旺札巴
+  aliases: []
+  type: 人物.法师
+  note: "绕那朗巴亲子；住世一百一十年"
+  appearances: [2638]
+
+E_543:
+  name: 阿旺札
+  aliases: []
+  type: 人物.法师
+  note: "才旺札巴弟弟"
+  appearances: [2639]
+
+E_544:
+  name: 佛子阿旺诺吾
+  aliases: ["阿旺诺吾"]
+  type: 人物.法师
+  note: "续部全集传承"
+  appearances: [2639]
+
+E_545:
+  name: 诺吾荣札
+  aliases: []
+  type: 人物.法师
+  note: "布玛莫札幻化"
+  appearances: [2640]
+
+E_546:
+  name: 嘉哲诺吾旺嘉
+  aliases: []
+  type: 人物.法师
+  note: "续部全集传承"
+  appearances: [2640]
+
+E_547:
+  name: 全知赤诚多吉
+  aliases: []
+  type: 人物.法师
+  note: "班玛朗巴第三世语化身"
+  appearances: [2641]
+
+E_548:
+  name: 温龙巴嘎旺赤诚嘉灿
+  aliases: []
+  type: 人物.法师
+  note: "续部全集传承"
+  appearances: [2641]
+
+E_549:
+  name: 丹增杰美多吉
+  aliases: []
+  type: 人物.法师
+  note: "班玛朗巴心子达瓦嘉灿第四代转世"
+  appearances: [2642]
+
+E_550:
+  name: 阿旺根桑多吉
+  aliases: []
+  type: 人物.法师
+  note: "第四世语化身"
+  appearances: [2643]
+
+E_551:
+  name: 杰美秋哲华白
+  aliases: []
+  type: 人物.法师
+  note: "第五心子"
+  appearances: [2643]
+
+E_552:
+  name: 班玛敦哲札巴
+  aliases: ["金刚持班玛敦哲札巴"]
+  type: 人物.法师
+  note: "续部全集传承"
+  appearances: [2644]
+
+E_553:
+  name: 根桑丹毕嘉灿
+  aliases: []
+  type: 人物.法师
+  note: "第六世语化身"
+  appearances: [2644]
+
+E_554:
+  name: 瓦卡根桑仁真多吉
+  aliases: []
+  type: 人物.法师
+  note: "续部全集传承"
+  appearances: [2644]
+
+E_555:
+  name: 根桑丹毕尼玛
+  aliases: []
+  type: 人物.法师
+  note: "第八世语化身"
+  appearances: [2645]
+
+E_556:
+  name: 瓦卡仁真卡色炯珠
+  aliases: []
+  type: 人物.法师
+  note: "续部全集传承"
+  appearances: [2645]
+
+E_557:
+  name: 邬金南珠嘉措
+  aliases: ["金刚持邬金南珠嘉措"]
+  type: 人物.法师
+  note: "续部全集传承"
+  appearances: [2646]
+
+E_558:
+  name: 格敦嘉措
+  aliases: ["瑜伽自在舍事者格敦嘉措"]
+  type: 人物.法师
+  note: "格敦嘉措以大恩大德传给作者(敦珠仁波切)"
+  appearances: [2646]
+
+E_559:
+  name: 嘉滚罗珠塔益
+  aliases: ["嘉哲洋彭塔益"]
+  type: 人物.法师
+  note: "仁真德达朗巴传下传承广泛弘扬；敏朗伏藏大师幻化"
+  appearances: [2648, 2673]
+
+E_560:
+  name: 龙萨嘉哲索南德赞
+  aliases: ["龙萨酿波"]
+  type: 人物.法师
+  note: "降魔金刚转世；依止敏朗伏藏大师再度使佛经教法恢复"
+  appearances: [2658]
+
+E_561:
+  name: 哲美扬炯滚波
+  aliases: []
+  type: 人物.法师
+  note: "龙萨嘉哲索南德赞化身；住持寺院"
+  appearances: [2660]
+
+E_562:
+  name: 持明才旺诺吾
+  aliases: []
+  type: 人物.法师
+  note: "南卡酿波幻化"
+  appearances: [2661]
+
+E_563:
+  name: 杰美才旺秋哲
+  aliases: ["玛哈班智达杰美才旺秋哲"]
+  type: 人物.法师
+  note: "涅大译师幻化"
+  appearances: [2662]
+
+E_564:
+  name: 司德根则秋杰嘉措
+  aliases: []
+  type: 人物.法师
+  note: "后弘时期持教大德"
+  appearances: [2662]
+
+E_565:
+  name: 堪钦仁真阿旺华桑
+  aliases: []
+  type: 人物.法师
+  note: "布玛莫札化身"
+  appearances: [2663]
+
+E_566:
+  name: 哲旺竹青巴班玛仁真
+  aliases: []
+  type: 人物.法师
+  note: "共称阿阇黎革革燃匝和布玛莫札双重幻化；在热达金察山谷建竹青寺"
+  appearances: [2666]
+
+E_567:
+  name: 仁真根桑西绕
+  aliases: []
+  type: 人物.法师
+  note: "拉色嘉瓦香切幻化；建白玉寺"
+  appearances: [2677]
+
+E_568:
+  name: 嘉滚钦哲旺波
+  aliases: []
+  type: 人物.法师
+  note: "发心苏醒弘法"
+  appearances: [2679]
+
+E_569:
+  name: 伏藏大师秋杰朗巴
+  aliases: []
+  type: 人物.法师
+  note: "发心苏醒弘法"
+  appearances: [2680]
+
+E_570:
+  name: 佛子班玛多昂丹增
+  aliases: ["班玛多昂丹增"]
+  type: 人物.法师
+  note: "在白玉寺每年连续举行前译教藏法灌顶授教"
+  appearances: [2680]
+
+E_571:
+  name: 邬金多昂秋杰尼玛
+  aliases: []
+  type: 人物.法师
+  note: "发心愿力不仰仗他人；教藏法宝库印二十函"
+  appearances: [2684]
+
+# ==================== 非人 ====================
+
+E_572:
+  name: 梵净东妥够巴
+  aliases: []
+  type: 非人.护法
+  note: "桑古西绕从如·释迦炯处求法返回时在驮子上出现的童子形护法神"
+  appearances: [366]
+
+E_573:
+  name: 则热则赞
+  aliases: []
+  type: 非人.护法
+  note: "地神；请求大宿留住黑马谷；供养修行口粮"
+  appearances: [380, 392, 396]
+
+E_574:
+  name: 觉母那玛
+  aliases: []
+  type: 非人.护法
+  note: "大宿下山途中被其降伏"
+  appearances: [398]
+
+E_575:
+  name: 龙魔妹妹
+  aliases: ["龙妹"]
+  type: 非人.天部
+  note: "被小宿以意念勾召；现为白衣女子形象；因忌讳晦气和酸味拒绝作酿酒女；后作札巴禅堂护法神"
+  appearances: [566, 567, 569]
+
+E_576:
+  name: 龙魔兄长
+  aliases: ["龙兄"]
+  type: 非人.天部
+  note: "被小宿勾召时现为角尖如两岁山羊大的蝎子；被吩咐作酿酒者；后作札巴禅堂护法神"
+  appearances: [573, 574, 576, 578]
+
+E_577:
+  name: 绕呵拉护法神
+  aliases: ["绕呵拉"]
+  type: 非人.护法
+  note: "哲贡宿巴绕达等人依靠其降伏法使噶丹赤巴染上晦气"
+  appearances: [1746]
+
+E_578:
+  name: 妖石曼哦
+  aliases: []
+  type: 非人.护法
+  note: "曾在苯教师前受过誓言；制造违缘；被师徒追赶融入岩石"
+  appearances: [1867]
+
+E_579:
+  name: 十二地母
+  aliases: []
+  type: 非人.护法(世间)
+  note: "莲师吩咐防止外道入藏，十二地母予以制裁杀楚雪嘎波"
+  appearances: [2346]
+
+# ==================== 经典 ====================
+
+E_580:
+  name: 幻化网
+  aliases: ["《幻化网》", "寂猛幻化网", "寂静幻化网"]
+  type: 经典.密续.远传
+  note: "觉益两年听闻；达那卓玛瓦桑哲多吉最为精通；桑吉仁钦嘉村依父亲心领神会所有法门"
+  appearances: [17, 309, 313, 328, 342, 1012, 1259, 1430, 1482, 1568, 1573, 2003, 2034, 2052, 2081]
+
+E_581:
+  name: 耳传金刚桥
+  aliases: ["《耳传金刚桥》"]
+  type: 经典.教言集
+  note: "涅译师依靠此及窍诀部证得大成就"
+  appearances: [99]
+
+E_582:
+  name: 经部·集密意续
+  aliases: ["《经部·集密意续》", "经·集密意续", "集密意续"]
+  type: 经典.密续
+  note: "宿隆巴哲土西年传给宿·香巴桑给灌顶；桑吉仁钦嘉村传根本续总集给古罗；宿哈·释迦炯听受灌顶并撰释"
+  appearances: [144, 215, 329, 332, 333, 342, 1431, 1444, 1552, 1555, 1583]
+
+E_583:
+  name: 持明集根本续
+  aliases: ["《持明集根本续》"]
+  type: 经典.密续
+  note: "其中授记努·桑吉益西"
+  appearances: [128]
+
+E_584:
+  name: 集密意续大疏·黑暗铠甲
+  aliases: ["《集密意续大疏·黑暗铠甲》"]
+  type: 经典.论
+  note: "努·桑吉益西撰著"
+  appearances: [204]
+
+E_585:
+  name: 说难断之利刃
+  aliases: ["《说难断之利刃》"]
+  type: 经典.论
+  note: "努·桑吉益西撰著"
+  appearances: [204]
+
+E_586:
+  name: 幻化网八十颂现观释
+  aliases: ["《幻化网八十颂现观释》"]
+  type: 经典.论
+  note: "努·桑吉益西撰著"
+  appearances: [204]
+
+E_587:
+  name: 禅定目灯
+  aliases: ["《禅定目灯》"]
+  type: 经典.教言集
+  note: "荣派大修行文之一；月波敦则听受"
+  appearances: [205, 1190, 1283]
+
+E_588:
+  name: 阎罗母续
+  aliases: ["《阎罗母续》"]
+  type: 经典.密续
+  note: "达那达拉传给云丹嘉措"
+  appearances: [237]
+
+E_589:
+  name: 时轮金刚
+  aliases: ["《时轮金刚》"]
+  type: 经典.密续
+  note: "雍敦巴成布敦仁波切传承弟子后极精通；宿哈·释迦炯着重探究"
+  appearances: [219, 1468, 1549, 1629, 2589]
+
+E_590:
+  name: 青史
+  aliases: ["《青史》"]
+  type: 经典.史籍
+  note: "记载措桑莫波切是拉吉大宿的儿子"
+  appearances: [297]
+
+E_591:
+  name: 摧破金刚
+  aliases: ["《摧破金刚》"]
+  type: 经典.密续.远传
+  note: "宿·香巴桑给在喇嘛云丹滚面前听受"
+  appearances: [313, 1098, 1435]
+
+E_592:
+  name: 吉祥首胜续
+  aliases: ["《吉祥首胜续》"]
+  type: 经典.密续
+  note: "大宿在美波仁钦嘉措面前听受"
+  appearances: [314]
+
+E_593:
+  name: 幻化道次第
+  aliases: ["《幻化道次第》"]
+  type: 经典.教言集
+  note: "大宿在酿多杰追措穹面前听受"
+  appearances: [331]
+
+E_594:
+  name: 佛陀平等行续
+  aliases: ["《佛陀平等行续》", "平等行续"]
+  type: 经典.密续
+  note: "如·释迦炯为桑古赐予的灌顶法本之一"
+  appearances: [362, 2177]
+
+E_595:
+  name: 甘露
+  aliases: ["《甘露》"]
+  type: 经典.密续
+  note: "哲敦巴·勒毕卓美善巧叶《甘露》"
+  appearances: [212]
+
+E_596:
+  name: 金刚帷幕续
+  aliases: []
+  type: 经典.密续.远传
+  note: "大宿对三传承分支及《金刚帷幕续》十分精通"
+  appearances: [701]
+
+E_597:
+  name: 集密意续
+  aliases: ["《集密意续》", "上师密集续", "经·集密意续"]
+  type: 经典.密续.远传
+  note: "已存在于ch05-part2 (E_920)。小宿宣讲时听法者达三百人"
+  appearances: [808, 1608, 1751, 1794, 1818, 1830, 1832, 1877, 1943, 2003, 2005, 2052, 2392, 2596]
+
+E_598:
+  name: 秘密幻化续
+  aliases: ["《秘密幻化续》"]
+  type: 经典.密续.远传
+  note: "已存在于ch05-part2 (E_922)。小宿修其中手印禅定修法面见金刚萨埵"
+  appearances: [858]
+
+E_599:
+  name: 秘密幻化网
+  aliases: ["《秘密幻化网》"]
+  type: 经典.密续.远传
+  note: "已存在于ch05-part2 (E_923)。辩论中提到'你们《秘密幻化网》承许一切显现是本尊"
+  appearances: [888]
+
+E_600:
+  name: 般若
+  aliases: ["《般若》"]
+  type: 经典.经
+  note: "杰敦嘉那在穹波札色面前听闻《般若》"
+  appearances: [1085]
+
+E_601:
+  name: 俱舍论
+  aliases: ["《俱舍论》"]
+  type: 经典.论
+  note: "杰敦嘉那在班善知识前听闻《俱舍论》"
+  appearances: [1086, 1423]
+
+E_602:
+  name: 中观
+  aliases: ["《中观》"]
+  type: 经典.论
+  note: "杰敦嘉那在达巴卡切面前听闻《中观》"
+  appearances: [1086]
+
+E_603:
+  name: 因明
+  aliases: ["《因明》"]
+  type: 经典.论
+  note: "杰敦嘉那在达巴卡切面前听闻；够穹旺俄去帮嘎达穹瓦处学因明"
+  appearances: [946, 1086]
+
+E_604:
+  name: 根本金刚橛
+  aliases: ["《根本金刚橛》"]
+  type: 经典.密续.远传
+  note: "杰敦嘉那在卓达桑面前得受"
+  appearances: [1098]
+
+E_605:
+  name: 吉祥密藏真如决定续
+  aliases: ["《吉祥密藏真如决定续》"]
+  type: 经典.密续.远传
+  note: "已存在于ch05-part2 (E_924)。卓普巴自然通晓其义获法眼"
+  appearances: [1049]
+
+E_606:
+  name: 广中略般若
+  aliases: ["《广中略般若》"]
+  type: 经典.经
+  note: "已存在于ch05-part2 (E_925)。宿·释迦桑给以其为主作大供养摄受上师"
+  appearances: [1021]
+
+E_607:
+  name: 示密篇
+  aliases: ["《示密篇》"]
+  type: 经典.密续.远传
+  note: "月波敦则三年期间听受的法之一"
+  appearances: [1182]
+
+E_608:
+  name: 普作王续
+  aliases: ["《普作王续》"]
+  type: 经典.密续.远传
+  note: "月波敦则听受的心部方面二十四大续部之一"
+  appearances: [1187, 1549]
+
+E_609:
+  name: 瑜伽觉日
+  aliases: ["《瑜伽觉日》"]
+  type: 经典.教言集
+  note: "荣派大修行文之一；月波敦则听受"
+  appearances: [1189]
+
+E_610:
+  name: 禅定心日
+  aliases: ["《禅定心日》"]
+  type: 经典.教言集
+  note: "荣派大修行文之一；月波敦则听受"
+  appearances: [1190]
+
+E_611:
+  name: 疑惑与钉
+  aliases: ["《疑惑与钉》"]
+  type: 经典.教言集
+  note: "荣派大修行文之一；月波敦则听受"
+  appearances: [1190, 1283]
+
+E_612:
+  name: 问答启迪
+  aliases: ["《问答启迪》"]
+  type: 经典.教言集
+  note: "荣派大修行文之一；月波敦则听受"
+  appearances: [1190]
+
+E_613:
+  name: 金刚萨埵问答
+  aliases: ["《金刚萨埵问答》"]
+  type: 经典.教言集
+  note: "荣派大修行文之一；月波敦则听受"
+  appearances: [1191]
+
+E_614:
+  name: 密藏续
+  aliases: ["《密藏根本续》", "《密藏续》", "《幻化网密藏续》", "密藏续颂释", "幻化网密藏续", "根本密藏续"]
+  type: 经典.密续.远传
+  note: "达敦宿则作广释；雍敦巴与雍敦巴《密藏续释》不同；宿·香巴桑给学修到位；雍敦巴作《明镜疏》；宿·桑波华刻版；宿哈·释迦炯着重探究并传讲传承"
+  appearances: [991, 1317, 1318, 1424, 1425, 1443, 1453, 1507, 1550, 1592, 1606, 1630, 1672, 1686, 1728, 1739, 1748, 1771, 1780, 1820, 1823, 1824, 1832, 1837, 1841, 1850, 1876, 1943, 2007, 2009, 2171, 2594]
+
+E_615:
+  name: 经幻心
+  aliases: ["《经幻心》"]
+  type: 经典.经典集合
+  note: "已存在于ch05-part2 (E_931)。宿·释迦桑给从四顶梁柱大德处完整听闻父亲之法《经幻心》"
+  appearances: [1017, 1312, 1452]
+
+E_616:
+  name: 大圆满阿若精髓
+  aliases: ["阿若精髓"]
+  type: 经典.密续.远传
+  note: "杰敦嘉那在觉姆年姆面前得受康派大圆满阿若精髓"
+  appearances: [1100]
+
+E_617:
+  name: 普作王母子三类
+  aliases: []
+  type: 经典.密续
+  note: "达敦觉益在月波尊者前学修"
+  appearances: [1280]
+
+E_618:
+  name: 讲续十经
+  aliases: []
+  type: 经典.密续
+  note: "达敦觉益在月波尊者前学修"
+  appearances: [1280]
+
+E_619:
+  name: 根除轮回续
+  aliases: ["根除续"]
+  type: 经典.密续
+  note: "四部讲续之一；桑吉仁钦嘉村传古罗益桑则巴此灌顶"
+  appearances: [1280, 1579]
+
+E_620:
+  name: 六心日
+  aliases: []
+  type: 经典.教言集
+  note: "达敦觉益修行注释之一"
+  appearances: [1282]
+
+E_621:
+  name: 心觉六日
+  aliases: []
+  type: 经典.教言集
+  note: "达敦觉益修行注释之一"
+  appearances: [1282]
+
+E_622:
+  name: 觉性日
+  aliases: []
+  type: 经典.教言集
+  note: "达敦觉益学修的窍诀之一"
+  appearances: [1283]
+
+E_623:
+  name: 金刚萨埵大虚空续
+  aliases: []
+  type: 经典.密续
+  note: "觉益十六岁时传讲此续"
+  appearances: [1261]
+
+E_624:
+  name: 胜乐金刚
+  aliases: ["《胜乐金刚》"]
+  type: 经典.密续
+  note: "觉益十二岁在玛敦上师前请求；觉益与父亲一起请求一百零八灌顶；桑热嘉瑞处听受乐叶巴胜乐金刚"
+  appearances: [1257, 1258, 1263, 1629]
+
+E_625:
+  name: 金刚手甘露滴
+  aliases: []
+  type: 经典.密续
+  note: "觉益十二岁在玛敦上师前请求"
+  appearances: [1257]
+
+E_626:
+  name: 道情歌集
+  aliases: []
+  type: 经典.教言集
+  note: "达敦觉波在哦敦喇嘛察敦座下听受刚派大手印此集"
+  appearances: [1250]
+
+E_627:
+  name: 莲生金刚修法
+  aliases: []
+  type: 经典.密续
+  note: "觉益在桑热嘉瑞座下听受"
+  appearances: [1264]
+
+E_628:
+  name: 喜金刚
+  aliases: ["《喜金刚》"]
+  type: 经典.密续
+  note: "觉益在桑热嘉瑞座下听受美派喜金刚"
+  appearances: [1263, 1856]
+
+E_629:
+  name: 密藏续释
+  aliases: []
+  type: 经典.论
+  note: "雍敦巴的密藏续释；与达敦宿则的稍有不同"
+  appearances: [1318]
+
+E_630:
+  name: 巴卡释
+  aliases: ["《巴卡释》"]
+  type: 经典.论
+  note: "传承一直未间断；宿·桑波华刻版；宿哈·释迦炯着重探究；桑吉仁钦嘉村传古罗释迦光此释讲解"
+  appearances: [1319, 1444, 1507, 1550, 1581, 1729, 1780]
+
+E_631:
+  name: 八大法行·集善逝
+  aliases: ["《八大法行·集善逝》", "八大法行"]
+  type: 经典.密续
+  note: "秋扬让珠在囊色仁波切前听受其灌顶传承；后作绕萨雅那修法"
+  appearances: [1355, 1716, 1753]
+
+E_632:
+  name: 幻化网道次第
+  aliases: []
+  type: 经典.论
+  note: "宿·香巴桑给十九岁在杰敦哲巴白面前听受；宿·香巴桑给弟众圆满学修；宿哈·释迦炯着重探究"
+  appearances: [1428, 1443, 1550]
+
+E_633:
+  name: 金刚鬘
+  aliases: ["《金刚鬘》"]
+  type: 经典.密续
+  note: "昆·敦华玖棱珠在札滚金厄云讷秋华前听受"
+  appearances: [1433, 1681]
+
+E_634:
+  name: 明镜疏
+  aliases: []
+  type: 经典.论
+  note: "雍敦巴对密藏续作的注疏"
+  appearances: [1453]
+
+E_635:
+  name: 显密成佛有别
+  aliases: []
+  type: 经典.论
+  note: "雍敦巴撰著此论；雅德大班智达见后生起无比信心"
+  appearances: [1474]
+
+E_636:
+  name: 方广庄严经
+  aliases: []
+  type: 经典.经
+  note: "此经中说八种辩才"
+  appearances: [1472]
+
+E_637:
+  name: 大乘阿毗达磨
+  aliases: []
+  type: 经典.论
+  note: "雍敦巴尤精通此论"
+  appearances: [1450]
+
+E_638:
+  name: 密藏续大疏
+  aliases: []
+  type: 经典.论
+  note: "桑吉仁钦嘉村四十岁时撰著"
+  appearances: [1574]
+
+E_639:
+  name: 道庄严
+  aliases: []
+  type: 经典.论
+  note: "克主益西嘉村作注疏注解；如西绕哦作释"
+  appearances: [1574, 2010, 2017, 2092]
+
+E_640:
+  name: 道庄严释
+  aliases: ["《道庄严》", "《道庄严释》"]
+  type: 经典.论
+  note: "卓钦桑吉仁钦听受密藏续及注释和此释；香切罗珠也对其作讲解"
+  appearances: [1582, 1607, 1995, 2092]
+
+E_641:
+  name: 八种显现事业
+  aliases: []
+  type: 经典.论
+  note: "桑吉仁钦嘉村对其中忿怒事业撰详细现观"
+  appearances: [1575]
+
+E_642:
+  name: 集密意续释
+  aliases: ["集密意续释——黑暗铠甲"]
+  type: 经典.论
+  note: "宿哈·释迦炯撰著；大努所造释名为黑暗铠甲"
+  appearances: [1555, 1583]
+
+E_643:
+  name: 幻化网四十颂
+  aliases: ["《幻化网四十颂》"]
+  type: 经典.论
+  note: "桑吉仁钦嘉村恩赐给古罗益桑则巴的四十小论之一"
+  appearances: [1582, 1609]
+
+E_644:
+  name: 幻化网八十颂
+  aliases: ["《幻化网八十颂》"]
+  type: 经典.论
+  note: "桑吉仁钦嘉村传承给古罗"
+  appearances: [1584, 1609]
+
+E_645:
+  name: 现观庄严论
+  aliases: []
+  type: 经典.论
+  note: "宿哈·释迦炯特别着重探究"
+  appearances: [1549]
+
+E_646:
+  name: 入行论
+  aliases: []
+  type: 经典.论
+  note: "宿哈·释迦炯特别着重探究"
+  appearances: [1549]
+
+E_647:
+  name: 根本密藏续
+  aliases: []
+  type: 经典.密续
+  note: "宿·桑波华刻版此续"
+  appearances: [1507]
+
+E_648:
+  name: 密宗道次第
+  aliases: []
+  type: 经典.论
+  note: "宿·桑波华刻版"
+  appearances: [1508]
+
+E_649:
+  name: 九窍诀
+  aliases: []
+  type: 经典.教言集
+  note: "宿·桑波华刻版"
+  appearances: [1508]
+
+E_650:
+  name: 宁玛续全集
+  aliases: []
+  type: 经典.经典集合
+  note: "大译师洋彭多吉三次刻印；传承由此遍及康区卫藏"
+  appearances: [1509, 1524, 2462, 2587]
+
+E_651:
+  name: 长寿主尊
+  aliases: ["《长寿主尊》"]
+  type: 经典.密续
+  note: "桑吉仁钦嘉村传古罗此灌顶"
+  appearances: [1579, 1604]
+
+E_652:
+  name: 真实一火
+  aliases: ["《真实一火》"]
+  type: 经典.密续
+  note: "桑吉仁钦嘉村传古罗此灌顶"
+  appearances: [1580, 1604]
+
+E_653:
+  name: 二上师
+  aliases: ["《二上师》"]
+  type: 经典.密续
+  note: "桑吉仁钦嘉村传古罗传承"
+  appearances: [1584, 1609]
+
+E_654:
+  name: 真实续
+  aliases: ["《真实续》"]
+  type: 经典.密续
+  note: "桑吉仁钦嘉村传古罗传承"
+  appearances: [1584, 1610]
+
+E_655:
+  name: 大般若经
+  aliases: []
+  type: 经典.经
+  note: "在刻卓普大般若经时水源缺乏"
+  appearances: [1411]
+
+E_656:
+  name: 真实名经
+  aliases: ["《真实名经》"]
+  type: 经典.密续
+  note: "卓钦桑吉仁钦在瓦那绕那前听闻"
+  appearances: [1601]
+
+E_657:
+  name: 谢特论
+  aliases: ["《谢特论》"]
+  type: 经典.论
+  note: "卓钦桑吉仁钦在瓦那绕那前听闻"
+  appearances: [1601]
+
+E_658:
+  name: 略说灌顶
+  aliases: ["《略说灌顶》"]
+  type: 经典.论
+  note: "卓钦桑吉仁钦在瓦那绕那前听闻"
+  appearances: [1602]
+
+E_659:
+  name: 根除地狱续
+  aliases: ["《根除地狱续》"]
+  type: 经典.密续
+  note: "卓钦桑吉仁钦七十岁时听受"
+  appearances: [1604]
+
+E_660:
+  name: 内论明灯
+  aliases: ["《内论明灯》"]
+  type: 经典.论
+  note: "印藏四十小论之一"
+  appearances: [1607]
+
+E_661:
+  name: 集密意续释——黑暗铠甲
+  aliases: ["《集密意续释——黑暗铠甲》"]
+  type: 经典.论
+  note: "努·桑吉益西所著"
+  appearances: [1608]
+
+E_662:
+  name: 喜乐金刚
+  aliases: ["《喜乐金刚》"]
+  type: 经典.密续
+  note: "秋吉札巴闻受"
+  appearances: [1629]
+
+E_663:
+  name: 大威德
+  aliases: ["《大威德》"]
+  type: 经典.密续
+  note: "秋吉札巴闻受；噶托巴在拉多华杰旺波前听受"
+  appearances: [1629, 1858]
+
+E_664:
+  name: 密藏续释·遣除十方黑暗
+  aliases: ["《密藏续释·遣除十方黑暗》"]
+  type: 经典.论
+  note: "全知龙钦巴所著；昆·敦华玖棱珠学修；秋扬让珠拜阅；噶托巴达喇班玛玛德在秋扬让珠前听受"
+  appearances: [1673, 1736, 1748]
+
+E_665:
+  name: 意经·度脱众生
+  aliases: ["《意经·度脱众生》"]
+  type: 经典.密续
+  note: "昆·敦华玖棱珠听受其讲解传承"
+  appearances: [1679]
+
+E_666:
+  name: 胜乘宝藏论
+  aliases: ["《胜乘宝藏论》"]
+  type: 经典.论
+  note: "昆·敦华玖棱珠听受讲解传承"
+  appearances: [1679]
+
+E_667:
+  name: 四心滴
+  aliases: ["《四心滴》"]
+  type: 经典.密续
+  note: "仁钦彭措着重于此"
+  appearances: [1658]
+
+E_668:
+  name: 空行心滴
+  aliases: ["《空行心滴》"]
+  type: 经典.密续
+  note: "秋扬让珠闻受并在藏巴达古实修；教藏传和伏藏传均有"
+  appearances: [1717, 1721]
+
+E_669:
+  name: 上师宝海
+  aliases: ["《上师宝海》"]
+  type: 经典.密续
+  note: "秋扬让珠在囊色仁波切前闻受"
+  appearances: [1717]
+
+E_670:
+  name: 寂猛密意自解脱
+  aliases: ["《寂猛密意自解脱》"]
+  type: 经典.密续
+  note: "噶玛朗巴的伏藏法；秋扬让珠闻受"
+  appearances: [1718]
+
+E_671:
+  name: 具五大手印
+  aliases: ["《具五大手印》"]
+  type: 经典.密续
+  note: "秋扬让珠实地修行"
+  appearances: [1720]
+
+E_672:
+  name: 集密意续释·四合明灯
+  aliases: ["《集密意续释·四合明灯》"]
+  type: 经典.论
+  note: "秋扬让珠听受"
+  appearances: [1736]
+
+E_673:
+  name: 五次第明灯
+  aliases: ["《五次第明灯》"]
+  type: 经典.论
+  note: "秋扬让珠听受"
+  appearances: [1737]
+
+E_674:
+  name: 显明胜乐隐义
+  aliases: ["《显明胜乐隐义》"]
+  type: 经典.论
+  note: "秋扬让珠听受"
+  appearances: [1737]
+
+E_675:
+  name: 宝珠时轮金刚总义
+  aliases: ["《宝珠时轮金刚总义》"]
+  type: 经典.论
+  note: "秋扬让珠听受"
+  appearances: [1737]
+
+E_676:
+  name: 密集生圆次第
+  aliases: ["《密集生圆次第》"]
+  type: 经典.论
+  note: "秋扬让珠听受其讲解生起定解"
+  appearances: [1738]
+
+E_677:
+  name: 事业清净花鬘庄严论
+  aliases: ["《事业清净花鬘庄严论》"]
+  type: 经典.论
+  note: "秋扬让珠从噶托巴尊者前听受"
+  appearances: [1752]
+
+E_678:
+  name: 威猛
+  aliases: ["《威猛》"]
+  type: 经典.密续
+  note: "五世达赖喇嘛在秋扬让珠前恭听此教藏法"
+  appearances: [1754]
+
+E_679:
+  name: 中观见解修法
+  aliases: ["《中观见解修法》"]
+  type: 经典.论
+  note: "昆·敦华玖棱珠所著"
+  appearances: [1703]
+
+E_680:
+  name: 明界心滴
+  aliases: ["《明界心滴》"]
+  type: 经典.密续
+  note: "昆·敦华玖棱珠十八岁在尼达桑吉前恭聆灌顶引导窍诀；秋扬让珠也闻受并修行"
+  appearances: [1677, 1743, 1763]
+
+E_681:
+  name: 受法录
+  aliases: ["《受法录》"]
+  type: 经典.史籍
+  note: "第五世达赖喇嘛所著；记载噶托巴自己依止过卓普巴"
+  appearances: [1852]
+
+E_682:
+  name: 十大胜乐续
+  aliases: ["《十大胜乐续》"]
+  type: 经典.密续
+  note: "噶托巴在嘎译师前听闻"
+  appearances: [1855]
+
+E_683:
+  name: 金刚亥母后续
+  aliases: ["《金刚亥母后续》"]
+  type: 经典.密续
+  note: "噶托巴在焦如译师前听受"
+  appearances: [1856]
+
+E_684:
+  name: 戒生续
+  aliases: ["《戒生续》"]
+  type: 经典.密续
+  note: "噶托巴在焦如译师前听受"
+  appearances: [1856]
+
+E_685:
+  name: 密集续
+  aliases: ["《密集续》"]
+  type: 经典.密续
+  note: "噶托巴在东敦多吉酿波和布德扬敦前听受"
+  appearances: [1857]
+
+E_686:
+  name: 明灯释
+  aliases: ["《明灯释》"]
+  type: 经典.论
+  note: "噶托巴在拉多华杰旺波前听受"
+  appearances: [1858]
+
+E_687:
+  name: 胜乐轮
+  aliases: ["《胜乐轮》"]
+  type: 经典.密续
+  note: "噶托巴在吉笛钦前得受灌顶次第"
+  appearances: [1859]
+
+E_688:
+  name: 文殊幻化网
+  aliases: ["《文殊幻化网》"]
+  type: 经典.密续
+  note: "噶托巴也传此法"
+  appearances: [1878]
+
+E_689:
+  name: 入菩萨行论
+  aliases: ["《入菩萨行论》"]
+  type: 经典.论
+  note: "噶托巴显宗方面也传授此论"
+  appearances: [1878]
+
+E_690:
+  name: 巴卡释论疏
+  aliases: ["《巴卡释论疏》"]
+  type: 经典.论
+  note: "多吉嘉烂所造"
+  appearances: [1832]
+
+E_691:
+  name: 续释解义
+  aliases: ["《续释解义》"]
+  type: 经典.论
+  note: "曼隆巴释迦光撰著"
+  appearances: [1820]
+
+E_692:
+  name: 密藏续疏
+  aliases: ["《密藏续疏》"]
+  type: 经典.论
+  note: "多吉嘉烂之密藏续疏；古云讷在札西嘉措面前听闻其首讲传承"
+  appearances: [1837]
+
+E_693:
+  name: 寂猛普巴教释
+  aliases: []
+  type: 经典.论
+  note: "克主益西嘉村撰著"
+  appearances: [2009]
+
+E_694:
+  name: 巴卡
+  aliases: []
+  type: 经典.教言集
+  note: "克主益西嘉村作注解"
+  appearances: [2010]
+
+E_695:
+  name: 开显誓言
+  aliases: []
+  type: 经典.论
+  note: "克主益西嘉村对其作注释《明镜论》"
+  appearances: [2011]
+
+E_696:
+  name: 明镜论
+  aliases: []
+  type: 经典.论
+  note: "对《开显誓言》的注释"
+  appearances: [2011]
+
+E_697:
+  name: 乘总纲
+  aliases: []
+  type: 经典.论
+  note: "单巴仁波切所造；克主益西嘉村作注释"
+  appearances: [2013]
+
+E_698:
+  name: 会供讲解
+  aliases: []
+  type: 经典.教言集
+  note: "克主益西嘉村撰写"
+  appearances: [2014]
+
+E_699:
+  name: 旧密总义
+  aliases: []
+  type: 经典.论
+  note: "卡瓦嘎波瓦造科判摄义"
+  appearances: [2017]
+
+E_700:
+  name: 心部十八母子续
+  aliases: []
+  type: 经典.密续
+  note: "灌顶由噶托派传承开始"
+  appearances: [2070, 2075]
+
+E_701:
+  name: 灌顶仪轨甘怡源流
+  aliases: []
+  type: 经典.论
+  note: "莫敦多吉华桑波所造"
+  appearances: [2070]
+
+E_702:
+  name: 幻化网多释
+  aliases: []
+  type: 经典.论
+  note: "拉哲玛贡巴在努敦面前闻受"
+  appearances: [2085]
+
+E_703:
+  name: 幻化网自释
+  aliases: []
+  type: 经典.论
+  note: "在丹山洞逐渐出现"
+  appearances: [2098]
+
+E_704:
+  name: 幻化网基道果总纲
+  aliases: []
+  type: 经典.论
+  note: "如西绕哦撰写"
+  appearances: [2092]
+
+E_705:
+  name: 因位五现前菩提
+  aliases: []
+  type: 经典.论
+  note: "荣万仁钦赤诚所造仪轨"
+  appearances: [2102]
+
+E_706:
+  name: 三宝释
+  aliases: ["密藏续释·三宝释"]
+  type: 经典.论
+  note: "荣索班智达所著《密藏续释》因开头有'三宝自性菩提心'得名"
+  appearances: [2171, 2173]
+
+E_707:
+  name: 遣除十方黑暗
+  aliases: []
+  type: 经典.论
+  note: "全知龙钦巴对密藏续的注释"
+  appearances: [2172]
+
+E_708:
+  name: 誓言广解
+  aliases: []
+  type: 经典.论
+  note: "荣索班智达造；宣说殊胜戒学意义"
+  appearances: [2180]
+
+E_709:
+  name: 四理十五支
+  aliases: []
+  type: 经典.论
+  note: "荣索班智达造；宣说殊胜定学注释"
+  appearances: [2181]
+
+E_710:
+  name: 平等行续释
+  aliases: []
+  type: 经典.论
+  note: "荣索班智达造；宣说大圆满见修窍诀"
+  appearances: [2181]
+
+E_711:
+  name: 净恶趣续释
+  aliases: []
+  type: 经典.论
+  note: "荣索班智达撰著"
+  appearances: [2182]
+
+E_712:
+  name: 大威德续释
+  aliases: []
+  type: 经典.论
+  note: "荣索班智达撰著"
+  appearances: [2182]
+
+E_713:
+  name: 入大乘论
+  aliases: []
+  type: 经典.论
+  note: "荣索班智达所造深义论典；够热译师看后生极大恭敬心"
+  appearances: [2183, 2196]
+
+E_714:
+  name: 语言门论
+  aliases: []
+  type: 经典.论
+  note: "荣索班智达撰著注释"
+  appearances: [2134]
+
+E_715:
+  name: 文殊秘密续
+  aliases: []
+  type: 经典.密续
+  note: "够热译师在荣索班智达前听受"
+  appearances: [2199]
+
+E_716:
+  name: 密集续广释
+  aliases: []
+  type: 经典.论
+  note: "另说阿匝绕查拉让莫翻译传讲后转世为荣索"
+  appearances: [2110]
+
+E_717:
+  name: 真实名经释
+  aliases: ["真实名经"]
+  type: 经典.论
+  note: "塔嘎所著；美德嘉那翻译"
+  appearances: [2107]
+
+E_718:
+  name: 文殊具密
+  aliases: ["文殊具密续"]
+  type: 经典.密续
+  note: "美德嘉那翻译修法；荣索班智达翻译"
+  appearances: [2107, 2209]
+
+E_719:
+  name: 大威德金刚(续)
+  aliases: []
+  type: 经典.密续
+  note: "荣索班智达翻译"
+  appearances: [2208]
+
+E_720:
+  name: 阎罗黑敌续
+  aliases: []
+  type: 经典.密续
+  note: "荣索班智达翻译"
+  appearances: [2209]
+
+E_721:
+  name: 胜乐根本续
+  aliases: []
+  type: 经典.密续
+  note: "荣索班智达翻译"
+  appearances: [2209]
+
+E_722:
+  name: 甘珠尔
+  aliases: []
+  type: 经典.经典集合
+  note: "有人将美德嘉那列入传承祖师"
+  appearances: [2109]
+
+E_723:
+  name: 长寿法罪恶满心
+  aliases: []
+  type: 经典.密续
+  note: "德巴嘉扬楚从瓷桶伏藏取出一半"
+  appearances: [2283]
+
+E_724:
+  name: 普巴涅槃续
+  aliases: []
+  type: 经典.密续
+  note: "黑尊普巴派依靠此续"
+  appearances: [2260]
+
+E_725:
+  name: 集密意续灌顶仪轨坛城海之津梁
+  aliases: []
+  type: 经典.论
+  note: "多吉札仁真秋经第五世达赖喇嘛诏书劝请所造"
+  appearances: [2392]
+
+E_726:
+  name: 十七续
+  aliases: []
+  type: 经典.密续
+  note: "克主罗珠嘉村以金粉印刷"
+  appearances: [2442]
+
+E_727:
+  name: 布玛心滴
+  aliases: []
+  type: 经典.密续
+  note: "克主罗珠嘉村以金粉印刷；秋嘉丹真亦闻受"
+  appearances: [2442, 2527]
+
+E_728:
+  name: 集善逝
+  aliases: ["八大法行·集善逝"]
+  type: 经典.密续
+  note: "克主罗珠嘉村印刷；秋嘉丹真闻受"
+  appearances: [2442, 2527]
+
+E_729:
+  name: 观察赎死文
+  aliases: []
+  type: 经典.论
+  note: "克主罗珠嘉村七十三岁撰著"
+  appearances: [2445]
+
+E_730:
+  name: 心性休息
+  aliases: []
+  type: 经典.论
+  note: "无垢光尊者论典；秋嘉丹真研学；达玛西日亦学"
+  appearances: [2519, 2575]
+
+E_731:
+  name: 密藏续巴卡释
+  aliases: []
+  type: 经典.论
+  note: "达玛西日在伏藏大师前恭听此与雍敦注疏结合讲解"
+  appearances: [2583]
+
+E_732:
+  name: 戒律教理宝藏
+  aliases: []
+  type: 经典.论
+  note: "达玛西日学习"
+  appearances: [2576]
+
+E_733:
+  name: 诗学明镜释
+  aliases: []
+  type: 经典.论
+  note: "达玛西日在伏藏大师面前听受"
+  appearances: [2573]
+
+E_734:
+  name: 戒律三百颂
+  aliases: []
+  type: 经典.论
+  note: "达玛西日在贡塘大班智达前听受讲解"
+  appearances: [2578]
+
+E_735:
+  name: 决定三戒论
+  aliases: []
+  type: 经典.论
+  note: "达玛西日传讲"
+  appearances: [2595]
+
+E_736:
+  name: 中观总纲
+  aliases: []
+  type: 经典.论
+  note: "达玛西日在贡塘大班智达前听受讲解"
+  appearances: [2578]
+
+E_737:
+  name: 文法三十颂
+  aliases: []
+  type: 经典.论
+  note: "达玛西日学习语言学"
+  appearances: [2569]
+
+E_738:
+  name: 根除轮回
+  aliases: []
+  type: 经典.密续
+  note: "达玛西日传了五次"
+  appearances: [2597]
+
+E_739:
+  name: 普巴剑
+  aliases: []
+  type: 经典.密续
+  note: "达玛西日传灌顶"
+  appearances: [2601, 2604]
+
+E_740:
+  name: 根除地狱
+  aliases: []
+  type: 经典.密续
+  note: "达玛西日传授"
+  appearances: [2604]
+
+E_741:
+  name: 一切宗派源流教义·论说晶鉴
+  aliases: []
+  type: 经典.史籍
+  note: "土官所著；作者敦珠仁波切驳斥其中不实说法"
+  appearances: [2650]
+
+E_742:
+  name: 持明心滴
+  aliases: []
+  type: 经典.密续
+  note: "达玛西日十二岁在彩粉坛城中听受灌顶"
+  appearances: [2564]
+
+# ==================== 教法 ====================
+
+E_743:
+  name: 前译金刚乘
+  aliases: ["前译金刚乘法"]
+  type: 教法.教法体系
+  note: "首先传到涅氏，中间传到努氏，最后传到宿氏"
+  appearances: [4, 6, 118, 288]
+
+E_744:
+  name: 经幻心三部
+  aliases: ["经幻心"]
+  type: 教法.教法体系
+  note: "涅·赞那革玛绕为其教主"
+  appearances: [2, 97]
+
+E_745:
+  name: 生起次第
+  aliases: []
+  type: 教法.修法元素
+  note: "杰敦嘉那得受；钦波云丹松学修；卫巴秀波达娴熟；月波敦则了如指掌"
+  appearances: [205, 274, 280, 341, 1094, 1109, 1130, 1185, 2064, 2389, 2409]
+
+E_746:
+  name: 圆满次第
+  aliases: []
+  type: 教法.修法元素
+  note: "努·桑吉益西使其教法普遍人间"
+  appearances: [205, 274, 280, 341, 1094, 1109, 1130, 1186, 2064, 2389, 2501]
+
+E_747:
+  name: 大圆满
+  aliases: []
+  type: 教法.教法体系
+  note: "达敦觉波对大圆满论典教言通达无碍；觉益从上师匝和色德隆巴得受；宿·香巴桑给十九岁听受后顿然证悟；雍敦巴噶玛巴赐安慰后开始实修"
+  appearances: [205, 274, 280, 328, 341, 867, 883, 1019, 1020, 1095, 1100, 1109, 1130, 1136, 1186, 1188, 1193, 1248, 1259, 1428, 1471, 1485, 1611, 1677, 1721, 1743, 1763, 1875, 1916, 1934, 1938, 1943, 1969, 2007, 2064, 2165]
+
+E_748:
+  name: 心部
+  aliases: ["十八种心部", "心部法"]
+  type: 教法.教法体系
+  note: "达敦宿则对心部全部精通；月波尊者圆满赐觉索心部法要；桑吉仁钦嘉村传十八种心部觉性妙力灌顶"
+  appearances: [328, 702, 703, 917, 1186, 1187, 1188, 1192, 1310, 1318, 1581, 2007, 2162, 2630]
+
+E_749:
+  name: 窍诀部
+  aliases: ["窍诀"]
+  type: 教法.教法体系
+  note: "涅·赞那革玛绕依靠此证得大成就"
+  appearances: [99, 2007, 2630]
+
+E_750:
+  name: 五道
+  aliases: []
+  type: 教法.修法元素
+  note: "大宿六十一岁时五道功德达到究竟后安住任运持明果位"
+  appearances: [707]
+
+E_751:
+  name: 界部
+  aliases: []
+  type: 教法.教法体系
+  note: "宿·香巴桑给在刚瓦释迦白面前得受界部法要"
+  appearances: [1192, 1437, 2007, 2630]
+
+E_752:
+  name: 九乘次第
+  aliases: []
+  type: 教法.教法体系
+  note: "嘉哦岩九峰会聚标志圆满九乘次第"
+  appearances: [832]
+
+E_753:
+  name: 大手印
+  aliases: ["刚派大手印"]
+  type: 教法.教法体系
+  note: "达敦觉波在帕姆哲巴面前聆听；哦敦喇嘛察敦座下听受刚派大手印道情歌集；觉益于吉赞拉面前听闻"
+  appearances: [1249, 1250, 1262, 1702, 1859]
+
+E_754:
+  name: 道果
+  aliases: ["雅派道果法"]
+  type: 教法.教法体系
+  note: "达敦觉波在帕姆哲巴面前听；觉益在桑热嘉瑞座下听雅派道果法；宿·香巴桑给在桑当哲巴华面前听"
+  appearances: [1249, 1264, 1434]
+
+E_755:
+  name: 顿超
+  aliases: []
+  type: 教法.教言法门
+  note: "达敦觉益生起顿超证悟"
+  appearances: [1285]
+
+E_756:
+  name: 息法
+  aliases: []
+  type: 教法.教言法门
+  note: "觉益在桑热嘉瑞座下听受"
+  appearances: [1264]
+
+E_757:
+  name: 心滴
+  aliases: ["大圆满心滴"]
+  type: 教法.教法体系
+  note: "达那卓玛瓦桑哲多吉在雪玛桑给修行此法门达觉性如量境界；桑吉仁钦嘉村传心滴有戏等四灌顶"
+  appearances: [1485, 1585, 2011]
+
+E_758:
+  name: 六波罗蜜多
+  aliases: ["六波罗蜜"]
+  type: 教法.教法体系
+  note: "月波尊者身体力行六波罗蜜多"
+  appearances: [1224]
+
+E_759:
+  name: 伏藏
+  aliases: []
+  type: 教法.教法体系
+  note: "阿达酿伏藏品标题中载长寿水伏藏信息；释迦光在众人当中开取伏藏"
+  appearances: [1373, 1380, 1382]
+
+E_760:
+  name: 大中观
+  aliases: ["胜义大中观"]
+  type: 教法.教法体系
+  note: "辨别胜义大中观的见解引导依靠慈氏五论"
+  appearances: [1638, 1702]
+
+E_761:
+  name: 那诺六法
+  aliases: ["那诺六法窍诀"]
+  type: 教法.教言法门
+  note: "噶托巴在吉笛钦面前得受"
+  appearances: [1859]
+
+E_762:
+  name: 断法
+  aliases: []
+  type: 教法.教言法门
+  note: "秋扬让珠实地修行断法引导"
+  appearances: [1720]
+
+E_763:
+  name: 东律传承
+  aliases: []
+  type: 教法.戒律体系
+  note: "噶托巴按东律传承受比丘戒"
+  appearances: [1849]
+
+# ==================== 教派 ====================
+
+E_764:
+  name: 宁玛
+  aliases: ["前译宁玛", "宁玛派"]
+  type: 教派.藏传宗派
+  note: "大宿·释迦炯内在佛法后弘时期扎下前译宁玛教法的树根"
+  appearances: [291]
+
+E_765:
+  name: 苯波教
+  aliases: []
+  type: 教派.藏传宗派
+  note: "班玛旺嘉能降伏九位具有咒力的苯波教徒"
+  appearances: [268]
+
+E_766:
+  name: 荣派
+  aliases: ["荣派大圆满", "那南派"]
+  type: 教派.子派
+  note: "月波敦则听受荣派大圆满、刚哲；心部类中古派、荣派、康派不同讲法"
+  appearances: [1182, 1188, 1189, 1191, 2254, 2258]
+
+E_767:
+  name: 康派
+  aliases: ["多旺康派", "康巴派", "康派大圆满"]
+  type: 教派.子派
+  note: "杰敦嘉那在觉姆年姆前得受康派大圆满；月波敦则听受康派教授"
+  appearances: [1099, 1188, 1191, 2035, 2060, 2080, 2165]
+
+E_768:
+  name: 古派
+  aliases: []
+  type: 教派.子派
+  note: "月波敦则宣讲古派纲要；心部类中古派讲法"
+  appearances: [1188, 1191, 1194]
+
+E_769:
+  name: 布派
+  aliases: ["布派大圆满"]
+  type: 教派.子派
+  note: "杰敦嘉那在单巴布芒面前得受布派大圆满"
+  appearances: [1099]
+
+E_770:
+  name: 萨迦派
+  aliases: ["萨派", "萨迦"]
+  type: 教派.藏传宗派
+  note: "达那敦德以诛法护持萨迦教法；萨迦派和宿氏派宗派同心同德；宿哈·释迦炯依止萨迦派后裔"
+  appearances: [1414, 1512, 1546, 1551, 1948, 2269]
+
+E_771:
+  name: 宁玛派
+  aliases: ["前译派", "宁玛", "旧密", "旧派"]
+  type: 教派.藏传宗派
+  note: "贯穿全段核心教派；经幻心法脉所属"
+  appearances: [1248, 1508, 1612, 1952]
+
+E_772:
+  name: 噶玛噶举
+  aliases: ["噶举"]
+  type: 教派.藏传宗派
+  note: "雍敦巴成为噶玛巴自生金刚得意弟子"
+  appearances: [1451, 1616]
+
+E_773:
+  name: 格鲁派
+  aliases: []
+  type: 教派.藏传宗派
+  note: "昆·敦华玖棱珠听闻格鲁派密法；格鲁派与哲贡派矛盾"
+  appearances: [1684, 1745, 1756, 1761]
+
+E_774:
+  name: 苯教
+  aliases: ["苯波"]
+  type: 教派.藏传宗派
+  note: "八位苯波师修恶咒对抗噶托巴；妖石曼哦曾在苯教师前受过誓言"
+  appearances: [1867, 1871]
+
+E_775:
+  name: 噶托派
+  aliases: []
+  type: 教派.子派
+  note: "噶托十三代祖师传承；寂静幻化网三甚深灌顶保存此派得以恢复"
+  appearances: [2074, 2396]
+
+# ==================== 仪轨 ====================
+
+E_776:
+  name: 八大法行
+  aliases: ["《八大法行》"]
+  type: 仪轨.修法
+  note: "努·桑吉益西幼年在莲花生大士前听受其灌顶"
+  appearances: [129]
+
+E_777:
+  name: 红黑阎罗护法
+  aliases: ["《红黑阎罗护法》"]
+  type: 仪轨.修法
+  note: "达那达拉传给云丹嘉措"
+  appearances: [237]
+
+E_778:
+  name: 甘露药修法
+  aliases: ["《甘露药修法》"]
+  type: 仪轨.修法
+  note: "大宿在给贡的吉夏秋面前听受"
+  appearances: [326]
+
+E_779:
+  name: 真实意年修
+  aliases: []
+  type: 仪轨.修法
+  note: "大宿师徒在扬温色莫进行的真实意本尊法年修；百名男女瑜伽行者参加"
+  appearances: [462, 612, 618]
+
+E_780:
+  name: 灌顶
+  aliases: []
+  type: 仪轨.灌顶
+  note: "觉益和父亲请求胜乐金刚一百零八灌顶；达敦宿则授宿派幻化网灌顶；多处出现"
+  appearances: [1018, 1258, 1430, 1431, 1578]
+
+E_781:
+  name: 真实九本尊灌顶
+  aliases: []
+  type: 仪轨.灌顶
+  note: "弯颜特汗在宿·桑波华面前请求"
+  appearances: [1504]
+
+E_782:
+  name: 长寿灌顶
+  aliases: []
+  type: 仪轨.灌顶
+  note: "弯颜特汗请求；特莫达在宿哈·释迦炯面前求"
+  appearances: [1504, 1545, 1604]
+
+E_783:
+  name: 幻化网寂猛灌顶
+  aliases: ["寂猛灌顶"]
+  type: 仪轨.灌顶
+  note: "卓钦桑吉仁钦七十岁时完整得受；噶托巴授予帕思巴"
+  appearances: [1603, 1956]
+
+E_784:
+  name: 十八心部觉性妙力灌顶
+  aliases: []
+  type: 仪轨.灌顶
+  note: "卓钦桑吉仁钦听受"
+  appearances: [1605]
+
+E_785:
+  name: 心滴四灌顶
+  aliases: ["有戏无戏四灌顶"]
+  type: 仪轨.灌顶
+  note: "卓钦桑吉仁钦得受心滴根本的四灌顶"
+  appearances: [1610]
+
+# ==================== 地名 ====================
+
+E_786:
+  name: 雅隆西巴
+  aliases: []
+  type: 地名.区域
+  note: "涅·赞那革玛绕出生地"
+  appearances: [9]
+
+E_787:
+  name: 雅卓
+  aliases: []
+  type: 地名.区域
+  note: "涅·赞那革玛绕住在此地时被伯父涅·格敦反目"
+  appearances: [22, 44]
+
+E_788:
+  name: 贡波切
+  aliases: []
+  type: 地名.区域
+  note: "涅·赞那革玛绕离开雅卓后来到贡波切境内的坡热地方"
+  appearances: [28]
+
+E_789:
+  name: 卫藏
+  aliases: []
+  type: 地名.区域
+  note: "涅·赞那革玛绕到了卫藏；班玛旺嘉在卫藏使河水返流"
+  appearances: [37, 266, 318]
+
+E_790:
+  name: 南岩卡切那山洞
+  aliases: []
+  type: 地名.修行处
+  note: "涅译师和布玛莫札在此修二十一狮子金刚橛法"
+  appearances: [50]
+
+E_791:
+  name: 五杵金刚山洞
+  aliases: []
+  type: 地名.修行处
+  note: "在印度和尼泊尔交界处；努·桑吉益西在此听受续部及窍诀"
+  appearances: [131]
+
+E_792:
+  name: 金刚座
+  aliases: []
+  type: 地名.圣地
+  note: "努·桑吉益西在此得密主金刚手菩萨显现赐灌顶"
+  appearances: [152]
+
+E_793:
+  name: 永仲宝藏地
+  aliases: []
+  type: 地名.圣地
+  note: "努·桑吉益西在此得密主金刚手菩萨赐名称灌顶"
+  appearances: [152]
+
+E_794:
+  name: 鹿野苑
+  aliases: []
+  type: 地名.圣地
+  note: "努·桑吉益西在此见到阿匝雅色瓦坚"
+  appearances: [143]
+
+E_795:
+  name: 哲夏
+  aliases: []
+  type: 地名.区域
+  note: "达那绕杰达和达玛布德、达玛燃匝由切赞吉迎请来到此"
+  appearances: [147, 149]
+
+E_796:
+  name: 耶杰多吉古哦
+  aliases: []
+  type: 地名.修行处
+  note: "努·桑吉益西在此修行九个月"
+  appearances: [151]
+
+E_797:
+  name: 桑隆那波
+  aliases: []
+  type: 地名.圣地
+  note: "尸陀林；按文殊授记努·桑吉益西在此获一髻佛母悉地物"
+  appearances: [158]
+
+E_798:
+  name: 内札杰扬宗
+  aliases: []
+  type: 地名.修行处
+  note: "努·桑吉益西作为修行地点的核心"
+  appearances: [162]
+
+E_799:
+  name: 尼莫雪卡
+  aliases: []
+  type: 地名.区域
+  note: "努·桑吉益西逃回努境容地后占领此地"
+  appearances: [182]
+
+E_800:
+  name: 那杰秀
+  aliases: []
+  type: 地名.区域
+  note: "云丹嘉措见到努·桑吉益西的地方"
+  appearances: [240]
+
+E_801:
+  name: 努克隆
+  aliases: []
+  type: 地名.区域
+  note: "云丹嘉措出生地"
+  appearances: [231]
+
+E_802:
+  name: 多拉雄
+  aliases: []
+  type: 地名.寺院
+  note: "酿·西绕秋所建经堂"
+  appearances: [274]
+
+E_803:
+  name: 哈沃古岩山
+  aliases: []
+  type: 地名.修行处
+  note: "酿·西绕秋在此修行面见金刚橛坛城"
+  appearances: [275]
+
+E_804:
+  name: 多康
+  aliases: []
+  type: 地名.区域
+  note: "大宿诞生地区域；宿·嘉瓦色札在此降生"
+  appearances: [295, 305, 316]
+
+E_805:
+  name: 雅砻那莫隆
+  aliases: []
+  type: 地名.修行处
+  note: "大宿在此修行事续时苏醒无上密种姓"
+  appearances: [319]
+
+E_806:
+  name: 青普
+  aliases: []
+  type: 地名.修行处
+  note: "如·释迦炯在青普获得长寿自在"
+  appearances: [331, 351, 354, 355]
+
+E_807:
+  name: 鸱枭谷
+  aliases: ["黑马山谷"]
+  type: 地名.修行处
+  note: "旺钦哦波请释迦西日到此；释迦西日言此地北面山为五部如来自性；宿·释迦炯奉文殊金像为此地寺院主佛"
+  appearances: [376, 377, 378, 1327, 1328, 1542]
+
+E_808:
+  name: 卫热杰札山坡
+  aliases: []
+  type: 地名.区域
+  note: "努·桑吉益西诞生地"
+  appearances: [123]
+
+E_809:
+  name: 塔隆巴
+  aliases: []
+  type: 地名.区域
+  note: "尼玛酿波回到西藏后住在此地"
+  appearances: [303]
+
+E_810:
+  name: 哦东阿达山
+  aliases: []
+  type: 地名.修行处
+  note: "大宿一心向往在静处修行之地"
+  appearances: [371]
+
+E_811:
+  name: 桑耶
+  aliases: []
+  type: 地名.寺院
+  note: "桑古西绕到达桑耶询问如·释迦炯所在"
+  appearances: [354, 365]
+
+E_812:
+  name: 雅珠巴
+  aliases: []
+  type: 地名.区域
+  note: "索布·华杰益西出生地"
+  appearances: [107]
+
+E_813:
+  name: 也热香地
+  aliases: ["香地"]
+  type: 地名.区域
+  note: "大宿携眷属前往的修行地；达香河东面半圆形山谷；空行母授记在此修行今生成佛"
+  appearances: [409, 415]
+
+E_814:
+  name: 达香河
+  aliases: []
+  type: 地名.自然地理
+  note: "也热香地达香河，空行母授记中提及"
+  appearances: [410]
+
+E_815:
+  name: 珠波
+  aliases: []
+  type: 地名.区域
+  note: "三岔路口所在地；大宿在此跳黑日嘎舞"
+  appearances: [628]
+
+E_816:
+  name: 赞普波康山
+  aliases: []
+  type: 地名.自然地理
+  note: "大宿变黑日嘎时左脚踩在赞普波康山巅"
+  appearances: [526]
+
+E_817:
+  name: 酿热
+  aliases: []
+  type: 地名.区域
+  note: "施主玛玛永仲札西夫妻所在地方"
+  appearances: [666]
+
+E_818:
+  name: 卓普
+  aliases: []
+  type: 地名.区域
+  note: "达那敦德出家处；宿·香巴桑给出家处；阿阇黎华秋所在之处"
+  appearances: [679, 1406, 1420, 1433]
+
+E_819:
+  name: 莫革隆
+  aliases: []
+  type: 地名.区域
+  note: "大宿在此向卓米译师补百两黄金"
+  appearances: [699]
+
+E_820:
+  name: 攀杰康温
+  aliases: []
+  type: 地名.区域
+  note: "女修行者耶母母女所在地方；大宿让小宿住在她家"
+  appearances: [787]
+
+E_821:
+  name: 东空
+  aliases: []
+  type: 地名.区域
+  note: "小宿从东空捎口信给妻子"
+  appearances: [743]
+
+E_822:
+  name: 塔革山谷
+  aliases: ["塔革大坝", "塔革"]
+  type: 地名.自然地理
+  note: "已存在于ch05-part2 (E_899)。小宿修行使整个塔革山谷遍满金刚萨埵"
+  appearances: [842, 859]
+
+E_823:
+  name: 香曲河
+  aliases: []
+  type: 地名.自然地理
+  note: "香曲河暴涨时大宿将托巴抛到河对岸考验弟子"
+  appearances: [820]
+
+E_824:
+  name: 密严金刚庄严刹土
+  aliases: ["密严刹土"]
+  type: 地名.神话地名
+  note: "已存在于ch05-part2 (E_906)。小宿前往之处；卓普巴会众云集之处"
+  appearances: [988, 1067]
+
+E_825:
+  name: 年多
+  aliases: []
+  type: 地名.区域
+  note: "已存在于ch05-part2 (E_907)。杰敦嘉那生于此"
+  appearances: [1079, 1097]
+
+E_826:
+  name: 达普
+  aliases: []
+  type: 地名.区域
+  note: "已存在于ch05-part2 (E_908)。宿·释迦桑给在此住到十五岁"
+  appearances: [1012]
+
+E_827:
+  name: 芒境贡塘
+  aliases: []
+  type: 地名.区域
+  note: "卫巴秀波来到此处七日内显现大圆满智慧"
+  appearances: [1136, 1137]
+
+E_828:
+  name: 雅隆
+  aliases: []
+  type: 地名.区域
+  note: "卫巴秀波出生地"
+  appearances: [1129, 1809]
+
+E_829:
+  name: 意热瓦古坡
+  aliases: []
+  type: 地名.自然地理
+  note: "卫巴秀波住此时出现霹雳不受损伤"
+  appearances: [1148]
+
+E_830:
+  name: 友瓦岩山
+  aliases: []
+  type: 地名.自然地理
+  note: "螳螂尊者在此遇到单巴友穹瓦"
+  appearances: [1118]
+
+E_831:
+  name: 善巴
+  aliases: ["善地"]
+  type: 地名.区域
+  note: "施主迎请桑吉单穹之处"
+  appearances: [1163]
+
+E_832:
+  name: 南岩
+  aliases: []
+  type: 地名.区域
+  note: "桑吉单穹到此处后在霍多坡芒刚寺利益有情"
+  appearances: [1162]
+
+E_833:
+  name: 当日
+  aliases: []
+  type: 地名.区域
+  note: "已存在于ch05-part2 (E_904)。单巴桑吉住此处"
+  appearances: [1027]
+
+E_834:
+  name: 玖隆
+  aliases: []
+  type: 地名.区域
+  note: "宿·释迦桑给在此处到扬康上师前闻法"
+  appearances: [1013]
+
+E_835:
+  name: 玛拉雅大林海
+  aliases: ["玛拉雅"]
+  type: 地名.自然地理
+  note: "得香嘉哦巴佛学院所在之处；四位弟子飞到此处"
+  appearances: [903]
+
+E_836:
+  name: 年玛
+  aliases: []
+  type: 地名.区域
+  note: "卓达桑所在地；杰敦嘉那在此得受法"
+  appearances: [1097]
+
+E_837:
+  name: 印度金刚座
+  aliases: ["金刚座"]
+  type: 地名.圣地
+  note: "月波尊者先后三次朝拜"
+  appearances: [1230]
+
+E_838:
+  name: 善普达隆
+  aliases: []
+  type: 地名.修行处
+  note: "月波尊者住在此静处时身体融入磐石"
+  appearances: [1220]
+
+E_839:
+  name: 真波山
+  aliases: []
+  type: 地名.自然地理
+  note: "月波尊者在此无阻穿行墙壁"
+  appearances: [1221]
+
+E_840:
+  name: 桑普
+  aliases: []
+  type: 地名.区域
+  note: "昆·敦华玖棱珠担当桑普与色雪的讲闻阿阇黎；多吉嘉烂幼年往桑普研学"
+  appearances: [1236, 1685, 1831]
+
+E_841:
+  name: 上沃如
+  aliases: []
+  type: 地名.区域
+  note: "达敦觉波的家乡；地方首领"
+  appearances: [1246]
+
+E_842:
+  name: 切哦热
+  aliases: []
+  type: 地名.修行处
+  note: "达敦觉波在此修行聚所化众生；觉益闻受金刚橛法后在此修行"
+  appearances: [1253, 1265]
+
+E_843:
+  name: 阿秀曼
+  aliases: []
+  type: 地名.区域
+  note: "觉益十六岁下半年来到此处"
+  appearances: [1262]
+
+E_844:
+  name: 宗卡
+  aliases: []
+  type: 地名.区域
+  note: "达敦觉益在此做十八个月炼铜塑造大悲观音像"
+  appearances: [1298]
+
+E_845:
+  name: 多物坡光明岩
+  aliases: []
+  type: 地名.修行处
+  note: "达敦觉益在此修护法面见怙主尊颜"
+  appearances: [1299]
+
+E_846:
+  name: 多隆
+  aliases: []
+  type: 地名.区域
+  note: "觉益去此化缘期间梦中遇上师消除痛苦"
+  appearances: [1300]
+
+E_847:
+  name: 拉萨
+  aliases: []
+  type: 地名.区域
+  note: "月波尊者建造石围处；觉益六次朝礼拉萨释迦二尊"
+  appearances: [1235, 1303]
+
+E_848:
+  name: 措普
+  aliases: []
+  type: 地名.区域
+  note: "大班智达释迦西日被迎请至此"
+  appearances: [1327]
+
+E_849:
+  name: 南岩卡切
+  aliases: []
+  type: 地名.区域
+  note: "释迦光与嘎热携手来此修行，见阿达酿父子"
+  appearances: [1354]
+
+E_850:
+  name: 巴卓
+  aliases: []
+  type: 地名.修行处
+  note: "释迦光与嘎热在此修行"
+  appearances: [1355]
+
+E_851:
+  name: 刚札
+  aliases: []
+  type: 地名.区域
+  note: "达那敦德以诛法在此降伏三万军兵"
+  appearances: [1413]
+
+E_852:
+  name: 卡多吉岩
+  aliases: []
+  type: 地名.修行处
+  note: "宿·释迦光一心在此中部修行；六十三岁圆寂于此"
+  appearances: [1400]
+
+E_853:
+  name: 美哲山
+  aliases: []
+  type: 地名.自然地理
+  note: "皇帝允许释迦光在此建大寺院"
+  appearances: [1397]
+
+E_854:
+  name: 甲甘唐湖
+  aliases: []
+  type: 地名.自然地理
+  note: "龙供献此湖；释迦光让龙显神变使之干涸后作密宗大寺院"
+  appearances: [1398]
+
+E_855:
+  name: 哦瓦隆
+  aliases: []
+  type: 地名.区域
+  note: "宿·香巴桑给十五岁在此于达释迦佩面前听受密藏续"
+  appearances: [1425]
+
+E_856:
+  name: 达那内萨
+  aliases: ["内萨"]
+  type: 地名.区域
+  note: "达那卓玛瓦桑哲多吉出生地；桑吉仁钦嘉村出生地"
+  appearances: [1481, 1562]
+
+E_857:
+  name: 雪玛桑给
+  aliases: []
+  type: 地名.修行处
+  note: "达那卓玛瓦桑哲多吉在此修行大圆满心滴法门"
+  appearances: [1485]
+
+E_858:
+  name: 不丹
+  aliases: []
+  type: 地名.国
+  note: "雍敦巴住在此讲经说法"
+  appearances: [1477, 2047]
+
+E_859:
+  name: 彭波大山
+  aliases: []
+  type: 地名.自然地理
+  note: "雍敦巴住在此讲经说法"
+  appearances: [1477]
+
+E_860:
+  name: 热德岩
+  aliases: []
+  type: 地名.修行处
+  note: "雍敦巴住在此讲经说法"
+  appearances: [1477]
+
+E_861:
+  name: 极乐世界
+  aliases: ["极乐国土"]
+  type: 地名.神话地名
+  note: "噶托巴获授记下一世在极乐世界安住；藏敦巴也获此授记"
+  appearances: [1493, 1886, 1919]
+
+E_862:
+  name: 刚波山禅定洲
+  aliases: []
+  type: 地名.修行处
+  note: "桑吉仁钦七十二岁在此于旺札巴嘉村前依止"
+  appearances: [1590]
+
+E_863:
+  name: 班霍
+  aliases: []
+  type: 地名.区域
+  note: "皇帝赏释迦光此地四十五户土地"
+  appearances: [1397]
+
+E_864:
+  name: 蒙古
+  aliases: []
+  type: 地名.国
+  note: "嘎热去蒙古为忽必烈行勾召术；蒙古军入侵时期"
+  appearances: [1358, 1359, 1407, 1412]
+
+E_865:
+  name: 汉地
+  aliases: ["汉土"]
+  type: 地名.国
+  note: "月波尊者摄受不同语种有情包括汉地；钦差带伏藏水回汉地；宿·桑波华奉诏前往；雍敦巴年青时奉诏到此"
+  appearances: [1229, 1394, 1462, 1499, 1515]
+
+E_866:
+  name: 尼泊尔
+  aliases: []
+  type: 地名.国
+  note: "月波尊者摄受不同语种有情包括尼泊尔"
+  appearances: [1229]
+
+E_867:
+  name: 印度
+  aliases: []
+  type: 地名.国
+  note: "月波尊者对来自印度的译师班智达作承侍"
+  appearances: [1225, 1229]
+
+E_868:
+  name: 阿里
+  aliases: ["西藏阿里"]
+  type: 地名.区域
+  note: "达敦宿则从阿里请来；蒙古族准备损害萨迦教法时涉及此地"
+  appearances: [1412, 1430]
+
+E_869:
+  name: 哲秀康玛
+  aliases: []
+  type: 地名.区域
+  note: "秋吉札巴出生地"
+  appearances: [1625]
+
+E_870:
+  name: 卫多哲贡年刚
+  aliases: []
+  type: 地名.区域
+  note: "仁钦彭措出生地"
+  appearances: [1644]
+
+E_871:
+  name: 铜色吉祥山
+  aliases: []
+  type: 地名.神话地名
+  note: "仁钦彭措来到此处拜见莲花生大士"
+  appearances: [1654]
+
+E_872:
+  name: 扬巴坚
+  aliases: []
+  type: 地名.圣地
+  note: "仁钦彭措在此修行并得到伏藏标题"
+  appearances: [1648, 1652]
+
+E_873:
+  name: 隆秀
+  aliases: ["河谷下游"]
+  type: 地名.区域
+  note: "仁钦彭措在此专心修行"
+  appearances: [1648]
+
+E_874:
+  name: 永多德卓
+  aliases: ["德卓"]
+  type: 地名.圣地
+  note: "仁钦彭措在此修行并开取伏藏"
+  appearances: [1649, 1650, 1652]
+
+E_875:
+  name: 嘉曼达则
+  aliases: []
+  type: 地名.区域
+  note: "桑吉札出生地"
+  appearances: [1786]
+
+E_876:
+  name: 琼波卓哦
+  aliases: []
+  type: 地名.区域
+  note: "桑吉札在此遇到札些康玛修法"
+  appearances: [1791]
+
+E_877:
+  name: 多康哦波刚
+  aliases: ["哦波刚"]
+  type: 地名.区域
+  note: "噶托巴出生地；长江岩边"
+  appearances: [1845, 1890]
+
+E_878:
+  name: 藏巴达古
+  aliases: []
+  type: 地名.区域
+  note: "秋扬让珠在此居住三年实修大圆满"
+  appearances: [1721]
+
+E_879:
+  name: 东够哲
+  aliases: []
+  type: 地名.区域
+  note: "昆·敦华玖棱珠断除散乱居此深林静处"
+  appearances: [1693]
+
+E_880:
+  name: 帕旺卡
+  aliases: []
+  type: 地名.区域
+  note: "深林静处；昆·敦华玖棱珠居此"
+  appearances: [1693]
+
+E_881:
+  name: 妙佛莲花光无量殿
+  aliases: ["莲花光刹土"]
+  type: 地名.神话地名
+  note: "卓钦桑吉仁钦要去往之处；秋扬让珠前往莲花光刹土"
+  appearances: [1700, 1774]
+
+E_882:
+  name: 嘎波
+  aliases: ["嘎波地方"]
+  type: 地名.区域
+  note: "匝敦仁波切说噶托巴若去此地精进修行将成就虹身"
+  appearances: [1862]
+
+E_883:
+  name: 噶托
+  aliases: []
+  type: 地名.区域
+  note: "噶托巴去噶托将广弘佛法；即噶托寺所在地"
+  appearances: [1863, 1864]
+
+E_884:
+  name: 安多
+  aliases: []
+  type: 地名.区域
+  note: "噶托巴弟子从东方安多来"
+  appearances: [1874]
+
+E_885:
+  name: 擦瓦绒
+  aliases: []
+  type: 地名.区域
+  note: "噶托巴弟子从南方擦瓦绒来"
+  appearances: [1874, 2047]
+
+E_886:
+  name: 罗曼
+  aliases: []
+  type: 地名.区域
+  note: "噶托巴弟子所至之地"
+  appearances: [1875]
+
+E_887:
+  name: 达波
+  aliases: ["达波地方"]
+  type: 地名.区域
+  note: "多吉嘉烂法要在达波地方弘扬"
+  appearances: [1835]
+
+E_888:
+  name: 嘉木绒
+  aliases: []
+  type: 地名.区域
+  note: "东面；荣波土秋三位弘扬佛法处；传承支流所及"
+  appearances: [2028, 2047, 2619]
+
+E_889:
+  name: 贡布
+  aliases: []
+  type: 地名.区域
+  note: "西部前译弘法范围"
+  appearances: [2047]
+
+E_890:
+  name: 后藏热拉地区隆绒
+  aliases: ["隆绒"]
+  type: 地名.区域
+  note: "荣索班智达出生地"
+  appearances: [2105]
+
+E_891:
+  name: 龙塘卓玛
+  aliases: []
+  type: 地名.区域
+  note: "阿如益西炯内出现处"
+  appearances: [2163]
+
+E_892:
+  name: 南方门卡那让狮子堡山洞
+  aliases: ["门卡那让狮子堡山洞"]
+  type: 地名.圣地
+  note: "明妃卡钦萨在此修行成就"
+  appearances: [2240]
+
+E_893:
+  name: 库热
+  aliases: []
+  type: 地名.区域
+  note: "朗拉在此放羊维生"
+  appearances: [2280]
+
+E_894:
+  name: 哦塘
+  aliases: []
+  type: 地名.区域
+  note: "绕译师从此处伏藏品取出恶咒等"
+  appearances: [2284]
+
+E_895:
+  name: 色甲西
+  aliases: []
+  type: 地名.区域
+  note: "杰万香切仁钦在此修两个月达目的"
+  appearances: [2305]
+
+E_896:
+  name: 觉母那嘉上山洞
+  aliases: []
+  type: 地名.圣地
+  note: "达夏热瓦修行处"
+  appearances: [2323]
+
+E_897:
+  name: 益巴达瓦山洞
+  aliases: []
+  type: 地名.圣地
+  note: "莲师告达夏热瓦去此修行"
+  appearances: [2324]
+
+E_898:
+  name: 益波色瓦隆
+  aliases: []
+  type: 地名.区域
+  note: "达夏热瓦从此取出金刚橛伏藏"
+  appearances: [2328]
+
+E_899:
+  name: 金城
+  aliases: []
+  type: 地名.区域
+  note: "萨迦班智达赴此辩论外道"
+  appearances: [2337]
+
+E_900:
+  name: 莫札
+  aliases: []
+  type: 地名.区域
+  note: "萨迦班智达到此安放金刚橛"
+  appearances: [2349]
+
+E_901:
+  name: 涅皇宫
+  aliases: []
+  type: 地名.区域
+  note: "嘉扬钦则叔侄祈求处；恩授灌顶"
+  appearances: [2363]
+
+E_902:
+  name: 多康江卡
+  aliases: ["江卡"]
+  type: 地名.区域
+  note: "多昂丹增诺吾所居"
+  appearances: [2625]
+
+E_903:
+  name: 热达金察山谷
+  aliases: []
+  type: 地名.区域
+  note: "竹青寺所在"
+  appearances: [2669]
+
+E_904:
+  name: 恰香切朗
+  aliases: []
+  type: 地名.区域
+  note: "密主陈列棱珠出生地"
+  appearances: [2476]
+
+E_905:
+  name: 诶达温波下城
+  aliases: []
+  type: 地名.区域
+  note: "大译师秋嘉丹真出生地"
+  appearances: [2513]
+
+E_906:
+  name: 耶巴色瓦谷
+  aliases: []
+  type: 地名.圣地
+  note: "莲花生大士伏藏普巴及马头明王最密法类处"
+  appearances: [2319]
+
+E_907:
+  name: 丹山洞
+  aliases: []
+  type: 地名.圣地
+  note: "《幻化网自释》逐渐出现；龙钦巴在此闻法"
+  appearances: [2098]
+
+E_908:
+  name: 达多朗
+  aliases: ["达多朗静处"]
+  type: 地名.修行处
+  note: "秋嘉丹真前世寺院；七十八岁在此圆寂"
+  appearances: [2515, 2543]
+
+E_909:
+  name: 后藏塔东卡
+  aliases: ["塔东卡"]
+  type: 地名.区域
+  note: "克主罗珠嘉村出生地"
+  appearances: [2424]
+
+E_910:
+  name: 曼卡南哲洲
+  aliases: []
+  type: 地名.区域
+  note: "多吉札仁真秋铁蛇年在此出生"
+  appearances: [2379]
+
+# ==================== 寺院 ====================
+
+E_911:
+  name: 卓普寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "大宿在卓普建造的佛殿；有三世佛为主的大小八座佛堂，后院走廊二十根柱子，前庭走廊十六根柱子；建立大佛学院"
+  appearances: [679, 685, 687, 952, 967]
+
+E_912:
+  name: 札巴禅堂
+  aliases: []
+  type: 寺院.修行处
+  note: "龙魔兄妹作为其护法神；大宿涅槃处；若缘起未破则方兴未艾"
+  appearances: [661, 663, 714]
+
+E_913:
+  name: 策普寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "国师噶玛巴预计建造的寺院；以此为譬喻对比大宿的密意"
+  appearances: [692]
+
+E_914:
+  name: 嘉哦岩
+  aliases: ["九峰神山"]
+  type: 寺院.修行处
+  note: "已存在于ch05-part1。小宿在此闭关十四年；形似吉祥黑日嘎由八古热玛环绕；六十一岁木虎年在此伴瑞相前往密严刹土"
+  appearances: [831, 833, 838, 839, 929, 967, 987]
+
+E_915:
+  name: 螳螂寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "螳螂尊者修行处得名；月波敦则有时也在此安住修行"
+  appearances: [1197]
+
+E_916:
+  name: 杰卡寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "月波敦则十六岁时来到此处在云丹宗面前依止"
+  appearances: [1185]
+
+E_917:
+  name: 善戒东寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "施主供养给桑吉单穹；月波敦则木鼠年在此诞生"
+  appearances: [1164, 1165]
+
+E_918:
+  name: 哦嘎寺
+  aliases: ["善哦嘎寺"]
+  type: 寺院.寺庙
+  note: "月波尊者住持；遗体安放四月；达敦觉益来此拜见月波尊者"
+  appearances: [1164, 1237, 1269]
+
+E_919:
+  name: 霍多坡芒刚寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "桑吉单穹到南岩后在此利益有情"
+  appearances: [1163]
+
+E_920:
+  name: 法台寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "扬上师为月波尊者寺院取名法台寺"
+  appearances: [1208]
+
+E_921:
+  name: 大昭寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "内有释迦牟尼佛像之一"
+  appearances: [1231]
+
+E_922:
+  name: 小昭寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "内有释迦牟尼佛像之一"
+  appearances: [1231]
+
+E_923:
+  name: 善塘嘉经堂
+  aliases: []
+  type: 寺院.寺庙
+  note: "月波尊者遗体从哦嘎寺迎请至此；荼毗处；后只剩遗址"
+  appearances: [1238, 1240]
+
+E_924:
+  name: 库塘拉康
+  aliases: []
+  type: 寺院.寺庙
+  note: "释迦光与嘎热在此修行"
+  appearances: [1355]
+
+E_925:
+  name: 瓦嘎寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "达那敦德建造身语意所依能依"
+  appearances: [1415]
+
+E_926:
+  name: 地德宫殿
+  aliases: ["地德"]
+  type: 寺院.王宫
+  note: "宿·桑波华在此建立密宗；上空出现恶蝎相乌云凶兆"
+  appearances: [1501, 1505]
+
+E_927:
+  name: 鸱枭谷寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "宿·释迦炯奉文殊金像为此寺主要佛像并建立讲学院和修行院"
+  appearances: [1542]
+
+E_928:
+  name: 宿芒寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "秋吉札巴在此拜见第七世噶玛巴而出家"
+  appearances: [1625]
+
+E_929:
+  name: 昌珠寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "嘎波巴修复破损的昌珠寺并迎请仁钦彭措开光"
+  appearances: [1647]
+
+E_930:
+  name: 则塘佛教大学
+  aliases: ["则塘禅定洲"]
+  type: 寺院.道场
+  note: "昆·敦华玖棱珠在此开办讲学院传讲经论；宿钦秋扬让珠在此建立巡回辩经"
+  appearances: [1647, 1680, 1691]
+
+E_931:
+  name: 花吉则佛教大学
+  aliases: []
+  type: 寺院.道场
+  note: "木鼠年秋扬让珠在此冬季大法会开端讲解密藏续"
+  appearances: [1739]
+
+E_932:
+  name: 土丹多吉札寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "为阿杰丹毕尼玛仁真班玛陈列举行坐床仪式之处"
+  appearances: [1768]
+
+E_933:
+  name: 卓滚吉美扬寺贡塘
+  aliases: ["卓滚吉美扬寺"]
+  type: 寺院.寺庙
+  note: "秋扬让珠暮年住此处"
+  appearances: [1770]
+
+E_934:
+  name: 多土特道场
+  aliases: []
+  type: 寺院.道场
+  note: "桑吉札建立此道场"
+  appearances: [1797]
+
+E_935:
+  name: 秋丹寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "滚波多吉为住持；以前有佛教大学"
+  appearances: [1811]
+
+E_936:
+  name: 噶托寺
+  aliases: ["噶托金刚座佛学院"]
+  type: 寺院.寺庙
+  note: "噶托巴单巴德香土鼠年建立；前译教法源头；藏敦巴五十六岁任住持；帕思巴供灵塔于此"
+  appearances: [1864, 1867, 1874, 1903, 1936, 1958, 2656]
+
+E_937:
+  name: 哦达香钦寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "贝若札那在此翻译密藏续释并进行传讲"
+  appearances: [1842]
+
+E_938:
+  name: 尊胜殿
+  aliases: []
+  type: 寺院.寺庙
+  note: "萨迦班智达叔侄在中途则地建起"
+  appearances: [1949]
+
+E_939:
+  name: 够觉匝寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "匝德金厄南卡多吉建立"
+  appearances: [2033]
+
+E_940:
+  name: 桑耶寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "莲花生大士在桑耶寺传君王派普巴"
+  appearances: [2236]
+
+E_941:
+  name: 竹青寺
+  aliases: ["修部禅定法洲"]
+  type: 寺院.寺庙
+  note: "哲旺竹青巴班玛仁真建立；前译佛教一个主体"
+  appearances: [2669]
+
+E_942:
+  name: 白玉寺
+  aliases: ["华境南嘉香切洲"]
+  type: 寺院.寺庙
+  note: "仁真根桑西绕建立"
+  appearances: [2678]
+
+E_943:
+  name: 达塘白玉寺
+  aliases: ["达塘显密讲修洲"]
+  type: 寺院.寺庙
+  note: "重新修复"
+  appearances: [2683]
+
+E_944:
+  name: 穹吉华热佛学院
+  aliases: []
+  type: 寺院.道场
+  note: "秋嘉丹真在此出家"
+  appearances: [2516]
+
+E_945:
+  name: 扬温寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "尼波瓦朗卓才旺嘉波在此听闻宿杭"
+  appearances: [2357]
+
+# ==================== 法器圣物 ====================
+
+E_946:
+  name: 降香金刚橛
+  aliases: []
+  type: 法器圣物.法器
+  note: "努·桑吉益西法衣吊边处取出用以降伏军兵；班玛旺嘉使河水返流"
+  appearances: [187, 266]
+
+E_947:
+  name: 吉祥黑日嘎佛像
+  aliases: ["黑日嘎佛像"]
+  type: 法器圣物.佛像
+  note: "大宿亲自塑造；一面二臂；肚脐以上为大宿以密意自现；开光时跳九种舞姿并说话；大宿化光融入其心间；加持力极大；嘉敦释迦益西和宿姆哦波也融入其中"
+  appearances: [515, 544, 546, 548, 609, 610, 718, 723, 724, 727]
+
+E_948:
+  name: 金刚铃
+  aliases: []
+  type: 法器圣物.法器
+  note: "大宿涅槃时摇晃金刚铃中身体化光"
+  appearances: [718]
+
+E_949:
+  name: 金刚橛
+  aliases: []
+  type: 法器圣物.法器
+  note: "库派金刚橛传给卓钦桑吉仁钦；秋吉札巴梦中见莲师得金刚橛灌顶；多土巴在佛塔中变为金刚橛身"
+  appearances: [857, 1605, 1632, 1763, 1801]
+
+E_950:
+  name: 长寿水伏藏
+  aliases: ["长寿水", "长寿水器", "伏藏水宝瓶"]
+  type: 法器圣物.圣物
+  note: "阿达酿伏藏品标题中载后藏金刚长寿地方有此伏藏；宿·释迦光开取；青金石瓶最大如墨瓶；忽必烈享用后据说活百岁"
+  appearances: [1373, 1375, 1388, 1391, 1394]
+
+E_951:
+  name: 释迦两尊
+  aliases: []
+  type: 法器圣物.佛像
+  note: "大昭寺和小昭寺内的两尊释迦牟尼佛像；月波尊者四次朝礼；觉益六次朝礼"
+  appearances: [1231, 1303]
+
+E_952:
+  name: 文殊金像
+  aliases: []
+  type: 法器圣物.佛像
+  note: "嘉瓦大宿法衣片段装藏的非常精致文殊金像；宿·释迦炯奉为鸱枭谷寺主要佛像"
+  appearances: [1541]
+
+E_953:
+  name: 七步护法铸像
+  aliases: []
+  type: 法器圣物.佛像
+  note: "汉土响铜金刚萨埵佛像和护法兄妹跳神铸像迎请到西藏时面向西藏跨越七步"
+  appearances: [1522, 1523]
+
+E_954:
+  name: 四事业金刚橛
+  aliases: []
+  type: 法器圣物.法器
+  note: "宿·桑波华在地德宫殿建立密宗时的法器；据说一直保存在宫里"
+  appearances: [1506]
+
+E_955:
+  name: 响铜灵塔
+  aliases: ["三层楼高的响铜灵塔"]
+  type: 法器圣物.圣物
+  note: "帕思巴返回西藏时供在噶托寺"
+  appearances: [1957]
+
+E_956:
+  name: 纯金释迦佛像
+  aliases: []
+  type: 法器圣物.佛像
+  note: "江国王皈依后供养给根嘎波巴"
+  appearances: [1979]
+
+E_957:
+  name: 金刚橛(伏藏)
+  aliases: ["色绕金刚橛"]
+  type: 法器圣物.圣物
+  note: "达夏热瓦从益波色瓦隆取出；萨迦班智达安放于莫札寺院"
+  appearances: [2328, 2350]
+
+# ==================== 集合 ====================
+
+E_958:
+  name: 八华子
+  aliases: ["八位华子", "修行金刚橛的八位带有华的堪布"]
+  type: 集合.弟子集合
+  note: "涅译师弟子中修行金刚橛的八位堪布；前四华+后四华"
+  appearances: [100, 101, 102, 136]
+
+E_959:
+  name: 努·桑吉益西四大心子
+  aliases: ["四大心子"]
+  type: 集合.弟子集合
+  note: "精通根本续、善巧甘露、擅长辩论花、通达见解密意果实"
+  appearances: [207, 211]
+
+E_960:
+  name: 宿氏祖孙三师
+  aliases: ["宿氏三师"]
+  type: 集合.上师集合
+  note: "大宿扎根、小宿展枝、释迦桑给使叶茂果丰"
+  appearances: [293]
+
+E_961:
+  name: 预试七人
+  aliases: []
+  type: 集合.人物集合
+  note: "火羊年出家的七人"
+  appearances: [222]
+
+E_962:
+  name: 四十二位寂静本尊
+  aliases: ["寂静本尊"]
+  type: 集合.上师集合
+  note: "大宿在香地多年修行后面见四十二位寂静本尊"
+  appearances: [419]
+
+E_963:
+  name: 五十八位忿怒本尊
+  aliases: ["忿怒本尊"]
+  type: 集合.上师集合
+  note: "大宿在香地修行后面见五十八位忿怒本尊"
+  appearances: [420]
+
+E_964:
+  name: 小宿四位顶梁柱弟子
+  aliases: ["四柱弟子"]
+  type: 集合.弟子集合
+  note: "已存在于ch05-part2 (E_950)。有时加上玛土香白称五位"
+  appearances: [870, 873, 917, 918, 919]
+
+E_965:
+  name: 卓普巴四位敦士
+  aliases: ["四位敦士"]
+  type: 集合.弟子集合
+  note: "已存在于ch05-part2 (E_955)。卓普巴临涅槃时对四位敦士说带会供品来"
+  appearances: [1052, 1054, 1057, 1058, 1064]
+
+E_966:
+  name: 卓普巴智慧摄受十二位弟子
+  aliases: ["十二位弟子"]
+  type: 集合.弟子集合
+  note: "四位那士、四位敦士、四位美士"
+  appearances: [1052]
+
+E_967:
+  name: 月波尊者六心子
+  aliases: []
+  type: 集合.弟子集合
+  note: "月波尊者心子六位"
+  appearances: [1241]
+
+E_968:
+  name: 宿·香巴桑给十六位弟子
+  aliases: []
+  type: 集合.弟子集合
+  note: "幻化网道次第密藏续巴卡释及经部集密意续圆满学修到位的享有盛誉善知识十六位"
+  appearances: [1445]
+
+E_969:
+  name: 雅隆五活佛兄弟
+  aliases: ["五兄弟"]
+  type: 集合.人物集合
+  note: "炯波卡热涅大师所生五子；后三位共称为具缘者、尸林者、自在王"
+  appearances: [1809]
+
+E_970:
+  name: 噶托十三代祖师
+  aliases: []
+  type: 集合.上师集合
+  note: "三部怙主化身连续不断现身弘扬前译教法"
+  appearances: [2024]
+
+E_971:
+  name: 荣波土秋三位
+  aliases: []
+  type: 集合.弟子集合
+  note: "单巴德夏弟子；利根顿悟者"
+  appearances: [2026]
+
+E_972:
+  name: 嘎单巴四教子
+  aliases: []
+  type: 集合.弟子集合
+  note: "嘎单巴高足；仅提到哲擦刚巴一位"
+  appearances: [2030]
+
+E_973:
+  name: 仲师十三代
+  aliases: []
+  type: 集合.上师集合
+  note: "继噶托十三代上师后涌现"
+  appearances: [2044]
+
+E_974:
+  name: 木师十三代
+  aliases: []
+  type: 集合.上师集合
+  note: "依靠木敦嘉华桑给而出现"
+  appearances: [2036]
