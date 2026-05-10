@@ -1,0 +1,635 @@
+# ============================================================
+# 知识图谱关系抽取 — 第四品 内密三续 seg1 (lines 1-300)
+# 覆盖范围: 续部类 + 修部类(八大修部成就者) + 圆满次第 + 大圆满心部界部
+#           (贝若札那 → 桑吉滚波 → 香切嘉村 → 萨丹仁钦 →
+#            克杰萨瓦 → 香切札巴 → 西绕炯内 → 瓦贡 → 奘·达玛布德)
+# 来源: source/dudjom/chapter_md/04_内密三续.md
+# 规范: SKILL_05a v0.1 + entity-taxonomy v0.4
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/04_内密三续.md
+  source_lines: "1-300"
+  spec_versions:
+    entity-taxonomy: v0.4
+    skill: SKILL_05a v0.1
+  total_relations: 62
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 化身/形态关系 (manifestationOf)
+# ============================================================
+
+  - rel_id: REL_001
+    type: manifestationOf
+    source: 萨霍·曼达绕瓦
+    target: 金刚亥母
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "这两位女子与真正的金刚亥母无二无别"
+
+  - rel_id: REL_002
+    type: manifestationOf
+    source: 益西措嘉
+    target: 金刚亥母
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "这两位女子与真正的金刚亥母无二无别"
+
+# ============================================================
+# B. 师承关系 (teacherOf)
+# ============================================================
+
+  # --- 续部类传承 ---
+
+  - rel_id: REL_003
+    type: teacherOf
+    source: 布玛莫札
+    target: 玛·仁钦秋
+    specialty: [密续]
+    derived_from: EVT_001
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "八大幻化部，均由阿阇黎布玛莫札传给玛·仁钦秋"
+
+  - rel_id: REL_004
+    type: teacherOf
+    source: 玛·仁钦秋
+    target: 则热·仁钦云讷
+    specialty: [密续]
+    derived_from: EVT_002
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "玛·仁钦秋传给则热·仁钦云讷、吉瑞秋炯二人"
+
+  - rel_id: REL_005
+    type: teacherOf
+    source: 玛·仁钦秋
+    target: 吉瑞秋炯
+    specialty: [密续]
+    derived_from: EVT_002
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "玛·仁钦秋传给则热·仁钦云讷、吉瑞秋炯二人"
+
+  - rel_id: REL_006
+    type: teacherOf
+    source: 则热·仁钦云讷
+    target: 扬·嘉瓦云丹
+    specialty: [密续]
+    derived_from: EVT_003
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他们二位又传给扬·嘉瓦云丹、达吉花戒札巴二人"
+
+  - rel_id: REL_007
+    type: teacherOf
+    source: 则热·仁钦云讷
+    target: 达吉花戒札巴
+    specialty: [密续]
+    derived_from: EVT_003
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他们二位又传给扬·嘉瓦云丹、达吉花戒札巴二人"
+
+  - rel_id: REL_008
+    type: teacherOf
+    source: 莲花生大士
+    target: 涅·赞那革玛绕
+    specialty: [密法]
+    derived_from: EVT_005
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "莲花生大士传给涅·赞那革玛绕"
+
+  - rel_id: REL_009
+    type: teacherOf
+    source: 涅·赞那革玛绕
+    target: 索波·花吉益西
+    specialty: [密法]
+    derived_from: EVT_006
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "涅·赞那革玛绕传给索波·花吉益西"
+
+  - rel_id: REL_010
+    type: teacherOf
+    source: 索波·花吉益西
+    target: 努·桑吉益西
+    specialty: [密法]
+    derived_from: EVT_007
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "索波·花吉益西和扬·嘉瓦云丹传给努·桑吉益西"
+
+  - rel_id: REL_011
+    type: teacherOf
+    source: 扬·嘉瓦云丹
+    target: 努·桑吉益西
+    specialty: [密法]
+    derived_from: EVT_007
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "索波·花吉益西和扬·嘉瓦云丹传给努·桑吉益西"
+
+  - rel_id: REL_012
+    type: teacherOf
+    source: 佛密
+    target: 伟·蒋花
+    specialty: [密续]
+    derived_from: EVT_008
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "佛密阿阇黎在岗底斯山给伟·蒋花和占嘎莫德等传授"
+
+  - rel_id: REL_013
+    type: teacherOf
+    source: 佛密
+    target: 占嘎莫德
+    specialty: [密续]
+    derived_from: EVT_008
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "佛密阿阇黎在岗底斯山给伟·蒋花和占嘎莫德等传授"
+
+  # --- 修部类 ---
+
+  - rel_id: REL_014
+    type: teacherOf
+    source: 布玛莫札
+    target: 涅·赞那革玛绕
+    specialty: [甘露类]
+    derived_from: EVT_011
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "甘露类由布玛莫札传给涅·赞那革玛绕等"
+
+  - rel_id: REL_015
+    type: teacherOf
+    source: 莲花生大士
+    target: 赤松德赞
+    specialty: [灌顶, 八大修部]
+    derived_from: EVT_012
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "莲师在青普哲革格哦地方为具有殊胜缘分的君臣九人于八大修部...圆满传授了所有灌顶次第"
+
+  # --- 大圆满心部界部传承 ---
+
+  - rel_id: REL_016
+    type: teacherOf
+    source: 西日桑哈
+    target: 贝若札那
+    specialty: [大圆满, 心部, 界部]
+    derived_from: EVT_023
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "贝若札那得以拜见花戒桑给大师...他把心部十八窍诀用白山羊的乳汁写在白绸缎上"
+
+  - rel_id: REL_017
+    type: teacherOf
+    source: 嘎绕多吉
+    target: 贝若札那
+    specialty: [大圆满]
+    derived_from: EVT_026
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在德瓦地方的大尸林中又拜见了嘎绕多吉大师，得受了六百四十万大圆满义传承"
+
+  - rel_id: REL_018
+    type: teacherOf
+    source: 贝若札那
+    target: 赤松德赞
+    specialty: [大圆满]
+    derived_from: EVT_028
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "白天为国王传共同因果法门，晚上悄悄单独传授大圆满"
+
+  - rel_id: REL_019
+    type: teacherOf
+    source: 贝若札那
+    target: 耶札酿波
+    specialty: [灌顶, 教言]
+    derived_from: EVT_029
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在嘉绒岩怙主静处摄受了耶札酿波等，以能成熟的灌顶、能解脱的教言度化众生"
+
+  - rel_id: REL_020
+    type: teacherOf
+    source: 贝若札那
+    target: 桑敦益西
+    specialty: [大圆满]
+    derived_from: EVT_030
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在擦瓦绒的达则卡，为桑敦益西上师传讲了所有大圆满类"
+
+  - rel_id: REL_021
+    type: teacherOf
+    source: 贝若札那
+    target: 帮·桑吉滚波
+    specialty: [大圆满]
+    derived_from: EVT_031
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在洞空绒的红岩静堡，传给帮·桑吉滚波"
+
+  - rel_id: REL_022
+    type: teacherOf
+    source: 贝若札那
+    target: 涅·赞那革玛绕
+    specialty: [大圆满, 五次第]
+    derived_from: EVT_032
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在卫藏，为涅·赞那革玛绕、乐萨·西绕卓玛传讲，被一致称为五次第"
+
+  - rel_id: REL_023
+    type: teacherOf
+    source: 贝若札那
+    target: 乐萨·西绕卓玛
+    specialty: [大圆满, 五次第]
+    derived_from: EVT_032
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在卫藏，为涅·赞那革玛绕、乐萨·西绕卓玛传讲，被一致称为五次第"
+
+  - rel_id: REL_024
+    type: teacherOf
+    source: 涅·赞那革玛绕
+    target: 札花吉酿波
+    specialty: [大圆满]
+    derived_from: EVT_034
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "涅·赞那革玛绕传给索波·花吉益西、札花吉酿波、拉隆·拜吉多吉、哦札·花吉云讷等等"
+
+  - rel_id: REL_025
+    type: teacherOf
+    source: 涅·赞那革玛绕
+    target: 拉隆·拜吉多吉
+    specialty: [大圆满]
+    derived_from: EVT_034
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "涅·赞那革玛绕传给索波·花吉益西、札花吉酿波、拉隆·拜吉多吉、哦札·花吉云讷等等"
+
+  - rel_id: REL_026
+    type: teacherOf
+    source: 涅·赞那革玛绕
+    target: 哦札·花吉云讷
+    specialty: [大圆满]
+    derived_from: EVT_034
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "涅·赞那革玛绕传给索波·花吉益西、札花吉酿波、拉隆·拜吉多吉、哦札·花吉云讷等等"
+
+  - rel_id: REL_027
+    type: teacherOf
+    source: 索波·花吉益西
+    target: 努·桑吉益西
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "索波·花吉益西传给努钦的一种传承"
+    note: "此处努钦即努·桑吉益西"
+
+  # --- 桑吉滚波虹身传承 ---
+
+  - rel_id: REL_028
+    type: teacherOf
+    source: 帮·桑吉滚波
+    target: 安兰·香切嘉村
+    specialty: [大圆满]
+    derived_from: EVT_037
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "帮·桑吉滚波的弟子是安兰·香切嘉村...向帮·麦彭滚波请求教授"
+
+  - rel_id: REL_029
+    type: teacherOf
+    source: 安兰·香切嘉村
+    target: 萨丹仁钦
+    specialty: [大圆满]
+    derived_from: EVT_039
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "安兰·香切嘉村的弟子萨丹仁钦...他向安兰请求教授"
+
+  - rel_id: REL_030
+    type: teacherOf
+    source: 萨丹仁钦
+    target: 克杰萨瓦
+    specialty: [大圆满]
+    derived_from: EVT_041
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "萨丹仁钦的弟子...克杰萨瓦尊者...经萨丹仁钦恩赐教言"
+
+  - rel_id: REL_031
+    type: teacherOf
+    source: 克杰萨瓦
+    target: 香切札巴
+    specialty: [大圆满]
+    derived_from: EVT_043
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "克杰萨瓦的弟子香切札巴...向克杰萨瓦请求教授"
+
+  - rel_id: REL_032
+    type: teacherOf
+    source: 香切札巴
+    target: 酿·西绕炯内
+    specialty: [大圆满]
+    derived_from: EVT_044
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "酿·香切札巴将教言赐给他"
+
+  - rel_id: REL_033
+    type: teacherOf
+    source: 酿·西绕炯内
+    target: 瓦贡
+    specialty: [大圆满]
+    derived_from: EVT_049
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "瓦贡到了二十四岁，蒙受酿·西绕炯内传授教言"
+
+  # --- 瓦贡 → 奘·达玛布德 传承 ---
+
+  - rel_id: REL_034
+    type: teacherOf
+    source: 瓦贡
+    target: 奘·达玛布德
+    specialty: [大手印, 大圆满, 金刚桥]
+    derived_from: EVT_057
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "瓦贡大师心生欢喜，为他传讲了大手印表示窍诀和大圆满固有七类"
+
+  - rel_id: REL_035
+    type: teacherOf
+    source: 单巴尊者
+    target: 奘·达玛布德
+    specialty: [密法, 教言]
+    derived_from: EVT_051
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "得以拜见印度单巴尊者，十四个月中他一直跟随在单巴尊者左右恭敬承侍...单巴尊者根据缘起，恩赐了他许多密宗要诀"
+
+  - rel_id: REL_036
+    type: teacherOf
+    source: 阿克花巴
+    target: 奘·达玛布德
+    specialty: [饮血金刚]
+    derived_from: EVT_055
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在阿克花巴面前请求了饮血金刚法、白哈法"
+
+  - rel_id: REL_037
+    type: teacherOf
+    source: 努·香波切
+    target: 奘·达玛布德
+    specialty: [事续, 伏藏]
+    derived_from: EVT_056
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在努·香波切面前请求了事续与焰口母的大伏藏"
+
+  - rel_id: REL_038
+    type: teacherOf
+    source: 巴热巴
+    target: 奘·达玛布德
+    specialty: [文殊法, 大鹏修法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在巴热巴上师前也听闻了文殊法和大鹏修法"
+
+  - rel_id: REL_039
+    type: teacherOf
+    source: 格西布
+    target: 奘·达玛布德
+    specialty: [前译部]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在格西布面前请求了前译部"
+
+  - rel_id: REL_040
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 索芒赞
+    specialty: [大手印]
+    derived_from: EVT_061
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "奘大师为索芒赞传授大手印，结果他的迷乱显现转依为智慧"
+
+  - rel_id: REL_041
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 热楚龙穹巴
+    specialty: [大圆满, 四文字]
+    derived_from: EVT_062
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "为热楚龙穹巴、俄莫加列嘉传授《四文字》与大圆满"
+
+  - rel_id: REL_042
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 俄莫加列嘉
+    specialty: [大圆满, 四文字]
+    derived_from: EVT_062
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "为热楚龙穹巴、俄莫加列嘉传授《四文字》与大圆满"
+
+  - rel_id: REL_043
+    type: teacherOf
+    source: 索年当
+    target: 奘·达玛布德
+    specialty: [教言]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在索年当面前，奘听了《卓哲》、《嘉夏》"
+
+  - rel_id: REL_044
+    type: teacherOf
+    source: 匝哦巴
+    target: 奘·达玛布德
+    specialty: [三滴甘露]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在匝哦巴面前听闻《三滴甘露》"
+
+  - rel_id: REL_045
+    type: teacherOf
+    source: 热楚龙穹
+    target: 奘·达玛布德
+    specialty: [耳传三句]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在热楚龙穹座下听闻了《耳传三句》"
+
+  - rel_id: REL_046
+    type: teacherOf
+    source: 龙拉钦波
+    target: 奘·达玛布德
+    specialty: [道歌窍诀]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在龙拉钦波前听闻了《道歌窍诀》"
+
+  - rel_id: REL_047
+    type: teacherOf
+    source: 拉卓空行母
+    target: 奘·达玛布德
+    specialty: [断法境]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在拉卓空行母面前听闻了《断法境》"
+
+  - rel_id: REL_048
+    type: teacherOf
+    source: 嘉瓦布敦
+    target: 奘·达玛布德
+    specialty: [七类部]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在嘉瓦布敦上师前听受了《七类部》"
+
+  - rel_id: REL_049
+    type: teacherOf
+    source: 努·香钦
+    target: 奘·达玛布德
+    specialty: [巴热布哲雅十五法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在努·香钦面前听闻巴热布哲雅十五法"
+
+  - rel_id: REL_050
+    type: teacherOf
+    source: 当热根嘎
+    target: 奘·达玛布德
+    specialty: [教言]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在当热根嘎面前听闻了各种教言"
+
+  - rel_id: REL_051
+    type: teacherOf
+    source: 单波拉吉
+    target: 奘·达玛布德
+    specialty: [六法, 生加行]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在单波拉吉面前请求了《六法》与《生加行》"
+
+  - rel_id: REL_052
+    type: teacherOf
+    source: 雅达
+    target: 奘·达玛布德
+    specialty: [莲师七类寂静部]
+    derived_from: EVT_067
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他在上师雅达面前得受了《莲师七类寂静部》的教授"
+
+  - rel_id: REL_053
+    type: teacherOf
+    source: 藏夏嘎多
+    target: 帮绕卡达
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "藏夏嘎多传给帮绕卡达、雅彻达玛西绕、色姆给隆、玛尔巴西绕哦"
+
+  - rel_id: REL_054
+    type: teacherOf
+    source: 藏夏嘎多
+    target: 雅彻达玛西绕
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "藏夏嘎多传给帮绕卡达、雅彻达玛西绕、色姆给隆、玛尔巴西绕哦"
+
+  - rel_id: REL_055
+    type: teacherOf
+    source: 藏夏嘎多
+    target: 色姆给隆
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "藏夏嘎多传给帮绕卡达、雅彻达玛西绕、色姆给隆、玛尔巴西绕哦"
+
+  - rel_id: REL_056
+    type: teacherOf
+    source: 藏夏嘎多
+    target: 玛尔巴西绕哦
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "藏夏嘎多传给帮绕卡达、雅彻达玛西绕、色姆给隆、玛尔巴西绕哦"
+
+# ============================================================
+# C. 著作关系 (authorOf)
+# ============================================================
+
+  - rel_id: REL_057
+    type: authorOf
+    source: 莲花生大士
+    target: 窍诀见鬘论
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "莲花生大士传给涅·赞那革玛绕，也著了《窍诀见鬘论》"
+
+  - rel_id: REL_058
+    type: authorOf
+    source: 嘉辛东波
+    target: 平等行续大疏
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "邬金国王成就者嘉辛东波的《平等行续大疏》"
+
+  - rel_id: REL_059
+    type: authorOf
+    source: 赤松德赞
+    target: 正量论
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他撰著了《正量论》等典籍"
+
+# ============================================================
+# D. 地理关联 (locatedAt / originOf)
+# ============================================================
+
+  - rel_id: REL_060
+    type: originOf
+    source: 涅莫雪堪
+    target: 贝若札那
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "出生于涅莫雪堪地方的阿阇黎贝若札那"
+
+  - rel_id: REL_061
+    type: originOf
+    source: 也隆秀
+    target: 克杰萨瓦
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "来自也隆秀地方的克杰萨瓦尊者"
+
+  - rel_id: REL_062
+    type: originOf
+    source: 耶隆塘穹瓦
+    target: 奘·达玛布德
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "本是耶隆塘穹瓦地方的尼姑，塘穹赞普的大儿子使她还俗生下了奘"

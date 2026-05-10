@@ -1,0 +1,705 @@
+# ============================================================
+# 知识图谱事件抽取 — 第四品 内密三续 Seg3 (lines 601-900)
+# 覆盖范围: 美龙多吉 → 革玛燃匝 → 噶玛巴·自生金刚 → 龙钦绕降求法
+#           → 龙钦绕降遇革玛燃匝 → 无垢光尊者初期净相(至 line 900)
+# 来源: source/dudjom/chapter_md/04_内密三续.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
+#
+# 实体引用说明:
+#   使用 canonical name 引用实体（跨文件稳定标识符）
+#   P2.E_NNN → ch04-part2.yaml
+#   P3.E_PNNN 等 → ch04-part3.yaml
+#   S3.E_4S3_NNN → ch04-seg3.yaml (本批新提取)
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/04_内密三续.md
+  source_section: 美龙多吉至龙钦绕降遇革玛燃匝 + 无垢光初期净相
+  source_lines: "601-900"
+  total_events: 45
+  spec_versions:
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+    skill: SKILL_04a v0.1
+  date: 2026-05-09
+
+events:
+
+  # ----------------------------------------------------------
+  # 美龙多吉传 (lines 606-640)
+  # ----------------------------------------------------------
+
+  - event_id: EV_S301
+    type: 出家
+    title: 美龙多吉九岁出家
+    participants:
+      - entity: 美龙多吉
+        role: 主体
+      - entity: 哲龙巴
+        role: 亲教师
+      - entity: 思龙巴
+        role: 堪布
+    time_info:
+      text: 九岁
+      age: 9
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "九岁于成就者哲龙巴和堪布思龙巴面前出家"
+
+  - event_id: EV_S302
+    type: 证悟
+    title: 美龙多吉十六岁念诵般若百遍证悟实相义
+    participants:
+      - entity: 美龙多吉
+        role: 主体
+    location: 札普左荡
+    time_info:
+      text: 十六岁
+      age: 16
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十六岁时在札普左荡处念诵一百遍《般若八千颂》，结果证悟了实相义"
+
+  - event_id: EV_S303
+    type: 闭关修行
+    title: 美龙多吉铜湖修行得神通
+    participants:
+      - entity: 美龙多吉
+        role: 主体
+    location: 铜湖
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在铜湖地方修行，觉受十分明显，也获得了微妙的神通"
+
+  - event_id: EV_S304
+    type: 灌顶传法
+    title: 美龙多吉十八岁从桑吉温波得受心滴窍诀
+    participants:
+      - entity: 美龙多吉
+        role: 受法者
+      - entity: 桑给嘉巴桑吉温波
+        role: 传法者
+    time_info:
+      text: 十八岁
+      age: 18
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十八岁，见到桑给嘉巴桑吉温波尊者得受了心滴窍诀"
+
+  - event_id: EV_S305
+    type: 净相
+    title: 美龙多吉前行时六日见金刚萨埵
+    participants:
+      - entity: 美龙多吉
+        role: 行者
+      - entity: 金刚萨埵
+        role: 本尊
+    time_info:
+      text: 修持前行时六天
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "修持前行时，六天之中夜以继日见到金刚萨埵尊颜"
+
+  - event_id: EV_S306
+    type: 灌顶传法
+    title: 美龙多吉二十三岁闻受伏藏法后亲见金刚亥母
+    participants:
+      - entity: 美龙多吉
+        role: 受法者
+      - entity: 桑吉日巴
+        role: 传法者
+      - entity: 金刚亥母
+        role: 本尊
+    time_info:
+      text: 二十三岁
+      age: 23
+    layers: [史传, 神变]
+    confidence: 0.80
+    source_quote: "在桑吉日巴尊者面前听闻了《金刚亥母》等若干伏藏法以后修行，结果亲见金刚亥母"
+
+  - event_id: EV_S307
+    type: 净相
+    title: 美龙多吉面见多位本尊上师
+    participants:
+      - entity: 美龙多吉
+        role: 行者
+      - entity: 马头明王
+        role: 本尊
+      - entity: 度母
+        role: 本尊
+      - entity: 观世音菩萨
+        role: 本尊
+      - entity: 莲花生大士
+        role: 上师
+      - entity: 普贤如来
+        role: 本尊
+      - entity: 金刚萨埵
+        role: 本尊
+      - entity: 布玛莫札
+        role: 上师
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "也现见了马头明王、度母、观世音菩萨、莲花生大士、普贤如来、金刚萨埵、布玛莫札"
+
+  - event_id: EV_S308
+    type: 神变
+    title: 美龙多吉飞行空中踏岩如泥
+    participants:
+      - entity: 美龙多吉
+        role: 主体
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "见到雄鹰崽翱翔空中，便持着觉性禁行的力量而飞往空中，走在岩石上如踏泥土"
+
+  - event_id: EV_S309
+    type: 圆寂
+    title: 美龙多吉六十一岁圆寂消失于西方
+    participants:
+      - entity: 美龙多吉
+        role: 主体
+    location: 拉瓦尸林
+    time_info:
+      text: 六十一岁
+      age: 61
+    layers: [史传, 神变]
+    confidence: 0.85
+    source_quote: "最后在拉瓦尸林示现圆寂时，伴随着万丈光芒、妙音，众人看到他消失在西方"
+
+  # ----------------------------------------------------------
+  # 革玛燃匝传 (lines 642-724)
+  # ----------------------------------------------------------
+
+  - event_id: EV_S310
+    type: 出生
+    title: 革玛燃匝火虎年出生
+    participants:
+      - entity: 革玛燃匝
+        role: 主体
+    location: 左热温中匝卡村落
+    time_info:
+      text: 火虎年
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他火虎年诞生于左热温中的匝卡村落"
+
+  - event_id: EV_S311
+    type: 灌顶传法
+    title: 革玛燃匝七岁获喜金刚胜乐金刚灌顶
+    participants:
+      - entity: 革玛燃匝
+        role: 受法者
+      - entity: 吉多巴
+        role: 灌顶师
+    location: 工布哦秀透荡寺
+    time_info:
+      text: 七岁
+      age: 7
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "七岁，在工布哦秀透荡寺的吉多巴上师前获得《喜金刚》、《胜乐金刚》的灌顶"
+
+  - event_id: EV_S312
+    type: 受戒
+    title: 革玛燃匝九岁受居士戒
+    participants:
+      - entity: 革玛燃匝
+        role: 受戒者
+      - entity: 藏巴
+        role: 堪布
+    time_info:
+      text: 九岁
+      age: 9
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "九岁时在堪布藏巴前受圆满居士戒"
+
+  - event_id: EV_S313
+    type: 出家
+    title: 革玛燃匝十二岁出家法名云讷嘉波
+    participants:
+      - entity: 革玛燃匝
+        role: 主体
+      - entity: 叶瓦巴
+        role: 亲教师
+      - entity: 阿日巴
+        role: 规范师
+    location: 帕母哲
+    time_info:
+      text: 十二岁
+      age: 12
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十二岁在帕母哲亲教师叶瓦巴和规范师阿日巴前出家，法名为云讷嘉波"
+
+  - event_id: EV_S314
+    type: 净相
+    title: 革玛燃匝念六字真言见观世音菩萨
+    participants:
+      - entity: 革玛燃匝
+        role: 行者
+      - entity: 观世音菩萨
+        role: 本尊
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "同时念诵六字真言，结果见到观世音菩萨在一座水晶室内面带微笑"
+
+  - event_id: EV_S315
+    type: 灌顶传法
+    title: 革玛燃匝在美龙多吉前得大手印引导
+    participants:
+      - entity: 革玛燃匝
+        role: 受法者
+      - entity: 美龙多吉
+        role: 传法者
+    location: 阿尔山洞
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在阿尔山洞遇到美龙多吉尊者，请求了大手印引导，结果直观而认识了心的本来面目"
+
+  - event_id: EV_S316
+    type: 净相
+    title: 革玛燃匝十日晚见莲花生大士开示
+    participants:
+      - entity: 革玛燃匝
+        role: 行者
+      - entity: 莲花生大士
+        role: 上师
+    time_info:
+      text: 十日晚上
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在十日晚上，见到邬金莲花生大士，莲师说：'奇哉，善男子，恒时修法。'"
+
+  - event_id: EV_S317
+    type: 灌顶传法
+    title: 革玛燃匝得受秘密心滴灌顶传承教授
+    participants:
+      - entity: 革玛燃匝
+        role: 受法者
+      - entity: 美龙多吉
+        role: 传法者
+    location: 卡切
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在大成就者美龙多吉面前认认真真地得受了秘密心滴的灌顶、传承及教授"
+
+  - event_id: EV_S318
+    type: 净相
+    title: 革玛燃匝灌顶行列中见四臂怙主等护法
+    participants:
+      - entity: 革玛燃匝
+        role: 行者
+      - entity: 四臂怙主
+        role: 护法
+      - entity: 俄嘎匝哲护法神
+        role: 护法
+      - entity: 事业血髻佛母
+        role: 护法
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在灌顶的行列里，他看到：上师头上的虚空中四臂怙主（马哈嘎拉）……"
+
+  - event_id: EV_S319
+    type: 净相
+    title: 革玛燃匝竹园洞面见金刚亥母
+    participants:
+      - entity: 革玛燃匝
+        role: 行者
+      - entity: 金刚亥母
+        role: 本尊
+    location: 竹园洞
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "住在邬金修行处竹园洞中的一冬天里，面见了金刚亥母，从而智慧无偏得以增长"
+
+  - event_id: EV_S320
+    type: 闭关修行
+    title: 革玛燃匝耶措湖旁独住八月摄受地神
+    participants:
+      - entity: 革玛燃匝
+        role: 行者
+    location: 耶措湖
+    time_info:
+      text: 八个月
+    layers: [史传, 神变]
+    confidence: 0.80
+    source_quote: "转绕匝热神山以后又在耶措湖旁只身一人住了八个月……依靠本性中平等一味而摄受了地神"
+
+  - event_id: EV_S321
+    type: 圆寂
+    title: 革玛燃匝七十八岁圆寂后复活十三天
+    participants:
+      - entity: 革玛燃匝
+        role: 主体
+      - entity: 古达
+        role: 侍者
+    time_info:
+      text: 七十八岁，水羊年七月二十五
+      age: 78
+    layers: [史传, 神变]
+    confidence: 0.85
+    source_quote: "七十八岁，水羊年七月二十五，伴随着妙音、自光、帷幕等稀有验相而圆寂。侍者古达……上师再度立起……寿命延长了十三天"
+
+  - event_id: EV_S322
+    type: 荼毗
+    title: 革玛燃匝荼毗出五部圣聚坛城
+    participants:
+      - entity: 革玛燃匝
+        role: 主体
+    time_info:
+      text: 二十五日
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "二十五日荼毗时，完整的头盖骨中自然显现五部圣聚坛城，右耳畔出现一寸大小的蓝色佛母像"
+
+  # ----------------------------------------------------------
+  # 噶玛巴·自生金刚传 (lines 726-748)
+  # ----------------------------------------------------------
+
+  - event_id: EV_S323
+    type: 转世
+    title: 噶玛巴·自生金刚夺识入亡者尸体
+    participants:
+      - entity: 噶玛巴·自生金刚
+        role: 主体
+      - entity: 观世音菩萨
+        role: 本源
+    location: 多隆
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "噶玛巴·自生金刚是圣者观世音菩萨亲自降临于世间……在多隆地方一对年迈夫妻死去儿子的尸体中夺识而入"
+
+  - event_id: EV_S324
+    type: 伏藏
+    title: 噶玛巴·自生金刚取出长寿水伏藏
+    participants:
+      - entity: 噶玛巴·自生金刚
+        role: 主体
+    location: 桑耶青普
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从桑耶青普和雅玛隆等地取出长寿水伏藏，从而使汉地皇帝的寿命延长"
+
+  - event_id: EV_S325
+    type: 证悟
+    title: 噶玛巴·自生金刚布玛莫札融入白毫现前心滴密意
+    participants:
+      - entity: 噶玛巴·自生金刚
+        role: 主体
+      - entity: 布玛莫札
+        role: 传法者
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "当他看到布玛莫札融入自己的白毫时，即刻原原本本地现前了心滴的密意"
+
+  - event_id: EV_S326
+    type: 灌顶传法
+    title: 噶玛巴·自生金刚在革玛燃匝前听受心滴窍诀
+    participants:
+      - entity: 噶玛巴·自生金刚
+        role: 受法者
+      - entity: 革玛燃匝
+        role: 传法者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他谦虚地在持明革玛燃匝座前完整听受了秘密心滴的窍诀"
+
+  - event_id: EV_S327
+    type: 授记
+    title: 噶玛巴·自生金刚教诫弟子分区弘扬心滴
+    participants:
+      - entity: 噶玛巴·自生金刚
+        role: 上师
+      - entity: 曼龙巴释迦云尼
+        role: 弟子
+      - entity: 荣敦多吉花
+        role: 弟子
+      - entity: 益嘉瓦
+        role: 弟子
+      - entity: 益西嘉村
+        role: 弟子
+      - entity: 哲革
+        role: 弟子
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "教诫曼龙巴释迦云尼等说：'荣敦多吉花在卫藏弘扬；益嘉瓦在康贡弘扬；益西嘉村在蒙古和汉地弘扬；哲革在卫藏弘扬'"
+
+  # ----------------------------------------------------------
+  # 龙钦绕降传·前半（出生至求法, lines 750-840）
+  # ----------------------------------------------------------
+
+  - event_id: EV_S328
+    type: 出生
+    title: 龙钦巴土猴年二月初十出生
+    participants:
+      - entity: 龙钦巴
+        role: 主体
+      - entity: 南哲热玛德
+        role: 护法
+    location: 右热札恰多村落
+    time_info:
+      text: 第五胜周年土猴年藏历二月初十
+    layers: [史传, 神变]
+    confidence: 0.85
+    source_quote: "在第五胜周年土猴年藏历二月初十那一天生下龙钦巴尊者……南哲热玛德护法神一边说'我来保护'一边把他抱在怀里"
+
+  - event_id: EV_S329
+    type: 出家
+    title: 龙钦巴十二岁出家法名赤诚罗珠
+    participants:
+      - entity: 龙钦巴
+        role: 主体
+      - entity: 萨哲仁钦
+        role: 堪布
+      - entity: 根嘎俄色
+        role: 阿阇黎
+    location: 桑耶
+    time_info:
+      text: 十二岁
+      age: 12
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十二岁时在桑耶巴堪布萨哲仁钦和阿阇黎根嘎俄色面前出家，法名为赤诚罗珠"
+
+  - event_id: EV_S330
+    type: 灌顶传法
+    title: 龙钦巴十六岁广闻道果等法
+    participants:
+      - entity: 龙钦巴
+        role: 受法者
+      - entity: 札西仁钦
+        role: 传法者
+    time_info:
+      text: 十六岁
+      age: 16
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十六岁在阿阇黎札西仁钦面前广闻了《道果》、二种《六法》、《金刚亥母六法》、《胜乐金刚》、《金刚手大轮》等法的灌顶、引导及教授"
+
+  - event_id: EV_S331
+    type: 求法
+    title: 龙钦巴十九岁入桑普尼托大佛学院
+    participants:
+      - entity: 龙钦巴
+        role: 受法者
+      - entity: 参滚巴
+        role: 住持
+      - entity: 喇张巴秋花嘉灿
+        role: 住持
+    location: 桑普尼托大佛学院
+    time_info:
+      text: 十九岁
+      age: 19
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十九岁进入西藏鄂勒毕西绕的道场——讲因明的桑普尼托大佛学院"
+
+  - event_id: EV_S332
+    type: 净相
+    title: 龙钦巴修行文殊妙音天女等面见各位本尊
+    participants:
+      - entity: 龙钦巴
+        role: 行者
+      - entity: 文殊菩萨
+        role: 本尊
+      - entity: 妙音天女
+        role: 本尊
+      - entity: 不动佛
+        role: 本尊
+      - entity: 金刚亥母
+        role: 本尊
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "他在修行文殊菩萨、妙音天女、不动佛、白金刚亥母时面见各位本尊"
+
+  - event_id: EV_S333
+    type: 净相
+    title: 妙音天女七日显示四大部洲
+    participants:
+      - entity: 龙钦巴
+        role: 受法者
+      - entity: 妙音天女
+        role: 主体
+    time_info:
+      text: 七天
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "妙音天女把他放在手掌中七天之内显示（转绕）四大部洲及须弥山，并得授记"
+
+  - event_id: EV_S334
+    type: 灌顶传法
+    title: 龙钦巴在法王自生金刚前广闻法要
+    participants:
+      - entity: 龙钦巴
+        role: 受法者
+      - entity: 噶玛巴·自生金刚
+        role: 传法者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在法王自生金刚面前，听受了《六加行》、《遣除魔障法》、《那诺六法》、《直指三身》……"
+
+  - event_id: EV_S335
+    type: 灌顶传法
+    title: 龙钦巴在萨迦派上师单巴前听受九种深法
+    participants:
+      - entity: 龙钦巴
+        role: 受法者
+      - entity: 单巴
+        role: 传法者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在萨迦派上师单巴面前，听受了大发心、道果等萨迦派九种深法"
+
+  - event_id: EV_S336
+    type: 离别
+    title: 龙钦巴离开桑普尼托写嵌字诗痛斥
+    participants:
+      - entity: 龙钦巴
+        role: 主体
+    location: 鄂大译师遗塔
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "尊者以诙谐的方式洋洋洒洒地写了满满一张纸……'如罗刹游罗刹境……'藏文三十个字母为开头的嵌字诗，在整个国土广泛流传"
+
+  - event_id: EV_S337
+    type: 闭关修行
+    title: 龙钦巴嘉玛玖山洞闭黑关五月
+    participants:
+      - entity: 龙钦巴
+        role: 行者
+    location: 嘉玛玖山洞
+    time_info:
+      text: 五个月
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在嘉玛玖山洞闭黑关五个月期间"
+
+  - event_id: EV_S338
+    type: 净相
+    title: 龙钦巴遇空行少女得大圆满缘起成熟
+    participants:
+      - entity: 龙钦巴
+        role: 行者
+    location: 嘉玛玖山洞
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "遇见一位十六岁的妙龄少女……摘下一个珍宝头饰戴在全知无垢光尊者头上说：'从此以后恒时加持你，并赐予悉地'"
+    description: |
+      龙钦巴在黑关中遇十六岁空行少女，
+      少女赐珍宝头饰，由此得遇大圆满窍诀法缘起成熟。
+
+  - event_id: EV_S339
+    type: 依止
+    title: 龙钦巴二十九岁遇革玛燃匝
+    participants:
+      - entity: 龙钦巴
+        role: 弟子
+      - entity: 革玛燃匝
+        role: 上师
+    location: 雅多加深谷
+    time_info:
+      text: 二十九岁到桑耶的春天
+      age: 29
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在二十九岁到桑耶的春天，他遇到了殊胜上师革玛燃匝"
+
+  - event_id: EV_S340
+    type: 授记
+    title: 革玛燃匝梦鸟预言传承者到来
+    participants:
+      - entity: 革玛燃匝
+        role: 梦者
+      - entity: 龙钦巴
+        role: 被预言者
+    location: 雅多加深谷
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "上师说：'昨晚我梦到一只奇特的神鸟，带着成群结队的小鸟而来，将我的所有法本带到了四面八方。看来是来了一位秉持传承者。'"
+
+  - event_id: EV_S341
+    type: 灌顶传法
+    title: 龙钦巴得受大圆满秘密心滴灌顶（重复自P3.EV_402但此处补充苦行细节）
+    participants:
+      - entity: 龙钦巴
+        role: 受法者
+      - entity: 革玛燃匝
+        role: 灌顶师
+    time_info:
+      text: 那一年（二十九岁）
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "那一年，他得受了大圆满秘密心滴的灌顶、引导及教授，并加以修行"
+    description: |
+      冬天极度寒冷雪山地带，仅有三藏升糌粑和二十一粒水银丸
+      维持两个月生活。下雪钻入牛毛口袋。
+
+  # ----------------------------------------------------------
+  # 无垢光尊者初期弘法 + 净相体验 (lines 851-900)
+  # ----------------------------------------------------------
+
+  - event_id: EV_S342
+    type: 弘法
+    title: 无垢光尊者三十一岁以心滴使有缘者成熟解脱
+    participants:
+      - entity: 无垢光尊者
+        role: 传法者
+    location: 尼坡西色
+    time_info:
+      text: 三十一岁
+      age: 31
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "三十一岁时，尊者在尼坡西色地方，以心滴法门使众多有缘者得以成熟、解脱"
+
+  - event_id: EV_S343
+    type: 净相
+    title: 无垢光尊者三十二岁有戏灌顶阿仲玛降神
+    participants:
+      - entity: 无垢光尊者
+        role: 传法者
+      - entity: 阿仲玛
+        role: 降神者
+    location: 青普
+    time_info:
+      text: 三十二岁
+      age: 32
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在进行有戏灌顶迎请时，阿仲玛（即密咒一髻佛母）护法神现量降神到一位瑜伽母体内"
+
+  - event_id: EV_S344
+    type: 净相
+    title: 众护法来取食子供品
+    participants:
+      - entity: 单坚
+        role: 护法
+      - entity: 觉沃当拉山神
+        role: 护法
+      - entity: 哦得贡嘉
+        role: 护法
+      - entity: 念青唐拉山神
+        role: 护法
+      - entity: 药神七姊妹
+        role: 护法
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "单坚显现为白衣之人……觉沃当拉山神身穿白衣骑白马……哦得贡嘉、念青唐拉山神、药神七姊妹等也都来取受食子"
+
+  - event_id: EV_S345
+    type: 净相
+    title: 金刚亥母降临与无垢光尊者对话
+    participants:
+      - entity: 无垢光尊者
+        role: 问者
+      - entity: 金刚亥母
+        role: 降临者
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "身色湛蓝佩带宝饰、骨饰的金刚亥母亲自降临……'今晚时间奇特，特来探望有缘的弟子'"
+    description: |
+      金刚亥母称龙钦巴为佛陀化身，确认布玛莫札已到藏地，
+      预言住世至下一个羊年，确认革玛燃匝敦促利益他众。

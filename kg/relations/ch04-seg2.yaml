@@ -1,0 +1,589 @@
+# ============================================================
+# 知识图谱关系抽取 — 第四品 内密三续 · seg2 (lines 301-600)
+# 覆盖范围: 奘·达玛布德末段 → 觉哲 → 根桑 → 释迦嘉波传承
+#           → 窍诀部心滴类(莲师教规+布玛莫札教规)
+#           → 荡玛艮哲嘉村 → 杰珍桑给旺修 → 化身扬敦
+#           → 涅玛波 → 革日觉白尔 → 赤修桑给嘉巴(始)
+# 来源: source/dudjom/chapter_md/04_内密三续.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: 使用 name 字段（跨文件标识符）
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/04_内密三续.md
+  source_lines: "301-600"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 68
+  date: 2026-05-09
+
+relations:
+
+# ============================================================
+# A. 化身/形态关系 (manifestationOf)
+# ============================================================
+
+  - rel_id: R_001
+    type: manifestationOf
+    source: 荡玛艮哲嘉村
+    target: 布玛莫札
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "被人们共称是布玛莫札的化身"
+
+  - rel_id: R_002
+    type: manifestationOf
+    source: 涅玛波
+    target: 金刚手菩萨
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "这位大师被一致公认是《应成续》中授记金刚手的化身班则帕拉"
+
+  - rel_id: R_003
+    type: manifestationOf
+    source: 班玛列哲匝
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "班玛列哲匝（意为莲花事业妙力，是无垢光尊者的前世）"
+    note: "前世关系，班玛列哲匝为龙钦巴前世"
+
+# ============================================================
+# B. 师承关系 (teacherOf / studentOf)
+# ============================================================
+
+  # --- 奘大师师承网 ---
+
+  - rel_id: R_004
+    type: teacherOf
+    source: 瓦贡
+    target: 奘·达玛布德
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "我的上师瓦贡"
+
+  - rel_id: R_005
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 觉哲
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "奘大师将所有教言传授给觉哲以后吩咐他秉持传承"
+
+  - rel_id: R_006
+    type: teacherOf
+    source: 沃喀拉哲巴
+    target: 觉哲
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在沃喀拉哲巴面前得受了《幻化网》等宁玛法要"
+
+  - rel_id: R_007
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 根桑
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "又在奘大师前得受一次金刚桥法"
+
+  - rel_id: R_008
+    type: teacherOf
+    source: 觉哲
+    target: 根桑
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "迎请奘·觉哲到崩让地方，听受了七次金刚桥法。依止觉哲上师八年"
+
+  - rel_id: R_009
+    type: teacherOf
+    source: 贡敦燃匝
+    target: 根桑
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在贡敦燃匝那里稍稍求学"
+
+  - rel_id: R_010
+    type: teacherOf
+    source: 德瓦嘎
+    target: 根桑
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "到德瓦嘎上师面前听受息法，住了五年"
+
+  - rel_id: R_011
+    type: teacherOf
+    source: 根桑
+    target: 哦白桑给
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "根桑尊者传给亲子化身哦白桑给"
+
+  - rel_id: R_012
+    type: teacherOf
+    source: 哦白桑给
+    target: 觉滚
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "传给传承弟子觉滚"
+
+  - rel_id: R_013
+    type: teacherOf
+    source: 觉滚
+    target: 夏美策仁
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "觉滚传给夏美策仁"
+
+  # --- 奘大师分支传承 ---
+
+  - rel_id: R_014
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 涅达桑哈
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "奘大师又把金刚桥法传给雅隆赞塘巴的涅达桑哈"
+
+  - rel_id: R_015
+    type: teacherOf
+    source: 涅达桑哈
+    target: 班则巴尼
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "涅达桑哈尊者的弟子班则巴尼"
+
+  - rel_id: R_016
+    type: teacherOf
+    source: 班则巴尼
+    target: 喇嘛拉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "班则巴尼的弟子喇嘛拉"
+
+  - rel_id: R_017
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 色隆
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "奘大师传给色隆"
+
+  - rel_id: R_018
+    type: teacherOf
+    source: 色隆
+    target: 阿阇黎让珠
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "色隆传给阿阇黎让珠"
+
+  - rel_id: R_019
+    type: teacherOf
+    source: 阿阇黎让珠
+    target: 哲波秋钦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他传给哲波秋钦"
+
+  - rel_id: R_020
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 多吉嘉灿
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "奘大师传给多吉嘉灿"
+
+  - rel_id: R_021
+    type: teacherOf
+    source: 多吉嘉灿
+    target: 德敦达巴尊哲
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "多吉嘉灿传给德敦达巴尊哲"
+
+  - rel_id: R_022
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 则益西旺波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "奘大师传给则益西旺波"
+
+  - rel_id: R_023
+    type: teacherOf
+    source: 则益西旺波
+    target: 堪布拉卡瓦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "则益西旺波-堪布拉卡瓦"
+
+  - rel_id: R_024
+    type: teacherOf
+    source: 堪布拉卡瓦
+    target: 阿阇黎滚嘉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "堪布拉卡瓦-阿阇黎滚嘉"
+
+  - rel_id: R_025
+    type: teacherOf
+    source: 阿阇黎滚嘉
+    target: 阿阇黎贡热瓦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "阿阇黎滚嘉-阿阇黎贡热瓦"
+
+  - rel_id: R_026
+    type: teacherOf
+    source: 阿阇黎贡热瓦
+    target: 索敦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "阿阇黎贡热瓦-索敦"
+
+  - rel_id: R_027
+    type: teacherOf
+    source: 奘·达玛布德
+    target: 雅敦达瓦哦色
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "奘大师传给帮让巴雅敦达瓦哦色"
+
+  - rel_id: R_028
+    type: teacherOf
+    source: 雅敦达瓦哦色
+    target: 罗敦给登嘉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "达瓦哦色传给罗敦给登嘉"
+
+  - rel_id: R_029
+    type: teacherOf
+    source: 雅敦达瓦哦色
+    target: 哦那多巴拉热万德
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "帮让雅敦接近一百岁时，他又传给哦那多巴拉热万德"
+
+  # --- 释迦嘉波传承链 ---
+
+  - rel_id: R_030
+    type: teacherOf
+    source: 释迦嘉波
+    target: 滚罗云讷花
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "释迦嘉波大师-滚罗云讷花"
+
+  - rel_id: R_031
+    type: teacherOf
+    source: 滚罗云讷花
+    target: 金厄秋吉札巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "滚罗云讷花-金厄秋吉札巴"
+
+  - rel_id: R_032
+    type: teacherOf
+    source: 金厄秋吉札巴
+    target: 西札巴秋戒罗珠
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "金厄秋吉札巴-西札巴秋戒罗珠"
+
+  - rel_id: R_033
+    type: teacherOf
+    source: 西札巴秋戒罗珠
+    target: 琼仓瓦罗珠花丹
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "西札巴秋戒罗珠-琼仓瓦罗珠花丹"
+
+  - rel_id: R_034
+    type: teacherOf
+    source: 琼仓瓦罗珠花丹
+    target: 帮敦嘎玛革热巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "琼仓瓦罗珠花丹-帮敦嘎玛革热巴"
+
+  - rel_id: R_035
+    type: teacherOf
+    source: 帮敦嘎玛革热巴
+    target: 帮敦秋旺棱珠
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "帮敦嘎玛革热巴-帮敦秋旺棱珠"
+
+  - rel_id: R_036
+    type: teacherOf
+    source: 帮敦秋旺棱珠
+    target: 秋旺根桑
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "帮敦秋旺棱珠-秋旺根桑"
+
+  - rel_id: R_037
+    type: teacherOf
+    source: 秋旺根桑
+    target: 帮敦根桑秋嘉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "秋旺根桑-帮敦根桑秋嘉"
+
+  - rel_id: R_038
+    type: teacherOf
+    source: 帮敦根桑秋嘉
+    target: 持明德达朗巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "帮敦根桑秋嘉-持明德达朗巴"
+
+  # --- 莲师/布玛莫札教规传承 ---
+
+  - rel_id: R_039
+    type: teacherOf
+    source: 莲花生大士
+    target: 益西措嘉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "将自己的心滴在友多德卓暗地里传授给空行母益西措嘉"
+
+  - rel_id: R_040
+    type: teacherOf
+    source: 莲花生大士
+    target: 莲明公主
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "莲师依靠加持力把窍诀《空行心滴》传授给她"
+
+  - rel_id: R_041
+    type: teacherOf
+    source: 布玛莫札
+    target: 赤松德赞
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "极其深奥的窍诀心滴暗中传授给国王赤松德赞"
+
+  - rel_id: R_042
+    type: teacherOf
+    source: 布玛莫札
+    target: 酿登珍桑波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "极其深奥的窍诀心滴暗中传授给...酿登珍桑波"
+
+  - rel_id: R_043
+    type: teacherOf
+    source: 酿登珍桑波
+    target: 珠仁钦白瓦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "所有耳传传给珠仁钦白瓦"
+
+  - rel_id: R_044
+    type: teacherOf
+    source: 荡玛艮哲嘉村
+    target: 杰珍桑给旺修
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从涅多地方找到了杰珍桑给旺修，传予他七次教授"
+
+  - rel_id: R_045
+    type: teacherOf
+    source: 荡玛艮哲嘉村
+    target: 卡绕贡穹
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "也传给了与之临近的卡绕贡穹，结果他也依此而解脱"
+
+  - rel_id: R_046
+    type: teacherOf
+    source: 杰珍桑给旺修
+    target: 玛卓酿噶当巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于是杰珍传授给他"
+
+  - rel_id: R_047
+    type: teacherOf
+    source: 杰珍桑给旺修
+    target: 化身扬敦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "将教言完整传给化身扬敦"
+
+  - rel_id: R_048
+    type: teacherOf
+    source: 布玛莫札
+    target: 杰珍桑给旺修
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "布玛莫札亲自现身，在半月之中圆满赐授一切灌顶、引导、教授"
+
+  - rel_id: R_049
+    type: teacherOf
+    source: 吉古上师
+    target: 化身扬敦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十一岁时在吉古上师面前得受了众多教授"
+
+  - rel_id: R_050
+    type: teacherOf
+    source: 化身扬敦
+    target: 涅玛波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从五岁开始逐渐在父亲面前得受秘密心滴的灌顶、引导及教授"
+
+  - rel_id: R_051
+    type: teacherOf
+    source: 鄂嘉则
+    target: 涅玛波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在鄂嘉则尊者前，聆听了新续窍诀"
+
+  - rel_id: R_052
+    type: teacherOf
+    source: 昆札嘉村
+    target: 涅玛波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "二十七岁依止昆札嘉村与达索上师"
+
+  - rel_id: R_053
+    type: teacherOf
+    source: 达索上师
+    target: 涅玛波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "二十七岁依止昆札嘉村与达索上师"
+
+  - rel_id: R_054
+    type: teacherOf
+    source: 杰敦札巴
+    target: 涅玛波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于卡绕的杰敦札巴上师前得受了《胜乐金刚》绕派的至尊母和《智慧怙主》等法要"
+
+  - rel_id: R_055
+    type: teacherOf
+    source: 涅玛波
+    target: 革日觉白尔
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "一直跟随伯父涅玛波左右，圆满得受了无上密的灌顶、引导和教授"
+
+  - rel_id: R_056
+    type: teacherOf
+    source: 萨迦译师
+    target: 革日觉白尔
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于萨迦译师前听闻三续窍诀、玛玖派的《胜乐金刚》"
+
+  - rel_id: R_057
+    type: teacherOf
+    source: 措普译师
+    target: 革日觉白尔
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在措普译师前聆听莫札凑革教授"
+
+  - rel_id: R_058
+    type: teacherOf
+    source: 切莫巴
+    target: 革日觉白尔
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在切莫巴上师前听受《摄因明论》"
+
+  - rel_id: R_059
+    type: teacherOf
+    source: 瓦波札巴
+    target: 革日觉白尔
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在瓦波札巴大师前听受道歌及大手印方面的零散教言"
+
+  - rel_id: R_060
+    type: teacherOf
+    source: 革日觉白尔
+    target: 赤修桑给嘉巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "革日觉白尔尊者的弟子是赤修桑给嘉巴"
+
+  - rel_id: R_061
+    type: teacherOf
+    source: 桑给嘉巴瓦巴
+    target: 赤修桑给嘉巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在桑给嘉巴瓦巴面前听受扬擦派的法门"
+
+  - rel_id: R_062
+    type: teacherOf
+    source: 匝热巴
+    target: 赤修桑给嘉巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "又在匝热巴尊者前听受《狮子交颈》"
+
+# ============================================================
+# C. 亲属关系 (parentOf / childOf / siblingOf)
+# ============================================================
+
+  - rel_id: R_063
+    type: parentOf
+    source: 杰特毕旺波
+    target: 杰珍桑给旺修
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "杰特毕旺波之子——杰珍桑给旺修"
+
+  - rel_id: R_064
+    type: parentOf
+    source: 化身扬敦
+    target: 涅玛波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "化身扬敦的弟子就是亲生儿子涅玛波"
+
+  - rel_id: R_065
+    type: parentOf
+    source: 嘉姆扬德
+    target: 涅玛波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "当他入母亲嘉姆扬德胎中时"
+
+  - rel_id: R_066
+    type: parentOf
+    source: 达瓦波
+    target: 革日觉白尔
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "涅玛波尊者的弟子——革日觉白尔，是他弟弟达瓦波（意为十万月）的儿子"
+
+  - rel_id: R_067
+    type: siblingOf
+    source: 涅玛波
+    target: 达瓦波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他弟弟达瓦波"
+
+  - rel_id: R_068
+    type: parentOf
+    source: 根桑
+    target: 哦白桑给
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "根桑尊者传给亲子化身哦白桑给"

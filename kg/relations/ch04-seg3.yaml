@@ -1,0 +1,528 @@
+# ============================================================
+# 知识图谱关系抽取 — 第四品 内密三续 Seg3 (lines 601-900)
+# 覆盖范围: 美龙多吉 → 革玛燃匝 → 噶玛巴·自生金刚 → 龙钦绕降
+#           → 无垢光尊者初期弘法净相
+# 来源: source/dudjom/chapter_md/04_内密三续.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: 使用 canonical name（跨文件稳定标识符）
+# 关系类型:
+#   师承 (teacherOf) | 传法 (transmittedTo) | 化身 (manifestationOf)
+#   父子 (parentOf) | 建立 (founded) | 伏藏 (concealedBy/revealedBy)
+#   同时代 (contemporaryOf) | 弟子 (discipleOf) | 住持 (abbotOf)
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/04_内密三续.md
+  source_lines: "601-900"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 52
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 师承关系 (teacherOf / discipleOf)
+  # ============================================================
+
+  - rel_id: RS3_001
+    type: teacherOf
+    source: 赤修桑给嘉巴
+    target: 美龙多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "赤修桑给嘉巴尊者的弟子大成就者美龙多吉"
+    source_line: 607
+
+  - rel_id: RS3_002
+    type: teacherOf
+    source: 哲龙巴
+    target: 美龙多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "九岁于成就者哲龙巴和堪布思龙巴面前出家"
+    source_line: 608
+
+  - rel_id: RS3_003
+    type: teacherOf
+    source: 思龙巴
+    target: 美龙多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "九岁于成就者哲龙巴和堪布思龙巴面前出家"
+    source_line: 608
+
+  - rel_id: RS3_004
+    type: teacherOf
+    source: 策普多哦日巴
+    target: 美龙多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "依止了策普多哦日巴等诸多上师"
+    source_line: 612
+
+  - rel_id: RS3_005
+    type: teacherOf
+    source: 桑给嘉巴桑吉温波
+    target: 美龙多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十八岁，见到桑给嘉巴桑吉温波尊者得受了心滴窍诀"
+    source_line: 615
+
+  - rel_id: RS3_006
+    type: teacherOf
+    source: 桑吉日巴
+    target: 美龙多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "二十三岁时，在桑吉日巴尊者面前听闻了《金刚亥母》等若干伏藏法"
+    source_line: 619
+
+  - rel_id: RS3_007
+    type: teacherOf
+    source: 萨龙巴
+    target: 美龙多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "恩德无与伦比的成就者萨龙巴、策普多哦日巴、赤修桑给嘉巴三位上师前得受精华义"
+    source_line: 630
+
+  - rel_id: RS3_008
+    type: teacherOf
+    source: 美龙多吉
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "美龙多吉尊者的弟子就是持明者革玛燃匝"
+    source_line: 643
+
+  - rel_id: RS3_009
+    type: teacherOf
+    source: 吉多巴
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在工布哦秀透荡寺的吉多巴上师前获得《喜金刚》、《胜乐金刚》的灌顶"
+    source_line: 647
+
+  - rel_id: RS3_010
+    type: teacherOf
+    source: 藏巴
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "九岁时在堪布藏巴前受圆满居士戒"
+    source_line: 650
+
+  - rel_id: RS3_011
+    type: teacherOf
+    source: 叶瓦巴
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十二岁在帕母哲亲教师叶瓦巴……前出家"
+    source_line: 652
+
+  - rel_id: RS3_012
+    type: teacherOf
+    source: 札叶巴仁波切
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "五年期间在札叶巴仁波切前恭听《那诺六法》等法要"
+    source_line: 653
+
+  - rel_id: RS3_013
+    type: teacherOf
+    source: 查荡巴
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在查荡巴上师前听受《二观察续》"
+    source_line: 654
+
+  - rel_id: RS3_014
+    type: teacherOf
+    source: 穹那夏达
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在穹那夏达前听闻前译派的诸多续部传承窍诀"
+    source_line: 656
+
+  - rel_id: RS3_015
+    type: teacherOf
+    source: 嘉曼巴南卡多吉
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在嘉曼巴南卡多吉上师前恭聆《直指密要》"
+    source_line: 667
+
+  - rel_id: RS3_016
+    type: teacherOf
+    source: 嘎丹巴秋吉桑给
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在嘎丹巴秋吉桑给前聆听了《密要明镜》等大圆满密法"
+    source_line: 668
+
+  - rel_id: RS3_017
+    type: teacherOf
+    source: 邬金巴
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他在邬金巴上师前闻受了广博的教授"
+    source_line: 664
+
+  - rel_id: RS3_018
+    type: teacherOf
+    source: 古巴
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在吉古那波的传承阿阇黎古巴面前请求了所有秘密类耳传以及《禅定目灯》法要"
+    source_line: 686
+
+  - rel_id: RS3_019
+    type: teacherOf
+    source: 温波相哲
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于温波相哲尊者前听受扬滚巴的山法"
+    source_line: 687
+
+  - rel_id: RS3_020
+    type: teacherOf
+    source: 札龙巴
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "向札龙巴上师请求《雅门达嘎》等法要"
+    source_line: 688
+
+  - rel_id: RS3_021
+    type: teacherOf
+    source: 益西滚波
+    target: 革玛燃匝
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在阿阇黎益西滚波等众多善知识面前听受密法"
+    source_line: 689
+
+  - rel_id: RS3_022
+    type: teacherOf
+    source: 革玛燃匝
+    target: 噶玛巴·自生金刚
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他谦虚地在持明革玛燃匝座前完整听受了秘密心滴的窍诀"
+    source_line: 739
+
+  - rel_id: RS3_023
+    type: teacherOf
+    source: 秀嘉哲勒巴
+    target: 噶玛巴·自生金刚
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "而迎请秀嘉哲勒巴，在匝热神山静处圆满听闻句教"
+    source_line: 741
+
+  - rel_id: RS3_024
+    type: teacherOf
+    source: 丹巴仲
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他从五岁开始……在父亲面前聆听了《八大法行·集善逝》……"
+    source_line: 764
+
+  - rel_id: RS3_025
+    type: teacherOf
+    source: 萨哲仁钦
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十二岁时在桑耶巴堪布萨哲仁钦……面前出家"
+    source_line: 769
+
+  - rel_id: RS3_026
+    type: teacherOf
+    source: 札西仁钦
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十六岁在阿阇黎札西仁钦面前广闻了《道果》……"
+    source_line: 772
+
+  - rel_id: RS3_027
+    type: teacherOf
+    source: 参滚巴
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在上院第十五代住持阿阇黎参滚巴……前听受"
+    source_line: 779
+
+  - rel_id: RS3_028
+    type: teacherOf
+    source: 喇张巴秋花嘉灿
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "第十六代住持喇张巴秋花嘉灿二位上师前听受了《弥勒五论》、《因明七论》"
+    source_line: 779
+
+  - rel_id: RS3_029
+    type: teacherOf
+    source: 帮译师罗珠丹巴
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在帮译师罗珠丹巴面前，听受了《三摩地王经》等深法五经及《心经广释》"
+    source_line: 782
+
+  - rel_id: RS3_030
+    type: teacherOf
+    source: 丹帕巴
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在阿阇黎丹帕巴、云讷敦哲、纽塘玛瓦、桑吉札巴等四位上师面前听受《经幻心》"
+    source_line: 791
+
+  - rel_id: RS3_031
+    type: teacherOf
+    source: 云嘉
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在阿阇黎云嘉等面前完整无缺地听受了中观的《显句论》、《入中论》"
+    source_line: 793
+
+  - rel_id: RS3_032
+    type: teacherOf
+    source: 云多
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在云多上师前，聆听了《入行论》、《学集论》等"
+    source_line: 794
+
+  - rel_id: RS3_033
+    type: teacherOf
+    source: 噶玛巴·自生金刚
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在法王自生金刚面前，听受了《六加行》、《遣除魔障法》……等等广博的法要"
+    source_line: 797
+
+  - rel_id: RS3_034
+    type: teacherOf
+    source: 旺泽
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在阿阇黎旺泽面前听受了《六加行》、依修、风类等大量法门"
+    source_line: 800
+
+  - rel_id: RS3_035
+    type: teacherOf
+    source: 单巴
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在萨迦派上师单巴面前，听受了大发心、道果等萨迦派九种深法"
+    source_line: 801
+
+  - rel_id: RS3_036
+    type: teacherOf
+    source: 谢色热巴云多
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在谢色热巴云多面前恭听了《三类道歌》、《三类山法》、《百种缘起》等等"
+    source_line: 803
+
+  - rel_id: RS3_037
+    type: teacherOf
+    source: 革玛燃匝
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在二十九岁到桑耶的春天，他遇到了殊胜上师革玛燃匝"
+    source_line: 829
+    note: 根本上师
+
+  # ============================================================
+  # B. 化身关系 (manifestationOf)
+  # ============================================================
+
+  - rel_id: RS3_038
+    type: manifestationOf
+    source: 噶玛巴·自生金刚
+    target: 观世音菩萨
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "噶玛巴·自生金刚是圣者观世音菩萨亲自降临于世间"
+    source_line: 727
+
+  - rel_id: RS3_039
+    type: manifestationOf
+    source: 革玛燃匝
+    target: 布玛莫札
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "被人们一致称为是阿阇黎布玛莫札的化身"
+    source_line: 713
+
+  # ============================================================
+  # C. 父子关系 (parentOf)
+  # ============================================================
+
+  - rel_id: RS3_040
+    type: parentOf
+    source: 萨意
+    target: 美龙多吉
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "是札普地方瑜伽士萨意之子"
+    source_line: 607
+
+  - rel_id: RS3_041
+    type: parentOf
+    source: 拉忠
+    target: 丹巴仲
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "祖父名叫拉忠……他的儿子阿阇黎丹巴仲"
+    source_line: 754
+
+  - rel_id: RS3_042
+    type: parentOf
+    source: 丹巴仲
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他的儿子阿阇黎丹巴仲……"
+    source_line: 756
+
+  - rel_id: RS3_043
+    type: parentOf
+    source: 珠萨姆索南坚
+    target: 龙钦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "与珠敦嘉卫炯内族中出世的珠萨姆索南坚结为伉俪"
+    source_line: 757
+    note: 母亲
+
+  # ============================================================
+  # D. 同时代关系 (contemporaryOf)
+  # ============================================================
+
+  - rel_id: RS3_044
+    type: contemporaryOf
+    source: 美龙多吉
+    target: 邬金巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "这位成就者与邬金巴是同一时代，邬金巴要比他年长十多岁"
+    source_line: 639
+
+  - rel_id: RS3_045
+    type: contemporaryOf
+    source: 革玛燃匝
+    target: 噶玛巴·自生金刚
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "到拉多荡热和博让地方，遇到大成就者邬金巴和年仅七岁、刚刚出家的法王噶玛巴自生金刚"
+    source_line: 663
+
+  # ============================================================
+  # E. 传法/教授关系 (transmittedTo) — 特定法门的传授
+  # ============================================================
+
+  - rel_id: RS3_046
+    type: transmittedTo
+    source: 美龙多吉
+    target: 革玛燃匝
+    teaching: 秘密心滴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在大成就者美龙多吉面前认认真真地得受了秘密心滴的灌顶、传承及教授"
+    source_line: 670
+
+  - rel_id: RS3_047
+    type: transmittedTo
+    source: 美龙多吉
+    target: 革玛燃匝
+    teaching: 大手印
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "请求了大手印引导，结果直观而认识了心的本来面目"
+    source_line: 658
+
+  - rel_id: RS3_048
+    type: transmittedTo
+    source: 革玛燃匝
+    target: 噶玛巴·自生金刚
+    teaching: 秘密心滴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他谦虚地在持明革玛燃匝座前完整听受了秘密心滴的窍诀"
+    source_line: 739
+
+  - rel_id: RS3_049
+    type: transmittedTo
+    source: 噶玛巴·自生金刚
+    target: 龙钦巴
+    teaching: 多种法要
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在法王自生金刚面前，听受了《六加行》、《遣除魔障法》、《那诺六法》……"
+    source_line: 797
+
+  - rel_id: RS3_050
+    type: transmittedTo
+    source: 革玛燃匝
+    target: 龙钦巴
+    teaching: 大圆满秘密心滴
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "那一年，他得受了大圆满秘密心滴的灌顶、引导及教授"
+    source_line: 847
+
+  # ============================================================
+  # F. 引文论证关系 (citedBy / quotedIn)
+  # ============================================================
+
+  - rel_id: RS3_051
+    type: quotedIn
+    source: 哲贡巴法王仁钦彭措
+    target: 龙钦巴
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "诚如哲贡巴法王仁钦彭措所说：'此法的教主是全知龙钦巴，嘉瓦自生金刚时代事业最为广大'"
+    source_line: 699
+    note: 仁钦彭措评价龙钦巴为心滴教主
+
+  - rel_id: RS3_052
+    type: quotedIn
+    source: 《应成续》
+    target: 革玛燃匝
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "《应成续》中授记是'具德比丘'"
+    source_line: 713
+    note: 《应成续》授记革玛燃匝为"具德比丘"

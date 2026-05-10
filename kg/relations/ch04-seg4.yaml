@@ -1,0 +1,646 @@
+# ============================================================
+# 知识图谱关系抽取 -- 第四品 内密三续 Seg4 (lines 901-1248)
+# 来源: source/dudjom/chapter_md/04_内密三续.md
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: kg/entities/ch04-seg4.yaml
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/04_内密三续.md
+  source_lines: "901-1248"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 62
+  date: 2026-05-09
+
+# ============================================================
+# A. 化身/形态关系 (manifestationOf / formOf)
+# ============================================================
+
+relations:
+
+  - rel_id: RS4_001
+    type: manifestationOf
+    source: 无垢光尊者
+    target: 帮刚巴仁钦多吉
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "空行母手指上师无垢光尊者说：'就住在这儿。'"
+    note: 金刚亥母确认无垢光尊者即帮刚巴仁钦多吉转世
+
+  - rel_id: RS4_002
+    type: manifestationOf
+    source: 无垢光尊者
+    target: 文殊菩萨
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "所有智者们异口同声地说：'如今在藏地四翼，智慧首屈一指非桑耶巴莫属。'"
+    note: 众智者认定为文殊化身，由莲师伏藏品授记推导
+
+  - rel_id: RS4_003
+    type: formOf
+    source: 忿怒莲师
+    target: 莲花生大士
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "其余人都亲眼看见尊者就是忿怒莲师"
+    note: 莲师忿怒形态
+
+  - rel_id: RS4_004
+    type: manifestationOf
+    source: 达瓦
+    target: 无垢光尊者
+    layers: [授记]
+    confidence: 0.80
+    source_quote: "无垢光尊者在法王哲贡巴仁钦彭措前现身并授记：是自子显示头顶马头标帜的化身达瓦的转世灵童"
+    note: 无垢光尊者授记达瓦为自己转世
+
+  - rel_id: RS4_005
+    type: manifestationOf
+    source: 札克华
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.70
+    source_quote: "前代诸位上师认定无垢光尊者的转世是札克华"
+    note: 前代上师认定，但文中另有说法
+
+  - rel_id: RS4_006
+    type: manifestationOf
+    source: 罗珠秋
+    target: 无垢光尊者
+    layers: [授记]
+    confidence: 0.80
+    source_quote: "按照固定的次第，（按《应成续》中授记的）认定为罗珠秋是合理的"
+    note: 文中认为此认定更合理
+
+# ============================================================
+# B. 师承/传法关系 (teacherOf)
+# ============================================================
+
+  # --- 金刚亥母对无垢光尊者的开示 ---
+  - rel_id: RS4_007
+    type: teacherOf
+    source: 金刚亥母
+    target: 无垢光尊者
+    specialty: [密法, 窍诀]
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "分别念坚固有什么用？要直指为本解脱广大界"
+    note: 金刚亥母对尊者作修行要诀开示（明点、直指等）
+
+  # --- 益西措嘉传法 ---
+  - rel_id: RS4_008
+    type: teacherOf
+    source: 益西措嘉
+    target: 无垢光尊者
+    specialty: [密法, 窍诀]
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "益西措嘉空行母在六天之中亲自现身于尊者前，对《空行心滴》的句义比喻加以介绍，并作了交付印持"
+    note: 六天中传《空行心滴》句义
+
+  # --- 布玛莫札传法 ---
+  - rel_id: RS4_009
+    type: teacherOf
+    source: 布玛莫札
+    target: 无垢光尊者
+    specialty: [密法, 窍诀]
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "并传授了具三十五法部的《上师心滴如意宝》"
+    note: 净相中传授《上师心滴如意宝》
+
+  # --- 无垢光尊者聆听句传 ---
+  - rel_id: RS4_010
+    type: teacherOf
+    source: 秀嘉哲勒巴
+    target: 无垢光尊者
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "尊者在伏藏师的亲传弟子秀嘉哲勒巴面前聆听《空行心滴》的句传"
+    note: 为制止随意行持密宗而聆听句传
+
+  # --- 无垢光尊者传法给弟子 ---
+  - rel_id: RS4_011
+    type: teacherOf
+    source: 无垢光尊者
+    target: 云讷桑吉
+    specialty: [密法, 窍诀]
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "将我的此心滴法汇集成简明易懂的精髓传给革玛燃匝的转世、你的弟子云讷桑吉"
+    note: 布玛莫札授记指示
+
+  - rel_id: RS4_012
+    type: teacherOf
+    source: 无垢光尊者
+    target: 友塔朗巴克主德勒嘉措
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "享受无垢光尊者语甘露的主要弟子"
+    note: 三位智者弟子之一
+
+  - rel_id: RS4_013
+    type: teacherOf
+    source: 无垢光尊者
+    target: 克主秋戒札巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "享受无垢光尊者语甘露的主要弟子"
+    note: 三位智者弟子之一
+
+  - rel_id: RS4_014
+    type: teacherOf
+    source: 无垢光尊者
+    target: 克主恰达棱珠
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "享受无垢光尊者语甘露的主要弟子"
+    note: 三位智者弟子之一；传承链第二位
+
+  - rel_id: RS4_015
+    type: teacherOf
+    source: 无垢光尊者
+    target: 多康巴丹古秋戒札巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "尊者的五位心子"
+    note: 五位心子之一
+
+  - rel_id: RS4_016
+    type: teacherOf
+    source: 无垢光尊者
+    target: 嘉追作巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "尊者的五位心子"
+    note: 五位心子之一
+
+  - rel_id: RS4_017
+    type: teacherOf
+    source: 无垢光尊者
+    target: 喇嘛华秋巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "尊者的五位心子"
+    note: 五位心子之一
+
+  - rel_id: RS4_018
+    type: teacherOf
+    source: 无垢光尊者
+    target: 革热益西绕降
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "尊者的五位心子"
+    note: 五位心子之一
+
+  - rel_id: RS4_019
+    type: teacherOf
+    source: 无垢光尊者
+    target: 化身华玖嘉措
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "弘扬佛法的四位善知识"
+    note: 弘法四善知识之一
+
+  - rel_id: RS4_020
+    type: teacherOf
+    source: 无垢光尊者
+    target: 阿阇黎桑吉根嘎
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "弘扬佛法的四位善知识"
+    note: 弘法四善知识之一
+
+  - rel_id: RS4_021
+    type: teacherOf
+    source: 无垢光尊者
+    target: 阿阇黎罗珠桑波
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "弘扬佛法的四位善知识"
+    note: 弘法四善知识之一
+
+  - rel_id: RS4_022
+    type: teacherOf
+    source: 无垢光尊者
+    target: 达够夏札秋吉
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "弘扬佛法的四位善知识"
+    note: 弘法四善知识之一
+
+  - rel_id: RS4_023
+    type: teacherOf
+    source: 无垢光尊者
+    target: 帕古多丹嘉波
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "获得成就的四位瑜伽士"
+    note: null
+
+  - rel_id: RS4_024
+    type: teacherOf
+    source: 无垢光尊者
+    target: 哦色古恰
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "获得成就的四位瑜伽士"
+    note: null
+
+  - rel_id: RS4_025
+    type: teacherOf
+    source: 无垢光尊者
+    target: 持明光明自解脱
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "获得成就的四位瑜伽士"
+    note: null
+
+  - rel_id: RS4_026
+    type: teacherOf
+    source: 无垢光尊者
+    target: 舍事者索南哦色
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "获得成就的四位瑜伽士"
+    note: null
+
+  - rel_id: RS4_027
+    type: teacherOf
+    source: 无垢光尊者
+    target: 顾巴根仁
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "迎请，而作为自己的至尊上师，恭敬顶戴"
+    note: 顾巴根仁迎请为至尊上师
+
+  # --- 传承链 teacherOf ---
+  - rel_id: RS4_028
+    type: teacherOf
+    source: 克主恰达棱珠
+    target: 札巴哦色
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "全知龙钦绕降-克主恰达棱珠-札巴哦色-桑吉温波"
+    note: 《心性休息大车疏》传承链
+
+  - rel_id: RS4_029
+    type: teacherOf
+    source: 札巴哦色
+    target: 桑吉温波
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "札巴哦色-桑吉温波-达瓦札巴"
+    note: 《心性休息大车疏》传承链
+
+  - rel_id: RS4_030
+    type: teacherOf
+    source: 桑吉温波
+    target: 达瓦札巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "桑吉温波-达瓦札巴-根桑多吉"
+    note: 《心性休息大车疏》传承链
+
+  - rel_id: RS4_031
+    type: teacherOf
+    source: 达瓦札巴
+    target: 根桑多吉
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "达瓦札巴-根桑多吉-嘉村华桑"
+    note: 《心性休息大车疏》传承链
+
+  - rel_id: RS4_032
+    type: teacherOf
+    source: 根桑多吉
+    target: 嘉村华桑
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "根桑多吉-嘉村华桑-那凑扬珠"
+    note: 《心性休息大车疏》传承链
+
+  - rel_id: RS4_033
+    type: teacherOf
+    source: 嘉村华桑
+    target: 那凑扬珠
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "嘉村华桑-那凑扬珠-丹增札巴"
+    note: 《心性休息大车疏》传承链
+
+  - rel_id: RS4_034
+    type: teacherOf
+    source: 那凑扬珠
+    target: 丹增札巴
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "那凑扬珠-丹增札巴-多昂丹增"
+    note: 《心性休息大车疏》传承链
+
+  - rel_id: RS4_035
+    type: teacherOf
+    source: 丹增札巴
+    target: 多昂丹增
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "丹增札巴-多昂丹增-持明陈列棱珠法王德达朗巴"
+    note: 《心性休息大车疏》传承链
+
+  - rel_id: RS4_036
+    type: teacherOf
+    source: 多昂丹增
+    target: 持明陈列棱珠
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "多昂丹增-持明陈列棱珠法王德达朗巴"
+    note: 《心性休息大车疏》传承链末端
+
+  # --- 仁钦彭措传法 ---
+  - rel_id: RS4_037
+    type: teacherOf
+    source: 仁钦彭措
+    target: 西绕哦色
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他传给莲花补处现达布热巴或者伏藏大师西绕哦色"
+    note: null
+
+  # --- 无垢光尊者智慧身传法给智悲光 ---
+  - rel_id: RS4_038
+    type: teacherOf
+    source: 无垢光尊者
+    target: 智悲光
+    specialty: [密法, 窍诀]
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "全知无垢光尊者三次显示智慧身，交给他一本经函"
+    note: 圆寂后以智慧身传法，堪称最近传承
+
+# ============================================================
+# C. 护法/降伏关系 (protectorOf / subduedBy)
+# ============================================================
+
+  - rel_id: RS4_039
+    type: protectorOf
+    source: 多吉耶卓玛
+    target: 无垢光尊者
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "特别的护法神名叫多吉耶卓玛"
+    note: 尊者特别护法神
+
+  - rel_id: RS4_040
+    type: protectorOf
+    source: 多吉耶卓玛
+    target: 《空行心滴》
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "我们是由莲花生大士降伏而承诺保护伏藏的"
+    note: 保护伏藏品
+
+  - rel_id: RS4_041
+    type: subduedBy
+    source: 多吉耶卓玛
+    target: 莲花生大士
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "我们是由莲花生大士降伏而承诺保护伏藏的"
+    note: null
+
+  - rel_id: RS4_042
+    type: protectorOf
+    source: 阿仲玛
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "密主阿仲玛、曜王绕呵拉与单坚三大护法神甘愿为仆，对他言听计从"
+    note: 三大护法神之一
+
+  - rel_id: RS4_043
+    type: protectorOf
+    source: 曜王绕呵拉
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "密主阿仲玛、曜王绕呵拉与单坚三大护法神甘愿为仆，对他言听计从"
+    note: 三大护法神之一
+
+  - rel_id: RS4_044
+    type: protectorOf
+    source: 单坚
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "密主阿仲玛、曜王绕呵拉与单坚三大护法神甘愿为仆，对他言听计从"
+    note: 三大护法神之一
+
+# ============================================================
+# D. 著作关系 (authorOf)
+# ============================================================
+
+  - rel_id: RS4_045
+    type: authorOf
+    source: 无垢光尊者
+    target: 《龙钦七宝藏》
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "劝请他著论，他得到开许，将意伏藏造成论典《龙钦七宝藏》"
+    note: 意伏藏论典
+
+  - rel_id: RS4_046
+    type: authorOf
+    source: 无垢光尊者
+    target: 《三休息》
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "《三休息》"
+    note: null
+
+  - rel_id: RS4_047
+    type: authorOf
+    source: 无垢光尊者
+    target: 《三自解脱》
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "《三自解脱》"
+    note: null
+
+  - rel_id: RS4_048
+    type: authorOf
+    source: 无垢光尊者
+    target: 《三遣暗论》
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "《密藏续》结合心滴的《三遣暗论》"
+    note: null
+
+  - rel_id: RS4_049
+    type: authorOf
+    source: 无垢光尊者
+    target: 《三心髓》
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "《三心髓》"
+    note: null
+
+  - rel_id: RS4_050
+    type: authorOf
+    source: 无垢光尊者
+    target: 《三心滴》
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "《三心滴》"
+    note: null
+
+  - rel_id: RS4_051
+    type: authorOf
+    source: 无垢光尊者
+    target: 《无垢光遗教》
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "留下遗嘱题为《无垢光遗教》"
+    note: 临终遗嘱
+
+# ============================================================
+# E. 建寺/任命关系 (foundedBy / appointedBy)
+# ============================================================
+
+  - rel_id: RS4_052
+    type: foundedBy
+    source: 解脱洲
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "建立起僧众聚集的僧团，取名为'解脱洲'"
+    note: null
+
+  - rel_id: RS4_053
+    type: appointedBy
+    source: 阿阇黎桑吉根嘎
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "任命阿阇黎桑吉根嘎为住持"
+    note: 解脱洲住持
+
+  - rel_id: RS4_054
+    type: foundedBy
+    source: 吉祥山胜乘洲
+    target: 仁钦彭措
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "建立起吉祥山胜乘洲"
+    note: null
+
+# ============================================================
+# F. 伏藏/开取关系 (concealedBy / revealedBy)
+# ============================================================
+
+  - rel_id: RS4_055
+    type: revealedBy
+    source: 《空行心滴》
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "尊者在那里举行会供、酬补等仪式以后开启了窍诀《空行心滴》法"
+    note: 意伏藏开启
+
+  - rel_id: RS4_056
+    type: revealedBy
+    source: 《上师心滴如意宝》
+    target: 布玛莫札
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "并传授了具三十五法部的《上师心滴如意宝》"
+    note: 布玛莫札以净相传授
+
+# ============================================================
+# G. 政治/供养/恭敬关系 (patronOf / devoteeOf)
+# ============================================================
+
+  - rel_id: RS4_057
+    type: devoteeOf
+    source: 顾巴根仁
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "迎请，而作为自己的至尊上师，恭敬顶戴"
+    note: null
+
+  - rel_id: RS4_058
+    type: devoteeOf
+    source: 八足狮子
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "使西藏的国君八足狮子也毕恭毕敬顶戴"
+    note: null
+
+  - rel_id: RS4_059
+    type: devoteeOf
+    source: 司徒释迦桑波
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "对尊者恭敬有加"
+    note: null
+
+  - rel_id: RS4_060
+    type: devoteeOf
+    source: 多吉嘉村
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "对尊者恭敬有加"
+    note: null
+
+  - rel_id: RS4_061
+    type: patronOf
+    source: 仲雄吉巴
+    target: 《心性休息颂词及注释》
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "佛教的施主仲雄吉巴劝请刻《心性休息颂词及注释》"
+    note: 施主劝请刻印
+
+  - rel_id: RS4_062
+    type: devoteeOf
+    source: 仁钦彭措
+    target: 无垢光尊者
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "对受持、护持、弘扬无垢光尊者的宝典作出了弥足珍贵、不可估量的贡献"
+    note: 受持护持弘扬尊者宝典

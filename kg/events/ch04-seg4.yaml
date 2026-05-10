@@ -1,0 +1,737 @@
+# ============================================================
+# 知识图谱事件抽取 — 第四品 内密三续 Seg4 (lines 901-1248)
+# 覆盖范围: 金刚亥母授记续 + 空行心滴开启 + 弘法事业 + 圆寂 + 传承
+# 来源: source/dudjom/chapter_md/04_内密三续.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
+#
+# 实体引用说明:
+#   E_PNNN / E_SNNN / E_NNNN / E_TNNN / E_LNNN / E_BNNN / E_DNNN / E_RNNN / E_GNNN
+#         — 引用 kg/entities/ch04-seg4.yaml
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/04_内密三续.md
+  source_section: 金刚亥母授记续 + 空行心滴开启 + 弘法事业 + 圆寂 + 传承
+  source_lines: "901-1248"
+  total_events: 42
+  spec_versions:
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+    skill: SKILL_04a v0.1
+  date: 2026-05-09
+
+events:
+
+  # ----------------------------------------------------------
+  # 金刚亥母授记续 (lines 901-945)
+  # ----------------------------------------------------------
+  - event_id: EV_4S01
+    type: 授记
+    title: 空行母预言尊者住世三十年、利他事业轰烈
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 受记者
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "即使成就虹身也需要饶益有情，利他事业也会轰轰烈烈，现在还能住世三十年。"
+
+  - event_id: EV_4S02
+    type: 授记
+    title: 空行母指出特别护法神多吉耶卓玛及利众方位
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 受记者
+      - entity: E_N404       # 多吉耶卓玛
+        role: 被指出者
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "特别的护法神名叫多吉耶卓玛。你利益众生的地点位于西南。你下一世的利众事业比今世更加广大。"
+
+  - event_id: EV_4S03
+    type: 授记
+    title: 金刚亥母确认尊者为《空行心滴》法主
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 法主
+      - entity: E_B401       # 《空行心滴》
+        role: 法本
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "空行母十分肯定地说：'是、就是，没错、没错，法主就是你自己。'"
+
+  - event_id: EV_4S04
+    type: 授记
+    title: 金刚亥母明确说出哦塘伏藏山谷
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 受记者
+    location: E_L402          # 哦塘
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "金刚亥母又明确地说出哦塘伏藏的山谷"
+
+  - event_id: EV_4S05
+    type: 授记
+    title: 金刚亥母确认无垢光尊者为帮刚巴仁钦多吉转世
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 受记者
+      - entity: E_P415       # 帮刚巴仁钦多吉
+        role: 前世
+      - entity: E_P404       # 阿阇黎仁多
+        role: 提问者
+    layers: [神变, 授记]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "空行母手指上师无垢光尊者说：'就住在这儿。'"
+    description: |
+      阿阇黎仁多问帮刚巴仁钦多吉住在哪里，
+      金刚亥母指向无垢光尊者。解释转世因缘：
+      仁钦多吉未能保密致寿命未达究竟。
+      现转生时"将光明显现转为道用，顷刻之间就能畅游报身刹土"。
+
+  - event_id: EV_4S06
+    type: 授记
+    title: 金刚亥母授记无垢光尊者未来修行路径
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 受记者
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "如果只身一人修行，现在就能成就。倘若利益他众就在中阴解脱。依靠幻化在哦塘地方受生，利益有情，再前往到西方邬金示现成佛。"
+
+  - event_id: EV_4S07
+    type: 授记
+    title: 金刚亥母预言《空行心滴》住世五百年
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 授记者
+      - entity: E_B401       # 《空行心滴》
+        role: 授记对象
+      - entity: E_B402       # 《布玛心滴》
+        role: 参照对比
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "《布玛心滴》最多住世一百年，《空行心滴》住世五百年，从现在开始算"
+
+  # ----------------------------------------------------------
+  # 无垢光尊者唱金刚歌 + 莲师净相显现 (lines 946-968)
+  # ----------------------------------------------------------
+  - event_id: EV_4S08
+    type: 神变
+    title: 无垢光尊者唱金刚歌，空行景象融入上师
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "上师听到此言不禁心情激动，站起身来，兴奋地高唱金刚歌……众人都目睹了空行不可思议的景象，这一切最终都融入上师自己"
+
+  - event_id: EV_4S09
+    type: 神变
+    title: 莲花生大士从西南方降临融入无垢光尊者
+    participants:
+      - entity: E_S402       # 莲花生大士
+        role: 显现者
+      - entity: E_P401       # 无垢光尊者
+        role: 受者
+    time_info: 二十八日
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "无垢光尊者又亲眼看到莲花生大士从西南方降临，只见他身色又明又亮，身披锦缎大氅，头戴鹿耳帽，被无量眷属团团环绕着，融入上师他自己"
+
+  - event_id: EV_4S10
+    type: 神变
+    title: 空行母于空中为无垢光尊者作供养并唱偈
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: 受供者
+    time_info: 二十八日当晚
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "身佩骨饰的空行母在空中来来往往，对上师无垢光尊者作供养，三位紫黑色的女人一边翩翩起舞一边说：'我们来自大乐处，探望有缘之弟子，来观誓言清净者，利益有情善男子。'"
+
+  - event_id: EV_4S11
+    type: 神变
+    title: 内供时莲师及眷属显现，尊者唱金刚歌
+    participants:
+      - entity: E_S402       # 莲花生大士
+        role: 显现者
+      - entity: E_P408       # 布玛莫札
+        role: 显现者
+      - entity: E_S401       # 金刚亥母
+        role: 显现者
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "莲花生大士右侧是布玛莫札，左侧是金刚亥母，前方是许许多多吹奏胫骨号角的空行母……无垢光尊者站起身唱起金刚歌"
+
+  # ----------------------------------------------------------
+  # 多吉耶卓玛七姐妹请法 + 金刚亥母身份辨识 (lines 963-1000)
+  # ----------------------------------------------------------
+  - event_id: EV_4S12
+    type: 神变
+    title: 多吉耶卓玛白母七姐妹降临请尊者到其处所
+    participants:
+      - entity: E_N404       # 多吉耶卓玛
+        role: subject
+      - entity: E_G406       # 白母七姐妹
+        role: subject
+      - entity: E_P401       # 无垢光尊者
+        role: 受请者
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "多吉耶卓玛白母七姐妹降临向无垢光尊者请求说：'请到我的处所。'"
+    description: |
+      耶卓玛称自己由莲花生大士降伏而承诺保护伏藏。
+      告知此处极其凶险，少传引导修法为好。
+      护法授记过"对寿命会造成违缘，有危险性"。
+
+  - event_id: EV_4S13
+    type: 神变
+    title: 金刚亥母与多吉耶卓玛身份辨识
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: subject
+      - entity: E_N404       # 多吉耶卓玛
+        role: 被混淆者
+      - entity: E_P401       # 无垢光尊者
+        role: 提问者
+    location: E_L409          # 觉拉山洞（尊者回忆）
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "尊者便问：'那你不是多吉耶卓玛吗？'空行母说：'不是不是，是金刚亥母，你没有认出来吗？'"
+    description: |
+      耶卓玛提到曾在哦热赐给尊者悉地，
+      实为金刚亥母以世间形象行持事业。
+      须区分世间形象行持事业 vs 出世间形象赐予殊胜悉地。
+
+  - event_id: EV_4S14
+    type: 授记
+    title: 金刚亥母开示修行要诀（明点、直指本性等）
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 开示者
+      - entity: E_P401       # 无垢光尊者
+        role: 受教者
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "分别念坚固有什么用？要直指为本解脱广大界。"
+    description: |
+      开示内容包括：第三灌顶所依（离贪者意幻明妃即足）、
+      直指本性、心滴法传讲之必要；
+      金刚亥母自述"我有修行的本尊吗？……对于具足誓言与
+      证悟的诸位瑜伽士来说，我恒常都在……我与你生生世世形影不离"。
+
+  # ----------------------------------------------------------
+  # 布玛莫札伏藏品 + 哦色古恰取法本 (lines 1001-1012)
+  # ----------------------------------------------------------
+  - event_id: EV_4S15
+    type: 授记
+    title: 空行母预言布玛莫札伏藏品五年后由白衣咒师开取
+    participants:
+      - entity: E_S401       # 金刚亥母
+        role: 授记者
+      - entity: E_P408       # 布玛莫札
+        role: 相关者
+      - entity: E_P401       # 无垢光尊者
+        role: 提问者
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "再过五年，由一位白衣咒师开取而加以弘扬。有四本深法经函会落到你的手里。"
+
+  - event_id: EV_4S16
+    type: 弘法
+    title: 哦色古恰取回《空行心滴》法本途中现瑞相
+    participants:
+      - entity: E_P403       # 哦色古恰
+        role: subject
+      - entity: E_P401       # 无垢光尊者
+        role: 派遣者
+    location: 则卡达多佛塔 → 富岩
+    time_info: 上弦月十一日
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "看到一束彩虹射到法本上并一直萦绕盘旋着……从热姆坚地方一直到此地之间由五色彩虹连接起来"
+
+  # ----------------------------------------------------------
+  # 开启《空行心滴》+ 益西措嘉传法 (lines 1013-1035)
+  # ----------------------------------------------------------
+  - event_id: EV_4S17
+    type: 弘法
+    title: 无垢光尊者开启窍诀《空行心滴》法
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "尊者在那里举行会供、酬补等仪式以后开启了窍诀《空行心滴》法"
+    description: |
+      光明境界趋至法身密意本来清净法界。
+      安放法本时莲师以意修装束降临，右有益西措嘉，
+      左有耶卓玛，口述经文。
+
+  - event_id: EV_4S18
+    type: 灌顶传法
+    title: 益西措嘉六天中为尊者介绍《空行心滴》句义
+    participants:
+      - entity: E_P409       # 益西措嘉
+        role: 传法者
+      - entity: E_P401       # 无垢光尊者
+        role: 受法者
+    time_info: 六天
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "益西措嘉空行母在六天之中亲自现身于尊者前，对《空行心滴》的句义比喻加以介绍，并作了交付印持"
+
+  # ----------------------------------------------------------
+  # 灌顶期间护法显现 (lines 1033-1067)
+  # ----------------------------------------------------------
+  - event_id: EV_4S19
+    type: 灌顶传法
+    title: 上灌顶时仅三位弟子得受、彩虹射入室内
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: 灌顶师
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "你们中只有三位能接受此灌顶，因为人数多才导致这样的。你们四人请到外面。"
+
+  - event_id: EV_4S20
+    type: 神变
+    title: 南哲热玛德护法神降临作伏藏授记
+    participants:
+      - entity: E_N405       # 南哲热玛德
+        role: subject
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "南哲热玛德护法神亲自到来说：'为什么不给我献食子？'……阐述了自己主尊眷属们的现证，作了伏藏授记，并大显神变"
+
+  - event_id: EV_4S21
+    type: 灌顶传法
+    title: 益西措嘉以净相手持宝瓶赐灌顶
+    participants:
+      - entity: E_P409       # 益西措嘉
+        role: 灌顶者
+      - entity: E_P401       # 无垢光尊者
+        role: 受法者
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "众人看到空行母益西措嘉手持宝瓶赐予灌顶，于是纷纷起立顶礼膜拜"
+
+  - event_id: EV_4S22
+    type: 神变
+    title: 阿仲玛降神跳舞；单坚请尊者光临邬金堡
+    participants:
+      - entity: E_N401       # 阿仲玛
+        role: subject
+      - entity: E_N402       # 单坚
+        role: subject
+      - entity: E_P401       # 无垢光尊者
+        role: 受请者
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "阿仲玛护法神（即一髻佛母）降临跳起舞来……单坚护法神出现并说：'请尊者光临邬金堡。'"
+    description: |
+      阿仲玛回答宣讲心滴法令空行欢喜。
+      单坚告知弟子中能利益众生者三十位，
+      广泛利益者十一位，出类拔萃者九位。
+      现巴仲哲玛也现身说"请不要念诵我的修法"。
+
+  - event_id: EV_4S23
+    type: 灌顶传法
+    title: 《空行心滴》灌顶引导全部圆满结束
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "《空行心滴》的灌顶、引导全部圆满结束的晚上"
+    description: |
+      尊者让弟子看空行母是否再来赐悉地。
+      过滤酒水皆变成酒，众会供者皆有醉意。
+      尊者说"所谓的幻化转变事物就是这样的"。
+
+  # ----------------------------------------------------------
+  # 南哲玛降临 + 弟子立誓 + 弘法 (lines 1068-1085)
+  # ----------------------------------------------------------
+  - event_id: EV_4S24
+    type: 神变
+    title: 南哲玛降临劝阻尊者前往耶卓玛处
+    participants:
+      - entity: E_N405       # 南哲玛
+        role: subject
+      - entity: E_P401       # 无垢光尊者
+        role: 受劝者
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "南哲玛降临后说：'上师不要去。'……'去牧民那里收东西。'据说当时流行了畜瘟。"
+
+  - event_id: EV_4S25
+    type: 弘法
+    title: 尊者在刚日托嘎邬金堡抉择《空行心滴》
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+      - entity: E_P403       # 哦色古恰
+        role: 祈请者
+    location: E_L403          # 刚日托嘎
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "经瑜伽士哦色古恰祈祷而抉择了《空行心滴》，当时，空中布满彩虹，空行景象和神变无穷无尽"
+
+  # ----------------------------------------------------------
+  # 布玛莫札显现授记 + 传法 (lines 1094-1100)
+  # ----------------------------------------------------------
+  - event_id: EV_4S26
+    type: 授记
+    title: 布玛莫札亲现尊颜预言心滴法传承
+    participants:
+      - entity: E_P408       # 布玛莫札
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 受记者
+      - entity: E_P410       # 云讷桑吉
+        role: 被授记者
+    layers: [神变, 授记]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "阿阇黎布玛莫札亲现尊颜而预言说：'将我的此心滴法汇集成简明易懂的精髓传给革玛燃匝的转世、你的弟子云讷桑吉'"
+    description: |
+      预言以后涌现鼻子上带阿标帜、名字中有"云讷"
+      的七位大德受持弘扬此法。
+
+  - event_id: EV_4S27
+    type: 灌顶传法
+    title: 布玛莫札传授《上师心滴如意宝》（三十五法部）
+    participants:
+      - entity: E_P408       # 布玛莫札
+        role: 传法者
+      - entity: E_P401       # 无垢光尊者
+        role: 受法者
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "并传授了具三十五法部的《上师心滴如意宝》"
+
+  - event_id: EV_4S28
+    type: 授记
+    title: 布玛莫札授记修缮哦日夏殿堂
+    participants:
+      - entity: E_P408       # 布玛莫札
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 受记者
+    location: E_T402          # 哦日夏殿堂
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "布玛莫札用契克印指向哦日夏殿堂，而授记说'有朝一日必须修缮它'"
+
+  # ----------------------------------------------------------
+  # 修缮殿堂 + 降伏天灵盖鬼神 (lines 1100-1114)
+  # ----------------------------------------------------------
+  - event_id: EV_4S29
+    type: 建寺
+    title: 无垢光尊者修复哦日夏殿堂并降伏鬼神
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+      - entity: E_N402       # 单坚
+        role: 助手（化为小孩）
+    location: E_T402          # 哦日夏殿堂
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "单坚护法神化现为一个佩带松石耳环的小孩每天帮助修建……尊者依靠威猛禅定和看式进行勾召，脚踏在它上面，结果其余人都亲眼看见尊者就是忿怒莲师"
+    description: |
+      从山顶后面挖了一斗金子作费用。
+      压服天灵盖中有鬼神。最大天灵盖以鬼通腾空而起。
+      所有天灵盖鬼神又被压在佛塔下。
+
+  - event_id: EV_4S30
+    type: 神变
+    title: 经堂开光时释迦佛弥勒菩萨十六罗汉显现
+    participants:
+      - entity: E_S404       # 释迦佛
+        role: 显现者
+      - entity: E_S403       # 弥勒菩萨
+        role: 显现者
+      - entity: E_S405       # 十六罗汉
+        role: 显现者
+    location: E_T402          # 哦日夏殿堂
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "释迦佛、弥勒菩萨、十六罗汉面带笑容，了然而现"
+
+  - event_id: EV_4S31
+    type: 授记
+    title: 弥勒菩萨授记无垢光尊者最后一世成佛
+    participants:
+      - entity: E_S403       # 弥勒菩萨
+        role: 授记者
+      - entity: E_P401       # 无垢光尊者
+        role: 受记者
+    location: E_L428          # 莲积刹土
+    layers: [授记]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "弥勒菩萨举起手指说：'你最后一世在莲积刹土成佛，佛号为善逝山王灯幢。'"
+
+  # ----------------------------------------------------------
+  # 卫藏弘法 + 至不丹哦塘 (lines 1115-1147)
+  # ----------------------------------------------------------
+  - event_id: EV_4S32
+    type: 弘法
+    title: 无垢光尊者在卫藏多杰吉河两岸传无上密引导
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    location: E_L410          # 卫藏多杰吉河
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在卫藏多杰吉河的两岸，尊者为云集于此的信众传授了无上密的引导"
+
+  - event_id: EV_4S33
+    type: 建寺
+    title: 无垢光尊者在不丹哦塘建立解脱洲僧团
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: 建立者
+      - entity: E_P412       # 阿阇黎桑吉根嘎
+        role: 被任命为住持
+    location: E_L402          # 不丹哦塘
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "建立起僧众聚集的僧团，取名为'解脱洲'，任命阿阇黎桑吉根嘎为住持，振兴总的前译派与大圆满的事业"
+
+  - event_id: EV_4S34
+    type: 神变
+    title: 无垢光尊者朝觉沃佛像获佛像放光加持
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: 朝拜者
+      - entity: E_O401       # 觉沃佛像
+        role: 放光者
+    location: E_L415          # 拉萨
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "到达拉萨朝拜觉沃佛像时，佛像白毫间放射光芒融入自己的眉间，由此使他回想起曾经在灵鹫山、龟兹国受生为班智达的情景"
+
+  - event_id: EV_4S35
+    type: 弘法
+    title: 无垢光尊者在拉萨大小昭寺之间设法座弘法
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    location: E_L415          # 拉萨
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在拉萨大昭寺、小昭寺之间设立法座，广转了大发心等法轮"
+    description: |
+      多之又多的僧众列队相迎。心怀傲慢之人试探他，
+      通通败倒在尊者教理之下。由此全知法王大名传遍各方。
+
+  # ----------------------------------------------------------
+  # 顾巴根仁放弃战乱 + 迎请尊者 (lines 1148-1177)
+  # ----------------------------------------------------------
+  - event_id: EV_4S36
+    type: 降伏非人
+    title: 顾巴根仁因伏藏品授记放弃战乱迎请无垢光尊者
+    participants:
+      - entity: E_P413       # 顾巴根仁
+        role: subject
+      - entity: E_P401       # 无垢光尊者
+        role: 被迎请者
+      - entity: E_S409       # 文殊菩萨
+        role: 授记来源
+    location: E_L414          # 哲贡
+    layers: [史传, 授记]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "发现自己的身体背部的确有一个形似宝剑的痣，他深知那授记毫无疑问就是指的自己……所有智者们异口同声地说：'如今在藏地四翼，智慧首屈一指非桑耶巴莫属。'"
+    description: |
+      莲师伏藏品授记"名为哲之地方处，名为根仁魔之子"。
+      顾巴根仁放弃发动卫藏后藏大战乱的计划，
+      迎请无垢光尊者为至尊上师。
+
+  - event_id: EV_4S37
+    type: 弘法
+    title: 无垢光尊者令西藏国君八足狮子恭敬顶戴
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+      - entity: E_P417       # 八足狮子
+        role: 受教者
+      - entity: E_P416       # 布达西绕
+        role: 介绍者
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "经布达西绕介绍而使西藏的国君八足狮子也毕恭毕敬顶戴"
+
+  # ----------------------------------------------------------
+  # 圆寂段 (lines 1178-1213)
+  # ----------------------------------------------------------
+  - event_id: EV_4S38
+    type: 弘法
+    title: 无垢光尊者五十六岁留下遗嘱《无垢光遗教》
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+      - entity: E_P407       # 嘉追作巴
+        role: 书记
+    time_info: 水兔年，尊者五十六岁
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "水兔年尊者五十六岁时……对嘉追作巴说：'拿纸墨来。'于是留下遗嘱题为《无垢光遗教》"
+
+  - event_id: EV_4S39
+    type: 弘法
+    title: 无垢光尊者临终教诫实修直断和顿超
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    time_info: 十二月十六日
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "切要实修直断和顿超，如果有不懂之处，当详细参阅《上师心滴如意宝》"
+
+  - event_id: EV_4S40
+    type: 圆寂
+    title: 无垢光尊者于藏历十八日圆寂
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    location: E_L401          # 青普
+    time_info: 藏历十八日
+    layers: [史传, 神变]
+    author_stance: 认可
+    confidence: 0.90
+    source_quote: "法体如意宝便以法身坐式安住，专注于本来法界而圆寂。此时也出现大地剧烈震动并且隆隆作响等等无量的奇迹"
+
+  - event_id: EV_4S41
+    type: 神变
+    title: 无垢光尊者荼毗时出现舍利等瑞相
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: subject
+    location: E_L401          # 青普
+    time_info: 二十五日荼毗
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "尊者的心脏、舌头、眼睛落到有缘者的怀里。由于无余现前所得五身五智而出现了五种金刚舍利及不可胜数的细微舍利"
+    description: |
+      遗体安放到二十五日。期间天人搭起彩虹光幕，降花雨。
+      四大种超越四季：十二月大地复苏、寒冰融化。
+      迎请遗体时大地震动七声巨响。
+      大的舍利丸中又增生出成百上千无数。
+
+  # ----------------------------------------------------------
+  # 转世 + 后继弟子传承 (lines 1214-1248)
+  # ----------------------------------------------------------
+  - event_id: EV_4S42
+    type: 授记
+    title: 无垢光尊者圆寂后于仁钦彭措前现身授记
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: 授记者
+      - entity: E_P435       # 仁钦彭措
+        role: 受记者
+      - entity: E_P436       # 达瓦
+        role: 被授记者
+    layers: [神变, 授记]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "无垢光尊者在法王哲贡巴仁钦彭措前现身并授记：是自子显示头顶马头标帜的化身达瓦的转世灵童"
+
+  - event_id: EV_4S43
+    type: 弘法
+    title: 仁钦彭措受持弘扬无垢光尊者宝典并传给西绕哦色
+    participants:
+      - entity: E_P435       # 仁钦彭措
+        role: 传法者
+      - entity: E_P437       # 西绕哦色
+        role: 受法者
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他传给莲花补处现达布热巴或者伏藏大师西绕哦色"
+
+  - event_id: EV_4S44
+    type: 建寺
+    title: 仁钦彭措建立吉祥山胜乘洲
+    participants:
+      - entity: E_P435       # 仁钦彭措
+        role: subject
+    layers: [史传]
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "建立起吉祥山胜乘洲"
+
+  - event_id: EV_4S45
+    type: 神变
+    title: 全知无垢光尊者三次显示智慧身传法给智悲光
+    participants:
+      - entity: E_P401       # 无垢光尊者
+        role: 传法者（智慧身）
+      - entity: E_P439       # 智悲光
+        role: 受法者
+    location: E_L401          # 青普山洞
+    time_info: 土兔年
+    layers: [神变]
+    author_stance: 认可
+    confidence: 0.80
+    source_quote: "全知无垢光尊者三次显示智慧身，交给他一本经函并且说：'以此来开显《心性休息大车疏》等中隐含的所有窍诀。'"
+    description: |
+      智悲光（持明晋美朗巴/无畏洲）赐予所有教授与随教。
+      自然通达浩如烟海的法理。
+      堪称最近传承——"就像圣天菩萨摄受玛德革巴一样"。

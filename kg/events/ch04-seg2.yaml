@@ -1,0 +1,759 @@
+# ============================================================
+# 知识图谱事件抽取 — 第四品 内密三续 · seg2 (lines 301-600)
+# 覆盖范围: 奘·达玛布德末段 → 觉哲 → 根桑 → 释迦嘉波传承
+#           → 窍诀部心滴类(莲师教规+布玛莫札教规)
+#           → 荡玛艮哲嘉村 → 杰珍桑给旺修 → 化身扬敦
+#           → 涅玛波 → 革日觉白尔 → 赤修桑给嘉巴(始)
+# 来源: source/dudjom/chapter_md/04_内密三续.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_03a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
+#
+# 实体引用: 引用 kg/entities/ch04-seg2.yaml 中的 name
+# confidence 默认: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/04_内密三续.md
+  source_lines: "301-600"
+  spec_versions:
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+    skill: SKILL_03a v0.1
+  total_events: 52
+  date: 2026-05-09
+
+events:
+
+# ==================== 奘大师末段 (lines 301-358) ====================
+
+  - event_id: EV_001
+    type: 修证
+    title: 奘大师杰空苦行念金刚橛咒令鬼神言听计从
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+    location: 杰空
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在杰空地方，苦行念诵金刚橛咒，结果使一切世间鬼神对他言听计从"
+
+  - event_id: EV_002
+    type: 修证
+    title: 奘大师也格耶三不住苦行获乐暖
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+    location: 也格耶
+    time_info:
+      text: "五年赤身裸体"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在也格耶地方，历经三不住之苦行而获得明显乐暖，在五年当中赤身裸体"
+
+  - event_id: EV_003
+    type: 面见本尊
+    title: 奘大师革母西方面见金刚亥母
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+      - entity: 金刚亥母
+        role: 本尊
+    location: 革母
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在革母的西方面见至尊金刚亥母，得受众多表示"
+
+  - event_id: EV_004
+    type: 修证
+    title: 奘大师努境荣修梦境一切景象认识为梦
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+    location: 努境荣
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在努境荣地方，修炼梦境，结果一切景象认识为梦"
+
+  - event_id: EV_005
+    type: 面见本尊
+    title: 奘大师友多德珠面见忿怒甘露旋
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+      - entity: 忿怒甘露旋
+        role: 本尊
+    location: 友多德珠
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在友多德珠西山洞，现见忿怒甘露旋的尊颜"
+
+  - event_id: EV_006
+    type: 面见本尊
+    title: 奘大师达波耶面见一髻佛母护法神承诺相随
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+      - entity: 一髻佛母
+        role: 护法
+    location: 达波耶
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在达波耶地方修行护法神阿则（即一髻佛母护法神），结果在上午时分面见尊颜，护法神降临承诺'以后相随'，之后就化为一道光"
+
+  - event_id: EV_007
+    type: 面见本尊
+    title: 奘大师拉则面见无量寿佛
+    participants:
+      - entity: 奘·达玛布德
+        role: ��体
+      - entity: 无量寿佛
+        role: 本尊
+    location: 拉则
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在拉则修行金丹术，结果面见无量寿佛"
+
+  - event_id: EV_008
+    type: 面见本尊
+    title: 奘大师邬嘎岩山面见胜乐金刚佛父佛母
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+      - entity: 胜乐金刚
+        role: 本尊
+    location: 邬嘎岩山
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在邬嘎岩山上修行，结果面见胜乐金刚佛父佛母"
+
+  - event_id: EV_009
+    type: 神变
+    title: 奘大师纵身跳入水池拙火令冰碎水成气
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+    location: 门嘎忠摩切
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "纵身跳进一个水池里，结果池中冰碎而他沉在水底，当闪现出难为情的妄念时，水变成气，几乎遮蔽了虚空"
+
+  - event_id: EV_010
+    type: 神变
+    title: 奘大师纵身跳崖如飞禽降落
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+    location: ""
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "心想这就是在梦中而纵身跳下，结果就像飞禽降落一样"
+
+  - event_id: EV_011
+    type: 面见本尊
+    title: 奘大师诵咒时现见金刚手菩萨
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+      - entity: 金刚手菩萨
+        role: 本尊
+    location: ""
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "阿觉哦哲患了麻风病，我诵咒作为助缘，结果没有治好麻风病，我却现见了金刚手菩萨"
+
+  - event_id: EV_012
+    type: 圆寂
+    title: 奘·达玛布德圆寂
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+    location: ""
+    time_info:
+      text: "一百零二岁显现生病...一百一十七岁圆寂"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "就这样劝勉他人心生厌离之后便圆寂了。荼毗之时，天空彩虹遍布，出现许多佛塔、舍利"
+
+  - event_id: EV_013
+    type: 弘法
+    title: 奘大师耳传金刚桥法广泛弘扬
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+    location: ""
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "耳传金刚桥法的广泛弘扬在这期间也大为兴盛"
+
+# ==================== 觉哲段 (lines 360-385) ====================
+
+  - event_id: EV_014
+    type: 求法
+    title: 觉哲在沃喀拉哲巴前得受《幻化网》等法
+    participants:
+      - entity: 觉哲
+        role: 主体
+      - entity: 沃喀拉哲巴
+        role: 传法者
+    location: ""
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在沃喀拉哲巴面前得受了《幻化网》等宁玛法要、《喜金刚》、《真实名经》"
+
+  - event_id: EV_015
+    type: 传法
+    title: 沃喀拉哲巴临终遗教觉哲
+    participants:
+      - entity: 沃喀拉哲巴
+        role: 主体
+      - entity: 觉哲
+        role: 受教者
+    location: ""
+    time_info:
+      text: "拉哲巴大师临圆寂时"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "拉哲巴大师在临圆寂时对他说：'就算是精通多少大论，但对临终有利的只有七座法。'"
+
+  - event_id: EV_016
+    type: 求法
+    title: 觉哲在花隆三次请求金刚桥法
+    participants:
+      - entity: 觉哲
+        role: 主体
+      - entity: 奘·达玛布德
+        role: 传法者
+    location: 花隆
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "到奘大师座前，在花隆地方三次请求《金刚桥法》"
+
+  - event_id: EV_017
+    type: 传法
+    title: 奘大师将教言圆满传授给觉哲
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+      - entity: 觉哲
+        role: 受法者
+    location: 达波
+    time_info:
+      text: "六年以后"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于是将教言圆满传授给他。他在上师跟前住了几个春秋，六年以后，所有零零散散的教授也都圆满得到"
+
+  - event_id: EV_018
+    type: 弘法
+    title: 觉哲在赤卡传讲金刚桥法
+    participants:
+      - entity: 觉哲
+        role: 主体
+    location: 赤卡
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "大师说：'由觉哲来讲，你们听法。'后来觉哲上师在赤卡地方传讲了"
+
+  - event_id: EV_019
+    type: 传法
+    title: 奘大师将所有教言传授觉哲嘱咐秉持传承
+    participants:
+      - entity: 奘·达玛布德
+        role: 主体
+      - entity: 觉哲
+        role: 受法者
+    location: ""
+    time_info:
+      text: "师徒共住十八年"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "奘大师与觉哲师徒二人共住了十八年，奘大师将所有教言传授给觉哲以后吩咐他秉持传承"
+
+# ==================== 根桑大师段 (lines 387-400) ====================
+
+  - event_id: EV_020
+    type: 求法
+    title: 根桑在奘大师前得受金刚桥法
+    participants:
+      - entity: 根桑
+        role: 主体
+      - entity: 奘·达玛布德
+        role: 传法者
+    location: ""
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "又在奘大师前得受一次金刚桥法"
+
+  - event_id: EV_021
+    type: 求法
+    title: 根桑迎请觉哲到崩让听受七次金刚桥法
+    participants:
+      - entity: 根桑
+        role: 主体
+      - entity: 觉哲
+        role: 传法者
+    location: 崩让
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "迎请奘·觉哲到崩让地方，听受了七次金刚桥法"
+
+  - event_id: EV_022
+    type: 求法
+    title: 根桑在达波得受十四次半金刚桥法
+    participants:
+      - entity: 根桑
+        role: 主体
+      - entity: 觉哲
+        role: 传法者
+    location: 达波
+    time_info:
+      text: "四个冬天"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在四个冬天到达波地方，得受了十四次半金刚桥法"
+
+  - event_id: EV_023
+    type: 弘法
+    title: 哦白桑给十四岁传讲金刚桥法
+    participants:
+      - entity: 哦白桑给
+        role: 主体
+    location: ""
+    time_info:
+      text: "十四岁"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "十四岁时传讲金刚桥法，传给传承弟子觉滚"
+
+# ==================== 传承线 (lines 404-420) ====================
+
+  - event_id: EV_024
+    type: 传法
+    title: 奘大师传金刚桥法给涅达桑哈
+    participants:
+      - entity: 奘·达��布德
+        role: 主体
+      - entity: 涅达桑哈
+        role: 受法者
+    location: ""
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "奘大师又把金刚桥法传给雅隆赞塘巴的涅达桑哈"
+
+  - event_id: EV_025
+    type: 圆寂
+    title: 涅达桑哈七十七岁圆寂
+    participants:
+      - entity: 涅达桑哈
+        role: 主体
+    location: ""
+    time_info:
+      text: "七十七岁"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "最后在七十七岁时圆寂"
+
+# ==================== 释迦嘉波段 (lines 422-430) ====================
+
+  - event_id: EV_026
+    type: 出家
+    title: 释迦嘉波茶卡拉出家受比丘戒
+    participants:
+      - entity: 释迦嘉波
+        role: 主体
+    location: 茶卡拉
+    time_info:
+      text: "年青时"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "阿阇黎释迦嘉波年青时在茶卡拉地方出家，当年受比丘戒"
+
+  - event_id: EV_027
+    type: 圆寂
+    title: 释迦嘉波圆寂心间出舍利
+    participants:
+      - entity: 释迦嘉波
+        role: 主体
+    location: ""
+    time_info:
+      text: "住世接近一百岁"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "住世接近一百岁，圆寂以后法体心间自然出现了无尽的舍利子"
+
+# ==================== 莲师心滴段 (lines 431-449) ====================
+
+  - event_id: EV_028
+    type: 传法
+    title: 莲师与布玛莫札暗传心滴给益西措嘉
+    participants:
+      - entity: 莲花生大士
+        role: 主体
+      - entity: 布玛莫札
+        role: 协同
+      - entity: 益西措嘉
+        role: 受法者
+    location: 友多德卓
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于是将自己的心滴在友多德卓暗地里传授给空行母益西措嘉"
+
+  - event_id: EV_029
+    type: 神变
+    title: 莲师以朱砂写字勾召莲明公主神识并传空行心滴
+    participants:
+      - entity: 莲花生大士
+        role: 主体
+      - entity: 莲明公主
+        role: 客体
+    location: 青普
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "在青普，莲师用朱砂在公主遗体的心间写了一个'讷'字，以禅定的锐利铁钩勾召她的神识...把窍诀《空行心滴》传授给她"
+
+  - event_id: EV_030
+    type: 伏藏
+    title: 班玛列哲匝取出空行心滴
+    participants:
+      - entity: 班玛列哲匝
+        role: 主体
+    location: ""
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "就是后来班玛列哲匝（意为莲花事业妙力，是无垢光尊者的前世）取出的《空行心滴》"
+
+# ==================== 布玛莫札段 (lines 450-466) ====================
+
+  - event_id: EV_031
+    type: 迎请
+    title: 赤松德赞遣译师迎请布玛莫札入藏
+    participants:
+      - entity: 赤松德赞
+        role: 主体
+      - entity: 布玛莫札
+        role: 客体
+      - entity: 噶瓦拜则
+        role: 使者
+      - entity: 焦若鲁坚赞
+        role: 使者
+      - entity: 酿登珍桑波
+        role: 授记者
+    location: 西藏
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于是国王派遣噶瓦拜则、焦若鲁坚赞二位译师携带纯金礼品前去迎请"
+
+  - event_id: EV_032
+    type: 神变
+    title: 布玛莫札以神变令疑谤者起信
+    participants:
+      - entity: 布玛莫札
+        role: 主体
+    location: 西藏
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "印度人以嫉妒心挑拨离间，使藏人们生起怀疑，这时布玛莫札以奇妙的神变使他们起信心"
+
+  - event_id: EV_033
+    type: 译经
+    title: 耶札酿波译后译十三心部
+    participants:
+      - entity: 布玛莫札
+        role: 主体
+      - entity: 耶札酿波
+        role: 译师
+    location: 西藏
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "分别的法门由耶札酿波作为译师，翻译了后译十三心部"
+
+  - event_id: EV_034
+    type: 传法
+    title: 布玛莫札暗传窍诀心滴给赤松德赞与酿登珍桑波
+    participants:
+      - entity: 布玛莫札
+        role: 主体
+      - entity: 赤松德赞
+        role: 受法者
+      - entity: 酿登珍桑波
+        role: 受法者
+    location: 西藏
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "极其深奥的窍诀心滴暗中传授给国王赤松德赞与酿登珍桑波"
+
+  - event_id: EV_035
+    type: 伏藏
+    title: 布玛莫札将法本隐藏于青普给贡
+    participants:
+      - entity: 布玛莫札
+        role: 主体
+    location: 青普
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于是便将所有藏文法本隐藏在青普的给贡地方"
+
+  - event_id: EV_036
+    type: 离藏
+    title: 布玛莫札离藏前往汉地五台山
+    participants:
+      - entity: 布玛莫札
+        role: 主体
+    location: 五台山
+    time_info:
+      text: "在西藏住了十三年"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "这位大师在西藏住了十三年，后来前往汉地五台山"
+
+  - event_id: EV_037
+    type: 授记
+    title: 布玛莫札承诺每百年在藏化身一位开显心滴
+    participants:
+      - entity: 布玛莫札
+        role: 主体
+    location: ""
+    time_info:
+      text: "如来教住世期间"
+    layers: [授记]
+    confidence: 0.95
+    source_quote: "他亲口承诺：在如来教住世期间身体一直保留，每一百年在藏地领域内示现一位化身，开显心滴教法"
+
+  - event_id: EV_038
+    type: 圆寂
+    title: 酿登珍桑波成就虹身
+    participants:
+      - entity: 酿登珍桑波
+        role: 主体
+    location: 拉萨天岩龙洞
+    time_info:
+      text: "布玛莫札前往汉地五十五年后"
+    layers: [史传, 神变]
+    confidence: 0.80
+    source_quote: "布玛莫札大师前往汉地以后过了五十五年，酿登珍桑波成就了漏尽身（即得虹身成就）...最后在拉萨天岩龙洞里虹身消失"
+
+# ==================== 荡玛艮哲嘉村段 (lines 468-485) ====================
+
+  - event_id: EV_039
+    type: 伏藏
+    title: 荡玛艮哲嘉村受多吉勒巴授记开取伏藏
+    participants:
+      - entity: 荡玛艮哲嘉村
+        role: 主体
+      - entity: 多吉勒巴
+        role: 授记者
+    location: ""
+    time_info:
+      text: "酿登珍桑波化光后八年"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "蒙多吉勒巴（单坚护法神）授记，开取了以前隐藏的所有伏藏品"
+
+  - event_id: EV_040
+    type: 传法
+    title: 荡玛传教授给杰珍桑给旺修七次
+    participants:
+      - entity: 荡玛艮哲嘉村
+        role: 主体
+      - entity: 杰珍桑给旺修
+        role: 受法者
+    location: ""
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从涅多地方找到了杰珍桑给旺修，传予他七次教授"
+
+  - event_id: EV_041
+    type: 圆寂
+    title: 荡玛艮哲嘉村圆寂出舍利
+    participants:
+      - entity: 荡玛艮哲嘉村
+        role: 主体
+    location: ""
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "当他圆寂的时候，虚空遍布彩虹，遗体中出现了无量无数的舍利"
+
+  - event_id: EV_042
+    type: 传法
+    title: 杰珍传授给玛卓酿噶当巴
+    participants:
+      - entity: 杰珍桑给旺修
+        role: 主体
+      - entity: 玛卓酿噶当巴
+        role: 受法者
+    location: 尼塘
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于是杰珍传授给他。他在友地的德卓岩山修行两年，结果成就虹身"
+
+# ==================== 杰珍桑给旺修段 (lines 487-503) ====================
+
+  - event_id: EV_043
+    type: 伏藏
+    title: 杰珍桑给旺修隐藏伏藏品于三处
+    participants:
+      - entity: 杰珍桑给旺修
+        role: 主体
+    location: 郎卓恰巴
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "杰珍桑给旺修把所有古老的伏藏品隐藏在郎卓恰巴虎形泉眼旁、俄耶、加戒坡三处"
+
+  - event_id: EV_044
+    type: 面见本尊
+    title: 布玛莫札梦中指引杰珍前往青普取伏藏
+    participants:
+      - entity: 杰珍桑给旺修
+        role: 主体
+      - entity: 布玛莫札
+        role: 授记者
+    location: 青普
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "梦见一个阿渣绕，他说：'我是智者布玛莫札也，具缘欲求最密精华义，前往青普给贡红岩处'"
+
+  - event_id: EV_045
+    type: 面见本尊
+    title: 布玛莫札亲自现身杰珍前半月赐授灌顶引导
+    participants:
+      - entity: 杰珍桑给旺修
+        role: 主体
+      - entity: 布玛莫札
+        role: 传法者
+    location: 俄意切公
+    time_info:
+      text: "半月之中"
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "布玛莫札亲自现身，在半月之中圆满赐授一切灌顶、引导、教授后前往汉地"
+
+  - event_id: EV_046
+    type: 圆寂
+    title: 杰珍桑给旺修修行七年成就无余虹身
+    participants:
+      - entity: 杰珍桑给旺修
+        role: 主体
+    location: 俄意切公
+    time_info:
+      text: "修行七年...一百二十五岁"
+    layers: [史传, 神变]
+    confidence: 0.80
+    source_quote: "此后杰珍尊者修行七年，结果成就无余虹身...一百二十五岁时以虹光之身逝于虚空中"
+
+# ==================== 化身扬敦段 (lines 505-540) ====================
+
+  - event_id: EV_047
+    type: 伏藏
+    title: 单坚护法神引导化身扬敦取伏藏
+    participants:
+      - entity: 化身扬敦
+        role: 主体
+      - entity: 多吉勒巴
+        role: 引导者
+      - entity: 一髻佛母
+        role: 授记者
+    location: ""
+    time_info: null
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "头戴白帽的白人——单坚护法神说：'会赐予悉地，快去吧！'随后带着他前往...俄嘎匝哲护法神（即一髻佛母）出现在面前。她授记道：'你应做一百零八次会供，三年之间对谁也不要宣说。'"
+
+  - event_id: EV_048
+    type: 伏藏
+    title: 化身扬敦从青普开取布玛莫札伏藏法
+    participants:
+      - entity: 化身扬敦
+        role: 主体
+      - entity: 布玛莫札
+        role: 开许者
+    location: 青普
+    time_info:
+      text: "二十五岁"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "二十五岁时，他来到卫藏，也从青普开取了布玛莫札的伏藏法，直接面见布玛莫札得到开许"
+
+  - event_id: EV_049
+    type: 求法
+    title: 化身扬敦在桥头遇杰珍得受秘密心滴
+    participants:
+      - entity: 化身扬敦
+        role: 主体
+      - entity: 杰珍桑给旺修
+        role: 传法者
+    location: 香达那
+    time_info: null
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "前往香达那，在桥头遇见杰珍桑给旺修大师，圆满得受秘密心滴"
+
+  - event_id: EV_050
+    type: 圆寂
+    title: 化身扬敦七十一岁火猪年圆寂
+    participants:
+      - entity: 化身扬敦
+        role: 主体
+    location: ""
+    time_info:
+      text: "七十一岁火猪年十一月二十二日"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他在七十一岁时也就是火猪年十一月二十二日，伴随着东方空中传出七次巨大响声，大地震动三次，空中出现彩虹、光芒、妙音、香气等于本地现前菩提的验相而圆寂"
+
+# ==================== 涅玛波段 (lines 542-559) ====================
+
+  - event_id: EV_051
+    type: 弘法
+    title: 涅玛波十岁坐床传讲十七大续部
+    participants:
+      - entity: 涅玛波
+        role: 主体
+    location: ""
+    time_info:
+      text: "十岁"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在他十岁举行坐床仪式之时，传讲十七大续部，使所有弟子感到万分惊奇"
+
+  - event_id: EV_052
+    type: 圆寂
+    title: 涅玛波五十六岁圆寂出五部金刚舍利
+    participants:
+      - entity: 涅玛波
+        role: 主体
+    location: ""
+    time_info:
+      text: "五十六岁"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "尊者五十六岁时圆寂。荼毗时，出现五部金刚舍利，空中搭起彩虹帷幕"
