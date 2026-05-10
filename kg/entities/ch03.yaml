@@ -1,0 +1,1773 @@
+# ============================================================
+# 知识图谱实体 — 第三品 藏传佛法（章级合并）
+# 来源: source/dudjom/chapter_md/03_藏传佛法.md (lines 1-305)
+# 合并日期: 2026-05-09
+# 合并自: ch03-seg1 + ch03-seg2
+# 规范: SKILL_03a v0.1 + entity-taxonomy v0.4
+# 实体总数: 155
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 观世音菩萨
+  aliases: ["大悲观音", "自现圣者观音"]
+  type: 圣众.大乘.菩萨
+  note: "普陀山大悲观音加持猴子来藏；示现为松赞干布"
+  appearances: [6, 47, 49]
+
+E_002:
+  name: 普贤菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "化身为拉托托日涅赞"
+  appearances: [25]
+
+E_003:
+  name: 文殊菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "化身为囤弥桑布札；化身为赤松德赞"
+  appearances: [46, 67, 74]
+
+E_004:
+  name: 金刚手
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "幻化为法臣噶尔东赞"
+  appearances: [50]
+
+E_005:
+  name: 金刚手菩萨
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "赤热巴坚为其化身"
+  appearances: [225]
+
+E_006:
+  name: 颦眉度母
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "化身为赤尊公主"
+  appearances: [51]
+
+E_007:
+  name: 度母
+  aliases: []
+  type: 圣众.大乘.菩萨
+  note: "化身为文成公主"
+  appearances: [52]
+
+E_008:
+  name: 迦叶佛
+  aliases: []
+  type: 圣众.大乘.佛
+  note: "静命提及三人在迦叶佛教法时发愿弘法"
+  appearances: [40]
+
+E_009:
+  name: 金刚持
+  aliases: []
+  type: 圣众.大乘.本尊
+  note: "赤松德赞时期从印度迎请的金刚持上师称号"
+  appearances: [125]
+
+E_010:
+  name: 多闻天子
+  aliases: []
+  type: 圣众.大乘.护法
+  note: "莲师书信中提到从多闻天子处取得财宝"
+  appearances: [145]
+
+E_011:
+  name: 多吉卓罗
+  aliases: []
+  type: 圣众.大乘.本尊
+  form_of: 莲花生大士
+  note: "莲师在达仓三十处示现忿怒威猛相时被尊称的名号"
+  appearances: [195]
+
+# ==================== 人物 — 帝王 ====================
+
+E_020:
+  name: 涅赤赞普
+  aliases: ["肩座王"]
+  type: 人物.帝王
+  origin: "乐匝布种姓"
+  note: "藏地第一位国王；出现于如波神山口"
+  appearances: [11, 12]
+
+E_021:
+  name: 百军王
+  aliases: []
+  type: 人物.帝王
+  note: "有些认为涅赤赞普是百军王的太子"
+  appearances: [13]
+
+E_022:
+  name: 莫赤赞普
+  aliases: []
+  type: 人物.帝王
+  note: "涅赤赞普的太子"
+  appearances: [19]
+
+E_023:
+  name: 拉托托日涅赞
+  aliases: []
+  type: 人物.帝王
+  manifestation_of: ["普贤菩萨"]
+  note: "第二十八代王朝国王；宝箧降落；活到一百二十岁"
+  appearances: [24, 25]
+
+E_024:
+  name: 松赞干布
+  aliases: []
+  type: 人物.帝王
+  origin: "乐匝族"
+  manifestation_of: ["观世音菩萨"]
+  note: "十三岁执掌国政；建大昭寺小昭寺；祖孙三尊之一；与赤松德赞恩德超群绝伦"
+  appearances: [45, 48, 75, 240]
+
+E_025:
+  name: 赤松德赞
+  aliases: []
+  type: 人物.帝王
+  manifestation_of: ["文殊菩萨"]
+  note: "十三岁执掌国政；二十岁发心弘法；迎请静命与莲师；五十九岁圆寂；派木赤赞普摧毁巴达霍修行院；祖孙三法王之一"
+  appearances: [74, 77, 78, 100, 122, 163, 201, 220, 240]
+
+E_026:
+  name: 赤热巴坚
+  aliases: ["赤德祖丹"]
+  type: 人物.帝王
+  manifestation_of: ["金刚手菩萨"]
+  note: "祖孙三尊之一；木迪赞普五太子中最出类拔萃者；每七户子民供养一位出家僧人；建造一千所寺院；头发系绸缎供僧人踏上以示供养；在吉玛哦江多建吉祥善增寺"
+  appearances: [76, 219, 225, 226, 229, 245]
+
+E_027:
+  name: 木赤赞普
+  aliases: ["木赤"]
+  type: 人物.帝王
+  note: "赤松德赞次子；莲师在其执政时从贡塘拉土乘坐骑从空中而逝；被派去摧毁巴达霍修行院"
+  appearances: [173, 175, 201, 220]
+
+E_028:
+  name: 木奈赞普
+  aliases: []
+  type: 人物.帝王
+  note: "赤松德赞长子；执政期间在桑耶寺兴起四大供养佛事；三度平均西藏人民贫富"
+  appearances: [220, 222]
+
+E_029:
+  name: 木迪赞普
+  aliases: ["色纳勒劲云"]
+  type: 人物.帝王
+  note: "赤松德赞三太子；建造嘎穹多吉扬寺；生五位太子，其中赤热巴坚最出类拔萃"
+  appearances: [221, 223]
+
+E_030:
+  name: 朗达玛
+  aliases: ["朗达玛秃头王"]
+  type: 人物.帝王
+  note: "赤热巴坚胞兄；以邪愿牵引、邪魔入心，毁灭佛教；后被拉隆·拜吉多吉降伏"
+  appearances: [245, 246]
+
+E_031:
+  name: 饮光王
+  aliases: []
+  type: 人物.帝王
+  note: "朗达玛之后君王，秉持祖先规则恭敬三宝建造寺院"
+  appearances: [247]
+
+E_032:
+  name: 花库赞
+  aliases: []
+  type: 人物.帝王
+  note: "与饮光王同期，秉持祖先规则恭敬三宝建造寺院"
+  appearances: [247]
+
+E_033:
+  name: 益西嘉村
+  aliases: []
+  type: 人物.帝王
+  note: "卫藏君王；为重新恢复衰退的佛法，委派鲁墨等十人前去康区求戒"
+  appearances: [271]
+
+# ==================== 人物 — 王妃 ====================
+
+E_040:
+  name: 赤尊公主
+  aliases: []
+  type: 人物.王妃
+  origin: "尼泊尔"
+  manifestation_of: ["颦眉度母"]
+  note: "松赞干布王妃之一；二位王妃共称'海中莲花'"
+  appearances: [51]
+
+E_041:
+  name: 文成公主
+  aliases: []
+  type: 人物.王妃
+  origin: "汉族"
+  manifestation_of: ["度母"]
+  note: "松赞干布王妃之一"
+  appearances: [52]
+
+# ==================== 人物 — 大臣 ====================
+
+E_045:
+  name: 噶尔东赞
+  aliases: []
+  type: 人物.大臣
+  manifestation_of: ["金刚手"]
+  note: "松赞干布的法臣"
+  appearances: [50]
+
+E_046:
+  name: 降魔金刚
+  aliases: []
+  type: 人物.大臣
+  note: "被派遣前去迎请莲师的使者之一"
+  appearances: [89]
+
+E_047:
+  name: 国舅札玛
+  aliases: []
+  type: 人物.大臣
+  note: "预试七人后约三百人出家的代表人物"
+  appearances: [133]
+
+# ==================== 人物 — 法师 ====================
+
+E_050:
+  name: 莲花生大士
+  aliases: ["莲师"]
+  type: 人物.法师
+  specialty: ["金刚持", "上师", "大成就者"]
+  origin: ""
+  note: "密宗堪布；降伏藏地非人；建桑耶寺；传灌顶；埋伏藏；被称多吉卓罗；降伏鬼王香夏坚；从贡塘拉土至妙拂洲铜色吉祥山超度罗刹王；以六种任运持明法太子形象如如不动安住"
+  appearances: [87, 90, 92, 97, 100, 106, 111, 139, 143, 148, 155, 158, 159, 160, 164, 166, 170, 172, 173, 177, 178, 182, 187, 188, 189, 193, 195, 197, 202, 209, 210, 211, 212, 213, 214, 215, 216, 217, 241]
+
+E_051:
+  name: 静命
+  aliases: ["菩提萨埵", "菩提萨埵绕杰达"]
+  type: 人物.法师
+  specialty: ["堪布", "班智达"]
+  origin: "萨霍"
+  note: "亲教师；为预试七人授戒；观察桑耶寺地基；开光桑耶寺；与祖孙三法王并列为恩德不同寻常的人物"
+  appearances: [39, 79, 85, 93, 111, 119, 127, 134, 241]
+
+E_052:
+  name: 讷巴班智达
+  aliases: []
+  type: 人物.法师
+  specialty: ["班智达"]
+  note: "认为'从天而降'纯属苯波传言，主张是班智达罗色措携法要来藏"
+  appearances: [33]
+
+E_053:
+  name: 罗色措
+  aliases: []
+  type: 人物.法师
+  specialty: ["班智达"]
+  origin: "印度"
+  note: "与译师特乐色带法要来雪域，国王不懂后返回"
+  appearances: [35]
+
+E_054:
+  name: 特乐色
+  aliases: []
+  type: 人物.法师
+  specialty: ["译师"]
+  note: "与班智达罗色措同来雪域"
+  appearances: [35]
+
+E_055:
+  name: 巴色朗
+  aliases: []
+  type: 人物.法师
+  note: "到尼泊尔拜见静命堪布；预试七人之一"
+  appearances: [39, 130]
+
+E_056:
+  name: 阿嘎玛德西日
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "由松赞干布化现的比丘，迎请自现圣者观音"
+  appearances: [49]
+
+E_057:
+  name: 革萨绕
+  aliases: []
+  type: 人物.法师
+  specialty: ["阿阇黎"]
+  origin: "印度"
+  note: "松赞干布时期从印度迎请"
+  appearances: [57]
+
+E_058:
+  name: 祥嘎绕
+  aliases: []
+  type: 人物.法师
+  specialty: ["班智达"]
+  origin: "印度"
+  note: "婆罗门；松赞干布时期从印度迎请"
+  appearances: [57]
+
+E_059:
+  name: 西日拉玛匝
+  aliases: []
+  type: 人物.法师
+  origin: "尼泊尔"
+  note: "大师；松赞干布时期从尼泊尔迎请"
+  appearances: [57]
+
+E_060:
+  name: 玛哈雅那
+  aliases: []
+  type: 人物.法师
+  origin: "汉地"
+  note: "和尚；松赞干布时期从汉地迎请"
+  appearances: [58]
+
+E_061:
+  name: 哲土哦哲
+  aliases: []
+  type: 人物.法师
+  specialty: ["伏藏师"]
+  note: "开取《国王遗教》伏藏三位之一"
+  appearances: [65]
+
+E_062:
+  name: 阿达尼
+  aliases: []
+  type: 人物.法师
+  specialty: ["伏藏师"]
+  note: "开取《国王遗教》伏藏三位之一"
+  appearances: [65]
+
+E_063:
+  name: 敦巴释迦光
+  aliases: []
+  type: 人物.法师
+  specialty: ["伏藏师"]
+  note: "开取《国王遗教》伏藏三位之一"
+  appearances: [65]
+
+E_064:
+  name: 囤弥桑布札
+  aliases: []
+  type: 人物.法师
+  specialty: ["译师", "声明"]
+  manifestation_of: ["文殊菩萨"]
+  note: "被派到印度学习声明和文字；以梵文为蓝本创制藏文；撰著《语言学书籍》八本；与祖孙三法王并列为藏地佛法恩人"
+  appearances: [67, 241]
+
+E_065:
+  name: 嘉伟西年
+  aliases: []
+  type: 人物.法师
+  specialty: ["持藏"]
+  origin: "印度"
+  note: "赤松德赞时期从印度请来的持藏大师"
+  appearances: [123]
+
+E_066:
+  name: 塔坚钦毕拉
+  aliases: ["遍知天"]
+  type: 人物.法师
+  specialty: ["持藏"]
+  origin: "印度"
+  note: "赤松德赞时期从印度请来的持藏大师"
+  appearances: [123]
+
+E_067:
+  name: 云毕昂策
+  aliases: []
+  type: 人物.法师
+  specialty: ["持藏"]
+  origin: "印度"
+  note: "赤松德赞时期从印度请来的严持净戒的持藏大师"
+  appearances: [124]
+
+E_068:
+  name: 布玛莫札
+  aliases: []
+  type: 人物.法师
+  specialty: ["金刚持", "上师"]
+  origin: "印度"
+  note: "赤松德赞时期从印度请来的金刚持上师"
+  appearances: [124]
+
+E_069:
+  name: 现当嘎巴
+  aliases: []
+  type: 人物.法师
+  specialty: ["金刚持", "上师"]
+  origin: "印度"
+  note: "赤松德赞时期从印度请来的金刚持上师"
+  appearances: [125]
+
+E_070:
+  name: 达那西拉
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  origin: "印度"
+  note: "巴赤则出家时的羯磨师"
+  appearances: [127]
+
+E_071:
+  name: 则那莫札
+  aliases: []
+  type: 人物.法师
+  specialty: ["班智达", "比丘"]
+  origin: "印度"
+  note: "巴赤则出家时的屏教师；后与嘎瓦花则翻译传讲上分对法及下分对法"
+  appearances: [127, 293]
+
+E_072:
+  name: 巴赤则
+  aliases: ["花扬", "巴绕那"]
+  type: 人物.法师
+  specialty: ["比丘", "亲教师"]
+  attainments: ["六通"]
+  note: "国舅大臣；预试七人之首；出家后取名花扬/巴绕那；修持具足六通；后为玛尔·释迦牟尼、约·格威穹、藏·绕色三人之师"
+  appearances: [126, 128, 129, 257]
+
+E_073:
+  name: 贝若札那
+  aliases: ["巴够贝若札那"]
+  type: 人物.法师
+  specialty: ["译师"]
+  note: "预试七人之一；被派往印度；在西日桑哈前听受大圆满；回藏弘扬；与静命、莲师等并列为恩德不同寻常者；末转法轮经典翻译者之一"
+  appearances: [130, 135, 136, 137, 241, 298]
+
+E_074:
+  name: 恩烂嘉巴秋扬
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "预试七人之一"
+  appearances: [131]
+
+E_075:
+  name: 玛·仁钦秋
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "预试七人之一"
+  appearances: [131]
+
+E_076:
+  name: 坤类旺波忠巴
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "预试七人之一；更名为益西旺波"
+  appearances: [131]
+
+E_077:
+  name: 拉色嘉瓦香切
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  note: "预试七人之一"
+  appearances: [131]
+
+E_078:
+  name: 噶·瓦拜则
+  aliases: []
+  type: 人物.法师
+  specialty: ["译师"]
+  note: "噶焦祥氏三师之一；赤松德赞时期翻译显密经典；与贝若札那等翻译末转法轮经典"
+  appearances: [135, 241, 298]
+
+E_079:
+  name: 焦·鲁坚赞
+  aliases: []
+  type: 人物.法师
+  specialty: ["译师"]
+  note: "噶焦祥氏三师之一；赤松德赞时期翻译显密经典；与贝若札那等翻译末转法轮经典"
+  appearances: [135, 241, 298]
+
+E_080:
+  name: 祥·益西德
+  aliases: []
+  type: 人物.法师
+  specialty: ["译师"]
+  note: "噶焦祥氏三师之一；赤松德赞时期翻译显密经典"
+  appearances: [135, 241]
+
+E_081:
+  name: 南卡酿波
+  aliases: ["虚空藏"]
+  type: 人物.法师
+  note: "被派往印度；在吽嘎日座下聆听真实意法；获得成就后回藏弘扬"
+  appearances: [137, 138]
+
+E_082:
+  name: 西日桑哈
+  aliases: []
+  type: 人物.法师
+  specialty: ["上师"]
+  origin: "印度"
+  note: "贝若札那在其前听受大圆满"
+  appearances: [137]
+
+E_083:
+  name: 吽嘎日
+  aliases: []
+  type: 人物.法师
+  specialty: ["上师"]
+  origin: "印度"
+  note: "南卡酿波在其座下聆听真实意法"
+  appearances: [138]
+
+E_084:
+  name: 益西措嘉
+  aliases: ["益西措嘉空行母"]
+  type: 人物.空行母
+  note: "莲师真身携带益西措嘉踏遍藏地"
+  appearances: [182]
+
+E_085:
+  name: 玛尔·释迦牟尼
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘", "亲教师"]
+  origin: "藏地"
+  note: "巴绕那弟子；朗达玛灭佛时携律藏逃往康区；后为贡巴绕色传出家戒作亲教师；年老后转任羯磨师"
+  appearances: [257, 261, 275, 278]
+
+E_086:
+  name: 约·格威穹
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘", "规范师"]
+  origin: "藏地"
+  note: "巴绕那弟子；与玛尔·释迦牟尼、藏·绕色携律藏逃往康区；为贡巴绕色传戒时作规范师；年老后转任羯磨师"
+  appearances: [258, 261, 276, 278]
+
+E_087:
+  name: 藏·绕色
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  origin: "藏地"
+  note: "巴绕那弟子；与玛尔·释迦牟尼、约·格威穹携律藏逃往康区；年老后转任羯磨师"
+  appearances: [258, 276, 278]
+
+E_088:
+  name: 拉隆·拜吉多吉
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  origin: "藏地"
+  note: "降伏恶王朗达玛；后住在丹地；因杀恶君自谓不能补充比丘数目，改派汉僧补足；上分对法及下分对法传承的受传者之一"
+  appearances: [246, 263, 294]
+
+E_089:
+  name: 贡巴绕色
+  aliases: ["莫色拉巴", "释迦·格巴绕色", "贡巴绕色大师"]
+  type: 人物.法师
+  specialty: ["比丘", "亲教师", "持律师"]
+  origin: "康区"
+  attainments: ["信解行菩萨"]
+  note: "出家前名莫色拉巴，见三位高僧生信心请求出家；出家法名释迦·格巴绕色；十五年间听受《戒律》；在贡荣桑格札座下听《戒律》；噶巴哦秋札面前听《般若》；耶札酿波面前听《大圆满心部》；《普作王续》传讲由他传下；以一坐垫三启白次第传一次性圆满比丘戒；后命鲁墨为亲教师"
+  appearances: [260, 262, 266, 269, 270, 273, 279]
+
+E_090:
+  name: 格旺
+  aliases: ["和尚格旺"]
+  type: 人物.法师
+  specialty: ["比丘"]
+  origin: "汉地"
+  note: "拉隆·拜吉多吉所派，补充五比丘数目"
+  appearances: [265]
+
+E_091:
+  name: 吉番
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  origin: "汉地"
+  note: "拉隆·拜吉多吉所派，补充五比丘数目"
+  appearances: [265]
+
+E_092:
+  name: 贡荣桑格札
+  aliases: []
+  type: 人物.法师
+  specialty: ["持律师"]
+  origin: "藏地"
+  note: "贡巴绕色在其座下聆听《戒律》"
+  appearances: [267]
+
+E_093:
+  name: 噶巴哦秋札
+  aliases: []
+  type: 人物.法师
+  specialty: ["般若师"]
+  origin: "藏地"
+  note: "贡巴绕色在其面前听《般若》"
+  appearances: [267]
+
+E_094:
+  name: 耶札酿波
+  aliases: []
+  type: 人物.法师
+  specialty: ["大圆满师"]
+  origin: "藏地"
+  note: "贡巴绕色在其面前聆听《大圆满心部》；后弘时期大译师达玛西日为其幻化"
+  appearances: [268, 288]
+
+E_095:
+  name: 鲁墨·赤诚西绕
+  aliases: ["鲁墨", "鲁墨大师"]
+  type: 人物.法师
+  specialty: ["比丘", "亲教师"]
+  origin: "卫藏"
+  note: "卫藏五人之首；受贡巴绕色传比丘戒后被任命为亲教师；培养出四顶梁柱弟子、八大栋梁弟子、三十二椽木弟子、千数短木弟子等；创立拉木、绕吉、也巴、瓦耶、凑迪等无数道场；使衰落佛法从根本上恢复"
+  appearances: [272, 281, 283, 285, 286, 287]
+
+E_096:
+  name: 罗敦多吉旺修
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  origin: "后藏"
+  note: "后藏五人之首，受贡巴绕色传比丘戒"
+  appearances: [272]
+
+E_097:
+  name: 雅协
+  aliases: []
+  type: 人物.法师
+  specialty: ["比丘"]
+  origin: "藏地"
+  note: "其弟子格西札巴独自建立一百零八处道场"
+  appearances: [285]
+
+E_098:
+  name: 格西札巴
+  aliases: []
+  type: 人物.法师
+  specialty: ["格西"]
+  origin: "藏地"
+  note: "雅协的弟子，独自建立一百零八处道场"
+  appearances: [286]
+
+E_099:
+  name: 达玛西日
+  aliases: ["大译师达玛西日"]
+  type: 人物.法师
+  specialty: ["译师"]
+  origin: "藏地"
+  manifestation_of: ["耶札酿波"]
+  note: "耶札酿波的幻化；将传讲及实修十分广泛弘扬开来"
+  appearances: [289]
+
+E_100:
+  name: 思仁札布德
+  aliases: []
+  type: 人物.法师
+  specialty: ["班智达"]
+  origin: "印度"
+  note: "赤热巴坚时期从印度请来的班智达之一"
+  appearances: [230]
+
+E_101:
+  name: 西林札布德
+  aliases: []
+  type: 人物.法师
+  specialty: ["班智达"]
+  origin: "印度"
+  note: "赤热巴坚时期从印度请来的班智达之一"
+  appearances: [230]
+
+E_102:
+  name: 德那西拉
+  aliases: []
+  type: 人物.法师
+  specialty: ["班智达"]
+  origin: "印度"
+  note: "赤热巴坚时期从印度请来的班智达之一"
+  appearances: [231]
+
+E_103:
+  name: 燃那绕杰达
+  aliases: []
+  type: 人物.法师
+  specialty: ["堪布"]
+  origin: "藏地"
+  note: "赤热巴坚时期藏地堪布"
+  appearances: [231]
+
+E_104:
+  name: 达玛达谢
+  aliases: []
+  type: 人物.法师
+  specialty: ["堪布"]
+  origin: "藏地"
+  note: "赤热巴坚时期藏地堪布"
+  appearances: [231]
+
+E_105:
+  name: 嘉那色那
+  aliases: []
+  type: 人物.法师
+  specialty: ["译师"]
+  origin: "藏地"
+  note: "赤热巴坚时期译师"
+  appearances: [232]
+
+E_106:
+  name: 嘎瓦那波切
+  aliases: []
+  type: 人物.法师
+  specialty: ["译师"]
+  origin: "藏地"
+  note: "在彭地对曾经翻译的《广般若经》进行译校分成十六部"
+  appearances: [235]
+
+E_107:
+  name: 嘎瓦花则
+  aliases: []
+  type: 人物.法师
+  specialty: ["译师"]
+  origin: "藏地"
+  note: "与班智达则那莫札一起翻译传讲上分对法及下分对法"
+  appearances: [294]
+
+E_108:
+  name: 那南·达瓦多吉
+  aliases: []
+  type: 人物.法师
+  origin: "藏地"
+  note: "接受上分对法及下分对法传承者之一"
+  appearances: [294]
+
+E_109:
+  name: 卫·益西嘉瓦
+  aliases: []
+  type: 人物.法师
+  origin: "藏地"
+  note: "接受上分对法及下分对法传承者之一；到了康区以后进行传讲，直到现在一直非常兴盛"
+  appearances: [295]
+
+E_110:
+  name: 朗康够恰
+  aliases: []
+  type: 人物.法师
+  origin: "藏地"
+  note: "背诵《般若十万颂》等，经藏中转法轮般若类弘扬者"
+  appearances: [296]
+
+# ==================== 非人 ====================
+
+E_115:
+  name: 岩罗刹女
+  aliases: []
+  type: 非人.通称
+  note: "与观音加持的猴子交配繁衍藏人"
+  appearances: [7]
+
+E_116:
+  name: 十二地母
+  aliases: []
+  type: 非人.护法
+  subdued_by: 莲花生大士
+  note: "莲师降伏的大力非人之一"
+  appearances: [98]
+
+E_117:
+  name: 十三革绕神
+  aliases: []
+  type: 非人.护法
+  subdued_by: 莲花生大士
+  note: "莲师降伏的大力非人之一"
+  appearances: [98]
+
+E_118:
+  name: 二十一优婆塞
+  aliases: []
+  type: 非人.护法
+  subdued_by: 莲花生大士
+  note: "莲师降伏的大力非人之一"
+  appearances: [98]
+
+E_119:
+  name: 无恼龙
+  aliases: []
+  type: 非人.护法
+  subdued_by: 莲花生大士
+  note: "被莲师降伏后协助建寺，供养十四藏斗金粉"
+  appearances: [109]
+
+E_120:
+  name: 鬼王香夏坚
+  aliases: []
+  type: 非人.护法(世间)
+  subdued_by: 莲花生大士
+  note: "尾随木赤赞普来到巴达霍修行院，被莲师降伏后吩咐保护僧财"
+  appearances: [202]
+
+E_121:
+  name: 罗刹王绕卡土创
+  aliases: []
+  type: 非人.饿鬼
+  note: "妙拂洲铜色吉祥山；莲师神识进入其身体后超度"
+  appearances: [213]
+
+# ==================== 经典 ====================
+
+E_130:
+  name: 文殊根本续
+  aliases: []
+  type: 经典.密续
+  note: "引言及松赞干布段多次引用其授记"
+  appearances: [4, 46]
+
+E_131:
+  name: 无垢天女授记经
+  aliases: []
+  type: 经典.经
+  note: "授记'入灭后两千五百年佛法将弘扬于红面人之境内'"
+  appearances: [21]
+
+E_132:
+  name: 百拜忏悔经
+  aliases: []
+  type: 经典.经
+  note: "宝箧中降落之物之一"
+  appearances: [27]
+
+E_133:
+  name: 宝箧经
+  aliases: []
+  type: 经典.经
+  note: "宝箧中降落之物之一"
+  appearances: [27]
+
+E_134:
+  name: 巴协
+  aliases: []
+  type: 经典.史籍
+  note: "记载静命堪布与巴色朗对话；记载莲师短住说"
+  appearances: [42, 166]
+
+E_135:
+  name: 国王遗教
+  aliases: ["玛尼全集"]
+  type: 经典.教言集
+  note: "松赞干布所有言教综合；隐藏成三个伏藏后由三位伏藏师开取"
+  appearances: [64, 65]
+
+E_136:
+  name: 语言学书籍
+  aliases: []
+  type: 经典.论
+  note: "囤弥桑布札撰著，共八本"
+  appearances: [68]
+
+E_137:
+  name: 金刚橛
+  aliases: []
+  type: 经典.密续
+  note: "莲师为君臣宣讲的法部"
+  appearances: [140]
+
+E_138:
+  name: 窍诀见鬘论
+  aliases: []
+  type: 经典.论
+  note: "莲师为君臣宣讲"
+  appearances: [141]
+
+E_139:
+  name: 吉祥证道歌
+  aliases: []
+  type: 经典.教言集
+  note: "莲师依靠此歌镇压鬼神"
+  appearances: [112]
+
+E_140:
+  name: 贤愚经
+  aliases: []
+  type: 经典.经
+  note: "引用论证佛于舍卫城神变天数多少的经典"
+  appearances: [179]
+
+E_141:
+  name: 毗奈耶经
+  aliases: []
+  type: 经典.律
+  note: "引用论证佛于舍卫城神变天数多少的经典"
+  appearances: [179]
+
+E_142:
+  name: 一百国王魂伏藏
+  aliases: []
+  type: 经典.密续.岩藏
+  concealed_by: 莲花生大士
+  note: "莲师隐藏的伏藏品之一"
+  appearances: [190]
+
+E_143:
+  name: 五大意伏藏
+  aliases: []
+  type: 经典.密续.岩藏
+  concealed_by: 莲花生大士
+  note: "莲师隐藏的伏藏品之一"
+  appearances: [190]
+
+E_144:
+  name: 二十五甚深大伏藏
+  aliases: []
+  type: 经典.密续.岩藏
+  concealed_by: 莲花生大士
+  note: "莲师隐藏的伏藏品之一"
+  appearances: [191]
+
+E_145:
+  name: 《广般若经》
+  aliases: []
+  type: 经典.经
+  note: "嘎瓦那波切在彭地译校，分成十六部"
+  appearances: [235]
+
+E_146:
+  name: 《戒律》
+  aliases: ["律藏"]
+  type: 经典.律
+  note: "贡巴绕色十五年间听受；朗达玛灭佛时被三位高僧驮骡带往康区"
+  appearances: [258, 266, 267]
+
+E_147:
+  name: 《大圆满心部》
+  aliases: []
+  type: 经典.密续.远传
+  note: "贡巴绕色在耶札酿波面前聆听"
+  appearances: [268]
+
+E_148:
+  name: 《普作王续》
+  aliases: []
+  type: 经典.密续.远传
+  note: "后来传讲的出现由贡巴绕色传下"
+  appearances: [269]
+
+E_149:
+  name: 《般若》
+  aliases: []
+  type: 经典.经
+  note: "贡巴绕色在噶巴哦秋札面前听闻（概称）"
+  appearances: [268]
+
+E_150:
+  name: 上分对法
+  aliases: []
+  type: 经典.论
+  note: "由班智达则那莫札和译师嘎瓦花则翻译传讲"
+  appearances: [293]
+
+E_151:
+  name: 下分对法
+  aliases: []
+  type: 经典.论
+  note: "与上分对法并列，由班智达则那莫札和译师嘎瓦花则翻译传讲"
+  appearances: [293]
+
+E_152:
+  name: 《般若十万颂》
+  aliases: []
+  type: 经典.经
+  note: "朗康够恰背诵；从印度保留下来的经典翻译弘扬"
+  appearances: [297]
+
+E_153:
+  name: 《藏密佛教史——天鼓妙音》
+  aliases: []
+  type: 经典.史籍
+  note: "本书书名；结尾出现"
+  appearances: [303, 304]
+
+# ==================== 教法 ====================
+
+E_160:
+  name: 大悲寂猛教言
+  aliases: []
+  type: 教法.教言法门
+  note: "松赞干布暗中为有缘者传授并实修"
+  appearances: [61]
+
+E_161:
+  name: 十善法
+  aliases: ["十善"]
+  type: 教法.戒律体系
+  note: "囤弥桑布札创藏文后在雪域树立；静命也曾宣讲"
+  appearances: [70, 80]
+
+E_162:
+  name: 在家道德规范十六条
+  aliases: []
+  type: 教法.戒律体系
+  note: "二规法令的主体"
+  appearances: [70]
+
+E_163:
+  name: 八关斋戒
+  aliases: []
+  type: 教法.戒律体系
+  note: "静命为个别人传授"
+  appearances: [79]
+
+E_164:
+  name: 大圆满
+  aliases: []
+  type: 教法.教法体系
+  vehicle: 阿底瑜伽
+  note: "贝若札那在西日桑哈前听受"
+  appearances: [137, 268]
+
+E_165:
+  name: 真实意法
+  aliases: []
+  type: 教法.教言法门
+  note: "南卡酿波在吽嘎日座下聆听"
+  appearances: [138]
+
+E_166:
+  name: 观音法
+  aliases: []
+  type: 仪轨.修法
+  note: "尼占帕翁卡约百位在家瑜伽士所修"
+  appearances: [62]
+
+E_167:
+  name: 生起次第
+  aliases: []
+  type: 教法.修法元素
+  note: "后弘时期在家咒师在深山家中讲修"
+  appearances: [252]
+
+E_168:
+  name: 圆满次第
+  aliases: []
+  type: 教法.修法元素
+  note: "与生起次第并列，后弘时期在家咒师讲修"
+  appearances: [252]
+
+E_169:
+  name: 东律传承
+  aliases: []
+  type: 教法.戒律体系
+  note: "后弘时期由玛尔·释迦牟尼等三位高僧传下的律法传承；邬金敏珠朗佛学院及其分院属此传承；新旧噶当派多数善知识致力于此传承"
+  appearances: [288]
+
+E_170:
+  name: 四大供养
+  aliases: []
+  type: 教法.修法元素
+  note: "木奈赞普执政期间在桑耶寺兴起的佛事"
+  appearances: [222]
+
+E_171:
+  name: 八大法行
+  aliases: []
+  type: 教法.教法体系
+  note: "莲师在铜色吉祥山化现罗刹八洲后以国王形象宣讲八大法行等正法"
+  appearances: [214]
+
+E_172:
+  name: 三宝
+  aliases: []
+  type: 教法.教法体系
+  note: "饮光王与花库赞恭敬三宝；所有在家人虔诚信奉"
+  appearances: [247, 248]
+
+# ==================== 仪轨 ====================
+
+E_175:
+  name: 六字真言
+  aliases: []
+  type: 仪轨.咒语
+  note: "宝箧中降落之物之一"
+  appearances: [27]
+
+E_176:
+  name: 近圆戒
+  aliases: ["比丘戒"]
+  type: 仪轨.戒律
+  note: "贡巴绕色请求受比丘戒；五比丘传了近圆戒；贡巴绕色受近圆戒后第五年传戒"
+  appearances: [262, 265, 270]
+
+# ==================== 法器/圣物 ====================
+
+E_180:
+  name: 如意珠总持印模
+  aliases: []
+  type: 法器圣物.圣物
+  note: "宝箧中降落之物之一"
+  appearances: [27]
+
+E_181:
+  name: 金塔
+  aliases: []
+  type: 法器圣物.圣物
+  note: "宝箧中降落之物之一"
+  appearances: [27]
+
+E_182:
+  name: 玄秘神物
+  aliases: []
+  type: 法器圣物.圣物
+  note: "拉托托日涅赞为天降宝物所取的总称"
+  appearances: [29]
+
+E_183:
+  name: 八岁佛像
+  aliases: []
+  type: 法器圣物.佛像
+  note: "本师真佛的代表；与十二岁佛像一起被迎请"
+  appearances: [50]
+
+E_184:
+  name: 十二岁佛像
+  aliases: []
+  type: 法器圣物.佛像
+  note: "本师真佛的代表；与八岁佛像一起被迎请"
+  appearances: [50]
+
+E_185:
+  name: 自现圣者观音像
+  aliases: ["自现圣者观音"]
+  type: 法器圣物.佛像
+  note: "由比丘阿嘎玛德西日迎请的观音像"
+  appearances: [49]
+
+# ==================== 寺院/道场 ====================
+
+E_190:
+  name: 永布拉冈
+  aliases: []
+  type: 寺院.王宫
+  origin: "藏地"
+  note: "拉托托日涅赞所居之皇宫"
+  appearances: [26]
+
+E_191:
+  name: 大昭寺
+  aliases: []
+  type: 寺院.寺庙
+  origin: "藏地"
+  note: "松赞干布兴建"
+  appearances: [53, 56]
+
+E_192:
+  name: 小昭寺
+  aliases: []
+  type: 寺院.寺庙
+  origin: "藏地"
+  note: "松赞干布兴建"
+  appearances: [56]
+
+E_193:
+  name: 玛热王宫
+  aliases: []
+  type: 寺院.王宫
+  origin: "吉曲尼占帕翁卡"
+  note: "松赞干布与二位王妃在此闭关修行本尊"
+  appearances: [54]
+
+E_194:
+  name: 镇肢寺
+  aliases: []
+  type: 寺院.寺庙
+  origin: "藏地"
+  note: "松赞干布依授记所建"
+  appearances: [55]
+
+E_195:
+  name: 镇节寺
+  aliases: []
+  type: 寺院.寺庙
+  origin: "藏地"
+  note: "松赞干布依授记所建"
+  appearances: [55]
+
+E_196:
+  name: 桑耶寺
+  aliases: ["吉祥桑耶无变自成寺"]
+  type: 寺院.寺庙
+  origin: "藏地"
+  note: "以须弥山四大部洲模式建成；五年竣工；白天人工建、晚上非人建；木奈赞普执政期间兴起四大供养佛事；后弘时期虽无出家僧人，在家人仍保护完好"
+  appearances: [118, 172, 222, 248]
+
+E_197:
+  name: 札马珍桑殿堂
+  aliases: []
+  type: 寺院.道场
+  origin: "藏地"
+  note: "开光时佛像开口说话"
+  appearances: [101]
+
+E_198:
+  name: 邬丹达波热经堂
+  aliases: []
+  type: 寺院.寺庙
+  note: "建桑耶寺时以此为范例"
+  appearances: [114]
+
+E_199:
+  name: 嘎穹多吉扬寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "木迪赞普所建"
+  appearances: [223]
+
+E_200:
+  name: 吉祥善增寺
+  aliases: []
+  type: 寺院.寺庙
+  note: "赤热巴坚在吉玛哦江多建起，文中称'无与伦比'"
+  appearances: [229]
+
+E_201:
+  name: 丹迪寺
+  aliases: ["玛龙多吉札绕安穹那炯"]
+  type: 寺院.寺庙
+  note: "康区；三位高僧修行安住之处；莫色拉巴在此见僧生信"
+  appearances: [260]
+
+E_202:
+  name: 巴达霍修行院
+  aliases: []
+  type: 寺院.修行处
+  note: "国王派木赤赞普去摧毁之处，鬼王香夏坚尾随而来"
+  appearances: [201]
+
+E_203:
+  name: 拉木
+  aliases: []
+  type: 寺院.道场
+  note: "鲁墨大师创立的道场之一"
+  appearances: [285]
+
+E_204:
+  name: 绕吉
+  aliases: []
+  type: 寺院.道场
+  note: "鲁墨大师创立的道场之一"
+  appearances: [285]
+
+E_205:
+  name: 也巴
+  aliases: []
+  type: 寺院.道场
+  note: "鲁墨大师创立的道场之一"
+  appearances: [285]
+
+E_206:
+  name: 瓦耶
+  aliases: []
+  type: 寺院.道场
+  note: "鲁墨大师创立的道场之一"
+  appearances: [285]
+
+E_207:
+  name: 凑迪
+  aliases: []
+  type: 寺院.道场
+  note: "鲁墨大师创立的道场之一"
+  appearances: [285]
+
+E_208:
+  name: 邬金敏珠朗佛学院
+  aliases: []
+  type: 寺院.寺庙
+  note: "藏地雪域的一大庄严；其所有分院戒律传承属于东律传承"
+  appearances: [290]
+
+# ==================== 地名 ====================
+
+E_210:
+  name: 印度
+  aliases: []
+  type: 地名.国
+  note: "六大圣地之一；班智达来源地"
+  appearances: [2, 56, 67, 123, 136, 137, 230, 297]
+
+E_211:
+  name: 汉地
+  aliases: []
+  type: 地名.国
+  note: "六大圣地之一；和尚格旺、吉番来自汉地"
+  appearances: [2, 58, 146, 264]
+
+E_212:
+  name: 藏地
+  aliases: ["雪域", "吐蕃"]
+  type: 地名.国
+  note: "六大圣地之一；列居第三；全文主要叙事场所"
+  appearances: [2, 3, 5, 7, 12, 40, 68, 80, 92, 97, 155, 160, 164, 166, 177, 183]
+
+E_213:
+  name: 龟兹国
+  aliases: []
+  type: 地名.国
+  note: "六大圣地之一"
+  appearances: [3]
+
+E_214:
+  name: 香巴拉
+  aliases: []
+  type: 地名.神话地名
+  note: "六大圣地之一"
+  appearances: [3]
+
+E_215:
+  name: 革拉夏
+  aliases: []
+  type: 地名.国
+  note: "六大圣地之一"
+  appearances: [3]
+
+E_216:
+  name: 南赡部洲
+  aliases: []
+  type: 地名.神话地名
+  note: "正法盛行的六大圣地所属之洲"
+  appearances: [3]
+
+E_217:
+  name: 普陀山
+  aliases: []
+  type: 地名.圣地
+  note: "大悲观音所在之处"
+  appearances: [6]
+
+E_218:
+  name: 如波神山口
+  aliases: []
+  type: 地名.自然地理
+  origin: "藏地"
+  note: "涅赤赞普出现之处"
+  appearances: [14]
+
+E_219:
+  name: 赞塘阁希
+  aliases: []
+  type: 地名.区域
+  origin: "藏地"
+  note: "涅赤赞普来到此处"
+  appearances: [15]
+
+E_220:
+  name: 尼泊尔
+  aliases: []
+  type: 地名.国
+  note: "赤尊公主来源地；巴色朗拜见静命处；静命暂去之处"
+  appearances: [39, 51, 85, 93]
+
+E_221:
+  name: 吉曲尼占帕翁卡
+  aliases: ["尼占帕翁卡"]
+  type: 地名.区域
+  origin: "藏地"
+  note: "玛热王宫所在地；出现约百位修行观音法的在家瑜伽士"
+  appearances: [53, 62]
+
+E_222:
+  name: 萨霍
+  aliases: []
+  type: 地名.区域
+  note: "静命堪布的来源地"
+  appearances: [78]
+
+E_223:
+  name: 红山
+  aliases: []
+  type: 地名.自然地理
+  origin: "藏地"
+  note: "凶神恶煞雷击之地"
+  appearances: [81]
+
+E_224:
+  name: 澎塘
+  aliases: []
+  type: 地名.区域
+  origin: "藏地"
+  note: "宫殿被水冲之地"
+  appearances: [81]
+
+E_225:
+  name: 芒耶贡塘
+  aliases: []
+  type: 地名.区域
+  note: "莲师与使者会面之地"
+  appearances: [90]
+
+E_226:
+  name: 阿里
+  aliases: []
+  type: 地名.区域
+  origin: "藏地"
+  note: "莲师撒金方向；莲师踏遍之地；二十座雪山"
+  appearances: [92, 97, 184]
+
+E_227:
+  name: 卫藏
+  aliases: []
+  type: 地名.大区域
+  origin: "藏地"
+  note: "莲师踏遍之地；二十一个修行地；鲁墨等五人来自卫藏"
+  appearances: [97, 184, 271, 272, 281]
+
+E_228:
+  name: 多康
+  aliases: []
+  type: 地名.区域
+  origin: "藏地"
+  note: "莲师踏遍之地；二十五圣地"
+  appearances: [97, 185]
+
+E_229:
+  name: 札马翁布园
+  aliases: []
+  type: 地名.圣地
+  origin: "藏地"
+  note: "莲师与赤松德赞会面之处"
+  appearances: [99]
+
+E_230:
+  name: 黑波山
+  aliases: []
+  type: 地名.自然地理
+  origin: "藏地"
+  note: "莲师来此降伏鬼神罗刹"
+  appearances: [111]
+
+E_231:
+  name: 罗刹洲
+  aliases: []
+  type: 地名.神话地名
+  note: "莲师突然前往之处"
+  appearances: [159]
+
+E_232:
+  name: 耶多卓
+  aliases: []
+  type: 地名.圣地
+  origin: "藏地"
+  note: "莲师真身安住的雪山静处之一"
+  appearances: [170]
+
+E_233:
+  name: 青普
+  aliases: []
+  type: 地名.圣地
+  origin: "藏地"
+  note: "莲师真身安住的雪山静处之一"
+  appearances: [170]
+
+E_234:
+  name: 贡塘拉土
+  aliases: []
+  type: 地名.区域
+  origin: "藏地"
+  note: "莲师在木赤执政时从此乘坐骑从空中而逝；莲师从此骑狮/骏马前往妙拂洲"
+  appearances: [173, 211]
+
+E_235:
+  name: 洞巴戒创
+  aliases: []
+  type: 地名.区域
+  note: "印藏交界山顶；莲师第一次示现离去之处"
+  appearances: [167]
+
+E_236:
+  name: 舍卫城
+  aliases: []
+  type: 地名.区域
+  origin: "印度"
+  note: "佛于舍卫城调伏外道六本师的神变之地"
+  appearances: [180]
+
+E_237:
+  name: 哦塘多吉则巴
+  aliases: []
+  type: 地名.圣地
+  origin: "藏地"
+  note: "莲师留下身体印迹之处"
+  appearances: [197]
+
+E_238:
+  name: 巴卓白岩
+  aliases: []
+  type: 地名.圣地
+  origin: "藏地"
+  note: "莲师留下脚印之处"
+  appearances: [198]
+
+E_239:
+  name: 门卡内让狮子堡
+  aliases: []
+  type: 地名.圣地
+  origin: "藏地"
+  note: "达仓三十处之一；莲师示现忿怒威猛相降伏凶神"
+  appearances: [192]
+
+E_240:
+  name: 须弥山
+  aliases: []
+  type: 地名.神话地名
+  note: "桑耶寺以须弥山模式建成"
+  appearances: [117]
+
+E_241:
+  name: 四大部洲
+  aliases: []
+  type: 地名.神话地名
+  note: "桑耶寺以四大部洲模式建成"
+  appearances: [117]
+
+E_242:
+  name: 妙拂洲
+  aliases: []
+  type: 地名.神话地名
+  note: "莲师到达之地，铜色吉祥山所在"
+  appearances: [212]
+
+E_243:
+  name: 铜色吉祥山
+  aliases: []
+  type: 地名.神话地名
+  note: "妙拂洲山顶；莲师在此超度罗刹王，幻化莲花宫殿，化现罗刹八洲"
+  appearances: [212]
+
+E_244:
+  name: 吉玛哦江多
+  aliases: []
+  type: 地名.区域
+  note: "赤热巴坚在此建吉祥善增寺"
+  appearances: [229]
+
+E_245:
+  name: 彭地
+  aliases: []
+  type: 地名.区域
+  note: "嘎瓦那波切在此译校《广般若经》"
+  appearances: [235]
+
+E_246:
+  name: 拉萨
+  aliases: []
+  type: 地名.区域
+  note: "拉萨桑耶寺等寺宇"
+  appearances: [248]
+
+E_247:
+  name: 葛逻
+  aliases: []
+  type: 地名.区域
+  note: "三位高僧携律藏先前往之地"
+  appearances: [258]
+
+E_248:
+  name: 霍尔
+  aliases: []
+  type: 地名.区域
+  note: "三位高僧携律藏先前往之地"
+  appearances: [258]
+
+E_249:
+  name: 康区
+  aliases: []
+  type: 地名.大区域
+  note: "后弘时期律法传承之地；三位高僧最终到达此处"
+  appearances: [259, 272, 295]
+
+E_250:
+  name: 后藏
+  aliases: []
+  type: 地名.大区域
+  note: "罗敦多吉旺修等五人来自后藏"
+  appearances: [272]
+
+E_251:
+  name: 丹地
+  aliases: []
+  type: 地名.区域
+  note: "拉隆·拜吉多吉住在此处"
+  appearances: [263]
+
+E_252:
+  name: 西藏
+  aliases: []
+  type: 地名.大区域
+  note: "三度平均西藏人民的贫富"
+  appearances: [207, 250]
+
+# ==================== 教派 ====================
+
+E_260:
+  name: 苯教
+  aliases: ["苯波教"]
+  type: 教派.藏传宗派
+  origin: "藏地"
+  note: "涅赤赞普时期辅佐国政；讷巴班智达指其'喜欢天空'的传言"
+  appearances: [15, 21, 34]
+
+E_261:
+  name: 说一切有部
+  aliases: []
+  type: 教派.印度部派
+  note: "赤松德赞时期从印度迎请的十二位比丘属此部"
+  appearances: [125]
+
+E_262:
+  name: 噶当派
+  aliases: ["新旧噶当派"]
+  type: 教派.藏传宗派
+  note: "新旧噶当派的多数善知识致力于东律传承"
+  appearances: [291]
+
+# ==================== 集合 ====================
+
+E_270:
+  name: 天赤七王
+  aliases: []
+  type: 集合.王族集合
+  cardinality: 7
+  note: "涅赤赞普之子莫赤赞普等"
+  appearances: [19]
+
+E_271:
+  name: 上当二王
+  aliases: []
+  type: 集合.王族集合
+  cardinality: 2
+  note: "天赤七王之后"
+  appearances: [19]
+
+E_272:
+  name: 地上勒六王
+  aliases: []
+  type: 集合.王族集合
+  cardinality: 6
+  note: "上当二王之后"
+  appearances: [20]
+
+E_273:
+  name: 地德八王
+  aliases: []
+  type: 集合.王族集合
+  cardinality: 8
+  note: "地上勒六王之后"
+  appearances: [20]
+
+E_274:
+  name: 赞王五代
+  aliases: []
+  type: 集合.王族集合
+  cardinality: 5
+  note: "地德八王之后"
+  appearances: [20]
+
+E_275:
+  name: 预试七人
+  aliases: []
+  type: 集合.弟子集合
+  cardinality: 7
+  members: ["巴赤则", "巴色朗", "贝若札那", "恩烂嘉巴秋扬", "玛·仁钦秋", "坤类旺波忠巴", "拉色嘉瓦香切"]
+  note: "藏地历史上出家僧团的开端"
+  appearances: [61, 132]
+
+E_276:
+  name: 师君三尊
+  aliases: ["祖孙三尊", "祖孙三法王"]
+  type: 集合.人物集合
+  cardinality: 3
+  members: ["松赞干布", "赤松德赞", "赤热巴坚"]
+  note: "雪域领土内对佛法恩德最大的三位法王"
+  appearances: [73, 76, 240, 254, 300]
+
+E_277:
+  name: 赤松德赞三太子
+  aliases: []
+  type: 集合.王族集合
+  members: ["木奈赞普", "木赤赞普", "木迪赞普"]
+  cardinality: 3
+  note: "赤松德赞的三位太子"
+  appearances: [220]
+
+E_278:
+  name: 噶焦祥氏三师
+  aliases: []
+  type: 集合.上师集合
+  members: ["噶·瓦拜则", "焦·鲁坚赞", "祥·益西德"]
+  cardinality: 3
+  note: "与祖孙三法王、静命、莲师、囤弥桑布札、贝若札那并列为藏地佛法恩人"
+  appearances: [241]
+
+E_279:
+  name: 携律藏逃康三僧
+  aliases: []
+  type: 集合.弟子集合
+  members: ["玛尔·释迦牟尼", "约·格威穹", "藏·绕色"]
+  cardinality: 3
+  note: "巴绕那弟子；朗达玛灭佛时把律藏驮在骡上逃往葛逻、霍尔，最终到康区"
+  appearances: [257, 258]
+
+E_280:
+  name: 卫藏五人
+  aliases: []
+  type: 集合.弟子集合
+  members: ["鲁墨·赤诚西绕"]
+  cardinality: 5
+  note: "来自卫藏五人（仅鲁墨具名），受贡巴绕色传比丘戒"
+  appearances: [272]
+
+E_281:
+  name: 后藏五人
+  aliases: []
+  type: 集合.弟子集合
+  members: ["罗敦多吉旺修"]
+  cardinality: 5
+  note: "来自后藏五人（仅罗敦多吉旺修具名），受贡巴绕色传比丘戒"
+  appearances: [272]
+
+E_282:
+  name: 鲁墨四柱弟子
+  aliases: []
+  type: 集合.弟子集合
+  cardinality: 4
+  note: "四顶梁之柱弟子（具体名字未列）"
+  appearances: [283]
+
+E_283:
+  name: 鲁墨八栋梁弟子
+  aliases: []
+  type: 集合.弟子集合
+  cardinality: 8
+  note: "八大栋梁弟子（具体名字未列）"
+  appearances: [283]
+
+E_284:
+  name: 鲁墨三十二椽木弟子
+  aliases: []
+  type: 集合.弟子集合
+  cardinality: 32
+  note: "三十二椽木弟子（具体名字未列）"
+  appearances: [284]
+
+E_285:
+  name: 赤热巴坚所建千寺
+  aliases: []
+  type: 集合.人物集合
+  cardinality: 1000
+  note: "赤热巴坚共建造一千所寺院"
+  appearances: [227]
