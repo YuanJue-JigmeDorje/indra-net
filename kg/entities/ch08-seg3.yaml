@@ -1,0 +1,995 @@
+# ============================================================
+# 知识图谱实体抽取 — 第八品 佛教年表与自传 (lines 1001-2000)
+# 覆盖范围: 敦珠仁波切自传 — 十六岁至三十二岁
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_03a v0.3 + entity-taxonomy v0.4
+# ============================================================
+
+# ==================== 圣众 ====================
+
+E_001:
+  name: 益西措嘉空行母
+  aliases: [益西措嘉]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "十六岁六月初十夜现身，告知敦珠法王今年依止晋美上师实修前行仪轨"
+  appearances: [1005]
+
+E_002:
+  name: 文殊菩萨
+  aliases: [文殊语狮子]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "十九岁十一月念修后面见文殊菩萨尊颜；赐予智慧教言及修法咒语后融入心间"
+  appearances: [1178, 1180, 1182, 1184, 1192]
+
+E_003:
+  name: 不动佛
+  aliases: [怙主不动佛]
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十岁二月初八梦中所见之佛；身着三法衣，一手压地印一手定印；身体中自然传出如幻教言"
+  appearances: [1201, 1202, 1216]
+
+E_004:
+  name: 龙树菩萨
+  aliases: [圣龙树]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: 印度
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十七岁五月十七梦中出现；比丘形相于印度金刚座为一千三百比丘环绕；教授曼茶罗供养偈颂及大圆满为诸法精髓"
+  appearances: [1580, 1581, 1594]
+
+E_005:
+  name: 贤劫千佛
+  aliases: []
+  type: 圣众.大乘.佛
+  sub_type: 集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十七岁觉受中见贤劫千佛本师一一穿著化身装束作五部佛手印安住五光彩虹境中"
+  appearances: [1568, 1569]
+
+E_006:
+  name: 大悲观世音菩萨
+  aliases: [大悲观音, 观世音菩萨]
+  type: 圣众.大乘.菩萨
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十四岁一月初十面见圣者大悲观音赐予《寂集密意自解脱》灌顶传承"
+  appearances: [1422, 1423, 1819]
+
+E_007:
+  name: 马头明王
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "格喇秋帕请求敦珠法王写《马头明王修法》"
+  appearances: [1695, 1696]
+
+E_008:
+  name: 金刚亥母
+  aliases: [空行金刚亥母]
+  type: 圣众.大乘.空行
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "委托乌鸦面怙主护法神捎食子给敦珠法王；二十八岁捎甘露酒"
+  appearances: [1137, 1652]
+
+E_009:
+  name: 度母
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "朱砂所造度母像存于绕塔伏藏中"
+  appearances: [1481]
+
+E_010:
+  name: 无疑王佛
+  aliases: [无疑王如来]
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十一岁面前虚空中出现，报身装饰严饰；身体装饰珠串璎珞中一一显现佛刹"
+  appearances: [1902, 1903]
+
+E_011:
+  name: 慧日如来
+  aliases: []
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十岁顿超修行中见慧日如来为八千万眷属宣讲妙法"
+  appearances: [1895]
+
+E_012:
+  name: 不变如来
+  aliases: []
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十岁顿超修行中见不变如来为十亿所化众生讲法"
+  appearances: [1895]
+
+E_013:
+  name: 嘎绕多吉
+  aliases: [持明嘎绕多吉]
+  type: 圣众.大乘.本尊
+  additional_types: [人物.法师]
+  additional_types_source: text
+  specialty: [持明]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "三十一岁从虹光明点界中出现教诲轮涅诸法如梦如幻大无基离根；身穿白色短裤"
+  appearances: [1928]
+
+E_014:
+  name: 吽嘎日
+  aliases: [持明大王吽嘎日, 持明吽嘎日, 印度持明者吽嘎日, 吽钦嘎日]
+  type: 圣众.大乘.本尊
+  additional_types: [人物.法师]
+  additional_types_source: text
+  specialty: [持明, 阿阇黎]
+  origin: 印度
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "二十四岁面见吽嘎日获伏藏文及《现巴玛林续》灌顶传承；二十八岁觉受中身色白里透红教授修行要诀；三十一岁又出现教诲七年修行成虹身"
+  appearances: [1428, 1660, 1940, 1941]
+
+# ==================== 非人 ====================
+
+E_015:
+  name: 赞嘉卓林玛波
+  aliases: []
+  type: 非人.护法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  subdued_by: ""
+  attainments: []
+  note: "十八岁十二月十五现身——骑红马身色鲜红用矛打落鬼女疾病种子保护敦珠法王；教授召唤誓言偈颂后隐没西方"
+  appearances: [1156]
+
+E_016:
+  name: 海螺天子
+  aliases: []
+  type: 非人.天部
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十一岁七月十八梦中出现；身色洁白骑牡鹿；与妹妹则乐非天一同带敦珠法王至五台山授以象征教言"
+  appearances: [1324]
+
+E_017:
+  name: 则乐非天
+  aliases: []
+  type: 非人.阿修罗
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "海螺天子的妹妹；身佩珍宝的美丽童女；一同为敦珠法王解说五台山四方景象的象征意义"
+  appearances: [1324]
+
+E_018:
+  name: 赞卓昂坚
+  aliases: []
+  type: 非人.护法
+  sub_type: 地神
+  specialty: []
+  origin: 札隆
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "札隆山里岩山内年迈妇女自称此处主人赞卓昂坚的女人；威胁杀死敦珠法王后又发誓恶兆为儿戏"
+  appearances: [1170]
+
+E_019:
+  name: 太一济世地母
+  aliases: [当罗药神]
+  type: 非人.护法
+  sub_type: 地母
+  specialty: []
+  origin: 当热
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十八岁珠日神山修行第七天出现；自称世间祖婆护法执掌北方当热；教导不要耽著信财要精进修行精华法要"
+  appearances: [1626, 1627]
+
+# ==================== 人物 ====================
+
+E_020:
+  name: 敦珠林巴
+  aliases: [敦珠法王]
+  type: 人物.法师
+  specialty: [伏藏师, 瑜伽士, 上师]
+  origin: 色达
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "自传主人公——一世敦珠法王/敦珠林巴；本段覆盖十六岁至三十二岁"
+  appearances: [1004, 1029, 1130, 1167, 1199, 1234, 1347, 1383, 1422, 1456, 1552, 1563, 1761, 1789, 1902, 1959]
+
+E_021:
+  name: 晋美
+  aliases: [晋美上师]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "益西措嘉指示十六岁依止此师实修前行；展开莲师事业；上师前方虚空中出现金黄人与宝瓶乳汁"
+  appearances: [1006, 1009, 1011, 1014, 1015]
+
+E_022:
+  name: 施主滚丹
+  aliases: [滚丹]
+  type: 人物.其他
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王重要施主；十八岁为其诵经；十六岁已记载其名；灶具三口锅被牦牛摔碎"
+  appearances: [1147, 1225, 1226, 1800, 1801]
+
+E_023:
+  name: 革勒旺里
+  aliases: [勒旺]
+  type: 人物.其他
+  specialty: []
+  origin: 果洛
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十三岁从果洛来色达做生意；上师桑昂哲秋将敦珠法王托付于他"
+  appearances: [1383, 1384]
+
+E_024:
+  name: 罗丹
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: 果洛
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "革勒旺里的侄子；随勒旺一起从果洛来色达"
+  appearances: [1384]
+
+E_025:
+  name: 阿旺嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "革勒旺里侄子，小僧人；敦珠法王传授忿怒金刚修法；被空行母授记为雪哦华戒桑给尊化现；后为重要道友"
+  appearances: [1400, 1435, 1543]
+
+E_026:
+  name: 桑昂哲秋
+  aliases: [上师桑昂哲秋]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "将敦珠法王托付于革勒旺里去果洛"
+  appearances: [1384]
+
+E_027:
+  name: 彭措札西
+  aliases: [霍尔僧人彭措札西]
+  type: 人物.法师
+  specialty: [比丘]
+  origin: 霍尔
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "空行母授记其为执笔者将来广利众生；二十四岁冬来到敦珠法王处相依为伴"
+  appearances: [1446, 1449, 1543]
+
+E_028:
+  name: 德钦
+  aliases: [友伴德钦]
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十五岁开取伏藏时的友伴；在岩石脚下念七句祈祷文；请求将伏藏品放头上发愿"
+  appearances: [1490, 1495, 1509, 1519]
+
+E_029:
+  name: 嘉瓦活佛
+  aliases: [嘉瓦活佛仁波切多昂嘉措]
+  type: 人物.法师
+  specialty: [上师, 活佛]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "认定敦珠法王为邬金莲花生大士化身的大智者；人们共称的活佛仁波切多昂嘉措"
+  appearances: [1687, 1688, 1692]
+
+E_030:
+  name: 格喇秋帕
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "请求敦珠法王写《马头明王修法》以验伏藏真伪；将修法放于噶托雅萨活佛枕下观察"
+  appearances: [1694, 1695, 1699, 1707]
+
+E_031:
+  name: 噶托雅萨活佛
+  aliases: []
+  type: 人物.法师
+  specialty: [上师, 活佛]
+  origin: 噶托
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "为建大寺院来果洛筹集供养；以梦兆验证敦珠法王伏藏为真——六谷丰登稍早收割"
+  appearances: [1698, 1703]
+
+E_032:
+  name: 吉隆特秋多吉
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "格喇秋帕又向其请教伏藏真假；回答'观察未来越来越明亮就是真的'"
+  appearances: [1707]
+
+E_033:
+  name: 热温
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: 霍科
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "从霍科来果洛的小僧人；口口声声说伏藏法是邪法破坏缘起；质疑'起心动念的自相是空行母'；后渐遭不幸军队破坏财产荡尽身中刀伤倾家荡产"
+  appearances: [1433, 1717, 1720, 1724, 1726]
+
+E_034:
+  name: 玖纽札巴
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "秋季九月来到；拿手鼓人胫骨号角及龙钦宁提两本书函；请求将空行密藏立成文字；被空行母认定为萨钦根嘎嘉村转世"
+  appearances: [1729, 1733]
+
+E_035:
+  name: 嘉瓦慈诚
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十八岁冬十月初十献托巴给敦珠法王并请求驱魔教授"
+  appearances: [1747]
+
+E_036:
+  name: 降魔金刚
+  aliases: [持明降魔金刚]
+  type: 人物.法师
+  specialty: [持明, 伏藏师]
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "二十八岁取大修悉地时出现——往铜盘倒酒赐甘露；其伏藏品《忿怒金刚修法》为敦珠法王所用；二十九岁依其伏藏品修行"
+  appearances: [1650, 1762, 1844]
+
+E_037:
+  name: 勒雄上师
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十二岁敦珠法王向其陈述白芥子空行母梦事"
+  appearances: [1358]
+
+E_038:
+  name: 罗丹老僧
+  aliases: [罗丹]
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "在勒雄上师前讽刺敦珠法王弟子授记——'下面的老狗为什么不会有弟子？'"
+  appearances: [1359, 1363]
+
+E_039:
+  name: 灿桑
+  aliases: [上师灿桑]
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十五岁十一月初九敦珠法王请求其恩赐伏藏代替物宝瓶"
+  appearances: [1490]
+
+E_040:
+  name: 钦绕
+  aliases: [僧人钦绕]
+  type: 人物.法师
+  specialty: [比丘]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十九岁修行道友；得凶暴鬼王的病；敦珠法王降伏鬼魔使其脱离病患"
+  appearances: [1762, 1763, 1777, 1780, 1781]
+
+E_041:
+  name: 噶玛滚秋
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十九岁修行道友之一"
+  appearances: [1762]
+
+E_042:
+  name: 喇嘛丹
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十九岁修行道友之一"
+  appearances: [1763]
+
+E_043:
+  name: 热秋
+  aliases: []
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十九岁修行道友之一"
+  appearances: [1763]
+
+E_044:
+  name: 嘎长夏擦活佛
+  aliases: []
+  type: 人物.法师
+  specialty: [上师, 活佛]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十岁时敦珠法王在其面前听受持明降魔金刚伏藏法所有灌顶传承"
+  appearances: [1844]
+
+E_045:
+  name: 霍喇邬金嘉措
+  aliases: []
+  type: 人物.法师
+  specialty: [比丘]
+  origin: 霍尔
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十岁厉鬼前往其处；梦见厉鬼告饥渴之苦；病情恶化圆寂"
+  appearances: [1862, 1863]
+
+E_046:
+  name: 阿那旺钦
+  aliases: [阿那]
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十八岁五月来到——转述嘉瓦活佛认定敦珠法王为莲花生化身之言"
+  appearances: [1685]
+
+E_047:
+  name: 嘉扬上师
+  aliases: []
+  type: 人物.法师
+  specialty: [上师]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十二岁梦中所见；端坐妙高珍宝座上如生前相貌；教授断法甚深教言"
+  appearances: [1963, 1968, 1975]
+
+E_048:
+  name: 益西卓
+  aliases: [老尼姑益西卓]
+  type: 人物.法师
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十一岁旁边的老尼姑；听到小鸟悦耳声音'从来没听过真是奇妙'"
+  appearances: [1920]
+
+E_049:
+  name: 萨钦根嘎嘉村
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "空行母认定玖纽札巴为其转世——'工纽隐蔽的瑜伽士'"
+  appearances: [1734]
+
+# ==================== 地名 ====================
+
+E_050:
+  name: 色达
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "敦珠法王故乡；色达札隆草原、色达下游金刚岩伏藏地"
+  appearances: [1274, 1487, 1492, 1664, 1828]
+
+E_051:
+  name: 果洛
+  aliases: [东方果洛]
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十三岁去东方果洛地方；革勒旺里从此处来；噶托活佛来此筹集供养"
+  appearances: [1384, 1385, 1432, 1543, 1698]
+
+E_052:
+  name: 札隆
+  aliases: [札隆山, 色达札隆草原]
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "十九岁去札隆山里闭关；二十一岁色达札隆草原河畔蜜蜂歌"
+  appearances: [1167, 1274]
+
+E_053:
+  name: 五台山
+  aliases: [汉地五台山]
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十一岁七月十八梦中海螺天子携至汉地五台山朝拜；一座山有五个顶"
+  appearances: [1299, 1301]
+
+E_054:
+  name: 普陀山
+  aliases: []
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "五台山南方白色海螺山峦即普陀山"
+  appearances: [1327]
+
+E_055:
+  name: 珠日神山
+  aliases: [仲坡, 仲坡空行汇集洲, 仲坡空行大殿]
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十八岁按授记前往；空行汇集洲金刚空行聚故成就息业好地方；三十岁再次前往住修"
+  appearances: [1608, 1611, 1624, 1661, 1750, 1789]
+
+E_056:
+  name: 绕塔
+  aliases: [玛多绕塔]
+  type: 地名.圣地
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "玛多形似小箱子的红色岩石地方；隐藏贝诺藤杖伏藏；存放萨绕哈巴念珠和朱砂度母像"
+  appearances: [1462, 1463, 1477, 1479]
+
+E_057:
+  name: 金刚岩
+  aliases: [色玛金刚岩, 夏札多吉]
+  type: 地名.圣地
+  specialty: []
+  origin: 色达
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "土羊年十一月初十从色达下方金刚岩开取伏藏；岩穴内取出七个小宝箧"
+  appearances: [1487, 1494, 1506]
+
+E_058:
+  name: 印度金刚座
+  aliases: [金刚座]
+  type: 地名.圣地
+  specialty: []
+  origin: 印度
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十七岁梦中龙树菩萨在此处为弟子说法"
+  appearances: [1583]
+
+E_059:
+  name: 铜色吉祥山
+  aliases: [妙拂铜色吉祥山]
+  type: 地名.神话地名
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十二岁五月初七梦中空行母带敦珠法王前往朝拜；大海心脏周围由大海环绕"
+  appearances: [1986, 1995, 1999]
+
+E_060:
+  name: 霍尔
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十五岁去霍尔化缘；彭措札西来自霍尔"
+  appearances: [1446, 1449, 1456, 1684, 1846]
+
+E_061:
+  name: 喇荣
+  aliases: [紫青山沟东边圣地]
+  type: 地名.圣地
+  specialty: []
+  origin: 色达
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十八岁吽嘎日指示过一年后去色达紫青山沟东边圣地修行两月做两千次酬补会供"
+  appearances: [1664]
+
+E_062:
+  name: 玛库
+  aliases: [玛库土地神达雅的隘口]
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十三岁往果洛途中经过此隘口；遇送亲新娘缘起吉祥"
+  appearances: [1385]
+
+# ==================== 经典 ====================
+
+E_063:
+  name: 《寂集密意自解脱》
+  aliases: [寂集密意自解脱]
+  type: 经典.密续.岩藏
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "二十四岁面见大悲观音获赐此修法灌顶传承；若立成文字可利益众生"
+  appearances: [1423]
+
+E_064:
+  name: 《现巴玛林续》
+  aliases: [现巴玛林续]
+  type: 经典.密续
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "二十四岁面见印度持明者吽嘎日获赐灌顶传承；被赞为降伏佛教敌人的金刚霹雳"
+  appearances: [1430, 1431]
+
+E_065:
+  name: 《红黑现巴夜叉》
+  aliases: [红黑现巴夜叉]
+  type: 经典.密续
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "吽嘎日指示需要此续——立成文字如同降伏佛教敌人的金刚霹雳"
+  appearances: [1429, 1430]
+
+E_066:
+  name: 《深法密意自现类》
+  aliases: [深法密意自现类]
+  type: 经典.密续.岩藏
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "出自此法类中的《马头明王修法》被立成文字交给格喇秋帕"
+  appearances: [1696]
+
+E_067:
+  name: 《心经》
+  aliases: [心经]
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "十九岁在札隆念诵三遍进行回遮"
+  appearances: [1175]
+
+E_068:
+  name: 《般若经》
+  aliases: [般若经]
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十岁施主说如没念诵般若经恐激怒龙族"
+  appearances: [1833]
+
+E_069:
+  name: 《忿怒金刚修法》
+  aliases: [忿怒金刚修法, 忿怒金刚法]
+  type: 经典.密续.岩藏
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  concealed_by: 降魔金刚
+  manifestation_of: []
+  attainments: []
+  note: "降魔金刚的伏藏品；二十八岁敦珠法王在霍尔造此修法；二十九岁依此与道友一起修行两月"
+  appearances: [1685, 1691, 1762]
+
+E_070:
+  name: 《马头明王修法》
+  aliases: [马头明王修法]
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "出自《深法密意自现类》；格喇秋帕请求后敦珠法王立成文字并灌顶传承"
+  appearances: [1695, 1696, 1699]
+
+E_071:
+  name: 药师经
+  aliases: []
+  type: 经典.经
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二十二岁施主滚丹家老妇患病念药师经"
+  appearances: [1348]
+
+# ==================== 教法 ====================
+
+E_072:
+  name: 大圆满
+  aliases: [阿底瑜伽]
+  type: 教法.教法体系
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "龙树菩萨说一切法摄二谛融入大圆满；大圆满果最无上玛哈捷径深方便"
+  appearances: [1143, 1597, 1598, 1797, 1961]
+
+E_073:
+  name: 顿超
+  aliases: [光明顿超]
+  type: 教法.教言法门
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "三十岁空行母教授直断法性谛已现量见后实修捷径大虹身教授之光明顿超道"
+  appearances: [1883, 1893, 1917]
+
+E_074:
+  name: 直断
+  aliases: [直断法性谛]
+  type: 教法.教言法门
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "三十岁空行母说'直断法性谛你已现量见'"
+  appearances: [1883]
+
+E_075:
+  name: 龙钦宁提
+  aliases: []
+  type: 教法.教法体系
+  sub_type: 岩藏法类
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "玖纽札巴带来龙钦宁提两本书函；二十八岁冬敦珠法王和弟子实修龙钦宁提的风及绝地火"
+  appearances: [1731, 1751]
+
+E_076:
+  name: 断法
+  aliases: [断魔]
+  type: 教法.教言法门
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三十二岁梦中嘉扬上师详解——摧毁我执窍诀将四魔消灭于本地的教授"
+  appearances: [1712, 1737, 1976, 1977]
+
+E_077:
+  name: 前行
+  aliases: [前行仪轨, 前行月修法门]
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛派]
+  manifestation_of: []
+  attainments: []
+  note: "十六岁实修前行仪轨；与十五位道友请求前行月修法门"
+  appearances: [1007, 1009, 1023]
+
+# ==================== 法器/圣物 ====================
+
+E_078:
+  name: 萨绕哈巴念珠
+  aliases: []
+  type: 法器圣物.圣物
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "存放于绕塔伏藏中；陈旧不太好看的念珠"
+  appearances: [1477, 1481]
+
+E_079:
+  name: 度母像紫胶小宝箧
+  aliases: []
+  type: 法器圣物.佛像
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "朱砂所造度母像存于紫胶小宝箧内；与伏藏标题卷纸一同取出"
+  appearances: [1481]
+
+# ==================== 集合 ====================
+
+E_080:
+  name: 十三位瑜伽士
+  aliases: [十三瑜伽士]
+  type: 集合.弟子集合
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  cardinality: 13
+  members: []
+  note: "二十二岁空行母授记：再过十五年成就虹身幻的十三位瑜伽士——永乐地聚集的殊胜心子"
+  appearances: [1352, 1355]

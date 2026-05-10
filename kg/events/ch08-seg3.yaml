@@ -1,0 +1,999 @@
+# ============================================================
+# 知识图谱事件抽取 — 第八品 佛教年表与自传 (lines 1001-2000)
+# 覆盖范围: 敦珠仁波切自传 — 十六岁至三十二岁
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: 引用 kg/entities/ch08-seg3.yaml 及 ch08-seg1/seg2 中实体 name
+#
+# confidence: 授记 0.95 / 神变 0.75 / 觉受 0.80 / 传闻 0.60
+# layers 说明:
+#   觉受 = 自传主人公亲历之内在体验/梦境/净相
+#   授记 = 佛/本尊/空行/护法明确宣说的预言
+#   神变 = 在凡常世界发生的超自然现象（第三方可见）
+#   历史 = 文本中可作为客观事件记录的行为
+# ============================================================
+
+# ==================== 十六岁 (狗年) ====================
+
+- event_id: EV_8S3_001
+  type: 授记
+  title: 益西措嘉空行母指示依止晋美上师修前行
+  participants:
+    - entity: 益西措嘉空行母
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 受者
+    - entity: 晋美
+      role: 被推荐者
+  location: null
+  time_info:
+    text: "十六岁狗年六月初十夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "此地导师晋美，展开莲师事业，你于今年依之，实修前行仪轨，会现成就吉兆。此师原本乃为，汝昔有缘上师"
+
+- event_id: EV_8S3_002
+  type: 灌顶
+  title: 前行月修期间获共同成就
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+    - entity: 晋美
+      role: 上师
+  location: null
+  time_info:
+    text: "十六岁十一月初一至十五"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "上师亲口说：'你已经获得了共同成就。'说完上师与本尊就消失于法界中了"
+
+# ==================== 十七岁 (猪年) ====================
+
+- event_id: EV_8S3_003
+  type: 觉受
+  title: 七日修行后小孩小女孩教导身语心三门
+  participants:
+    - entity: 敦珠林巴
+      role: 行者
+  location: null
+  time_info:
+    text: "十七岁猪年四月初七起七天"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "身体就像空空的舍宅，语言就是由心造的作业，心则是能造形形色色一切的作者"
+
+- event_id: EV_8S3_004
+  type: 觉受
+  title: 红色小鸟教导三门无别唯显现
+  participants:
+    - entity: 敦珠林巴
+      role: 行者
+  location: null
+  time_info:
+    text: "十七岁（紧接七日修行）"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "你断定三门无别唯显现，此种证悟真稀奇，三种金刚无别而圆满"
+
+- event_id: EV_8S3_005
+  type: 觉受
+  title: 虚空声教导心性空性并以智慧剖析了达无境遍空
+  participants:
+    - entity: 敦珠林巴
+      role: 行者
+  location: null
+  time_info:
+    text: "十七岁（续前）"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "心性就是空性，空性无色、无声、无香、无味、无触、无法，要以智慧剖析"
+
+- event_id: EV_8S3_006
+  type: 觉受
+  title: 莲师童子教授修行心要——虚空法性中安住不散乱
+  participants:
+    - entity: 莲花生大士
+      role: 教授者
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "十七岁十二月初四夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "如果真想要步入正道……在这种境界中安住不要散乱。所谓的不散乱，就是指无有指定、无有执著，无有修行、无有所见"
+
+- event_id: EV_8S3_007
+  type: 觉受
+  title: 敦珠法王大彻大悟法性离边法界
+  participants:
+    - entity: 敦珠林巴
+      role: 证悟者
+  location: null
+  time_info:
+    text: "十七岁（莲师教授后）"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: 证悟
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "由达到法性离边的法界中而大彻大悟了"
+
+# ==================== 十八岁 ====================
+
+- event_id: EV_8S3_008
+  type: 神变
+  title: 乌鸦投食子获共同成就
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+    - entity: 金刚亥母
+      role: 委托者
+  location: null
+  time_info:
+    text: "十八岁五月初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变, 觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "是尼泊尔人的修行食子，由空行金刚亥母委托乌鸦面怙主护法神捎给你，你一定已经获得了共同成就"
+
+- event_id: EV_8S3_009
+  type: 神变
+  title: 九石丸现磐石上获至高无上成就
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "十八岁十月初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变, 觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "母亲已经赐予你，了知决定得悉地，具有智慧孩童你，现在必定已获得，至高无上之成就"
+
+- event_id: EV_8S3_010
+  type: 神变
+  title: 赞嘉卓林玛波击落鬼女疾病种子
+  participants:
+    - entity: 赞嘉卓林玛波
+      role: 护法
+    - entity: 敦珠林巴
+      role: 受护者
+  location: null
+  time_info:
+    text: "十八岁十二月十五"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "那是鬼女散播疾病的种子，你还会吃吗？……我是赞嘉卓林玛波护法神，在做遣除你违缘的事"
+
+# ==================== 十九岁 ====================
+
+- event_id: EV_8S3_011
+  type: 觉受
+  title: 札隆山闭关遇地神女威胁后和解
+  participants:
+    - entity: 敦珠林巴
+      role: 行者
+    - entity: 赞卓昂坚
+      role: 地神
+  location: 札隆
+  time_info:
+    text: "十九岁"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "你可以住在这里，我发誓显示的恶兆只是儿戏"
+
+- event_id: EV_8S3_012
+  type: 觉受
+  title: 念修文殊语狮子后面见文殊菩萨赐智慧
+  participants:
+    - entity: 文殊菩萨
+      role: 赐法者
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "十九岁十一月修一月后"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "你已获得大智慧，你也获得智慧眼，现在我与你二者，无二无别境界阿"
+
+# ==================== 二十岁 ====================
+
+- event_id: EV_8S3_013
+  type: 觉受
+  title: 不动佛如幻教言融入自身
+  participants:
+    - entity: 不动佛
+      role: 教授者
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十岁二月初八夜梦"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "所有一切有为法，虚幻不实之妄相……证悟此义即瑜伽"
+
+- event_id: EV_8S3_014
+  type: 神变
+  title: 预言灶具被毁翌日应验
+  participants:
+    - entity: 敦珠林巴
+      role: 预见者
+    - entity: 施主滚丹
+      role: 当事人
+  location: null
+  time_info:
+    text: "二十岁十二月初五"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变]
+  sub_layer: 预知
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "明天你会亲眼见到有人来大肆打烂砸碎大锅和炉灶……结果三口锅就像骰子一样砸在石头上彻底碎了"
+
+# ==================== 二十一岁 ====================
+
+- event_id: EV_8S3_015
+  type: 授记
+  title: 蓝色空行母歌唱如意树白雄狮等授记
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十一岁一月十三夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "当今时代如意树，枝叶花瓣皆渺小……不住不灭离戏论，犹如梦境即将醒"
+
+- event_id: EV_8S3_016
+  type: 觉受
+  title: 蜜蜂歌唱无常教言
+  participants:
+    - entity: 敦珠林巴
+      role: 听者
+  location: 札隆
+  time_info:
+    text: "二十一岁六月初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "假设是无作的修行者，那才真正是今生快乐来世幸福。在金黄色的蜜蜂我看来，轮回的城市，都是无常犹如梦境"
+
+- event_id: EV_8S3_017
+  type: 觉受
+  title: 海螺天子携至五台山解说四方象征
+  participants:
+    - entity: 海螺天子
+      role: 引导者
+    - entity: 则乐非天
+      role: 引导者
+    - entity: 敦珠林巴
+      role: 受者
+  location: 五台山
+  time_info:
+    text: "二十一岁七月十八夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "你向上望……再向东看……再向南看……再向西看……再向北看……"
+
+# ==================== 二十二岁 ====================
+
+- event_id: EV_8S3_018
+  type: 授记
+  title: 空行母授白芥子预言十三瑜伽士弟子
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十二岁七月十五夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "再过十五年，数千之弟子，逐渐而聚集……成就虹身幻，十三瑜伽士，勇士你友伴"
+
+- event_id: EV_8S3_019
+  type: 授记
+  title: 红色空行母授记去东方果洛涌现心子
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十二岁十月初九夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "明年六月里一位良友来到，那时你们一同到东方果洛地方，去那里会化到很好的缘"
+
+# ==================== 二十三岁 ====================
+
+- event_id: EV_8S3_020
+  type: 历史
+  title: 敦珠法王随革勒旺里前往东方果洛
+  participants:
+    - entity: 敦珠林巴
+      role: 行者
+    - entity: 革勒旺里
+      role: 同伴
+    - entity: 罗丹
+      role: 同伴
+    - entity: 桑昂哲秋
+      role: 委托者
+  location: 果洛
+  time_info:
+    text: "二十三岁六月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "上师桑昂哲秋将此事托付给他，于是我和他俩一道去东方果洛地方"
+
+- event_id: EV_8S3_021
+  type: 授记
+  title: 刚穹玛空行授记忿怒金刚本尊及未来师承
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+    - entity: 阿旺嘉措
+      role: 被授记者
+  location: 果洛
+  time_info:
+    text: "二十三岁（去果洛一月后）"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "忿怒金刚大吉祥，作为第一胜本尊……不延多载数年后，遇至尊珠瓦滚波"
+
+# ==================== 二十四岁 ====================
+
+- event_id: EV_8S3_022
+  type: 灌顶
+  title: 面见大悲观音获《寂集密意自解脱》灌顶传承
+  participants:
+    - entity: 大悲观世音菩萨
+      role: 灌顶师
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十四岁一月初十夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "面见了圣者大悲观音，他圆满恩授我说是《寂集密意自解脱》的修法灌顶传承"
+
+- event_id: EV_8S3_023
+  type: 灌顶
+  title: 面见吽嘎日获《现巴玛林续》灌顶传承
+  participants:
+    - entity: 吽嘎日
+      role: 灌顶师
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十四岁四月二十五日夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "面见印度持明者吽嘎日时，他手掌中显示这个伏藏文……圆满授予《现巴玛林续》的灌顶、传承后就不见了"
+
+- event_id: EV_8S3_024
+  type: 历史
+  title: 热温诽谤伏藏法致文稿被烧
+  participants:
+    - entity: 热温
+      role: 诽谤者
+    - entity: 敦珠林巴
+      role: 当事人
+  location: 果洛
+  time_info:
+    text: "二十四岁"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "口口声声说'这所有伏藏法一定是邪法'，由此破坏了缘起，我也一边对他发恶愿一边把文稿烧了"
+
+- event_id: EV_8S3_025
+  type: 授记
+  title: 白色空行母授记弟子群与十七诽谤者
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+    - entity: 阿旺嘉措
+      role: 被授记弟子
+    - entity: 彭措札西
+      role: 被授记弟子
+  location: null
+  time_info:
+    text: "二十四岁十一月初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "勇士你同行道友，犹如雪狮之阿旺……从现在起十五年，彼等化现为君臣"
+
+- event_id: EV_8S3_026
+  type: 历史
+  title: 彭措札西来到为敦珠法王执笔
+  participants:
+    - entity: 彭措札西
+      role: 执笔者
+    - entity: 敦珠林巴
+      role: 伏藏师
+  location: null
+  time_info:
+    text: "二十四岁冬十二月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "霍尔僧人彭措札西来到我的地方，我们相依为伴，他当我的执笔者"
+
+# ==================== 二十五岁 ====================
+
+- event_id: EV_8S3_027
+  type: 授记
+  title: 空行母授记绕塔伏藏位置
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十五岁四月初十夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "在玛多形似小箱子的红色岩石地方，隐藏着贝诺的藤杖伏藏……时机成熟快快去取传家宝"
+
+- event_id: EV_8S3_028
+  type: 历史
+  title: 敦珠法王于绕塔取出度母像念珠及伏藏标题
+  participants:
+    - entity: 敦珠林巴
+      role: 伏藏师
+  location: 绕塔
+  time_info:
+    text: "二十五岁六月初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从炭堆里取出度母像紫胶小宝箧和一串陈旧、不太好看的念珠"
+
+- event_id: EV_8S3_029
+  type: 历史
+  title: 于金刚岩开取七个伏藏小宝箧
+  participants:
+    - entity: 敦珠林巴
+      role: 伏藏师
+    - entity: 德钦
+      role: 助手
+    - entity: 灿桑
+      role: 宝瓶供应者
+  location: 金刚岩
+  time_info:
+    text: "二十五岁十一月初十"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "用凿子凿击一块半圆形的岩缝，门打开了……只有七个小宝箧取到手"
+
+- event_id: EV_8S3_030
+  type: 历史
+  title: 阿哦穹友部落因彩虹威胁交出伏藏
+  participants:
+    - entity: 敦珠林巴
+      role: 伏藏师
+  location: null
+  time_info:
+    text: "二十五岁（取伏藏后）"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "在寒冬腊月里看见漫山遍野布满彩虹……你如果不把所取出来的所有伏藏品交给我们，那就等着我们发动战争吧"
+
+# ==================== 二十七岁 ====================
+
+- event_id: EV_8S3_031
+  type: 觉受
+  title: 贤劫千佛经函融入敦珠法王——法性虚空藏大彻大悟
+  participants:
+    - entity: 贤劫千佛
+      role: 赐法者
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十七岁神变月初十夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: 证悟
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "一切所依能依都融入我的身体……心只要专注何处，所需要的一切法句就像刻印一样顿时自然流露"
+
+- event_id: EV_8S3_032
+  type: 觉受
+  title: 龙树菩萨于印度金刚座教授大圆满为诸法精髓
+  participants:
+    - entity: 龙树菩萨
+      role: 教授者
+    - entity: 敦珠林巴
+      role: 受者
+  location: 印度金刚座
+  time_info:
+    text: "二十七岁五月十七夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "诸法无余摄二谛，二谛融入大圆满。若知彼义见真谛，结缘者至持明地"
+
+# ==================== 二十八岁 (狗年) ====================
+
+- event_id: EV_8S3_033
+  type: 授记
+  title: 空行母授记去珠日神山修行
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十八岁狗年"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "你如果去仲坡空行大殿中修行，下半生受用和威力将圆满"
+
+- event_id: EV_8S3_034
+  type: 觉受
+  title: 太一济世地母教诫精进修行勿贪信财
+  participants:
+    - entity: 太一济世地母
+      role: 教诫者
+    - entity: 敦珠林巴
+      role: 受者
+  location: 珠日神山
+  time_info:
+    text: "二十八岁修行第七天夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "致力于讲经说法和著书立说，到了下半生，无勤之中福泽自增"
+
+- event_id: EV_8S3_035
+  type: 觉受
+  title: 莲花生大士降临教诲会供酬补三要诀
+  participants:
+    - entity: 莲花生大士
+      role: 教授者
+    - entity: 敦珠林巴
+      role: 受者
+  location: 珠日神山
+  time_info:
+    text: "二十八岁修行第二十一天夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "精勤会供酬补尤为重要；要给严厉的护法多施食子；每年不间断严格闭关修行数月"
+
+- event_id: EV_8S3_036
+  type: 灌顶
+  title: 降魔金刚赐甘露获殊胜领悟
+  participants:
+    - entity: 降魔金刚
+      role: 赐法者
+    - entity: 金刚亥母
+      role: 委托者
+    - entity: 敦珠林巴
+      role: 受者
+  location: 珠日神山
+  time_info:
+    text: "二十八岁临近取悉地之夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "这是空行母金刚亥母捎给我所幻现、与我无二的善男子你的……我喝了那个甘露，由此相续中生起了殊胜的领悟"
+
+- event_id: EV_8S3_037
+  type: 觉受
+  title: 吽嘎日教授修行要诀——喇荣修行两月及弟子将至
+  participants:
+    - entity: 吽嘎日
+      role: 教授者
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "二十八岁夏四月初十夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "去色达的紫青山沟东边圣地，如果修行两个月，做两千次酬补会供，那么福德的果必将如同降雨般增长"
+
+- event_id: EV_8S3_038
+  type: 历史
+  title: 嘉瓦活佛认定敦珠法王为莲花生化身
+  participants:
+    - entity: 嘉瓦活佛
+      role: 认定者
+    - entity: 敦珠林巴
+      role: 被认定者
+    - entity: 阿那旺钦
+      role: 传话者
+  location: null
+  time_info:
+    text: "二十八岁五月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "嘉瓦活佛说：'你让革勒家的那个伏藏师取出一个修法，他不是邬金莲花生大士的化身，那我就是骗你了'"
+
+- event_id: EV_8S3_039
+  type: 历史
+  title: 格喇秋帕验证伏藏真伪——噶托活佛梦兆认定
+  participants:
+    - entity: 格喇秋帕
+      role: 请验者
+    - entity: 噶托雅萨活佛
+      role: 验证者
+    - entity: 敦珠林巴
+      role: 伏藏师
+  location: 果洛
+  time_info:
+    text: "二十八岁六月后"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "昨晚我梦到在一个良田里六谷丰登成熟……伏藏师应该是真的"
+
+- event_id: EV_8S3_040
+  type: 历史
+  title: 玖纽札巴来到请求空行密藏立成文字
+  participants:
+    - entity: 玖纽札巴
+      role: 请法者
+    - entity: 敦珠林巴
+      role: 伏藏师
+  location: null
+  time_info:
+    text: "二十八岁秋九月"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "一个名叫玖纽札巴的人，拿着手鼓、人胫骨号角，还有龙钦宁提的两本书函"
+
+- event_id: EV_8S3_041
+  type: 历史
+  title: 敦珠法王实修龙钦宁提风及绝地火一年获暖相
+  participants:
+    - entity: 敦珠林巴
+      role: 修行者
+  location: 珠日神山
+  time_info:
+    text: "二十八岁十一月初十起一年"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [历史, 神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "实修龙钦宁提的风及绝地火……在寒冬腊月，周身火力旺盛，只是单层布衣就完全足够"
+
+# ==================== 二十九岁 ====================
+
+- event_id: EV_8S3_042
+  type: 神变
+  title: 降伏鬼魔救钦绕僧人
+  participants:
+    - entity: 敦珠林巴
+      role: 降伏者
+    - entity: 钦绕
+      role: 受益者
+  location: null
+  time_info:
+    text: "二十九岁修行第二十一天夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "左手紧紧掐住它的脖子……它即时变成了一个衣衫褴褛的僧人……降伏了他"
+
+# ==================== 三十岁 ====================
+
+- event_id: EV_8S3_043
+  type: 觉受
+  title: 大圆满六百四十万续部密藏之主龙扬曼问答成就相
+  participants:
+    - entity: 敦珠林巴
+      role: 讲述者
+  location: 珠日神山
+  time_info:
+    text: "三十岁四月十八夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "我是大圆满六百四十万续部密藏之主龙扬曼……你具备的成就相都对我讲一讲"
+
+- event_id: EV_8S3_044
+  type: 觉受
+  title: 空行母教授顿超要领——直断法性已见实修捷径大虹身
+  participants:
+    - entity: 敦珠林巴
+      role: 受者
+  location: 珠日神山
+  time_info:
+    text: "三十岁四月十八夜（续）"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "直断法性谛，你已现量见，实地修捷径，大虹身教授，我精华光明，变精华母子，无别融一味"
+
+- event_id: EV_8S3_045
+  type: 神变
+  title: 敦珠法王泉眼水施后龙女复苏泉水涌出
+  participants:
+    - entity: 敦珠林巴
+      role: 行法者
+    - entity: 施主滚丹
+      role: 施主
+  location: 色达
+  time_info:
+    text: "三十岁（回忆十六岁时事）"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "枯水沟里泉水涌流"
+
+- event_id: EV_8S3_046
+  type: 神变
+  title: 穿墙而入并降伏厉鬼
+  participants:
+    - entity: 敦珠林巴
+      role: 降伏者
+  location: 霍尔
+  time_info:
+    text: "三十岁（嘎长夏擦活佛处听法期间）"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "不假思索地往里冲，结果径直穿墙进去了……我抓住他的右脚在头上转了三圈，摔在地上，他就变成了一粒兔屎"
+
+# ==================== 三十一岁 ====================
+
+- event_id: EV_8S3_047
+  type: 觉受
+  title: 无疑王佛报身出现七天——法性现量四灌顶验相现前
+  participants:
+    - entity: 无疑王佛
+      role: 显现者
+    - entity: 敦珠林巴
+      role: 证悟者
+  location: null
+  time_info:
+    text: "三十一岁"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: 证悟
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我现前了不可思议的觉性，在七天之中这种景象才泯灭"
+
+- event_id: EV_8S3_048
+  type: 授记
+  title: 嘎绕多吉教诲本位自成佛
+  participants:
+    - entity: 嘎绕多吉
+      role: 教授者
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "三十一岁"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "本净大周遍，净明离垢浊……不待勤作事，现前持本地，本位自成佛"
+
+- event_id: EV_8S3_049
+  type: 授记
+  title: 吽嘎日教诲七年不间断修行可成大虹身
+  participants:
+    - entity: 吽嘎日
+      role: 教授者
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "三十一岁"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受, 授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "于七年之中，不间断修行，大虹身成佛，取受传家宝，利益他众生"
+
+# ==================== 三十二岁 ====================
+
+- event_id: EV_8S3_050
+  type: 觉受
+  title: 嘉扬上师教授断法甚深窍诀
+  participants:
+    - entity: 嘉扬上师
+      role: 教授者
+    - entity: 敦珠林巴
+      role: 受者
+  location: null
+  time_info:
+    text: "三十二岁一月初一夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "所谓的断法就是摧毁我执的窍诀，将四魔消灭于本地的教授"
+
+- event_id: EV_8S3_051
+  type: 觉受
+  title: 多吉嘉姆空行母带至铜色吉祥山
+  participants:
+    - entity: 敦珠林巴
+      role: 行者
+  location: 铜色吉祥山
+  time_info:
+    text: "三十二岁五月初七夜"
+    relative_to: 敦珠林巴
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.80
+  source_quote: "你想去朝拜妙拂铜色吉祥山吗……经过了一百六十五个大区域，到了十七条湖泊的边缘"

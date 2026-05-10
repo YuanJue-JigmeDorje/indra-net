@@ -1,0 +1,406 @@
+# ============================================================
+# 知识图谱关系抽取 — 第八品 佛教年表与自传 (lines 1001-2000)
+# 覆盖范围: 敦珠仁波切自传 — 十六岁至三十二岁
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/08_佛教年表与自传.md
+  source_lines: "1001-2000"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+  total_relations: 38
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 化身/形态关系 (manifestationOf / form_of)
+  # ============================================================
+
+  - rel_id: R8S3_001
+    type: manifestationOf
+    source: 阿旺嘉措
+    target: 雪哦华戒桑给尊
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "雪哦华戒桑给尊，化现阿旺嘉措身，形影不离做友伴"
+    note: "刚穹玛空行母授记"
+
+  - rel_id: R8S3_002
+    type: manifestationOf
+    source: 玖纽札巴
+    target: 萨钦根嘎嘉村
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "那个隐蔽的上等瑜伽士，就是萨钦根嘎嘉村，是工纽隐蔽的瑜伽士，为了净化剩余的障碍，当今受生这样的身体"
+    note: "阿札嘉姆空行母授记玖纽札巴为萨钦根嘎嘉村转世"
+
+  - rel_id: R8S3_003
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 莲花生大士
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "你让革勒家的那个伏藏师取出一个修法，他不是邬金莲花生大士的化身，那我就是骗你了"
+    note: "嘉瓦活佛认定"
+
+  # ============================================================
+  # B. 师徒关系 (teacherOf / discipleOf)
+  # ============================================================
+
+  - rel_id: R8S3_004
+    type: teacherOf
+    source: 晋美
+    target: 敦珠林巴
+    layers: [觉受, 历史]
+    confidence: 0.95
+    source_quote: "此地导师晋美……你于今年依之，实修前行仪轨"
+    note: "十六岁依止修前行；益西措嘉空行母指示"
+
+  - rel_id: R8S3_005
+    type: teacherOf
+    source: 文殊菩萨
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "文殊菩萨赐给我修法及咒语以后融入心间"
+    note: "十九岁面见文殊赐智慧"
+
+  - rel_id: R8S3_006
+    type: teacherOf
+    source: 莲花生大士
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "莲师童子说：'善男子，关于修行有许多解释……在这种境界中安住不要散乱'"
+    note: "十七岁莲师童子教授修行心要"
+
+  - rel_id: R8S3_007
+    type: teacherOf
+    source: 不动佛
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "从他身体中犹如回音般自然传出这种音声……证悟此义即瑜伽"
+    note: "二十岁不动佛如幻教言"
+
+  - rel_id: R8S3_008
+    type: teacherOf
+    source: 龙树菩萨
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "龙树菩萨口里也说了下面的偈颂……诸法无余摄二谛，二谛融入大圆满"
+    note: "二十七岁梦中教授"
+
+  - rel_id: R8S3_009
+    type: teacherOf
+    source: 吽嘎日
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "持明大王吽嘎日……去色达的紫青山沟东边圣地……做两千次酬补会供"
+    note: "二十八岁教授修行计划；三十一岁教七年修虹身"
+
+  - rel_id: R8S3_010
+    type: teacherOf
+    source: 嘉扬上师
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "尊贵的上师……所谓的断法就是摧毁我执的窍诀"
+    note: "三十二岁梦中教授断法"
+
+  - rel_id: R8S3_011
+    type: teacherOf
+    source: 大悲观世音菩萨
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "面见了圣者大悲观音，他圆满恩授我说是《寂集密意自解脱》的修法灌顶传承"
+    note: "二十四岁赐灌顶传承"
+
+  - rel_id: R8S3_012
+    type: teacherOf
+    source: 敦珠林巴
+    target: 阿旺嘉措
+    layers: [历史]
+    confidence: 0.95
+    source_quote: "我给他传讲了忿怒金刚的一个修法"
+    note: "二十三岁为阿旺嘉措传忿怒金刚修法"
+
+  - rel_id: R8S3_013
+    type: teacherOf
+    source: 嘎长夏擦活佛
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "我在嘎长夏擦活佛面前，听受持明降魔金刚的伏藏法的所有灌顶传承"
+    note: "三十岁听受降魔金刚伏藏法灌顶传承"
+
+  - rel_id: R8S3_014
+    type: teacherOf
+    source: 嘎绕多吉
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "本净大周遍，净明离垢浊……本位自成佛"
+    note: "三十一岁教诲法性本净离戏"
+
+  - rel_id: R8S3_015
+    type: teacherOf
+    source: 降魔金刚
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "持明降魔金刚往一个铜盘里倒酒……接触三处"
+    note: "二十八岁赐甘露悉地"
+
+  # ============================================================
+  # C. 伏藏关系 (revealedBy / concealedBy / textOf)
+  # ============================================================
+
+  - rel_id: R8S3_016
+    type: revealedBy
+    source: 《寂集密意自解脱》
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "你如果能将此立成文字，很可能会利益一些众生"
+    note: "二十四岁大悲观音赐予此法；属意伏藏"
+
+  - rel_id: R8S3_017
+    type: revealedBy
+    source: 《现巴玛林续》
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "赠送你。于是他圆满授予《现巴玛林续》的灌顶、传承"
+    note: "二十四岁吽嘎日赐予"
+
+  - rel_id: R8S3_018
+    type: revealedBy
+    source: 《忿怒金刚修法》
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.85
+    source_quote: "由自己的清净境界中出现，而造了许多《忿怒金刚修法》"
+    note: "二十八岁在霍尔从清净境界中造出"
+
+  - rel_id: R8S3_019
+    type: revealedBy
+    source: 《马头明王修法》
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "我将出自《深法密意自现类》中的一个《马头明王修法》立成文字"
+    note: "出自深法密意自现类"
+
+  - rel_id: R8S3_020
+    type: textOf
+    source: 《马头明王修法》
+    target: 《深法密意自现类》
+    layers: [历史]
+    confidence: 0.95
+    source_quote: "出自《深法密意自现类》中的一个《马头明王修法》"
+    note: "属于此伏藏法类"
+
+  # ============================================================
+  # D. 护法关系 (protects / subdues)
+  # ============================================================
+
+  - rel_id: R8S3_021
+    type: protects
+    source: 赞嘉卓林玛波
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "我是赞嘉卓林玛波护法神，在做遣除你违缘的事"
+    note: "十八岁保护敦珠法王免于鬼女疾病"
+
+  - rel_id: R8S3_022
+    type: protects
+    source: 金刚亥母
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "由空行金刚亥母委托乌鸦面怙主护法神捎给你"
+    note: "十八岁委托送食子；二十八岁委托送甘露"
+
+  - rel_id: R8S3_023
+    type: protects
+    source: 太一济世地母
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "我是世间的祖婆护法，执掌北方的当热地方"
+    note: "二十八岁珠日神山修行时出现教诫"
+
+  # ============================================================
+  # E. 法脉传承关系 (transmissionOf)
+  # ============================================================
+
+  - rel_id: R8S3_024
+    type: transmissionOf
+    source: 晋美
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "与十五位道友一起请求前行月修法门"
+    transmission_content: 前行
+    note: "十六岁修前行"
+
+  - rel_id: R8S3_025
+    type: transmissionOf
+    source: 大悲观世音菩萨
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "圆满恩授我说是《寂集密意自解脱》的修法灌顶传承"
+    transmission_content: 《寂集密意自解脱》
+    note: "二十四岁"
+
+  - rel_id: R8S3_026
+    type: transmissionOf
+    source: 吽嘎日
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "圆满授予《现巴玛林续》的灌顶、传承"
+    transmission_content: 《现巴玛林续》
+    note: "二十四岁"
+
+  - rel_id: R8S3_027
+    type: transmissionOf
+    source: 敦珠林巴
+    target: 格喇秋帕
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "并灌了顶、念了传承，之后交给他"
+    transmission_content: 《马头明王修法》
+    note: "二十八岁"
+
+  - rel_id: R8S3_028
+    type: transmissionOf
+    source: 嘎长夏擦活佛
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "听受持明降魔金刚的伏藏法的所有灌顶传承"
+    transmission_content: 《忿怒金刚修法》
+    note: "三十岁"
+
+  # ============================================================
+  # F. 法主/执笔关系 (scribeOf / patronOf)
+  # ============================================================
+
+  - rel_id: R8S3_029
+    type: scribeOf
+    source: 彭措札西
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.95
+    source_quote: "我们相依为伴，他当我的执笔者"
+    note: "二十四岁冬来到相依为伴"
+
+  - rel_id: R8S3_030
+    type: patronOf
+    source: 施主滚丹
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "施主滚丹"
+    note: "多次为敦珠法王提供支持"
+
+  # ============================================================
+  # G. 认定/验证关系 (validates)
+  # ============================================================
+
+  - rel_id: R8S3_031
+    type: validates
+    source: 嘉瓦活佛
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.95
+    source_quote: "他不是邬金莲花生大士的化身，那我就是骗你了"
+    note: "认定敦珠法王为莲花生化身"
+
+  - rel_id: R8S3_032
+    type: validates
+    source: 噶托雅萨活佛
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "伏藏师应该是真的"
+    note: "以梦兆验证伏藏真实性"
+
+  - rel_id: R8S3_033
+    type: validates
+    source: 吉隆特秋多吉
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.85
+    source_quote: "如同太阳破云而出一般越来越明亮、越来越升高，那就是真的"
+    note: "以未来观察验证伏藏师"
+
+  # ============================================================
+  # H. 对立/诽谤关系 (opposes)
+  # ============================================================
+
+  - rel_id: R8S3_034
+    type: opposes
+    source: 热温
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.95
+    source_quote: "口口声声说'这所有伏藏法一定是邪法'，由此破坏了缘起"
+    note: "多次诽谤伏藏法导致文稿被烧"
+
+  # ============================================================
+  # I. 地点关系 (residesAt / retreatAt)
+  # ============================================================
+
+  - rel_id: R8S3_035
+    type: retreatAt
+    source: 敦珠林巴
+    target: 札隆
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "去了札隆山里……我想在这里闭关"
+    note: "十九岁闭关处"
+
+  - rel_id: R8S3_036
+    type: retreatAt
+    source: 敦珠林巴
+    target: 珠日神山
+    layers: [历史]
+    confidence: 0.95
+    source_quote: "我去了珠日神山……一年里实修龙钦宁提的风及绝地火"
+    note: "二十八岁至三十岁主要修行地"
+
+  # ============================================================
+  # J. 亲属/同伴关系 (companionOf)
+  # ============================================================
+
+  - rel_id: R8S3_037
+    type: companionOf
+    source: 阿旺嘉措
+    target: 敦珠林巴
+    layers: [历史]
+    confidence: 0.90
+    source_quote: "修行道友……和自己的两位弟子一起"
+    note: "从二十三岁起成为亲密道友"
+
+  - rel_id: R8S3_038
+    type: companionOf
+    source: 海螺天子
+    target: 则乐非天
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "我们就是海螺天子和妹妹则乐非天"
+    note: "兄妹关系"

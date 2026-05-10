@@ -1,0 +1,425 @@
+# ============================================================
+# 知识图谱关系抽取 — 第八品 佛教年表与自传 seg4 (lines 2001-3000)
+# 覆盖范围: 敦珠仁波切自传 — 三十二岁至四十八岁
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/08_佛教年表与自传.md
+  source_lines: "2001-3000"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+  total_relations: 42
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 化身/形态关系 (manifestationOf / form_of)
+  # ============================================================
+
+  - rel_id: R8S4_001
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 持明吽钦嘎日
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "你是我事业的化现"
+    note: "持明吽钦嘎日明言敦珠法王为其事业化现"
+
+  - rel_id: R8S4_002
+    type: manifestationOf
+    source: 多吉桑波
+    target: 益西措嘉
+    layers: [觉受, 授记]
+    confidence: 0.85
+    source_quote: "这位多吉桑波是空行益西措嘉的化身"
+    note: "三十九岁五月初十空行母授记"
+
+  - rel_id: R8S4_003
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 敦珠如巴匝
+    layers: [凡常]
+    confidence: 0.90
+    source_quote: "我的前世是敦珠如巴匝"
+    note: "敦珠法王四十岁对布玛莫札自述"
+
+  - rel_id: R8S4_004
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 降魔金刚
+    layers: [凡常]
+    confidence: 0.90
+    source_quote: "再前世是敦珠多吉（降魔金刚）"
+    note: "敦珠法王四十岁对布玛莫札自述"
+
+  - rel_id: R8S4_005
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 卓万切穹译师
+    layers: [凡常]
+    confidence: 0.90
+    source_quote: "君臣时代是大成就者卓万切穹译师"
+    note: "赤松德赞时期的身份"
+
+  - rel_id: R8S4_006
+    type: manifestationOf
+    source: 晋美朗巴
+    target: 无垢光尊者
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "你的这个儿子是我的幻化持明晋美朗巴"
+    note: "无垢光尊者在觉受中指认"
+
+  - rel_id: R8S4_007
+    type: form_of
+    source: 智慧金刚亥母
+    target: 金刚亥母
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "说是智慧金刚亥母的空行母"
+    note: "邬金尸林主尊，金刚亥母的智慧形态"
+
+  - rel_id: R8S4_008
+    type: form_of
+    source: 文殊语狮子
+    target: 文殊菩萨
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "我着手念修文殊语狮子"
+    note: "文殊菩萨的语狮子形态"
+
+  - rel_id: R8S4_009
+    type: manifestationOf
+    source: 达玛巴
+    target: 桑格嘉措
+    layers: [觉受, 授记]
+    confidence: 0.85
+    source_quote: "你的这个弟子原是伏藏大师西绕哦色的弟子桑格嘉措"
+    note: "益西措嘉授记达玛巴前世"
+
+  - rel_id: R8S4_010
+    type: manifestationOf
+    source: 达玛巴
+    target: 班玛哦色
+    layers: [觉受, 授记]
+    confidence: 0.85
+    source_quote: "他在前世就是降魔金刚的弟子班玛哦色"
+    note: "益西措嘉授记达玛巴更前世"
+
+  # ============================================================
+  # B. 师徒关系 (teacherOf / discipleOf)
+  # ============================================================
+
+  - rel_id: R8S4_011
+    type: teacherOf
+    source: 莲花生大士
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.95
+    source_quote: "莲师依照《大密二取自解脱大续》宣说就如同刻印一般了然呈现在我的相续"
+    note: "铜色吉祥山觉受中莲师传大圆满"
+
+  - rel_id: R8S4_012
+    type: teacherOf
+    source: 布玛莫札
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "我来给你宣讲轮回涅槃圆满的教授"
+    note: "四十岁觉受中布玛莫札传法"
+
+  - rel_id: R8S4_013
+    type: teacherOf
+    source: 无垢光尊者
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "面见全知无垢光尊者他完整恩赐大圆满的教授并完全交付"
+    note: "四十四岁匝嘉寺觉受"
+
+  - rel_id: R8S4_014
+    type: teacherOf
+    source: 华智仁波切
+    target: 敦珠林巴
+    layers: [凡常]
+    confidence: 0.95
+    source_quote: "上师完整宣讲《入行论》《现观庄严论》《入中论》《密藏续》等许多引导传承我们都得到了"
+    note: "四十四岁凡常世界中实际闻法"
+
+  - rel_id: R8S4_015
+    type: teacherOf
+    source: 华智仁波切
+    target: 智悲芽
+    layers: [凡常]
+    confidence: 0.95
+    source_quote: "智悲芽和我两人得到了供养的献新……上师完整宣讲"
+    note: "四十四岁同时得传承"
+
+  - rel_id: R8S4_016
+    type: teacherOf
+    source: 敦珠林巴
+    target: 达玛巴
+    layers: [凡常]
+    confidence: 0.90
+    source_quote: "弟子达玛巴说'请将黑怒母的一个修法立成文字'"
+    note: "师徒关系明确"
+
+  - rel_id: R8S4_017
+    type: teacherOf
+    source: 敦珠林巴
+    target: 班玛札西
+    layers: [凡常]
+    confidence: 0.90
+    source_quote: "弟子班玛札西立誓把它作为自己的修法"
+    note: "忿怒空行母法弟子"
+
+  - rel_id: R8S4_018
+    type: teacherOf
+    source: 敦珠林巴
+    target: 才杰
+    layers: [凡常]
+    confidence: 0.90
+    source_quote: "弟子才杰以十分喜悦之情想把它作为自己的修法"
+    note: "高足弟子"
+
+  - rel_id: R8S4_019
+    type: teacherOf
+    source: 敦珠林巴
+    target: 多吉桑波
+    layers: [凡常]
+    confidence: 0.85
+    source_quote: "我的弟子多吉桑波师徒"
+    note: "明确弟子关系"
+
+  - rel_id: R8S4_020
+    type: teacherOf
+    source: 伏藏大师西绕哦色
+    target: 桑格嘉措
+    layers: [觉受, 授记]
+    confidence: 0.85
+    source_quote: "原是伏藏大师西绕哦色的弟子桑格嘉措"
+    note: "前世师徒关系由益西措嘉授记"
+
+  - rel_id: R8S4_021
+    type: teacherOf
+    source: 降魔金刚
+    target: 班玛哦色
+    layers: [觉受, 授记]
+    confidence: 0.85
+    source_quote: "他在前世就是降魔金刚的弟子班玛哦色"
+    note: "前世师徒关系由益西措嘉授记"
+
+  - rel_id: R8S4_022
+    type: teacherOf
+    source: 嘉扬上师
+    target: 敦珠林巴
+    layers: [凡常]
+    confidence: 0.90
+    source_quote: "我的上师嘉扬……生生世世永恒的怙主"
+    note: "核心上师关系"
+
+  # ============================================================
+  # C. 灌顶/传承关系 (initiatedBy / transmittedTo)
+  # ============================================================
+
+  - rel_id: R8S4_023
+    type: initiatedBy
+    source: 敦珠林巴
+    target: 持明吽钦嘎日
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "愿你圆满获得无变身宝瓶灌顶……无灭语秘密灌顶……无谬意智慧灌顶……无相离言任运大乐灌顶"
+    note: "四灌顶全套"
+
+  - rel_id: R8S4_024
+    type: initiatedBy
+    source: 敦珠林巴
+    target: 莲花生大士
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "莲师双手放在我的头上说道'愿你圆满获得能成熟的殊胜灌顶'"
+    note: "铜色吉祥山灌顶"
+
+  - rel_id: R8S4_025
+    type: initiatedBy
+    source: 敦珠林巴
+    target: 大悲观音
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "现在给予你我修行此法的灌顶和传承……愿以宝瓶灌顶使身体成熟为金刚身"
+    note: "普陀山四灌顶"
+
+  # ============================================================
+  # D. 伏藏关系 (concealedBy / revealedBy)
+  # ============================================================
+
+  - rel_id: R8S4_026
+    type: revealedBy
+    source: 深密空行心滴
+    target: 敦珠林巴
+    layers: [凡常]
+    confidence: 0.95
+    source_quote: "我的伏藏叫《深密空行心滴》属于地伏藏类"
+    note: "敦珠法王自述其主要伏藏法"
+
+  - rel_id: R8S4_027
+    type: revealedBy
+    source: 《三类净现法》
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "蒙受三部怙主的加持……《三类净现法》等不可思议的法门"
+    note: "三部怙主各赐一法合称三类净现法"
+
+  - rel_id: R8S4_028
+    type: revealedBy
+    source: 《密意自现深法》
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "圣者说'那是《密意自现深法》'说完就融入了我"
+    note: "观音赐予"
+
+  - rel_id: R8S4_029
+    type: revealedBy
+    source: 《净相智慧网》
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "他说'这是《净相智慧网》'说完就融入了我"
+    note: "文殊语狮子赐予"
+
+  - rel_id: R8S4_030
+    type: revealedBy
+    source: 《法性虚空藏》
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "密主说'那是《法性虚空藏》'说完就融入了我"
+    note: "密主金刚手赐予"
+
+  - rel_id: R8S4_031
+    type: revealedBy
+    source: 《忿怒空行母修法》
+    target: 敦珠林巴
+    layers: [凡常]
+    confidence: 0.90
+    source_quote: "将《忿怒空行母修法》立成文字"
+    note: "三十八岁书写成文"
+
+  - rel_id: R8S4_032
+    type: revealedBy
+    source: 《花曜霹雳》
+    target: 敦珠林巴
+    layers: [凡常]
+    confidence: 0.85
+    source_quote: "依靠自己的伏藏法《花曜霹雳》进行祈祷供养"
+    note: "祈祷绕呵拉护法之法"
+
+  - rel_id: R8S4_033
+    type: revealedBy
+    source: 《曜护法神法》
+    target: 敦珠林巴
+    layers: [凡常]
+    confidence: 0.85
+    source_quote: "用自己伏藏品的《曜护法神法》诅咒"
+    note: "四十五岁用以诅咒仇敌"
+
+  # ============================================================
+  # E. 护法/调伏关系 (protectedBy / subduedBy)
+  # ============================================================
+
+  - rel_id: R8S4_034
+    type: protectedBy
+    source: 敦珠林巴
+    target: 绕呵拉护法神
+    layers: [觉受, 凡常]
+    confidence: 0.90
+    source_quote: "当你有敌人时要精进祈祷绕呵拉护法神"
+    note: "空行母授记的核心事业护法"
+
+  - rel_id: R8S4_035
+    type: protectedBy
+    source: 敦珠林巴
+    target: 红黑现巴夜叉
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "东方朝阳表示红黑现巴夜叉阳光普照大地表示无偏护持传承"
+    note: "四十岁空行母解释征兆"
+
+  - rel_id: R8S4_036
+    type: protectedBy
+    source: 敦珠林巴
+    target: 玛嘉波热
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "我知道这是玛嘉护法神派遣迎送的"
+    note: "三百野牛陪行三天为护法派遣"
+
+  - rel_id: R8S4_037
+    type: subduedBy
+    source: 永仲嘉则
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.75
+    source_quote: "土地神亲自现身说'请你不要离开我们这个地方'"
+    note: "非调伏而是约定关系；土地神后来应约到色达"
+
+  # ============================================================
+  # F. 位于/建造关系 (locatedAt / builtBy)
+  # ============================================================
+
+  - rel_id: R8S4_038
+    type: locatedAt
+    source: 莲花生大士
+    target: 铜色吉祥山
+    layers: [觉受]
+    confidence: 0.95
+    source_quote: "中央是奇珍异宝制成的高广法座上面坐着邬金莲花生大士"
+    note: "铜色吉祥山净土主尊"
+
+  - rel_id: R8S4_039
+    type: locatedAt
+    source: 智慧金刚亥母
+    target: 邬金天然尸林
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "说是智慧金刚亥母的空行母肤色深蓝威猛忿怒"
+    note: "邬金尸林无量殿主尊"
+
+  - rel_id: R8S4_040
+    type: locatedAt
+    source: 大悲观音
+    target: 普陀山
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "位居于中的圣者大悲观音一面四臂"
+    note: "普陀山净土主尊"
+
+  # ============================================================
+  # G. 父子/亲属关系 (parentOf / childOf)
+  # ============================================================
+
+  - rel_id: R8S4_041
+    type: childOf
+    source: 智悲芽
+    target: 敦珠林巴
+    layers: [凡常]
+    confidence: 0.85
+    source_quote: "祈求心子钦则涅革坐床"
+    note: "心子；由语境判断可能是法子也可能是亲子"
+
+  - rel_id: R8S4_042
+    type: parentOf
+    source: 敦珠林巴
+    target: 晋美朗巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "你的这个儿子是我的幻化持明晋美朗巴"
+    note: "无垢光尊者指认的小儿"
