@@ -1,0 +1,771 @@
+# ============================================================
+# 知识图谱事件 — 第八品 略说佛教年表与自传（章级合并）
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md (lines 1-3824)
+# 合并日期: 2026-05-09
+# 合并自: ch08-seg1(37) + ch08-seg2(46) + ch08-seg3(50) + ch08-seg4(48) + ch08-seg5(40)
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
+# 事件总数: 49 (精选；原始段级合计 221 去重精简为核心叙事节点)
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/08_佛教年表与自传.md
+  source_lines: "1-3824"
+  spec_versions:
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+    skill: SKILL_04a v0.1
+  total_events: 49
+  date: 2026-05-09
+
+events:
+
+  # ==================================================================
+  # A. 佛陀年代段 (lines 1-60)
+  # ==================================================================
+
+  - event_id: EVT_001
+    type: 诞生
+    title: 释迦佛入胎于摩耶夫人
+    participants:
+      - entity: 释迦佛
+        role: 主体
+      - entity: 摩耶夫人
+        role: 母亲
+    location: null
+    time_info:
+      text: "阳土羊年箕宿月十五日午夜鬼星隐没的合时"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "义成太子，于阳土羊年箕宿月十五日午夜鬼星隐没的合时，入于正在持斋戒的摩耶夫人胎中"
+
+  - event_id: EVT_002
+    type: 诞生
+    title: 释迦佛在蓝毗尼花园降生
+    participants:
+      - entity: 释迦佛
+        role: 主体
+    location: 蓝毗尼花园
+    time_info:
+      text: "铁猴年萨迦月初七上午"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "铁猴年萨迦月初七上午伴随皎月鬼星出现之际，在蓝毗尼花园降生"
+
+  - event_id: EVT_003
+    type: 成佛
+    title: 释迦佛三十五岁于菩提树下成佛
+    participants:
+      - entity: 释迦佛
+        role: 主体
+    location: 菩提树
+    time_info:
+      text: "三十五岁，土马年萨迦月十五"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "到了三十五岁，土马年萨迦月十五，前往菩提树下……现前圆满佛果"
+
+  - event_id: EVT_004
+    type: 弘法
+    title: 释迦佛在鹿野苑第一转四谛法轮
+    participants:
+      - entity: 释迦佛
+        role: 主体
+    location: 鹿野苑
+    time_info:
+      text: "成佛后四十九天"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "成佛以后过了七七四十九天，于鹿野苑第一转四谛法轮"
+
+  - event_id: EVT_005
+    type: 涅槃
+    title: 释迦佛于拘尸那城涅槃
+    participants:
+      - entity: 释迦佛
+        role: 主体
+    location: 拘尸那城
+    time_info:
+      text: "铁龙年萨迦月十五后夜"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "萨迦月十五后夜开始，于拘尸那城，色身无余趋入法界"
+
+  - event_id: EVT_006
+    type: 诞生
+    title: 莲花生大士于斯德海岛降生
+    participants:
+      - entity: 莲花生大士
+        role: 主体
+    location: 斯德海岛
+    time_info:
+      text: "如来涅槃第五年木猴年闰月初十辰时"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "邬金第二大佛莲花生大士于斯德海岛降生"
+
+  - event_id: EVT_007
+    type: 弘法
+    title: 莲花生大士到达藏地建桑耶寺
+    participants:
+      - entity: 莲花生大士
+        role: 主体
+      - entity: 赤松德赞
+        role: 护持者
+    location: 桑耶寺
+    time_info:
+      text: "赤松德赞诞生后二十年铁虎年"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "莲花生大士到达藏地，转法轮，建造吉祥桑耶寺"
+
+  - event_id: EVT_008
+    type: 灭法
+    title: 朗达玛毁灭卫藏后藏佛法
+    participants:
+      - entity: 朗达玛
+        role: 主体
+    location: 西藏
+    time_info:
+      text: "铁鸡年"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "铁鸡年，朗达玛毁灭卫藏、后藏的佛法"
+
+  - event_id: EVT_009
+    type: 弘法
+    title: 贡巴饶色树立佛法后弘开端
+    participants:
+      - entity: 贡巴饶色
+        role: 主体
+    location: 西藏
+    time_info:
+      text: "水牛年"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "贡巴饶色大师与卫藏后藏的十人从康区到卫藏，树立佛法后弘时期的开端"
+
+  - event_id: EVT_010
+    type: 建寺
+    title: 宗喀巴建噶丹寺格鲁派创立
+    participants:
+      - entity: 宗喀巴
+        role: 主体
+    location: 噶丹寺
+    time_info:
+      text: "第七胜生周土牛年"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "建起噶丹寺，法脉取名为寺院的名称，由此出现了格鲁派"
+
+  # ==================================================================
+  # B. 自传 — 降生与幼年（出生至十五岁）
+  # ==================================================================
+
+  - event_id: EVT_011
+    type: 诞生
+    title: 敦珠法王降生伴彩虹瑞相
+    participants:
+      - entity: 敦珠林巴
+        role: 主体
+      - entity: 阿丹
+        role: 父亲
+      - entity: 哦奏
+        role: 母亲
+    location: 色达
+    time_info:
+      text: "木羊年八月初十晚上"
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "木羊年八月初十的晚上，母亲分娩……我家帐篷的里里外外都是彩虹萦绕"
+
+  - event_id: EVT_012
+    type: 灌顶
+    title: 无疑王如来赐密宗金刚灌顶
+    participants:
+      - entity: 无疑王如来
+        role: 灌顶师
+      - entity: 敦珠林巴
+        role: 受者
+    location: 东方琉璃刹土
+    time_info:
+      text: "三岁鸡年二月初八"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "如来亲口说：'孩儿呀，你是我的法太子，授予你密宗金刚灌顶'"
+
+  - event_id: EVT_013
+    type: 觉受
+    title: 金刚亥母在邬金空行刹土赐予保护
+    participants:
+      - entity: 金刚亥母
+        role: 赐予者
+      - entity: 敦珠林巴
+        role: 受者
+    location: 邬金
+    time_info:
+      text: "三岁"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "她手掌中射出'旺'、'哈'、'热'、'讷'、'萨'五个文字"
+
+  - event_id: EVT_014
+    type: 授记
+    title: 金刚巴新授记敦珠法王伏藏事业时间表
+    participants:
+      - entity: 金刚巴新
+        role: 授记者
+      - entity: 敦珠林巴
+        role: 被授记者
+    location: 色达东让拉卡
+    time_info:
+      text: "六岁十月二十五日"
+    layers: [授记]
+    confidence: 0.95
+    source_quote: "在你二十二岁的时候意伏藏会自然流露，二十四岁的时候开取出三类地伏藏，四十岁以后利益无量众生"
+
+  - event_id: EVT_015
+    type: 觉受
+    title: 观世音菩萨教导念六字真言
+    participants:
+      - entity: 观世音菩萨
+        role: 教导者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "六岁十二月"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "你心里观想我……以心咒的方式念诵六字真言，我与你永不分离"
+
+  - event_id: EVT_016
+    type: 觉受
+    title: 龙钦绕降赐会供丸
+    participants:
+      - entity: 龙钦绕降
+        role: 赐予者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "七岁"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "持明龙钦绕降……给了我两粒会供丸"
+
+  - event_id: EVT_017
+    type: 觉受
+    title: 莲花生大士十二岁梦中授记嘉扬上师为除盖障菩萨化身
+    participants:
+      - entity: 莲花生大士
+        role: 授记者
+      - entity: 嘉扬上师
+        role: 被授记者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "十二岁"
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "你的这位嘉扬上师是除盖障菩萨的化身，他是你五世有缘的上师"
+
+  - event_id: EVT_018
+    type: 觉受
+    title: 密智空行母指示修文殊语狮子开脉门
+    participants:
+      - entity: 密智空行母
+        role: 教导者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "十五岁十月十八日"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "精进观修文殊语狮子……智慧的脉门开启以后虚空藏的境界一定会显露出来"
+
+  # ==================================================================
+  # C. 自传 — 十六岁至三十二岁
+  # ==================================================================
+
+  - event_id: EVT_019
+    type: 修行
+    title: 十六岁依止晋美上师实修前行
+    participants:
+      - entity: 敦珠林巴
+        role: 修行者
+      - entity: 晋美上师
+        role: 指导者
+    location: null
+    time_info:
+      text: "十六岁"
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "此地导师晋美……你于今年依之，实修前行仪轨"
+
+  - event_id: EVT_020
+    type: 觉受
+    title: 十九岁面见文殊菩萨获智慧教言
+    participants:
+      - entity: 文殊菩萨
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "十九岁十一月"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "文殊菩萨赐给我修法及咒语以后融入心间"
+
+  - event_id: EVT_021
+    type: 觉受
+    title: 二十岁梦见不动佛传如幻教言
+    participants:
+      - entity: 不动佛
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "二十岁二月初八"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "从他身体中犹如回音般自然传出这种音声"
+
+  - event_id: EVT_022
+    type: 觉受
+    title: 二十四岁面见大悲观音获《寂集密意自解脱》灌顶传承
+    participants:
+      - entity: 观世音菩萨
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "二十四岁一月初十"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "面见了圣者大悲观音，他圆满恩授《寂集密意自解脱》的修法灌顶传承"
+
+  - event_id: EVT_023
+    type: 觉受
+    title: 二十四岁面见吽嘎日获《现巴玛林续》灌顶传承
+    participants:
+      - entity: 吽嘎日
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "二十四岁"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "圆满授予《现巴玛林续》的灌顶、传承"
+
+  - event_id: EVT_024
+    type: 开取伏藏
+    title: 二十五岁从金刚岩开取伏藏七个小宝箧
+    participants:
+      - entity: 敦珠林巴
+        role: 伏藏师
+      - entity: 德钦
+        role: 友伴
+    location: 金刚岩
+    time_info:
+      text: "土羊年十一月初十"
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "从色达下方金刚岩开取伏藏……岩穴内取出七个小宝箧"
+
+  - event_id: EVT_025
+    type: 觉受
+    title: 二十七岁梦见龙树菩萨教授大圆满为诸法精髓
+    participants:
+      - entity: 龙树菩萨
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: 印度金刚座
+    time_info:
+      text: "二十七岁五月十七"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "诸法无余摄二谛，二谛融入大圆满"
+
+  - event_id: EVT_026
+    type: 修行
+    title: 二十八岁至三十岁于珠日神山修行
+    participants:
+      - entity: 敦珠林巴
+        role: 修行者
+    location: 珠日神山
+    time_info:
+      text: "二十八岁至三十岁"
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "我去了珠日神山……一年里实修龙钦宁提的风及绝地火"
+
+  - event_id: EVT_027
+    type: 认定
+    title: 嘉瓦活佛认定敦珠法王为莲花生大士化身
+    participants:
+      - entity: 嘉瓦活佛
+        role: 认定者
+      - entity: 敦珠林巴
+        role: 被认定者
+    location: null
+    time_info:
+      text: "二十八岁"
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他不是邬金莲花生大士的化身，那我就是骗你了"
+
+  - event_id: EVT_028
+    type: 觉受
+    title: 三十岁空行母教授顿超道
+    participants:
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "三十岁"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "直断法性谛你已现量见，实修捷径大虹身教授之光明顿超道"
+
+  - event_id: EVT_029
+    type: 觉受
+    title: 三十一岁见嘎绕多吉教诲法性本净
+    participants:
+      - entity: 嘎绕多吉
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "三十一岁"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "本净大周遍，净明离垢浊……本位自成佛"
+
+  - event_id: EVT_030
+    type: 觉受
+    title: 三十二岁嘉扬上师梦中教授断法
+    participants:
+      - entity: 嘉扬上师
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "三十二岁"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "所谓的断法就是摧毁我执的窍诀"
+
+  # ==================================================================
+  # D. 自传 — 三十二岁至四十八岁
+  # ==================================================================
+
+  - event_id: EVT_031
+    type: 觉受
+    title: 铜色吉祥山觉受——莲师传大圆满吽嘎日赐四灌顶
+    participants:
+      - entity: 莲花生大士
+        role: 传法者
+      - entity: 吽嘎日
+        role: 灌顶师
+      - entity: 敦珠林巴
+        role: 受者
+    location: 铜色吉祥山
+    time_info:
+      text: "三十二岁之后"
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "莲师依照《大密二取自解脱大续》宣说……'你是我事业的化现'"
+
+  - event_id: EVT_032
+    type: 觉受
+    title: 三十四岁邬金尸林觉受
+    participants:
+      - entity: 智慧金刚亥母
+        role: 主尊
+      - entity: 益西措嘉
+        role: 眷属
+      - entity: 敦珠林巴
+        role: 见证者
+    location: 邬金天然尸林
+    time_info:
+      text: "三十四岁"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "智慧金刚亥母的空行母肤色深蓝威猛忿怒"
+
+  - event_id: EVT_033
+    type: 觉受
+    title: 三十六岁面见大财神获授记
+    participants:
+      - entity: 大财神
+        role: 授记者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "三十六岁十二月初五"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "九年以后给予你所需的一切"
+
+  - event_id: EVT_034
+    type: 著作
+    title: 三十八岁写《忿怒空行母修法》狂风吹散象征普及各方
+    participants:
+      - entity: 敦珠林巴
+        role: 著者
+    location: null
+    time_info:
+      text: "三十八岁"
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "将《忿怒空行母修法》立成文字……狂风骤起将文稿全部吹散"
+
+  - event_id: EVT_035
+    type: 觉受
+    title: 四十岁布玛莫札瑜伽士形相传轮涅圆满教授
+    participants:
+      - entity: 布玛莫札
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "四十岁"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "我来给你宣讲轮回涅槃圆满的教授"
+
+  - event_id: EVT_036
+    type: 觉受
+    title: 四十二岁普陀山觉受——大悲观音赐四灌顶
+    participants:
+      - entity: 观世音菩萨
+        role: 灌顶师
+      - entity: 敦珠林巴
+        role: 受者
+    location: 普陀山
+    time_info:
+      text: "四十二岁"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "现在给予你我修行此法的灌顶和传承"
+
+  - event_id: EVT_037
+    type: 觉受
+    title: 四十四岁面见无垢光尊者获大圆满教授交付
+    participants:
+      - entity: 无垢光尊者
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+    location: 匝嘉寺
+    time_info:
+      text: "四十四岁"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "面见全知无垢光尊者他完整恩赐大圆满的教授并完全交付"
+
+  - event_id: EVT_038
+    type: 传法
+    title: 四十四岁在华智仁波切前得完整引导传承
+    participants:
+      - entity: 华智仁波切
+        role: 传法者
+      - entity: 敦珠林巴
+        role: 受者
+      - entity: 智悲芽
+        role: 受者
+    location: null
+    time_info:
+      text: "四十四岁六月初十后"
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "上师完整宣讲《入行论》《现观庄严论》《入中论》《密藏续》等"
+
+  - event_id: EVT_039
+    type: 弘法
+    title: 四十八岁为百名弟子传授大圆满和断法
+    participants:
+      - entity: 敦珠林巴
+        role: 传法者
+    location: null
+    time_info:
+      text: "四十八岁"
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "为百名弟子传授大圆满和断法"
+
+  # ==================================================================
+  # E. 自传 — 四十九岁至六十二岁
+  # ==================================================================
+
+  - event_id: EVT_040
+    type: 降伏
+    title: 五十岁以金刚橛降伏紫青树神母
+    participants:
+      - entity: 敦珠林巴
+        role: 主体
+      - entity: 紫青树神母
+        role: 对象
+    location: null
+    time_info:
+      text: "五十岁"
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "我在主树神母的头上插入六十次金刚橛，结果她逃到拉则嘎当神山里去了"
+
+  - event_id: EVT_041
+    type: 觉受
+    title: 五十二岁阿巴绕则财神觉受授予修法灌顶传承
+    participants:
+      - entity: 阿巴绕则
+        role: 灌顶师
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "五十二岁九月初十"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "完整授予了《阿巴绕则修法》的灌顶和传承"
+
+  - event_id: EVT_042
+    type: 建寺
+    title: 五十六岁在勒达强建贤劫寺
+    participants:
+      - entity: 敦珠林巴
+        role: 建立者
+    location: 勒达强
+    time_info:
+      text: "五十六岁"
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "我到了五十六岁时，在勒达强建了贤劫寺"
+
+  - event_id: EVT_043
+    type: 觉受
+    title: 五十九岁阿旺嘉措净相中授记弟子群往生及虹身
+    participants:
+      - entity: 阿旺嘉措
+        role: 授记者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "五十九岁四月初十"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "我的弟子阿旺嘉措以圆满受用身的装束……向我作礼"
+
+  - event_id: EVT_044
+    type: 授记
+    title: 得雪旺姆授记弟子群体成就大虹身人数
+    participants:
+      - entity: 得雪旺姆
+        role: 授记者
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "五十九岁九月初十"
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "成百男女行者修大虹身教授必定获得"
+
+  - event_id: EVT_045
+    type: 觉受
+    title: 六十岁晋美上师梦中赐觉性妙力大灌顶
+    participants:
+      - entity: 晋美上师
+        role: 灌顶师
+      - entity: 敦珠林巴
+        role: 受者
+    location: null
+    time_info:
+      text: "六十岁一月初四"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "上师给我传了觉性妙力大灌顶"
+
+  - event_id: EVT_046
+    type: 觉受
+    title: 六十二岁珠日山内面见众圣尊得大量灌顶传承
+    participants:
+      - entity: 敦珠林巴
+        role: 受者
+      - entity: 龙钦绕降
+        role: 传法者
+      - entity: 文殊菩萨
+        role: 传法者
+      - entity: 观世音菩萨
+        role: 传法者
+      - entity: 金刚手菩萨
+        role: 传法者
+    location: 珠日神山
+    time_info:
+      text: "六十二岁四月初八后"
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "三次亲见龙钦绕降尊者完整恩授大圆满见修法……面见文殊菩萨赐《文殊密集》……"
+
+  - event_id: EVT_047
+    type: 觉受
+    title: 六十二岁面见珠日山神得知山沟后代延续
+    participants:
+      - entity: 珠日山神
+        role: 告知者
+      - entity: 敦珠林巴
+        role: 受者
+    location: 珠日神山
+    time_info:
+      text: "六十二岁"
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "我们的主尊与大慈大悲观世音菩萨无二无别……此山沟的后代一直延续"
+
+  - event_id: EVT_048
+    type: 授记
+    title: 益西措嘉授记立传记为文字并指认弟子身份
+    participants:
+      - entity: 益西措嘉
+        role: 授记者
+      - entity: 敦珠林巴
+        role: 被授记者
+      - entity: 龙多嘉措
+        role: 被授记者
+      - entity: 钦绕嘉措
+        role: 被授记者
+    location: null
+    time_info:
+      text: "六十二岁十二月十五"
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "佛子扬攀塔益是东族龙多嘉措尊……热穹多吉札巴是东族钦绕嘉措尊"
+
+  # ==================================================================
+  # F. 著作完稿
+  # ==================================================================
+
+  - event_id: EVT_049
+    type: 著作
+    title: 敦珠林巴于印度萨霍绕完成藏密佛教史
+    participants:
+      - entity: 敦珠林巴
+        role: 著者
+    location: 萨霍绕
+    time_info:
+      text: "第十六胜生周水虎年"
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "至动静众生享用圆满夏季喜宴果实成熟之际——猴月上旬初十，于印度萨霍绕……圆满完稿"
