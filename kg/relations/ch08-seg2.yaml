@@ -1,0 +1,303 @@
+# ============================================================
+# 知识图谱关系抽取 — 第八品 佛教年表与自传 (lines 501-1000)
+# 覆盖范围: 敦珠仁波切自传 — 三岁至十五岁
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/08_佛教年表与自传.md
+  source_lines: "501-1000"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+  total_relations: 28
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 化身/形态关系 (manifestationOf / form_of)
+  # ============================================================
+
+  - rel_id: R8S2_001
+    type: manifestationOf
+    source: 嘉扬上师
+    target: 除盖障菩萨
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "你的这位嘉扬上师是除盖障菩萨的化身"
+    note: "莲花生大士在梦中授记"
+
+  - rel_id: R8S2_002
+    type: manifestationOf
+    source: 嘉扬上师
+    target: 南卡酿波
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "去拜见莲花生大士的真正化身嘉扬上师，他是阿阇黎南卡酿波的转世"
+    note: "空行母九岁时指示"
+
+  - rel_id: R8S2_003
+    type: manifestationOf
+    source: 那凑扬珠活佛
+    target: 朗珠滚秋炯内
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "那凑扬珠活佛是朗珠滚秋炯内亲自降临于世"
+    note: "莲花生大士十二岁梦中授记"
+
+  - rel_id: R8S2_004
+    type: manifestationOf
+    source: 阿那
+    target: 玛万仁钦
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "我的事业教主玛万仁钦的真实化身阿那弘扬佛法"
+    note: "莲花生大士十二岁梦中授记"
+
+  - rel_id: R8S2_005
+    type: manifestationOf
+    source: 晋美上师
+    target: 擦普古钦巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "他前世是降魔金刚的叔叔'擦普古钦巴'，依靠愿力成为了我的上师"
+    note: "敦珠法王三岁时以神通观察"
+
+  - rel_id: R8S2_006
+    type: form_of
+    source: 忿怒莲师
+    target: 莲花生大士
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "上师本尊无二无别的本体忿怒莲师，身色红黑，一面四臂"
+    note: "忿怒莲师为莲花生大士的忿怒形态"
+
+  # ============================================================
+  # B. 师徒关系 (teacherOf / discipleOf)
+  # ============================================================
+
+  - rel_id: R8S2_007
+    type: teacherOf
+    source: 嘉扬上师
+    target: 敦珠林巴
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "上师开始摄受并教我文字"
+    note: "十一岁起依止学习藏文字母"
+
+  - rel_id: R8S2_008
+    type: teacherOf
+    source: 晋美上师
+    target: 敦珠林巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "晋美上师被请来以后，就给我传了长寿灌顶并作了大量摄寿仪轨"
+    note: "三岁时传长寿灌顶"
+
+  - rel_id: R8S2_009
+    type: teacherOf
+    source: 灿桑上师
+    target: 敦珠林巴
+    layers: [史传]
+    confidence: 0.80
+    source_quote: "请来灿桑上师，请求做断法、灌顶和沐浴仪轨"
+    note: "十二岁时做断法灌顶"
+
+  - rel_id: R8S2_010
+    type: teacherOf
+    source: 无疑王如来
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "孩儿呀，你是我的法太子，授予你密宗金刚灌顶"
+    note: "三岁觉受中的灌顶"
+
+  # ============================================================
+  # C. 授法关系 (transmittedTo / instructed)
+  # ============================================================
+
+  - rel_id: R8S2_011
+    type: transmittedTo
+    source: 金刚亥母
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "她手掌中射出'旺'、'哈'、'热'、'讷'、'萨'五个文字……从她右乳尖端断掉一个'瓦'字融入我的心间"
+    note: "三岁梦境中金刚亥母赐予种子字加持"
+
+  - rel_id: R8S2_012
+    type: transmittedTo
+    source: 观世音菩萨
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "你心里观想我……以心咒的方式念诵六字真言，我与你永不分离"
+    note: "六岁觉受中观音教导六字真言修法"
+
+  - rel_id: R8S2_013
+    type: transmittedTo
+    source: 龙钦绕降
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "持明龙钦绕降……给了我两粒会供丸。当我吃的时候，觉得味道香甜，品尝过程中，身心都沉醉在安乐之中"
+    note: "七岁觉受中赐会供丸"
+
+  - rel_id: R8S2_014
+    type: transmittedTo
+    source: 密智空行母
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "精进观修文殊语狮子、念诵文殊心咒，并且读诵《真实名经》，智慧的脉门开启以后虚空藏的境界一定会显露出来"
+    note: "十五岁指示修文殊法开智慧脉门"
+
+  - rel_id: R8S2_015
+    type: transmittedTo
+    source: 嘉扬上师
+    target: 敦珠林巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "不管怎么我还是把现巴夜叉的灌顶和传承给你"
+    note: "十三岁赐予红黑现巴夜叉灌顶传承"
+
+  # ============================================================
+  # D. 护法/守护关系 (protectorOf)
+  # ============================================================
+
+  - rel_id: R8S2_016
+    type: protectorOf
+    source: 红黑现巴夜叉
+    target: 敦珠林巴
+    layers: [觉受, 神变]
+    confidence: 0.90
+    source_quote: "我就是红黑现巴药叉，多生累世没有离开过你，现在我要鼎力协助你的事业"
+    note: "五岁起多次现身保护并指引修法"
+
+  - rel_id: R8S2_017
+    type: protectorOf
+    source: 赞古卓列神
+    target: 敦珠林巴
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "我来守护阿甲柱，交付此位伏藏师"
+    note: "三岁现身声称守护"
+
+  - rel_id: R8S2_018
+    type: protectorOf
+    source: 金刚亥母
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "他有害于你的寿命、反对佛教，为此我要竭力予以保护"
+    note: "三岁梦中承诺保护"
+
+  - rel_id: R8S2_019
+    type: protectorOf
+    source: 黑玛囊护法神
+    target: 嘉扬上师
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "他好像就是我所修的黑玛囊护法神"
+    note: "嘉扬上师所修之护法"
+
+  - rel_id: R8S2_020
+    type: protectorOf
+    source: 颦眉天女
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "至尊度母告诉我，有众多鬼神反对你，不要忘记在早晨观想度母"
+    note: "六岁时传度母保护法"
+
+  # ============================================================
+  # E. 授记/预言关系 (prophesied)
+  # ============================================================
+
+  - rel_id: R8S2_021
+    type: prophesied
+    source: 金刚巴新
+    target: 敦珠林巴
+    layers: [授记]
+    confidence: 0.95
+    source_quote: "在你二十二岁的时候意伏藏会自然流露，二十四岁的时候开取出三类地伏藏，四十岁以后利益无量众生"
+    note: "六岁时千名空行母聚会中授记伏藏事业时间表"
+
+  - rel_id: R8S2_022
+    type: prophesied
+    source: 莲花生大士
+    target: 敦珠林巴
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "愿三世佛菩萨心相续中的无分别智慧当下融入你的相续。愿你的相续得以成熟、解脱"
+    note: "十二岁梦中莲师加持摸顶并授记"
+
+  - rel_id: R8S2_023
+    type: prophesied
+    source: 莲花生大士
+    target: 嘉扬上师
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "你的这位嘉扬上师是除盖障菩萨的化身，他是你五世有缘的上师"
+    note: "十二岁梦中莲师授记嘉扬上师身份"
+
+  # ============================================================
+  # F. 敌对/障碍关系 (enemyOf / obstructed)
+  # ============================================================
+
+  - rel_id: R8S2_024
+    type: obstructed
+    source: 玛革占热
+    target: 嘉扬上师
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "对这位上师的后代制造障碍的有一个魔王名叫玛革占热"
+    note: "十三岁护法神所告"
+
+  - rel_id: R8S2_025
+    type: obstructed
+    source: 涅莫那波切
+    target: 阿那
+    layers: [授记]
+    confidence: 0.80
+    source_quote: "他以前降伏的涅莫那波切依靠发邪愿的力量而转生为尼隆的一个鬼魔，这个鬼魔对阿那制造违缘，使他的寿命缩短"
+    note: "十二岁梦中莲师所说"
+
+  # ============================================================
+  # G. 灌顶受法 (initiatedBy)
+  # ============================================================
+
+  - rel_id: R8S2_026
+    type: initiatedBy
+    source: 赞古卓列神
+    target: 莲花生大士
+    layers: [授记]
+    confidence: 0.80
+    source_quote: "昔于也巴红岩处，邬金莲师予灌顶，委付三大伏藏法"
+    note: "赞古卓列神自述往昔受莲师灌顶"
+
+  # ============================================================
+  # H. 从属/亲属关系
+  # ============================================================
+
+  - rel_id: R8S2_027
+    type: relativeOf
+    source: 擦普古钦巴
+    target: 降魔金刚
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "他前世是降魔金刚的叔叔'擦普古钦巴'"
+    note: "叔侄关系"
+
+  - rel_id: R8S2_028
+    type: prophesied
+    source: 密智空行母
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "精进观修文殊语狮子、念诵文殊心咒，并且读诵《真实名经》，智慧的脉门开启以后虚空藏的境界一定会显露出来"
+    note: "十五岁指示开脉门方法与将获证量"
