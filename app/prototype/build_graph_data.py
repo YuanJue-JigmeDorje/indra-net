@@ -297,6 +297,26 @@ for fpath in sorted(glob.glob(os.path.join(KG, "relations", "*.yaml"))):
             'teachingContains': '教法含', 'liberatedBy': '度化',
             'succeedsAsRuler': '继位', 'splitFrom': '分裂自', 'identityOf': '即是',
             'grandparentOf': '祖孙', 'partOf': '属于',
+            # v2 pipeline additional types
+            'parentOf': '父母', 'childOf': '子女', 'transmittedTo': '传承',
+            'revealedTerma': '开取伏藏', 'protectorOf': '守护', 'protectedBy': '受护',
+            'discipleOf': '弟子', 'familyOf': '亲属', 'abbotOf': '住持',
+            'authored': '著作', 'authoredBy': '著作', 'kinshipOf': '亲族', 'kinOf': '亲族',
+            'foundedMonastery': '建寺', 'testamentTo': '遗嘱', 'affiliatedWith': '关联',
+            'devoteeOf': '皈依', 'lineageLink': '法脉', 'concealedAt': '埋藏处',
+            'dissolvedInto': '融入', 'collaboratorOf': '合作', 'founded': '创立',
+            'citedIn': '引自', 'transmissionOf': '传承', 'validates': '印证',
+            'prophecyOf': '授记', 'prophecyBy': '授记', 'prophesied': '授记',
+            'attainedBy': '成就', 'attainmentOf': '成就', 'associatedWith': '关联',
+            'mutualTeaching': '互学', 'compiledText': '编集', 'dharmaHeirOf': '法嗣',
+            'foundedSect': '创派', 'initiatedBy': '灌顶', 'retreatAt': '闭关处',
+            'originOf': '来源', 'ruleOver': '统治', 'lineageFrom': '法脉',
+            'scribeOf': '记录', 'subdued': '降伏', 'aliasOf': '即是',
+            'practicePartnerOf': '道友', 'fellowPractitioner': '道友',
+            'translatorOf': '译经', 'quotedIn': '引自', 'appointedBy': '任命',
+            'successionOf': '继承', 'destroyedBy': '毁灭', 'obstructed': '障碍',
+            'opposes': '对立', 'companionOf': '同行', 'consecratedBy': '开光',
+            'relativeOf': '亲属', 'textOf': '属于', 'motherOf': '母子',
         }
         rtype = rtype_map.get(raw_rtype, raw_rtype)
         raw_spec = rel.get('specialty', '') or ''
