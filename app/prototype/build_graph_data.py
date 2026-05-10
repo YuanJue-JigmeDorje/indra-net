@@ -470,7 +470,9 @@ with open(out_path, 'w') as f:
 all_events = []  # list of {event_id, type, title, participants, location, time_info, layers, source_quote, chapter}
 event_chapter_map = {'ch01': '第一品 佛教总况', 'ch02': '第二品 金刚密乘', 'ch03': '第三品 藏传佛法', 'ch04': '第四品 内密三续', 'ch05': '第五品 远传经幻心', 'ch06': '第六品 近传伏藏史', 'ch07': '第七品 遣除邪见', 'ch08': '第八品 佛教年表与自传'}
 
-for fpath in filter_chapter_files(sorted(glob.glob(os.path.join(KG, "events", "*.yaml")) + glob.glob(os.path.join(KG, "poc", "*.yaml")))):
+# Events: prefer segment files (chapter-level merges are too aggressively pruned)
+# Load ALL event files, dedup by title downstream
+for fpath in sorted(glob.glob(os.path.join(KG, "events", "*.yaml")) + glob.glob(os.path.join(KG, "poc", "*.yaml"))):
     fname_base = os.path.basename(fpath).replace('.yaml', '')
     # Determine chapter
     ch_key = fname_base.split('-')[0]  # ch01-part1 → ch01
