@@ -1,0 +1,402 @@
+# ============================================================
+# 知识图谱关系抽取 — 第八品 佛教年表与自传 (lines 3001-3824)
+# 覆盖范围: 敦珠林巴自传 — 四十九岁至六十二岁
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/08_佛教年表与自传.md
+  source_lines: "3001-3824"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+  total_relations: 38
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 化身/形态关系 (manifestationOf / form_of)
+  # ============================================================
+
+  - rel_id: R8S5_001
+    type: manifestationOf
+    source: 阿巴绕则
+    target: 金刚手菩萨
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "我是财神阿巴绕则，与大夜叉护法神、金刚手无二无别，显示财神相"
+    note: "五十二岁九月初十觉受中阿巴绕则自述"
+
+  - rel_id: R8S5_002
+    type: manifestationOf
+    source: 珠日山神
+    target: 观世音菩萨
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "我们的主尊与大慈大悲观世音菩萨无二无别的具德山神怙主"
+    note: "六十二岁珠日山神第四层楼中女子所述"
+
+  - rel_id: R8S5_003
+    type: manifestationOf
+    source: 耶嘉玛
+    target: 颦眉度母
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "也是颦眉度母的化现"
+    note: "珠日山神王妃为颦眉度母化现"
+
+  - rel_id: R8S5_004
+    type: manifestationOf
+    source: 萨绕哈
+    target: 忿怒尊者
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "我的化身大成就者萨绕哈"
+    note: "四十九岁杨柳刹土觉受中忿怒尊者自述"
+
+  - rel_id: R8S5_005
+    type: manifestationOf
+    source: 拉钦多杰嘉波
+    target: 虚空藏菩萨
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "明年，虚空藏菩萨将诞生为你的儿子"
+    note: "乐源空行母五十岁授记；结合五十一岁五月子降生"
+
+  - rel_id: R8S5_006
+    type: manifestationOf
+    source: 拉多华嘉瓦
+    target: 依钦仁波切
+    layers: [史实]
+    confidence: 0.90
+    source_quote: "我的幼子拉多华嘉瓦，被认定为噶托派达则桑哲寺无与伦比的活佛依钦仁波切的转世"
+    note: "五十九岁七月认定转世坐床"
+
+  - rel_id: R8S5_007
+    type: manifestationOf
+    source: 龙多嘉措
+    target: 扬攀塔益
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "佛子扬攀塔益是，东族龙多嘉措尊"
+    note: "益西措嘉六十二岁十二月授记"
+
+  - rel_id: R8S5_008
+    type: manifestationOf
+    source: 钦绕嘉措
+    target: 多吉札巴
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "热穹多吉札巴是，东族钦绕嘉措尊"
+    note: "益西措嘉六十二岁十二月授记"
+
+  # ============================================================
+  # B. 师徒关系 (teacherOf / discipleOf)
+  # ============================================================
+
+  - rel_id: R8S5_009
+    type: teacherOf
+    source: 晋美上师
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.95
+    source_quote: "我见到了自己的殊胜上师晋美"
+    note: "五十岁梦中指示；六十岁赐觉性妙力大灌顶"
+
+  - rel_id: R8S5_010
+    type: teacherOf
+    source: 嘉扬上师
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.95
+    source_quote: "当面见我的上师嘉扬时"
+    note: "五十三岁梦中请问空行不悦原因"
+
+  - rel_id: R8S5_011
+    type: discipleOf
+    source: 阿旺嘉措
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.90
+    source_quote: "我的弟子阿旺嘉措以圆满受用身的装束严饰……向我作礼"
+    note: "五十九岁梦中弟子净相现身"
+
+  - rel_id: R8S5_012
+    type: discipleOf
+    source: 彭措札西
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "道友彭措札西尊"
+    note: "阿旺嘉措授记中提及"
+
+  - rel_id: R8S5_013
+    type: discipleOf
+    source: 仁增嘉措
+    target: 敦珠林巴
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "弟子仁增嘉措尊，也至彼处成勇士"
+    note: "阿旺嘉措授记中提及"
+
+  - rel_id: R8S5_014
+    type: discipleOf
+    source: 才杰
+    target: 敦珠林巴
+    layers: [史实]
+    confidence: 0.90
+    source_quote: "我的弟子——得授记的大德才杰"
+    note: "自传跋文；劝请撰写自传"
+
+  - rel_id: R8S5_015
+    type: discipleOf
+    source: 嘉华
+    target: 敦珠林巴
+    layers: [史实]
+    confidence: 0.90
+    source_quote: "具有不退信心的弟子嘉华"
+    note: "自传跋文；劝请撰写自传"
+
+  - rel_id: R8S5_016
+    type: discipleOf
+    source: 钦绕嘉措
+    target: 敦珠林巴
+    layers: [史实]
+    confidence: 0.90
+    source_quote: "钦绕嘉措、得勒华桑等执笔"
+    note: "自传跋文；执笔者"
+
+  - rel_id: R8S5_017
+    type: discipleOf
+    source: 得勒华桑
+    target: 敦珠林巴
+    layers: [史实]
+    confidence: 0.85
+    source_quote: "钦绕嘉措、得勒华桑等执笔"
+    note: "自传跋文；执笔者"
+
+  - rel_id: R8S5_018
+    type: discipleOf
+    source: 龙多嘉措
+    target: 敦珠林巴
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "佛子扬攀塔益是，东族龙多嘉措尊"
+    note: "益西措嘉授记中指为校正文字者"
+
+  # ============================================================
+  # C. 法脉传承关系 (transmittedTo / receivedFrom)
+  # ============================================================
+
+  - rel_id: R8S5_019
+    type: transmittedTo
+    source: 阿巴绕则
+    target: 敦珠林巴
+    subject: 《阿巴绕则修法》
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "就完整授予了《阿巴绕则修法》的灌顶和传承"
+    note: "五十二岁九月初十觉受中"
+
+  - rel_id: R8S5_020
+    type: transmittedTo
+    source: 无量光佛
+    target: 敦珠林巴
+    subject: 极乐世界修法
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "拜见西方极乐世界无量光佛以后，得受极乐世界的修法灌顶和传承"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_021
+    type: transmittedTo
+    source: 药师佛
+    target: 敦珠林巴
+    subject: 修法
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "朝见药师佛，他赐予了修法"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_022
+    type: transmittedTo
+    source: 金刚持佛
+    target: 敦珠林巴
+    subject: 教授窍诀
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "面见金刚持佛时，他恩赐了教授的窍诀"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_023
+    type: transmittedTo
+    source: 八大持明
+    target: 敦珠林巴
+    subject: 八大法行灌顶传承
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "面见八大持明时，他们授予了八大法行的灌顶、传承"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_024
+    type: transmittedTo
+    source: 龙钦绕降
+    target: 敦珠林巴
+    subject: 大圆满见修法
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "三次亲见龙钦绕降尊者，完整恩授大圆满的见修法"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_025
+    type: transmittedTo
+    source: 文殊菩萨
+    target: 敦珠林巴
+    subject: 《文殊密集》
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "面见文殊菩萨，他赐予了《文殊密集》的灌顶、传承"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_026
+    type: transmittedTo
+    source: 观世音菩萨
+    target: 敦珠林巴
+    subject: 《玛哈得瓦修法》
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "面见观世音菩萨，他授予修法的灌顶、传承和大本尊《玛哈得瓦修法》的灌顶、传承"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_027
+    type: transmittedTo
+    source: 金刚手菩萨
+    target: 敦珠林巴
+    subject: 密主修法及红黑夜叉绕呵拉单坚护法修法
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "见到密主金刚手菩萨，他圆满赐予密主自己的修法和红黑夜叉、绕呵拉、单坚护法神的修法灌顶传承"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_028
+    type: transmittedTo
+    source: 文殊语狮子
+    target: 敦珠林巴
+    subject: 虹身教授
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "礼见文殊语狮子，他恩赐了虹身教授"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_029
+    type: transmittedTo
+    source: 帕单巴尊者
+    target: 敦珠林巴
+    subject: 空性见解要义
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "印度帕单巴尊者如理宣说空性见解的要义"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_030
+    type: transmittedTo
+    source: 玛吉拉卓
+    target: 敦珠林巴
+    subject: 甚深断魔教授
+    layers: [觉受]
+    confidence: 0.80
+    source_quote: "见到玛吉拉卓空行母，她恩赐甚深断魔的教授"
+    note: "六十二岁珠日山内自述"
+
+  - rel_id: R8S5_031
+    type: transmittedTo
+    source: 晋美上师
+    target: 敦珠林巴
+    subject: 觉性妙力大灌顶
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "上师给我传了觉性妙力大灌顶"
+    note: "六十岁一月初四觉受"
+
+  # ============================================================
+  # D. 建立/归属关系 (foundedBy / affiliatedWith)
+  # ============================================================
+
+  - rel_id: R8S5_032
+    type: foundedBy
+    source: 贤劫寺
+    target: 敦珠林巴
+    layers: [史实]
+    confidence: 0.95
+    source_quote: "我到了五十六岁时，在勒达强建了贤劫寺"
+    note: ""
+
+  - rel_id: R8S5_033
+    type: affiliatedWith
+    source: 达则桑哲寺
+    target: 噶托派
+    layers: [史实]
+    confidence: 0.90
+    source_quote: "噶托派达则桑哲寺"
+    note: ""
+
+  # ============================================================
+  # E. 降伏/护持关系 (subdued / protected)
+  # ============================================================
+
+  - rel_id: R8S5_034
+    type: subdued
+    source: 敦珠林巴
+    target: 紫青树神母
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "我在主树神母的头上插入六十次金刚橛，结果她逃到拉则嘎当神山里去了"
+    note: "五十岁以诛法降伏"
+
+  - rel_id: R8S5_035
+    type: subdued
+    source: 万索
+    target: 紫青树神母
+    layers: [神变]
+    confidence: 0.75
+    source_quote: "他通过忿怒空行的火施降伏了她，验相也现在眼前"
+    note: "空行母玛绕坚指示万索降伏最后一个"
+
+  # ============================================================
+  # F. 亲属关系 (parentOf / childOf)
+  # ============================================================
+
+  - rel_id: R8S5_036
+    type: parentOf
+    source: 敦珠林巴
+    target: 拉钦多杰嘉波
+    layers: [史实]
+    confidence: 0.95
+    source_quote: "我的一个儿子降生了……我给他取名叫拉钦多杰嘉波"
+    note: "五十一岁五月降生"
+
+  - rel_id: R8S5_037
+    type: parentOf
+    source: 敦珠林巴
+    target: 拉多华嘉瓦
+    layers: [史实]
+    confidence: 0.95
+    source_quote: "我的幼子拉多华嘉瓦"
+    note: "五十九岁时坐床"
+
+  # ============================================================
+  # G. 兄妹/配偶关系 (siblingOf)
+  # ============================================================
+
+  - rel_id: R8S5_038
+    type: siblingOf
+    source: 耶嘉玛
+    target: 酿波耶则
+    layers: [觉受]
+    confidence: 0.85
+    source_quote: "东方酿波耶则护法神的妹妹"
+    note: "珠日山神王妃为酿波耶则之妹"
