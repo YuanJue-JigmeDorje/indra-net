@@ -1,0 +1,686 @@
+# ============================================================
+# 知识图谱事件抽取 — 第八品 seg1 (lines 1-500)
+# 覆盖范围: 佛教年表 + 十六胜生周 + 教史依据 + 自传前言 + 种姓源流 + 化身预言 + 降生
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用: 引用 kg/entities/ch08-seg1.yaml 中实体 name
+#
+# confidence: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 佛陀年代段 (lines 1-60) ====================
+
+- event_id: EV_8S01
+  type: 诞生
+  title: 释迦佛入胎于摩耶夫人
+  participants:
+    - entity: 释迦佛
+      role: 主体
+    - entity: 摩耶夫人
+      role: 母亲
+  location: null
+  time_info:
+    text: "阳土羊年箕宿月十五日午夜鬼星隐没的合时"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "义成太子，于阳土羊年箕宿月十五日午夜鬼星隐没的合时，入于正在持斋戒的摩耶夫人胎中"
+
+- event_id: EV_8S02
+  type: 诞生
+  title: 释迦佛在蓝毗尼花园降生
+  participants:
+    - entity: 释迦佛
+      role: 主体
+  location: 蓝毗尼花园
+  time_info:
+    text: "铁猴年萨迦月初七上午伴随皎月鬼星出现之际"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "铁猴年萨迦月初七上午伴随皎月鬼星出现之际，在蓝毗尼花园降生"
+
+- event_id: EV_8S03
+  type: 出家受戒
+  title: 释迦佛二十九岁出家
+  participants:
+    - entity: 释迦佛
+      role: 主体
+    - entity: 耶输陀罗
+      role: 相关人
+  location: null
+  time_info:
+    text: "二十九岁，土鼠年昴宿月十月初八上半夜"
+    relative_to: 释迦佛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "二十九岁，土鼠年昴宿月十月初八上半夜……中夜见到鬼宿升起之时出家"
+
+- event_id: EV_8S04
+  type: 成佛
+  title: 释迦佛三十五岁于菩提树下成佛
+  participants:
+    - entity: 释迦佛
+      role: 主体
+  location: 菩提树
+  time_info:
+    text: "三十五岁，土马年萨迦月十五"
+    relative_to: 释迦佛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "到了三十五岁，土马年萨迦月十五，前往菩提树下……现前圆满佛果"
+
+- event_id: EV_8S05
+  type: 弘法
+  title: 释迦佛在鹿野苑第一转四谛法轮
+  participants:
+    - entity: 释迦佛
+      role: 主体
+  location: 鹿野苑
+  time_info:
+    text: "成佛后四十九天"
+    relative_to: 释迦佛成佛
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "成佛以后过了七七四十九天，于鹿野苑第一转四谛法轮"
+
+- event_id: EV_8S06
+  type: 弘法
+  title: 释迦佛在灵鹫山中转般若法轮
+  participants:
+    - entity: 释迦佛
+      role: 主体
+  location: 灵鹫山
+  time_info:
+    text: "第一转法轮之后"
+    relative_to: EV_8S05
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在灵鹫山，中转无相般若波罗蜜多法轮"
+
+- event_id: EV_8S07
+  type: 弘法
+  title: 释迦佛于铁龙年宣说时轮金刚续
+  participants:
+    - entity: 释迦佛
+      role: 主体
+  location: 吉祥米积塔
+  time_info:
+    text: "铁龙年仲春二月十五下午"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "于铁龙年仲春十五下午，在摧魔克胜三世间的合时，于南方吉祥米积塔前，宣说了吉祥第一佛等无量的无上乘"
+
+- event_id: EV_8S08
+  type: 涅槃
+  title: 释迦佛于拘尸那城涅槃
+  participants:
+    - entity: 释迦佛
+      role: 主体
+  location: 拘尸那城
+  time_info:
+    text: "铁龙年萨迦月十五后夜"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "萨迦月十五后夜开始，于拘尸那城，色身无余趋入法界"
+
+- event_id: EV_8S09
+  type: 诞生
+  title: 莲花生大士于斯德海岛降生
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+  location: 斯德海岛
+  time_info:
+    text: "如来涅槃第五年木猴年闰月初十辰时"
+    relative_to: 释迦佛涅槃
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "如来涅槃第五年木猴年闰月初十辰时，邬金第二大佛莲花生大士于斯德海岛降生"
+
+- event_id: EV_8S10
+  type: 弘法
+  title: 密主金刚手菩萨于玛拉雅山顶为五圣贤转法轮
+  participants:
+    - entity: 密主金刚手菩萨
+      role: 主体
+    - entity: 五圣贤
+      role: 受法
+  location: 玛拉雅
+  time_info:
+    text: "佛灭度二十九年土蛇年"
+    relative_to: 释迦佛涅槃
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛灭度二十九年土蛇年，密主金刚手菩萨于有天铁的玛拉雅山顶为五圣贤转法轮"
+
+- event_id: EV_8S11
+  type: 诞生
+  title: 阿育王降生
+  participants:
+    - entity: 阿育王
+      role: 主体
+  location: null
+  time_info:
+    text: "佛灭度一百年土羊年"
+    relative_to: 释迦佛涅槃
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛灭度一百年的土羊年阿育王降生"
+
+- event_id: EV_8S12
+  type: 诞生
+  title: 龙树诞生
+  participants:
+    - entity: 龙树
+      role: 主体
+  location: null
+  time_info:
+    text: "佛灭度一百六十一年铁猴年"
+    relative_to: 释迦佛涅槃
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛灭度一百六十一年的铁猴年，圣龙树诞生"
+
+- event_id: EV_8S13
+  type: 诞生
+  title: 嘎绕多吉降生
+  participants:
+    - entity: 嘎绕多吉
+      role: 主体
+  location: null
+  time_info:
+    text: "佛灭度一百六十六年木牛年"
+    relative_to: 释迦佛涅槃
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "佛灭度一百六十六年的木牛年，宣说胜乘的嘎绕多吉降生"
+
+- event_id: EV_8S14
+  type: 诞生
+  title: 涅赤赞普出世
+  participants:
+    - entity: 涅赤赞普
+      role: 主体
+  location: 西藏
+  time_info:
+    text: "铁猴年器情形成后过534年的木虎年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "过了五百三十四年的木虎年，统治整个西藏的涅赤赞普国王出世"
+
+# ==================== 藏王教法段 (lines 61-100) ====================
+
+- event_id: EV_8S15
+  type: 神迹
+  title: 玄妙神物降落拉托托日涅赞皇宫
+  participants:
+    - entity: 拉托托日涅赞
+      role: 主体
+  location: 西藏
+  time_info:
+    text: "拉托托日涅赞六十岁水鸡年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他到了六十岁的水鸡年，玄妙神物降落到皇宫上，这是西藏正法的开端"
+
+- event_id: EV_8S16
+  type: 建寺
+  title: 松赞干布建大昭寺
+  participants:
+    - entity: 松赞干布
+      role: 主体
+  location: 西藏
+  time_info:
+    text: "松赞干布诞生后二十五年"
+    relative_to: 松赞干布诞生
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "其后过了二十五年建起大昭寺等，开拓正法，始创文字"
+
+- event_id: EV_8S17
+  type: 弘法
+  title: 莲花生大士到达藏地建桑耶寺
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+    - entity: 赤松德赞
+      role: 护持者
+  location: 桑耶寺
+  time_info:
+    text: "赤松德赞诞生后二十年铁虎年"
+    relative_to: 赤松德赞诞生
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "又过二十年的铁虎年，莲花生大士到达藏地，转法轮，建造吉祥桑耶寺"
+
+- event_id: EV_8S18
+  type: 出家受戒
+  title: 预试七人出家
+  participants:
+    - entity: 预试七人
+      role: 主体
+  location: 西藏
+  time_info:
+    text: "建桑耶寺后第十七年火羊年"
+    relative_to: EV_8S17
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "随后第十七年火羊年，预试七人出家，翻译显密妙法，奠定讲修佛法的基础"
+
+- event_id: EV_8S19
+  type: 离去
+  title: 莲花生大士前往妙拂洲
+  participants:
+    - entity: 莲花生大士
+      role: 主体
+  location: 妙拂洲
+  time_info:
+    text: "预试七人出家后第37年木猴年"
+    relative_to: EV_8S18
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "其后第三十七年木猴年，莲花生大士前往妙拂洲"
+
+- event_id: EV_8S20
+  type: 灭法
+  title: 朗达玛毁灭卫藏后藏佛法
+  participants:
+    - entity: 朗达玛
+      role: 主体
+  location: 西藏
+  time_info:
+    text: "贡巴饶色诞生后第九年铁鸡年"
+    relative_to: 贡巴饶色诞生
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "第九年铁鸡年，朗达玛毁灭卫藏、后藏的佛法"
+
+- event_id: EV_8S21
+  type: 降伏
+  title: 拉隆花多降伏朗达玛
+  participants:
+    - entity: 拉隆花多
+      role: 主体
+    - entity: 朗达玛
+      role: 对象
+  location: 西藏
+  time_info:
+    text: "朗达玛灭法第五年火虎年"
+    relative_to: EV_8S20
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "第五年火虎年，拉隆花多降伏朗达玛"
+
+- event_id: EV_8S22
+  type: 弘法
+  title: 贡巴饶色树立佛法后弘开端
+  participants:
+    - entity: 贡巴饶色
+      role: 主体
+  location: 西藏
+  time_info:
+    text: "吐蕃王朝解体后第24年水牛年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "第二十四年水牛年，贡巴饶色大师与卫藏后藏的十人从康区到卫藏，树立佛法后弘时期的开端"
+
+# ==================== 胜生周段 (lines 96-200) ====================
+
+- event_id: EV_8S23
+  type: 建寺
+  title: 昆滚秋嘉波建古热寺萨迦派创始
+  participants:
+    - entity: 昆滚秋嘉波
+      role: 主体
+  location: 古热寺
+  time_info:
+    text: "第一胜生周水牛年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "自从他在帮波山旁嘎卫一方，于第一胜生周水牛年建起古热寺以来，法取地名，形成了萨迦派自宗"
+
+- event_id: EV_8S24
+  type: 建寺
+  title: 宗喀巴建噶丹寺格鲁派创立
+  participants:
+    - entity: 宗喀巴
+      role: 主体
+  location: 噶丹寺
+  time_info:
+    text: "第七胜生周土牛年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在此胜生周的土牛年，建起噶丹寺，法脉取名为寺院的名称，由此出现了众所周知的格鲁派"
+
+- event_id: EV_8S25
+  type: 政权更替
+  title: 噶丹颇章统治西藏
+  participants:
+    - entity: 第五世达赖喇嘛
+      role: 主体
+  location: 西藏
+  time_info:
+    text: "第十一胜生周水马年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从水马年开始，噶丹颇章统治整个西藏"
+
+# ==================== 自传化身授记段 (lines 437-481) ====================
+
+- event_id: EV_8S26
+  type: 发愿
+  title: 具力金刚发愿贤劫千佛期间化身利生
+  participants:
+    - entity: 具力金刚
+      role: 主体
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "在贤劫千佛的教法没有圆满之前，愿我的殊胜化身连续不断应世，随机广利有情"
+
+- event_id: EV_8S27
+  type: 降伏
+  title: 敦珠如巴匝于札嘎札那使魔众皈入佛门
+  participants:
+    - entity: 敦珠如巴匝
+      role: 主体
+  location: 札嘎札那
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他就在札嘎札那现在这个地方，使黑白罗的魔众纷纷皈入佛门"
+
+- event_id: EV_8S28
+  type: 离去
+  title: 敦珠如巴匝前往妙拂洲莲花光宫殿
+  participants:
+    - entity: 敦珠如巴匝
+      role: 主体
+  location: 妙拂洲
+  time_info:
+    text: "木猴年"
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "最后他于木猴年前往妙拂洲莲花光宫殿"
+
+- event_id: EV_8S29
+  type: 授记
+  title: 莲花生大士预言浊世众生苦况并派遣敦珠法王
+  participants:
+    - entity: 莲花生大士
+      role: 授记者
+    - entity: 益西措嘉
+      role: 请法者
+    - entity: 敦珠林巴
+      role: 被授记者
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "那久尼丹多吉依靠夙愿力，力所能及调伏有些所化，那就是示现色身持明降魔金刚，别无其他"
+
+- event_id: EV_8S30
+  type: 授记
+  title: 莲花生大士教诫敦珠法王命其入世利生
+  participants:
+    - entity: 莲花生大士
+      role: 授记者
+    - entity: 敦珠林巴
+      role: 主体
+  location: null
+  time_info:
+    text: null
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.90
+  source_quote: "你的事业使者，涌现出二十五位君臣化身……因此持明王你，示现忿怒金刚……现在就去吧！"
+
+# ==================== 自传降生段 (lines 482-500) ====================
+
+- event_id: EV_8S31
+  type: 入胎
+  title: 敦珠法王入母胎
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 阿丹
+      role: 父亲
+    - entity: 哦奏
+      role: 母亲
+  location: null
+  time_info:
+    text: "观察前世有缘父母后"
+    relative_to: null
+    absolute: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "见到他们是有缘的父母之后，伴随着无量勇士、空行母洒降花雨，我前去入母胎"
+
+- event_id: EV_8S32
+  type: 诞生
+  title: 敦珠法王降生伴彩虹瑞相
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+    - entity: 阿丹
+      role: 父亲
+    - entity: 哦奏
+      role: 母亲
+  location: 色达
+  time_info:
+    text: "木羊年八月初十晚上"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "木羊年八月初十的晚上，母亲分娩，太阳临近升起，众人有目共睹：我家帐篷的里里外外都是彩虹萦绕"
+
+- event_id: EV_8S33
+  type: 灌顶
+  title: 晋美上师为敦珠法王赐长寿灌顶
+  participants:
+    - entity: 晋美上师
+      role: 灌顶师
+    - entity: 敦珠林巴
+      role: 受灌者
+    - entity: 阿丹
+      role: 请法者
+    - entity: 哦奏
+      role: 请法者
+  location: 色达
+  time_info:
+    text: "出生当天"
+    relative_to: EV_8S32
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "父母迎请晋美上师，他赐予了长寿灌顶，上师亲口说：以前，我就总觉得你们二人如果结为良缘，是最好不过的"
+
+- event_id: EV_8S34
+  type: 授记
+  title: 晋美上师认定敦珠法王为活佛
+  participants:
+    - entity: 晋美上师
+      role: 认定者
+    - entity: 敦珠林巴
+      role: 被认定者
+  location: 色达
+  time_info:
+    text: "出生当天"
+    relative_to: EV_8S32
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我在境界中也感觉到你们的这个儿子是一位无与伦比的活佛。不依靠别人也会苏醒种姓，必定饶益他众"
+
+- event_id: EV_8S35
+  type: 觉受
+  title: 敦珠法王幼年见空行母歌舞
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+  location: 色达
+  time_info:
+    text: "出生至三岁之间"
+    relative_to: EV_8S32
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "到三岁之间，我觉得总是看见空行母们跳着优美的舞，唱着动听的歌"
+
+- event_id: EV_8S36
+  type: 觉受
+  title: 敦珠法王幼年夜间恐怖境相
+  participants:
+    - entity: 敦珠林巴
+      role: 主体
+  location: 色达
+  time_info:
+    text: "出生至三岁之间晚上"
+    relative_to: EV_8S32
+    absolute: null
+  layers: [觉受]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "出现妖魔鬼怪来威胁生命，他们与勇士、空行们展开激烈的战斗，连续不断现出恐怖的景象"
+
+# ==================== 著作完稿段 (lines 293-310) ====================
+
+- event_id: EV_8S37
+  type: 著作
+  title: 敦珠林巴于印度萨霍绕完成藏密佛教史
+  participants:
+    - entity: 敦珠林巴
+      role: 著者
+    - entity: 秋札嘉措
+      role: 出版者
+  location: 萨霍绕
+  time_info:
+    text: "第十六胜生周水虎年藏历三月至猴月上旬初十"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "我本人从北方雪域到南方印度居住期间……至动静众生享用圆满夏季喜宴果实成熟之际——猴月上旬初十，于印度萨霍绕……圆满完稿"

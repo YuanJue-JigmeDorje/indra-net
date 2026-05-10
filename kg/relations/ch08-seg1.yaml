@@ -1,0 +1,692 @@
+# ============================================================
+# 知识图谱关系抽取 — 第八品 seg1 (lines 1-500)
+# 覆盖范围: 佛教年表 + 十六胜生周 + 教史依据 + 自传前言 + 种姓源流 + 化身预言 + 降生
+# 来源: source/dudjom/chapter_md/08_佛教年表与自传.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/08_佛教年表与自传.md
+  source_lines: "1-500"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 68
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 化身/形态关系 (manifestationOf)
+  # ============================================================
+
+  - rel_id: R8S_001
+    type: manifestationOf
+    source: 具力金刚
+    target: 大金刚持
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "法身本师大金刚持佛为了弘法利生，而在所化对境前示现色身，就是众所周知的瑜伽自在具力金刚"
+    note: "大金刚持之色身示现"
+
+  - rel_id: R8S_002
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 舍利子
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "在我等大师释迦佛时代，化现为声闻舍利子"
+    note: "具力金刚化身系列之一"
+
+  - rel_id: R8S_003
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 吽钦嘎绕
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "接下来是持明吽钦嘎绕"
+    note: "具力金刚化身系列之一"
+
+  - rel_id: R8S_004
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 切穹译师
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "卓万切穹译师"
+    note: "具力金刚化身系列之一；前言中明确说是切穹译师转世"
+
+  - rel_id: R8S_005
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 那巴黑巴秋炯
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "哲戒卓的那巴黑巴秋炯"
+    note: "具力金刚化身系列之一"
+
+  - rel_id: R8S_006
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 敦珠如巴匝
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "前持明降魔金刚，后持明敦珠如巴匝"
+    note: "敦珠法王直接前世"
+
+  - rel_id: R8S_007
+    type: manifestationOf
+    source: 敦珠林巴
+    target: 具力金刚
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "他为了利益众生发下如此大愿……依靠这一清净愿力，在每一佛的教法期间都示现一百位化身"
+    note: "整个化身系列归于具力金刚"
+
+  - rel_id: R8S_008
+    type: manifestationOf
+    source: 丹增嘉措
+    target: 观世音菩萨
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "我等之顶宝第十四世观世音菩萨达赖喇嘛丹增嘉措"
+    note: "第十四世达赖喇嘛为观世音菩萨化身"
+
+  # ============================================================
+  # B. 师承关系 (teacherOf / studentOf)
+  # ============================================================
+
+  - rel_id: R8S_009
+    type: teacherOf
+    source: 莲花生大士
+    target: 敦珠林巴
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "自以为依靠嗡德雅那大师之大悲日光入心而开启智慧莲花"
+    note: "根本上师；授记段中直接教诫命其入世"
+
+  - rel_id: R8S_010
+    type: teacherOf
+    source: 阿底峡
+    target: 仲敦巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "阿底峡师徒的法脉中，对受持此法传承者取名噶当派"
+    note: "噶当派师徒关系"
+
+  - rel_id: R8S_011
+    type: teacherOf
+    source: 莲花生大士
+    target: 昆勒旺仲瓦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "莲花生大士的亲传弟子昆勒旺仲瓦"
+    note: "莲师亲传弟子"
+
+  - rel_id: R8S_012
+    type: teacherOf
+    source: 莲花生大士
+    target: 切穹译师
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "莲花生大士座下最著名的二十五位大弟子之一——切穹译师"
+    note: "莲师二十五弟子"
+
+  - rel_id: R8S_013
+    type: teacherOf
+    source: 莲花生大士
+    target: 南卡酿波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "第二大佛莲花生大士的心子南卡酿波比丘"
+    note: "莲师心子"
+
+  - rel_id: R8S_014
+    type: teacherOf
+    source: 仲莫释迦益西
+    target: 昆滚秋嘉波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "昆滚秋嘉波在仲莫释迦益西等新派译师前听受许多法要"
+    note: "转依新密的关键传承"
+
+  - rel_id: R8S_015
+    type: teacherOf
+    source: 达波达哦云讷
+    target: 噶举派
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "达波瓦的弟子康巴三人等次第分出的四大、八小噶举派广泛弘扬"
+    note: "噶举派分支之师"
+
+  - rel_id: R8S_016
+    type: teacherOf
+    source: 晋美上师
+    target: 敦珠林巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "父母迎请晋美上师，他赐予了长寿灌顶"
+    note: "出生时赐灌顶并认定为活佛"
+
+  # ============================================================
+  # C. 建寺关系 (founded)
+  # ============================================================
+
+  - rel_id: R8S_017
+    type: founded
+    source: 松赞干布
+    target: 大昭寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "其后过了二十五年建起大昭寺等，开拓正法"
+    note: ""
+
+  - rel_id: R8S_018
+    type: founded
+    source: 莲花生大士
+    target: 桑耶寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "莲花生大士到达藏地，转法轮，建造吉祥桑耶寺"
+    note: "与赤松德赞共同建造"
+
+  - rel_id: R8S_019
+    type: founded
+    source: 昆滚秋嘉波
+    target: 古热寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于第一胜生周水牛年建起古热寺"
+    note: "萨迦派发源地"
+
+  - rel_id: R8S_020
+    type: founded
+    source: 宗喀巴
+    target: 噶丹寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在此胜生周的土牛年，建起噶丹寺"
+    note: "格鲁派发源地"
+
+  - rel_id: R8S_021
+    type: founded
+    source: 晋美彭措
+    target: 喇荣五明佛学院
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "至尊上师法王如意宝晋美彭措，亦源于此而建起了如今举世瞩目的喇荣五明佛学院"
+    note: ""
+
+  # ============================================================
+  # D. 著述关系 (authored)
+  # ============================================================
+
+  - rel_id: R8S_022
+    type: authored
+    source: 龙钦绕降
+    target: 母子心滴
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "全知龙钦巴的《母子心滴》的历史总纲"
+    note: ""
+
+  - rel_id: R8S_023
+    type: authored
+    source: 达玛西日
+    target: 集密意续灌顶之总义
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "大译师达玛西日的《集密意续灌顶之总义·开显经续窍诀要点之灯》"
+    note: ""
+
+  - rel_id: R8S_024
+    type: authored
+    source: 雅德德增钦绕嘉措
+    target: 教史问答宝库
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "雅德德增钦绕嘉措的《教史问答宝库》"
+    note: ""
+
+  - rel_id: R8S_025
+    type: authored
+    source: 阿旺罗珠
+    target: 前译法源
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "大智者阿旺罗珠的《前译法源·令智者欢喜》"
+    note: ""
+
+  - rel_id: R8S_026
+    type: authored
+    source: 古译师云讷华
+    target: 青史
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "古译师云讷华的《青史》"
+    note: ""
+
+  - rel_id: R8S_027
+    type: authored
+    source: 华哦则拉创瓦
+    target: 智者喜宴宁玛品
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "华哦则拉创瓦的教史《智者喜宴宁玛品》"
+    note: ""
+
+  - rel_id: R8S_028
+    type: authored
+    source: 班玛嘎波
+    target: 佛教兴盛之日
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "珠巴全知班玛嘎波的教史《佛教兴盛之日》"
+    note: ""
+
+  - rel_id: R8S_029
+    type: authored
+    source: 达绕那塔
+    target: 莲师传·具三信
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "至尊达绕那塔的《莲师传·具三信》"
+    note: ""
+
+  - rel_id: R8S_030
+    type: authored
+    source: 晋美朗巴
+    target: 宁玛续目录
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "全知晋美朗巴的《宁玛续目录·周遍赡洲庄严》"
+    note: ""
+
+  - rel_id: R8S_031
+    type: authored
+    source: 噶托班智达杰美才旺秋哲
+    target: 续集目录·天鼓妙语
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "噶托班智达杰美才旺秋哲的《续集目录·天鼓妙语》"
+    note: ""
+
+  - rel_id: R8S_032
+    type: authored
+    source: 嘉滚罗珠塔益
+    target: 百位伏藏大师传
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "嘉滚罗珠塔益的《百位伏藏大师传·蓝琉璃鬘饰》"
+    note: ""
+
+  - rel_id: R8S_033
+    type: authored
+    source: 世亲
+    target: 摧破论
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "世亲论师的《摧破论》"
+    note: ""
+
+  - rel_id: R8S_034
+    type: authored
+    source: 根敦哲巴
+    target: 白莲言教
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "共称的三嘉措，造了历算论典《白莲言教》"
+    note: "年表语境中三嘉措指根敦哲巴"
+
+  - rel_id: R8S_035
+    type: authored
+    source: 敦珠林巴
+    target: 藏密佛教史
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "明说雪域圆满佛教根本前译金刚乘法宝起源状况之此天鼓妙音"
+    note: "本书"
+
+  # ============================================================
+  # E. 教派创始/归属关系 (foundedSect / affiliatedWith)
+  # ============================================================
+
+  - rel_id: R8S_036
+    type: foundedSect
+    source: 阿底峡
+    target: 噶当派
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "阿底峡师徒的法脉中，对受持此法传承者取名噶当派，最初形成了"
+    note: ""
+
+  - rel_id: R8S_037
+    type: foundedSect
+    source: 昆滚秋嘉波
+    target: 萨迦派
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "法取地名，形成了萨迦派自宗"
+    note: ""
+
+  - rel_id: R8S_038
+    type: foundedSect
+    source: 宗喀巴
+    target: 格鲁派
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "由此出现了众所周知的格鲁派"
+    note: ""
+
+  - rel_id: R8S_039
+    type: foundedSect
+    source: 玛尔巴译师
+    target: 噶举派
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "玛尔巴译师将嘎举教法源头引到西藏"
+    note: "引入藏地的创始人物"
+
+  # ============================================================
+  # F. 亲属关系 (parentOf / childOf)
+  # ============================================================
+
+  - rel_id: R8S_040
+    type: parentOf
+    source: 摩耶夫人
+    target: 释迦佛
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "入于正在持斋戒的摩耶夫人胎中"
+    note: "母子"
+
+  - rel_id: R8S_041
+    type: parentOf
+    source: 释迦佛
+    target: 罗睺罗
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他的儿子罗睺罗住胎六年之后于那时降生"
+    note: "父子"
+
+  - rel_id: R8S_042
+    type: parentOf
+    source: 耶输陀罗
+    target: 罗睺罗
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "于耶输陀罗植下种姓的种子"
+    note: "母子；推断自佛于耶输陀罗处植种子后罗睺罗降生"
+
+  - rel_id: R8S_043
+    type: parentOf
+    source: 阿丹
+    target: 敦珠林巴
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "我的父亲阿丹是属于滚嘉传宗接代的后种族"
+    note: "父子"
+
+  - rel_id: R8S_044
+    type: parentOf
+    source: 哦奏
+    target: 敦珠林巴
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "母亲属于木擦噶氏族，名叫哦奏，他们在十五胜生周羊年生下我"
+    note: "母子"
+
+  # ============================================================
+  # G. 政权/统治关系 (ruleOver)
+  # ============================================================
+
+  - rel_id: R8S_045
+    type: ruleOver
+    source: 涅赤赞普
+    target: 西藏
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "统治整个西藏的涅赤赞普国王出世"
+    note: "第一位藏王"
+
+  - rel_id: R8S_046
+    type: ruleOver
+    source: 萨迦班智达
+    target: 西藏
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从水牛年开始，大师萨迦巴统治了西藏三区"
+    note: "第四胜生周起"
+
+  - rel_id: R8S_047
+    type: ruleOver
+    source: 第五世达赖喇嘛
+    target: 西藏
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从水马年开始，噶丹颇章统治整个西藏"
+    note: "第十一胜生周起"
+
+  # ============================================================
+  # H. 传承/法脉关系 (lineageFrom)
+  # ============================================================
+
+  - rel_id: R8S_048
+    type: lineageFrom
+    source: 昆如西绕赤诚
+    target: 昆勒旺仲瓦
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "莲花生大士的亲传弟子昆勒旺仲瓦至昆如西绕赤诚之间仅有十代传承，是旧密"
+    note: "十代传承从昆勒旺仲瓦至昆如西绕赤诚"
+
+  - rel_id: R8S_049
+    type: lineageFrom
+    source: 穹波南玖
+    target: 香巴金法
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "成就者穹波将香巴金法……引到西藏"
+    note: "香巴金法传入西藏"
+
+  - rel_id: R8S_050
+    type: lineageFrom
+    source: 玛尔巴译师
+    target: 噶举派
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "玛尔巴译师将嘎举教法源头引到西藏"
+    note: "噶举法脉引入"
+
+  # ============================================================
+  # I. 护持/赞助关系 (patronOf)
+  # ============================================================
+
+  - rel_id: R8S_051
+    type: patronOf
+    source: 赤松德赞
+    target: 莲花生大士
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "法王赤松德赞诞生……莲花生大士到达藏地，转法轮，建造吉祥桑耶寺"
+    note: "赤松德赞邀请莲师入藏"
+
+  - rel_id: R8S_052
+    type: patronOf
+    source: 赤松德赞
+    target: 桑耶寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "又过二十年的铁虎年，莲花生大士到达藏地，转法轮，建造吉祥桑耶寺"
+    note: "赤松德赞时期建造"
+
+  # ============================================================
+  # J. 典据/引用关系 (citedIn)
+  # ============================================================
+
+  - rel_id: R8S_053
+    type: citedIn
+    source: 杂事律
+    target: 佛法住世一千年
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "《杂事律》、《金色传》、《贤劫经》、《大云经》、《无尽慧请问经释》、《俱舍论释》一致说佛法正教期、佛法名相期各住五百年"
+    note: "六部经论一致说法住世一千年"
+
+  - rel_id: R8S_054
+    type: citedIn
+    source: 弥勒授记经
+    target: 佛法住世五千年
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "塔尔译师所翻译的《弥勒授记经》……等中说是五千年"
+    note: ""
+
+  - rel_id: R8S_055
+    type: citedIn
+    source: 金光明经
+    target: 佛陀不涅槃
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "《金光明经》……中说：佛陀不涅槃，法亦无隐没"
+    note: "大乘了义第三转法轮"
+
+  - rel_id: R8S_056
+    type: citedIn
+    source: 金刚萨埵幻化网
+    target: 佛陀不涅槃
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "无上密《金刚萨埵幻化网》中说：佛陀不涅槃，法亦无隐没"
+    note: ""
+
+  - rel_id: R8S_057
+    type: citedIn
+    source: 应成根本续
+    target: 大圆满传承预言
+    layers: [典据]
+    confidence: 0.95
+    source_quote: "也如《应成根本续》中所说：于我趋入涅槃后，西方邬金之境内，达那够夏之公主，无有父亲班则黑，此者受持微妙法"
+    note: "预言嘎绕多吉以降的大圆满传承"
+
+  # ============================================================
+  # K. 翻译关系 (translatedBy)
+  # ============================================================
+
+  - rel_id: R8S_058
+    type: translatedBy
+    source: 弥勒授记经
+    target: 塔尔译师
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "塔尔译师所翻译的《弥勒授记经》"
+    note: ""
+
+  - rel_id: R8S_059
+    type: translatedBy
+    source: 一世敦珠法王自传
+    target: 索达吉堪布
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "一世敦珠法王自传 索达吉堪布 译"
+    note: "汉译者"
+
+  # ============================================================
+  # L. 地名/区域归属 (locatedIn)
+  # ============================================================
+
+  - rel_id: R8S_060
+    type: locatedIn
+    source: 札甲空
+    target: 木雅热冈
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "位于下区青康六高地之一木雅热冈的中央"
+    note: ""
+
+  - rel_id: R8S_061
+    type: locatedIn
+    source: 巴雅札嘎神山
+    target: 康区
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "康区二十五大圣地（即神山）之一"
+    note: ""
+
+  - rel_id: R8S_062
+    type: locatedIn
+    source: 色达
+    target: 康区
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "从该地来到康区东部青海湖附近黄河中游居住"
+    note: "色达在康区"
+
+  - rel_id: R8S_063
+    type: locatedIn
+    source: 喇荣五明佛学院
+    target: 色达
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "生活了二十多年的喇荣山谷"
+    note: "前言中明确在色达"
+
+  # ============================================================
+  # M. 加持/圣化关系 (consecratedBy)
+  # ============================================================
+
+  - rel_id: R8S_064
+    type: consecratedBy
+    source: 巴雅札嘎神山
+    target: 邦·麦彭滚波
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "巴雅札嘎神山……早在以前被邦·麦彭滚波加持成黑鲁嘎的修行地"
+    note: ""
+
+  # ============================================================
+  # N. 灭法/对抗关系 (destroyedBy)
+  # ============================================================
+
+  - rel_id: R8S_065
+    type: destroyedBy
+    source: 宁玛派
+    target: 朗达玛
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "朗达玛毁灭卫藏、后藏的佛法"
+    note: "灭法事件"
+
+  - rel_id: R8S_066
+    type: destroyedBy
+    source: 朗达玛
+    target: 拉隆花多
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "拉隆花多降伏朗达玛"
+    note: "朗达玛被降伏"
+
+  # ============================================================
+  # O. 所属集合关系 (memberOf)
+  # ============================================================
+
+  - rel_id: R8S_067
+    type: memberOf
+    source: 切穹译师
+    target: 二十五位大弟子
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "莲花生大士座下最著名的二十五位大弟子之一——切穹译师"
+    note: ""
+
+  - rel_id: R8S_068
+    type: memberOf
+    source: 吽钦嘎绕
+    target: 八大持明
+    layers: [授记]
+    confidence: 0.85
+    source_quote: "持明吽钦嘎绕（八大持明之一）"
+    note: ""
