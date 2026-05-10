@@ -1,0 +1,3671 @@
+# ============================================================
+# KG 实体抽取：第五品 · 远传经幻心 · Seg6（lines 2001-2692）
+# 覆盖范围: 噶托十三代祖师尾声 + 荣波土秋三位 + 嘎单巴四教子
+#   + 玛尼仁钦 + 仲师十三代 + 康派传承 + 宿姆格敦波
+#   + 莫敦多吉华桑波灌顶传承 + 如西绕哦弘法 + 荣索班智达
+#   + 普巴金刚弘扬(六派) + 朗拉香切多吉 + 杰万香切仁钦
+#   + 达夏热瓦 + 第一宿杭传承 + 第二宿氏传承 + 第三亲子传承
+#   + 扬敦南卡多吉 + 仁真耶哲多吉 + 克主罗珠嘉村
+#   + 贡绕大译师洋彭多吉 + 密主陈列棱珠 + 大译师秋嘉丹真
+#   + 大译师达玛西日 + 后传承谱系至品末
+# Source: source/dudjom/chapter_md/05_远传经幻心.md, lines 2001-2692
+#
+# Spec versions applied:
+#   - entity-taxonomy v0.4
+#   - narrative-layers v0.2
+#   - SKILL_03a v0.1
+#
+# Prescan files processed:
+#   - kg/prescan/ch05_segments/seg21_lines2001-2100.txt (77 candidates)
+#   - kg/prescan/ch05_segments/seg22_lines2101-2200.txt (88 candidates)
+#   - kg/prescan/ch05_segments/seg23_lines2201-2300.txt (57 candidates)
+#   - kg/prescan/ch05_segments/seg24_lines2301-2400.txt (60 candidates)
+#   - kg/prescan/ch05_segments/seg25_lines2401-2500.txt (49 candidates)
+#   - kg/prescan/ch05_segments/seg26_lines2501-2600.txt (75 candidates)
+#   - kg/prescan/ch05_segments/seg27_lines2601-2692.txt (68 candidates)
+#
+# 命名约定:
+#   E_P6xx 人物 | E_S6xx 圣众 | E_N6xx 非人 | E_T6xx 寺院
+#   E_L6xx 地名 | E_B6xx 经典 | E_D6xx 教法 | E_R6xx 仪轨
+#   E_O6xx 法器/圣物 | E_G6xx 集合 | E_C6xx 教派
+#   编号以 6xx 起始，标识第五品 seg6。
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/05_远传经幻心.md
+  source_section: 噶托十三代尾声 → 荣波土秋三位 → 嘎单巴四教子 → 玛尼仁钦 → 康派传承 → 如西绕哦 → 荣索班智达 → 普巴金刚弘扬六派 → 朗拉香切多吉 → 达夏热瓦 → 宿杭传承 → 扬敦南卡多吉 → 仁真耶哲多吉 → 克主罗珠嘉村 → 贡绕大译师洋彭多吉 → 密主陈列棱珠 → 大译师秋嘉丹真 → 大译师达玛西日 → 后传承谱系
+  source_lines: "2001-2692"
+  spec_versions:
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+    skill: SKILL_03a v0.1
+  extracted_entities: 316
+  date: 2026-05-09
+
+# ============================================================
+# 实体
+# ============================================================
+entities:
+
+  # ========== 人物 ==========
+
+  E_P601:
+    name: 哦波克主匝那给都
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [涅译师益西云讷]
+    attainments: []
+    note: "香切嘉村弟子；被授记为涅译师益西云讷化身；精通显密道次第"
+    appearances: [2001]
+
+  E_P602:
+    name: 涅译师益西云讷
+    aliases: []
+    type: 人物.法师
+    specialty: [译师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "哦波克主匝那给都的前世"
+    appearances: [2001]
+
+  E_P603:
+    name: 札哦秋波
+    aliases: [札哦秋杰波瓦]
+    type: 人物.法师
+    specialty: [大成就者, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "哦波克主匝那给都在其面前听受《集密意续》《幻化网》寂猛灌顶"
+    appearances: [2003]
+
+  E_P604:
+    name: 木敦多吉华桑
+    aliases: [莫敦多吉华桑波, 噶托巴莫敦多吉华桑波]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派, 噶托派]
+    manifestation_of: []
+    attainments: []
+    note: "在札哦秋波面前得受《集密意续》；后来为西尼滚秋桑波灌顶"
+    appearances: [2004, 2068]
+
+  E_P605:
+    name: 达隆巴多吉南嘉
+    aliases: [香萨达隆巴多吉南嘉]
+    type: 人物.法师
+    specialty: [大成就者, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "大菩萨；在札哦秋波前得受《集密意续》"
+    appearances: [2005, 2078]
+
+  E_P606:
+    name: 克主益西嘉村
+    aliases: [哦波瓦克主益西嘉村, 哦波克主益西嘉村]
+    type: 人物.法师
+    specialty: [上师, 班智达]
+    origin: ""
+    sect_affiliation: [宁玛派, 噶托派]
+    manifestation_of: []
+    attainments: []
+    note: "使《密藏续颂释》《集密意续》大圆满心界窍诀三部如日轮开显；撰多部注疏"
+    appearances: [2007, 2056]
+
+  E_P607:
+    name: 卡瓦嘎波瓦南卡嘉措
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "克主益西嘉村弟子；造《旧密总义》科判、摄义"
+    appearances: [2015]
+
+  E_P608:
+    name: 根嘎达瓦
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "克主益西嘉村弟子"
+    appearances: [2015]
+
+  E_P609:
+    name: 秀美香色
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "克主益西嘉村弟子"
+    appearances: [2016]
+
+  E_P610:
+    name: 拉敦南卡仁钦
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "克主益西嘉村弟子"
+    appearances: [2016]
+
+  E_P611:
+    name: 空行母业自在母
+    aliases: []
+    type: 人物.空行母
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "为卡瓦嘎波瓦授记往生极乐世界及成佛"
+    appearances: [2019]
+
+  E_P612:
+    name: 单巴德夏
+    aliases: [单巴仁波切]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "弟子称荣波土秋三位"
+    appearances: [2026]
+
+  E_P613:
+    name: 西绕嘉村
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "荣波土秋三位之一；利根顿悟者"
+    appearances: [2026]
+
+  E_P614:
+    name: 西绕华瓦
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "荣波土秋三位之一；利根顿悟者"
+    appearances: [2027]
+
+  E_P615:
+    name: 西绕多吉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "荣波土秋三位之一；利根顿悟者"
+    appearances: [2027]
+
+  E_P616:
+    name: 哲擦刚巴
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "嘎单巴四教子之一；建一百零八座寺院"
+    appearances: [2030]
+
+  E_P617:
+    name: 匝德金厄南卡多吉
+    aliases: [匝德金厄瓦南卡多吉]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "建够觉匝寺；嘎单巴教子"
+    appearances: [2033, 2054]
+
+  E_P618:
+    name: 仲特吉益西
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "匝德金厄南卡多吉弟子；在敦巴旺玖等前得受幻化网和大圆满；传法至卫藏形成康派"
+    appearances: [2033, 2054]
+
+  E_P619:
+    name: 敦巴旺玖
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "传承人物"
+    appearances: [2034, 2055]
+
+  E_P620:
+    name: 木敦嘉华桑给
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "在哲杰地方建寺院弘法；出现木师十三代成就者"
+    appearances: [2035]
+
+  E_P621:
+    name: 玛尼仁钦
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者, 瑜伽士]
+    origin: ""
+    sect_affiliation: [宁玛派, 噶托派]
+    manifestation_of: []
+    attainments: [光蕴身]
+    note: "被革日秋杰旺修认定为汇集大悲心滴之根本的法主；以光蕴身消逝"
+    appearances: [2038]
+
+  E_P622:
+    name: 革日秋杰旺修
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "认定玛尼仁钦为法主并授记"
+    appearances: [2038]
+
+  E_P623:
+    name: 根珠波
+    aliases: []
+    type: 人物.其他
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "革日秋杰旺修的女儿；与玛尼仁钦授记一起在噶托行持密行"
+    appearances: [2039]
+
+  E_P624:
+    name: 珠钦桑哲铭吉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "中期多旺康派；传授给宿释迦炯尼妹妹二人"
+    appearances: [2060]
+
+  E_P625:
+    name: 宿姆格敦波
+    aliases: [宿姆]
+    type: 人物.法师
+    specialty: [瑜伽士, 大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [生圆次第究竟, 实相证悟, 众多禅定门]
+    note: "自性瑜伽母显现；幼年出家为尼；安住尼曼则嘉禅房利益有情"
+    appearances: [2061, 2063]
+
+  E_P626:
+    name: 宿敦释迦西尼
+    aliases: [桑阿朗巴宿敦释迦西尼]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "宿姆格敦波为其灌顶；曾侄"
+    appearances: [2066]
+
+  E_P627:
+    name: 西尼滚秋桑波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "宿敦释迦西尼为其灌顶"
+    appearances: [2067]
+
+  E_P628:
+    name: 穹仓巴彻月罗珠华丹
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "灌顶传承中人物"
+    appearances: [2078]
+
+  E_P629:
+    name: 帮敦嘎玛革日
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "康派灌顶传承"
+    appearances: [2079]
+
+  E_P630:
+    name: 昂强根桑华玖
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "康派灌顶传承"
+    appearances: [2079]
+
+  E_P631:
+    name: 达敦秋嘉丹增
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "康派灌顶传承末端"
+    appearances: [2079]
+
+  E_P632:
+    name: 如西绕哦
+    aliases: [如西绕]
+    type: 人物.法师
+    specialty: [上师, 班智达]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "极广泛弘扬《经·集密意续》《幻化网》自释教；撰《幻化网基道果总纲》《道庄严释》"
+    appearances: [2081, 2087]
+
+  E_P633:
+    name: 如敦赞普
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "如西绕哦最初在其面前听受宿派《经幻心》"
+    appearances: [2082]
+
+  E_P634:
+    name: 拉哲玛贡巴
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "如西绕哦在其座下听受玖派《经·集密意续》《幻化网》"
+    appearances: [2083]
+
+  E_P635:
+    name: 宿秋巴阿阇黎耶秋鸥哲
+    aliases: []
+    type: 人物.法师
+    specialty: [阿阇黎]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "拉哲玛贡巴在其面前闻受宿派《经·集密意续》《幻化网》"
+    appearances: [2084]
+
+  E_P636:
+    name: 努敦
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "卓普巴的弟子；拉哲玛贡巴在其面前闻受《幻化网多释》"
+    appearances: [2085]
+
+  E_P637:
+    name: 卡绕酿波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "努敦在其前闻受过；也在哲班玛白面前闻受过"
+    appearances: [2086]
+
+  E_P638:
+    name: 哲班玛白
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "卡绕酿波在其面前闻受"
+    appearances: [2087]
+
+  E_P639:
+    name: 索达玛桑
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "哲班玛白在其面前闻受"
+    appearances: [2088]
+
+  E_P640:
+    name: 兰释迦桑波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "中期法源；如西绕有由此传下的传承"
+    appearances: [2090]
+
+  E_P641:
+    name: 酿那多巴
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "拉吉涅热瓦的弟子；如西绕有由此传下的传承"
+    appearances: [2091]
+
+  E_P642:
+    name: 荣索班智达
+    aliases: [荣索秋杰桑波, 达玛巴札]
+    type: 人物.法师
+    specialty: [班智达, 译师, 大成就者]
+    origin: 后藏热拉地区隆绒
+    sect_affiliation: [宁玛派]
+    manifestation_of: [美德嘉那革德]
+    attainments: [不忘陀罗尼, 神通, 神变]
+    note: "住世119岁；精通声明因明诸明处；造《密藏续释》(三宝释)等众多论典；前译密法无与伦比的教主"
+    appearances: [2100, 2112, 2155, 2219]
+
+  E_P643:
+    name: 荣万华吉仁波切
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "荣万仁钦赤诚之父"
+    appearances: [2101]
+
+  E_P644:
+    name: 荣万仁钦赤诚
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "荣万华吉仁波切之子；造《因位五现前菩提》仪轨"
+    appearances: [2102]
+
+  E_P645:
+    name: 美德嘉那革德
+    aliases: [美德嘉那]
+    type: 人物.法师
+    specialty: [班智达, 译师]
+    origin: 印度
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "佛法前弘时期班智达；到多康地区修改续部翻译；圆寂后转世为荣索班智达"
+    appearances: [2105]
+
+  E_P646:
+    name: 嘎敦赤诚桑波
+    aliases: [嘎敦钦波]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "荣索班智达幼年在其面前听法；赞荣索'一切法只有他才懂'"
+    appearances: [2113, 2118]
+
+  E_P647:
+    name: 阿底峡尊者
+    aliases: [阿底峡]
+    type: 人物.法师
+    specialty: [班智达, 上师]
+    origin: 印度
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "与荣索班智达会晤时赞叹其为阿匝雅黑行尊者转世"
+    appearances: [2151]
+
+  E_P648:
+    name: 阿匝雅黑行尊者
+    aliases: [黑行尊者]
+    type: 人物.法师
+    specialty: [大成就者, 瑜伽士]
+    origin: 印度
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "阿底峡认定荣索班智达为此尊者转世"
+    appearances: [2152]
+
+  E_P649:
+    name: 降魔金刚
+    aliases: [那南多吉敦珠]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "莲花生大士传承中第二位；噶托金刚座事业相关"
+    appearances: [2157, 2378, 2657]
+
+  E_P650:
+    name: 卡钦华杰旺修
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "莲师传承第三位；明妃卡钦萨将普巴传给哥哥即此人"
+    appearances: [2157, 2247]
+
+  E_P651:
+    name: 单阿匝绕华美多
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "莲师传承第四位"
+    appearances: [2158]
+
+  E_P652:
+    name: 札多吉云讷
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "莲师传承第五位"
+    appearances: [2158]
+
+  E_P653:
+    name: 扬扬云丹札
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "莲师传承第六位"
+    appearances: [2158]
+
+  E_P654:
+    name: 荣万云丹
+    aliases: [荣万云丹仁钦]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "莲师传承第七位；据说直接依止莲花生大士，住世三百年"
+    appearances: [2158, 2255]
+
+  E_P655:
+    name: 荣万赤诚仁波切
+    aliases: [仁钦赤诚]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "荣索班智达的父亲；住世一百五十岁"
+    appearances: [2159, 2257]
+
+  E_P656:
+    name: 贝若札那
+    aliases: []
+    type: 人物.法师
+    specialty: [译师, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "心部窍诀传承第一位"
+    appearances: [2160]
+
+  E_P657:
+    name: 耶札酿波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "贝若札那心部窍诀传承第二位"
+    appearances: [2160]
+
+  E_P658:
+    name: 贡巴绕色大师
+    aliases: [贡巴绕色]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "心部传承第三位"
+    appearances: [2161]
+
+  E_P659:
+    name: 哲香乐坚
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "心部传承第四位"
+    appearances: [2161]
+
+  E_P660:
+    name: 努华丹
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "心部传承第五位"
+    appearances: [2161]
+
+  E_P661:
+    name: 宿万敦
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "心部传承第六位；传荣索班智达"
+    appearances: [2161]
+
+  E_P662:
+    name: 阿如益西炯内
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: 龙塘卓玛
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "具有印度七传承、汉地七师传承的教授"
+    appearances: [2163]
+
+  E_P663:
+    name: 玖如桑嘎奏克
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "阿如益西炯内传法对象"
+    appearances: [2164]
+
+  E_P664:
+    name: 雅宿万敦
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "康派大圆满传承"
+    appearances: [2165]
+
+  E_P665:
+    name: 布玛莫札
+    aliases: []
+    type: 人物.法师
+    specialty: [班智达, 上师]
+    origin: 印度
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "窍诀传承源头之一；传酿当珍桑波、玛·仁钦秋、涅·嘉那革玛绕"
+    appearances: [2166]
+
+  E_P666:
+    name: 酿当珍桑波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "布玛莫札传法对象"
+    appearances: [2166]
+
+  E_P667:
+    name: 玛·仁钦秋
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "布玛莫札传窍诀对象"
+    appearances: [2166]
+
+  E_P668:
+    name: 涅·嘉那革玛绕
+    aliases: [涅嘉那革玛绕]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "布玛莫札传窍诀对象"
+    appearances: [2167]
+
+  E_P669:
+    name: 龙钦巴
+    aliases: [全知龙钦巴, 全知龙钦巴大师, 无垢光尊者, 全知大师]
+    type: 人物.法师
+    specialty: [班智达, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "在丹山洞闻法；注释《遣除十方黑暗》解释乘王之宗"
+    appearances: [2098, 2172]
+
+  E_P670:
+    name: 多敦桑给
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "荣索班智达幼年在其面前听闻前译教法"
+    appearances: [2176]
+
+  E_P671:
+    name: 够热译师
+    aliases: [够热译师比丘秋杰西绕]
+    type: 人物.法师
+    specialty: [译师, 比丘]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [多闻陀罗尼]
+    note: "初责怪荣索后生信依止；在荣索前听受《文殊秘密续》等众多法要"
+    appearances: [2195, 2225]
+
+  E_P672:
+    name: 支那班智达
+    aliases: [大支那巴]
+    type: 人物.法师
+    specialty: [班智达]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "够热译师在其处得印度法本"
+    appearances: [2201]
+
+  E_P673:
+    name: 玛尔巴秋杰旺修
+    aliases: [玛尔巴]
+    type: 人物.法师
+    specialty: [译师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "顶礼荣索班智达之足"
+    appearances: [2204]
+
+  E_P674:
+    name: 古大译师
+    aliases: []
+    type: 人物.法师
+    specialty: [译师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "赞叹荣索班智达；弟子传承十七大译师之一"
+    appearances: [2220, 2225]
+
+  E_P675:
+    name: 宿杰白
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [金刚橛成就]
+    note: "荣索班智达亲子传承"
+    appearances: [2223]
+
+  E_P676:
+    name: 波白
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [金刚橛成就]
+    note: "荣索班智达亲子传承"
+    appearances: [2223]
+
+  E_P677:
+    name: 莲花生大士
+    aliases: [莲师, 邬金堪布班玛桑巴瓦, 邬金佛父佛母]
+    type: 人物.法师
+    specialty: [上师, 大成就者]
+    origin: 邬金
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "前译教法根本祖师；普巴金刚传承来源；伏藏法埋藏者"
+    appearances: [2231, 2236, 2310, 2318]
+
+  E_P678:
+    name: 赤松德赞
+    aliases: []
+    type: 人物.帝王
+    specialty: []
+    origin: 西藏
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "君王派普巴灌顶接受者"
+    appearances: [2236]
+
+  E_P679:
+    name: 卡钦萨
+    aliases: [明妃卡钦萨, 明妃觉母]
+    type: 人物.王妃
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [金刚橛成就]
+    note: "明妃派普巴传承主；在南方门卡那让狮子堡山洞修行成就"
+    appearances: [2237, 2239, 2246, 2312]
+
+  E_P680:
+    name: 玖如萨
+    aliases: []
+    type: 人物.法师
+    specialty: [瑜伽士]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "嘉姆派传承；直接依止莲师但灌顶未在上师前得受；后由益西措嘉教授"
+    appearances: [2250]
+
+  E_P681:
+    name: 益西措嘉
+    aliases: [益西措嘉空行母]
+    type: 人物.空行母
+    specialty: [上师, 大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "教授玖如萨普巴法；嘉姆派传承来源"
+    appearances: [2252]
+
+  E_P682:
+    name: 昆勒旺波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派, 萨迦派]
+    manifestation_of: []
+    attainments: []
+    note: "莲花生大士高足；萨派普巴由此次第传下"
+    appearances: [2268]
+
+  E_P683:
+    name: 哲阿匝绕萨列
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "黑尊普巴传承；邬金佛父佛母传法对象"
+    appearances: [2259]
+
+  E_P684:
+    name: 朗拉香切多吉
+    aliases: [朗拉]
+    type: 人物.法师
+    specialty: [大成就者, 瑜伽士]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [普巴上下事业成就]
+    note: "黑尊普巴传承；幼年失父母受叔伯虐待；修普巴降伏叔伯；以下事业降伏著称"
+    appearances: [2259, 2275]
+
+  E_P685:
+    name: 雅卓巴革日扬达
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "黑尊普巴传承终端"
+    appearances: [2260]
+
+  E_P686:
+    name: 哲阿匝绕尼热
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [长寿成就]
+    note: "益西措嘉亲传弟子；获寿自在持明"
+    appearances: [2262, 2265]
+
+  E_P687:
+    name: 帕巴仁波切
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "一直没有得到下事业降伏灌顶传承；委托罗哦译师寻找"
+    appearances: [2263]
+
+  E_P688:
+    name: 罗哦译师
+    aliases: []
+    type: 人物.法师
+    specialty: [译师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "受帕巴仁波切委托携黄金寻阿匝绕尼热"
+    appearances: [2266]
+
+  E_P689:
+    name: 格西绕译师
+    aliases: [绕译师]
+    type: 人物.法师
+    specialty: [译师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "有权有势；以大威德猛咒降伏他人；被朗拉香切多吉以普巴法击败"
+    appearances: [2280, 2289]
+
+  E_P690:
+    name: 德巴嘉扬楚
+    aliases: []
+    type: 人物.法师
+    specialty: [伏藏师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "从瓷桶伏藏中取出大威德类"
+    appearances: [2282]
+
+  E_P691:
+    name: 玛尔巴之子达玛多德
+    aliases: [达玛多德]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "十三位菩萨之一；被绕译师降伏"
+    appearances: [2287]
+
+  E_P692:
+    name: 那南西绕赤诚
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "朗拉尊者主要弟子之一"
+    appearances: [2299]
+
+  E_P693:
+    name: 杰万香切仁钦
+    aliases: [杰江吉, 倒墙者]
+    type: 人物.法师
+    specialty: [大成就者, 瑜伽士]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [金刚橛威力]
+    note: "朗拉弟子；房屋田地被叔伯抢夺；修普巴使墙倒塌杀敌"
+    appearances: [2302]
+
+  E_P694:
+    name: 让革章普哦古
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "朗拉弟子"
+    appearances: [2300]
+
+  E_P695:
+    name: 哦耶如波酿那
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "朗拉弟子"
+    appearances: [2300]
+
+  E_P696:
+    name: 美尼嘉瓦酿波
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [金刚橛成就]
+    note: "将金刚橛指向乌鸦使之坠落"
+    appearances: [2313]
+
+  E_P697:
+    name: 罗华戒罗珠
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [金刚橛成就]
+    note: "把金刚橛插入军兵茅屋使门军惨败"
+    appearances: [2314]
+
+  E_P698:
+    name: 达夏热瓦
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者, 瑜伽士]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [金刚橛成就, 亲见莲师]
+    note: "在觉母那嘉上山洞修行亲见莲师；从益波色瓦隆取金刚橛伏藏"
+    appearances: [2322]
+
+  E_P699:
+    name: 萨迦班智达
+    aliases: []
+    type: 人物.法师
+    specialty: [班智达]
+    origin: ""
+    sect_affiliation: [萨迦派]
+    manifestation_of: []
+    attainments: []
+    note: "与达夏热瓦同行赴金城辩论外道楚雪嘎波"
+    appearances: [2330]
+
+  E_P6100:
+    name: 楚雪嘎波
+    aliases: []
+    type: 人物.其他
+    specialty: []
+    origin: 印度
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "外道；与萨迦班智达辩论失败后不愿皈佛；最终在金城与西藏交界处身亡"
+    appearances: [2338]
+
+  E_P6101:
+    name: 卓钦桑哲多吉
+    aliases: [卓钦桑哲铭吉, 嘉扬桑哲多吉]
+    type: 人物.法师
+    specialty: [金刚持, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "第一宿杭传承起点；传到宿杭姐妹"
+    appearances: [2354, 2397]
+
+  E_P6102:
+    name: 尼波瓦朗卓才旺嘉波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "于扬温寺在宿杭面前听闻；在切瓦传给勒巴华桑"
+    appearances: [2357]
+
+  E_P6103:
+    name: 勒巴华桑
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "秉持尼波瓦传承"
+    appearances: [2358]
+
+  E_P6104:
+    name: 嘉扬仁钦嘉村
+    aliases: [阿里哦则瓦嘉扬仁钦嘉村]
+    type: 人物.法师
+    specialty: [上师]
+    origin: 阿里
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "在勒巴华桑面前听受；为亲子大班智达兄弟灌顶"
+    appearances: [2359]
+
+  E_P6105:
+    name: 仁真勒丹
+    aliases: []
+    type: 人物.法师
+    specialty: [上师, 大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "嘉扬仁钦嘉村弟弟；八岁听受《集密意续》灌顶；住世113年；广大讲修弘法"
+    appearances: [2361]
+
+  E_P6106:
+    name: 杰敦才让旺波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "在涅皇宫得以闻受《集密意续》四圆满灌顶"
+    appearances: [2363]
+
+  E_P6107:
+    name: 喇钦作雄巴涅敦秋嘉多吉
+    aliases: [喇钦作雄巴]
+    type: 人物.法师
+    specialty: [上师, 大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [梵净行成就]
+    note: "以阿里哦色秋、贡绕罗钦、拉尊南卡晋美三位为根本上师"
+    appearances: [2365, 2368]
+
+  E_P6108:
+    name: 芒绕瓦班玛敦珠
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "喇钦作雄巴之父"
+    appearances: [2366]
+
+  E_P6109:
+    name: 南卡哲札桑波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "大圆满师；喇钦作雄巴在其面前又听受"
+    appearances: [2367]
+
+  E_P6110:
+    name: 曼隆巴罗秋多吉
+    aliases: [曼隆巴钦波酿敦罗秋多吉, 酿敦罗秋多吉]
+    type: 人物.法师
+    specialty: [上师, 金刚持]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "喇钦作雄巴为其独传《集密意续》灌顶；精通秋杰旺修伏藏法；第五世达赖喇嘛尊为帝师"
+    appearances: [2058, 2371]
+
+  E_P6111:
+    name: 大译师洋彭多吉
+    aliases: [贡绕大译师洋彭多吉, 贡绕棱珠洋彭多吉]
+    type: 人物.法师
+    specialty: [译师, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [觉受证悟究竟]
+    note: "曼隆巴钦波第一根本上师；三次刻印《宁玛续全集》；六十一岁圆寂"
+    appearances: [2366, 2447]
+
+  E_P6112:
+    name: 仁真吉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "那南多吉敦珠转世"
+    appearances: [2379]
+
+  E_P6113:
+    name: 多吉札仁真秋
+    aliases: [根桑班玛陈列]
+    type: 人物.法师
+    specialty: [上师, 比丘]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [那南多吉敦珠]
+    attainments: [生起次第稳固, 圆满次第自在]
+    note: "仁真吉化身；铁蛇年出于夏那种姓；在第五世达赖喇嘛面前出家受比丘戒；造《集密意续灌顶仪轨坛城海之津梁》；住世七十七年"
+    appearances: [2378]
+
+  E_P6114:
+    name: 嘎玛彭措旺波
+    aliases: [德巴嘎玛彭措旺波]
+    type: 人物.其他
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "多吉札仁真秋之父"
+    appearances: [2380]
+
+  E_P6115:
+    name: 香巴仁真阿革旺波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "多吉札仁真秋能清晰想起前世为此人"
+    appearances: [2380]
+
+  E_P6116:
+    name: 第五世达赖喇嘛
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [格鲁派]
+    manifestation_of: []
+    attainments: []
+    note: "为多吉札仁真秋授出家戒与比丘戒；以诏书劝请造仪轨"
+    appearances: [2375, 2382, 2559]
+
+  E_P6117:
+    name: 宿·秋扬让珠
+    aliases: [大宿·秋扬让珠]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "多吉札仁真秋所依止上师之一"
+    appearances: [2386]
+
+  E_P6118:
+    name: 怙主索南秋单
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "多吉札仁真秋所依止上师之一"
+    appearances: [2386]
+
+  E_P6119:
+    name: 桑吉仁钦
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "卓钦桑哲多吉之子；第三亲子传承"
+    appearances: [2397]
+
+  E_P6120:
+    name: 扬敦南卡多吉
+    aliases: [南当巴]
+    type: 人物.法师
+    specialty: [上师, 大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [风心稳固, 四种事业自在]
+    note: "卓玛巴父子弟子；在得钦卓玛面前听受《集密意续》灌顶"
+    appearances: [2400]
+
+  E_P6121:
+    name: 得钦卓玛
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "有桑吉仁钦亲传；扬敦南卡多吉在其面前听受"
+    appearances: [2405]
+
+  E_P6122:
+    name: 夏莫多吉嘉村
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "扬敦南卡多吉为其灌顶并授讲释教言"
+    appearances: [2408]
+
+  E_P6123:
+    name: 仁真耶哲多吉
+    aliases: [喇嘛哲钦]
+    type: 人物.法师
+    specialty: [大成就者, 瑜伽士]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [究竟觉受证悟, 咒力神威]
+    note: "扬敦南卡多吉授其《集密意续》灌顶；居住卫藏深山静处；主要在达那拉革温寺实修"
+    appearances: [2412]
+
+  E_P6124:
+    name: 克主罗珠嘉村
+    aliases: [东卡措雪]
+    type: 人物.法师
+    specialty: [上师, 大成就者, 比丘]
+    origin: 后藏塔东卡
+    sect_affiliation: [宁玛派]
+    manifestation_of: [涅嘉那革玛绕]
+    attainments: [大圆满自现无偏密意, 风脉明点入中脉, 梦境修炼自如]
+    note: "仁真耶哲多吉传其《集密意续》；精通医方明；依止札巴仁钦等多位成就上师；住世七十三岁以上"
+    appearances: [2421]
+
+  E_P6125:
+    name: 札巴仁钦
+    aliases: [金刚持札巴仁钦]
+    type: 人物.法师
+    specialty: [金刚持, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "克主罗珠嘉村所依止大上师"
+    appearances: [2427]
+
+  E_P6126:
+    name: 永真阿旺札巴
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "克主罗珠嘉村所依止上师"
+    appearances: [2427]
+
+  E_P6127:
+    name: 班朗心子达瓦嘉村
+    aliases: [达瓦嘉村]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "克主罗珠嘉村所依止上师"
+    appearances: [2428]
+
+  E_P6128:
+    name: 月波朗巴
+    aliases: [伏藏大师月波朗巴]
+    type: 人物.法师
+    specialty: [伏藏师, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "克主罗珠嘉村所依止上师"
+    appearances: [2428]
+
+  E_P6129:
+    name: 多吉桑给
+    aliases: []
+    type: 人物.法师
+    specialty: [大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [不舍肉身飞往空行刹土]
+    note: "克主罗珠嘉村所依止上师"
+    appearances: [2429]
+
+  E_P6130:
+    name: 密主陈列棱珠
+    aliases: [持明陈列棱珠, 邬金才佩]
+    type: 人物.法师
+    specialty: [上师, 金刚持]
+    origin: 恰香切朗
+    sect_affiliation: [宁玛派]
+    manifestation_of: [大努桑吉益西]
+    attainments: [生起次第光明触见相, 圆满次第证悟实相, 现有任运光明]
+    note: "贡绕大译师传法对象；父为牛敦大智者多昂丹真；阴铁猪年出生；五十二岁水虎年圆寂"
+    appearances: [2473]
+
+  E_P6131:
+    name: 多昂丹真
+    aliases: [牛敦大智者成就者多昂丹真]
+    type: 人物.法师
+    specialty: [上师, 大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠之父"
+    appearances: [2475]
+
+  E_P6132:
+    name: 大努桑吉益西
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠被认定为此人转世"
+    appearances: [2474]
+
+  E_P6133:
+    name: 则拉嘉措
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠在其面前出家"
+    appearances: [2481]
+
+  E_P6134:
+    name: 化身赤诚多吉
+    aliases: [赤诚多吉]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠所依止上师之一"
+    appearances: [2483]
+
+  E_P6135:
+    name: 拉吉根桑南嘉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠所依止上师"
+    appearances: [2484]
+
+  E_P6136:
+    name: 哲札桑波
+    aliases: [大圆满行者哲札桑波]
+    type: 人物.法师
+    specialty: [瑜伽士, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠所依止上师"
+    appearances: [2484]
+
+  E_P6137:
+    name: 温龙巴赤诚嘉村
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠所依止上师"
+    appearances: [2484]
+
+  E_P6138:
+    name: 赤月诺吾秋丹
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠所依止上师"
+    appearances: [2485]
+
+  E_P6139:
+    name: 札巴秋扬
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "新派法脉继承人；密主陈列棱珠所依止"
+    appearances: [2485]
+
+  E_P6140:
+    name: 伏藏大师杰美多吉
+    aliases: [仁真杰美多吉, 伏藏大师仁真杰美多吉]
+    type: 人物.法师
+    specialty: [伏藏师, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "密主陈列棱珠身语意胜子；伏藏大师法王；前译教法大弘者"
+    appearances: [2507, 2538, 2555, 2616]
+
+  E_P6141:
+    name: 大译师秋嘉丹真
+    aliases: [秋嘉丹真]
+    type: 人物.法师
+    specialty: [译师, 上师]
+    origin: 诶达温波下城
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: [护法神差遣威力]
+    note: "密主陈列棱珠摄受；铁羊年出生；七十八岁土鼠年圆寂"
+    appearances: [2512]
+
+  E_P6142:
+    name: 索南仁钦
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "穹吉华热佛学院住持；为秋嘉丹真出家"
+    appearances: [2516]
+
+  E_P6143:
+    name: 努敦札巴旺波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "秋嘉丹真在其面前学习猛咒实践法和黑白历算"
+    appearances: [2521]
+
+  E_P6144:
+    name: 化身秋陈列南嘉
+    aliases: [秋陈列南嘉]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "与持明陈列棱珠同时被迎请到穹吉华山"
+    appearances: [2523]
+
+  E_P6145:
+    name: 拉吉南卡晋美
+    aliases: []
+    type: 人物.法师
+    specialty: [上师, 大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "秋嘉丹真所依止上师之一"
+    appearances: [2529]
+
+  E_P6146:
+    name: 酿敦喇秋多吉
+    aliases: [酿敦罗秋多吉]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "秋嘉丹真在其面前听取声明诗学等知识"
+    appearances: [2531]
+
+  E_P6147:
+    name: 大译师达玛西日
+    aliases: [达玛西日, 阿旺秋华, 丹增嘉扬旺波]
+    type: 人物.法师
+    specialty: [译师, 上师, 比丘]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [耶札酿波]
+    attainments: [大圆满自现无偏密意]
+    note: "伏藏大师杰美多吉之弟；木马年出生；佛教之日；传法培养弟子不可计数；论典十八函"
+    appearances: [2550, 2557]
+
+  E_P6148:
+    name: 滚秋丹增
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "达玛西日在其前再度接受前译东律清净戒传承"
+    appearances: [2562]
+
+  E_P6149:
+    name: 贡塘大班智达西年南嘉
+    aliases: [贡塘大班智达]
+    type: 人物.法师
+    specialty: [班智达]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "达玛西日在其面前学声明声律学文字语言学"
+    appearances: [2568]
+
+  E_P6150:
+    name: 德巴敦哲旺嘉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "达玛西日在其面前听受黑白历算元音数术"
+    appearances: [2570]
+
+  E_P6151:
+    name: 达龙札巴
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "达玛西日在其面前听受绘画文字等"
+    appearances: [2571]
+
+  E_P6152:
+    name: 嘉哲丹毕尼玛
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "达玛西日兄长；在其面前精通戒律开遮"
+    appearances: [2574]
+
+  E_P6153:
+    name: 善知识桑吉秋达
+    aliases: [桑吉秋达]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "达玛西日在其面前听受《戒律》《俱舍》《般若》讲解"
+    appearances: [2576]
+
+  E_P6154:
+    name: 克主秋炯嘉灿
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "达玛西日在其面前听受甚深内义讲解"
+    appearances: [2578]
+
+  E_P6155:
+    name: 持明班玛陈列
+    aliases: []
+    type: 人物.法师
+    specialty: [上师, 金刚持]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "达玛西日在其面前听受《时轮金刚》圆满灌顶"
+    appearances: [2589]
+
+  E_P6156:
+    name: 阿旺根嘎札西
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [萨迦派]
+    manifestation_of: []
+    attainments: []
+    note: "具德萨迦巴大师；达玛西日授其新伏藏圆满灌顶传承等"
+    appearances: [2600]
+
+  E_P6157:
+    name: 嘉哲仁钦南嘉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [布玛莫札]
+    attainments: []
+    note: "布玛莫札化身；传承达玛西日→嘉哲仁钦南嘉→大堪布邬金丹增多吉"
+    appearances: [2617]
+
+  E_P6158:
+    name: 大堪布邬金丹增多吉
+    aliases: [邬金丹增多吉, 邬金丹真多吉]
+    type: 人物.法师
+    specialty: [堪布, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "大译师转世；从康区噶托白玉西钦竹青到嘉木绒安多果洛分出传承支流"
+    appearances: [2618]
+
+  E_P6159:
+    name: 赤钦陈列南嘉
+    aliases: [至尊陈列南嘉]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [陈列棱珠]
+    attainments: []
+    note: "陈列棱珠化身"
+    appearances: [2623]
+
+  E_P6160:
+    name: 赤班玛旺嘉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [伏藏大师杰美多吉]
+    attainments: []
+    note: "伏藏大师幻化"
+    appearances: [2623]
+
+  E_P6161:
+    name: 赤桑吉根嘎
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [耶札酿波]
+    attainments: []
+    note: "耶札酿波化身"
+    appearances: [2624]
+
+  E_P6162:
+    name: 多昂丹增诺吾
+    aliases: []
+    type: 人物.法师
+    specialty: [上师, 大成就者]
+    origin: 多康江卡
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "居化身智者贤者成就者之首"
+    appearances: [2627]
+
+  E_P6163:
+    name: 杰美番德哦色
+    aliases: [嘉华德瓦尼玛]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [金刚手]
+    attainments: []
+    note: "密主金刚手化身；多昂丹增诺吾传法对象"
+    appearances: [2628]
+
+  E_P6164:
+    name: 持明德达朗巴
+    aliases: [仁真德达朗巴, 德达朗巴, 敏朗仁真德达朗巴]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "大圆满心部界部窍诀大心滴传承起始"
+    appearances: [2631, 2642]
+
+  E_P6165:
+    name: 至尊门杰华卓
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [益西措嘉]
+    attainments: []
+    note: "益西措嘉幻化"
+    appearances: [2631]
+
+  E_P6166:
+    name: 至尊陈列秋卓
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "大圆满传承中陈列南嘉后继"
+    appearances: [2632]
+
+  E_P6167:
+    name: 全知多吉宿则
+    aliases: [蒋扬钦则旺波]
+    type: 人物.法师
+    specialty: [上师, 班智达]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [布玛莫札, 赤松德赞]
+    attainments: []
+    note: "布玛莫札和法王赤松德赞二尊幻化"
+    appearances: [2633]
+
+  E_P6168:
+    name: 仲陈列香切炯内
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [朗卓]
+    attainments: []
+    note: "朗卓幻化；亲自完整赐予能成熟灌顶能解脱教言窍诀"
+    appearances: [2634]
+
+  E_P6169:
+    name: 杰美俄敦旺波
+    aliases: [遍主杰美俄敦旺波]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [贝若札那]
+    attainments: []
+    note: "贝若札那幻化；亲自完整赐予敦珠仁波切能成熟灌顶"
+    appearances: [2634]
+
+  E_P6170:
+    name: 绕那朗巴
+    aliases: [伏藏大师绕那朗巴]
+    type: 人物.法师
+    specialty: [伏藏师, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "汇集所有密续法流"
+    appearances: [2638]
+
+  E_P6171:
+    name: 才旺札巴
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "绕那朗巴亲子；住世一百一十年"
+    appearances: [2638]
+
+  E_P6172:
+    name: 阿旺札
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "才旺札巴弟弟"
+    appearances: [2639]
+
+  E_P6173:
+    name: 佛子阿旺诺吾
+    aliases: [阿旺诺吾]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "续部全集传承"
+    appearances: [2639]
+
+  E_P6174:
+    name: 诺吾荣札
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [布玛莫札]
+    attainments: []
+    note: "布玛莫札幻化"
+    appearances: [2640]
+
+  E_P6175:
+    name: 嘉哲诺吾旺嘉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "续部全集传承"
+    appearances: [2640]
+
+  E_P6176:
+    name: 全知赤诚多吉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "班玛朗巴第三世语化身"
+    appearances: [2641]
+
+  E_P6177:
+    name: 温龙巴嘎旺赤诚嘉灿
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "续部全集传承"
+    appearances: [2641]
+
+  E_P6178:
+    name: 丹增杰美多吉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "班玛朗巴心子达瓦嘉灿第四代转世"
+    appearances: [2642]
+
+  E_P6179:
+    name: 阿旺根桑多吉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "第四世语化身"
+    appearances: [2643]
+
+  E_P6180:
+    name: 杰美秋哲华白
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "第五心子"
+    appearances: [2643]
+
+  E_P6181:
+    name: 班玛敦哲札巴
+    aliases: [金刚持班玛敦哲札巴]
+    type: 人物.法师
+    specialty: [金刚持, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "续部全集传承"
+    appearances: [2644]
+
+  E_P6182:
+    name: 根桑丹毕嘉灿
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "第六世语化身"
+    appearances: [2644]
+
+  E_P6183:
+    name: 瓦卡根桑仁真多吉
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "续部全集传承"
+    appearances: [2644]
+
+  E_P6184:
+    name: 根桑丹毕尼玛
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "第八世语化身"
+    appearances: [2645]
+
+  E_P6185:
+    name: 瓦卡仁真卡色炯珠
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "续部全集传承"
+    appearances: [2645]
+
+  E_P6186:
+    name: 邬金南珠嘉措
+    aliases: [金刚持邬金南珠嘉措]
+    type: 人物.法师
+    specialty: [金刚持, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "续部全集传承"
+    appearances: [2646]
+
+  E_P6187:
+    name: 格敦嘉措
+    aliases: [瑜伽自在舍事者格敦嘉措]
+    type: 人物.法师
+    specialty: [瑜伽士, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "格敦嘉措以大恩大德传给作者(敦珠仁波切)"
+    appearances: [2646]
+
+  E_P6188:
+    name: 嘉滚罗珠塔益
+    aliases: [嘉哲洋彭塔益]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [敏朗伏藏大师]
+    attainments: []
+    note: "仁真德达朗巴传下传承广泛弘扬；敏朗伏藏大师幻化"
+    appearances: [2648, 2673]
+
+  E_P6189:
+    name: 龙萨嘉哲索南德赞
+    aliases: [龙萨酿波]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [降魔金刚]
+    attainments: []
+    note: "降魔金刚转世；依止敏朗伏藏大师再度使佛经教法恢复"
+    appearances: [2658]
+
+  E_P6190:
+    name: 哲美扬炯滚波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [龙萨嘉哲索南德赞]
+    attainments: []
+    note: "龙萨嘉哲索南德赞化身；住持寺院"
+    appearances: [2660]
+
+  E_P6191:
+    name: 持明才旺诺吾
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [南卡酿波]
+    attainments: []
+    note: "南卡酿波幻化"
+    appearances: [2661]
+
+  E_P6192:
+    name: 杰美才旺秋哲
+    aliases: [玛哈班智达杰美才旺秋哲]
+    type: 人物.法师
+    specialty: [班智达]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [涅大译师]
+    attainments: []
+    note: "涅大译师幻化"
+    appearances: [2662]
+
+  E_P6193:
+    name: 司德根则秋杰嘉措
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "后弘时期持教大德"
+    appearances: [2662]
+
+  E_P6194:
+    name: 堪钦仁真阿旺华桑
+    aliases: []
+    type: 人物.法师
+    specialty: [堪布, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [布玛莫札]
+    attainments: []
+    note: "布玛莫札化身"
+    appearances: [2663]
+
+  E_P6195:
+    name: 哲旺竹青巴班玛仁真
+    aliases: []
+    type: 人物.法师
+    specialty: [上师, 大成就者]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [革革燃匝, 布玛莫札]
+    attainments: []
+    note: "共称阿阇黎革革燃匝和布玛莫札双重幻化；在热达金察山谷建竹青寺"
+    appearances: [2666]
+
+  E_P6196:
+    name: 仁真根桑西绕
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: [拉色嘉瓦香切]
+    attainments: []
+    note: "拉色嘉瓦香切幻化；建白玉寺"
+    appearances: [2677]
+
+  E_P6197:
+    name: 嘉滚钦哲旺波
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "发心苏醒弘法"
+    appearances: [2679]
+
+  E_P6198:
+    name: 伏藏大师秋杰朗巴
+    aliases: []
+    type: 人物.法师
+    specialty: [伏藏师, 上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "发心苏醒弘法"
+    appearances: [2680]
+
+  E_P6199:
+    name: 佛子班玛多昂丹增
+    aliases: [班玛多昂丹增]
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "在白玉寺每年连续举行前译教藏法灌顶授教"
+    appearances: [2680]
+
+  E_P6200:
+    name: 邬金多昂秋杰尼玛
+    aliases: []
+    type: 人物.法师
+    specialty: [上师]
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "发心愿力不仰仗他人；教藏法宝库印二十函"
+    appearances: [2684]
+
+  # ========== 圣众 ==========
+
+  E_S601:
+    name: 普巴金刚
+    aliases: [金刚橛]
+    type: 圣众.大乘.本尊
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "普巴金刚弘扬六派；前代大德本尊以普巴金刚为主"
+    appearances: [2229]
+
+  E_S602:
+    name: 大威德金刚
+    aliases: [大威德]
+    type: 圣众.大乘.本尊
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "绕译师以大威德猛咒降伏他人；荣索班智达翻译《大威德金刚》"
+    appearances: [2208, 2281]
+
+  E_S603:
+    name: 文殊菩萨
+    aliases: [文殊]
+    type: 圣众.大乘.菩萨
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "荣索班智达被共称为文殊菩萨化身"
+    appearances: [2121]
+
+  E_S604:
+    name: 金刚童子
+    aliases: []
+    type: 圣众.大乘.本尊
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "如烧铁般金刚童子出现在绕译师头顶"
+    appearances: [2294]
+
+  E_S605:
+    name: 马头明王
+    aliases: []
+    type: 圣众.大乘.本尊
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "马头明王最密法类与普巴伏藏在耶巴"
+    appearances: [2319]
+
+  E_S606:
+    name: 多闻天子
+    aliases: [黄财神]
+    type: 圣众.大乘.护法
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "绕译师从哦塘伏藏品中取出"
+    appearances: [2285]
+
+  E_S607:
+    name: 金刚手
+    aliases: [密主金刚手]
+    type: 圣众.大乘.菩萨
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    attainments: []
+    note: "杰美番德哦色为金刚手化身"
+    appearances: [2628]
+
+  # ========== 非人 ==========
+
+  E_N601:
+    name: 十二地母
+    aliases: []
+    type: 非人.护法(世间)
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    manifestation_of: []
+    subdued_by: ""
+    attainments: []
+    note: "莲师吩咐防止外道入藏，十二地母予以制裁杀楚雪嘎波"
+    appearances: [2346]
+
+  # ========== 寺院 ==========
+
+  E_T601:
+    name: 噶托寺
+    aliases: [噶托金刚座佛学院]
+    type: 寺院.寺庙
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "前译教法一个源头"
+    appearances: [2656]
+
+  E_T602:
+    name: 够觉匝寺
+    aliases: []
+    type: 寺院.寺庙
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "匝德金厄南卡多吉建立"
+    appearances: [2033]
+
+  E_T603:
+    name: 桑耶寺
+    aliases: []
+    type: 寺院.寺庙
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "莲花生大士在桑耶寺传君王派普巴"
+    appearances: [2236]
+
+  E_T604:
+    name: 竹青寺
+    aliases: [修部禅定法洲]
+    type: 寺院.寺庙
+    specialty: []
+    origin: 热达金察山谷
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "哲旺竹青巴班玛仁真建立；前译佛教一个主体"
+    appearances: [2669]
+
+  E_T605:
+    name: 白玉寺
+    aliases: [华境南嘉香切洲]
+    type: 寺院.寺庙
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "仁真根桑西绕建立"
+    appearances: [2678]
+
+  E_T606:
+    name: 达塘白玉寺
+    aliases: [达塘显密讲修洲]
+    type: 寺院.寺庙
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "重新修复"
+    appearances: [2683]
+
+  E_T607:
+    name: 穹吉华热佛学院
+    aliases: []
+    type: 寺院.道场
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "秋嘉丹真在此出家"
+    appearances: [2516]
+
+  E_T608:
+    name: 扬温寺
+    aliases: []
+    type: 寺院.寺庙
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    manifestation_of: []
+    attainments: []
+    note: "尼波瓦朗卓才旺嘉波在此听闻宿杭"
+    appearances: [2357]
+
+  # ========== 地名 ==========
+
+  E_L601:
+    name: 嘉木绒
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "东面；荣波土秋三位弘扬佛法处；传承支流所及"
+    appearances: [2028, 2047, 2619]
+
+  E_L602:
+    name: 擦瓦绒
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "南部"
+    appearances: [2047]
+
+  E_L603:
+    name: 不丹
+    aliases: []
+    type: 地名.国
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "南部前译弘法范围"
+    appearances: [2047]
+
+  E_L604:
+    name: 贡布
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "西部前译弘法范围"
+    appearances: [2047]
+
+  E_L605:
+    name: 后藏热拉地区隆绒
+    aliases: [隆绒]
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "荣索班智达出生地"
+    appearances: [2105]
+
+  E_L606:
+    name: 龙塘卓玛
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "阿如益西炯内出现处"
+    appearances: [2163]
+
+  E_L607:
+    name: 南方门卡那让狮子堡山洞
+    aliases: [门卡那让狮子堡山洞]
+    type: 地名.圣地
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "明妃卡钦萨在此修行成就"
+    appearances: [2240]
+
+  E_L608:
+    name: 库热
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "朗拉在此放羊维生"
+    appearances: [2280]
+
+  E_L609:
+    name: 哦塘
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "绕译师从此处伏藏品取出恶咒等"
+    appearances: [2284]
+
+  E_L610:
+    name: 色甲西
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "杰万香切仁钦在此修两个月达目的"
+    appearances: [2305]
+
+  E_L611:
+    name: 觉母那嘉上山洞
+    aliases: []
+    type: 地名.圣地
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "达夏热瓦修行处"
+    appearances: [2323]
+
+  E_L612:
+    name: 益巴达瓦山洞
+    aliases: []
+    type: 地名.圣地
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "莲师告达夏热瓦去此修行"
+    appearances: [2324]
+
+  E_L613:
+    name: 益波色瓦隆
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "达夏热瓦从此取出金刚橛伏藏"
+    appearances: [2328]
+
+  E_L614:
+    name: 金城
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "萨迦班智达赴此辩论外道"
+    appearances: [2337]
+
+  E_L615:
+    name: 莫札
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "萨迦班智达到此安放金刚橛"
+    appearances: [2349]
+
+  E_L616:
+    name: 涅皇宫
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "嘉扬钦则叔侄祈求处；恩授灌顶"
+    appearances: [2363]
+
+  E_L617:
+    name: 多康江卡
+    aliases: [江卡]
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "多昂丹增诺吾所居"
+    appearances: [2625]
+
+  E_L618:
+    name: 热达金察山谷
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "竹青寺所在"
+    appearances: [2669]
+
+  E_L619:
+    name: 恰香切朗
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "密主陈列棱珠出生地"
+    appearances: [2476]
+
+  E_L620:
+    name: 诶达温波下城
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "大译师秋嘉丹真出生地"
+    appearances: [2513]
+
+  E_L621:
+    name: 耶巴色瓦谷
+    aliases: []
+    type: 地名.圣地
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "莲花生大士伏藏普巴及马头明王最密法类处"
+    appearances: [2319]
+
+  E_L622:
+    name: 丹山洞
+    aliases: []
+    type: 地名.圣地
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "《幻化网自释》逐渐出现；龙钦巴在此闻法"
+    appearances: [2098]
+
+  E_L623:
+    name: 达多朗
+    aliases: [达多朗静处]
+    type: 地名.修行处
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "秋嘉丹真前世寺院；七十八岁在此圆寂"
+    appearances: [2515, 2543]
+
+  E_L624:
+    name: 后藏塔东卡
+    aliases: [塔东卡]
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "克主罗珠嘉村出生地"
+    appearances: [2424]
+
+  E_L625:
+    name: 曼卡南哲洲
+    aliases: []
+    type: 地名.区域
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "多吉札仁真秋铁蛇年在此出生"
+    appearances: [2379]
+
+  # ========== 经典 ==========
+
+  E_B601:
+    name: 集密意续
+    aliases: [经·集密意续, 上师密集续]
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "核心密续；灌顶传承贯穿全段；由康巴派传到卫藏"
+    appearances: [2003, 2005, 2052, 2392, 2596]
+
+  E_B602:
+    name: 幻化网
+    aliases: [寂猛幻化网, 寂静幻化网]
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "核心密续；与集密意续并列弘扬"
+    appearances: [2003, 2034, 2052, 2081]
+
+  E_B603:
+    name: 密藏续
+    aliases: [密藏续颂释]
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主益西嘉村作注释科判摄义；荣索班智达作三宝释"
+    appearances: [2007, 2009, 2171, 2594]
+
+  E_B604:
+    name: 道庄严
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主益西嘉村作注疏注解；如西绕哦作释"
+    appearances: [2010, 2017, 2092]
+
+  E_B605:
+    name: 寂猛普巴教释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主益西嘉村撰著"
+    appearances: [2009]
+
+  E_B606:
+    name: 巴卡
+    aliases: []
+    type: 经典.教言集
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主益西嘉村作注解"
+    appearances: [2010]
+
+  E_B607:
+    name: 心滴
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主益西嘉村作注解"
+    appearances: [2011]
+
+  E_B608:
+    name: 开显誓言
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主益西嘉村对其作注释《明镜论》"
+    appearances: [2011]
+
+  E_B609:
+    name: 明镜论
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "对《开显誓言》的注释"
+    appearances: [2011]
+
+  E_B610:
+    name: 乘总纲
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "单巴仁波切所造；克主益西嘉村作注释"
+    appearances: [2013]
+
+  E_B611:
+    name: 会供讲解
+    aliases: []
+    type: 经典.教言集
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主益西嘉村撰写"
+    appearances: [2014]
+
+  E_B612:
+    name: 旧密总义
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "卡瓦嘎波瓦造科判摄义"
+    appearances: [2017]
+
+  E_B613:
+    name: 心部十八母子续
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "灌顶由噶托派传承开始"
+    appearances: [2070, 2075]
+
+  E_B614:
+    name: 灌顶仪轨甘怡源流
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "莫敦多吉华桑波所造"
+    appearances: [2070]
+
+  E_B615:
+    name: 幻化网多释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "拉哲玛贡巴在努敦面前闻受"
+    appearances: [2085]
+
+  E_B616:
+    name: 幻化网自释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "在丹山洞逐渐出现"
+    appearances: [2098]
+
+  E_B617:
+    name: 幻化网基道果总纲
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "如西绕哦撰写"
+    appearances: [2092]
+
+  E_B618:
+    name: 道庄严释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "如西绕哦撰写"
+    appearances: [2092]
+
+  E_B619:
+    name: 因位五现前菩提
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣万仁钦赤诚所造仪轨"
+    appearances: [2102]
+
+  E_B620:
+    name: 三宝释
+    aliases: [密藏续释·三宝释]
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达所著《密藏续释》因开头有'三宝自性菩提心'得名"
+    appearances: [2171, 2173]
+
+  E_B621:
+    name: 遣除十方黑暗
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "全知龙钦巴对密藏续的注释"
+    appearances: [2172]
+
+  E_B622:
+    name: 佛陀平等行续
+    aliases: [平等行续]
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达梦中以此做菜"
+    appearances: [2177]
+
+  E_B623:
+    name: 誓言广解
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达造；宣说殊胜戒学意义"
+    appearances: [2180]
+
+  E_B624:
+    name: 四理十五支
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达造；宣说殊胜定学注释"
+    appearances: [2181]
+
+  E_B625:
+    name: 平等行续释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达造；宣说大圆满见修窍诀"
+    appearances: [2181]
+
+  E_B626:
+    name: 净恶趣续释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达撰著"
+    appearances: [2182]
+
+  E_B627:
+    name: 大威德续释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达撰著"
+    appearances: [2182]
+
+  E_B628:
+    name: 入大乘论
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达所造深义论典；够热译师看后生极大恭敬心"
+    appearances: [2183, 2196]
+
+  E_B629:
+    name: 语言门论
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "荣索班智达撰著注释"
+    appearances: [2134]
+
+  E_B630:
+    name: 文殊秘密续
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "够热译师在荣索班智达前听受"
+    appearances: [2199]
+
+  E_B631:
+    name: 密集续广释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "另说阿匝绕查拉让莫翻译传讲后转世为荣索"
+    appearances: [2110]
+
+  E_B632:
+    name: 真实名经释
+    aliases: [真实名经]
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "塔嘎所著；美德嘉那翻译"
+    appearances: [2107]
+
+  E_B633:
+    name: 文殊具密
+    aliases: [文殊具密续]
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "美德嘉那翻译修法；荣索班智达翻译"
+    appearances: [2107, 2209]
+
+  E_B634:
+    name: 大威德金刚(续)
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "荣索班智达翻译"
+    appearances: [2208]
+
+  E_B635:
+    name: 阎罗黑敌续
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "荣索班智达翻译"
+    appearances: [2209]
+
+  E_B636:
+    name: 胜乐根本续
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "荣索班智达翻译"
+    appearances: [2209]
+
+  E_B637:
+    name: 甘珠尔
+    aliases: []
+    type: 经典.经典集合
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "有人将美德嘉那列入传承祖师"
+    appearances: [2109]
+
+  E_B638:
+    name: 长寿法罪恶满心
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "德巴嘉扬楚从瓷桶伏藏取出一半"
+    appearances: [2283]
+
+  E_B639:
+    name: 普巴涅槃续
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "黑尊普巴派依靠此续"
+    appearances: [2260]
+
+  E_B640:
+    name: 集密意续灌顶仪轨坛城海之津梁
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "多吉札仁真秋经第五世达赖喇嘛诏书劝请所造"
+    appearances: [2392]
+
+  E_B641:
+    name: 宁玛续全集
+    aliases: []
+    type: 经典.经典集合
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "大译师洋彭多吉三次刻印；传承由此遍及康区卫藏"
+    appearances: [2462, 2587]
+
+  E_B642:
+    name: 十七续
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主罗珠嘉村以金粉印刷"
+    appearances: [2442]
+
+  E_B643:
+    name: 布玛心滴
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主罗珠嘉村以金粉印刷；秋嘉丹真亦闻受"
+    appearances: [2442, 2527]
+
+  E_B644:
+    name: 集善逝
+    aliases: [八大法行·集善逝]
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主罗珠嘉村印刷；秋嘉丹真闻受"
+    appearances: [2442, 2527]
+
+  E_B645:
+    name: 观察赎死文
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "克主罗珠嘉村七十三岁撰著"
+    appearances: [2445]
+
+  E_B646:
+    name: 心性休息
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "无垢光尊者论典；秋嘉丹真研学；达玛西日亦学"
+    appearances: [2519, 2575]
+
+  E_B647:
+    name: 时轮金刚
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "达玛西日在持明班玛陈列面前听受圆满灌顶"
+    appearances: [2589]
+
+  E_B648:
+    name: 密藏续巴卡释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "达玛西日在伏藏大师前恭听此与雍敦注疏结合讲解"
+    appearances: [2583]
+
+  E_B649:
+    name: 戒律教理宝藏
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "达玛西日学习"
+    appearances: [2576]
+
+  E_B650:
+    name: 诗学明镜释
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "达玛西日在伏藏大师面前听受"
+    appearances: [2573]
+
+  E_B651:
+    name: 戒律三百颂
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "达玛西日在贡塘大班智达前听受讲解"
+    appearances: [2578]
+
+  E_B652:
+    name: 决定三戒论
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "达玛西日传讲"
+    appearances: [2595]
+
+  E_B653:
+    name: 中观总纲
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "达玛西日在贡塘大班智达前听受讲解"
+    appearances: [2578]
+
+  E_B654:
+    name: 文法三十颂
+    aliases: []
+    type: 经典.论
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "达玛西日学习语言学"
+    appearances: [2569]
+
+  E_B655:
+    name: 根除轮回
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "达玛西日传了五次"
+    appearances: [2597]
+
+  E_B656:
+    name: 普巴剑
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "达玛西日传灌顶"
+    appearances: [2601, 2604]
+
+  E_B657:
+    name: 根除地狱
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "达玛西日传授"
+    appearances: [2604]
+
+  E_B658:
+    name: 一切宗派源流教义·论说晶鉴
+    aliases: []
+    type: 经典.史籍
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "土官所著；作者敦珠仁波切驳斥其中不实说法"
+    appearances: [2650]
+
+  E_B659:
+    name: 持明心滴
+    aliases: []
+    type: 经典.密续
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "达玛西日十二岁在彩粉坛城中听受灌顶"
+    appearances: [2564]
+
+  # ========== 教法 ==========
+
+  E_D601:
+    name: 大圆满
+    aliases: []
+    type: 教法.教法体系
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "心、界、窍诀三部；贯穿全品传承"
+    appearances: [2007, 2064, 2165]
+
+  E_D602:
+    name: 生起次第
+    aliases: []
+    type: 教法.修法元素
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "宿姆格敦波修学；多处修行描述"
+    appearances: [2064, 2389, 2409]
+
+  E_D603:
+    name: 圆满次第
+    aliases: []
+    type: 教法.修法元素
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "宿姆格敦波修学；多处修行描述"
+    appearances: [2064, 2389, 2501]
+
+  E_D604:
+    name: 心部
+    aliases: []
+    type: 教法.教法体系
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "贝若札那窍诀传承之一"
+    appearances: [2007, 2162, 2630]
+
+  E_D605:
+    name: 界部
+    aliases: []
+    type: 教法.教法体系
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "大圆满三部之一"
+    appearances: [2007, 2630]
+
+  E_D606:
+    name: 窍诀部
+    aliases: [窍诀]
+    type: 教法.教法体系
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "大圆满三部之一；大心滴"
+    appearances: [2007, 2630]
+
+  # ========== 教派 ==========
+
+  E_C601:
+    name: 噶托派
+    aliases: []
+    type: 教派.子派
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "噶托十三代祖师传承；寂静幻化网三甚深灌顶保存此派得以恢复"
+    appearances: [2074, 2396]
+
+  E_C602:
+    name: 康派
+    aliases: [多旺康派, 康巴派]
+    type: 教派.子派
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "由仲特吉益西传至卫藏形成；灌顶传承另一流"
+    appearances: [2035, 2060, 2080, 2165]
+
+  E_C603:
+    name: 萨迦派
+    aliases: [萨派]
+    type: 教派.藏传宗派
+    specialty: []
+    origin: ""
+    sect_affiliation: []
+    note: "萨派普巴由昆勒旺波传下；萨迦班智达所属"
+    appearances: [2269]
+
+  E_C604:
+    name: 荣派
+    aliases: [那南派]
+    type: 教派.子派
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "荣索班智达传下普巴派系"
+    appearances: [2254, 2258]
+
+  # ========== 法器圣物 ==========
+
+  E_O601:
+    name: 金刚橛(伏藏)
+    aliases: [色绕金刚橛]
+    type: 法器圣物.圣物
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    note: "达夏热瓦从益波色瓦隆取出；萨迦班智达安放于莫札寺院"
+    appearances: [2328, 2350]
+
+  # ========== 集合 ==========
+
+  E_G601:
+    name: 噶托十三代祖师
+    aliases: []
+    type: 集合.上师集合
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    cardinality: 13
+    members: []
+    note: "三部怙主化身连续不断现身弘扬前译教法"
+    appearances: [2024]
+
+  E_G602:
+    name: 荣波土秋三位
+    aliases: []
+    type: 集合.弟子集合
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    cardinality: 3
+    members: [西绕嘉村, 西绕华瓦, 西绕多吉]
+    note: "单巴德夏弟子；利根顿悟者"
+    appearances: [2026]
+
+  E_G603:
+    name: 嘎单巴四教子
+    aliases: []
+    type: 集合.弟子集合
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    cardinality: 4
+    members: [哲擦刚巴]
+    note: "嘎单巴高足；仅提到哲擦刚巴一位"
+    appearances: [2030]
+
+  E_G604:
+    name: 仲师十三代
+    aliases: []
+    type: 集合.上师集合
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    cardinality: 13
+    members: []
+    note: "继噶托十三代上师后涌现"
+    appearances: [2044]
+
+  E_G605:
+    name: 木师十三代
+    aliases: []
+    type: 集合.上师集合
+    specialty: []
+    origin: ""
+    sect_affiliation: [宁玛派]
+    cardinality: 13
+    members: []
+    note: "依靠木敦嘉华桑给而出现"
+    appearances: [2036]
