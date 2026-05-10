@@ -1,0 +1,843 @@
+# ============================================================
+# 知识图谱关系抽取 -- 第五品 远传经幻心 Seg4 (lines 1201-1600)
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+# 实体引用: kg/entities/ch05-seg4.yaml
+# 提取日期: 2026-05-09
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/05_远传经幻心.md
+  source_lines: "1201-1600"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 78
+  date: 2026-05-09
+
+# ============================================================
+# A. 师承关系 (teacherOf) — 月波尊者弟子群
+# ============================================================
+
+relations:
+
+  - rel_id: RS5S_001
+    type: teacherOf
+    source: 月波尊者
+    target: 达敦觉益
+    specialty: [大圆满, 窍诀]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在七年之间形影不离地依止上师，以三欢喜作承侍"
+    note: 七年依止；学修普作王母子三类等法要；三次得师授愿
+
+  - rel_id: RS5S_002
+    type: teacherOf
+    source: 月波尊者
+    target: 觉索
+    specialty: [心部]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "上师摄受而圆满赐给他心部法要"
+    note: 觉索从小在月波尊者跟前
+
+  - rel_id: RS5S_003
+    type: teacherOf
+    source: 月波尊者
+    target: 玛哈呵波
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "月波尊者的心子有六位"
+    note: 六心子之一
+
+  - rel_id: RS5S_004
+    type: teacherOf
+    source: 月波尊者
+    target: 克巴觉南
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "月波尊者的心子有六位"
+    note: 六心子之一
+
+  - rel_id: RS5S_005
+    type: teacherOf
+    source: 月波尊者
+    target: 为巴觉索
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "月波尊者的心子有六位"
+    note: 六心子之一
+
+  - rel_id: RS5S_006
+    type: teacherOf
+    source: 月波尊者
+    target: 桑敦霍札
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "月波尊者的心子有六位"
+    note: 六心子之一
+
+  - rel_id: RS5S_007
+    type: teacherOf
+    source: 月波尊者
+    target: 尼敦喇嘛
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "月波尊者的心子有六位"
+    note: 六心子之一
+
+  # ============================================================
+  # B. 师承关系 — 达敦觉波/觉益的上师们
+  # ============================================================
+
+  - rel_id: RS5S_008
+    type: teacherOf
+    source: 纽切哦热巴
+    target: 达敦觉波
+    specialty: [出家]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "到了拉吉烂尼察的心子——纽切哦热巴的面前，主仆五人一起入佛门"
+    note: null
+
+  - rel_id: RS5S_009
+    type: teacherOf
+    source: 帕姆哲巴
+    target: 达敦觉波
+    specialty: [道果, 大手印]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在帕姆哲巴面前聆听了道果及大手印"
+    note: 视为根本上师之一
+
+  - rel_id: RS5S_010
+    type: teacherOf
+    source: 哦敦喇嘛察敦
+    target: 达敦觉波
+    specialty: [大手印]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在哦敦喇嘛察敦座下听受刚派大手印的《道情歌集》"
+    note: null
+
+  - rel_id: RS5S_011
+    type: teacherOf
+    source: 桑热卓热
+    target: 达敦觉波
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在桑热卓热面前听受热穹巴的法要"
+    note: null
+
+  - rel_id: RS5S_012
+    type: teacherOf
+    source: 囊敦滚波
+    target: 达敦觉波
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在囊敦滚波面前听闻了大威德、金刚橛等法门"
+    note: null
+
+  - rel_id: RS5S_013
+    type: teacherOf
+    source: 玛敦上师
+    target: 达敦觉益
+    specialty: [灌顶]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "十二岁在玛敦上师面前请求了《胜乐金刚》和《金刚手甘露滴》法门"
+    note: null
+
+  - rel_id: RS5S_014
+    type: teacherOf
+    source: 上师匝
+    target: 达敦觉益
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "从上师匝和色德隆巴那里得受了大圆满教义及教言"
+    note: null
+
+  - rel_id: RS5S_015
+    type: teacherOf
+    source: 色德隆巴
+    target: 达敦觉益
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "从上师匝和色德隆巴那里得受了大圆满教义及教言"
+    note: null
+
+  - rel_id: RS5S_016
+    type: teacherOf
+    source: 吉赞拉
+    target: 达敦觉益
+    specialty: [大手印]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "于父亲的弟子吉赞拉面前听闻了刚派大手印"
+    note: null
+
+  - rel_id: RS5S_017
+    type: teacherOf
+    source: 桑热嘉瑞
+    target: 达敦觉益
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在桑热嘉瑞座下听受了热穹巴法门、美派的《喜金刚》、《具密文殊》…"
+    note: null
+
+  - rel_id: RS5S_018
+    type: teacherOf
+    source: 囊敦觉恰
+    target: 达敦觉益
+    specialty: [金刚橛]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "从囊敦觉恰面前闻受金刚橛法"
+    note: null
+
+  # ============================================================
+  # C. 师承关系 — 觉索
+  # ============================================================
+
+  - rel_id: RS5S_019
+    type: teacherOf
+    source: 拉康巴
+    target: 觉索
+    specialty: [经幻心]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "于是把他交传给拉康巴大师。他在师前完整得受了《经幻心》"
+    note: 月波尊者交传后续教
+
+  # ============================================================
+  # D. 师承关系 — 达敦宿则
+  # ============================================================
+
+  - rel_id: RS5S_020
+    type: teacherOf
+    source: 桑吉温敦
+    target: 达敦宿则
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "达敦宿则是桑吉温敦的弟子"
+    note: null
+
+  # ============================================================
+  # E. 师承关系 — 宿·释迦光
+  # ============================================================
+
+  - rel_id: RS5S_021
+    type: teacherOf
+    source: 嘉卡贡巴
+    target: 宿·释迦光
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他依止嘉卡贡巴上师以后听受了父亲传承的所有法要"
+    note: null
+
+  - rel_id: RS5S_022
+    type: teacherOf
+    source: 阿达酿
+    target: 宿·释迦光
+    specialty: [酿派法要]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "见到阿达酿父子，请求了《八大法行·集善逝》等酿派大多数法要"
+    note: null
+
+  # ============================================================
+  # F. 师承关系 — 达那敦德传承链
+  # ============================================================
+
+  - rel_id: RS5S_023
+    type: teacherOf
+    source: 宿·释迦光
+    target: 达那敦德
+    specialty: []
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "释迦光尊者的弟子达那敦德"
+    note: null
+
+  - rel_id: RS5S_024
+    type: teacherOf
+    source: 达那敦德
+    target: 达释迦佩
+    specialty: []
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "将法要传给达释迦佩"
+    note: null
+
+  - rel_id: RS5S_025
+    type: teacherOf
+    source: 达释迦佩
+    target: 宿·香巴桑给
+    specialty: [密藏续]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "达释迦佩传给香巴桑给……十五岁在哦瓦隆地方于达释迦佩面前听受《密藏续》"
+    note: null
+
+  # ============================================================
+  # G. 师承关系 — 宿·香巴桑给的上师们
+  # ============================================================
+
+  - rel_id: RS5S_026
+    type: teacherOf
+    source: 杰敦哲巴白
+    target: 宿·香巴桑给
+    specialty: [幻化网道次第, 大圆满]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "十九岁在杰敦哲巴白面前听受《幻化网道次第》和大圆满，从而顿然生起证悟"
+    note: null
+
+  - rel_id: RS5S_027
+    type: teacherOf
+    source: 达敦宿则
+    target: 宿·香巴桑给
+    specialty: [幻化网灌顶, 集密意续]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "二十岁在杰敦宿则以后得受了宿派幻化网的外利、内力、密甚深灌顶和《集密意续》的传承"
+    note: 从阿里请来
+
+  - rel_id: RS5S_028
+    type: teacherOf
+    source: 宿隆巴哲土西年
+    target: 宿·香巴桑给
+    specialty: [经部集密意续灌顶, 色派寂猛]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在宿隆巴哲土西年面前得受《经部·集密意续》的灌顶、色派的广中略寂猛法门"
+    note: null
+
+  - rel_id: RS5S_029
+    type: teacherOf
+    source: 塔罗尼玛嘉村
+    target: 宿·香巴桑给
+    specialty: [声明, 因明]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在塔罗尼玛嘉村面前听声明学、因明"
+    note: null
+
+  - rel_id: RS5S_030
+    type: teacherOf
+    source: 卓普阿阇黎华秋
+    target: 宿·香巴桑给
+    specialty: [金刚鬘, 新派]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在卓普阿阇黎华秋面前听受《金刚鬘》……新派广大法门"
+    note: null
+
+  - rel_id: RS5S_031
+    type: teacherOf
+    source: 桑当哲巴华
+    target: 宿·香巴桑给
+    specialty: [道果]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在桑当哲巴华面前听受道果"
+    note: null
+
+  - rel_id: RS5S_032
+    type: teacherOf
+    source: 喇嘛云丹滚
+    target: 宿·香巴桑给
+    specialty: [金刚手, 摧破金刚]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在喇嘛云丹滚面前听《金刚手》和《摧破金刚》"
+    note: null
+
+  - rel_id: RS5S_033
+    type: teacherOf
+    source: 温华钦滚
+    target: 宿·香巴桑给
+    specialty: [护法, 医学, 历算]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在温华钦滚面前听受护法、医学、历算等"
+    note: null
+
+  - rel_id: RS5S_034
+    type: teacherOf
+    source: 刚瓦释迦白
+    target: 宿·香巴桑给
+    specialty: [大威德, 界部]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在刚瓦释迦白面前得受了红黑大威德和界部法要"
+    note: null
+
+  # ============================================================
+  # H. 师承关系 — 雍敦巴
+  # ============================================================
+
+  - rel_id: RS5S_035
+    type: teacherOf
+    source: 宿·香巴桑给
+    target: 雍敦巴
+    specialty: [经幻心, 密藏续]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在宿·香巴桑给面前圆满得受了《经幻心》的窍诀"
+    note: 早期弟子；宿·香巴桑给从刚瓦释迦白听大威德后一直跟随
+
+  - rel_id: RS5S_036
+    type: teacherOf
+    source: 噶玛巴自生金刚
+    target: 雍敦巴
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "成为噶玛巴自生金刚的得意弟子……噶玛巴自生金刚赐大安慰他才开始实修总的窍诀，尤其是大圆满法"
+    note: null
+
+  - rel_id: RS5S_037
+    type: teacherOf
+    source: 布敦仁波切
+    target: 雍敦巴
+    specialty: [时轮金刚]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "成为布敦仁波切的传承弟子后他对《时轮金刚》极其精通"
+    note: 传承弟子（可能非直接）
+
+  - rel_id: RS5S_038
+    type: teacherOf
+    source: 凑巴秋隆巴
+    target: 雍敦巴
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他下半生于凑巴秋隆巴面前受比丘戒"
+    note: null
+
+  # ============================================================
+  # I. 师承关系 — 达那卓玛瓦桑哲多吉
+  # ============================================================
+
+  - rel_id: RS5S_039
+    type: teacherOf
+    source: 宿·香巴桑给
+    target: 达那卓玛瓦桑哲多吉
+    specialty: [幻化网]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在宿·香巴桑给面前广泛闻法，尤其对《幻化网》最为精通"
+    note: 晚期弟子
+
+  - rel_id: RS5S_040
+    type: teacherOf
+    source: 兰涅擦巴索南滚波
+    target: 达那卓玛瓦桑哲多吉
+    specialty: [幻化网灌顶]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在兰涅擦巴索南滚波面前得受幻化网灌顶"
+    note: null
+
+  # ============================================================
+  # J. 师承关系 — 宿·桑波华
+  # ============================================================
+
+  - rel_id: RS5S_041
+    type: teacherOf
+    source: 宿·桑波华
+    target: 弯颜特汗
+    specialty: [灌顶]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在他面前请求了真实九本尊的灌顶和长寿灌顶"
+    note: 皇帝为弟子
+
+  # ============================================================
+  # K. 师承关系 — 宿哈·释迦炯
+  # ============================================================
+
+  - rel_id: RS5S_042
+    type: teacherOf
+    source: 喇嘛根帮巴
+    target: 宿哈·释迦炯
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在喇嘛根帮巴面前受沙弥戒"
+    note: null
+
+  - rel_id: RS5S_043
+    type: teacherOf
+    source: 秋吉索朗札巴
+    target: 宿哈·释迦炯
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在秋吉索朗札巴面前受比丘戒"
+    note: null
+
+  - rel_id: RS5S_044
+    type: teacherOf
+    source: 色桑列钦
+    target: 宿哈·释迦炯
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "依止了色桑列钦、嘉瓦荣、嘉扬桑哲多吉……"
+    note: null
+
+  - rel_id: RS5S_045
+    type: teacherOf
+    source: 嘉瓦荣
+    target: 宿哈·释迦炯
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "依止了色桑列钦、嘉瓦荣、嘉扬桑哲多吉……"
+    note: null
+
+  - rel_id: RS5S_046
+    type: teacherOf
+    source: 嘉扬桑哲多吉
+    target: 宿哈·释迦炯
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "依止了色桑列钦、嘉瓦荣、嘉扬桑哲多吉……"
+    note: null
+
+  - rel_id: RS5S_047
+    type: teacherOf
+    source: 卓钦桑多
+    target: 宿哈·释迦炯
+    specialty: [经集密意续灌顶]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他在卓钦桑多面前听受《经·集密意续》灌顶"
+    note: null
+
+  # ============================================================
+  # L. 师承关系 — 桑吉仁钦嘉村
+  # ============================================================
+
+  - rel_id: RS5S_048
+    type: teacherOf
+    source: 宿哈·释迦炯
+    target: 桑吉仁钦嘉村
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "当他来到宿·释迦炯面前时，宿·释迦炯说'这是我上师之子'而关怀备至"
+    note: 抚养并传法
+
+  - rel_id: RS5S_049
+    type: teacherOf
+    source: 秋库刚
+    target: 桑吉仁钦嘉村
+    specialty: [戒律]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "他在秋库刚面前受近圆戒"
+    note: null
+
+  - rel_id: RS5S_050
+    type: teacherOf
+    source: 桑吉仁钦嘉村
+    target: 古罗益桑则巴
+    specialty: [幻化网寂猛灌顶, 密藏续释, 心滴]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "七十岁那一年，摄受古罗益桑则巴，为他传授了幻化网寂猛灌顶……"
+    note: 传大量灌顶传承及引导
+
+  - rel_id: RS5S_051
+    type: teacherOf
+    source: 旺札巴嘉村
+    target: 桑吉仁钦嘉村
+    specialty: [集密意续, 密藏续传承]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "于旺札巴嘉村前恭敬依止，于是上师传给他《集密意续》等许多灌顶，并传讲《密藏续》等诸多传承"
+    note: 七十二岁铁牛年依止
+
+  # ============================================================
+  # M. 师承关系 — 古云讷华
+  # ============================================================
+
+  - rel_id: RS5S_052
+    type: teacherOf
+    source: 金益堪钦
+    target: 古云讷华
+    specialty: [出家]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在金益堪钦面前出家"
+    note: null
+
+  - rel_id: RS5S_053
+    type: teacherOf
+    source: 噶玛巴德云香巴
+    target: 古云讷华
+    specialty: [菩萨戒]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "于噶玛巴德云香巴前得受菩萨戒并听受六法"
+    note: null
+
+  # ============================================================
+  # N. 亲属关系 (parentOf / siblingOf)
+  # ============================================================
+
+  - rel_id: RS5S_054
+    type: parentOf
+    source: 达敦觉波
+    target: 达敦觉益
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他的儿子——这位达敦觉益"
+    note: null
+
+  - rel_id: RS5S_055
+    type: parentOf
+    source: 达敦觉波
+    target: 觉索
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "达敦觉益的弟弟觉索"
+    note: null
+
+  - rel_id: RS5S_056
+    type: siblingOf
+    source: 达敦觉益
+    target: 觉索
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "达敦觉益的弟弟觉索"
+    note: null
+
+  - rel_id: RS5S_057
+    type: parentOf
+    source: 宿·旺钦哦波
+    target: 释迦怙
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "旺钦哦波果真生了两个儿子，长子取名为释迦怙"
+    note: null
+
+  - rel_id: RS5S_058
+    type: parentOf
+    source: 宿·旺钦哦波
+    target: 宿·释迦光
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "次子取名为释迦光"
+    note: null
+
+  - rel_id: RS5S_059
+    type: siblingOf
+    source: 释迦怙
+    target: 宿·释迦光
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "兄长也是有着神奇之处。弟弟释迦光……"
+    note: null
+
+  - rel_id: RS5S_060
+    type: parentOf
+    source: 达那敦德
+    target: 宿·香巴桑给
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他的儿子就是宿·香巴桑给"
+    note: null
+
+  - rel_id: RS5S_061
+    type: parentOf
+    source: 宿·尼玛桑给
+    target: 达那敦德
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他的父亲名叫宿·尼玛桑给"
+    note: null
+
+  - rel_id: RS5S_062
+    type: parentOf
+    source: 宿·桑波华
+    target: 宿哈·释迦炯
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他的儿子就是宿·释迦炯"
+    note: null
+
+  - rel_id: RS5S_063
+    type: parentOf
+    source: 达那卓玛瓦桑哲多吉
+    target: 桑吉仁钦嘉村
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "按照卓钦波之子族来讲……于父亲五十六岁铁虎年出生"
+    note: 卓玛瓦之子
+
+  - rel_id: RS5S_064
+    type: parentOf
+    source: 古敦炯内多吉
+    target: 古云讷华
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "父亲名叫古敦炯内多吉"
+    note: null
+
+  - rel_id: RS5S_065
+    type: parentOf
+    source: 忽必烈
+    target: 阿热霍嘎
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "忽必烈的弟弟阿热霍嘎"
+    note: 实为兄弟关系（此处用siblingOf更准确）
+
+  - rel_id: RS5S_066
+    type: siblingOf
+    source: 忽必烈
+    target: 阿热霍嘎
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "弟弟阿热霍嘎执掌国土、国王忽必烈没有得到政权而发动战乱"
+    note: null
+
+  # ============================================================
+  # O. 建寺关系 (foundedMonastery)
+  # ============================================================
+
+  - rel_id: RS5S_067
+    type: foundedMonastery
+    source: 达那敦德
+    target: 瓦嘎寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他还建造了瓦嘎寺身语意所依能依"
+    note: null
+
+  - rel_id: RS5S_068
+    type: foundedMonastery
+    source: 宿·桑波华
+    target: 地德宫殿
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在地德宫殿建立密宗"
+    note: 非独立建寺，而是在宫殿中建立密宗道场
+
+  - rel_id: RS5S_069
+    type: foundedMonastery
+    source: 宿哈·释迦炯
+    target: 鸱枭谷寺
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "并建立起规模宏大的讲学院和修行院"
+    note: null
+
+  # ============================================================
+  # P. 著述关系 (authorOf)
+  # ============================================================
+
+  - rel_id: RS5S_070
+    type: authorOf
+    source: 达敦宿则
+    target: 密藏续释
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "成为大智者以后对《密藏续》作了广释"
+    note: 与雍敦巴的密藏续释稍有不同
+
+  - rel_id: RS5S_071
+    type: authorOf
+    source: 雍敦巴
+    target: 明镜疏
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他对《密藏续》作了《明镜疏》"
+    note: null
+
+  - rel_id: RS5S_072
+    type: authorOf
+    source: 雍敦巴
+    target: 显密成佛有别
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "撰著了《显密成佛有别》的论典"
+    note: null
+
+  - rel_id: RS5S_073
+    type: authorOf
+    source: 桑吉仁钦嘉村
+    target: 密藏续大疏
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在四十岁时造了《密藏续大疏》"
+    note: null
+
+  - rel_id: RS5S_074
+    type: authorOf
+    source: 桑吉仁钦嘉村
+    target: 道庄严释
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "对《道庄严》也作了广释"
+    note: null
+
+  - rel_id: RS5S_075
+    type: authorOf
+    source: 宿哈·释迦炯
+    target: 集密意续释
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "他撰著了《集密意续释》等大量论典"
+    note: null
+
+  # ============================================================
+  # Q. 世俗权力/封赐关系 (patronOf)
+  # ============================================================
+
+  - rel_id: RS5S_076
+    type: patronOf
+    source: 忽必烈
+    target: 宿·释迦光
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "封号为（巴式）国师。由于进贡长寿水的功劳，皇帝赏释迦光班霍四十五户的土地"
+    note: 封国师、赏土地、颁布敕书免兵役
+
+  - rel_id: RS5S_077
+    type: patronOf
+    source: 弯颜特汗
+    target: 宿·桑波华
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "赏赐给他银子的官印，十三藏升银子，一百五十匹锦缎"
+    note: null
+
+  - rel_id: RS5S_078
+    type: patronOf
+    source: 弯颜特汗
+    target: 宿·释迦桑给
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "宿巴式之子宿·释迦桑给奉诏而往汉地，得受六十四大升黄金、二十大升白银及内外锦缎二百匹"
+    note: null

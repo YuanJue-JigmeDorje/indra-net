@@ -1,0 +1,807 @@
+# ============================================================
+# 知识图谱事件抽取 — 第五品 远传经幻心 seg3 (lines 801-1200)
+# 覆盖范围: 小宿本传后段（嘉哦岩修行、神变、弟子辩论） +
+#           宿·释迦桑给传法与涅槃 + 杰敦嘉那 + 钦波云丹松 +
+#           螳螂尊者 + 卫巴秀波 + 月波敦则
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用:
+#   E_S3_NNN — kg/entities/ch05-seg3.yaml
+#   E_5NN / E_8NN — kg/entities/ch05-part1.yaml / ch05-part2.yaml
+#
+# confidence: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 小宿嘉哦岩修行段 (lines 801-870) ====================
+
+- event_id: EV_S3_001
+  type: 神变
+  title: 小宿脚离地面一肘高转绕佛塔
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+    - entity: 大宿·释迦炯内
+      role: 见证者
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师看见小宿正在转绕住处门前的一座佛塔，脚离地面一肘高。上师心想，这是一位化身，实在极为稀有"
+  description: 大宿上师目睹小宿飞行转绕佛塔，确认其为化身。
+
+- event_id: EV_S3_002
+  type: 弘法
+  title: 小宿宣讲《集密意续》听法者达三百人
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "于是他开始宣讲《集密意续》，一时间听法者达到三百人"
+  description: 大宿上师说"现在你讲经说法"，小宿开始宣讲《集密意续》。
+
+- event_id: EV_S3_003
+  type: 神变
+  title: 小宿打死两条母狗吃蛆超度之
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+    - entity: 大宿·释迦炯内
+      role: 解释者
+  location: 诶玛多吉波
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿把那两条母狗打死，并吃了蛆……狗尸就变成了供养天女，他又把所有蛆吐出来，结果它们都嗡嗡飞到空中"
+  description: 小宿以不可思议行为超度两条母狗和蛆虫，大宿解释其余人无此能力。
+
+- event_id: EV_S3_004
+  type: 神变
+  title: 小宿脚不沾水渡河取回托巴
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+    - entity: 大宿·释迦炯内
+      role: 考验者
+  location: 香曲河
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "大宿上师依靠神变把托巴抛到河对岸说：'谁能把它拿回来，我就把我的讲经院交付给他。'……小宿脚不沾水到达对岸将托巴取了回来"
+  description: 香曲河暴涨时大宿考验弟子，三位顶尖弟子未能取回，唯小宿成功。
+
+- event_id: EV_S3_005
+  type: 神变
+  title: 小宿腾在一娑罗树高的空中飞行赢得气功比试
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+  location: 札巴禅堂
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "只有小宿腾在一娑罗树高的虚空中飞行，最先到达札巴禅院，由此其余三顶尖弟子也对他心悦诚服"
+  description: 大宿让弟子比试气功，四尖等能脚不沾地而行，唯小宿能腾空飞行。
+
+- event_id: EV_S3_006
+  type: 闭关修行
+  title: 小宿在嘉哦岩闭关十四年
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+  location: 嘉哦岩
+  time_info:
+    text: "闭关十三个整年加上一个年头共十四年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "小宿上师本有在嘉哦岩闭关修行二十四年直到成就虹身的意愿，可是由于出现了两个因缘使他必须出关，以至于只闭关了十三个整年，加上一个年头，共十四年"
+  description: 原计划二十四年成就虹身，因三位不中用弟子失责和大宿临终嘱托而提前出关。
+
+- event_id: EV_S3_007
+  type: 神变
+  title: 小宿降伏地神三兄妹
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+  location: 嘉哦岩
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿依靠起死回生、不可思议的神变降伏了地神三兄妹，他们现出原形而顶礼其足"
+  description: 嘉哦岩修行时地神兴风作浪，小宿以不可思议神变降伏之。
+
+- event_id: EV_S3_008
+  type: 神变
+  title: 小宿修秘密幻化续面见金刚萨埵使塔革山谷遍满金刚萨埵
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+    - entity: 金刚萨埵
+      role: 显现者
+  location: 塔革山谷
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他通过修行《秘密幻化续》中所说的手印禅定修法而面见金刚萨埵，使整个塔革山谷遍满金刚萨埵，获得四大遍处"
+  description: 小宿获四大遍处，身能变水风火地；一切显现呈现金刚萨埵自性。
+
+- event_id: EV_S3_009
+  type: 神变
+  title: 小宿劈蝎子变毗卢遮那佛
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+  location: 嘉哦岩
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "两岁山羊大小的蝎子遍满了他的禅房。小宿现前超越因果的证悟捉住蝎子的两只角，劈成两半……所有蝎子都变成了毗卢遮那佛而消失在空中"
+  description: null
+
+- event_id: EV_S3_010
+  type: 神变
+  title: 小宿将蚂蚁放入嘴中吹出变金刚萨埵飞到空中
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+  location: 嘉哦岩
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿说：'如果你不起信心，那就这么造吧。'说罢将蚂蚁放在嘴里，又噗的一声吹出来，结果它们全部端端正正变成金刚萨埵飞到空中"
+  description: 侍者因小宿用棍子打蚂蚁而不满，小宿以此显示超凡证量。
+
+- event_id: EV_S3_011
+  type: 弘法
+  title: 小宿以大圆满义回答辩论使巴格通弟子成为其弟子
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+    - entity: 巴格通
+      role: 辩论发起者
+    - entity: 玛土香白
+      role: 结果
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "小宿说：'柱子（有法）……你虽然在世间平凡迷乱者前显现为平常的柱子，可是在我大圆满自现无偏义中柱子并不成立。'说完挥动手臂无阻无碍往行柱子"
+  description: 巴格通派智慧锐利僧人辩论，小宿以实证回答并穿行柱子，对方成为弟子名玛土香白。
+
+# ==================== 四柱弟子驳斥小宿段 (lines 873-919) ====================
+
+- event_id: EV_S3_012
+  type: 弘法
+  title: 穹波札色派四位弟子驳斥小宿反被折服
+  participants:
+    - entity: 穹波札色
+      role: 派遣者
+    - entity: 玖敦
+      role: 辩论者
+    - entity: 烂敦夏嘎桑
+      role: 辩论者
+    - entity: 小宿·西绕札巴
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "穹波派他们四位，吩咐说：'去驳斥小宿巴这个邪教者。'……他们四人的雄辩之词被小宿尊者罗睺罗之手般的意义强大威力的答复所遮蔽"
+  description: 穹波札色弟子从法相角度质问大圆满和幻化网教义，小宿以实证义理折服，四人立誓次年依止。
+
+- event_id: EV_S3_013
+  type: 弘法
+  title: 四位弟子次年飞到得香嘉哦巴佛学院成为四柱弟子
+  participants:
+    - entity: 玖敦夏嘎益
+      role: 弟子
+    - entity: 扬康喇嘛
+      role: 弟子
+    - entity: 烂释迦桑波
+      role: 弟子
+    - entity: 达德觉夏嘎够
+      role: 弟子
+    - entity: 小宿·西绕札巴
+      role: 上师
+  location: 玛拉雅大林海
+  time_info:
+    text: "第二年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "宛若有芬芳鲜花的莲园吸引着蜜蜂般，第二年，他们舒展宿缘与善愿的翅膀飞到得香嘉哦巴佛学院玛拉雅大林海，由此便出现了四位顶梁柱的弟子"
+  description: null
+
+- event_id: EV_S3_014
+  type: 弘法
+  title: 穹波札色嫉妒说杀小宿能成佛小宿以沉默和微笑回应
+  participants:
+    - entity: 穹波札色
+      role: 主体
+    - entity: 小宿·西绕札巴
+      role: 被针对者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "气急败坏地说：'像小宿这样持有恶见的人，会把一切众生领入歧途，如果杀了他，定能成佛。'……小宿以沉默作为回答……清晨，小宿在法座上一直笑着"
+  description: 小宿解释穹波札色说杀人成佛正是密宗观点，证明其心底依于密宗法。
+
+- event_id: EV_S3_015
+  type: 神变
+  title: 古译师不由自主向小宿五体投地
+  participants:
+    - entity: 古译师
+      role: 主体
+    - entity: 小宿·西绕札巴
+      role: 被礼拜者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "古译师来到位居列首的小宿面前……不由自主、慌慌忙忙，不作礼的誓言高山已完全销声匿迹，五体的藤树就像粘在地上般恭恭敬敬作五体投地的大礼"
+  description: 古译师规定新派行人不向小宿顶礼，但在法会上不由自主顶礼，说"一到他跟前就只想是吉祥黑日嘎佛"。
+
+- event_id: EV_S3_016
+  type: 弘法
+  title: 小宿每天在三地各传一堂法
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "上午在哦巴隆地方传法，中午在卓普寺传讲，晚上在嘉哦岩传法，在距离十分遥远的地方，他每天都是传三堂法"
+  description: 小宿具广大神变能在光线上行走，故能同日在三处远距离传法。
+
+# ==================== 小宿建殿与涅槃段 (lines 969-988) ====================
+
+- event_id: EV_S3_017
+  type: 建寺造像
+  title: 小宿指使空行建七柱佛殿并塑四十二佛和单坚像
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+  location: 拉则莫
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他在拉则莫地方观看空行母跳舞，以此为缘而指使空行做事，树立起了七根柱子、两根大柱支起的佛殿，被共称为空行佛堂。佛堂内塑造了四十二尊佛陀、单坚护法神"
+  description: null
+
+- event_id: EV_S3_018
+  type: 神变
+  title: 小宿抽打单坚像使之点头动唇
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+    - entity: 单坚护法神
+      role: 对象
+  location: 空行佛堂
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿用衣袖抽打单坚像问：'你能护持佛法吗？'单坚像频频点头。小宿又问：'你能赞扬三宝的威望吗？'单坚像又轻轻动唇"
+  description: null
+
+- event_id: EV_S3_019
+  type: 神变
+  title: 小宿命水神送木料
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 命令者
+    - entity: 创瓦
+      role: 送物者
+  location: 昂吾
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "地神创瓦把柽柳的一根柱子送到河边，在昂吾地方五日沉入水中没有出来。小宿派两位弟子……严厉警告……水神惊惶失措，立即送出水面"
+  description: 玛土香白砍妖树用于佛殿，地神创瓦送柱入水，小宿严厉警告后水神送出。
+
+- event_id: EV_S3_020
+  type: 圆寂
+  title: 小宿六十一岁木虎年在嘉哦岩涅槃
+  participants:
+    - entity: 小宿·西绕札巴
+      role: 主体
+    - entity: 宿·释迦桑给
+      role: 子嗣
+  location: 嘉哦岩
+  time_info:
+    text: "六十一岁木虎年"
+    relative_to: 小宿·西绕札巴
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "小宿尊者于六十一岁木虎年时在嘉哦岩伴随着光芒、大地震动等瑞相而前往密严金刚庄严刹土"
+  description: 临涅槃时应弟子请求以五现前菩提等持迎请金刚手入母胎，生下宿·释迦桑给。
+
+# ==================== 宿·释迦桑给段 (lines 990-1076) ====================
+
+- event_id: EV_S3_021
+  type: 传法
+  title: 宿·释迦桑给从四柱大德处闻经幻心全法
+  participants:
+    - entity: 宿·释迦桑给
+      role: 受者
+    - entity: 达德觉夏嘎够
+      role: 传法者
+    - entity: 玖敦夏嘎益
+      role: 传法者
+    - entity: 扬康喇嘛
+      role: 传法者
+    - entity: 烂释迦桑波
+      role: 传法者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从四顶梁柱大德那里完整地听闻了父亲之法《经幻心》、续窍诀、事业、修法及灌顶。尤其是，在舅舅达德座下深入细致地得受了经部类"
+  description: 十九岁坐床后事业辉煌，迎请上师们圆满求学。
+
+- event_id: EV_S3_022
+  type: 神变
+  title: 单巴桑吉认出宿·释迦桑给为金刚手化身并迎接
+  participants:
+    - entity: 单巴桑吉
+      role: 认定者
+    - entity: 宿·释迦桑给
+      role: 主体
+  location: 当日
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "单巴仁波切亲口说：'今日金刚手菩萨的化身莅临，要去迎接。'……上师说：'要迎接的就是他。'"
+  description: 单巴桑吉准备哈达伞盖迎接，并识别伪装为随从的卓普巴。
+
+- event_id: EV_S3_023
+  type: 神变
+  title: 卓普巴对画师直接显示金刚手形象
+  participants:
+    - entity: 宿·释迦桑给
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "卓普巴安排一位画家绘制金刚手菩萨的画像，当时他对画师说：'要照着我自己这样来画。'他直接显示金刚手的形象"
+  description: 证明"密主亲自降临北方领域弘扬密法"。
+
+- event_id: EV_S3_024
+  type: 弘法
+  title: 卓普巴讲法面容四方呈现被公认为幻化网坛城主代表
+  participants:
+    - entity: 宿·释迦桑给
+      role: 主体
+  location: 卓普寺
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "坐在没有靠背的一个法座上，四周僧众团团环绕，他的面容了然呈现在四面八方，徒众都真正诚信他就是金刚萨埵幻化网坛城主的代表"
+  description: 夏冬五百法师、秋春三百左右、通常上万人听法。
+
+- event_id: EV_S3_025
+  type: 圆寂
+  title: 卓普巴六十一岁木虎年不舍肉身趋向持明果位
+  participants:
+    - entity: 宿·释迦桑给
+      role: 主体
+    - entity: 卓普巴四位敦士
+      role: 见证者
+  location: 卓普达拉热东
+  time_info:
+    text: "六十一岁木虎年"
+    relative_to: 宿·释迦桑给
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "你们不要为我逝去而伤心。我这次不舍肉身而趋向持明果位……他越来越高飞向空中，那首道歌在回荡，最后身体消失无踪"
+  description: 卓普巴与四位敦士在卓普达拉热东顶峰作广大会供后飞升虚空。四敦士痛哭呼唤，上师降回告诫按教诲做。
+
+- event_id: EV_S3_026
+  type: 弘法
+  title: 卓普巴荼毗时天神供养骏马
+  participants:
+    - entity: 宿·释迦桑给
+      role: 荼毗对象
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "荼毗之时，一位相貌端严的少年密咒师将一匹佩有稀奇螺鞍的骏马供上，谁也不知道他从哪里来又去了哪里，因此人们说是天神前来供养"
+  description: 妖魔非人龙类也有供奉，出现人间没有的四种宝珠。
+
+# ==================== 杰敦嘉那段 (lines 1078-1105) ====================
+
+- event_id: EV_S3_027
+  type: 弘法
+  title: 杰敦嘉那九年间遍学般若俱舍中观因明
+  participants:
+    - entity: 杰敦嘉那
+      role: 学者
+    - entity: 穹波札色
+      role: 般若上师
+    - entity: 班善知识
+      role: 俱舍上师
+    - entity: 达巴卡切
+      role: 中观因明上师
+    - entity: 索南益西
+      role: 上师
+  location: null
+  time_info:
+    text: "九年期间"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在穹波札色面前听闻《般若》，在班善知识前听闻《俱舍论》，在达巴卡切面前听闻《中观》、《因明》，也依止了索南益西。九年期间听受佛法而通达无碍"
+  description: null
+
+- event_id: EV_S3_028
+  type: 传法
+  title: 杰敦嘉那在卓普巴前住十一年得受密法
+  participants:
+    - entity: 杰敦嘉那
+      role: 受者
+    - entity: 宿·释迦桑给
+      role: 传法者
+  location: null
+  time_info:
+    text: "三十岁起住十一年"
+    relative_to: 杰敦嘉那
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "三十岁时，前往密主卓普巴面前聆听密法，一住就是十一年"
+  description: 前三年上师只知其名，后因辩论折服众人使卓普巴欢喜，获恩赐全部教授。
+
+- event_id: EV_S3_029
+  type: 弘法
+  title: 杰敦嘉那驳倒嘉尊桑师徒令卓普巴喜悦
+  participants:
+    - entity: 杰敦嘉那
+      role: 辩论者
+    - entity: 嘉尊桑
+      role: 被驳倒者
+    - entity: 宿·释迦桑给
+      role: 欢喜者
+    - entity: 多吉札
+      role: 被开智者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "至尊嘉那将他们通通驳倒，摧毁了他们的慢心，使卓普巴尊者满怀欢喜，又因为使卓普巴的亲生子多吉札打开智慧，令上师更无比喜悦"
+  description: 此后获赐生起次第、圆满次第、大圆满教授及殊胜窍诀连同小字。
+
+- event_id: EV_S3_030
+  type: 传法
+  title: 杰敦嘉那广泛闻法于多位上师
+  participants:
+    - entity: 杰敦嘉那
+      role: 受者
+    - entity: 嘉藏古瓦
+      role: 甘露法上师
+    - entity: 卓达桑
+      role: 摧破金刚法上师
+    - entity: 单巴布芒
+      role: 布派大圆满上师
+    - entity: 觉姆年姆
+      role: 康派大圆满上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在年多的嘉藏古瓦面前得受了甘露法，在年玛的卓达桑面前得受《摧破金刚》、《根本金刚橛》法……在单巴布芒面前得受了布派大圆满，在觉姆年姆面前得受了康派大圆满阿若精髓"
+  description: 成为一切显密续部修法的教主。
+
+- event_id: EV_S3_031
+  type: 神变
+  title: 杰敦嘉那修药师佛时天女围绕坛城融入
+  participants:
+    - entity: 杰敦嘉那
+      role: 修行者
+    - entity: 药师佛
+      role: 显现者
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他在修行药师佛的过程中，从药师佛的宫殿中真实出现天女围绕坛城三匝而融入，这是人们有目共睹的"
+  description: null
+
+- event_id: EV_S3_032
+  type: 圆寂
+  title: 杰敦嘉那五十六岁土蛇年圆寂
+  participants:
+    - entity: 杰敦嘉那
+      role: 主体
+  location: null
+  time_info:
+    text: "五十六岁土蛇年"
+    relative_to: 杰敦嘉那
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在五十六岁土蛇年圆寂"
+  description: null
+
+# ==================== 钦波云丹松段 (lines 1107-1112) ====================
+
+- event_id: EV_S3_033
+  type: 传法
+  title: 钦波云丹松十三年依止叔叔杰敦嘉那学修全部法要
+  participants:
+    - entity: 钦波云丹松
+      role: 受者
+    - entity: 杰敦嘉那
+      role: 传法者
+  location: null
+  time_info:
+    text: "从十一岁起，十三年"
+    relative_to: 钦波云丹松
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "从十一岁起开始求学，十三年依止叔叔，圆满学修了生起次第、圆满次第、大圆满的所有续部、教授、窍诀"
+  description: 火马年诞生；二十四岁时叔叔圆寂，他任住持。
+
+# ==================== 螳螂尊者段 (lines 1114-1126) ====================
+
+- event_id: EV_S3_034
+  type: 闭关修行
+  title: 螳螂尊者在螳螂树岩山修行得殊胜证悟
+  participants:
+    - entity: 螳螂尊者
+      role: 主体
+  location: 友瓦岩山
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "卫巴敦夏来到长有螳螂树的岩山，在泉水边上得到了一些食团，他认为这是好兆头，于是就在那里安住修行，结果生起了殊胜证悟，鬼神也听他差遣"
+  description: 本想去北山找静处，遇单巴友穹瓦建寺后另选螳螂树处修行，得名螳螂尊者。
+
+# ==================== 卫巴秀波段 (lines 1128-1158) ====================
+
+- event_id: EV_S3_035
+  type: 闭关修行
+  title: 卫巴秀波在芒境贡塘七日显现大圆满智慧
+  participants:
+    - entity: 卫巴秀波
+      role: 主体
+  location: 芒境贡塘
+  time_info:
+    text: "七日之内"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他来到芒境贡塘地方，七日之内显现出不可言说的大圆满智慧"
+  description: 卫巴秀波本想去家乡坐床，途中悔悟返回求法，上师赐耳传如意宝教言后实修。
+
+- event_id: EV_S3_036
+  type: 神变
+  title: 卫巴秀波达到无碍穿行土石山岩境界
+  participants:
+    - entity: 卫巴秀波
+      role: 主体
+  location: 芒境贡塘
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "到深山实修，最后达到了无碍穿行土石山岩的境界"
+  description: 从尼泊尔返回高烧不退后下定决心深山实修。
+
+- event_id: EV_S3_037
+  type: 神变
+  title: 卫巴秀波住意热瓦古坡时霹雳不伤
+  participants:
+    - entity: 卫巴秀波
+      role: 主体
+  location: 意热瓦古坡
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "当他住在意热瓦古坡时，床榻上方出现霹雳，也没有受到损伤……'传出声音与空性是无二无别的，霹雳又怎么会有自性呢？'"
+  description: null
+
+- event_id: EV_S3_038
+  type: 圆寂
+  title: 卫巴秀波出关护持寺院十八年后七十岁圆寂
+  participants:
+    - entity: 卫巴秀波
+      role: 主体
+  location: null
+  time_info:
+    text: "七十岁"
+    relative_to: 卫巴秀波
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他出关以后护持寺院十八年，七十岁时圆寂"
+  description: null
+
+# ==================== 月波敦则段 (lines 1160-1199) ====================
+
+- event_id: EV_S3_039
+  type: 弘法
+  title: 桑吉单穹预言后圆寂将趋至持明果位
+  participants:
+    - entity: 桑吉单穹
+      role: 主体
+    - entity: 月波敦则
+      role: 被预言者
+  location: 善戒东寺
+  time_info:
+    text: "月波敦则两岁时"
+    relative_to: 月波敦则
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "当他刚刚到两岁时，父亲做了一个奇特的梦，而对妻子说：'现在我要死了，我死以后也是趋至持明果位，这个儿子将来也是利益他众。'说完就圆寂了"
+  description: null
+
+- event_id: EV_S3_040
+  type: 传法
+  title: 月波敦则三年在螳螂尊者处听受荣派大圆满等法
+  participants:
+    - entity: 月波敦则
+      role: 受者
+    - entity: 螳螂尊者
+      role: 传法者
+  location: null
+  time_info:
+    text: "三年期间"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "三年期间，他认真地听受了荣派大圆满、刚哲、《示密篇》等"
+  description: 月波敦则被母亲送到舅舅螳螂尊者处求学。
+
+- event_id: EV_S3_041
+  type: 传法
+  title: 月波敦则十六岁起在云丹宗前多年学修三次第
+  participants:
+    - entity: 月波敦则
+      role: 受者
+    - entity: 钦波云丹松
+      role: 传法者
+  location: 杰卡寺
+  time_info:
+    text: "十六岁起，安住多年"
+    relative_to: 月波敦则
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "十六岁时，他来到杰卡寺云丹宗面前依止，安住多年以后对生起次第、圆满次第、大圆满了如指掌"
+  description: 唯一修行心部法；听受心部二十四大续部和十四种不同讲法。
+
+- event_id: EV_S3_042
+  type: 弘法
+  title: 月波敦则十六岁开始讲经说法宣讲古派纲要
+  participants:
+    - entity: 月波敦则
+      role: 传法者
+  location: null
+  time_info:
+    text: "十六岁"
+    relative_to: 月波敦则
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他十六岁开始讲经说法，宣讲了古派的纲要，而位于智者之榜首"
+  description: 努曼称赞其如"宝马驹"并赠十一斗青稞。
+
+- event_id: EV_S3_043
+  type: 传法
+  title: 月波敦则在上师拉康巴前住十四年
+  participants:
+    - entity: 月波敦则
+      role: 受者
+    - entity: 拉康巴
+      role: 上师
+  location: null
+  time_info:
+    text: "十四年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他在上师拉康巴面前住了十四年。有时也在舅舅的寺院螳螂寺安住，潜心修行，并稍稍传法"
+  description: null

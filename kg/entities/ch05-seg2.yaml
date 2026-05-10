@@ -1,0 +1,568 @@
+# ============================================================
+# 知识图谱实体抽取 — 第五品 远传经幻心 seg2 (lines 401-800)
+# 覆盖范围: 大宿·释迦炯内弟子团 + 鸱枭谷寺建造 + 黑日嘎像塑造 +
+#           开光法会 + 年修 + 金刚栓神变 + 龙魔兄妹 + 卓普寺建造 +
+#           大宿涅槃 + 小宿本传（出生至投师求法）
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md lines 401-800
+# 提取日期: 2026-05-09
+# 规范: SKILL_03a v0.3 + entity-taxonomy v0.4
+#
+# 跨chunk去重: 引用 kg/entities/ch05-part1.yaml (E_5xx) 和
+#              kg/entities/ch05-part2.yaml (E_8xx)
+# 本 segment 仅收录新发现实体或需要补充的内容
+# ============================================================
+
+# ==================== 新发现实体 — 人物 ====================
+
+# --- 大宿弟子列表（lines 406-408） ---
+
+E_S2_001:
+  name: 哲修江
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: [神变]
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_S2_002:
+  name: 耶修那母
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: [神变]
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_S2_003:
+  name: 杰修释迦嘉
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: [神变]
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_S2_004:
+  name: 宿修多炯
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽���]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: [神变]
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_S2_005:
+  name: 耶修觉白尔
+  aliases: []
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: [神变]
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+E_S2_006:
+  name: 巴修行者索南酿波
+  aliases: ["巴修索南酿波"]
+  type: 人物.法师
+  specialty: [瑜伽士]
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: [神变]
+  note: "大宿一百零八位大修行者之一；获得飞翔虚空等神变"
+  appearances: [407]
+
+# --- 龙魔兄妹（lines 566-584）---
+
+E_S2_007:
+  name: 龙魔妹妹
+  aliases: ["龙妹"]
+  type: 非人.天部
+  sub_type: 龙类
+  specialty: []
+  origin: "雅则札东岩山"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "被小宿以意念勾召；现为白衣女子形象；因忌讳晦气和酸味拒绝作酿酒女；后作札巴禅堂护法神"
+  appearances: [566, 567, 569]
+
+E_S2_008:
+  name: 龙魔兄长
+  aliases: ["龙兄"]
+  type: 非人.天部
+  sub_type: 龙类
+  specialty: []
+  origin: "雅则札东岩山"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "被小宿勾召时现为角尖如两岁山羊大的蝎子；被吩咐作酿酒者；后作札巴禅堂护法神"
+  appearances: [573, 574, 576, 578]
+
+# --- 小宿本传段新人物 ---
+
+E_S2_009:
+  name: 达那牧民
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: "达那"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "二名达那牧民带着松石和铜锅与小宿结伴前往大宿处；不愿吃酒糟菜羹；供品被退还后悻悻离去，对宿氏正法妄加诽谤"
+  appearances: [751, 757, 760]
+  cardinality: 2
+
+E_S2_010:
+  name: 香巴人
+  aliases: []
+  type: 人物.其他
+  specialty: []
+  origin: "香巴"
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "带着铠甲与小宿结伴前往大宿处；吃了少量酒糟；铠甲被上师留下"
+  appearances: [751, 757]
+
+# ==================== 新发现实体 — 圣众 ====================
+
+E_S2_011:
+  name: 帝释
+  aliases: ["帝释天"]
+  type: 圣众.大乘.护法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "鸱枭谷寺护法神殿中有帝释铸像"
+  appearances: [444]
+
+E_S2_012:
+  name: 梵天
+  aliases: []
+  type: 圣众.大乘.护法
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "鸱枭谷寺护法神殿中有梵天铸像"
+  appearances: [444]
+
+E_S2_013:
+  name: 救八难度母
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "鸱枭谷寺前庭走廊壁画中绘有救八难度母"
+  appearances: [447]
+
+E_S2_014:
+  name: 三部怙主
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "鸱枭谷寺前庭走廊壁画中绘有三部怙主"
+  appearances: [448]
+
+E_S2_015:
+  name: 五部如来
+  aliases: []
+  type: 圣众.大乘.佛
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿平时将温色莫南山见为五部如来"
+  appearances: [424]
+
+E_S2_016:
+  name: 因黑日嘎
+  aliases: []
+  type: 圣众.大乘.本尊
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  form_of: E_509
+  attainments: []
+  note: "小宿修真实意本尊时在香地禅房房梁上清楚见到的一面二臂因黑日嘎"
+  appearances: [483]
+
+# ==================== 新发现实体 — 地名 ====================
+
+E_S2_020:
+  name: 也热香地
+  aliases: ["香地"]
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿携眷属前往的修行地；达香河东面半圆形山谷；空行母授记在此修行今生成佛"
+  appearances: [409, 415]
+
+E_S2_021:
+  name: 达香河
+  aliases: []
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "也热香地达香河，空行母授记中提及"
+  appearances: [410]
+
+E_S2_022:
+  name: 珠波
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "三岔路口所在地；大宿在此跳黑日嘎舞"
+  appearances: [628]
+
+E_S2_023:
+  name: 赞普波康山
+  aliases: []
+  type: 地名.自然地理
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿变黑日嘎时左脚踩在赞普波康山巅"
+  appearances: [526]
+
+E_S2_024:
+  name: 酿热
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "施主玛玛永仲札西夫妻所在地方"
+  appearances: [666]
+
+E_S2_025:
+  name: 卓普
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "卓敦巴供养之地；大宿在此建佛殿"
+  appearances: [679]
+
+E_S2_026:
+  name: 莫革隆
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿在此向卓米译师补百两黄金"
+  appearances: [699]
+
+E_S2_027:
+  name: 攀杰康温
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "女修行者耶母母女所在地方；大宿让小宿住在她家"
+  appearances: [787]
+
+E_S2_028:
+  name: 东空
+  aliases: []
+  type: 地名.区域
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "小宿从东空捎口信给妻子"
+  appearances: [743]
+
+# ==================== 新发现实体 — 寺院/修行处 ====================
+
+E_S2_030:
+  name: 卓普寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "大宿在卓普建造的佛殿；有三世佛为主的大小八座佛堂，后院走廊二十根柱子，前庭走廊十六根柱子；建立大佛学院"
+  appearances: [679, 685, 687]
+
+E_S2_031:
+  name: 札巴禅堂
+  aliases: []
+  type: 寺院.修行处
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "龙魔兄妹作为其护法神；大宿涅槃处；若缘起未破则方兴未艾"
+  appearances: [661, 663, 714]
+
+E_S2_032:
+  name: 策普寺
+  aliases: []
+  type: 寺院.寺庙
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "国师噶玛巴预计建造的寺院；以此为譬喻对比大宿的密意"
+  appearances: [692]
+
+# ==================== 新发现实体 — 经典 ====================
+
+E_S2_040:
+  name: 金刚帷幕续
+  aliases: []
+  type: 经典.密续.远传
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿对三传承分支及《金刚帷幕续》十分精通"
+  appearances: [701]
+
+# ==================== 新发现实体 — 教法 ====================
+
+E_S2_050:
+  name: 心部
+  aliases: []
+  type: 教法.教法体系
+  specialty: []
+  vehicle: 阿底瑜伽
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "大宿称'我的心部成为珍宝''我的心部法门实在是摩尼宝珠般的财富'"
+  appearances: [702, 703]
+
+E_S2_051:
+  name: 五道
+  aliases: []
+  type: 教法.修法元素
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿六十一岁时五道功德达到究竟后安住任运持明果位"
+  appearances: [707]
+
+# ==================== 新发现实体 — 法器/圣物 ====================
+
+E_S2_060:
+  name: 吉祥黑日嘎佛像
+  aliases: ["黑日嘎佛像"]
+  type: 法器圣物.佛像
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "大宿亲自塑造；一面二臂；肚脐以上为大宿以密意自现；开光时跳九种舞姿并说话；大宿化光融入其心间；加持力极大；嘉敦释迦益西和宿姆哦波也融入其中"
+  appearances: [515, 544, 546, 548, 609, 610, 718, 723, 724, 727]
+
+E_S2_061:
+  name: 金刚铃
+  aliases: []
+  type: 法器圣物.法器
+  specialty: []
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿涅槃时摇晃金刚铃中身体化光"
+  appearances: [718]
+
+# ==================== 新发现实体 — 集合 ====================
+
+E_S2_070:
+  name: 四十二位寂静本尊
+  aliases: ["寂静本尊"]
+  type: 集合.上师集合
+  specialty: []
+  cardinality: 42
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿在香地多年修行后面见四十二位寂静本尊"
+  appearances: [419]
+
+E_S2_071:
+  name: 五十八位忿怒本尊
+  aliases: ["忿怒本尊"]
+  type: 集合.上师集合
+  specialty: []
+  cardinality: 58
+  origin: ""
+  sect_affiliation: []
+  manifestation_of: []
+  attainments: []
+  note: "大宿在香地修行后面见五十八位忿怒本尊"
+  appearances: [420]
+
+# ==================== 新发现实体 — 仪轨 ====================
+
+E_S2_080:
+  name: 真实意年修
+  aliases: []
+  type: 仪轨.修法
+  specialty: []
+  origin: ""
+  sect_affiliation: [宁玛]
+  manifestation_of: []
+  attainments: []
+  note: "大宿师徒在扬温色莫进行的真实意本尊法年修；百名男女瑜伽行者参加"
+  appearances: [462, 612, 618]
+
+# ==================== 已有实体确认/补充说明 ====================
+# 以下实体已在 ch05-part1.yaml / ch05-part2.yaml 中提取，此处仅注明在本段的出现
+#
+# 已有实体（ch05-part1.yaml）:
+#   E_501 莲花生大士 — 无新出现
+#   E_509 吉祥黑日嘎 — lines 426,485,488,524
+#   E_510 毗卢遮那佛 — lines 441, 455
+#   E_512 释迦牟尼佛 — line 674 (僧人提议为主尊)
+#   E_514 吉祥天女 — line 444
+#   E_515 大佛母 — line 443
+#   E_516 燃灯佛 — line 443
+#   E_517 无量寿佛 — line 446
+#   E_518 法胜菩萨 — line 447
+#   E_519 单坚护法神 — line 444
+#   E_520 持明南卡酿波 — line 485
+#   E_580 大宿·释迦炯内 — 大量出现 (401-720)
+#   E_581 小宿·西绕札巴 — 大量出现 (404-799)
+#   E_582 宿·释迦桑给 — line 459
+#   E_612 桑古西绕嘉波 — lines 405, 634
+#   E_613 美涅穹札 — lines 404, 637
+#   E_614 扬古穹 — lines 405, 637
+#   E_615 匝喇嘛 — line 406
+#   E_616 敦友多吉 — line 522
+#   E_617 扬母云丹坚 — line 416
+#   E_618 札巴温仲巴 — line 418
+#   E_677 嘉哦岩 — lines 401, 415, 643, 709
+#   E_675 扬温色莫 — lines 424, 462, 482
+#   E_676 鸱枭谷寺 — lines 458, 460, 461, 661, 663
+#
+# 已有实体（ch05-part2.yaml）:
+#   E_800 金刚萨埵 — line 674
+#   E_801 玛哈嘎拉 — line 554
+#   E_803 西绕莫波切 — line 674
+#   E_810 玛玛永仲札西 — line 666
+#   E_811 拉嘎则瓦 — line 672
+#   E_812 切墨扬木巴 — line 672
+#   E_813 卓敦巴 — line 679
+#   E_814 卓米译师 — line 688
+#   E_815 噶玛巴 — line 691
+#   E_816 嘉敦释迦益西 — lines 724-725
+#   E_817 玛玖敦丹 — line 727
+#   E_818 宿姆哦波 — line 727
+#   E_820 塔巴卓钦 — line 732
+#   E_821 西绕杰 — line 734
+#   E_822 耶母 — line 787
+
+# ==================== 候选排除说明 ====================
+# 以下 prescan 候选被判定为通用概念，不建独立 entity:
+#
+# - 幻化网 → 已有 E_625 (ch05-part1)
+# - 大菩萨 → 通用修辞，非具名实体
+# - 金刚乘 → 已含在 E_765 前译金刚乘法 (ch05-part1)
+# - 本师 → 释迦牟尼佛的通称 → 已有 E_512
+# - 如来 → 佛的通称
+# - 三部 → 通称（三部怙主已独立提取）
+# - 佛塔 → 通称建筑
+# - 宗派 → 通用概念
+# - 寺院 → 通用概念
+# - 成佛 → 通称动作
+# - 讲经 → 通用动作
+# - 授记说 → 通用动作
+# - 五部 → 已作 E_S2_015（五部如来）
+# - 南山 → 温色莫南山，非独立地名
+# - 转经 → 通用动作
+# - 须弥山 → 比喻用法（"如须弥山般的殿堂"）
+# - 玛拉雅 → 壁画中"玛拉雅刹土"，密法净土但仅壁画提及
+# - 摩登伽女 → 比喻用法
+# - 世间法 → 通用概念
+# - 千尊佛 → 壁画题材，通称
+# - 八大菩萨 → 壁画题材中附属描述
+# - 七佛 → 壁画中的七佛
+# - 集密意续 → 已有 E_625B 经部·集密意续 (ch05-part1)
+# - 大威德 → 已有 E_506 雅门达嘎 (ch05-part1)
+# - 灌顶 → 仪轨通称
+# - 密宗 → 通用概念
+# - 甘露 → 通称/比喻
+# - 威猛 → 通称修辞
+# - 寂静幻化网 → 壁画题材，属幻化网教法的一部分
+# - 金刚结 → 通用法器操作
+# - 佛学院 → 通称，具体者已提取为卓普寺
+# - 前行 → 通用概念
+# - 大寺 → 通称
+# - 三种供养 → 通称
+# - 三世佛 → 壁画/造像题材
+# - 不可思议 → 通用修辞
+# - 化身 → 通用概念
+# - 入佛 → 通称
+# - 写经 → 通用动作
+# - 清净光明身 → 修行境界描述（属性非实体）
+# - 三传承 → 通称，指三传承分支
+# - 牛王 → 比喻用法

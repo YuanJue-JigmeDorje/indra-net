@@ -1,0 +1,1026 @@
+# ============================================================
+# 知识图谱事件抽取 — 第五品 远传经幻心 seg2 (lines 401-800)
+# 覆盖范围: 大宿弟子团 + 空行母授记 + 香地修行 + 鸱枭谷寺建造 +
+#           黑日嘎像塑造 + 开光法会 + 年修比试 + 金刚栓神变 +
+#           龙魔兄妹酿酒 + 卓普寺 + 大宿涅槃 + 小宿本传
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md lines 401-800
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4
+#
+# 实体引用:
+#   E_5xx — kg/entities/ch05-part1.yaml
+#   E_8xx — kg/entities/ch05-part2.yaml
+#   E_S2_xxx — kg/entities/ch05-seg2.yaml
+#
+# confidence: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+# ==================== 大宿弟子团概述段 (lines 401-408) ====================
+
+- event_id: EV_S2_001
+  type: 弘法
+  title: 大宿拥有四位顶尖、最胜顶尖及一百零八位大修行弟子
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 上师
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 见解密意之顶尖
+    - entity: 美涅穹札 (E_613)
+      role: 幻化网讲解之顶尖
+    - entity: 扬古穹 (E_614)
+      role: 智广博学之顶尖
+    - entity: 桑古西绕嘉波 (E_612)
+      role: 修行顶尖
+    - entity: 匝喇嘛 (E_615)
+      role: 最胜顶尖
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "拉吉大宿有四位'顶尖'弟子，加上最胜顶尖，共有五位，还有一百零八位大修行弟子"
+  description: 大宿弟子团结构：四位顶尖+最胜顶尖+一百零八位大修行弟子，全部获得飞翔虚空等神变。
+
+# ==================== 空行母授记段 (lines 409-413) ====================
+
+- event_id: EV_S2_002
+  type: 授记
+  title: 三位空行母授记大宿前往也热香地修行
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 受记者
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "三位空行母来到上师面前授记说：'在也热香地达香河的东面有一个半圆形的山谷……在那里修行，今生就能成佛并将长久利益众生'"
+  description: 三空行母描述也热香地地形特征并授记在此修行今生成佛。
+
+# ==================== 香地修行段 (lines 415-464) ====================
+
+- event_id: EV_S2_003
+  type: 闭关修行
+  title: 大宿师徒在香地多年修行面见寂忿本尊
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 参与者
+    - entity: 扬母云丹坚 (E_617)
+      role: 施主
+    - entity: 札巴温仲巴 (E_618)
+      role: 主要施主
+  location: 也热香地 (E_S2_020)
+  time_info:
+    text: "多年"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "在那里经过多年修行，上师面见四十二位寂静本尊与五十（八）位忿怒本尊"
+  description: 大宿在香地面见寂忿本尊，能与本尊如人晤面般交谈。八山神等非人听其差遣。
+
+- event_id: EV_S2_004
+  type: 神变
+  title: 大宿见鸱枭谷土石全是寂猛尊众
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: 鸱枭谷 (E_676)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "我见到鸱枭谷的土石山岩全是寂猛尊众。尤其是温色莫的这座南山，平时也见为五部如来"
+  description: 大宿自述所见，并决定建寂静本尊殿堂。
+
+# ==================== 鸱枭谷寺建造段 (lines 425-460) ====================
+
+- event_id: EV_S2_005
+  type: 建寺造像
+  title: 大宿·释迦炯内显现为黑日嘎改良凶地
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: 鸱枭谷 (E_676)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "南山形似一只向下爬行的毒蝎，在它的角中间，大宿·释迦炯内显现成吉祥黑日嘎，右脚所踏的地方也印出脚印"
+  description: 大宿显现为黑日嘎在毒蝎形南山改良凶地，建造十万黑日嘎佛像佛塔。
+
+- event_id: EV_S2_006
+  type: 建寺造像
+  title: 鸱枭谷寺经堂建设及佛像壁画全部工程
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主持
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 协助
+  location: 鸱枭谷寺 (E_676)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "经堂顶端有四根柱子的地方，塑造了毗卢遮那佛像为主的寂静尊众……转经室，绘制百瓣莲花等二十三坛城的壁画"
+  description: 经堂塑毗卢遮那佛为主寂静尊，后院绘传承上师壁画，转经室绘二十三坛城，前庭绘千尊佛、无量寿佛等。
+
+- event_id: EV_S2_007
+  type: 神变
+  title: 大宿以脚搓修正木料长短弯曲
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: 鸱枭谷寺 (E_676)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "一根大柱截断得不够长，他示现用脚搓使之长短合适，同样他用脚搓那些弯弯曲曲的柱子，结果都如箭一样笔直"
+  description: 工匠偷工减料致木料参差不齐，大宿以布施心态不动嗔念，用脚搓使木料合适。
+
+- event_id: EV_S2_008
+  type: 建寺造像
+  title: 工匠建"忏悔楼阁"表追悔
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 受益者
+  location: 鸱枭谷寺 (E_676)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "工匠们都追悔莫及，他们用殿堂剩下来的木料造了一座无有围墙而用四根柱子支撑的殊胜门房，称为'忏悔楼阁'"
+  description: 工匠目睹大宿安忍和威力后追悔莫及，建"忏悔楼阁"后用作护法神殿。
+
+- event_id: EV_S2_009
+  type: 神变
+  title: 珠日神山地神骑黑马前来供养黄金
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 受供者
+  location: 珠日神山
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "神山的地神骑着一匹黑马前来，顶礼转绕大宿上师以后说'如果所有佛像镀全金，我可以供养'"
+  description: 大宿需殿堂金顶之金，地神深夜来允诺供全金给佛像镀金。
+
+- event_id: EV_S2_010
+  type: 神变
+  title: 大宿和小宿开光时大显神变进出毗卢遮那佛身
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: 鸱枭谷寺 (E_676)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "大宿、小宿二位尊者大显神变，从诸部之主毗卢遮那佛的头顶进去从心间出来，从心间进去从头顶出来等等"
+  description: 开光仪式上二尊者显现无尽变化，所有工匠深信不疑。
+
+- event_id: EV_S2_011
+  type: 建寺造像
+  title: 工匠以桑耶塔为蓝本建佛塔，寺院命名为鸱枭谷寺
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 受供者
+  location: 鸱枭谷寺 (E_676)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他们以桑耶塔作为蓝本，在吉祥门殿堂的北方建造而供养上师。用上师的名字给寺院起名，于是就叫吉祥鸱枭谷寺"
+  description: 工匠以桑耶塔为蓝本建佛塔供养大宿；寺院以大宿之名命名为吉祥鸱枭谷寺。
+
+- event_id: EV_S2_012
+  type: 神变
+  title: 大宿加持泉眼七天出酥油汁
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: 扬温色莫 (E_675)
+  time_info:
+    text: "七天"
+    relative_to: null
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "酥油已用完而无法供灯，上师加持泉眼在七天之中出酥油汁，酥油汁取之不尽"
+  description: 真实意本尊年修时酥油用完，大宿加持泉眼七天出酥油。
+
+# ==================== 大宿教诫弟众段 (lines 466-480) ====================
+
+- event_id: EV_S2_013
+  type: 弘法
+  title: 大宿教诫不可轻视了知事业者与各乘
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "只要究竟一门便得解脱，一者不可轻视另一者，九乘宗派各居自位，切莫偏执各乘"
+  description: 大宿针对讲法者轻视事业行者的风气，训诫九乘各居自位。
+
+- event_id: EV_S2_014
+  type: 弘法
+  title: 四位顶尖各呈禀对实修道的理解
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 呈禀者
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 提问者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "小宿巴回禀说：'以往耽著习气重，若未修行无止境，实修断定尤重要。暂时障碍如客尘……'"
+  description: 大宿考问四位顶尖对实修的理解，小宿呈禀强调实修断定、朝夕行善、积累资粮三要点。
+
+- event_id: EV_S2_015
+  type: 弘法
+  title: 大宿唱见修行道用道歌
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "上师格外欢喜，于是唱起了见修行道用的道歌：'修行微妙法，道具见修行，见解假立名……'"
+  description: 大宿闻四顶尖呈禀后欢喜唱道歌。
+
+# ==================== 小宿修真实意段 (lines 481-501) ====================
+
+- event_id: EV_S2_016
+  type: 闭关修行
+  title: 小宿在扬温色莫修真实意见因黑日嘎
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: 扬温色莫 (E_675)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿尊者在扬温色莫修行真实意本尊时，看见香地的禅房房梁上，清清楚楚地有一尊一面二臂的因黑日嘎"
+  description: 小宿修真实意本尊时见因黑日嘎，大宿判定其获黑日嘎成就。
+
+- event_id: EV_S2_017
+  type: 神变
+  title: 大宿入黑日嘎等持显现为真正的黑日嘎
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: 狮子岩
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师入于黑日嘎等持中作其姿态时，具有见佛缘分的人，都看见上师就是真正的黑日嘎"
+  description: 大宿在狮子岩顶安住入黑日嘎等持，有缘者见其为真黑日嘎。
+
+# ==================== 塑黑日嘎像段 (lines 491-551) ====================
+
+- event_id: EV_S2_018
+  type: 神变
+  title: 小宿安放八块大磐石为"练力巨石"
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "不用说是用力撑起就是动摇也无能为力的八块大磐石已安放在地基的四面八方，上面用白石灰写着'小宿的练力巨石'"
+  description: 他人嘲讽小宿身材矮胖，小宿独自安放八块巨石于地基四方八面。
+
+- event_id: EV_S2_019
+  type: 神变
+  title: 小宿一呼吸间弄直四根弯曲柱子
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿在一呼吸中作了前俯后仰的一个缘起后柱子变得像箭一样挺直"
+  description: null
+
+- event_id: EV_S2_020
+  type: 建寺造像
+  title: 工匠塑造三面六臂果位黑日嘎像多次返工
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 指挥
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他们就塑造了三面六臂十分精美的果位黑日嘎像……可是上师说'没有按照我面见的造出来，要重新造'。已经返工了多次"
+  description: 工匠塑造黑日嘎像，大宿要求按亲见形象塑造，多次返工。
+
+- event_id: EV_S2_021
+  type: 神变
+  title: 大宿变成真正黑日嘎令工匠昏厥
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 见证者
+    - entity: 敦友多吉 (E_616)
+      role: 侍者
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师已经变成了真正的黑日嘎，头部了然在云雾间，右脚踏在鸱枭谷的黑日嘎岩顶，左脚踩在赞普波康山巅……所有工匠无法堪忍其威力，而失去知觉昏了过去"
+  description: 大宿作会供后显现为一面二臂黑日嘎，身量跨越两山之间，工匠不堪威力昏厥。
+
+- event_id: EV_S2_022
+  type: 神变
+  title: 大宿独自以密意塑成黑日嘎像上半身
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师安住在密意中，泥土全然穷尽，而吉祥黑日嘎肚脐以上的身像自然呈现在面前"
+  description: 大宿遣弟子沐浴转绕后，独自以密意使佛像上半身自然呈现。
+
+# ==================== 开光法会段 (lines 555-610) ====================
+
+- event_id: EV_S2_023
+  type: 神变
+  title: 小宿勾召龙魔妹妹
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+    - entity: 龙魔妹妹 (E_S2_007)
+      role: 被勾召者
+  location: 雅则札东岩山
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "住在雅则札东岩山处的龙魔妹妹被小宿用意念勾召过来，结果出现了一条小蛇。小宿作看式，使它变成一个白衣女子"
+  description: 小宿用意念勾召龙魔妹妹，使小蛇变白衣女子。龙妹因忌讳晦气酸味拒绝酿酒。
+
+- event_id: EV_S2_024
+  type: 神变
+  title: 小宿勾召龙魔兄长为酿酒者
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+    - entity: 龙魔兄长 (E_S2_008)
+      role: 被勾召者
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 降伏者
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿胸有成竹地说'能勾召'。说完眼作看式，结果出现一只角尖如两岁山羊大的蝎子。小宿通过禅定指向，使它现出原形"
+  description: 小宿勾召龙兄（蝎子形），大宿降伏二龙守誓言，令龙兄酿酒。
+
+- event_id: EV_S2_025
+  type: 神变
+  title: 大宿加持六升青稞酿出取之不尽的酒
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+    - entity: 龙魔兄长 (E_S2_008)
+      role: 协助
+    - entity: 龙魔妹妹 (E_S2_007)
+      role: 协助
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "灌注六升青稞的所有醪糟……将龙魔兄妹放在里面，瓮口用上师的咒士衣塞上……龙类汇集各方面所有酒的精华，使得酒取之不尽、用之不竭"
+  description: 大宿以三层酿酒大瓮放龙魔兄妹，用咒士衣塞口打金刚结，酒取之不尽。
+
+- event_id: EV_S2_026
+  type: 神变
+  title: 大宿以一勺糌粑使口袋满满当当
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师作了一个食子说'在所有口袋里都放一勺糌粑'……结果第二天所有的口袋里的糌粑都是满满当当"
+  description: 开光准备中大宿以神变增殖糌粑。
+
+- event_id: EV_S2_027
+  type: 神变
+  title: 大宿超度札巴温村落牛群
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 协助者
+  location: 札巴温
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "大宿进入境界中意念，一座间就超度了，结果所有牛顿时倒身亡命"
+  description: 大宿以意念一座间超度所有牛作开光肉供。
+
+- event_id: EV_S2_028
+  type: 神变
+  title: 小宿令牛起死回生
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿把牛皮套在骨架上，又将所有内脏装进去，盖上法衣，弹一声响指，顷刻间所有的牛开始颤动，慢慢地站立起来"
+  description: 小宿将骨架套皮装内脏后弹指复活所有牛。一头因老妇弄断肋骨节致肋骨塌陷。
+
+- event_id: EV_S2_029
+  type: 神变
+  title: 吉祥黑日嘎佛像开光时跳九种舞姿说话
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主持
+    - entity: 吉祥黑日嘎佛像 (E_S2_060)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "大宿上师也格外欢喜，看着吉祥黑日嘎像说'令广泛利益众生'。结果佛像跳起九种舞姿，说道'嘿嘿，那还用说'"
+  description: 大宿对佛像发愿后佛像跳九舞开口回应，此后面容从威猛相变为微笑。
+
+# ==================== 年修比试段 (lines 612-627) ====================
+
+- event_id: EV_S2_030
+  type: 修行
+  title: 百名瑜伽行者进行真实意本尊年修
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主持
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 参与者
+  location: null
+  time_info:
+    text: "为期一年"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "百名左右的男女瑜伽行者聚集一起……于是众人开始进行为期一年的修行"
+  description: 大宿分每人一托巴酒、鹅蛋大食团、少许誓言肉后开始年修。
+
+- event_id: EV_S2_031
+  type: 修行
+  title: 四位顶尖较量修行境界、小宿空中安住
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+    - entity: 桑古西绕嘉波 (E_612)
+      role: 参与者
+    - entity: 美涅穹札 (E_613)
+      role: 参与者
+    - entity: 扬古穹 (E_614)
+      role: 参与者
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "四位顶尖全部入定。其余三位如如不动的境界犹如高山……小宿已达到了无偏大平等的境地，为了表示见解的高超，他还在一马车高的空中安住"
+  description: 大宿令四顶尖比试禅定；小宿在空中安住表示见地最高。
+
+- event_id: EV_S2_032
+  type: 神变
+  title: 小宿念咒声不减远近
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师接着又说'现在小宿要念诵密咒，到外面远处去听'……发现声音并没有变得比前面低。又越过一个山脚去听，结果依然如故"
+  description: 大宿令小宿念咒令人远听，越山后声音依旧。大宿赞叹众人"连小宿影子也绝不能跨越"。
+
+# ==================== 金刚栓神变段 (lines 628-640) ====================
+
+- event_id: EV_S2_033
+  type: 神变
+  title: 大宿跳黑日嘎舞脚踝没入岩石
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: 珠波 (E_S2_022)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师兴致勃勃，在'金刚栓'岩石上，跳起黑日嘎舞。结果脚踝骨以下如踏淤泥般没入岩石"
+  description: 年修结束后师徒至珠波三岔路口，大宿在金刚栓岩石跳舞留足印。
+
+- event_id: EV_S2_034
+  type: 神变
+  title: 小宿顶礼足印留下发髻耳饰印迹
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: 珠波 (E_S2_022)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿说'我的上师是真佛，所以要以头顶戴其足'。接着顶礼脚印，结果他的发髻连同耳饰的印迹都清清楚楚地呈现在岩石上"
+  description: null
+
+- event_id: EV_S2_035
+  type: 神变
+  title: 桑古西嘉五指幻化五大力士竖立金刚栓岩石
+  participants:
+    - entity: 桑古西绕嘉波 (E_612)
+      role: 主体
+  location: 珠波 (E_S2_022)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "说完他五指幻化为五大力士将'金刚栓'岩石竖立起来放置"
+  description: 桑古认为师叔侄足印若被人畜践踏为非福德，故竖立岩石。
+
+- event_id: EV_S2_036
+  type: 神变
+  title: 扬古穹和美涅穹札以巨石稳固金刚栓
+  participants:
+    - entity: 扬古穹 (E_614)
+      role: 主体
+    - entity: 美涅穹札 (E_613)
+      role: 主体
+  location: 珠波 (E_S2_022)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "他们每人取来一块连许多大力士也无法动摇的磐石，分别放在左右作为依靠"
+  description: 岩石至今仍存。
+
+# ==================== 龙魔兄妹缘起破坏段 (lines 641-665) ====================
+
+- event_id: EV_S2_037
+  type: 神变
+  title: 小宿腾空至嘉哦岩
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: 嘉哦岩 (E_677)
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "小宿说'跟随上师身后而来'，说完腾空而起到了嘉哦岩"
+  description: 大宿打算在鸱枭谷塑果位黑日嘎像，小宿腾空先至。
+
+- event_id: EV_S2_038
+  type: 神变
+  title: 大宿脚不沾水过江
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师脚不沾水而去"
+  description: 侍者心有怀疑不堪能，大宿独自脚不沾水过江。
+
+- event_id: EV_S2_039
+  type: 史传
+  title: 侍者破坏酒瓮缘起致龙魔兄妹飞走
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 评论者
+    - entity: 龙魔兄长 (E_S2_008)
+      role: 主体
+    - entity: 龙魔妹妹 (E_S2_007)
+      role: 主体
+  location: null
+  time_info:
+    text: "酿酒以来一年零四个月"
+    relative_to: null
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他解开酒瓮的印，结果看到木轭大的两条黑白蛇逸然解开了结飞到空中"
+  description: 侍者好奇解开酒瓮封印，龙魔兄妹（黑白蛇形）飞走，酒变酸腐，瓮碎。
+
+- event_id: EV_S2_040
+  type: 授记
+  title: 大宿授记鸱枭谷寺与札巴禅堂因缘起被破坏而未达极盛
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [授记]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.95
+  source_quote: "本来，如果沃东的龙魔兄妹没有出去，那么鸱枭谷寺会成为藏地的最大寺院，札巴禅堂也会方兴未艾，经久不衰"
+  description: 大宿命龙魔兄妹为札巴禅堂护法神。果位黑日嘎亦未能造成。
+
+# ==================== 卓普寺建造段 (lines 666-704) ====================
+
+- event_id: EV_S2_041
+  type: 建寺造像
+  title: 酿热施主迎请三种供养处共议建殿
+  participants:
+    - entity: 玛玛永仲札西 (E_810)
+      role: 施主
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 密咒师
+    - entity: 拉嘎则瓦 (E_811)
+      role: 苯波师
+    - entity: 切墨扬木巴 (E_812)
+      role: 僧人
+  location: 酿热 (E_S2_024)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "于是就迎请了密咒师鸱枭谷大师、苯波师拉嘎则瓦、切墨扬木巴僧人"
+  description: 酿热施主无嗣有产，迎请密咒师、苯波师、僧人三种供养处共议建殿。
+
+- event_id: EV_S2_042
+  type: 建寺造像
+  title: 大宿在卓普建造佛殿（卓普寺）
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主持
+    - entity: 卓敦巴 (E_813)
+      role: 施主
+  location: 卓普 (E_S2_025)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "卓敦巴供养了'卓普'地方，于是大宿上师便在那里建造了佛殿"
+  description: 大宿让出与苯波师共建之殿后，得卓普地方建寺。卓普寺为扬塔嘉哦真实意修行时期之大佛学院。
+
+- event_id: EV_S2_043
+  type: 传法
+  title: 大宿以黄金换取卓米译师甚深教授
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 求法者
+    - entity: 卓米译师 (E_814)
+      role: 传法者
+  location: 莫革隆 (E_S2_026)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "卓米译师由于供养班智达的黄金不足，于是对大宿说'你带来大量的黄金，我给你传甚深教授'"
+  description: 大宿命建金塔使地神惊惧供金矿后补百两黄金给卓米译师换新派教授。
+
+- event_id: EV_S2_044
+  type: 神变
+  title: 两位地神供养金矿
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 受供者
+  location: 嘉黎东/塘杰扬东
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "两位地神也心惊肉跳，各供养羊肝大小的金子作为礼品……'不要作金塔，我们供养金矿'"
+  description: 大宿吩咐建金塔连铁索，两位地神惊惧供金矿。
+
+- event_id: EV_S2_045
+  type: 修行
+  title: 大宿精通三传承分支及《金刚帷幕续》后赞叹心部
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "依靠大上师的恩德，我的心部成为珍宝……我的心部法门实在是摩尼宝珠般的财富"
+  description: 大宿完全领会三传承分支及《金刚帷幕续》后两度赞叹心部法门。
+
+# ==================== 大宿涅槃段 (lines 706-728) ====================
+
+- event_id: EV_S2_046
+  type: 涅槃
+  title: 大宿·释迦炯内六十一岁涅槃融入黑日嘎像心间
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+    - entity: 吉祥黑日嘎佛像 (E_S2_060)
+      role: 融入处
+  location: 札巴禅堂 (E_S2_031)
+  time_info:
+    text: "六十一岁"
+    relative_to: 大宿·释迦炯内 (E_580)
+    absolute: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "卓普后殿刚刚竣工时，大宿·释迦炯内已六十一岁，五道的功德达到究竟以后安住在任运持明果位……身体化光，融入吉祥黑日嘎佛像心间"
+  description: 大宿六十一岁五道究竟达任运持明果位，至札巴禅堂摇金刚铃中化光融入佛像。
+
+- event_id: EV_S2_047
+  type: 传法
+  title: 大宿涅槃前将道场和弟众交付小宿
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 传法者
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 继承者
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "我的这个道场交付给小宿……这位小宿已经获得了吉祥黑日嘎身语意的成就，比我更胜一筹"
+  description: 大宿赞叹小宿获黑日嘎身语意成就超越自己，嘱众弟子恭敬小宿。
+
+- event_id: EV_S2_048
+  type: 神变
+  title: 大宿涅槃后幻化接受康巴人供养
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 主体
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "上师加持康巴人的心而在幻化的无量殿里也接受了供品并作了回向。后来康巴人如梦方醒，一切不复存在"
+  description: 大宿涅槃当日幻化接受康巴人供品后消失。
+
+- event_id: EV_S2_049
+  type: 神变
+  title: 嘉敦释迦益西化白光融入黑日嘎佛像
+  participants:
+    - entity: 嘉敦释迦益西 (E_816)
+      role: 主体
+    - entity: 吉祥黑日嘎佛像 (E_S2_060)
+      role: 融入处
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "佛像对香灯师说'去迎接嘉敦释迦益西'……就化成一道白光，右绕三匝而直接融入佛像里"
+  description: 黑日嘎佛像开口对香灯师说去迎接嘉敦；嘉敦骑白牛至佛像前化光融入。
+
+- event_id: EV_S2_050
+  type: 神变
+  title: 宿姆哦波融入黑日嘎佛像
+  participants:
+    - entity: 宿姆哦波 (E_818)
+      role: 主体
+    - entity: 吉祥黑日嘎佛像 (E_S2_060)
+      role: 融入处
+  location: null
+  time_info: null
+  layers: [神变]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.75
+  source_quote: "具相宿姆哦波也融入了那尊黑日嘎佛像中"
+  description: null
+
+# ==================== 小宿本传段 (lines 730-799) ====================
+
+- event_id: EV_S2_051
+  type: 史传
+  title: 小宿出生
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+    - entity: 塔巴卓钦 (E_820)
+      role: 父
+    - entity: 西绕杰 (E_821)
+      role: 母
+  location: null
+  time_info:
+    text: "虎年"
+    relative_to: 小宿·西绕札巴 (E_581)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "父亲塔巴卓钦是游方僧形象，母亲是后藏地方的西绕杰，在虎年伴随着稀奇的瑞相生下了他"
+  description: 小宿为密咒师鸱枭谷后裔，虎年出生。
+
+- event_id: EV_S2_052
+  type: 修行
+  title: 小宿七岁读写、九岁掌握寂猛事业吟诵法
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: null
+  time_info:
+    text: "七岁、九岁"
+    relative_to: 小宿·西绕札巴 (E_581)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "小宿在七岁时便能读写文字，九岁就掌握了寂猛事业吟诵法"
+  description: null
+
+- event_id: EV_S2_053
+  type: 史传
+  title: 小宿十三岁与妻子离异生起厌离心
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+  location: null
+  time_info:
+    text: "十三岁"
+    relative_to: 小宿·西绕札巴 (E_581)
+    absolute: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "当他十三岁时……小宿对轮回生起了强烈的厌离心"
+  description: 因洪水堵水时衣服争执与妻子离异，对轮回生起强烈厌离心。
+
+- event_id: EV_S2_054
+  type: 传法
+  title: 小宿投师大宿、因不攀缘同族得名"小宿"
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 弟子
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "上师问小宿'你的家族姓氏是什么'……心想'如果说与上师是同一族氏，就有攀缘的嫌疑'。于是说'是小宿'"
+  description: 小宿仅带狼裘投师，不攀同族之嫌自称小宿，上师深知其为有缘弟子。
+
+- event_id: EV_S2_055
+  type: 修行
+  title: 小宿苦行安忍以食子做糌粑糕
+  participants:
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 主体
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 上师
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "他常将上师布施的食子捡回来作成发酵糌粑糕吃……小宿说'我怎能享用上师的财产呢'，而坚持苦行安忍"
+  description: 小宿生活拮据以弃食子做发酵糌粑度日，坚持苦行不享用上师财产。
+
+- event_id: EV_S2_056
+  type: 传法
+  title: 大宿赐小宿三斗青稞并预言福报
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 上师
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 弟子
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "上师恩赐他三斗青稞并说'当这个用尽时资财会滚滚而来'"
+  description: 大宿食完小宿发酵糌粑糕后赐三斗青稞并预言其将有大福报。
+
+- event_id: EV_S2_057
+  type: 传法
+  title: 大宿令小宿住耶母家以资财缮写经典
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 上师
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 弟子
+    - entity: 耶母 (E_822)
+      role: 供养者
+  location: 攀杰康温 (E_S2_027)
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "在攀杰康温地方有名叫耶母的女修行者母女二人，你就住在她家……享用她们俩的资财而求得灌顶、缮写经典"
+  description: 大宿令小宿住耶母家享用资财求灌顶缮经。小宿初不愿，大宿训诫"思想不要狭隘"。
+
+- event_id: EV_S2_058
+  type: 传法
+  title: 大宿召回小宿并教诫利益众生
+  participants:
+    - entity: 大宿·释迦炯内 (E_580)
+      role: 上师
+    - entity: 小宿·西绕札巴 (E_581)
+      role: 弟子
+  location: null
+  time_info: null
+  layers: [史传]
+  sub_layer: null
+  author_stance: 认可
+  confidence: 0.85
+  source_quote: "你是一个能利益众生的人，要在此浊世弘扬佛法利益芸芸众生，这样也是对她们最大的报恩，如果隐居于此，自利他利将一无所成"
+  description: 大宿令小宿离开耶母家回到自己身边弘法利生，训诫"不要目光短浅"。

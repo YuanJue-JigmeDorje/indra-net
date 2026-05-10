@@ -1,0 +1,523 @@
+# ============================================================
+# 知识图谱关系抽取 — 第五品 远传经幻心 seg3 (lines 801-1200)
+# 覆盖范围: 小宿本传后段 + 宿·释迦桑给 + 杰敦嘉那 + 钦波云丹松 +
+#           螳螂尊者 + 卫巴秀波 + 月波敦则
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+#
+# 实体引用:
+#   E_S3_NNN — kg/entities/ch05-seg3.yaml
+#   E_5NN / E_8NN — kg/entities/ch05-part1.yaml / ch05-part2.yaml
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/05_远传经幻心.md
+  source_lines: "801-1200"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 42
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 化身/形态关系 (manifestationOf)
+  # ============================================================
+
+  - rel_id: RS3_001
+    type: manifestationOf
+    source: 宿·释迦桑给
+    target: 金刚手菩萨
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "单巴仁波切亲口说：'今日金刚手菩萨的化身莅临'"
+    note: "多次确认：小宿迎请金刚手入母胎；单巴桑吉认定；卓普巴直接显示金刚手形象"
+
+  - rel_id: RS3_002
+    type: manifestationOf
+    source: 小宿·西绕札巴
+    target: 吉祥黑日嘎
+    layers: [史传]
+    confidence: 0.80
+    source_quote: "一到他的跟前，就只想这是吉祥黑日嘎佛，而没有生起他是人的念头"
+    note: "古译师于法会上的感言"
+
+  # ============================================================
+  # B. 师承关系 (teacherOf)
+  # ============================================================
+
+  # --- 大宿→小宿 ---
+
+  - rel_id: RS3_010
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 小宿·西绕札巴
+    specialty: [密法, 全部教授]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "由于小宿对上师的话言听计从，所以原原本本地得受了上师的密意"
+    note: null
+
+  # --- 小宿→四柱弟子 ---
+
+  - rel_id: RS3_011
+    type: teacherOf
+    source: 小宿·西绕札巴
+    target: 玖敦夏嘎益
+    specialty: [心部]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "心部之'柱'贡哦的玖敦夏嘎益"
+    note: null
+
+  - rel_id: RS3_012
+    type: teacherOf
+    source: 小宿·西绕札巴
+    target: 扬康喇嘛
+    specialty: [经部]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "经部之'柱'炯隆的扬康喇嘛"
+    note: null
+
+  - rel_id: RS3_013
+    type: teacherOf
+    source: 小宿·西绕札巴
+    target: 烂释迦桑波
+    specialty: [幻部]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "幻部之'柱'切瓦的烂释迦桑波"
+    note: null
+
+  - rel_id: RS3_014
+    type: teacherOf
+    source: 小宿·西绕札巴
+    target: 达德觉夏嘎够
+    specialty: [事业]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "事业之'柱'那莫热的达德觉夏嘎够"
+    note: null
+
+  - rel_id: RS3_015
+    type: teacherOf
+    source: 小宿·西绕札巴
+    target: 玛土香白
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "生起殊胜的信心以后成为小宿的弟子，名叫玛土香白"
+    note: "辩论后依止"
+
+  # --- 小宿→宿·释迦桑给 (父子法脉) ---
+
+  - rel_id: RS3_016
+    type: teacherOf
+    source: 小宿·西绕札巴
+    target: 宿·释迦桑给
+    specialty: [密法]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "小宿之子就是此藏地堪为《密藏续》讲说源头的密主卓普巴"
+    note: "父传子"
+
+  # --- 四柱→宿·释迦桑给 ---
+
+  - rel_id: RS3_017
+    type: teacherOf
+    source: 达德觉夏嘎够
+    target: 宿·释迦桑给
+    specialty: [经部]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "在舅舅达德座下深入细致地得受了经部类"
+    note: "达德是释迦桑给的舅舅"
+
+  - rel_id: RS3_018
+    type: teacherOf
+    source: 烂释迦桑波
+    target: 宿·释迦桑给
+    specialty: [幻化网]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "来到烂释迦桑波面前，听受《幻化网》"
+    note: null
+
+  - rel_id: RS3_019
+    type: teacherOf
+    source: 烂释迦香切
+    target: 宿·释迦桑给
+    specialty: [大圆满]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在烂释迦香切面前得受大圆满"
+    note: null
+
+  - rel_id: RS3_020
+    type: teacherOf
+    source: 至尊香那
+    target: 宿·释迦桑给
+    specialty: [大圆满末传承]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "至尊香那面前闻受大圆满末传承"
+    note: null
+
+  - rel_id: RS3_021
+    type: teacherOf
+    source: 扬康喇嘛
+    target: 宿·释迦桑给
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在玖隆，又到扬康上师前闻法"
+    note: null
+
+  - rel_id: RS3_022
+    type: teacherOf
+    source: 贡哦玖
+    target: 宿·释迦桑给
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他寻找机会在贡哦玖上师前呆了一年"
+    note: null
+
+  # --- 卓普巴→弟子 ---
+
+  - rel_id: RS3_023
+    type: teacherOf
+    source: 宿·释迦桑给
+    target: 杰敦嘉那
+    specialty: [生起次第, 圆满次第, 大圆满, 殊胜窍诀]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "恩赐了生起次第、圆满次第、大圆满的教授、殊胜窍诀连同小字"
+    note: "前三年仅知名，后因辩论折服而获全部教授"
+
+  - rel_id: RS3_024
+    type: teacherOf
+    source: 单巴桑吉
+    target: 宿·释迦桑给
+    specialty: [佛法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "卓普巴由此生起极大的信心，也在他面前恭听了佛法甘露"
+    note: null
+
+  # --- 杰敦嘉那的上师们 ---
+
+  - rel_id: RS3_025
+    type: teacherOf
+    source: 穹波札色
+    target: 杰敦嘉那
+    specialty: [般若]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在穹波札色面前听闻《般若》"
+    note: null
+
+  - rel_id: RS3_026
+    type: teacherOf
+    source: 班善知识
+    target: 杰敦嘉那
+    specialty: [俱舍]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在班善知识前听闻《俱舍论》"
+    note: null
+
+  - rel_id: RS3_027
+    type: teacherOf
+    source: 达巴卡切
+    target: 杰敦嘉那
+    specialty: [中观, 因明]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "在达巴卡切面前听闻《中观》、《因明》"
+    note: null
+
+  - rel_id: RS3_028
+    type: teacherOf
+    source: 嘉藏古瓦
+    target: 杰敦嘉那
+    specialty: [甘露法]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在年多的嘉藏古瓦面前得受了甘露法"
+    note: null
+
+  - rel_id: RS3_029
+    type: teacherOf
+    source: 卓达桑
+    target: 杰敦嘉那
+    specialty: [摧破金刚, 根本金刚橛]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在年玛的卓达桑面前得受《摧破金刚》、《根本金刚橛》法"
+    note: null
+
+  - rel_id: RS3_030
+    type: teacherOf
+    source: 单巴布芒
+    target: 杰敦嘉那
+    specialty: [布派大圆满]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在单巴布芒面前得受了布派大圆满"
+    note: null
+
+  - rel_id: RS3_031
+    type: teacherOf
+    source: 觉姆年姆
+    target: 杰敦嘉那
+    specialty: [康派大圆满阿若精髓]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "在觉姆年姆面前得受了康派大圆满阿若精髓"
+    note: null
+
+  # --- 钦波云丹松 ---
+
+  - rel_id: RS3_032
+    type: teacherOf
+    source: 杰敦嘉那
+    target: 钦波云丹松
+    specialty: [生起次第, 圆满次第, 大圆满]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "十三年依止叔叔，圆满学修了生起次第、圆满次第、大圆满的所有续部、教授、窍诀"
+    note: "叔侄关系"
+
+  # --- 螳螂尊者 ---
+
+  - rel_id: RS3_033
+    type: teacherOf
+    source: 杰敦嘉那
+    target: 螳螂尊者
+    specialty: [一切续, 教授]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "拉吉嘉那（即杰敦嘉那）作云游僧时，他一直跟随左右，圆满得受了一切续及教授"
+    note: null
+
+  # --- 卫巴秀波 ---
+
+  - rel_id: RS3_034
+    type: teacherOf
+    source: 杰敦嘉那
+    target: 卫巴秀波
+    specialty: [生起次第, 圆满次第, 大圆满, 耳传如意宝教言]
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "跟随嘉那尊者，对生起次第、圆满次第、大圆满已经达到娴熟程度……上师恩赐了耳传如意宝教言"
+    note: null
+
+  # --- 月波敦则 ---
+
+  - rel_id: RS3_035
+    type: teacherOf
+    source: 螳螂尊者
+    target: 月波敦则
+    specialty: [荣派大圆满, 刚哲, 示密篇]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "三年期间，他认真地听受了荣派大圆满、刚哲、《示密篇》等"
+    note: "舅甥关系"
+
+  - rel_id: RS3_036
+    type: teacherOf
+    source: 钦波云丹松
+    target: 月波敦则
+    specialty: [生起次第, 圆满次第, 大圆满, 心部]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "十六岁时，他来到杰卡寺云丹宗面前依止，安住多年以后对生起次第、圆满次第、大圆满了如指掌"
+    note: null
+
+  - rel_id: RS3_037
+    type: teacherOf
+    source: 拉康巴
+    target: 月波敦则
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "他在上师拉康巴面前住了十四年"
+    note: null
+
+  # --- 卫巴秀波→弟子 ---
+
+  - rel_id: RS3_038
+    type: teacherOf
+    source: 卫巴秀波
+    target: 月波敦则
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "卫巴秀波的心子月波敦则"
+    note: "心子关系"
+
+  - rel_id: RS3_039
+    type: teacherOf
+    source: 卫巴秀波
+    target: 敦巴喇嘉
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "这位大德培养了月波敦则、敦巴喇嘉、为巴觉索、尼敦涅玛多吉等众多精通教义的弟子"
+    note: null
+
+  - rel_id: RS3_040
+    type: teacherOf
+    source: 卫巴秀波
+    target: 为巴觉索
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "同上"
+    note: null
+
+  - rel_id: RS3_041
+    type: teacherOf
+    source: 卫巴秀波
+    target: 尼敦涅玛多吉
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "同上"
+    note: null
+
+  # ============================================================
+  # C. 亲缘关系 (kinshipOf)
+  # ============================================================
+
+  - rel_id: RS3_050
+    type: kinshipOf
+    source: 小宿·西绕札巴
+    target: 宿·释迦桑给
+    sub_type: 父子
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "小宿之子就是此藏地堪为《密藏续》讲说源头的密主卓普巴或者宿·释迦桑给"
+    note: null
+
+  - rel_id: RS3_051
+    type: kinshipOf
+    source: 杰敦嘉那
+    target: 钦波云丹松
+    sub_type: 叔侄
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "杰敦嘉那大师的侄子喇嘛钦波云丹松"
+    note: null
+
+  - rel_id: RS3_052
+    type: kinshipOf
+    source: 螳螂尊者
+    target: 月波敦则
+    sub_type: 舅甥
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "送他到舅舅螳螂尊者跟前去求学"
+    note: null
+
+  - rel_id: RS3_053
+    type: kinshipOf
+    source: 桑吉单穹
+    target: 月波敦则
+    sub_type: 父子
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "卫巴秀波的心子月波敦则，从祖先时开始就是成就者的世家，他的父亲桑吉单穹"
+    note: null
+
+  - rel_id: RS3_054
+    type: kinshipOf
+    source: 达德觉夏嘎够
+    target: 达母则多嘉
+    sub_type: 兄妹
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "四顶梁柱弟子之一的达德措夏嘎说：'你的这个妹妹能否归属于我？'"
+    note: "实为达德的妹妹"
+
+  - rel_id: RS3_055
+    type: kinshipOf
+    source: 达母则多嘉
+    target: 宿·释迦桑给
+    sub_type: 母子
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "小宿尊者知晓一位女弟子达母则多嘉能怀胎化身"
+    note: null
+
+  # ============================================================
+  # D. 建寺/住持关系 (foundedBy / abbotOf)
+  # ============================================================
+
+  - rel_id: RS3_060
+    type: foundedBy
+    source: 空行佛堂
+    target: 小宿·西绕札巴
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "指使空行做事，树立起了七根柱子、两根大柱支起的佛殿，被共称为空行佛堂"
+    note: null
+
+  - rel_id: RS3_061
+    type: foundedBy
+    source: 真实意殿堂
+    target: 小宿·西绕札巴
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "小宿又在面见吉祥黑日嘎时左脚踏的地方修建了真实意殿堂"
+    note: null
+
+  # ============================================================
+  # E. 传承链 (lineageLink)
+  # ============================================================
+
+  - rel_id: RS3_070
+    type: lineageLink
+    source: 布玛莫札
+    target: 哲姆
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "布玛莫札-荣切参的比丘尼哲姆-南岩夏则的玛尔巴慧光-香拉哦的朗敦达玛索朗-至尊霍波卓普巴"
+    note: "布玛莫札与卓普巴之间仅三位上师"
+
+  - rel_id: RS3_071
+    type: lineageLink
+    source: 哲姆
+    target: 玛尔巴慧光
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "同上"
+    note: null
+
+  - rel_id: RS3_072
+    type: lineageLink
+    source: 玛尔巴慧光
+    target: 朗敦达玛索朗
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "同上"
+    note: null
+
+  - rel_id: RS3_073
+    type: lineageLink
+    source: 朗敦达玛索朗
+    target: 宿·释迦桑给
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "同上"
+    note: null

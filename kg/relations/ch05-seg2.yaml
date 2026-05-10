@@ -1,0 +1,443 @@
+# ============================================================
+# 知识图谱关系抽取 — 第五品 远传经幻心 seg2 (lines 401-800)
+# 覆盖范围: 大宿弟子团 + 鸱枭谷寺建造 + 黑日嘎像 + 开光 +
+#           年修 + 金刚栓 + 龙魔兄妹 + 卓普寺 + 大宿涅槃 +
+#           小宿本传（出生至投师求法）
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md lines 401-800
+# 提取日期: 2026-05-09
+# 规范: SKILL_05a v0.1 + relation-types v0.1 + entity-taxonomy v0.4
+#
+# 实体引用:
+#   E_5xx — kg/entities/ch05-part1.yaml
+#   E_8xx — kg/entities/ch05-part2.yaml
+#   E_S2_xxx — kg/entities/ch05-seg2.yaml
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/05_远传经幻心.md
+  source_lines: "401-800"
+  spec_versions:
+    relation-types: v0.1
+    skill: SKILL_05a v0.1
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+  total_relations: 42
+  date: 2026-05-09
+
+relations:
+
+  # ============================================================
+  # A. 师承关系 (teacherOf)
+  # ============================================================
+
+  - rel_id: RS2_001
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 小宿·西绕札巴
+    specialty: [真实意, 心部, 幻化网]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "见解密意之顶尖的小宿·西绕札巴"
+    note: "四位顶尖弟子之首"
+
+  - rel_id: RS2_002
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 美涅穹札
+    specialty: [幻化网]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "幻化网讲解之顶尖的美涅穹札"
+    note: "四位顶尖弟子之一"
+
+  - rel_id: RS2_003
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 扬古穹
+    specialty: []
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "智广博学之顶尖的扬古穹"
+    note: "四位顶尖弟子之一"
+
+  - rel_id: RS2_004
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 桑古西绕嘉波
+    specialty: [修行]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "修行顶尖的桑古西绕嘉波"
+    note: "四位顶尖弟子之一"
+
+  - rel_id: RS2_005
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 匝喇嘛
+    specialty: []
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "最胜顶尖是在修行的基础上、世间法超群的匝喇嘛"
+    note: "最胜顶尖"
+
+  - rel_id: RS2_006
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 哲修江
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "一百零八位大修行弟子……他们全部获得了飞翔虚空等神变"
+    note: "一百零八位大修行弟子之一"
+
+  - rel_id: RS2_007
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 耶修那母
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: null
+    note: "一百零八位大修行弟子之一"
+
+  - rel_id: RS2_008
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 杰修释迦嘉
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: null
+    note: "一百零八位大修行弟子之一"
+
+  - rel_id: RS2_009
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 宿修多炯
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: null
+    note: "一百零八位大修行弟子之一"
+
+  - rel_id: RS2_010
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 耶修觉白尔
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: null
+    note: "一百零八位大修行弟子之一"
+
+  - rel_id: RS2_011
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 巴修行者索南酿波
+    specialty: []
+    layers: [史传]
+    confidence: 0.85
+    source_quote: null
+    note: "一百零八位大修行弟子之一"
+
+  - rel_id: RS2_012
+    type: teacherOf
+    source: 大宿·释迦炯内
+    target: 小宿·西绕札巴
+    specialty: [黑日嘎成就]
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "这位小宿已经获得了吉祥黑日嘎身语意的成就，比我更胜一筹"
+    note: "涅槃前嘱托；小宿获身语意三成就"
+
+  - rel_id: RS2_013
+    type: teacherOf
+    source: 卓米译师
+    target: 大宿·释迦炯内
+    specialty: [新派教授]
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "卓米译师由于供养班智达的黄金不足，于是对大宿说'你带来大量的黄金，我给你传甚深教授'"
+    note: "以百两黄金换取新派甚深教授"
+
+  # ============================================================
+  # B. 继承/交付关系 (successionOf)
+  # ============================================================
+
+  - rel_id: RS2_020
+    type: successionOf
+    source: 小宿·西绕札巴
+    target: 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "我的这个道场交付给小宿。你要以正法利益弟众，顺应他们的心意，要像我一样培养他们"
+    note: "大宿涅槃前正式传位"
+
+  # ============================================================
+  # C. 家族关系 (parentOf / siblingOf)
+  # ============================================================
+
+  - rel_id: RS2_030
+    type: parentOf
+    source: 塔巴卓钦
+    target: 小宿·西绕札巴
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "父亲塔巴卓钦是游方僧形象"
+    note: "父子关系"
+
+  - rel_id: RS2_031
+    type: parentOf
+    source: 西绕杰
+    target: 小宿·西绕札巴
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "母亲是后藏地方的西绕杰"
+    note: "母子关系"
+
+  - rel_id: RS2_032
+    type: siblingOf
+    source: 龙魔妹妹
+    target: 龙魔兄长
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "请托付给我的兄长"
+    note: "龙魔兄妹"
+
+  # ============================================================
+  # D. 建造关系 (builtBy)
+  # ============================================================
+
+  - rel_id: RS2_040
+    type: builtBy
+    source: 鸱枭谷寺
+    target: 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "它是在拉吉大宿时期创立、小宿加以开拓、宿·释迦桑给发扬光大"
+    note: "三代相继：大宿创立、小宿开拓、释迦桑给发扬"
+
+  - rel_id: RS2_041
+    type: builtBy
+    source: 卓普寺
+    target: 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.95
+    source_quote: "卓敦巴供养了'卓普'地方，于是大宿上师便在那里建造了佛殿"
+    note: null
+
+  - rel_id: RS2_042
+    type: builtBy
+    source: 吉祥黑日嘎佛像
+    target: 大宿·释迦炯内
+    layers: [史传, 神变]
+    confidence: 0.90
+    source_quote: "上师安住在密意中，泥土全然穷尽，而吉祥黑日嘎肚脐以上的身像自然呈现"
+    note: "肚脐以下由工匠塑；肚脐以上由大宿以密意自现"
+
+  # ============================================================
+  # E. 化身/显现关系 (manifestationOf)
+  # ============================================================
+
+  - rel_id: RS2_050
+    type: manifestationOf
+    source: 大宿·释迦炯内
+    target: 吉祥黑日嘎
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "上师已经变成了真正的黑日嘎，头部了然在云雾间"
+    note: "大宿变成黑日嘎以示工匠佛像形象"
+
+  - rel_id: RS2_051
+    type: manifestationOf
+    source: 大宿·释迦炯内
+    target: 吉祥黑日嘎
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "大宿·释迦炯内显现成吉祥黑日嘎，右脚所踏的地方也印出脚印"
+    note: "在南山改良凶地时显现"
+
+  # ============================================================
+  # F. 融入关系 (dissolvedInto)
+  # ============================================================
+
+  - rel_id: RS2_060
+    type: dissolvedInto
+    source: 大宿·释迦炯内
+    target: 吉祥黑日嘎佛像
+    layers: [神变]
+    confidence: 0.90
+    source_quote: "身体化光，融入吉祥黑日嘎佛像心间"
+    note: "涅槃方式"
+
+  - rel_id: RS2_061
+    type: dissolvedInto
+    source: 嘉敦释迦益西
+    target: 吉祥黑日嘎佛像
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "就化成一道白光，右绕三匝而直接融入佛像里"
+    note: null
+
+  - rel_id: RS2_062
+    type: dissolvedInto
+    source: 宿姆哦波
+    target: 吉祥黑日嘎佛像
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "具相宿姆哦波也融入了那尊黑日嘎佛像中"
+    note: null
+
+  # ============================================================
+  # G. 施主/供养关系 (patronOf)
+  # ============================================================
+
+  - rel_id: RS2_070
+    type: patronOf
+    source: 扬母云丹坚
+    target: 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "由扬母云丹坚作为施主，上师住在他供养的山洞里"
+    note: "香地修行时期的施主"
+
+  - rel_id: RS2_071
+    type: patronOf
+    source: 札巴温仲巴
+    target: 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "主要施主由札巴温仲巴担当，他把上师看作真佛"
+    note: "香地修行时期的主要施主"
+
+  - rel_id: RS2_072
+    type: patronOf
+    source: 玛玛永仲札西
+    target: 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "玛玛永仲札西夫妻膝下无有子孙……想用于正法方面"
+    note: "酿热地方施主；迎请三种供养处"
+
+  - rel_id: RS2_073
+    type: patronOf
+    source: 卓敦巴
+    target: 大宿·释迦炯内
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "卓敦巴供养了'卓普'地方"
+    note: "供养卓普地方用于建佛殿"
+
+  # ============================================================
+  # H. 护法关系 (protectorOf)
+  # ============================================================
+
+  - rel_id: RS2_080
+    type: protectorOf
+    source: 龙魔兄长
+    target: 札巴禅堂
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "上师命令龙魔兄妹作为札巴禅堂的护法神"
+    note: null
+
+  - rel_id: RS2_081
+    type: protectorOf
+    source: 龙魔妹妹
+    target: 札巴禅堂
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "上师命令龙魔兄妹作为札巴禅堂的护法神"
+    note: null
+
+  # ============================================================
+  # I. 降伏关系 (subduedBy)
+  # ============================================================
+
+  - rel_id: RS2_090
+    type: subduedBy
+    source: 龙魔兄长
+    target: 大宿·释迦炯内
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "上师降伏他俩的心，使之守护誓言"
+    note: null
+
+  - rel_id: RS2_091
+    type: subduedBy
+    source: 龙魔妹妹
+    target: 大宿·释迦炯内
+    layers: [神变]
+    confidence: 0.85
+    source_quote: "上师降伏他俩的心，使之守护誓言"
+    note: null
+
+  # ============================================================
+  # J. 授记关系 (prophecyBy)
+  # ============================================================
+
+  - rel_id: RS2_100
+    type: prophecyBy
+    source: 持明南卡酿波
+    target: 大宿·释迦炯内
+    layers: [授记]
+    confidence: 0.90
+    source_quote: "持明南卡酿波也曾对我授记：'塑造黑日嘎像从而降伏那些有害于藏族百姓的大力魔'"
+    note: "授记塑造黑日嘎像以降伏大力魔"
+
+  # ============================================================
+  # K. 寺院-教法归属关系 (associatedWith)
+  # ============================================================
+
+  - rel_id: RS2_110
+    type: associatedWith
+    source: 鸱枭谷寺
+    target: 前译金刚乘法
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "这一法嗣对前译金刚乘法作出了巨大贡献"
+    note: "宿氏祖孙三师法嗣"
+
+  - rel_id: RS2_111
+    type: associatedWith
+    source: 卓普寺
+    target: 真实意
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "也被一致共称是扬塔嘉哦真实意修行的时期"
+    note: "扬塔嘉哦真实意修行时期大佛学院"
+
+  # ============================================================
+  # L. 成就关系 (attainmentOf)
+  # ============================================================
+
+  - rel_id: RS2_120
+    type: attainmentOf
+    source: 小宿·西绕札巴
+    target: 吉祥黑日嘎
+    layers: [史传]
+    confidence: 0.90
+    source_quote: "小宿已获得大吉祥黑日嘎成就"
+    note: "获身语意三成就"
+
+  - rel_id: RS2_121
+    type: attainmentOf
+    source: 大宿·释迦炯内
+    target: 五道
+    layers: [史传]
+    confidence: 0.85
+    source_quote: "五道的功德达到究竟以后安住在任运持明果位"
+    note: "六十一岁时证得"
+
+  # ============================================================
+  # M. 形态关系 (formOf)
+  # ============================================================
+
+  - rel_id: RS2_130
+    type: formOf
+    source: 因黑日嘎
+    target: 吉祥黑日嘎
+    layers: [神变]
+    confidence: 0.80
+    source_quote: "清清楚楚地有一尊一面二臂的因黑日嘎"
+    note: "因位形态，一面二臂"

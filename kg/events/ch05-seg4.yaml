@@ -1,0 +1,960 @@
+# ============================================================
+# 知识图谱事件抽取 — 第五品 远传经幻心 Seg4 (lines 1201-1600)
+# 覆盖范围: 月波尊者事迹续 + 达敦觉益 + 觉索 + 达敦宿则
+#   + 宿·释迦光 + 达那敦德 + 宿·香巴桑给 + 雍敦巴
+#   + 达那卓玛瓦桑哲多吉 + 宿·桑波华 + 宿哈·释迦炯
+#   + 桑吉仁钦嘉村 + 古云讷华(开头)
+# 来源: source/dudjom/chapter_md/05_远传经幻心.md
+# 提取日期: 2026-05-09
+# 规范: SKILL_04a v0.1 + entity-taxonomy v0.4 + narrative-layers v0.2
+#
+# 实体引用: E_P5xx / E_S5xx / E_T5xx / E_L5xx / E_B5xx / E_D5xx / E_O5xx / E_G5xx
+#         — 引用 kg/entities/ch05-seg4.yaml
+#
+# confidence 默认值: 史传 0.85 / 典据 0.95 / 授记 0.95 / 神变 0.75 / 传闻 0.60
+# ============================================================
+
+metadata:
+  source_file: source/dudjom/chapter_md/05_远传经幻心.md
+  source_section: 月波尊者续 → 达敦觉益 → 觉索 → 达敦宿则 → 宿·释迦光 → 达那敦德 → 宿·香巴桑给 → 雍敦巴 → 达那卓玛瓦桑哲多吉 → 宿·桑波华 → 宿哈·释迦炯 → 桑吉仁钦嘉村 → 古云讷华
+  source_lines: "1201-1600"
+  total_events: 52
+  spec_versions:
+    entity-taxonomy: v0.4
+    narrative-layers: v0.2
+    skill: SKILL_04a v0.1
+  date: 2026-05-09
+
+events:
+
+  # ----------------------------------------------------------
+  # 月波尊者续 (lines 1201-1243)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S01
+    type: 弘法
+    title: 扬仓巴弟子藏古舍波在月波尊者前讲述扬上师生平使其生信
+    participants:
+      - entity: 藏古舍波 (E_P503)
+        role: 主体
+      - entity: 月波尊者 (E_P501)
+        role: 信众
+      - entity: 扬仓巴 (E_P502)
+        role: 被提及者
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "扬仓巴的弟子藏古舍波在月波尊者面前讲述了扬上师的生平，由此他生起信心"
+    description: null
+
+  - event_id: EV_5S02
+    type: 神变
+    title: 月波尊者在善普达隆身体融入磐石
+    participants:
+      - entity: 月波尊者 (E_P501)
+        role: 主体
+    location: 善普达隆 (E_L502)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "当他住在善普达隆静处时，身体融入磐石中"
+    description: null
+
+  - event_id: EV_5S03
+    type: 神变
+    title: 月波尊者在真波山无阻穿行墙壁
+    participants:
+      - entity: 月波尊者 (E_P501)
+        role: 主体
+    location: 真波山 (E_L503)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "在真波山无阻穿行墙壁"
+    description: null
+
+  - event_id: EV_5S04
+    type: 朝圣
+    title: 月波尊者三次朝拜印度金刚座
+    participants:
+      - entity: 月波尊者 (E_P501)
+        role: 主体
+    location: 印度金刚座 (E_L501)
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "先后三次朝拜印度金刚座"
+    description: null
+
+  - event_id: EV_5S05
+    type: 圆寂
+    title: 月波尊者五十六岁土羊年圆寂
+    participants:
+      - entity: 月波尊者 (E_P501)
+        role: 主体
+    location: 桑普 (E_L504)
+    time_info:
+      text: "五十六岁土羊年"
+      relative_to: 月波尊者 (E_P501)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "到了五十六岁土羊年……在桑普附近的静处圆寂"
+    description: 恶缘眷属酗酒闹事使尊者心生厌离而圆寂。
+
+  - event_id: EV_5S06
+    type: 神变
+    title: 月波尊者遗体迎请至善塘嘉经堂时大地震动供水中生莲花根
+    participants:
+      - entity: 月波尊者 (E_P501)
+        role: 主体
+    location: 善塘嘉经堂 (E_T504)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "当时大地剧烈震动，供水中生出莲花根等等瑞相纷呈"
+    description: 遗体从哦嘎寺安放四月后迎请到善塘嘉经堂，清晨荼毗出现妙音光芒彩虹佛塔文字等祥兆。
+
+  # ----------------------------------------------------------
+  # 达敦觉益段 (lines 1244-1306)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S07
+    type: 出家受戒
+    title: 达敦觉波带四仆人逃走在纽切哦热巴面前入佛门
+    participants:
+      - entity: 达敦觉波 (E_P511)
+        role: 受戒者
+      - entity: 纽切哦热巴 (E_P512)
+        role: 亲教师
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "到了拉吉烂尼察的心子——纽切哦热巴的面前，主仆五人一起入佛门"
+    description: 达敦觉波对轮回生起厌离心后带四仆人出逃入佛门。
+
+  - event_id: EV_5S08
+    type: 传法
+    title: 觉益十六岁传讲金刚萨埵大虚空续
+    participants:
+      - entity: 达敦觉益 (E_P505)
+        role: 传法者
+    location: null
+    time_info:
+      text: "十六岁"
+      relative_to: 达敦觉益 (E_P505)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "觉益十六岁时传讲《金刚萨埵大虚空续》"
+    description: null
+
+  - event_id: EV_5S09
+    type: 传法
+    title: 觉益二十五岁来到月波尊者前依止七年
+    participants:
+      - entity: 达敦觉益 (E_P505)
+        role: 受者
+      - entity: 月波尊者 (E_P501)
+        role: 传法者
+    location: 哦嘎寺 (E_T505)
+    time_info:
+      text: "二十五岁"
+      relative_to: 达敦觉益 (E_P505)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他二十五岁时来到月波尊者前……在七年之间形影不离地依止上师"
+    description: 起初无求法念头，见尊者容颜不由生起恭敬，请求摄受后七年依止学修普作王母子三类等法要。
+
+  - event_id: EV_5S10
+    type: 神变
+    title: 觉益获得顿超证悟后无有诈现威仪护持行为
+    participants:
+      - entity: 达敦觉益 (E_P505)
+        role: 主体
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "顿时获得加持，生起顿超证悟，从而对世间的增损无所畏惧"
+    description: null
+
+  - event_id: EV_5S11
+    type: 弘法
+    title: 觉益在宗卡炼铜十八个月塑大悲观音像中生起殊胜证悟
+    participants:
+      - entity: 达敦觉益 (E_P505)
+        role: 主体
+    location: 宗卡 (E_L508)
+    time_info:
+      text: "十八个月"
+      relative_to: null
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在塑大悲观音菩萨像的过程中，他在宗卡做了十八个月炼铜的事，结果生起殊胜证悟"
+    description: null
+
+  - event_id: EV_5S12
+    type: 神变
+    title: 觉益在多物坡光明岩修护法面见怙主尊颜
+    participants:
+      - entity: 达敦觉益 (E_P505)
+        role: 主体
+    location: 多物坡光明岩 (E_L509)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "在多物坡光明岩修护法，结果面见怙主尊颜"
+    description: 坐骑被坡札匝波抢走时所修。
+
+  - event_id: EV_5S13
+    type: 圆寂
+    title: 觉益尊者六十八岁铁虎年圆寂出现金刚舍利
+    participants:
+      - entity: 达敦觉益 (E_P505)
+        role: 主体
+    location: null
+    time_info:
+      text: "六十八岁铁虎年"
+      relative_to: 达敦觉益 (E_P505)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "觉益尊者六十八岁铁虎年……圆寂，当时出现了许多金刚舍利和普通舍利"
+    description: 即邬金巴诞生的那一年。
+
+  # ----------------------------------------------------------
+  # 觉索段 (lines 1308-1313)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S14
+    type: 传法
+    title: 月波尊者圆满赐觉索心部法要后交传给拉康巴大师
+    participants:
+      - entity: 月波尊者 (E_P501)
+        role: 传法者
+      - entity: 觉索 (E_P524)
+        role: 受者
+      - entity: 拉康巴 (E_P504)
+        role: 续传者
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "上师摄受而圆满赐给他心部法要……于是把他交传给拉康巴大师"
+    description: null
+
+  - event_id: EV_5S15
+    type: 圆寂
+    title: 觉索三十一岁火龙年圆寂
+    participants:
+      - entity: 觉索 (E_P524)
+        role: 主体
+    location: null
+    time_info:
+      text: "三十一岁火龙年"
+      relative_to: 觉索 (E_P524)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "三十一岁火龙年就圆寂了，因此没有成熟太大的事业"
+    description: null
+
+  # ----------------------------------------------------------
+  # 宿·释迦光段 (lines 1324-1401)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S16
+    type: 授记
+    title: 大班智达释迦西日预言旺钦哦波将生二子弘法利生
+    participants:
+      - entity: 大班智达释迦西日 (E_P536)
+        role: 授记者
+      - entity: 宿·旺钦哦波 (E_P535)
+        role: 受记者
+    location: 鸱枭谷 (E_L513)
+    time_info:
+      text: "木鼠年"
+      relative_to: null
+      absolute: null
+    layers: [授记]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.95
+    source_quote: "不久你会生两个儿子，给他们取上我的开头名字（释迦），他们将弘法利生"
+    description: 释迦西日言鸱枭谷有密宗之处功德，北面山为五部如来自性。
+
+  - event_id: EV_5S17
+    type: 神变
+    title: 宿·释迦光常常进入持明众会行列
+    participants:
+      - entity: 宿·释迦光 (E_P538)
+        role: 主体
+    location: null
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "我常常进入持明众会行列中"
+    description: 因对兄长口出不逊而一晚失毁誓言未能入行列，遂作忏悔。
+
+  - event_id: EV_5S18
+    type: 神变
+    title: 嘎热摔释迦光禅杖后从中出现单坚护法神四尊
+    participants:
+      - entity: 莫尼嘎热 (E_P540)
+        role: 主体
+      - entity: 宿·释迦光 (E_P538)
+        role: 授予者
+    location: null
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "他用力一摔手杖，结果从中出来单坚护法神四尊类"
+    description: 嘎热起初以为被拒绝教言，摔杖后神现，遂转怒为喜加以修持制服众多亲属。
+
+  - event_id: EV_5S19
+    type: 弘法
+    title: 释迦光与嘎热在南岩卡切见阿达酿父子请受酿派法要
+    participants:
+      - entity: 宿·释迦光 (E_P538)
+        role: 受者
+      - entity: 莫尼嘎热 (E_P540)
+        role: 受者
+      - entity: 阿达酿 (E_P543)
+        role: 传法者
+    location: 南岩卡切 (E_L514)
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "见到阿达酿父子，请求了《八大法行·集善逝》等酿派大多数法要"
+    description: null
+
+  - event_id: EV_5S20
+    type: 神变
+    title: 嘎热在蒙古以勾召术召回忽必烈弟弟阿热霍嘎
+    participants:
+      - entity: 莫尼嘎热 (E_P540)
+        role: 主体
+      - entity: 忽必烈 (E_P541)
+        role: 委托者
+      - entity: 阿热霍嘎 (E_P542)
+        role: 被召者
+    location: 蒙古 (E_L529)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "运用风轮方便，结果忽必烈的弟弟阿热霍嘎已失去稳固性而出现"
+    description: 嘎热以上师圣者仁波切为证，后又应忽必烈要求在湖泊草原间降霹雳，国王信服。
+
+  - event_id: EV_5S21
+    type: 伏藏
+    title: 宿·释迦光在众人中开取长寿水伏藏
+    participants:
+      - entity: 宿·释迦光 (E_P538)
+        role: 主体
+      - entity: 革日穹札 (E_P545)
+        role: 参与者
+      - entity: 温钦释迦桑 (E_P546)
+        role: 参与者
+      - entity: 阿嘎雅那 (E_P547)
+        role: 参与者
+    location: null
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "在众人当中开取伏藏，由于伏藏门前锋利的宝剑轮盘旋而无法入内……宿·释迦光祈祷见证者、供养伏藏主，结果宝剑归回本位"
+    description: 经历宝剑轮盘旋、黑炭中青蛙出风轮等障碍后，以念珠压制风轮取出长寿水器青金石瓶等伏藏物。
+
+  - event_id: EV_5S22
+    type: 弘法
+    title: 忽必烈嘉奖释迦光封国师并赏土地
+    participants:
+      - entity: 忽必烈 (E_P541)
+        role: 封赐者
+      - entity: 宿·释迦光 (E_P538)
+        role: 受封者
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "封号为（巴式）国师。由于进贡长寿水的功劳，皇帝赏释迦光班霍四十五户的土地"
+    description: 同时颁布敕书：卫藏后藏所有咒师免服兵役。
+
+  - event_id: EV_5S23
+    type: 圆寂
+    title: 宿·释迦光六十三岁圆寂遗体能愈麻风病
+    participants:
+      - entity: 宿·释迦光 (E_P538)
+        role: 主体
+    location: 卡多吉岩 (E_L517)
+    time_info:
+      text: "六十三岁"
+      relative_to: 宿·释迦光 (E_P538)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "六十三岁圆寂，当时麻风病患者触到他的遗体麻风病便痊愈"
+    description: null
+
+  # ----------------------------------------------------------
+  # 达那敦德段 (lines 1403-1416)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S24
+    type: 弘法
+    title: 达那敦德蒙古军入侵时以无畏施救护众生
+    participants:
+      - entity: 达那敦德 (E_P548)
+        role: 主体
+      - entity: 萨班德 (E_P552)
+        role: 施金者
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "大人物萨班德献给他大量黄金。他说：'我不需求黄金，我希望你们作无畏施。'由此救护了芸芸众生"
+    description: null
+
+  - event_id: EV_5S25
+    type: 神变
+    title: 达那敦德在刻大般若经时以威力使天降大雨解水荒
+    participants:
+      - entity: 达那敦德 (E_P548)
+        role: 主体
+    location: 卓普 (E_T508)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "在刻卓普《大般若经》时，水源极其缺乏，依靠他的威力而使天降瓢泼大雨"
+    description: null
+
+  - event_id: EV_5S26
+    type: 降伏
+    title: 达那敦德以诛法在刚札降伏三万军兵护持萨迦教法
+    participants:
+      - entity: 达那敦德 (E_P548)
+        role: 主体
+    location: 刚札 (E_L516)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "依照皇帝的诏书和大官根云戒匝的旨意，他依靠诛法的威力在刚札降伏了三万军兵"
+    description: 西藏阿里地区蒙古族准备大肆损害萨迦教法时所行。
+
+  # ----------------------------------------------------------
+  # 宿·香巴桑给段 (lines 1418-1446)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S27
+    type: 弘法
+    title: 宿·香巴桑给十四岁开始讲经说法获智者称号
+    participants:
+      - entity: 宿·香巴桑给 (E_P554)
+        role: 主体
+    location: 卓普 (E_T508)
+    time_info:
+      text: "十四岁"
+      relative_to: 宿·香巴桑给 (E_P554)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "十四岁便开始讲经说法，因此获得了智者的称号"
+    description: null
+
+  - event_id: EV_5S28
+    type: 传法
+    title: 宿·香巴桑给十九岁在杰敦哲巴白面前听幻化网道次第和大圆满顿生证悟
+    participants:
+      - entity: 宿·香巴桑给 (E_P554)
+        role: 受者
+      - entity: 杰敦哲巴白 (E_P556)
+        role: 传法者
+    location: null
+    time_info:
+      text: "十九岁"
+      relative_to: 宿·香巴桑给 (E_P554)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "十九岁在杰敦哲巴白面前听受《幻化网道次第》和大圆满，从而顿然生起证悟"
+    description: null
+
+  - event_id: EV_5S29
+    type: 圆寂
+    title: 宿·香巴桑给因苯波徒下毒仅住世二十七岁
+    participants:
+      - entity: 宿·香巴桑给 (E_P554)
+        role: 主体
+    location: null
+    time_info:
+      text: "二十七岁"
+      relative_to: 宿·香巴桑给 (E_P554)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "由于一个苯波徒在食物中下毒而只住世到二十七岁"
+    description: null
+
+  # ----------------------------------------------------------
+  # 雍敦巴段 (lines 1448-1478)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S30
+    type: 弘法
+    title: 雍敦巴对密藏续作明镜疏讲解能力远超他人
+    participants:
+      - entity: 雍敦巴 (E_P527)
+        role: 主体
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他对《密藏续》作了《明镜疏》，讲解的能力远远超胜他人"
+    description: null
+
+  - event_id: EV_5S31
+    type: 降伏
+    title: 雍敦巴旋转大威德轮使害死宿·香巴桑给的苯波徒连人畜舍宅一扫而光
+    participants:
+      - entity: 雍敦巴 (E_P527)
+        role: 主体
+    location: null
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "对于害死宿·香巴桑给的苯波徒，他旋转大威德轮使他的人畜连同舍宅一扫而光，片甲不留"
+    description: 同时造"降伏师敌唯有我"偈颂。
+
+  - event_id: EV_5S32
+    type: 弘法
+    title: 雍敦巴年青时奉诏到汉地使天降大雨获皇帝丰厚赏赐
+    participants:
+      - entity: 雍敦巴 (E_P527)
+        role: 主体
+    location: 汉地 (E_L530)
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在他年青时，奉诏到了汉地……奉诏使天降大雨，由此发挥出自己的能力。皇帝龙颜大悦赐予丰厚奖赏"
+    description: null
+
+  - event_id: EV_5S33
+    type: 神变
+    title: 雍敦巴用雄鹰翎穿破水袋水不漏赤裸触燃铁不伤化石墙为岩墙
+    participants:
+      - entity: 雍敦巴 (E_P527)
+        role: 主体
+    location: null
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "他用雄鹰翎把水袋穿破，而水却一滴不漏，他赤身裸体接触燃烧的铁也不受伤，六层石头所成的墙面经他抚摸即变成大岩墙"
+    description: null
+
+  - event_id: EV_5S34
+    type: 弘法
+    title: 雍敦巴撰著《显密成佛有别》使雅德大班智达师徒十五人来顶礼
+    participants:
+      - entity: 雍敦巴 (E_P527)
+        role: 主体
+      - entity: 雅德大班智达 (E_P567)
+        role: 敬仰者
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "雅德大班智达见到此论后生起无比信心，师徒十五人到他面前恭敬顶礼"
+    description: null
+
+  - event_id: EV_5S35
+    type: 出家受戒
+    title: 雍敦巴下半生于凑巴秋隆巴面前受比丘戒改名多吉华
+    participants:
+      - entity: 雍敦巴 (E_P527)
+        role: 受戒者
+      - entity: 凑巴秋隆巴 (E_P568)
+        role: 亲教师
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他下半生于凑巴秋隆巴面前受比丘戒，原名多吉白改为多吉华"
+    description: null
+
+  - event_id: EV_5S36
+    type: 圆寂
+    title: 雍敦巴八十二岁木蛇年圆寂
+    participants:
+      - entity: 雍敦巴 (E_P527)
+        role: 主体
+    location: null
+    time_info:
+      text: "八十二岁木蛇年"
+      relative_to: 雍敦巴 (E_P527)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "八十二岁木蛇年圆寂"
+    description: null
+
+  # ----------------------------------------------------------
+  # 达那卓玛瓦桑哲多吉段 (lines 1480-1494)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S37
+    type: 弘法
+    title: 达那卓玛瓦桑哲多吉修大圆满心滴达到觉性如量平等畅游佛刹
+    participants:
+      - entity: 达那卓玛瓦桑哲多吉 (E_P569)
+        role: 主体
+    location: 雪玛桑给 (E_L522)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "在雪玛桑给地方专心致志修行大圆满心滴法门，达到了觉性如量的境界，平等畅游如海佛刹"
+    description: null
+
+  - event_id: EV_5S38
+    type: 圆寂
+    title: 达那卓玛瓦桑哲多吉八十二岁火龙年对儿子说将往极乐世界后圆寂
+    participants:
+      - entity: 达那卓玛瓦桑哲多吉 (E_P569)
+        role: 主体
+    location: null
+    time_info:
+      text: "八十二岁火龙年"
+      relative_to: 达那卓玛瓦桑哲多吉 (E_P569)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "八十二岁火龙年临圆寂时他对儿子说：'我将前往极乐世界，你也要活到与我的年岁同等，尔后来极乐国土。'"
+    description: null
+
+  # ----------------------------------------------------------
+  # 宿·桑波华段 (lines 1496-1530)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S39
+    type: 弘法
+    title: 宿·桑波华奉诏前往汉地作皇帝诵经师
+    participants:
+      - entity: 宿·桑波华 (E_P574)
+        role: 主体
+      - entity: 弯颜特汗 (E_P575)
+        role: 诏令者
+    location: 汉地 (E_L530)
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "接受皇帝弯颜特汗的诏书……奉诏前往汉地。起初作为皇帝的诵经师"
+    description: null
+
+  - event_id: EV_5S40
+    type: 神变
+    title: 宿·桑波华禳解地德宫上空恶蝎相乌云使之散去
+    participants:
+      - entity: 宿·桑波华 (E_P574)
+        role: 主体
+      - entity: 弯颜特汗 (E_P575)
+        role: 诏令者
+    location: 地德宫殿 (E_T509)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "皇宫地德的上空，出现了恶蝎相乌云的凶兆，谁也无法消除它……宿·桑波华作了禳解术，施食子，跳起舞，结果乌云散去"
+    description: null
+
+  - event_id: EV_5S41
+    type: 传法
+    title: 弯颜特汗在宿·桑波华面前请求真实九本尊灌顶和长寿灌顶
+    participants:
+      - entity: 弯颜特汗 (E_P575)
+        role: 受者
+      - entity: 宿·桑波华 (E_P574)
+        role: 传法者
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在他面前请求了真实九本尊的灌顶和长寿灌顶"
+    description: 皇帝生信后赏赐银子官印、十三藏升银子、一百五十匹锦缎。
+
+  - event_id: EV_5S42
+    type: 弘法
+    title: 宿·桑波华刻版根本密藏续等前译派二十八法部各印千份发僧人
+    participants:
+      - entity: 宿·桑波华 (E_P574)
+        role: 主体
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "刻版《根本密藏续》、《巴卡释》、《密宗道次第》以及《九窍诀》等前译派的二十八法部。各印一千份发给僧人"
+    description: 并提供刻宁玛续全集物资。
+
+  - event_id: EV_5S43
+    type: 神变
+    title: 宿·桑波华境界中见到已故国王弯颜特问话
+    participants:
+      - entity: 宿·桑波华 (E_P574)
+        role: 主体
+      - entity: 弯颜特汗 (E_P575)
+        role: 亡灵
+    location: 汉地 (E_L530)
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "在他自己的境界中见到国王弯颜特，国王问：'你去西藏，都给予你什么奖赏了？'"
+    description: 国王说"那什么也没有赐予呀"后消失。王妃塔布拉闻此事感伤落泪又赐十升银子。
+
+  - event_id: EV_5S44
+    type: 神变
+    title: 七步护法铸像迎请到西藏时面向西藏跨越七步
+    participants:
+      - entity: 宿·桑波华 (E_P574)
+        role: 迎请者
+    location: null
+    time_info: null
+    layers: [神变]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.75
+    source_quote: "怙主护法面向西藏跨越七步，由此被人们共称为七步护法铸像"
+    description: 汉土响铜金刚萨埵佛像和护法兄妹跳神铸像从汉地迎请到西藏。
+
+  - event_id: EV_5S45
+    type: 圆寂
+    title: 宿·桑波华不愿再赴汉地遂行后住世仅三十八岁
+    participants:
+      - entity: 宿·桑波华 (E_P574)
+        role: 主体
+    location: 汉地 (E_L530)
+    time_info:
+      text: "三十八岁"
+      relative_to: 宿·桑波华 (E_P574)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在不愿意去的情况下说出了'自由自在皆安乐，受他控制皆痛苦……'的教授以后去往汉地，只住世到三十八岁"
+    description: null
+
+  # ----------------------------------------------------------
+  # 宿哈·释迦炯段 (lines 1532-1558)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S46
+    type: 弘法
+    title: 宿哈·释迦炯五岁对使者零碎宣讲根本续众人目瞪口呆
+    participants:
+      - entity: 宿哈·释迦炯 (E_P576)
+        role: 主体
+    location: null
+    time_info:
+      text: "五岁"
+      relative_to: 宿哈·释迦炯 (E_P576)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "五岁时在父亲前去汉土迎接的大人物及使者中，零零碎碎、模模糊糊地宣讲根本续，使得众人目瞪口呆"
+    description: null
+
+  - event_id: EV_5S47
+    type: 弘法
+    title: 宿哈·释迦炯七岁开始住持讲学院
+    participants:
+      - entity: 宿哈·释迦炯 (E_P576)
+        role: 主体
+    location: null
+    time_info:
+      text: "七岁"
+      relative_to: 宿哈·释迦炯 (E_P576)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他从七岁开始住持讲学院"
+    description: null
+
+  - event_id: EV_5S48
+    type: 弘法
+    title: 宿哈·释迦炯撰集密意续释等大量论典对经幻心教法贡献卓越
+    participants:
+      - entity: 宿哈·释迦炯 (E_P576)
+        role: 主体
+    location: null
+    time_info: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "他撰著了《集密意续释》等大量论典，对《经幻心》教法作出了卓越贡献"
+    description: null
+
+  - event_id: EV_5S49
+    type: 圆寂
+    title: 宿哈·释迦炯三十八岁圆寂
+    participants:
+      - entity: 宿哈·释迦炯 (E_P576)
+        role: 主体
+    location: null
+    time_info:
+      text: "三十八岁"
+      relative_to: 宿哈·释迦炯 (E_P576)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "三十八岁时圆寂"
+    description: null
+
+  # ----------------------------------------------------------
+  # 桑吉仁钦嘉村段 (lines 1560-1595)
+  # ----------------------------------------------------------
+
+  - event_id: EV_5S50
+    type: 弘法
+    title: 桑吉仁钦嘉村六岁精通密藏续十四岁成灌顶阿阇黎
+    participants:
+      - entity: 桑吉仁钦嘉村 (E_P585)
+        role: 主体
+    location: null
+    time_info:
+      text: "六岁…十四岁"
+      relative_to: 桑吉仁钦嘉村 (E_P585)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "年仅六岁时就精通了《密藏续》……十四岁就成了为他众灌顶的阿阇黎"
+    description: null
+
+  - event_id: EV_5S51
+    type: 弘法
+    title: 桑吉仁钦嘉村四十岁造密藏续大疏并作道庄严广释
+    participants:
+      - entity: 桑吉仁钦嘉村 (E_P585)
+        role: 主体
+    location: null
+    time_info:
+      text: "四十岁"
+      relative_to: 桑吉仁钦嘉村 (E_P585)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "在四十岁时造了《密藏续大疏》，对《道庄严》也作了广释"
+    description: null
+
+  - event_id: EV_5S52
+    type: 圆寂
+    title: 桑吉仁钦嘉村八十二岁铁猪年圆寂
+    participants:
+      - entity: 桑吉仁钦嘉村 (E_P585)
+        role: 主体
+    location: null
+    time_info:
+      text: "八十二岁铁猪年"
+      relative_to: 桑吉仁钦嘉村 (E_P585)
+      absolute: null
+    layers: [史传]
+    sub_layer: null
+    author_stance: 认可
+    confidence: 0.85
+    source_quote: "尊者在八十二岁铁猪年圆寂，从小宿大师降生到此时之前显然已过了四百一十七年"
+    description: null
