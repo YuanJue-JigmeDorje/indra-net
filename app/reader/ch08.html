@@ -481,8 +481,17 @@ footer {
     // -- Relations --
     var relHTML = '';
     if (typeof links !== 'undefined') {
+      // Strip 《》 for fuzzy matching
+      var eidBare = eid.replace(/[《》]/g, '');
       var rels = links.filter(function(l) {
-        return lsrc(l) === eid || ltgt(l) === eid;
+        var s = lsrc(l), t = ltgt(l);
+        // Exact match
+        if (s === eid || t === eid) return true;
+        // Fuzzy: bare name substring match (金刚橛 matches 《金刚橛》法部)
+        if (eidBare.length >= 2) {
+          if (s.indexOf(eidBare) >= 0 || t.indexOf(eidBare) >= 0) return true;
+        }
+        return false;
       });
       if (rels.length > 0) {
         relHTML = '<div class="card-section-title">关系 (' + rels.length + ')</div>';
@@ -509,8 +518,22 @@ footer {
 
     // -- Events --
     var evtHTML = '';
-    if (typeof allEvents !== 'undefined' && typeof entityEventIndex !== 'undefined' && entityEventIndex[eid]) {
-      var indices = entityEventIndex[eid];
+    // Try exact match first, then fuzzy
+    var evtIndices = null;
+    if (typeof allEvents !== 'undefined' && typeof entityEventIndex !== 'undefined') {
+      evtIndices = entityEventIndex[eid];
+      // Fuzzy: try bare name if exact not found
+      if (!evtIndices && eidBare.length >= 2) {
+        for (var key in entityEventIndex) {
+          if (key.indexOf(eidBare) >= 0 || eidBare.indexOf(key.replace(/[《》]/g,'')) >= 0) {
+            evtIndices = entityEventIndex[key];
+            break;
+          }
+        }
+      }
+    }
+    if (evtIndices) {
+      var indices = evtIndices;
       evtHTML = '<div class="card-section-title">相关事件 (' + indices.length + ')</div>';
       indices.slice(0, 15).forEach(function(idx) {
         var evt = allEvents[idx];
